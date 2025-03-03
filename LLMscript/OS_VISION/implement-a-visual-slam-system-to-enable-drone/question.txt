@@ -1,0 +1,1 @@
+Implement a **Visual SLAM system** to enable drone navigation using camera inputs.  

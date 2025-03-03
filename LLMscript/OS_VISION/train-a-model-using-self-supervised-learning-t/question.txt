@@ -1,0 +1,1 @@
+Train a model using **self-supervised learning** to learn representations from unlabeled images.  

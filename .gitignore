@@ -1,0 +1,67 @@
+nonupstream/**
+sample
+*.avi
+*.mp4
+readall/*
+readall 
+.vs*
+.env
+code_docs_generator.py
+scriptgpt.py
+scriptClaude.py
+code_analyzer*
+//openaiQuestion*
+LLMscript/*
+*.md
+*.svg
+AI/MachineLearning/Deep_learning/Pytorch/ImageClassifier/data/cifar-10-python.tar.gz
+*.tar*
+*.jpg
+docker-data/
+docker-volume/
+docker_image.tar
+
+# Build artifacts
+*.o
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.idb
+*.out
+*.a
+*.so
+*.dylib
+
+# Build directories
+Debug/
+Release/
+x64/
+build/
+CMakeFiles/
+cmake-build-*/
+docs/*
+
+# Python
+*.pyc
+__pycache__/
+graphify-out/
+
+# Generated outputs
+*.dat
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+*.vcxproj.user
+*.tlog
+
+.claude/
+.github/
+.vscode/
+.gitattributes
+
+.codex/
+.codex

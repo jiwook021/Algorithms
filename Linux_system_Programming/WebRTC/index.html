@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebRTC 테스트 클라이언트 (개선된 버전)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        video {
+            background: #222;
+            width: 480px;
+            height: 360px;
+            border: 1px solid #444;
+            border-radius: 4px;
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .sdp-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .sdp-box {
+            flex: 1;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            font-family: monospace;
+            font-size: 12px;
+            padding: 8px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        h3 {
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .ice-container {
+            margin-top: 20px;
+        }
+        #iceList {
+            height: 150px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 8px;
+        }
+        .status {
+            padding: 10px;
+            background-color: #e9f7ef;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .log-container {
+            margin-top: 20px;
+        }
+        #logOutput {
+            height: 150px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>WebRTC 테스트 클라이언트</h1>
+    
+    <div class="status" id="connectionStatus">상태: 준비됨</div>
+    
+    <div class="video-container">
+        <div>
+            <h3>로컬 비디오</h3>
+            <video id="localVideo" autoplay muted playsinline></video>
+        </div>
+        <div>
+            <h3>원격 비디오</h3>
+            <video id="remoteVideo" autoplay playsinline></video>
+        </div>
+    </div>
+    
+    <div class="controls">
+        <div>
+            <button id="startButton">미디어 스트림 시작</button>
+            <button id="stopButton" disabled>연결 종료</button>
+        </div>
+        
+        <div class="sdp-container">
+            <div class="sdp-box">
+                <h3>SDP 오퍼/응답 생성</h3>
+                <button id="createOfferButton" disabled>오퍼 생성</button>
+                <button id="createAnswerButton" disabled>응답 생성</button>
+                <h4>로컬 SDP (C++ 애플리케이션에 복사):</h4>
+                <textarea id="localSdp" readonly placeholder="오퍼 또는 응답 생성 버튼을 클릭하세요..."></textarea>
+                <button id="copyLocalSdp">로컬 SDP 복사</button>
+            </div>
+            
+            <div class="sdp-box">
+                <h3>원격 SDP 설정</h3>
+                <h4>원격 SDP (C++ 애플리케이션에서 복사):</h4>
+                <textarea id="remoteSdp" placeholder="C++ 애플리케이션의 SDP를 여기에 붙여넣으세요..."></textarea>
+                <button id="setRemoteOfferButton">원격 오퍼 설정</button>
+                <button id="setRemoteAnswerButton">원격 응답 설정</button>
+            </div>
+        </div>
+        
+        <div class="ice-container">
+            <h3>ICE 후보</h3>
+            <div id="iceList"></div>
+        </div>
+        
+        <div class="log-container">
+            <h3>로그</h3>
+            <div id="logOutput"></div>
+        </div>
+    </div>
+    
+    <script>
+        // 요소 참조
+        const localVideo = document.getElementById('localVideo');
+        const remoteVideo = document.getElementById('remoteVideo');
+        const startButton = document.getElementById('startButton');
+        const stopButton = document.getElementById('stopButton');
+        const createOfferButton = document.getElementById('createOfferButton');
+        const createAnswerButton = document.getElementById('createAnswerButton');
+        const localSdpTextarea = document.getElementById('localSdp');
+        const remoteSdpTextarea = document.getElementById('remoteSdp');
+        const setRemoteOfferButton = document.getElementById('setRemoteOfferButton');
+        const setRemoteAnswerButton = document.getElementById('setRemoteAnswerButton');
+        const copyLocalSdpButton = document.getElementById('copyLocalSdp');
+        const iceListDiv = document.getElementById('iceList');
+        const logOutputDiv = document.getElementById('logOutput');
+        const connectionStatusDiv = document.getElementById('connectionStatus');
+        
+        // 상태 변수
+        let localStream = null;
+        let peerConnection = null;
+        let iceCandidates = [];
+        
+        // 로그 함수
+        function log(message) {
+            console.log(message);
+            const logLine = document.createElement('div');
+            logLine.textContent = `${new Date().toLocaleTimeString()} - ${message}`;
+            logOutputDiv.appendChild(logLine);
+            logOutputDiv.scrollTop = logOutputDiv.scrollHeight;
+        }
+        
+        // 연결 상태 업데이트
+        function updateConnectionStatus(status) {
+            connectionStatusDiv.textContent = `상태: ${status}`;
+        }
+        
+        // 미디어 스트림 시작
+        startButton.addEventListener('click', async () => {
+            try {
+                log('미디어 스트림 획득 중...');
+                localStream = await navigator.mediaDevices.getUserMedia({
+                    audio: true,
+                    video: {
+                        width: { ideal: 640 },
+                        height: { ideal: 480 }
+                    }
+                });
+                
+                localVideo.srcObject = localStream;
+                
+                log('미디어 스트림 획득 성공');
+                startButton.disabled = true;
+                stopButton.disabled = false;
+                createOfferButton.disabled = false;
+                createAnswerButton.disabled = false;
+                updateConnectionStatus('미디어 스트림 활성화됨');
+                
+                // RTCPeerConnection 초기화
+                initPeerConnection();
+                
+            } catch (err) {
+                log(`미디어 스트림 획득 오류: ${err.message}`);
+                updateConnectionStatus(`오류: ${err.message}`);
+            }
+        });
+        
+        // WebRTC 연결 중지
+        stopButton.addEventListener('click', () => {
+            if (peerConnection) {
+                peerConnection.close();
+                peerConnection = null;
+            }
+            
+            if (localStream) {
+                localStream.getTracks().forEach(track => track.stop());
+                localStream = null;
+            }
+            
+            localVideo.srcObject = null;
+            remoteVideo.srcObject = null;
+            
+            startButton.disabled = false;
+            stopButton.disabled = true;
+            createOfferButton.disabled = true;
+            createAnswerButton.disabled = true;
+            
+            localSdpTextarea.value = '';
+            iceCandidates = [];
+            iceListDiv.innerHTML = '';
+            
+            log('연결이 종료됨');
+            updateConnectionStatus('준비됨');
+        });
+        
+        // RTCPeerConnection 초기화
+        function initPeerConnection() {
+            // 이미 연결이 있으면 닫기
+            if (peerConnection) {
+                peerConnection.close();
+            }
+            
+            // STUN 서버 설정으로 RTCPeerConnection 생성
+            peerConnection = new RTCPeerConnection({
+                iceServers: [
+                    { urls: 'stun:stun.l.google.com:19302' }
+                ]
+            });
+            
+            // 로컬 스트림 추가
+            if (localStream) {
+                localStream.getTracks().forEach(track => {
+                    peerConnection.addTrack(track, localStream);
+                });
+            }
+            
+            // ICE 후보 이벤트 처리
+            peerConnection.onicecandidate = (event) => {
+                if (event.candidate) {
+                    const candidate = event.candidate.candidate;
+                    const sdpMLineIndex = event.candidate.sdpMLineIndex;
+                    
+                    log(`ICE 후보 생성: ${candidate}`);
+                    
+                    // ICE 후보 저장 및 표시
+                    iceCandidates.push({ candidate, sdpMLineIndex });
+                    
+                    const candidateItem = document.createElement('div');
+                    candidateItem.textContent = `mline ${sdpMLineIndex}: ${candidate}`;
+                    iceListDiv.appendChild(candidateItem);
+                    iceListDiv.scrollTop = iceListDiv.scrollHeight;
+                }
+            };
+            
+            // 연결 상태 변경 이벤트 처리
+            peerConnection.onconnectionstatechange = () => {
+                log(`연결 상태: ${peerConnection.connectionState}`);
+                updateConnectionStatus(`연결 상태: ${peerConnection.connectionState}`);
+            };
+            
+            // ICE 연결 상태 변경 이벤트 처리
+            peerConnection.oniceconnectionstatechange = () => {
+                log(`ICE 연결 상태: ${peerConnection.iceConnectionState}`);
+            };
+            
+            // 시그널링 상태 변경 이벤트 처리
+            peerConnection.onsignalingstatechange = () => {
+                log(`시그널링 상태: ${peerConnection.signalingState}`);
+            };
+            
+            // 원격 스트림 처리
+            peerConnection.ontrack = (event) => {
+                log('원격 트랙 수신됨');
+                if (remoteVideo.srcObject !== event.streams[0]) {
+                    remoteVideo.srcObject = event.streams[0];
+                    log('원격 비디오 스트림 설정됨');
+                }
+            };
+            
+            log('RTCPeerConnection이 초기화됨');
+        }
+        
+        // 오퍼 생성
+        createOfferButton.addEventListener('click', async () => {
+            if (!peerConnection) {
+                log('PeerConnection이 초기화되지 않음');
+                return;
+            }
+            
+            try {
+                log('오퍼 생성 중...');
+                const offer = await peerConnection.createOffer({
+                    offerToReceiveAudio: true,
+                    offerToReceiveVideo: true
+                });
+                
+                await peerConnection.setLocalDescription(offer);
+                
+                log('로컬 오퍼 SDP 설정됨');
+                localSdpTextarea.value = offer.sdp;
+                
+                // ICE 후보 수집 시작
+                log('ICE 후보 수집 중...');
+                
+            } catch (err) {
+                log(`오퍼 생성 오류: ${err.message}`);
+            }
+        });
+        
+        // 응답 생성
+        createAnswerButton.addEventListener('click', async () => {
+            if (!peerConnection) {
+                log('PeerConnection이 초기화되지 않음');
+                return;
+            }
+            
+            if (peerConnection.remoteDescription === null) {
+                log('원격 오퍼가 설정되지 않았습니다');
+                return;
+            }
+            
+            try {
+                log('응답 생성 중...');
+                const answer = await peerConnection.createAnswer();
+                
+                await peerConnection.setLocalDescription(answer);
+                
+                log('로컬 응답 SDP 설정됨');
+                localSdpTextarea.value = answer.sdp;
+                
+            } catch (err) {
+                log(`응답 생성 오류: ${err.message}`);
+            }
+        });
+        
+        // 원격 오퍼 설정
+        setRemoteOfferButton.addEventListener('click', async () => {
+            if (!peerConnection) {
+                log('PeerConnection이 초기화되지 않음');
+                return;
+            }
+            
+            const sdp = remoteSdpTextarea.value.trim();
+            if (!sdp) {
+                log('원격 SDP가 비어 있습니다');
+                return;
+            }
+            
+            try {
+                log('원격 오퍼 SDP 설정 중...');
+                await peerConnection.setRemoteDescription(new RTCSessionDescription({
+                    type: 'offer',
+                    sdp: sdp
+                }));
+                
+                log('원격 오퍼 SDP 설정됨');
+                
+                // 응답 자동 생성 (선택 사항)
+                createAnswerButton.click();
+                
+            } catch (err) {
+                log(`원격 오퍼 설정 오류: ${err.message}`);
+            }
+        });
+        
+        // 원격 응답 설정
+        setRemoteAnswerButton.addEventListener('click', async () => {
+            if (!peerConnection) {
+                log('PeerConnection이 초기화되지 않음');
+                return;
+            }
+            
+            const sdp = remoteSdpTextarea.value.trim();
+            if (!sdp) {
+                log('원격 SDP가 비어 있습니다');
+                return;
+            }
+            
+            try {
+                log('원격 응답 SDP 설정 중...');
+                await peerConnection.setRemoteDescription(new RTCSessionDescription({
+                    type: 'answer',
+                    sdp: sdp
+                }));
+                
+                log('원격 응답 SDP 설정됨');
+                
+            } catch (err) {
+                log(`원격 응답 설정 오류: ${err.message}`);
+            }
+        });
+        
+        // 로컬 SDP 복사
+        copyLocalSdpButton.addEventListener('click', () => {
+            localSdpTextarea.select();
+            document.execCommand('copy');
+            log('로컬 SDP가 클립보드에 복사됨');
+        });
+        
+        // 페이지 로드 시 초기화
+        window.addEventListener('load', () => {
+            log('WebRTC 테스트 클라이언트가 로드됨');
+            
+            // WebRTC 지원 여부 확인
+            if (!navigator.mediaDevices || !RTCPeerConnection) {
+                log('브라우저가 WebRTC를 지원하지 않습니다');
+                updateConnectionStatus('오류: 브라우저가 WebRTC를 지원하지 않습니다');
+                startButton.disabled = true;
+            }
+        });
+    </script>
+</body>
+</html>

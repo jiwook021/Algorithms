@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Upload and Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .upload-container {
+            border: 2px dashed #3498db;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .upload-container:hover {
+            background-color: #f0f8ff;
+        }
+        .video-container {
+            margin-top: 20px;
+        }
+        video {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .progress-bar {
+            height: 20px;
+            background-color: #f0f0f0;
+            margin-top: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background-color: #3498db;
+            width: 0%;
+            transition: width 0.3s;
+        }
+        #status {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        .video-list {
+            margin-top: 20px;
+        }
+        .video-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+        }
+        .video-item:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Upload and Player</h1>
+    
+    <div class="container">
+        <div class="upload-container">
+            <h2>Upload Video</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="videoFile" name="video" accept="video/*">
+                <div>
+                    <button type="submit">Upload</button>
+                </div>
+            </form>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div id="status"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="video-container">
+            <h2>Video Player</h2>
+            <video id="videoPlayer" controls>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Uploaded Videos</h2>
+        <div id="videoList" class="video-list">
+            <p>No videos uploaded yet.</p>
+        </div>
+    </div>
+
+    <script>
+        // Function to update the video list
+        function updateVideoList() {
+            fetch('/videos')
+                .then(response => response.json())
+                .then(data => {
+                    const videoListElement = document.getElementById('videoList');
+                    
+                    if (data.videos && data.videos.length > 0) {
+                        videoListElement.innerHTML = '';
+                        
+                        data.videos.forEach(video => {
+                            const videoItem = document.createElement('div');
+                            videoItem.className = 'video-item';
+                            videoItem.textContent = video.name;
+                            videoItem.addEventListener('click', () => {
+                                const videoPlayer = document.getElementById('videoPlayer');
+                                videoPlayer.src = video.url;
+                                videoPlayer.load();
+                                videoPlayer.play();
+                            });
+                            
+                            videoListElement.appendChild(videoItem);
+                        });
+                    } else {
+                        videoListElement.innerHTML = '<p>No videos uploaded yet.</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching video list:', error);
+                });
+        }
+        
+        // Try to fetch the initial video list
+        updateVideoList();
+        
+        document.getElementById('uploadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const fileInput = document.getElementById('videoFile');
+            const file = fileInput.files[0];
+            
+            if (!file) {
+                alert('Please select a video file first.');
+                return;
+            }
+            
+            const formData = new FormData();
+            formData.append('video', file);
+            
+            const xhr = new XMLHttpRequest();
+            
+            // Reset the progress and status
+            document.getElementById('progress').style.width = '0%';
+            document.getElementById('status').textContent = 'Preparing upload...';
+            
+            // Update progress bar
+            xhr.upload.addEventListener('progress', function(e) {
+                if (e.lengthComputable) {
+                    const percentComplete = (e.loaded / e.total) * 100;
+                    document.getElementById('progress').style.width = percentComplete + '%';
+                    document.getElementById('status').textContent = `Uploading: ${Math.round(percentComplete)}%`;
+                }
+            });
+            
+            xhr.addEventListener('load', function() {
+                if (xhr.status === 200) {
+                    document.getElementById('status').textContent = 'Upload completed successfully!';
+                    
+                    // Try to parse the response to get the video URL
+                    try {
+                        const response = JSON.parse(xhr.responseText);
+                        if (response.videoUrl) {
+                            // Set the video source and play
+                            const videoPlayer = document.getElementById('videoPlayer');
+                            videoPlayer.src = response.videoUrl;
+                            videoPlayer.load();
+                            
+                            // Update the video list
+                            updateVideoList();
+                        }
+                    } catch (e) {
+                        console.error('Error parsing response:', e);
+                        document.getElementById('status').textContent += ' (But failed to load the video)';
+                    }
+                } else {
+                    document.getElementById('status').textContent = 'Upload failed: ' + xhr.statusText;
+                }
+            });
+            
+            xhr.addEventListener('error', function() {
+                document.getElementById('status').textContent = 'Upload failed due to network error.';
+            });
+            
+            // Send the request to a server endpoint that can handle the upload
+            xhr.open('POST', '/upload', true);
+            xhr.send(formData);
+        });
+    </script>
+</body>
+</html>

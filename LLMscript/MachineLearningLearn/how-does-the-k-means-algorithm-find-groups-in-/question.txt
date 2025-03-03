@@ -1,0 +1,1 @@
+How does the **k-means algorithm** find groups in data?  

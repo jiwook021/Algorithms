@@ -1,0 +1,1 @@
+Implement a **convolutional neural network (CNN)** from scratch without TensorFlow or PyTorch.  

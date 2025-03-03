@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  cuda-vector-add:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cuda-vector-add:latest
+    container_name: cuda-vector-add
+    # Runtime configuration for GPU support
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

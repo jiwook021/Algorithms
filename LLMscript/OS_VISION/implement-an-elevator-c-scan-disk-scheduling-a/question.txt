@@ -1,0 +1,1 @@
+Implement an **elevator (C-SCAN) disk scheduling algorithm** for optimizing hard disk seeks.  

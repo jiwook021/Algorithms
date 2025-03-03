@@ -1,0 +1,1 @@
+Can you train a **decision tree classifier** to separate apples from oranges?  
