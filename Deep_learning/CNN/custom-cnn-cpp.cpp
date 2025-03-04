@@ -1,9 +1,43 @@
 #include <iostream>
+#include <vector>
+#include <string>
+#include <fstream>
+
+// Include our wrapper instead of OpenCV directly
+#include "opencv_wrapper.h"
+
+// Include LibTorch headers
 #include <torch/torch.h>
-#include <opencv2/opencv.hpp>
-#include <opencv2/core.hpp>
-#include <opencv2/imgproc.hpp>
-#include <opencv2/highgui.hpp>
+
+// Helper class to manage Mat pointers and handle memory cleanup automatically
+class MatPtr {
+public:
+    MatPtr() : ptr(nullptr) {}
+    explicit MatPtr(cv::Mat* p) : ptr(p) {}
+    ~MatPtr() { if (ptr) delete ptr; }
+    
+    // Disable copying
+    MatPtr(const MatPtr&) = delete;
+    MatPtr& operator=(const MatPtr&) = delete;
+    
+    // Move operations
+    MatPtr(MatPtr&& other) : ptr(other.ptr) { other.ptr = nullptr; }
+    MatPtr& operator=(MatPtr&& other) {
+        if (this != &other) {
+            if (ptr) delete ptr;
+            ptr = other.ptr;
+            other.ptr = nullptr;
+        }
+        return *this;
+    }
+    
+    // Access
+    cv::Mat* get() const { return ptr; }
+    bool empty() const { return !ptr || ptr->empty(); }
+    
+private:
+    cv::Mat* ptr;
+};
 
 // Define a custom CNN model for object detection
 struct SimpleCNNImpl : torch::nn::Module {
@@ -78,34 +112,34 @@ struct SimpleCNNImpl : torch::nn::Module {
 // Register the module
 TORCH_MODULE(SimpleCNN);
 
-// Data preprocessing utility
-torch::Tensor preprocess_image(const cv::Mat& image, int input_size = 224) {
-    cv::Mat processed_image;
+// Data preprocessing utility - using our wrapper functions and pointer-based approach
+torch::Tensor preprocess_image(cv::Mat* image, int input_size = 224) {
+    // Create a new Mat for processing
+    cv::Mat* processed_image = new cv::Mat();
+    MatPtr processed_ptr(processed_image); // Ensure cleanup with RAII
     
     // Resize the image
-    cv::resize(image, processed_image, cv::Size(input_size, input_size));
+    resize_image(image, processed_image, cv::Size(input_size, input_size));
     
     // Convert to RGB
-    cv::cvtColor(processed_image, processed_image, cv::COLOR_BGR2RGB);
+    cvt_color(processed_image, processed_image, COLOR_BGR2RGB_CONST);
     
-    // Convert to float and normalize to [0, 1]
-    processed_image.convertTo(processed_image, CV_32F, 1.0f / 255.0f);
+    // We can't directly use convertTo through our wrapper, so we handle normalization in LibTorch
+    
+    // Create a tensor from the Mat data
+    auto tensor_image = torch::from_blob(
+        processed_image->data,
+        {1, processed_image->rows, processed_image->cols, 3},
+        torch::kByte  // Use kByte for uint8_t data
+    ).to(torch::kFloat32).div(255.0);  // Convert to float and normalize in LibTorch
     
     // Normalize using ImageNet mean and std
-    cv::Scalar mean(0.485, 0.456, 0.406);
-    cv::Scalar std(0.229, 0.224, 0.225);
-    cv::subtract(processed_image, mean, processed_image);
-    cv::divide(processed_image, std, processed_image);
-    
-    // Convert OpenCV Mat to Tensor
-    auto tensor_image = torch::from_blob(
-        processed_image.data,
-        {1, processed_image.rows, processed_image.cols, 3},
-        torch::kFloat32
-    );
+    tensor_image = tensor_image.sub(torch::tensor({0.485, 0.456, 0.406})).div(torch::tensor({0.229, 0.224, 0.225}));
     
     // Rearrange from NHWC to NCHW (batch, channels, height, width)
     tensor_image = tensor_image.permute({0, 3, 1, 2});
+    
+    // The MatPtr will clean up processed_image when it goes out of scope
     
     return tensor_image;
 }
@@ -131,13 +165,18 @@ public:
         return image_paths_.size();
     }
 
-    // Get item at the given index
+    // Get item at the given index - using our wrapper functions
     torch::data::Example<> get(size_t index) override {
-        // Load the image
-        cv::Mat image = cv::imread(image_paths_[index]);
-        if (image.empty()) {
+        // Load the image using our wrapper
+        cv::Mat* image = load_image(image_paths_[index]);
+        
+        if (!image || image->empty()) {
+            delete image; // Clean up if loading failed
             throw std::runtime_error("Could not read image: " + image_paths_[index]);
         }
+        
+        // Create a smart pointer to ensure cleanup
+        MatPtr image_ptr(image);
         
         // Preprocess the image
         torch::Tensor tensor_image = preprocess_image(image, input_size_);
@@ -150,25 +189,27 @@ public:
         
         // Return a pair of tensors
         return {tensor_image, torch::stack({label, bbox})};
+        
+        // image_ptr will automatically clean up the Mat when it goes out of scope
     }
 };
 
-// Utility function to draw bounding boxes on images
-void draw_bounding_box(cv::Mat& image, const std::vector<float>& bbox, const std::string& label) {
-    int x = static_cast<int>(bbox[0] * image.cols);
-    int y = static_cast<int>(bbox[1] * image.rows);
-    int width = static_cast<int>(bbox[2] * image.cols);
-    int height = static_cast<int>(bbox[3] * image.rows);
+// Utility function to draw bounding boxes on images - using our wrapper
+void draw_bounding_box(cv::Mat* image, const std::vector<float>& bbox, const std::string& label) {
+    int x = static_cast<int>(bbox[0] * image->cols);
+    int y = static_cast<int>(bbox[1] * image->rows);
+    int width = static_cast<int>(bbox[2] * image->cols);
+    int height = static_cast<int>(bbox[3] * image->rows);
     
-    // Draw rectangle
-    cv::rectangle(image, cv::Rect(x, y, width, height), cv::Scalar(0, 255, 0), 2);
+    // Draw rectangle - use our wrapper
+    draw_rectangle(image, cv::Rect(x, y, width, height), cv::Scalar(0, 255, 0), 2);
     
-    // Draw label
-    cv::putText(
+    // Draw label - use our wrapper
+    draw_text(
         image, 
         label, 
         cv::Point(x, y - 5), 
-        cv::FONT_HERSHEY_SIMPLEX, 
+        FONT_HERSHEY_SIMPLEX, 
         0.5, 
         cv::Scalar(0, 255, 0), 
         1
@@ -225,19 +266,23 @@ int main() {
     torch::save(model, "object_detection_model.pt");
     std::cout << "Model saved!" << std::endl;
     
-    // Example of inference
+    // Example of inference - using our wrapper functions
     std::cout << "Running inference on test image..." << std::endl;
     
-    // Load a test image
-    cv::Mat test_image = cv::imread("test_image.jpg");
-    if (test_image.empty()) {
+    // Load a test image - use our wrapper
+    cv::Mat* test_image = load_image("test_image.jpg");
+    if (!test_image || test_image->empty()) {
+        if (test_image) delete test_image;
         std::cerr << "Could not read the test image" << std::endl;
         return 1;
     }
     
-    // Display the original image
-    cv::namedWindow("Original Image", cv::WINDOW_NORMAL);
-    cv::imshow("Original Image", test_image);
+    // Use RAII to manage the image pointer
+    MatPtr test_image_ptr(test_image);
+    
+    // Display the original image - use our wrapper
+    create_window("Original Image", WINDOW_NORMAL_CONST);
+    show_image("Original Image", test_image);
     
     // Preprocess the image
     torch::Tensor tensor_image = preprocess_image(test_image);
@@ -253,7 +298,9 @@ int main() {
     
     // Get the predicted class
     auto class_probabilities = torch::exp(class_output);
-    auto [max_prob, class_idx] = torch::max(class_probabilities, 1);
+    auto max_result = torch::max(class_probabilities, 1);
+    auto max_prob = std::get<0>(max_result);
+    auto class_idx = std::get<1>(max_result);
     
     // Convert bbox tensor to vector
     std::vector<float> bbox(4);
@@ -269,10 +316,10 @@ int main() {
     // Draw bounding box on the image
     draw_bounding_box(test_image, bbox, class_name);
     
-    // Display the result
-    cv::namedWindow("Detection Result", cv::WINDOW_NORMAL);
-    cv::imshow("Detection Result", test_image);
-    cv::waitKey(0);
+    // Display the result - use our wrapper
+    create_window("Detection Result", WINDOW_NORMAL);
+    show_image("Detection Result", test_image);
+    wait_key(0);
     
     return 0;
 }
