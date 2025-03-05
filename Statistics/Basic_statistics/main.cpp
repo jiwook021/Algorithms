@@ -46,7 +46,7 @@ double mean_squared_error(const std::vector<double>& x, const std::vector<double
 
 int main() {
     // Hardcoded dataset: x and y values (perfectly linear for demonstration)
-    std::vector<double> x = {1.0, 2.0, 3.0};
+    std::vector<double> x = {1.0, 2.7, 3};
     std::vector<double> y = {2.0, 4.0, 6.0};
 
     // Calculate means

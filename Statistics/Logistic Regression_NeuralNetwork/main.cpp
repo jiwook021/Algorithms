@@ -36,12 +36,14 @@ public:
             double dw1 = 0.0, dw2 = 0.0, db = 0.0;
             for (const auto& dp : dataset) {
                 double z = w1 * dp.x1 + w2 * dp.x2 + b;
-                double pred = sigmoid(z);
-                double error = pred - dp.label;
+                double pred = sigmoid(z); //1 0 
+                double error = pred - dp.label; // 
                 dw1 += error * dp.x1;
                 dw2 += error * dp.x2;
                 db += error;
+                printf("x1 %0.2f, x2 %0.2f,error %0.2f\n" , dp.x1,dp.x2,error);
             }
+            printf("w1 = %0.2f, w2 = %0.2f, b = %0.2f\n", w1,w2,b);
             // Average gradients
             dw1 /= n;
             dw2 /= n;
@@ -72,30 +74,34 @@ public:
 };
 
 int main() {
-    // Hardcoded dataset: {study hours, sleep hours, pass/fail}
+    // Hardcoded dataset: {study hours, IQ, pass/fail}
+    int lowhuman = 80; 
     std::vector<DataPoint> dataset = {
-        {2.0, 6.0, 0},  // Fail
-        {3.0, 8.0, 0},  // Fail
-        {5.0, 5.0, 1},  // Pass
-        {7.0, 7.0, 1},  // Pass
-        {4.0, 9.0, 0},  // Fail
-        {6.0, 4.0, 1}   // Pass
+        {2.0, 30, 0},  // Fail
+        {3.0, 30, 0},  // Fail
+        {5.0, 40, 1},  // Pass
+        {7.0, 50, 1},  // Pass
+        {4.0, 30, 0},  // Fail
+        {6.0, 50, 1}   // Pass
     };
 
     // Initialize and train the model
-    LogisticRegression model(0.1, 1000);  // Learning rate = 0.1, 1000 epochs
+    //LogisticRegression model(0.005, 10000);  // Learning rate = 0.05, 1000 epochs
+    LogisticRegression model(0.005, 10);  // Learning rate = 0.05, 1000 epochs
     model.fit(dataset);
-
+    //Learned weights: w1 = 1.91875, w2 = -0.146123, b = -2.888
+    
     // Show learned parameters
     model.print_parameters();
 
     // User input for prediction
-    std::cout << "Enter study hours and sleep hours (e.g., 5.0 6.0): ";
+    std::cout << "Enter study hours and IQ (e.g., 5.0 100): ";
     double x1, x2;
     std::cin >> x1 >> x2;
-
+    x2 = x2-lowhuman;
     // Predict and display results
     double prob = model.predict_probability(x1, x2);
+    printf("prob = %0.2f\n", prob);
     int pred_class = model.predict_class(x1, x2);
     std::cout << "Predicted probability: " << prob << std::endl;
     std::cout << "Predicted class (0 = fail, 1 = pass): " << pred_class << std::endl;
