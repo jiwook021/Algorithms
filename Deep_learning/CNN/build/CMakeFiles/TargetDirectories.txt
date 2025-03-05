@@ -1,5 +1,0 @@
-/home/jiwokim/Algorithms-with-C-and-Cpp/Deep_learning/CNN/build/CMakeFiles/opencv_wrapper.dir
-/home/jiwokim/Algorithms-with-C-and-Cpp/Deep_learning/CNN/build/CMakeFiles/image_classifier.dir
-/home/jiwokim/Algorithms-with-C-and-Cpp/Deep_learning/CNN/build/CMakeFiles/object_detector.dir
-/home/jiwokim/Algorithms-with-C-and-Cpp/Deep_learning/CNN/build/CMakeFiles/edit_cache.dir
-/home/jiwokim/Algorithms-with-C-and-Cpp/Deep_learning/CNN/build/CMakeFiles/rebuild_cache.dir
