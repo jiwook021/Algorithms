@@ -395,7 +395,7 @@ int main(int argc, char** argv) {
     // Default settings
     std::string outputPath = "scanned_document.jpg";
     int maxDimension = 1200;  // Default max dimension
-    int quality = 85;         // Default JPEG quality
+    int quality = 100;         // Default JPEG quality
     
     // Parse command line arguments
     if (argc >= 3) outputPath = argv[2];

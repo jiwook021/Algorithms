@@ -1,0 +1,4 @@
+Implementation,Time (sec),Samples/sec,Speedup,Accuracy (%)
+Original Implementation,1206.08,223.87,1.00,95.50
+Vectorized (Single Thread),8.81,30654.94,136.93,95.26
+Fully Optimized (Multi-Thread),137.54,1963.13,8.77,94.77
