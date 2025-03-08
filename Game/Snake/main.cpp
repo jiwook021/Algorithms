@@ -496,7 +496,6 @@ public:
 void runGame() {
     // Initialize game
     SnakeGame game;
-    
     SnakeAI ai(game);
 
     // Game loop

@@ -89,9 +89,6 @@ int main() {
     //LogisticRegression model(0.005, 10000);  // Learning rate = 0.05, 1000 epochs
     LogisticRegression model(0.005, 10);  // Learning rate = 0.05, 1000 epochs
     model.fit(dataset);
-    //Learned weights: w1 = 1.91875, w2 = -0.146123, b = -2.888
-    
-    // Show learned parameters
     model.print_parameters();
 
     // User input for prediction

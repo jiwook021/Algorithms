@@ -104,7 +104,7 @@ int main() {
     };
 
     // Number of clusters
-    int k = 2;
+    int k = 4;
 
     // Run K-Means
     k_means(dataset, k);
