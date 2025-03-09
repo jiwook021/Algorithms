@@ -4,10 +4,13 @@
 #include <set>
 #include <string>
 #include <algorithm>  // Required for std::find
+#include <iomanip>    // For formatting output
 
 // Function to generate candidate itemsets of size 2 from frequent single items
 std::vector<std::pair<std::string, std::string>> generate_candidates(const std::set<std::string>& items) {
     std::vector<std::pair<std::string, std::string>> candidates;
+    // Time Complexity: O(n²) where n is the number of items
+    // Space Complexity: O(n²) for storing all possible pairs
     for (auto it1 = items.begin(); it1 != items.end(); ++it1) {
         auto it2 = it1;
         ++it2;
@@ -21,6 +24,10 @@ std::vector<std::pair<std::string, std::string>> generate_candidates(const std::
 // Function to count how many transactions contain a given itemset
 int count_occurrences(const std::vector<std::vector<std::string>>& transactions, const std::set<std::string>& itemset) {
     int count = 0;
+    // Time Complexity: O(t * i * m) where:
+    // t is the number of transactions
+    // i is the size of the itemset
+    // m is the average number of items per transaction
     for (const auto& transaction : transactions) {
         bool all_present = true;
         for (const auto& item : itemset) {
@@ -38,6 +45,9 @@ int count_occurrences(const std::vector<std::vector<std::string>>& transactions,
 // Main Apriori Algorithm function
 void apriori(const std::vector<std::vector<std::string>>& transactions, int min_support, double min_confidence) {
     // Step 1: Count occurrences of single items and find frequent ones
+    // Time Complexity: O(t * m) where:
+    // t is the number of transactions
+    // m is the average number of items per transaction
     std::unordered_map<std::string, int> item_counts;
     for (const auto& transaction : transactions) {
         for (const auto& item : transaction) {
@@ -66,6 +76,10 @@ void apriori(const std::vector<std::vector<std::string>>& transactions, int min_
     }
 
     // Step 4: Generate association rules and filter by confidence
+    std::cout << "+-----------------+-----------------+------------------+\n";
+    std::cout << "| Antecedent      | Consequent      | Confidence       |\n";
+    std::cout << "+-----------------+-----------------+------------------+\n";
+    
     for (const auto& pair : pair_counts) {
         std::string itemset_str = pair.first;
         int count = pair.second;
@@ -78,32 +92,57 @@ void apriori(const std::vector<std::vector<std::string>>& transactions, int min_
         int support_item1 = item_counts[item1];
         double confidence1 = static_cast<double>(count) / support_item1;
         if (confidence1 >= min_confidence) {
-            std::cout << item1 << " -> " << item2 << " (confidence: " << confidence1 << ")\n";
+            std::cout << "| " << std::left << std::setw(15) << item1 
+                      << " | " << std::setw(15) << item2 
+                      << " | " << std::setw(16) << std::fixed << std::setprecision(4) << confidence1 << " |\n";
         }
 
         // Rule: item2 -> item1
         int support_item2 = item_counts[item2];
         double confidence2 = static_cast<double>(count) / support_item2;
         if (confidence2 >= min_confidence) {
-            std::cout << item2 << " -> " << item1 << " (confidence: " << confidence2 << ")\n";
+            std::cout << "| " << std::left << std::setw(15) << item2 
+                      << " | " << std::setw(15) << item1 
+                      << " | " << std::setw(16) << std::fixed << std::setprecision(4) << confidence2 << " |\n";
         }
     }
+    std::cout << "+-----------------+-----------------+------------------+\n";
+    
+    // Print some statistics
+    std::cout << "\nStatistics:\n";
+    std::cout << "Total transactions: " << transactions.size() << "\n";
+    std::cout << "Unique items: " << item_counts.size() << "\n";
+    std::cout << "Frequent items: " << frequent_items.size() << "\n";
+    std::cout << "Frequent pairs: " << pair_counts.size() << "\n";
 }
 
 int main() {
-    // Sample dataset: transactions with items
+    // Expanded dataset: 15 transactions with items
     std::vector<std::vector<std::string>> transactions = {
+        // Original 5 transactions
         {"bread", "milk"},
         {"bread", "diapers", "beer", "eggs"},
         {"milk", "diapers", "beer", "cola"},
         {"bread", "milk", "diapers", "beer"},
-        {"bread", "milk", "diapers", "cola"}
+        {"bread", "milk", "diapers", "cola"},
+        
+        // Added 10 more transactions
+        {"bread", "eggs", "milk"},
+        {"diapers", "beer", "cola"},
+        {"bread", "milk", "eggs"},
+        {"bread", "diapers", "cola"},
+        {"milk", "diapers", "eggs"},
+        {"bread", "beer", "cola"},
+        {"diapers", "milk", "beer"},
+        {"bread", "milk", "cola"},
+        {"bread", "diapers", "beer"},
+        {"milk", "eggs", "cola"}
     };
 
     int min_support = 3;        // Minimum number of occurrences for an itemset
     double min_confidence = 0.6; // Minimum confidence for a rule (60%)
 
-    std::cout << "Association Rules:\n";
+    std::cout << "Association Rules (Apriori Algorithm):\n";
     apriori(transactions, min_support, min_confidence);
 
     return 0;

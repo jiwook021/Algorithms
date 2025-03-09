@@ -1,0 +1,142 @@
+# YOLOv8 Object Detection and Tracking with Kalman Filter
+
+This project implements a real-time object detection and tracking system using YOLOv8 with OpenCV's DNN module accelerated by CUDA, and a Kalman Filter-based tracker. The implementation follows a Producer-Consumer pattern with multithreading for maximum performance.
+
+## Features
+
+- Real-time object detection using YOLOv8 ONNX model with CUDA acceleration
+- Object tracking using Kalman Filter
+- Multithreaded implementation with Producer-Consumer pattern
+- Thread-safe queue for communication between threads
+- CUDA GPU acceleration for maximum performance
+- Performance metrics and visualization
+- Test scenarios for occlusion and fast movement
+
+## Requirements
+
+- Modern C++20 compiler (GCC 10+ or equivalent)
+- OpenCV 4.x with CUDA support
+- CUDA Toolkit
+- YOLOv8 pre-trained model in ONNX format
+
+## Project Structure
+
+```
+Project/
+├── models/
+│   └── yolov8s.onnx
+├── include/
+│   ├── Detector.h
+│   ├── KalmanTracker.h
+│   ├── ThreadSafeQueue.h
+│   └── Viewer.h
+├── src/
+│   ├── Detector.cpp
+│   ├── KalmanTracker.cpp
+│   ├── Viewer.cpp
+│   └── main.cpp
+├── Makefile
+└── README.md
+```
+
+## Building the Project
+
+1. Ensure you have all the required dependencies installed
+2. Download the YOLOv8 ONNX model and place it in the `models/` directory
+3. Use the provided Makefile to build the project:
+
+```bash
+# Create directories and build the project
+make
+
+# Check dependencies
+make check-deps
+
+# Download YOLOv8s ONNX model (if needed)
+make download-model
+```
+
+## Running the Application
+
+```bash
+# Run with default camera
+make run
+
+# Run with a specific video file
+make run-video VIDEO=path/to/your/video.mp4
+
+# Run test scenarios
+make run-tests
+```
+
+## Command-Line Options
+
+The application accepts the following command-line options:
+
+```
+Usage: ./bin/yolo_tracker [options]
+Options:
+  --video <path>       : Path to video file (default: use camera)
+  --model <path>       : Path to YOLOv8 ONNX model (default: models/yolov8s.onnx)
+  --conf <threshold>   : Confidence threshold (default: 0.25)
+  --nms <threshold>    : NMS threshold (default: 0.45)
+  --camera <id>        : Camera device ID (default: 0)
+  --show-detections    : Show raw detections (default: true)
+  --show-tracks        : Show tracked objects (default: true)
+  --show-fps           : Show FPS and performance metrics (default: true)
+  --run-tests          : Run test scenarios for occlusion and fast movement
+  --help               : Show this help message
+```
+
+## Implementation Details
+
+### Detector
+
+The `Detector` class loads the YOLOv8 model using OpenCV's DNN module with CUDA acceleration and provides methods for detecting objects in frames. It handles preprocessing of input frames, running inference on the model, and post-processing of detections.
+
+### KalmanTracker
+
+The `KalmanTracker` class implements object tracking using Kalman Filter. It maintains a collection of tracked objects, associates new detections with existing tracks, and predicts the state of objects when detections are missing.
+
+### ThreadSafeQueue
+
+The `ThreadSafeQueue` template class provides thread-safe operations for the Producer-Consumer pattern. It uses mutex and condition variables to ensure thread safety.
+
+### Viewer
+
+The `Viewer` class is responsible for displaying detection and tracking results. It provides methods for drawing bounding boxes, tracking information, and performance metrics.
+
+## Performance Analysis
+
+- **Time Complexity**:
+  - Detection: O(n) where n is the number of pixels in the input frame
+  - Tracking: O(m*k) where m is the number of detections and k is the number of existing tracks
+  - The Hungarian algorithm for detection-track association is O(n³) in the worst case
+
+- **Memory Complexity**:
+  - O(n) for storing frame data
+  - O(m) for storing detections
+  - O(k) for storing tracks
+
+- **GPU Acceleration**:
+  - YOLOv8 inference is accelerated using CUDA
+  - Frame preprocessing and post-processing remain on CPU
+
+## Edge Cases and Error Handling
+
+The implementation handles the following edge cases:
+
+- Occlusion: The Kalman Filter predicts object positions during occlusion
+- Fast movement: The algorithm maintains tracks even with rapid object movement
+- Missing detections: Objects continue to be tracked for a configurable number of frames after detection is lost
+- Empty frames: The application gracefully handles empty or corrupted frames
+- Thread synchronization: The implementation ensures thread safety with proper synchronization primitives
+
+## License
+
+This project is open-source and available under the MIT License.
+
+## Acknowledgments
+
+- [OpenCV](https://opencv.org/) for computer vision algorithms and CUDA acceleration
+- [Ultralytics](https://github.com/ultralytics/ultralytics) for YOLOv8 model

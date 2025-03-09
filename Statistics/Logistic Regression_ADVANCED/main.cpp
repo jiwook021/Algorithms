@@ -4,6 +4,7 @@
 #include <random>
 #include <algorithm>
 #include <iomanip>
+#include <limits>
 
 // Structure for a data point with two features and a binary label
 struct DataPoint {
@@ -15,6 +16,32 @@ struct DataPoint {
     DataPoint(double feature1, double feature2, int class_label) 
         : x1(feature1), x2(feature2), label(class_label) {}
 };
+
+// Feature normalization function
+void normalize_features(std::vector<DataPoint>& dataset, double& min_x1, double& max_x1, double& min_x2, double& max_x2) {
+    // Find min and max for each feature
+    min_x1 = std::numeric_limits<double>::max();
+    max_x1 = std::numeric_limits<double>::lowest();
+    min_x2 = std::numeric_limits<double>::max();
+    max_x2 = std::numeric_limits<double>::lowest();
+    
+    for (const auto& dp : dataset) {
+        min_x1 = std::min(min_x1, dp.x1);
+        max_x1 = std::max(max_x1, dp.x1);
+        min_x2 = std::min(min_x2, dp.x2);
+        max_x2 = std::max(max_x2, dp.x2);
+    }
+    
+    // Normalize features to [0,1] range
+    for (auto& dp : dataset) {
+        dp.x1 = (dp.x1 - min_x1) / (max_x1 - min_x1);
+        dp.x2 = (dp.x2 - min_x2) / (max_x2 - min_x2);
+    }
+    
+    std::cout << "특성이 [0,1] 범위로 정규화되었습니다." << std::endl;
+    std::cout << "x1 (공부 시간) 범위: [" << min_x1 << ", " << max_x1 << "]" << std::endl;
+    std::cout << "x2 (조정된 IQ) 범위: [" << min_x2 << ", " << max_x2 << "]" << std::endl;
+}
 
 // Sigmoid function to compute probability (maps any value to range 0-1)
 double sigmoid(double z) {
@@ -37,6 +64,7 @@ private:
     double b;            // Bias term
     double learning_rate;
     int max_epochs;
+    double l2_lambda;    // L2 regularization strength
     
     // For early stopping
     int patience;
@@ -48,10 +76,11 @@ private:
     std::vector<double> val_losses;
 
 public:
-    // Constructor with early stopping parameters
-    LogisticRegression(double lr = 0.01, int epochs = 1000, int early_stop_patience = 5)
+    // Constructor with early stopping and regularization parameters
+    LogisticRegression(double lr = 0.001, int epochs = 1000, int early_stop_patience = 100, double lambda = 0.01)
         : w1(0.0), w2(0.0), b(0.0), 
           learning_rate(lr), max_epochs(epochs),
+          l2_lambda(lambda),
           patience(early_stop_patience), best_val_loss(INFINITY), patience_counter(0) {}
     
     // Compute model prediction for a single data point
@@ -77,14 +106,16 @@ public:
         return static_cast<double>(correct) / dataset.size() * 100.0;
     }
     
-    // Calculate average loss on a dataset
+    // Calculate average loss on a dataset (with L2 regularization)
     double calculate_loss(const std::vector<DataPoint>& dataset) const {
         double total_loss = 0.0;
         for (const auto& dp : dataset) {
             double pred = predict_probability(dp.x1, dp.x2);
             total_loss += binary_cross_entropy(dp.label, pred);
         }
-        return total_loss / dataset.size();
+        // Add L2 regularization term
+        double l2_term = 0.5 * l2_lambda * (w1*w1 + w2*w2);
+        return (total_loss / dataset.size()) + l2_term;
     }
     
     // Train the model using batch gradient descent with validation
@@ -129,10 +160,10 @@ public:
                 db += error;
             }
             
-            // Average gradients
-            dw1 /= n;
-            dw2 /= n;
-            db /= n;
+            // Average gradients and add L2 regularization
+            dw1 = dw1/n + l2_lambda * w1;
+            dw2 = dw2/n + l2_lambda * w2;
+            db /= n;  // No regularization for bias
             
             // Update parameters using gradient descent
             w1 -= learning_rate * dw1;
@@ -210,14 +241,14 @@ public:
                 std::cout << "- Higher values of feature 2 (adjusted IQ) decrease the probability of passing" << std::endl;
             }
             
-            // Example prediction interpretation
-            double threshold_x1 = -b / w1;  // When x2 = 0
-            double threshold_x2 = -b / w2;  // When x1 = 0
+            // // Example prediction interpretation
+            // double threshold_x1 = -b / w1;  // When x2 = 0
+            // double threshold_x2 = -b / w2;  // When x1 = 0
             
-            std::cout << "- With no adjusted IQ advantage (x2=0), you need to study about " 
-                      << std::max(0.0, threshold_x1) << " hours to have a 50% chance of passing" << std::endl;
-            std::cout << "- With no study (x1=0), you need an adjusted IQ advantage of about " 
-                      << std::max(0.0, threshold_x2) << " points to have a 50% chance of passing" << std::endl;
+            // std::cout << "- With no adjusted IQ advantage (x2=0), you need to study about " 
+            //           << std::max(0.0, threshold_x1) << " hours to have a 50% chance of passing" << std::endl;
+            // std::cout << "- With no study (x1=0), you need an adjusted IQ advantage of about " 
+            //           << std::max(0.0, threshold_x2) << " points to have a 50% chance of passing" << std::endl;
         }
     }
     
@@ -240,9 +271,8 @@ train_test_split(const std::vector<DataPoint>& dataset, double test_size = 0.2) 
     // Create a copy of the dataset
     std::vector<DataPoint> data = dataset;
     
-    // Shuffle the data
-    std::random_device rd;
-    std::mt19937 g(rd());
+    // Shuffle the data with fixed seed for reproducibility
+    std::mt19937 g(42);  // Fixed seed
     std::shuffle(data.begin(), data.end(), g);
     
     // Calculate split point
@@ -262,6 +292,7 @@ int main() {
     
     // Create dataset: {study hours, IQ points above baseline, pass/fail}
     std::vector<DataPoint> dataset = {
+        // 원본 데이터
         {2.0, 30, 0},  // 2 hours of study, IQ 110 (110-80=30), Fail
         {3.0, 30, 0},  // 3 hours of study, IQ 110 (110-80=30), Fail
         {5.0, 40, 1},  // 5 hours of study, IQ 120 (120-80=40), Pass
@@ -273,8 +304,61 @@ int main() {
         {6.5, 45, 1},
         {2.5, 25, 0},
         {5.5, 45, 1},
-        {3.0, 40, 0}
+        {3.0, 40, 0},
+        
+        // 추가 데이터 (기존 패턴 유지)
+        {1.5, 25, 0},  // 낮은 공부시간, 낮은 IQ, 불합격
+        {2.2, 35, 0},  // 낮은 공부시간, 중간 IQ, 불합격
+        {2.7, 28, 0},  // 낮은 공부시간, 낮은 IQ, 불합격
+        {3.2, 32, 0},  // 낮은 공부시간, 중간 IQ, 불합격
+        {3.8, 38, 0},  // 중간 공부시간, 중간 IQ, 불합격
+        {4.2, 35, 0},  // 중간 공부시간, 중간 IQ, 불합격
+        {4.8, 42, 1},  // 중간 공부시간, 높은 IQ, 합격
+        {5.2, 38, 1},  // 높은 공부시간, 중간 IQ, 합격
+        {5.8, 45, 1},  // 높은 공부시간, 높은 IQ, 합격
+        {6.2, 40, 1},  // 높은 공부시간, 높은 IQ, 합격
+        {6.8, 48, 1},  // 높은 공부시간, 높은 IQ, 합격
+        {7.5, 45, 1},  // 높은 공부시간, 높은 IQ, 합격
+        
+        // 경계 케이스 (약간의 노이즈 포함)
+        {4.5, 35, 0},  // 경계선상, 불합격
+        {4.8, 36, 1},  // 경계선상, 합격
+        {5.0, 35, 0},  // 경계선상, 불합격
+        {5.2, 36, 1},  // 경계선상, 합격
+        {4.0, 42, 1},  // 낮은 공부시간, 높은 IQ, 합격
+        {6.0, 32, 1},  // 높은 공부시간, 낮은 IQ, 합격
+        {3.8, 45, 1},  // 낮은 공부시간, 높은 IQ, 합격
+        {5.5, 30, 0},  // 높은 공부시간, 낮은 IQ, 불합격
+        
+        // 다양한 추가 데이터
+        {1.0, 20, 0},  // 매우 낮은 공부시간, 매우 낮은 IQ, 불합격
+        {8.0, 55, 1},  // 매우 높은 공부시간, 매우 높은 IQ, 합격
+        {2.0, 50, 0},  // 낮은 공부시간, 높은 IQ, 불합격 
+        {7.0, 25, 1},  // 높은 공부시간, 낮은 IQ, 합격
+        {3.5, 45, 1},  // 중간 공부시간, 높은 IQ, 합격
+        {6.5, 35, 1},  // 높은 공부시간, 중간 IQ, 합격
+        {4.2, 30, 0},  // 중간 공부시간, 낮은 IQ, 불합격
+        {5.5, 40, 1},  // 높은 공부시간, 중간 IQ, 합격
+        
+        // 극단적 케이스
+        {9.0, 60, 1},  // 매우 높은 공부시간, 매우 높은 IQ, 합격
+        {0.5, 15, 0},  // 매우 낮은 공부시간, 매우 낮은 IQ, 불합격
+        {8.5, 30, 1},  // 매우 높은 공부시간, 낮은 IQ, 합격
+        {1.5, 55, 0},  // 매우 낮은 공부시간, 매우 높은 IQ, 불합격 
+        
+        // 분류 경계를 더 명확히 하는 추가 데이터
+        {4.7, 38, 0},  // 경계선상, 불합격
+        {4.9, 39, 1},  // 경계선상, 합격
+        {5.1, 37, 1},  // 경계선상, 합격 
+        {4.6, 41, 1},  // 경계선상, 합격
+        {5.3, 34, 0},  // 경계선상, 불합격
     };
+    
+    // 특성 정규화 - 미리 저장할 변수들
+    double min_x1, max_x1, min_x2, max_x2;
+    
+    // 데이터셋 정규화
+    normalize_features(dataset, min_x1, max_x1, min_x2, max_x2);
     
     // Split data into training and validation sets
     auto [train_data, val_data] = train_test_split(dataset, 0.25);
@@ -282,8 +366,8 @@ int main() {
     std::cout << "Training with " << train_data.size() << " examples" << std::endl;
     std::cout << "Validating with " << val_data.size() << " examples" << std::endl;
     
-    // Initialize logistic regression model
-    LogisticRegression model(0.01, 10000, 10);  // Learning rate, max epochs, patience
+    // Initialize logistic regression model with improved parameters
+    LogisticRegression model(0.01, 10000, 1000, 0.01);  // Learning rate, max epochs, patience, L2 lambda
     
     // Train the model
     model.fit(train_data, val_data);
@@ -297,14 +381,18 @@ int main() {
     // Adjust IQ to be relative to baseline
     double adjusted_iq = iq - baseline_iq;
     
-    // Make prediction
-    double prob = model.predict_probability(study_hours, adjusted_iq);
-    int predicted_class = model.predict_class(study_hours, adjusted_iq);
+    // Normalize user inputs using the same scaling as training data
+    double normalized_study = (study_hours - min_x1) / (max_x1 - min_x1);
+    double normalized_iq = (adjusted_iq - min_x2) / (max_x2 - min_x2);
+    
+    // Make prediction with normalized inputs
+    double prob = model.predict_probability(normalized_study, normalized_iq);
+    int predicted_class = model.predict_class(normalized_study, normalized_iq);
     
     // Display results with interpretation
     std::cout << "\nPrediction Results:" << std::endl;
-    std::cout << "Study Hours: " << study_hours << std::endl;
-    std::cout << "IQ: " << iq << " (adjusted: " << adjusted_iq << " above baseline)" << std::endl;
+    std::cout << "Study Hours: " << study_hours << " (normalized: " << normalized_study << ")" << std::endl;
+    std::cout << "IQ: " << iq << " (adjusted: " << adjusted_iq << ", normalized: " << normalized_iq << ")" << std::endl;
     std::cout << "Probability of passing: " << std::fixed << std::setprecision(2) << prob * 100 << "%" << std::endl;
     std::cout << "Predicted outcome: " << (predicted_class ? "PASS" : "FAIL") << std::endl;
     
