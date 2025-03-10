@@ -2,3 +2,5 @@ nonupstream/**
 sample
 *.avi
 *.mp4
+readall/*
+readall 
