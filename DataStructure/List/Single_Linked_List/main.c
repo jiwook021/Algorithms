@@ -170,6 +170,26 @@ int compare_ints(const void* a, const void* b)
     return 0;
 }
 
+void free_list(list* l)
+{
+    if (l == NULL)
+        return;
+    
+    // 모든 노드 해제
+    node* current = l->head;
+    node* next;
+    
+    while (current != NULL)
+    {
+        next = current->next;  // 현재 노드를 해제하기 전에 다음 노드 저장
+        free(current);         // 현재 노드 해제
+        current = next;        // 다음 노드로 이동
+    }
+    
+    // 리스트 구조체 자체 해제
+    free(l);
+}
+
 int main()
 {
     list* l = init();
@@ -187,8 +207,9 @@ int main()
     print(l);
     reverselist(l);
     print(l);
+    free_list(l);
     // Delete(l,1);
-    // print(l);
+
     // Delete(l,5);
     // print(l);
     // Delete(l,3);
