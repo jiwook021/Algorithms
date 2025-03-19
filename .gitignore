@@ -6,3 +6,9 @@ readall/*
 readall 
 .vs*
 .env
+code_docs_generator.py
+scriptgpt.py
+scriptClaude.py
+*.md
+code_analyzer*
+openaiQuestion*
