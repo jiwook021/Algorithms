@@ -1,0 +1,46 @@
+
+### **🔹 Embedded Systems & C++ (Your Core Skills)**
+- How does **memory alignment** affect performance in C++?
+- How can I create an **efficient memory allocator** for embedded systems?
+- What are **lock-free data structures**, and when should I use them?
+- Can I optimize my **C++ code for cache efficiency**? 
+- How does **YOLO (You Only Look Once)** work for object detection?
+- How can I make a **simple lane detection system** for self-driving cars?
+- Can I build an **AI drone that follows me** using OpenCV?
+- How do **ORB-SLAM and visual odometry** work in robotics?
+- How do I optimize **real-time video processing** on embedded hardware?
+- Can I use **tinyML to deploy AI on microcontrollers**?
+- How do GPUs accelerate **computer vision inference?**
+- How does **morphological image processing** improve object detection?
+- What are **SIMD, SIMT, and warps** in GPUs?
+- How do GPUs handle **thread divergence**, and why is it bad?
+- What’s the role of **shared memory vs. global memory** in CUDA?
+- What happens if two GPU threads **access the same memory location**?
+- How does **hyper-threading in CPUs** compare to **warps in GPUs**?
+- How can I make a **drone fly autonomously** using PID control?
+- How does **sensor fusion** work in drones? (IMU + GPS)
+- What’s the best way to implement **waypoint navigation**?
+- How can I build a **collision avoidance system** using OpenCV?
+- How do **quaternions** help with drone orientation?
+- How do I make a **gimbal stabilization system** for smooth camera footage?
+- How do **radio communication protocols** (like MAVLink) work for drones?
+- What happens when you **type a URL in the browser**?
+- How does **syscall execution** work in Linux?
+- Can I write a **simple OS kernel from scratch**?
+- How does **virtual memory work**, and why do we need paging?
+- What is a **deadlock**, and how can we prevent it?
+- What is the **SOLID principle**, and how does it apply to embedded systems?
+- What’s the difference between **synchronous and asynchronous programming**?
+- What are **lock-free programming techniques**, and when should I use them?
+- What’s the best way to write a **high-performance network server**?
+- How do **branch prediction failures** affect CPU performance?
+- What’s the impact of **cache misses** on modern CPUs?
+- What are some **fun ways to optimize C++ code**?
+- Can I make a **DIY self-balancing robot**?
+- How can I use **neural networks to generate music?**
+- What’s the **craziest bug ever found in a computer system?**
+- How can I write **a tiny chess engine in C++**?
+- How does **3D rendering work in games?**
+- Can I build a **voice-controlled AI assistant from scratch**?
+- What’s the best way to simulate **physics in a video game?**
+- Can I create a **simple physics-based animation using C++ & OpenGL?**

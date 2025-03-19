@@ -1,0 +1,44 @@
+* How does `malloc`/`free` compare to `new`/`delete` in C++?
+* When should you use `shared_ptr`, `unique_ptr`, and `weak_ptr` in C++?
+* Implement a thread-safe queue using `std::mutex` or `std::condition_variable`.
+* Explain how `std::map`, `std::unordered_map`, and `std::vector` work internally.
+* Explain the role of RAII in modern C++.
+* How do you use `epoll` or `select` in C++?
+* Implement a simple TCP client/server in C++.
+* Implement BFS/DFS, Dijkstra's algorithm, or a heap-based priority queue in Python.
+* How does Python handle multiple inheritance? What is the MRO (Method Resolution Order)?
+* What's the difference between Python's `multiprocessing` and `threading` modules?
+* How would you log and debug issues in a distributed system?
+* How would you handle large JSON log processing in Python?
+* How would you design a robotic simulation system using C++ or Python?
+* What is the role of Gazebo or ROS in robotic simulation?
+* How would you optimize a robotic fleet's data logging and observability?
+* How do you implement a CI/CD pipeline for a robotic software stack?
+* What is kinematics, and how does it relate to robotic movement?
+* How would you visualize robotic sensor data in a dashboard?
+* How do you implement real-time control for a robotic system?
+* What is the difference between open-loop and closed-loop control?
+* How would you handle failures in an autonomous robotic fleet?
+* What strategies would you use to improve robot localization?
+* How do containers (Docker) work under the hood?
+* How do you optimize Docker images?
+* How does the Linux Kernel manage system resources?
+* How do you debug a memory leak in a Linux process?
+* What are cgroups and namespaces in Linux?
+* What is `strace`, and how would you use it for debugging?
+* How do you analyze CPU bottlenecks in a multi-threaded application?
+* How would you design a distributed robotic monitoring system that collects real-time data?
+* How would you architect a cloud-based data pipeline for robotic analytics?
+* How do you handle failure recovery in a robotics fleet at scale?
+* How would you design a logging system that aggregates metrics from thousands of robots?
+* Describe a CI/CD pipeline for robotic firmware and software deployment.
+* How would you handle large-scale logging and analytics for a robotics system?
+* How would you optimize a ROS-based system for low latency?
+* What are the trade-offs of using cloud computing vs. edge computing for robotics?
+* How would you design an alerting system for robotic failures in a warehouse environment?
+* How would you design a high-performance simulation tool for robotic testing?
+* How would you design a scalable logging system for robotic fleets using AWS?
+* How do you set up and optimize AWS Lambda functions?
+* Compare AWS S3, DynamoDB, and RDS for storing robotic logs.
+* How do you secure robotic data in a cloud-based infrastructure?
+* How would you design a cloud-based data ingestion and processing pipeline for real-time robotics monitoring?
