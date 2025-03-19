@@ -134,8 +134,6 @@ def exponential_backoff(attempt, base_delay=2, max_delay=30):
     jitter = random.uniform(0.8, 1.2)
     return delay * jitter
 
-
-
 def request_svg_diagrams(prompt, model_name, max_retries=5):
     """ Request multiple SVG diagrams from Claude's API with exponential backoff retry logic. """
     for attempt in range(max_retries):
