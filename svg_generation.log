@@ -1,0 +1,38 @@
+2025-03-18 20:30:53,701 - INFO - Found 226 pending files, 0 completed, 0 failed
+2025-03-18 20:30:53,702 - INFO - Starting batch processing with throttle delay of 5s
+2025-03-18 20:30:53,702 - INFO - Processing batch of up to 5 files
+2025-03-18 20:30:53,702 - INFO - Processing: ./script.py
+2025-03-18 20:30:53,924 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-03-18 20:30:53,925 - ERROR - API Error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-sonnet-20240229'}}
+2025-03-18 20:30:53,925 - ERROR - The model 'claude-3-sonnet-20240229' was not found. Please check the model name.
+2025-03-18 20:30:53,925 - ERROR - Failed to generate SVGs for ./script.py
+2025-03-18 20:30:53,926 - INFO - Throttling for 5 seconds before next file...
+2025-03-18 20:30:58,927 - INFO - Processing: ./readall/script.py
+2025-03-18 20:30:59,121 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-03-18 20:30:59,122 - ERROR - API Error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-sonnet-20240229'}}
+2025-03-18 20:30:59,122 - ERROR - The model 'claude-3-sonnet-20240229' was not found. Please check the model name.
+2025-03-18 20:30:59,122 - ERROR - Failed to generate SVGs for ./readall/script.py
+2025-03-18 20:30:59,122 - INFO - Throttling for 5 seconds before next file...
+2025-03-18 20:31:04,123 - INFO - Processing: ./AI/ReinforcementLearning/Self-tuning-PID-Controller-Reinforcement-Learning/main.cpp
+2025-03-18 20:31:04,341 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-03-18 20:31:04,343 - ERROR - API Error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-sonnet-20240229'}}
+2025-03-18 20:31:04,343 - ERROR - The model 'claude-3-sonnet-20240229' was not found. Please check the model name.
+2025-03-18 20:31:04,343 - ERROR - Failed to generate SVGs for ./AI/ReinforcementLearning/Self-tuning-PID-Controller-Reinforcement-Learning/main.cpp
+2025-03-18 20:31:04,344 - INFO - Throttling for 5 seconds before next file...
+2025-03-18 20:31:07,364 - INFO - Script interrupted by user. Exiting gracefully.
+2025-03-18 20:32:04,003 - INFO - Found 223 pending files, 0 completed, 3 failed
+2025-03-18 20:32:04,004 - INFO - Starting batch processing with throttle delay of 5s
+2025-03-18 20:32:04,004 - INFO - Processing batch of up to 5 files
+2025-03-18 20:32:04,004 - INFO - Processing: ./AI/ReinforcementLearning/QLearning/main.cpp
+2025-03-18 20:32:04,245 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-03-18 20:32:04,247 - ERROR - API Error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-sonnet-20240229'}}
+2025-03-18 20:32:04,247 - ERROR - The model 'claude-3-sonnet-20240229' was not found. Please check the model name.
+2025-03-18 20:32:04,247 - ERROR - Failed to generate SVGs for ./AI/ReinforcementLearning/QLearning/main.cpp
+2025-03-18 20:32:04,248 - INFO - Throttling for 5 seconds before next file...
+2025-03-18 20:32:09,249 - INFO - Processing: ./AI/ReinforcementLearning/TaskPriorityRL/main.cpp
+2025-03-18 20:32:09,460 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-03-18 20:32:09,461 - ERROR - API Error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-sonnet-20240229'}}
+2025-03-18 20:32:09,461 - ERROR - The model 'claude-3-sonnet-20240229' was not found. Please check the model name.
+2025-03-18 20:32:09,461 - ERROR - Failed to generate SVGs for ./AI/ReinforcementLearning/TaskPriorityRL/main.cpp
+2025-03-18 20:32:09,462 - INFO - Throttling for 5 seconds before next file...
+2025-03-18 20:32:10,900 - INFO - Script interrupted by user. Exiting gracefully.

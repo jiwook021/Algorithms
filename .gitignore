@@ -5,3 +5,4 @@ sample
 readall/*
 readall 
 .vs*
+.env
