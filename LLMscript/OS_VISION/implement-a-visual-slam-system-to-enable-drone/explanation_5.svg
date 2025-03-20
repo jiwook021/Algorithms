@@ -1,0 +1,38 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pose Estimation -->
+  <rect width="600" height="400" fill="#f0f0f0"/>
+  
+  <!-- 3D Coordinate System -->
+  <path d="M100 350 L100 50" stroke="#333"/>
+  <path d="M100 350 L500 350" stroke="#333"/>
+  <path d="M100 350 L50 300" stroke="#333"/>
+  <text x="90" y="40" font-size="12">Z</text>
+  <text x="510" y="340" font-size="12">X</text>
+  <text x="30" y="290" font-size="12">Y</text>
+  
+  <!-- Drone Positions -->
+  <g transform="translate(200 200)">
+    <path d="M-20 0 L20 0 M0 -20 L0 20" stroke="#ff4444"/>
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#ff4444"/>
+    <text x="25" y="5" font-size="12">Pose t</text>
+  </g>
+  
+  <g transform="translate(300 150)">
+    <path d="M-20 0 L20 0 M0 -20 L0 20" stroke="#44aa44"/>
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#44aa44"/>
+    <text x="25" y="5" font-size="12">Pose t+1</text>
+  </g>
+  
+  <!-- Transformation Arrow -->
+  <path d="M220 200 Q275 175 300 150" fill="none" stroke="#000" stroke-width="2"/>
+  <polygon points="300 150,295 140,305 140" fill="#000"/>
+  
+  <!-- Code Example -->
+  <rect x="50" y="300" width="500" height="80" fill="#e0e0e0" rx="5"/>
+  <text x="70" y="330" font-size="12" font-family="monospace">
+    <tspan fill="#0000ff">bool</tspan> estimatePose(</text>
+  <text x="90" y="350" font-size="12" font-family="monospace">
+    const vector&lt;Point2f&gt;&amp; pts1,</text>
+  <text x="90" y="370" font-size="12" font-family="monospace">
+    cv::Mat&amp; R, cv::Mat&amp; t <tspan fill="#008800">// Output pose</tspan>)</text>
+</svg>

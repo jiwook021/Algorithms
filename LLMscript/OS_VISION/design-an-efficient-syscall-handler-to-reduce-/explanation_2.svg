@@ -1,0 +1,33 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#f0f0f0"/>
+    <text x="300" y="30" text-anchor="middle" font-size="20">2. Shared Memory Regions</text>
+    
+    <!-- User Space -->
+    <rect x="50" y="80" width="200" height="240" fill="#c3d9ff" rx="5"/>
+    <text x="150" y="110" text-anchor="middle">User Space</text>
+    
+    <!-- Kernel Space -->
+    <rect x="350" y="80" width="200" height="240" fill="#ffd1dc" rx="5"/>
+    <text x="450" y="110" text-anchor="middle">Kernel Space</text>
+    
+    <!-- Shared Memory -->
+    <rect x="250" y="150" width="100" height="60" fill="#a0d468"/>
+    <text x="300" y="190" text-anchor="middle">Shared</text>
+    <text x="300" y="205" text-anchor="middle">Buffer</text>
+    
+    <!-- Data Flow -->
+    <path d="M150 180h100 M350 180h100" stroke="#666" stroke-dasharray="4"/>
+    <path d="M250 180v-30 M250 150h100 M350 150v30" stroke="#e74c3c" stroke-width="2"/>
+    <text x="300" y="280" text-anchor="middle" fill="#e74c3c">Single copy operation</text>
+    
+    <!-- Code Example -->
+    <g transform="translate(100 320)">
+        <text x="0" y="0" font-family="monospace" font-size="12">
+            <tspan x="0" dy="1.2em">// Shared memory struct</tspan>
+            <tspan x="0" dy="1.2em">struct SharedData {</tspan>
+            <tspan x="10" dy="1.2em">  atomic&lt;bool&gt; ready;</tspan>
+            <tspan x="10" dy="1.2em">  char buffer[4096];</tspan>
+            <tspan x="0" dy="1.2em">};</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .box { fill: #fff; stroke: #000; stroke-width: 2 }
+        .tlb { fill: #cfe2f3 }
+        .page { fill: #d9ead3 }
+        .data { fill: #f4cccc }
+        .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead) }
+        text { font-family: Arial, sans-serif; font-size: 14px }
+    </style>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon fill="#666" points="0 0, 10 3.5, 0 7"/>
+        </marker>
+    </defs>
+
+    <!-- TLB Structure -->
+    <rect x="50" y="50" width="200" height="300" class="box"/>
+    <rect x="60" y="60" width="180" height="40" class="tlb"/>
+    <text x="70" y="85">TLB Entry 1:</text>
+    <text x="160" y="85" fill="#1c4587">0xCAFE → 0x1ABC</text>
+    
+    <!-- Page Table -->
+    <rect x="350" y="50" width="200" height="300" class="box"/>
+    <rect x="360" y="60" width="180" height="40" class="page"/>
+    <text x="370" y="85">Page Table Entry:</text>
+    <text x="470" y="85" fill="#38761d">0xCAFE → ...</text>
+    
+    <!-- Access Flow -->
+    <path d="M300 200 L50 200 L50 100" class="arrow"/>
+    <path d="M300 200 L350 200 L350 100" class="arrow"/>
+    <path d="M50 140 L300 200 L350 140" class="arrow" stroke-dasharray="5,5"/>
+    
+    <!-- Labels -->
+    <text x="300" y="190" text-anchor="middle" fill="#cc0000">Virtual Address 0xCAFE</text>
+    <text x="150" y="320" text-anchor="middle">TLB Hit (1 cycle)</text>
+    <text x="450" y="320" text-anchor="middle">Page Walk (100+ cycles)</text>
+    
+    <!-- C++ Code -->
+    <rect x="50" y="340" width="500" height="50" fill="#f3f3f3"/>
+    <text x="60" y="360" font-family="monospace">// Contiguous memory access pattern</text>
+    <text x="60" y="380" font-family="monospace">for (int i=0; i&lt;1024; i++) buffer[i] = 0;</text>
+</svg>

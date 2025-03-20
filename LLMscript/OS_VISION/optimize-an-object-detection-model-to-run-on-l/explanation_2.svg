@@ -1,0 +1,44 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    
+    <!-- Title -->
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">Network Pruning</text>
+    
+    <!-- Original Network -->
+    <g transform="translate(50, 80)">
+        <text x="0" y="0" font-size="16" fill="#333">Dense Network:</text>
+        <rect x="0" y="20" width="250" height="100" fill="#e1bee7" rx="5"/>
+        <path d="M10 40 L240 40 M10 60 L240 60 M10 80 L240 80" stroke="#9c27b0" stroke-width="2"/>
+        <text x="125" y="140" text-anchor="middle">1M Parameters</text>
+    </g>
+    
+    <!-- Pruning Process -->
+    <g transform="translate(300, 80)">
+        <circle cx="0" cy="70" r="40" fill="#ffcdd2"/>
+        <text x="0" y="70" text-anchor="middle" fill="#c62828">Prune</text>
+        <text x="0" y="140" text-anchor="middle">Remove 80%</text>
+        <text x="0" y="160" text-anchor="middle">of connections</text>
+    </g>
+    
+    <!-- Pruned Network -->
+    <g transform="translate(450, 80)">
+        <text x="0" y="0" font-size="16" fill="#333">Sparse Network:</text>
+        <rect x="0" y="20" width="250" height="100" fill="#c5e1a5" rx="5"/>
+        <path d="M10 40 L100 40 M150 40 L240 40
+                 M30 60 L90 60 M120 60 L220 60
+                 M50 80 L80 80 M140 80 L200 80" 
+              stroke="#689f38" stroke-width="2"/>
+        <text x="125" y="140" text-anchor="middle">200K Parameters</text>
+    </g>
+    
+    <!-- Code Example -->
+    <g transform="translate(50, 200)">
+        <rect x="0" y="0" width="500" height="150" fill="#2d2d2d" rx="5"/>
+        <text x="10" y="30" fill="#fff" font-family="monospace" font-size="14">// C++ Pruning Implementation</text>
+        <text x="10" y="60" fill="#7ec699" font-family="monospace" font-size="14">void prune_weights(float* weights, int size) {</text>
+        <text x="20" y="80" fill="#7ec699" font-family="monospace" font-size="14">float threshold = calculate_threshold(weights);</text>
+        <text x="20" y="100" fill="#7ec699" font-family="monospace" font-size="14">for(int i=0; i&lt;size; i++) {</text>
+        <text x="30" y="120" fill="#7ec699" font-family="monospace" font-size="14">if(fabs(weights[i]) &lt; threshold) weights[i] = 0;</text>
+        <text x="20" y="140" fill="#7ec699" font-family="monospace" font-size="14">}}</text>
+    </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <!-- Virtual Memory -->
+    <rect x="50" y="50" width="200" height="300" fill="#b8e986"/>
+    <text x="150" y="80" fill="black" text-anchor="middle" font-size="16">Virtual Memory</text>
+    
+    <!-- Physical Memory -->
+    <rect x="350" y="100" width="200" height="150" fill="#bd10e0" opacity="0.8"/>
+    <text x="450" y="130" fill="white" text-anchor="middle" font-size="16">Physical Memory</text>
+    
+    <!-- Pages -->
+    <g transform="translate(60,100)">
+        <rect y="0" width="180" height="30" fill="white"/>
+        <text x="10" y="20" font-size="12">Page 0 (Loaded)</text>
+        <rect y="40" width="180" height="30" fill="#ff7675"/>
+        <text x="10" y="60" font-size="12">Page 1 (Not Present)</text>
+        <rect y="80" width="180" height="30" fill="white"/>
+        <text x="10" y="100" font-size="12">Page 2 (Loaded)</text>
+    </g>
+    
+    <!-- Demand Paging Flow -->
+    <path d="M250 150 L350 150 L350 175" stroke="#d0021b" fill="none" stroke-width="2" marker-end="url(#arrow2)"/>
+    <text x="300" y="140" fill="#d0021b" text-anchor="middle" font-size="12">Access Page 1</text>
+    
+    <!-- Loading Process -->
+    <path d="M450 175 L450 250 L300 250 L300 150" stroke="#4a90e2" fill="none" stroke-width="2" marker-end="url(#arrow2)"/>
+    <text x="375" y="220" fill="#4a90e2" text-anchor="middle" font-size="12" transform="rotate(-45 375 220)">Load from Disk</text>
+    
+    <!-- Code Example -->
+    <rect x="350" y="270" width="200" height="80" fill="#333"/>
+    <text x="360" y="290" fill="white" font-family="monospace" font-size="12">
+        <tspan x="360" y="290">void load_page_from_disk(PageTableEntry&amp; e) {</tspan>
+        <tspan x="370" y="310">    void* frame = alloc_frame();</tspan>
+        <tspan x="370" y="330">    disk_read(e.disk_addr, frame);</tspan>
+        <tspan x="360" y="350">}</tspan>
+    </text>
+    
+    <defs>
+        <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/>
+        </marker>
+    </defs>
+</svg>

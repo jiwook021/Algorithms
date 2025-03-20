@@ -1,0 +1,1 @@
+Design an algorithm to **estimate vehicle speed from a traffic camera video**.  

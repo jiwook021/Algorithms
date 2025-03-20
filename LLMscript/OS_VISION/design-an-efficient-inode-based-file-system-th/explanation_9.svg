@@ -1,0 +1,28 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect x="10" y="10" width="580" height="380" fill="#fffaf0" stroke="#333" stroke-width="2"/>
+    
+    <!-- Hash Table Structure -->
+    <rect x="50" y="50" width="500" height="60" fill="#e6e6fa" stroke="#9370db"/>
+    <text x="60" y="80" font-family="monospace" font-size="14">Directory Hash Table (Bucket Array)</text>
+    
+    <!-- Hash Buckets -->
+    <rect x="80" y="150" width="120" height="180" fill="#ffb6c1" stroke="#ff69b4"/>
+    <rect x="220" y="150" width="120" height="180" fill="#ffb6c1" stroke="#ff69b4"/>
+    <rect x="360" y="150" width="120" height="180" fill="#ffb6c1" stroke="#ff69b4"/>
+    
+    <!-- Linked List Entries -->
+    <rect x="100" y="170" width="80" height="40" fill="#f0e68c" stroke="#daa520"/>
+    <rect x="100" y="230" width="80" height="40" fill="#f0e68c" stroke="#daa520"/>
+    <rect x="240" y="170" width="80" height="40" fill="#f0e68c" stroke="#daa520"/>
+    <rect x="380" y="170" width="80" height="40" fill="#f0e68c" stroke="#daa520"/>
+    
+    <!-- Connection Lines -->
+    <line x1="140" y1="210" x2="140" y2="230" stroke="#666"/>
+    <line x1="140" y1="270" x2="140" y2="290" stroke="#666" stroke-dasharray="4"/>
+    
+    <!-- Code Sample -->
+    <text x="100" y="340" font-family="monospace" font-size="12">struct DirEntry {</text>
+    <text x="120" y="360" font-family="monospace" font-size="12" fill="#9370db">string filename;</text>
+    <text x="120" y="380" font-family="monospace" font-size="12" fill="#daa520">inode_ptr target;</text>
+    <text x="100" y="400" font-family="monospace" font-size="12">};</text>
+</svg>

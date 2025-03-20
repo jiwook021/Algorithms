@@ -1,0 +1,1 @@
+Implement **pose estimation** for human gesture recognition in real-time applications.  

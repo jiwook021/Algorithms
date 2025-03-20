@@ -1,0 +1,25 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="600" height="400" fill="#f0f0f0"/>
+  
+  <!-- True Path -->
+  <path d="M50 200 Q200 50 350 200 T650 200" stroke="#95a5a6" stroke-width="2" fill="none" stroke-dasharray="4 2"/>
+  
+  <!-- Measurements -->
+  <g transform="translate(0 200)">
+    <circle cx="80" cy="-180" r="3" fill="#e74c3c"/>
+    <circle cx="120" cy="-140" r="3" fill="#e74c3c"/>
+    <circle cx="200" cy="-90" r="3" fill="#e74c3c"/>
+    <circle cx="280" cy="-60" r="3" fill="#e74c3c"/>
+    <circle cx="360" cy="-30" r="3" fill="#e74c3c"/>
+    <circle cx="440" cy="10" r="3" fill="#e74c3c"/>
+    <circle cx="520" cy="50" r="3" fill="#e74c3c"/>
+  </g>
+  
+  <!-- Kalman Estimate -->
+  <path d="M50 200 Q200 80 350 200 T550 200" stroke="#2980b9" stroke-width="3" fill="none"/>
+  
+  <!-- Labels -->
+  <text x="30" y="220" font-family="Arial" font-size="12">True Path</text>
+  <text x="30" y="240" font-family="Arial" font-size="12" fill="#e74c3c">Measurements</text>
+  <text x="30" y="260" font-family="Arial" font-size="12" fill="#2980b9">Kalman Estimate</text>
+</svg>

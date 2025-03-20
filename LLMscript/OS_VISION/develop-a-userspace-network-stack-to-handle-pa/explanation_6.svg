@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    
+    <!-- Kernel Bypass Architecture -->
+    <rect x="50" y="50" width="200" height="300" fill="#ffcccc" rx="10"/>
+    <rect x="350" y="50" width="200" height="300" fill="#ccffcc" rx="10"/>
+    
+    <text x="150" y="40" font-family="monospace" font-size="14">Kernel Space</text>
+    <text x="450" y="40" font-family="monospace" font-size="14">User Space</text>
+    
+    <!-- Kernel Path -->
+    <path d="M150 100 v40 M150 170 v40 M150 240 v40" stroke="#666" stroke-width="2"/>
+    <text x="130" y="120" font-size="12">NIC Driver</text>
+    <text x="130" y="190" font-size="12">TCP/IP Stack</text>
+    <text x="130" y="260" font-size="12">Socket API</text>
+    
+    <!-- Userspace Path -->
+    <rect x="370" y="100" width="160" height="60" fill="#fff" rx="5"/>
+    <text x="380" y="130" font-family="monospace" font-size="12">DPDK/io_uring</text>
+    
+    <rect x="370" y="180" width="160" height="100" fill="#fff" rx="5"/>
+    <text x="380" y="210" font-family="monospace" font-size="10">struct rte_mbuf {</text>
+    <text x="390" y="230" font-family="monospace" font-size="10">void* buf_addr;</text>
+    <text x="390" y="250" font-family="monospace" font-size="10">uint16_t data_len;</text>
+    <text x="380" y="270" font-family="monospace" font-size="10">};</text>
+    
+    <path d="M350 150 h-50 M350 220 h-50" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M510 150 h50 M510 220 h50" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+        </marker>
+    </defs>
+</svg>

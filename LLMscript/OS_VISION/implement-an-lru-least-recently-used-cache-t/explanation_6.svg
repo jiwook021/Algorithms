@@ -1,0 +1,40 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .node { fill: #fff; stroke: #2e7d32; stroke-width: 2; }
+        .old-pos { fill: #ffcdd2; stroke: #c62828; }
+        .arrow { stroke: #6d4c41; stroke-width: 2; marker-end: url(#arrowhead); }
+        .text { font: 14px sans-serif; }
+        .highlight { fill: #fff9c4; }
+    </style>
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#6d4c41"/>
+        </marker>
+    </defs>
+    
+    <!-- Initial state -->
+    <rect x="100" y="150" width="80" height="40" class="old-pos" rx="3"/>
+    <rect x="200" y="150" width="80" height="40" class="node" rx="3"/>
+    <rect x="300" y="150" width="80" height="40" class="node" rx="3"/>
+    <rect x="400" y="150" width="80" height="40" class="node" rx="3"/>
+    <text x="140" y="140" class="text">Page 3</text>
+    <text x="240" y="140" class="text">Page 1</text>
+    <text x="340" y="140" class="text">Page 2</text>
+    
+    <!-- Access operation -->
+    <path d="M240 190 L240 230 Q240 250 140 250" stroke="#1976d2" stroke-width="2" fill="none"/>
+    <text x="240" y="270" class="text" text-anchor="middle">Access Page 1</text>
+    
+    <!-- Resulting state -->
+    <rect x="100" y="280" width="80" height="40" class="node" rx="3"/>
+    <rect x="200" y="280" width="80" height="40" class="old-pos" rx="3"/>
+    <rect x="300" y="280" width="80" height="40" class="node" rx="3"/>
+    <rect x="400" y="280" width="80" height="40" class="node" rx="3"/>
+    <text x="140" y="270" class="text">Page 1</text>
+    
+    <!-- Code example -->
+    <rect x="50" y="340" width="500" height="40" class="highlight" rx="5"/>
+    <text x="60" y="360" class="text">
+        <tspan x="60" dy="1.2em">void moveToHead(Node* node) { ... } // Reorder on access</tspan>
+    </text>
+</svg>

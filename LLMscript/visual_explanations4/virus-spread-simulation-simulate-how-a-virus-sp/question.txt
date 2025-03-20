@@ -1,1 +1,0 @@
-"Virus Spread Simulation": Simulate how a virus spreads in a network, predicting when it will infect all nodes.

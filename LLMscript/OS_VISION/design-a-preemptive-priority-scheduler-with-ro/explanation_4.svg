@@ -1,0 +1,37 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Priority Queue Structure -->
+    <rect x="50" y="50" width="500" height="300" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+    <text x="300" y="80" text-anchor="middle" font-size="18" font-weight="bold">Priority Queue Structure</text>
+    
+    <!-- High Priority Queue -->
+    <rect x="100" y="120" width="400" height="60" fill="#ffcccc" rx="5"/>
+    <text x="300" y="140" text-anchor="middle">Priority 0 (High)</text>
+    <rect x="120" y="160" width="80" height="30" fill="#fff" rx="3"/>
+    <rect x="220" y="160" width="80" height="30" fill="#fff" rx="3"/>
+    <text x="160" y="180" text-anchor="middle">Task A</text>
+    <text x="260" y="180" text-anchor="middle">Task B</text>
+
+    <!-- Medium Priority Queue -->
+    <rect x="100" y="210" width="400" height="60" fill="#ccffcc" rx="5"/>
+    <text x="300" y="230" text-anchor="middle">Priority 1</text>
+    <rect x="120" y="250" width="80" height="30" fill="#fff" rx="3"/>
+    <rect x="220" y="250" width="80" height="30" fill="#fff" rx="3"/>
+    <rect x="320" y="250" width="80" height="30" fill="#fff" rx="3"/>
+    <text x="160" y="270" text-anchor="middle">Task C</text>
+    <text x="260" y="270" text-anchor="middle">Task D</text>
+    <text x="360" y="270" text-anchor="middle">Task E</text>
+
+    <!-- Low Priority Queue -->
+    <rect x="100" y="300" width="400" height="60" fill="#ccccff" rx="5"/>
+    <text x="300" y="320" text-anchor="middle">Priority 2 (Low)</text>
+    <rect x="120" y="340" width="80" height="30" fill="#fff" rx="3"/>
+    <text x="160" y="360" text-anchor="middle">Task F</text>
+
+    <!-- Arrow -->
+    <path d="M300,90 L300,110" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+        </marker>
+    </defs>
+</svg>

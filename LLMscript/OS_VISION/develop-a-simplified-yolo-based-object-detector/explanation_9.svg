@@ -1,0 +1,32 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Non-Maximum Suppression -->
+    <rect width="600" height="400" fill="#fff"/>
+    
+    <!-- Original Boxes -->
+    <rect x="100" y="100" width="150" height="120" fill="none" stroke="#666" stroke-width="2"/>
+    <rect x="120" y="80" width="140" height="130" fill="none" stroke="#666" stroke-width="2"/>
+    <rect x="90" y="110" width="160" height="110" fill="none" stroke="#666" stroke-width="2"/>
+    <text x="100" y="70" font-size="14">Before NMS (Multiple Overlaps)</text>
+    
+    <!-- NMS Result -->
+    <rect x="130" y="90" width="130" height="125" fill="none" stroke="#ff4500" stroke-width="4"/>
+    <text x="400" y="70" font-size="14">After NMS (Single Box)</text>
+    
+    <!-- Algorithm Steps -->
+    <g transform="translate(400 100)">
+        <rect x="0" y="0" width="180" height="180" fill="#f8f8f8" rx="5"/>
+        <text x="10" y="20" font-size="12">1. Sort by confidence</text>
+        <text x="10" y="50" font-size="12">2. Select highest</text>
+        <text x="10" y="80" font-size="12">3. Suppress IoU > 0.5</text>
+        <text x="10" y="110" font-size="12">4. Repeat until done</text>
+    </g>
+    
+    <!-- C++ Code -->
+    <text x="50" y="350" font-size="10" fill="#333">
+        <tspan x="50" dy="0">void nms(std::vector&lt;Detection&gt;&amp; dets, float threshold) {</tspan>
+        <tspan x="70" dy="15">std::sort(dets.begin(), dets.end(), compare_conf);</tspan>
+        <tspan x="70" dy="15">for (auto&amp; d : dets) if (!d.suppressed) {</tspan>
+        <tspan x="90" dy="15">for (auto&amp; other : dets) suppress_overlaps(d, other);</tspan>
+        <tspan x="50" dy="15">}}</tspan>
+    </text>
+</svg>

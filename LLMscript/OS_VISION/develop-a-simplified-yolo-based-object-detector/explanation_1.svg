@@ -1,0 +1,31 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">Grid-based Object Detection</text>
+    
+    <!-- Image grid -->
+    <rect x="100" y="80" width="400" height="240" fill="none" stroke="#666" stroke-width="2"/>
+    <path d="M100 160h400M100 240h400M100 320h400M220 80v240M340 80v240" stroke="#999" stroke-dasharray="4"/>
+    
+    <!-- Detection cell highlight -->
+    <rect x="220" y="160" width="120" height="80" fill="none" stroke="#ff4444" stroke-width="3"/>
+    
+    <!-- Bounding box predictions -->
+    <rect x="250" y="180" width="80" height="50" fill="none" stroke="#44aaff" stroke-width="2"/>
+    <rect x="270" y="200" width="60" height="40" fill="none" stroke="#44aa44" stroke-width="2"/>
+    
+    <!-- Confidence scores -->
+    <text x="230" y="170" font-size="12" fill="#ff4444">Confidence: 0.92</text>
+    <text x="260" y="190" font-size="12" fill="#44aaff">(x:0.3,y:0.4)</text>
+    <text x="260" y="210" font-size="12" fill="#44aa44">(w:0.2,h:0.25)</text>
+    
+    <!-- C++ code example -->
+    <g transform="translate(50 300)">
+        <rect x="0" y="0" width="500" height="80" fill="#e0e0e0" rx="5"/>
+        <text x="10" y="20" font-family="monospace" font-size="12" fill="#333">
+            <tspan x="10" y="20">// Process grid cell predictions</tspan>
+            <tspan x="10" y="40">for (int grid_y = 0; grid_y &lt; GRID_SIZE; ++grid_y) {</tspan>
+            <tspan x="10" y="60">    for (int grid_x = 0; grid_x &lt; GRID_SIZE; ++grid_x) {</tspan>
+            <tspan x="20" y="80">        // Predict bounding boxes and confidence</tspan>
+        </text>
+    </g>
+</svg>

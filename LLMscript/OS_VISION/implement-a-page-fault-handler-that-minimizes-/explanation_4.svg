@@ -1,0 +1,45 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">Page Fault Handling Flow</text>
+    
+    <!-- Process -->
+    <rect x="50" y="60" width="120" height="60" fill="#cce5ff" stroke="#004085" rx="5"/>
+    <text x="110" y="95" fill="#002366">Process</text>
+    
+    <!-- Page Fault Trigger -->
+    <path d="M 170 90 L 240 90" stroke="#666" stroke-width="2"/>
+    <rect x="240" y="60" width="160" height="60" fill="#ffd6cc" stroke="#cc3300" rx="5"/>
+    <text x="270" y="95" fill="#cc3300">Page Fault Exception</text>
+    
+    <!-- Handler Flow -->
+    <path d="M 400 90 L 470 90" stroke="#666" stroke-width="2"/>
+    <rect x="470" y="60" width="120" height="60" fill="#d4edda" stroke="#155724" rx="5"/>
+    <text x="500" y="95" fill="#155724">Handler</text>
+    
+    <!-- Memory Access -->
+    <rect x="240" y="160" width="160" height="60" fill="#fff3cd" stroke="#856404" rx="5"/>
+    <text x="260" y="195" fill="#856404">Check Page Table</text>
+    <path d="M 320 120 L 320 160" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Disk Access -->
+    <rect x="240" y="240" width="160" height="60" fill="#e2e3e5" stroke="#383d41" rx="5"/>
+    <text x="250" y="275" fill="#383d41">Load from Disk</text>
+    <path d="M 320 200 L 320 240" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Code Example -->
+    <rect x="50" y="280" width="500" height="100" fill="#1e1e1e" rx="5"/>
+    <text x="60" y="300" font-size="14" fill="#9cdcfe">// Page fault handler pseudocode</text>
+    <text x="60" y="320" font-size="14" fill="#fff">
+        <tspan x="60" dy="18">void handle_page_fault(v_addr_t address) {</tspan>
+        <tspan x="80" dy="18">page = find_free_page();</tspan>
+        <tspan x="80" dy="18">load_page_from_disk(address, page);</tspan>
+        <tspan x="80" dy="18">update_page_table(address, page);</tspan>
+        <tspan x="60" dy="18">}</tspan>
+    </text>
+    
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+        </marker>
+    </defs>
+</svg>

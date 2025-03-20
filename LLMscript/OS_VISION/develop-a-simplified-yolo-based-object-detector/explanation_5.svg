@@ -1,0 +1,31 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <!-- Bounding Box Prediction -->
+    <rect x="200" y="120" width="200" height="160" fill="none" stroke="#666"/>
+    <rect x="250" y="160" width="80" height="60" fill="none" stroke="#00f" stroke-width="2"/>
+    <rect x="300" y="200" width="100" height="40" fill="none" stroke="#f00" stroke-width="2"/>
+    <path d="M250 160 L240 140 M300 200 L290 180" stroke="#666" marker-end="url(#arrow)"/>
+    <text x="150" y="100" font-size="18" text-anchor="middle">Bounding Box Predictions</text>
+    <text x="240" y="140" font-size="12">Prediction 1</text>
+    <text x="290" y="180" font-size="12">Prediction 2</text>
+    <!-- Parameter Labels -->
+    <g transform="translate(400 220)">
+        <text x="0" y="-30" font-size="12" fill="#333">Each prediction contains:</text>
+        <text x="0" y="-10" font-size="10" fill="#00f">• Center (x,y)</text>
+        <text x="0" y="10" font-size="10" fill="#00f">• Width/Height</text>
+        <text x="0" y="30" font-size="10" fill="#00f">• Confidence score</text>
+        <text x="0" y="50" font-size="10" fill="#00f">• Class probabilities</text>
+    </g>
+    <!-- C++ Struct -->
+    <g transform="translate(50 300)">
+        <rect x="0" y="0" width="500" height="80" fill="#e0e0e0" rx="5"/>
+        <text x="10" y="20" font-family="monospace" font-size="12">
+            <tspan fill="#0000ff">struct</tspan> Prediction {
+            <tspan x="20" dy="18"><tspan fill="#008800">float</tspan> center_x, center_y, width, height;</tspan>
+            <tspan x="20" dy="18"><tspan fill="#008800">float</tspan> confidence;</tspan>
+            <tspan x="20" dy="18"><tspan fill="#008800">float</tspan> class_probs[10];</tspan>
+            };
+        </text>
+    </g>
+    <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#666"/></marker></defs>
+</svg>

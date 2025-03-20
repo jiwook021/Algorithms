@@ -1,0 +1,1 @@
+Simulate **hyper-threading** by scheduling multiple logical cores sharing execution units.  

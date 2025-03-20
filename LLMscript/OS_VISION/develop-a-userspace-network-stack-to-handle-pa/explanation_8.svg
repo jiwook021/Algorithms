@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    
+    <!-- Protocol Processing Layers -->
+    <rect x="100" y="50" width="400" height="300" fill="#fff" rx="10"/>
+    
+    <!-- Protocol Stack -->
+    <rect x="150" y="100" width="300" height="40" fill="#ffb3ba"/>
+    <rect x="150" y="150" width="300" height="40" fill="#baffc9"/>
+    <rect x="150" y="200" width="300" height="40" fill="#bae1ff"/>
+    
+    <text x="280" y="125" font-family="monospace" font-size="14">Ethernet Frame</text>
+    <text x="295" y="175" font-family="monospace" font-size="14">IP Packet</text>
+    <text x="285" y="225" font-family="monospace" font-size="14">TCP Segment</text>
+    
+    <!-- Processing Flow -->
+    <path d="M300 250 v30 M300 300 q0 20 20 20 h100" stroke="#666" stroke-width="2"/>
+    <rect x="420" y="300" width="120" height="40" fill="#ffffba" rx="5"/>
+    <text x="430" y="325" font-family="monospace" font-size="12">Application</text>
+    
+    <!-- Code Sample -->
+    <text x="150" y="280" font-family="monospace" font-size="10">void process_packet(uint8_t* pkt) {</text>
+    <text x="170" y="300" font-family="monospace" font-size="10">ethhdr* eth = (ethhdr*)pkt;</text>
+    <text x="170" y="320" font-family="monospace" font-size="10">iphdr* ip = (iphdr*)(eth + 1);</text>
+    <text x="170" y="340" font-family="monospace" font-size="10">tcphdr* tcp = (tcphdr*)(ip + 1);</text>
+    <text x="150" y="360" font-family="monospace" font-size="10">}</text>
+</svg>

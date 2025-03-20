@@ -1,0 +1,43 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">State Restoration Process</text>
+    
+    <!-- Checkpoint File -->
+    <rect x="50" y="100" width="200" height="80" rx="10" fill="#fff" stroke="#FF5722" stroke-width="2"/>
+    <text x="150" y="130" text-anchor="middle" fill="#FF5722">Checkpoint File</text>
+    <text x="150" y="160" text-anchor="middle" font-size="12" fill="#666">(version 3)</text>
+    
+    <!-- Restored Process -->
+    <rect x="350" y="60" width="200" height="300" rx="10" fill="#fff" stroke="#4CAF50" stroke-width="2"/>
+    <text x="450" y="90" text-anchor="middle" fill="#4CAF50">Restored Process</text>
+    
+    <!-- Memory Segments -->
+    <rect x="370" y="110" width="160" height="40" fill="#89DDFF" rx="5"/>
+    <text x="450" y="135" text-anchor="middle" fill="#000">Stack</text>
+    <rect x="370" y="160" width="160" height="40" fill="#C3E88D" rx="5"/>
+    <text x="450" y="185" text-anchor="middle" fill="#000">Heap</text>
+    <rect x="370" y="210" width="160" height="40" fill="#FFCB6B" rx="5"/>
+    <text x="450" y="235" text-anchor="middle" fill="#000">Registers</text>
+    
+    <!-- Arrow -->
+    <path d="M250 140 L350 140" stroke="#666" stroke-width="2" marker-end="url(#restoreArrow)"/>
+    <text x="300" y="130" text-anchor="middle" fill="#666" font-size="12">Deserialize &amp; Restore</text>
+    
+    <!-- Code Example -->
+    <g transform="translate(50 200)">
+        <rect width="240" height="130" fill="#263238" rx="5"/>
+        <text x="10" y="20" font-family="monospace" font-size="12" fill="#C3E88D">int main() {</text>
+        <text x="20" y="40" font-family="monospace" font-size="12" fill="#89DDFF">  if (recovery_needed()) {</text>
+        <text x="30" y="60" font-family="monospace" font-size="12" fill="#fff">    ProcessState state;</text>
+        <text x="30" y="80" font-family="monospace" font-size="12" fill="#fff">    load_checkpoint(state);</text>
+        <text x="30" y="100" font-family="monospace" font-size="12" fill="#fff">    restore_process(state);</text>
+        <text x="20" y="120" font-family="monospace" font-size="12" fill="#89DDFF">  }</text>
+        <text x="10" y="140" font-family="monospace" font-size="12" fill="#C3E88D">}</text>
+    </g>
+    
+    <defs>
+        <marker id="restoreArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+        </marker>
+    </defs>
+</svg>

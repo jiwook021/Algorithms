@@ -1,0 +1,31 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect x="10" y="10" width="580" height="380" fill="#f0f8ff" stroke="#333" stroke-width="2"/>
+    
+    <!-- Inode Structure -->
+    <rect x="30" y="30" width="200" height="340" fill="#e0ffff" stroke="#0066cc" stroke-width="2"/>
+    <text x="40" y="60" font-family="monospace" font-size="14">struct inode {</text>
+    <text x="60" y="90" font-family="monospace" font-size="14" fill="#666">mode_t mode;</text>
+    <text x="60" y="120" font-family="monospace" font-size="14" fill="#666">size_t size;</text>
+    <text x="60" y="150" font-family="monospace" font-size="14" fill="#ff4444">block_ptr direct[12];</text>
+    <text x="60" y="180" font-family="monospace" font-size="14" fill="#ffa500">block_ptr indirect;</text>
+    <text x="60" y="210" font-family="monospace" font-size="14" fill="#9932cc">block_ptr dbl_indirect;</text>
+    <text x="40" y="240" font-family="monospace" font-size="14">};</text>
+    
+    <!-- Data Blocks -->
+    <rect x="260" y="100" width="60" height="30" fill="#90ee90" stroke="#228b22"/>
+    <text x="270" y="120" font-family="monospace" font-size="12">Data Block</text>
+    
+    <!-- Indirect Block -->
+    <rect x="350" y="50" width="80" height="150" fill="#ffd700" stroke="#ff8c00"/>
+    <text x="355" y="70" font-family="monospace" font-size="12">Indirect Block</text>
+    <line x1="230" y1="185" x2="350" y2="125" stroke="#ff8c00" stroke-width="2"/>
+    
+    <!-- Legend -->
+    <rect x="400" y="220" width="180" height="120" fill="white" stroke="#666"/>
+    <text x="410" y="240" font-family="sans-serif" font-size="12">Direct blocks (12)</text>
+    <rect x="410" y="250" width="20" height="15" fill="#90ee90"/>
+    <text x="410" y="280" font-family="sans-serif" font-size="12">Single indirect</text>
+    <rect x="410" y="290" width="20" height="15" fill="#ffd700"/>
+    <text x="410" y="320" font-family="sans-serif" font-size="12">Double indirect</text>
+    <rect x="410" y="330" width="20" height="15" fill="#9932cc"/>
+</svg>

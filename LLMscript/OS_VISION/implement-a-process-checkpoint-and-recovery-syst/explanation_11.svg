@@ -1,0 +1,30 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  
+  <!-- Crash Illustration -->
+  <rect x="150" y="100" width="300" height="80" fill="#ffe6e6" rx="10"/>
+  <text x="300" y="140" text-anchor="middle" font-family="Arial" font-size="16" fill="#cc0000">CRASH EVENT</text>
+  
+  <!-- Recovery Flow -->
+  <path d="M300 180 L300 240 M300 200 L270 220 M300 200 L330 220" stroke="#cc0000" stroke-width="2"/>
+  
+  <!-- Checkpoint File -->
+  <rect x="200" y="240" width="200" height="80" fill="#e6e6ff" rx="10"/>
+  <text x="300" y="270" text-anchor="middle" font-family="Arial" font-size="14">Checkpoint File</text>
+  <text x="300" y="290" text-anchor="middle" font-family="Arial" font-size="12">Last Known Good State</text>
+  
+  <!-- Recovery Process -->
+  <path d="M300 320 L300 360" stroke="#00cc00" stroke-width="2"/>
+  <polygon points="300 360, 290 355, 310 355" fill="#00cc00"/>
+  <rect x="150" y="360" width="300" height="30" fill="#e6ffe6" rx="5"/>
+  <text x="300" y="380" text-anchor="middle" font-family="Arial" font-size="14">Restored Process</text>
+  
+  <!-- C++ Recovery Code -->
+  <rect x="50" y="30" width="500" height="60" fill="#f0f0f0" rx="5"/>
+  <text x="60" y="50" font-family="monospace" font-size="12">
+    <tspan fill="#0000ff">int</tspan> main() {
+    <tspan x="60" dy="15" fill="#008800">// Restore from checkpoint</tspan>
+    <tspan x="60" dy="15">recover_process("checkpoint.bin");</tspan>
+    }
+  </text>
+</svg>

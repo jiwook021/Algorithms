@@ -1,0 +1,37 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#f0f0f0"/>
+    
+    <!-- Title -->
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">3. Downstream Task Fine-tuning</text>
+    
+    <!-- Pre-trained Encoder -->
+    <rect x="50" y="80" width="200" height="240" fill="#009688" rx="5"/>
+    <text x="150" y="200" text-anchor="middle" fill="#fff" font-size="16">Pre-trained</text>
+    <text x="150" y="220" text-anchor="middle" fill="#fff" font-size="16">Encoder</text>
+    
+    <!-- Frozen Layers -->
+    <rect x="70" y="100" width="160" height="40" fill="#00796B"/>
+    <text x="150" y="125" text-anchor="middle" fill="#fff">Frozen Backbone</text>
+    
+    <!-- Task-specific Head -->
+    <rect x="280" y="140" width="200" height="120" fill="#3F51B5" rx="5"/>
+    <text x="380" y="200" text-anchor="middle" fill="#fff">Classification</text>
+    <text x="380" y="220" text-anchor="middle" fill="#fff">Head</text>
+    
+    <!-- Arrows -->
+    <path d="M250 200 L280 200" stroke="#333" fill="none"/>
+    <path d="M480 200 L520 200" stroke="#333" fill="none"/>
+    
+    <!-- Code Example -->
+    <rect x="350" y="280" width="220" height="90" fill="#263238" rx="5"/>
+    <text x="360" y="300" font-size="12" fill="#fff" font-family="monospace">// C++ Fine-tuning Setup</text>
+    <text x="360" y="320" font-size="12" fill="#fff" font-family="monospace">auto model = load_pretrained();</text>
+    <text x="360" y="340" font-size="12" fill="#fff" font-family="monospace">model.freeze_encoder();</text>
+    <text x="360" y="360" font-size="12" fill="#fff" font-family="monospace">model.add_classifier(128);</text>
+    
+    <!-- Data Flow -->
+    <rect x="20" y="180" width="30" height="40" fill="#795548"/>
+    <text x="35" y="210" text-anchor="middle" fill="#fff" font-size="12">Input</text>
+    <rect x="550" y="180" width="30" height="40" fill="#8BC34A"/>
+    <text x="565" y="210" text-anchor="middle" fill="#333" font-size="12">Output</text>
+</svg>

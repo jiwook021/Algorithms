@@ -1,0 +1,38 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    
+    <!-- Extent Visualization -->
+    <text x="300" y="30" font-size="16" text-anchor="middle">Extent-Based Allocation</text>
+    
+    <!-- Traditional Blocks -->
+    <text x="100" y="60" font-size="12">Traditional:</text>
+    <g transform="translate(50 80)">
+        <rect x="0" y="0" width="40" height="40" fill="#d5a6bd"/>
+        <rect x="45" y="0" width="40" height="40" fill="#ffe599"/>
+        <rect x="90" y="0" width="40" height="40" fill="#b6d7a8"/>
+        <rect x="135" y="0" width="40" height="40" fill="#d5a6bd"/>
+    </g>
+    
+    <!-- Extent Blocks -->
+    <text x="100" y="160" font-size="12">Extent-Based:</text>
+    <g transform="translate(50 180)">
+        <rect x="0" y="0" width="175" height="40" fill="#a4c2f4"/>
+        <text x="87.5" y="25" font-size="12" text-anchor="middle" fill="#000">Start: 0x45A0</text>
+        <text x="87.5" y="40" font-size="12" text-anchor="middle" fill="#000">Length: 4 blocks</text>
+    </g>
+    
+    <!-- Code Example -->
+    <g transform="translate(50 250)">
+        <rect width="500" height="120" fill="#fff" rx="5"/>
+        <text x="20" y="30" font-family="monospace" font-size="12" fill="#000">
+            <tspan x="20" dy="1.2em">struct Extent {</tspan>
+            <tspan x="40" dy="1.2em">uint64_t start_block;</tspan>
+            <tspan x="40" dy="1.2em">uint32_t block_count;</tspan>
+            <tspan x="40" dy="1.2em">uint32_t flags;</tspan>
+            <tspan x="20" dy="1.2em">};</tspan>
+            <tspan x="20" dy="1.2em">struct Inode {</tspan>
+            <tspan x="40" dy="1.2em">Extent extents[6];</tspan>
+            <tspan x="20" dy="1.2em">};</tspan>
+        </text>
+    </g>
+</svg>

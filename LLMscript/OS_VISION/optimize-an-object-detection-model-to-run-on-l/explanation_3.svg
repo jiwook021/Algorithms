@@ -1,0 +1,46 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    
+    <!-- Title -->
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">Optimized Architecture (Depthwise Separable Conv)</text>
+    
+    <!-- Standard Conv -->
+    <g transform="translate(50, 80)">
+        <rect x="0" y="0" width="200" height="120" fill="#ffccbc" rx="5"/>
+        <text x="100" y="30" text-anchor="middle">Standard Conv</text>
+        <path d="M20 50 L180 50 M20 70 L180 70 M20 90 L180 90" stroke="#bf360c"/>
+        <text x="100" y="120" text-anchor="middle">FLOPs: 1.5M</text>
+    </g>
+    
+    <!-- Arrow -->
+    <path d="M280 140 L360 140" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="320" y="130" text-anchor="middle" fill="#666">Replace With</text>
+    
+    <!-- Depthwise Conv -->
+    <g transform="translate(400, 80)">
+        <rect x="0" y="0" width="200" height="120" fill="#b3e5fc" rx="5"/>
+        <text x="100" y="30" text-anchor="middle">Depthwise Separable</text>
+        <path d="M20 50 L100 50 M120 50 L180 50
+                 M20 70 L80 70 M100 70 L180 70
+                 M20 90 L60 90 M80 90 L180 90" 
+              stroke="#0277bd"/>
+        <text x="100" y="120" text-anchor="middle">FLOPs: 0.3M</text>
+    </g>
+    
+    <!-- Code Example -->
+    <g transform="translate(50, 200)">
+        <rect x="0" y="0" width="500" height="150" fill="#2d2d2d" rx="5"/>
+        <text x="10" y="30" fill="#fff" font-family="monospace" font-size="14">// C++ Depthwise Implementation</text>
+        <text x="10" y="60" fill="#7ec699" font-family="monospace" font-size="14">void depthwise_conv(float* input, float* output) {</text>
+        <text x="20" y="80" fill="#7ec699" font-family="monospace" font-size="14">for(int ch=0; ch&lt;channels; ch++) {</text>
+        <text x="30" y="100" fill="#7ec699" font-family="monospace" font-size="14">// Apply single filter per channel</text>
+        <text x="20" y="120" fill="#7ec699" font-family="monospace" font-size="14">}</text>
+        <text x="10" y="140" fill="#7ec699" font-family="monospace" font-size="14">}</text>
+    </g>
+    
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+        </marker>
+    </defs>
+</svg>

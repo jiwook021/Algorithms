@@ -1,0 +1,31 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">Round Robin Time Quantum</text>
+    
+    <!-- Time slices -->
+    <g transform="translate(100 100)">
+        <rect x="0" y="0" width="100" height="60" fill="#ffd700"/>
+        <rect x="100" y="0" width="100" height="60" fill="#90EE90"/>
+        <rect x="200" y="0" width="100" height="60" fill="#87CEEB"/>
+        <text x="50" y="35" text-anchor="middle">Task A</text>
+        <text x="150" y="35" text-anchor="middle">Task B</text>
+        <text x="250" y="35" text-anchor="middle">Task C</text>
+        <text x="400" y="30" fill="#333">Time Quantum (20ms)</text>
+        <path d="M0 70 L400 70" stroke="#333" stroke-dasharray="4"/>
+        <text x="50" y="90">0-20ms</text>
+        <text x="150" y="90">20-40ms</text>
+        <text x="250" y="90">40-60ms</text>
+    </g>
+    
+    <!-- Code example -->
+    <g transform="translate(50 200)">
+        <rect width="500" height="150" fill="#fff" rx="5"/>
+        <text x="20" y="30" font-family="monospace" fill="#333">struct Task {</text>
+        <text x="40" y="50" font-family="monospace" fill="#333">int id;</text>
+        <text x="40" y="70" font-family="monospace" fill="#333">int priority;</text>
+        <text x="40" y="90" font-family="monospace" fill="#333">int remaining_time;</text>
+        <text x="20" y="110" font-family="monospace" fill="#333">};</text>
+        <text x="20" y="140" font-family="monospace" fill="#333">// Round Robin scheduling:</text>
+        <text x="20" y="160" font-family="monospace" fill="#333">current_task = (current_task + 1) % queue.size();</text>
+    </g>
+</svg>

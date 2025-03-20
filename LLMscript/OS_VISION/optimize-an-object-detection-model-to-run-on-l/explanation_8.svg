@@ -1,0 +1,34 @@
+<svg viewBox="0 0 600 400" width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="300" y="30" text-anchor="middle" font-size="20" fill="#333">Network Pruning</text>
+    
+    <!-- Neural Network Visualization -->
+    <circle cx="100" cy="120" r="15" fill="#666"/>
+    <circle cx="100" cy="180" r="15" fill="#666"/>
+    <circle cx="100" cy="240" r="15" fill="#666"/>
+    
+    <circle cx="300" cy="100" r="15" fill="#666"/>
+    <circle cx="300" cy="160" r="15" fill="#666"/>
+    <circle cx="300" cy="220" r="15" fill="#666"/>
+    <circle cx="300" cy="280" r="15" fill="#666"/>
+    
+    <circle cx="500" cy="150" r="15" fill="#666"/>
+    <circle cx="500" cy="210" r="15" fill="#666"/>
+    
+    <!-- Connections -->
+    <path d="M115 120 L285 100" stroke="#999" stroke-width="2" stroke-dasharray="4"/>
+    <path d="M115 120 L285 160" stroke="#4a90e2" stroke-width="2"/>
+    <path d="M115 180 L285 220" stroke="#4a90e2" stroke-width="2"/>
+    <path d="M115 240 L285 280" stroke="#999" stroke-width="2" stroke-dasharray="4"/>
+    
+    <!-- Legend -->
+    <rect x="50" y="320" width="20" height="20" fill="#4a90e2"/>
+    <text x="80" y="335" fill="#333">Active connections</text>
+    <rect x="250" y="320" width="20" height="20" fill="#999"/>
+    <text x="280" y="335" fill="#333">Pruned connections</text>
+    
+    <!-- Code Example -->
+    <rect x="100" y="350" width="400" height="40" fill="#2d2d2d" rx="5"/>
+    <text x="110" y="375" fill="#7ec699" font-family="monospace" font-size="14">// Prune weights below threshold</text>
+    <text x="110" y="395" fill="#7ec699" font-family="monospace" font-size="14">if (fabs(weight) &lt; 0.1f) weight = 0;</text>
+</svg>

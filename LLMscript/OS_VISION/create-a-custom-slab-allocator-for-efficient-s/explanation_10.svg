@@ -1,0 +1,69 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+        text { font: 12px sans-serif; }
+        .header { fill: #cce5ff; }
+        .free-list { fill: #d4edda; }
+        .allocated { fill: #f8d7da; }
+        .code-bg { fill: #f8f9fa; }
+    </style>
+    
+    <!-- Slab structure -->
+    <rect x="50" y="50" width="500" height="300" rx="5" fill="#fff" stroke="#666"/>
+    
+    <!-- Slab header -->
+    <rect x="60" y="60" width="480" height="40" class="header" rx="3"/>
+    <text x="70" y="85">Slab Header (block_size=64, num_blocks=16, free_blocks=12)</text>
+    
+    <!-- Free list visualization -->
+    <rect x="60" y="120" width="200" height="40" class="free-list" rx="3"/>
+    <text x="70" y="145">Free List Head</text>
+    <path d="M140 140 l20 -5 M140 140 l20 5" stroke="#28a745"/>
+    
+    <!-- Free list chain -->
+    <circle cx="200" cy="140" r="5" fill="#28a745"/>
+    <path d="M200 140 l40 0 M220 135 l20 5 M220 145 l20 -5" stroke="#28a745"/>
+    <circle cx="260" cy="140" r="5" fill="#28a745"/>
+    <path d="M260 140 l40 0 M280 135 l20 5 M280 145 l20 -5" stroke="#28a745"/>
+    <circle cx="320" cy="140" r="5" fill="#28a745"/>
+    
+    <!-- Memory blocks -->
+    <g transform="translate(300 120)">
+        <rect x="0" y="0" width="240" height="200" fill="#fff" stroke="#ddd"/>
+        <text x="10" y="20">Memory Blocks (64 bytes each):</text>
+        
+        <!-- Allocated blocks -->
+        <rect x="10" y="30" width="50" height="30" class="allocated"/>
+        <text x="15" y="50">Allocated</text>
+        
+        <!-- Free blocks -->
+        <g transform="translate(70 30)">
+            <rect width="50" height="30" class="free-list"/>
+            <text x="5" y="20">Free</text>
+        </g>
+        
+        <g transform="translate(130 30)">
+            <rect width="50" height="30" class="free-list"/>
+            <text x="5" y="20">Free</text>
+        </g>
+    </g>
+    
+    <!-- C++ code example -->
+    <foreignObject x="60" y="180" width="220" height="160">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: monospace; background: #f8f9fa; padding: 10px; border-radius: 5px;">
+            <div style="color: #2f6f9f;">struct Slab {</div>
+            <div style="padding-left: 15px;">
+                <div>size_t block_size;</div>
+                <div>size_t num_blocks;</div>
+                <div>size_t free_blocks;</div>
+                <div>void** free_list;</div>
+            </div>
+            <div>};</div>
+            <div style="margin-top: 10px; color: #2f6f9f;">union Object {</div>
+            <div style="padding-left: 15px;">
+                <div>Object* next_free;</div>
+                <div>char data[block_size];</div>
+            </div>
+            <div>};</div>
+        </div>
+    </foreignObject>
+</svg>

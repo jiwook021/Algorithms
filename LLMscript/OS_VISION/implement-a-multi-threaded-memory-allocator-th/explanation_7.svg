@@ -1,0 +1,38 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Segregated Free Lists -->
+  <rect x="0" y="0" width="600" height="400" fill="#f0f0f0"/>
+  
+  <text x="300" y="30" text-anchor="middle" font-size="18" font-weight="bold">Segregated Free Lists by Size</text>
+  
+  <!-- Size Classes -->
+  <g transform="translate(50 60)">
+    <!-- 8-byte -->
+    <path d="M0 100 L80 100 L90 110 L80 120 L0 120 Z" fill="#a5d6a7"/>
+    <text x="40" y="115" text-anchor="middle">8B</text>
+    <rect x="100" y="100" width="400" height="20" fill="#c8e6c9"/>
+    <circle cx="510" y="110" r="6" fill="#2e7d32"/>
+    
+    <!-- 16-byte -->
+    <path d="M0 160 L80 160 L90 170 L80 180 L0 180 Z" fill="#81d4fa"/>
+    <text x="40" y="175" text-anchor="middle">16B</text>
+    <rect x="100" y="160" width="350" height="20" fill="#b3e5fc"/>
+    <circle cx="460" y="170" r="6" fill="#0277bd"/>
+    
+    <!-- 32-byte -->
+    <path d="M0 220 L80 220 L90 230 L80 240 L0 240 Z" fill="#fff59d"/>
+    <text x="40" y="235" text-anchor="middle">32B</text>
+    <rect x="100" y="220" width="300" height="20" fill="#fff9c4"/>
+    <circle cx="410" y="230" r="6" fill="#f9a825"/>
+  </g>
+  
+  <!-- Allocation Example -->
+  <g transform="translate(100 280)">
+    <rect x="0" y="0" width="400" height="80" fill="#263238" rx="3"/>
+    <text x="10" y="20" fill="#ffffff" font-family="monospace" font-size="14">
+      <tspan x="10" dy="1.2em">struct FreeList {</tspan>
+      <tspan x="20" dy="1.2em">void* head;</tspan>
+      <tspan x="20" dy="1.2em">size_t size_class;</tspan>
+      <tspan x="10" dy="1.2em">} segregated_lists[MAX_CLASSES];</tspan>
+    </text>
+  </g>
+</svg>

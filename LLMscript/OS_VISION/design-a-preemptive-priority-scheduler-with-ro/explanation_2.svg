@@ -1,0 +1,26 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">Preemption Mechanism</text>
+    
+    <!-- Timeline -->
+    <path d="M50 100 L550 100" stroke="#333" stroke-width="2"/>
+    
+    <!-- Task A execution -->
+    <rect x="50" y="80" width="200" height="40" fill="#87CEEB"/>
+    <text x="150" y="102" fill="#000">Task A (Priority 2)</text>
+    
+    <!-- Interrupting Task B -->
+    <rect x="250" y="50" width="200" height="40" fill="#90EE90"/>
+    <text x="350" y="72" fill="#000">Task B (Priority 1)</text>
+    <path d="M250 90 L230 70 L250 70" fill="#ff4444"/>
+    
+    <!-- Code snippet -->
+    <g transform="translate(50 150)">
+        <rect width="500" height="150" fill="#fff" rx="5"/>
+        <text x="20" y="30" font-family="monospace" fill="#333">while(true) {</text>
+        <text x="40" y="60" font-family="monospace" fill="#333">Task* highest = get_highest_priority_task();</text>
+        <text x="40" y="90" font-family="monospace" fill="#333">if (highest != current_task) {</text>
+        <text x="60" y="120" font-family="monospace" fill="#ff4444">preempt_current_task();</text>
+        <text x="60" y="150" font-family="monospace" fill="#333">context_switch(highest);</text>
+    </g>
+</svg>

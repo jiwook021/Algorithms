@@ -1,0 +1,24 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="300" y="30" text-anchor="middle" font-size="18">1. Parent Process Memory Layout</text>
+    
+    <!-- Parent Memory -->
+    <rect x="50" y="100" width="200" height="200" fill="#e0e0ff" stroke="#000"/>
+    <text x="150" y="120" text-anchor="middle">Parent Process</text>
+    
+    <!-- Pages -->
+    <rect x="70" y="150" width="160" height="30" fill="#aaccff"/>
+    <rect x="70" y="190" width="160" height="30" fill="#aaccff"/>
+    <rect x="70" y="230" width="160" height="30" fill="#aaccff"/>
+    <text x="150" y="170" text-anchor="middle">Read-Only</text>
+    <text x="150" y="210" text-anchor="middle">COW Page</text>
+    <text x="150" y="250" text-anchor="middle">COW Page</text>
+    
+    <!-- Page Table -->
+    <path d="M300 100 v200" stroke="#666" stroke-dasharray="4"/>
+    <rect x="320" y="100" width="200" height="200" fill="#ffe0e0" stroke="#000"/>
+    <text x="420" y="120" text-anchor="middle">Page Table</text>
+    <text x="350" y="150">PTE1: R/O</text>
+    <text x="350" y="190">PTE2: COW</text>
+    <text x="350" y="230">PTE3: COW</text>
+</svg>

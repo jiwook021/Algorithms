@@ -1,0 +1,47 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Max Pooling Explanation -->
+    <rect width="100%" height="100%" fill="#FAFAFA"/>
+    
+    <!-- Input Matrix -->
+    <rect x="50" y="50" width="160" height="160" fill="none" stroke="#4A90E2" stroke-width="2"/>
+    <text x="60" y="40" font-size="14" fill="#4A90E2">Input (4x4)</text>
+    <g transform="translate(50,50)">
+        <!-- 4x4 grid with numbers -->
+        <rect x="0" y="0" width="40" height="40" fill="#E0F0FF"/>
+        <text x="20" y="25" text-anchor="middle" fill="#000">2.1</text>
+        <!-- Repeat with values 1.5, 3.0, 4.2, etc. -->
+    </g>
+    
+    <!-- Pooling Windows -->
+    <rect x="60" y="60" width="80" height="80" fill="none" stroke="#F5A623" stroke-width="2"/>
+    <rect x="140" y="60" width="80" height="80" fill="none" stroke="#F5A623" stroke-width="2"/>
+    <rect x="60" y="140" width="80" height="80" fill="none" stroke="#F5A623" stroke-width="2"/>
+    <rect x="140" y="140" width="80" height="80" fill="none" stroke="#F5A623" stroke-width="2"/>
+    
+    <!-- Output Matrix -->
+    <rect x="300" y="100" width="80" height="80" fill="none" stroke="#50E3C2" stroke-width="2"/>
+    <text x="310" y="90" font-size="14" fill="#50E3C2">Output (2x2)</text>
+    <g transform="translate(300,100)">
+        <rect x="0" y="0" width="40" height="40" fill="#D0F5EB"/>
+        <text x="20" y="25" text-anchor="middle" fill="#000">4.2</text>
+        <!-- Other max values -->
+    </g>
+    
+    <!-- Code Example -->
+    <g transform="translate(50,250)">
+        <rect x="0" y="0" width="500" height="120" fill="#333" rx="5"/>
+        <text x="20" y="30" font-family="monospace" font-size="12" fill="#FFF">
+            <tspan x="20" dy="1.2em">void max_pool(float input[4][4], float output[2][2]) {</tspan>
+            <tspan x="40" dy="1.2em" fill="#F5A623">for (int i=0; i&lt;2; i++) { // Output rows</tspan>
+            <tspan x="40" dy="1.2em" fill="#F5A623">    for (int j=0; j&lt;2; j++) { // Output cols</tspan>
+            <tspan x="60" dy="1.2em" fill="#4A90E2">        float max_val = -FLT_MAX;</tspan>
+            <tspan x="60" dy="1.2em" fill="#50E3C2">        for (int m=0; m&lt;2; m++) {</tspan>
+            <tspan x="60" dy="1.2em" fill="#50E3C2">            for (int n=0; n&lt;2; n++) {</tspan>
+            <tspan x="80" dy="1.2em">                max_val = std::max(max_val,</tspan>
+            <tspan x="80" dy="1.2em">                    input[i*2+m][j*2+n]);</tspan>
+            <tspan x="60" dy="1.2em">            }}</tspan>
+            <tspan x="40" dy="1.2em">        output[i][j] = max_val;</tspan>
+            <tspan x="20" dy="1.2em">    }}</tspan>
+        </text>
+    </g>
+</svg>

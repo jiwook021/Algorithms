@@ -1,0 +1,35 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Initial Memory State -->
+    <rect x="50" y="50" width="200" height="300" fill="#e0f7fa" stroke="#00796b"/>
+    <text x="150" y="30" text-anchor="middle" font-family="monospace" fill="#00796b">Parent Process</text>
+    
+    <!-- Memory Pages -->
+    <rect x="70" y="70" width="160" height="50" fill="#b2ebf2"/>
+    <rect x="70" y="130" width="160" height="50" fill="#b2ebf2"/>
+    <rect x="70" y="190" width="160" height="50" fill="#b2ebf2"/>
+    
+    <!-- Page Table -->
+    <rect x="300" y="50" width="250" height="300" fill="#f0f4c3" stroke="#827717"/>
+    <text x="425" y="30" text-anchor="middle" font-family="monospace" fill="#827717">Page Table</text>
+    
+    <!-- Page Table Entries -->
+    <text x="320" y="80" font-family="monospace">Page 0: RW (Physical 0x1000)</text>
+    <text x="320" y="140" font-family="monospace">Page 1: RW (Physical 0x2000)</text>
+    <text x="320" y="200" font-family="monospace">Page 2: RW (Physical 0x3000)</text>
+    
+    <!-- Fork Arrow -->
+    <path d="M500 100 L550 100 L550 300 L500 300" stroke="#d32f2f" fill="none" stroke-width="2"/>
+    <text x="525" y="200" text-anchor="middle" fill="#d32f2f" transform="rotate(90 525 200)">fork()</text>
+    
+    <!-- Child Process -->
+    <rect x="550" y="50" width="200" height="300" fill="#ffcdd2" stroke="#c62828"/>
+    <text x="650" y="30" text-anchor="middle" font-family="monospace" fill="#c62828">Child Process</text>
+    <text x="650" y="80" font-family="monospace" fill="#c62828">Page 0: RO</text>
+    <text x="650" y="140" font-family="monospace" fill="#c62828">Page 1: RO</text>
+    <text x="650" y="200" font-family="monospace" fill="#c62828">Page 2: RO</text>
+    
+    <!-- Shared Memory Highlight -->
+    <path d="M70 70 L550 70" stroke="#4CAF50" stroke-dasharray="4" stroke-width="2"/>
+    <text x="300" y="260" font-family="monospace" fill="#4CAF50">Shared Physical Memory</text>
+    <text x="300" y="350" font-family="monospace" fill="#2e7d32" font-size="14">Both processes share physical pages until write operation</text>
+</svg>

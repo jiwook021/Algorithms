@@ -1,0 +1,22 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Convolution Operation -->
+  <rect x="50" y="100" width="120" height="120" fill="#E1F5FE" stroke="#039BE5"/>
+  <text x="60" y="90" font-size="14" fill="#039BE5">Input (5x5)</text>
+  
+  <rect x="250" y="130" width="60" height="60" fill="#F0F4C3" stroke="#AFB42B"/>
+  <text x="255" y="120" font-size="12" fill="#AFB42B">Kernel (3x3)</text>
+  
+  <path d="M180,160 L240,160" stroke="#E64A19" stroke-width="2"/>
+  <rect x="350" y="100" width="80" height="80" fill="#FFCDD2" stroke="#D32F2F"/>
+  <text x="360" y="90" font-size="14" fill="#D32F2F">Output (3x3)</text>
+  
+  <!-- C++ Code Example -->
+  <text x="50" y="250" font-size="12" fill="#37474F" font-family="monospace">
+    <tspan x="50" y="250">// Convolution step</tspan>
+    <tspan x="50" y="270">for(int i=0; i&lt;3; i++) {</tspan>
+    <tspan x="70" y="290">for(int j=0; j&lt;3; j++) {</tspan>
+    <tspan x="90" y="310">output[i][j] = dot_product(</tspan>
+    <tspan x="110" y="330">input_window, kernel);</tspan>
+    <tspan x="50" y="350">}}</tspan>
+  </text>
+</svg>

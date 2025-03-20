@@ -1,0 +1,1 @@
+Develop an **Eigenface-based face recognition system** using Principal Component Analysis (PCA).  

@@ -1,0 +1,28 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#f0f0f0"/>
+    <text x="300" y="30" font-size="20" text-anchor="middle" font-family="monospace">Batch System Calls</text>
+    
+    <!-- Before -->
+    <rect x="50" y="100" width="200" height="60" fill="#c7e9c0"/>
+    <text x="150" y="130" text-anchor="middle" font-family="monospace">User Mode</text>
+    <path d="M150 160 v40 M145 190 l10 -10 l10 10" stroke="#238b45" fill="none" stroke-width="2"/>
+    <rect x="50" y="200" width="200" height="60" fill="#fc9272"/>
+    <text x="150" y="230" text-anchor="middle" font-family="monospace">Kernel Mode</text>
+    
+    <!-- After -->
+    <rect x="350" y="100" width="200" height="180" fill="#c7e9c0"/>
+    <text x="450" y="130" text-anchor="middle" font-family="monospace">User Mode</text>
+    <rect x="350" y="200" width="200" height="40" fill="#9ecae1"/>
+    <text x="450" y="220" text-anchor="middle" font-family="monospace">Syscall Batch</text>
+    <path d="M450 240 v40 M445 270 l10 -10 l10 10" stroke="#238b45" fill="none" stroke-width="2"/>
+    <rect x="350" y="280" width="200" height="60" fill="#fc9272"/>
+    <text x="450" y="310" text-anchor="middle" font-family="monospace">Kernel Mode</text>
+    
+    <!-- Code Example -->
+    <rect x="50" y="300" width="500" height="80" fill="#2d2d2d"/>
+    <text x="60" y="320" fill="white" font-family="monospace" font-size="12">// C++ batch example</text>
+    <text x="60" y="340" fill="white" font-family="monospace" font-size="12">struct SyscallBatch {</text>
+    <text x="70" y="360" fill="white" font-family="monospace" font-size="12">    int type;</text>
+    <text x="70" y="380" fill="white" font-family="monospace" font-size="12">    void* args[8];</text>
+    <text x="60" y="400" fill="white" font-family="monospace" font-size="12">};</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .ds { fill: #e1f5fe; stroke: #039be5; stroke-width: 2; }
+        .node { fill: #c8e6c9; stroke: #2e7d32; }
+        .arrow { stroke: #6d4c41; stroke-width: 2; marker-end: url(#arrowhead); }
+        .text { font: 14px sans-serif; }
+        .code { fill: #f5f5f5; stroke: #616161; }
+    </style>
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#6d4c41"/>
+        </marker>
+    </defs>
+    
+    <!-- Data structure visualization -->
+    <rect x="50" y="50" width="200" height="300" class="ds" rx="5"/>
+    <text x="150" y="80" class="text" text-anchor="middle">Hash Map</text>
+    
+    <rect x="350" y="50" width="200" height="300" class="ds" rx="5"/>
+    <text x="450" y="80" class="text" text-anchor="middle">Doubly Linked List</text>
+    
+    <!-- Linked list nodes -->
+    <rect x="370" y="120" width="160" height="40" class="node" rx="3"/>
+    <rect x="370" y="180" width="160" height="40" class="node" rx="3"/>
+    <rect x="370" y="240" width="160" height="40" class="node" rx="3"/>
+    
+    <!-- Hash map pointers -->
+    <path d="M150 120 L350 140" class="arrow"/>
+    <path d="M150 180 L350 180" class="arrow"/>
+    <path d="M150 240 L350 220" class="arrow"/>
+    
+    <!-- Code example -->
+    <rect x="50" y="300" width="500" height="80" class="code" rx="5"/>
+    <text x="60" y="320" class="text">
+        <tspan x="60" dy="1.2em">struct Node { int key; Node *prev, *next; };</tspan>
+        <tspan x="60" dy="1.2em">class LRUCache { unordered_map&lt;int, Node*> cache; };</tspan>
+    </text>
+</svg>

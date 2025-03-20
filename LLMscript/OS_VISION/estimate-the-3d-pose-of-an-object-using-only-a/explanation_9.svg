@@ -1,0 +1,41 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Neural Network Pose Estimation -->
+    <rect x="0" y="0" width="600" height="400" fill="#f0f0f0"/>
+    
+    <!-- Network Architecture -->
+    <rect x="50" y="100" width="100" height="60" fill="#9b59b6" opacity="0.8"/>
+    <text x="70" y="130" fill="white">CNN Backbone</text>
+    
+    <!-- Feature Layers -->
+    <rect x="180" y="80" width="120" height="100" fill="#3498db" opacity="0.8"/>
+    <text x="200" y="130" fill="white">Feature</text>
+    <text x="200" y="150" fill="white">Extractor</text>
+    
+    <!-- FC Layers -->
+    <rect x="330" y="60" width="120" height="140" fill="#2ecc71" opacity="0.8"/>
+    <text x="350" y="120" fill="white">Fully</text>
+    <text x="350" y="140" fill="white">Connected</text>
+    
+    <!-- Output Nodes -->
+    <circle cx="500" cy="100" r="20" fill="#e74c3c"/>
+    <circle cx="500" cy="180" r="20" fill="#e74c3c"/>
+    <text x="480" y="95" font-size="12">Rotation</text>
+    <text x="480" y="175" font-size="12">Translation</text>
+    
+    <!-- Arrows -->
+    <path d="M150 130 L180 130" stroke="#333" stroke-width="2"/>
+    <path d="M300 130 L330 130" stroke="#333" stroke-width="2"/>
+    <path d="M450 130 L480 100" stroke="#333" stroke-width="2"/>
+    <path d="M450 130 L480 180" stroke="#333" stroke-width="2"/>
+    
+    <!-- Input/Output Labels -->
+    <text x="30" y="80" font-size="14">Input Image</text>
+    <text x="520" y="220" font-size="14">Output Pose</text>
+    
+    <!-- Code Example -->
+    <rect x="50" y="250" width="300" height="100" fill="#fff" stroke="#999"/>
+    <text x="60" y="270" font-family="monospace" font-size="12">// Neural network inference</text>
+    <text x="60" y="290" font-family="monospace" font-size="12">torch::Tensor output = model.forward(input);</text>
+    <text x="60" y="310" font-family="monospace" font-size="12">Eigen::Vector3f rot = output.slice(0,0,3);</text>
+    <text x="60" y="330" font-family="monospace" font-size="12">Eigen::Vector3f trans = output.slice(0,3,6);</text>
+</svg>

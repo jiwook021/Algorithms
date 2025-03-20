@@ -1,0 +1,32 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="300" y="30" font-size="20" text-anchor="middle">Convolutional Neural Network Architecture</text>
+    
+    <!-- Input Layer -->
+    <rect x="50" y="100" width="100" height="80" fill="#a6cee3" stroke="#1f78b4"/>
+    <text x="100" y="150" text-anchor="middle" fill="black">Low-res Input</text>
+    
+    <!-- Conv Layers -->
+    <rect x="200" y="100" width="100" height="80" fill="#b2df8a" stroke="#33a02c"/>
+    <text x="250" y="150" text-anchor="middle" fill="black">Conv1</text>
+    
+    <rect x="350" y="100" width="100" height="80" fill="#fb9a99" stroke="#e31a1c"/>
+    <text x="400" y="150" text-anchor="middle" fill="black">Conv2</text>
+    
+    <!-- Output Layer -->
+    <rect x="500" y="100" width="100" height="80" fill="#fdbf6f" stroke="#ff7f00"/>
+    <text x="550" y="150" text-anchor="middle" fill="black">High-res Output</text>
+    
+    <!-- Arrows -->
+    <path d="M150 140 L200 140" stroke="black" fill="none"/>
+    <path d="M300 140 L350 140" stroke="black" fill="none"/>
+    <path d="M450 140 L500 140" stroke="black" fill="none"/>
+    
+    <!-- Code Example -->
+    <rect x="50" y="200" width="500" height="150" fill="#2d2d2d"/>
+    <text x="60" y="220" fill="white" font-family="monospace" font-size="12">
+        <tspan x="60" y="220">// C++ CNN layer example</tspan>
+        <tspan x="60" y="240">ConvLayer conv1(3, 64); // 3x3 kernel, 64 filters</tspan>
+        <tspan x="60" y="260">Tensor output = relu(conv1.forward(input));</tspan>
+    </text>
+</svg>

@@ -1,0 +1,1 @@
+Implement a **heap memory compaction algorithm** to reduce fragmentation.  

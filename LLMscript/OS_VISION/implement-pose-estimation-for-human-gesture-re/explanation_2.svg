@@ -1,0 +1,29 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="600" height="400" fill="#f0f0f0"/>
+    
+    <!-- Keypoint Visualization -->
+    <text x="300" y="30" text-anchor="middle" font-size="18" font-weight="bold">Human Keypoints Detection</text>
+    
+    <!-- Human Silhouette -->
+    <path d="M300 100 Q300 120 280 150 L320 200 L280 250 L320 300 L300 350" stroke="#666" fill="none" stroke-width="2"/>
+    
+    <!-- Keypoints -->
+    <circle cx="300" cy="100" r="8" fill="#FF1744"/>
+    <circle cx="280" cy="150" r="8" fill="#4CAF50"/>
+    <circle cx="320" cy="200" r="8" fill="#2196F3"/>
+    <circle cx="280" cy="250" r="8" fill="#FF9800"/>
+    <circle cx="320" cy="300" r="8" fill="#E040FB"/>
+    
+    <!-- Labels -->
+    <text x="300" y="85" text-anchor="middle" font-size="12">Head</text>
+    <text x="260" y="145" text-anchor="end" font-size="12">Left Shoulder</text>
+    <text x="340" y="195" text-anchor="start" font-size="12">Right Elbow</text>
+    <text x="260" y="265" text-anchor="end" font-size="12">Left Hip</text>
+    <text x="340" y="315" text-anchor="start" font-size="12">Right Knee</text>
+    
+    <!-- Code Example -->
+    <rect x="50" y="300" width="500" height="80" fill="#263238" rx="5"/>
+    <text x="300" y="320" text-anchor="middle" fill="#fff" font-family="monospace">C++ Keypoint Processing:</text>
+    <text x="60" y="350" fill="#7FDA7D" font-family="monospace" font-size="14">for(int i=0; i&lt;17; i++) {</text>
+    <text x="80" y="370" fill="#7FDA7D" font-family="monospace" font-size="14">float x = heatmaps[i].x * scale_factor;</text>
+</svg>

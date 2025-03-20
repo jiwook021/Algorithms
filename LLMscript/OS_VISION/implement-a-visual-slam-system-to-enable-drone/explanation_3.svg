@@ -1,0 +1,29 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#E8F8F5"/>
+    
+    <!-- Loop Closure Detection -->
+    <path d="M100 200 Q300 150 500 200" stroke="#E74C3C" fill="none" stroke-width="2"/>
+    <circle cx="100" cy="200" r="8" fill="#2E86C1"/>
+    <circle cx="500" cy="200" r="8" fill="#2E86C1"/>
+    <path d="M100 210 L100 240 L500 240 L500 210" fill="#28B463"/>
+    <text x="300" y="260" font-size="14" text-anchor="middle" fill="#28B463">Recognized Location</text>
+    
+    <!-- Graph Nodes -->
+    <circle cx="100" cy="200" r="5" fill="#1C2833"/>
+    <circle cx="300" cy="150" r="5" fill="#1C2833"/>
+    <circle cx="500" cy="200" r="5" fill="#1C2833"/>
+    
+    <!-- Optimization Waves -->
+    <path d="M300 150 Q320 170 340 150 T380 150" stroke="#7D3C98" fill="none"/>
+    <text x="340" y="170" font-size="14" fill="#7D3C98">Pose Graph Optimization</text>
+    
+    <!-- C++ Code Example -->
+    <rect x="150" y="50" width="300" height="80" fill="#1C2833" rx="5"/>
+    <text x="160" y="70" font-size="12" font-family="monospace" fill="#85C1E9">
+        <tspan x="160" dy="1.2em">// Loop closure</tspan>
+        <tspan x="160" dy="1.2em">if (matchRatio > 0.8) {</tspan>
+        <tspan x="160" dy="1.2em">  optimizer.addLoopClosingConstraint(</tspan>
+        <tspan x="160" dy="1.2em">    currFrame, loopFrame);</tspan>
+        <tspan x="160" dy="1.2em">}</tspan>
+    </text>
+</svg>

@@ -1,0 +1,43 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="300" y="30" font-size="18" text-anchor="middle" fill="#333">TLB Entry Coalescing</text>
+    
+    <!-- Virtual Memory -->
+    <rect x="50" y="80" width="200" height="200" fill="#fff" stroke="#333"/>
+    <text x="150" y="100" text-anchor="middle" fill="#333">Virtual Address Space</text>
+    <g transform="translate(60 120)">
+        <rect width="180" height="30" fill="#ff9999"/>
+        <rect y="40" width="180" height="30" fill="#99ccff"/>
+        <rect y="80" width="180" height="30" fill="#ff9999"/>
+        <rect y="120" width="180" height="30" fill="#99ccff"/>
+        <text x="90" y="20" text-anchor="middle">Page 0x1000</text>
+        <text x="90" y="60" text-anchor="middle">Page 0x2000</text>
+        <text x="90" y="100" text-anchor="middle">Page 0x3000</text>
+        <text x="90" y="140" text-anchor="middle">Page 0x4000</text>
+    </g>
+    
+    <!-- Physical Memory -->
+    <rect x="350" y="80" width="200" height="200" fill="#fff" stroke="#333"/>
+    <text x="450" y="100" text-anchor="middle" fill="#333">Physical Memory</text>
+    <g transform="translate(360 120)">
+        <rect width="180" height="140" fill="#99ff99"/>
+        <text x="90" y="70" text-anchor="middle">Contiguous</text>
+        <text x="90" y="90" text-anchor="middle">Physical Range</text>
+        <text x="90" y="110" text-anchor="middle">0x8000-0xC000</text>
+    </g>
+    
+    <!-- TLB Entry -->
+    <rect x="250" y="150" width="100" height="60" fill="#ffd699" stroke="#333"/>
+    <text x="300" y="170" text-anchor="middle" fill="#333">TLB Entry</text>
+    <text x="300" y="190" text-anchor="middle" font-size="10" fill="#333">Virtual: 0x1000-0x4000</text>
+    <text x="300" y="205" text-anchor="middle" font-size="10" fill="#333">Physical: 0x8000</text>
+    
+    <!-- Code Example -->
+    <g transform="translate(50 300)">
+        <rect width="500" height="80" fill="#fff" stroke="#333"/>
+        <text x="10" y="20" font-size="12" fill="#333">// C++ sequential access pattern</text>
+        <text x="10" y="40" font-size="12" fill="#333">int arr[1024];  // Allocated contiguously</text>
+        <text x="10" y="60" font-size="12" fill="#333">for (int i = 0; i </text>
+        <text x="10" y="80" font-size="12" fill="#333">    arr[i] = i;  // Enables coalescing</text>
+    </g>
+</svg>

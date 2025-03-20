@@ -1,0 +1,43 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    
+    <!-- Title -->
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">3. Neural Network Classification</text>
+    
+    <!-- NN Architecture -->
+    <g transform="translate(100, 80)">
+        <!-- Input -->
+        <rect x="0" y="40" width="80" height="40" fill="#ffcc99"/>
+        <text x="40" y="65" text-anchor="middle" font-size="12">28x28 Input</text>
+        
+        <!-- Hidden Layers -->
+        <path d="M100,60 L140,30" stroke="#666"/>
+        <path d="M100,60 L140,90" stroke="#666"/>
+        <rect x="140" y="0" width="80" height="120" fill="#cce5ff"/>
+        <text x="180" y="60" text-anchor="middle" font-size="12">Conv Layers</text>
+        
+        <!-- Output -->
+        <path d="M240,60 L280,60" stroke="#666"/>
+        <rect x="280" y="40" width="80" height="40" fill="#ccffcc"/>
+        <text x="320" y="65" text-anchor="middle" font-size="12">Output</text>
+    </g>
+
+    <!-- Code Sample -->
+    <g transform="translate(50, 220)" font-family="monospace" font-size="14">
+        <text x="0" y="0" fill="#006600">// C++ Inference Example</text>
+        <text x="0" y="30" fill="#0000ff">cv::dnn::Net net = cv::dnn::readNetFromONNX(</text>
+        <text x="20" y="50" fill="#0000ff">"handwriting_model.onnx");</text>
+        <text x="0" y="80" fill="#0000ff">net.setInput(blob);</text>
+        <text x="0" y="110" fill="#0000ff">Mat outputs = net.forward();</text>
+    </g>
+
+    <!-- Confidence Bars -->
+    <g transform="translate(400, 100)">
+        <rect x="0" y="0" width="20" height="120" fill="#ddd"/>
+        <rect x="0" y="40" width="20" height="80" fill="#99ff99"/>
+        <text x="30" y="70" font-size="12">'A' (85%)</text>
+        <rect x="60" y="0" width="20" height="120" fill="#ddd"/>
+        <rect x="60" y="80" width="20" height="40" fill="#ff9999"/>
+        <text x="90" y="110" font-size="12">'B' (33%)</text>
+    </g>
+</svg>

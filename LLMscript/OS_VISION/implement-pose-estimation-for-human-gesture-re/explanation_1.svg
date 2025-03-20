@@ -1,0 +1,33 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="600" height="400" fill="#f0f0f0"/>
+    
+    <!-- Neural Network Architecture -->
+    <text x="300" y="30" text-anchor="middle" font-size="18" font-weight="bold">Pose Estimation Network Architecture</text>
+    
+    <!-- Input Layer -->
+    <rect x="50" y="100" width="100" height="60" fill="#4CAF50" rx="5"/>
+    <text x="100" y="135" text-anchor="middle" fill="white">Input Image (640x480x3)</text>
+    
+    <!-- Hidden Layers -->
+    <rect x="200" y="80" width="100" height="60" fill="#2196F3" rx="5"/>
+    <rect x="200" y="160" width="100" height="60" fill="#2196F3" rx="5"/>
+    <text x="250" y="115" text-anchor="middle" fill="white">Conv2D</text>
+    <text x="250" y="195" text-anchor="middle" fill="white">MaxPool</text>
+    
+    <!-- Output Layer -->
+    <rect x="350" y="100" width="100" height="60" fill="#FF5722" rx="5"/>
+    <text x="400" y="135" text-anchor="middle" fill="white">Output Heatmaps (64x48x17)</text>
+    
+    <!-- Arrows -->
+    <path d="M150 130 L200 110" stroke="#333" fill="none" stroke-width="2"/>
+    <path d="M150 130 L200 160" stroke="#333" fill="none" stroke-width="2"/>
+    <path d="M300 110 L350 130" stroke="#333" fill="none" stroke-width="2"/>
+    <path d="M300 190 L350 130" stroke="#333" fill="none" stroke-width="2"/>
+    
+    <!-- Code Example -->
+    <rect x="50" y="250" width="500" height="120" fill="#263238" rx="5"/>
+    <text x="300" y="270" text-anchor="middle" fill="#fff" font-family="monospace">C++ Inference Code:</text>
+    <text x="60" y="300" fill="#7FDA7D" font-family="monospace" font-size="14">// Load ONNX model</text>
+    <text x="60" y="330" fill="#7FDA7D" font-family="monospace" font-size="14">cv::dnn::Net net = cv::dnn::readNetFromONNX("pose_resnet.onnx");</text>
+    <text x="60" y="360" fill="#7FDA7D" font-family="monospace" font-size="14">Mat output = net.forward(); // Shape: [1,17,64,48]</text>
+</svg>

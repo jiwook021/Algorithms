@@ -1,0 +1,26 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#f0f0f0"/>
+    <text x="300" y="30" font-size="20" text-anchor="middle" font-family="monospace">vDSO Optimization</text>
+    
+    <!-- Traditional Path -->
+    <rect x="50" y="80" width="200" height="60" fill="#c7e9c0"/>
+    <text x="150" y="110" text-anchor="middle" font-family="monospace">User Space</text>
+    <path d="M150 140 v40 M145 180 l10 -10 l10 10" stroke="#238b45" fill="none" stroke-width="2"/>
+    <rect x="50" y="180" width="200" height="60" fill="#fc9272"/>
+    <text x="150" y="210" text-anchor="middle" font-family="monospace">Kernel</text>
+    
+    <!-- vDSO Path -->
+    <rect x="350" y="80" width="200" height="60" fill="#c7e9c0"/>
+    <text x="450" y="110" text-anchor="middle" font-family="monospace">User Space</text>
+    <rect x="350" y="150" width="200" height="40" fill="#d4b9da"/>
+    <text x="450" y="170" text-anchor="middle" font-family="monospace">vDSO</text>
+    <path d="M450 190 v40 M445 230 l10 -10 l10 10" stroke="#756bb1" stroke-width="2" fill="none" stroke-dasharray="4"/>
+    
+    <!-- Code Example -->
+    <rect x="50" y="260" width="500" height="120" fill="#2d2d2d"/>
+    <text x="60" y="280" fill="white" font-family="monospace" font-size="12">// C++ vDSO usage</text>
+    <text x="60" y="300" fill="white" font-family="monospace" font-size="12">__attribute__((weak)) void* __vdso_clock_gettime;</text>
+    <text x="60" y="320" fill="white" font-family="monospace" font-size="12">auto vdso_fn = reinterpret_cast&lt;int(*)(...)&gt;(__vdso_clock_gettime);</text>
+    <text x="60" y="340" fill="white" font-family="monospace" font-size="12">int ts;</text>
+    <text x="60" y="360" fill="white" font-family="monospace" font-size="12">vdso_fn(CLOCK_REALTIME, &amp;ts); // No context switch</text>
+</svg>

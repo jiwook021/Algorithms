@@ -1,0 +1,41 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    
+    <!-- Spatial Gradients -->
+    <text x="50" y="50" font-size="16" font-family="monospace" fill="navy">
+        Spatial Gradient Calculation:
+    </text>
+    
+    <!-- Gradient Grid -->
+    <path d="M100 100 L150 100 M125 80 L125 120
+             M100 150 L150 150 M125 130 L125 170
+             M100 200 L150 200" stroke="gray" stroke-width="1"/>
+    
+    <!-- Gradient Arrows -->
+    <path d="M100 100 L130 100" stroke="green" stroke-width="3" marker-end="url(#gradX)"/>
+    <path d="M100 100 L100 130" stroke="orange" stroke-width="3" marker-end="url(#gradY)"/>
+    <text x="130" y="90" font-size="12" fill="green">Gx</text>
+    <text x="90" y="130" font-size="12" fill="orange">Gy</text>
+    
+    <!-- Code Example -->
+    <text x="300" y="100" font-size="12" font-family="monospace" fill="black">
+        // C++: Sobel operators
+        <tspan x="300" dy="20">Sobel(prevFrame, gradX, CV_32F, 1, 0);</tspan>
+        <tspan x="300" dy="20">Sobel(prevFrame, gradY, CV_32F, 0, 1);</tspan>
+    </text>
+    
+    <!-- Matrix Equation -->
+    <text x="50" y="300" font-size="14" font-family="monospace" fill="darkred">
+        [ΣGx²  ΣGxGy] [vx] = [ΣGxGt]
+        <tspan x="50" dy="20">[ΣGxGy ΣGy²] [vy]   [ΣGyGt]</tspan>
+    </text>
+    
+    <defs>
+        <marker id="gradX" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L9,3 z" fill="green"/>
+        </marker>
+        <marker id="gradY" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L9,3 z" fill="orange"/>
+        </marker>
+    </defs>
+</svg>

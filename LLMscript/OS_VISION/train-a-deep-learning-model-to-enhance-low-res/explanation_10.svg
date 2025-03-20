@@ -1,0 +1,37 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Training Process Diagram -->
+    <rect x="0" y="0" width="600" height="400" fill="#f0f0f0"/>
+    
+    <!-- Title -->
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">Training Process with Loss Calculation</text>
+    
+    <!-- Training Flow -->
+    <rect x="50" y="100" width="120" height="60" fill="#fdbf6f" rx="5"/>
+    <text x="110" y="130" text-anchor="middle" fill="#000">LR Input</text>
+    
+    <rect x="230" y="100" width="120" height="60" fill="#ff7f00" rx="5"/>
+    <text x="290" y="130" text-anchor="middle" fill="#fff">SR Network</text>
+    
+    <rect x="410" y="100" width="120" height="60" fill="#6a3d9a" rx="5"/>
+    <text x="470" y="130" text-anchor="middle" fill="#fff">HR Target</text>
+    
+    <!-- Loss Calculation -->
+    <path d="M410 160 L410 250 Q410 270 390 270 L210 270 Q190 270 190 290 L190 340" 
+          stroke="#e31a1c" fill="none" stroke-width="2" stroke-dasharray="4"/>
+    <text x="300" y="300" text-anchor="middle" fill="#e31a1c">Loss Backpropagation</text>
+    
+    <!-- Arrows -->
+    <path d="M170 130 L230 130" stroke="#666" fill="none" stroke-width="2"/>
+    <path d="M350 130 L410 130" stroke="#666" fill="none" stroke-width="2"/>
+    
+    <!-- Code Example -->
+    <rect x="100" y="180" width="400" height="150" fill="#fff" rx="5"/>
+    <text x="120" y="210" font-family="monospace" font-size="12" fill="#333">
+        <tspan x="120" y="210">// C++ MSE Loss Calculation</tspan>
+        <tspan x="120" y="230">float compute_mse(Eigen::Tensor3f sr, </tspan>
+        <tspan x="120" y="250">                  Eigen::Tensor3f hr) {</tspan>
+        <tspan x="140" y="270">auto diff = sr - hr;</tspan>
+        <tspan x="140" y="290">return diff.square().mean();</tspan>
+        <tspan x="120" y="310">}</tspan>
+    </text>
+</svg>

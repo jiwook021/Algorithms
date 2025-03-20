@@ -1,0 +1,37 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#F0F0F0"/>
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="navy">Speed Calculation using Reference Markers</text>
+    
+    <!-- Road Diagram -->
+    <rect x="100" y="100" width="400" height="20" fill="#757575"/>
+    <rect x="200" y="70" width="10" height="50" fill="#FFF"/>
+    <rect x="300" y="70" width="10" height="50" fill="#FFF"/>
+    <rect x="400" y="70" width="10" height="50" fill="#FFF"/>
+    <text x="200" y="65" text-anchor="middle" fill="#333">10m</text>
+    <text x="300" y="65" text-anchor="middle" fill="#333">20m</text>
+    <text x="400" y="65" text-anchor="middle" fill="#333">30m</text>
+    
+    <!-- Vehicle Path -->
+    <path d="M150 110 L450 110" stroke="#FF5722" stroke-width="3" stroke-dasharray="4 4"/>
+    <circle cx="150" cy="110" r="5" fill="#2196F3"/>
+    <circle cx="450" cy="110" r="5" fill="#2196F3"/>
+    <text x="300" y="140" text-anchor="middle" fill="#333">Distance: 30m (3 markers)</text>
+    
+    <!-- Formula -->
+    <text x="300" y="200" text-anchor="middle" fill="#2E7D32">
+        <tspan font-size="18" font-family="math">Speed =</tspan>
+        <tspan dx="10" font-size="18" font-family="math">Δdistance (meters) / Δtime (seconds)</tspan>
+    </text>
+    
+    <!-- Code Example -->
+    <g transform="translate(50 250)">
+        <rect width="500" height="130" fill="#263238" rx="5"/>
+        <text x="20" y="30" fill="#FFF" font-family="monospace" font-size="14">
+            <tspan x="20" dy="1.2em">// C++ speed calculation</tspan>
+            <tspan x="20" dy="1.2em">double pixelsPerMeter = 10.0; // Calibration data</tspan>
+            <tspan x="20" dy="1.2em">double delta_pixels = 300; // From tracking</tspan>
+            <tspan x="20" dy="1.2em">double delta_time = 1.0; // 1 second between frames</tspan>
+            <tspan x="20" dy="1.2em">double speed = (delta_pixels/pixelsPerMeter)/delta_time * 3.6;</tspan>
+        </text>
+    </g>
+</svg>

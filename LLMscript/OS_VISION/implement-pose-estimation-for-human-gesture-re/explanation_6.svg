@@ -1,0 +1,29 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">Gesture Recognition Logic</text>
+    
+    <!-- Arm angles -->
+    <path d="M200 200 L300 100 L400 200" stroke="#333" fill="none" stroke-width="2"/>
+    <circle cx="300" cy="100" r="5" fill="#ff4444"/>
+    <circle cx="200" cy="200" r="5" fill="#44ff44"/>
+    <circle cx="400" cy="200" r="5" fill="#44ff44"/>
+    
+    <!-- Angle arc -->
+    <path d="M250 150 A50 50 0 0 1 350 150" stroke="#FF9800" fill="none" stroke-width="2"/>
+    <text x="300" y="140" text-anchor="middle" fill="#FF9800">θ = 60°</text>
+    
+    <!-- Code example -->
+    <g transform="translate(50 280)">
+        <rect x="0" y="0" width="500" height="90" fill="#fff" rx="5"/>
+        <text x="10" y="20" font-family="monospace" font-size="14" fill="#333">
+            <tspan x="10" dy="1.2em">// Calculate elbow angle</tspan>
+            <tspan x="10" dy="1.2em">double angle = calculateAngle(shoulder, elbow, wrist);</tspan>
+            <tspan x="10" dy="1.2em">if (angle > 150) recognizeGesture("WAVE");</tspan>
+        </text>
+    </g>
+    
+    <!-- Labels -->
+    <text x="300" y="90" fill="#ff4444">Elbow</text>
+    <text x="200" y="220" fill="#44ff44">Wrist</text>
+    <text x="400" y="220" fill="#44ff44">Shoulder</text>
+</svg>

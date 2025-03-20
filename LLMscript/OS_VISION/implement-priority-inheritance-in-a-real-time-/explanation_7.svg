@@ -1,0 +1,30 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="300" y="30" text-anchor="middle" font-size="20" fill="#333">Priority Inheritance Activation</text>
+    
+    <!-- Timeline -->
+    <line x1="50" y1="100" x2="550" y2="100" stroke="#666" stroke-width="2"/>
+    
+    <!-- Original priority -->
+    <rect x="60" y="140" width="120" height="40" fill="#ff9999" rx="5"/>
+    <text x="120" y="165" text-anchor="middle" fill="#000">Low (L)</text>
+    <text x="120" y="190" text-anchor="middle" font-size="12">Original Priority</text>
+    
+    <!-- Inherited priority -->
+    <rect x="60" y="220" width="120" height="40" fill="#ffcc99" rx="5"/>
+    <text x="120" y="245" text-anchor="middle" fill="#000">Temporary Priority</text>
+    
+    <!-- Arrow -->
+    <path d="M120,180 L120,220" stroke="#666" stroke-width="2" fill="none"/>
+    <path d="M120,220 L115,215" stroke="#666" fill="#666"/>
+    <path d="M120,220 L125,215" stroke="#666" fill="#666"/>
+    
+    <!-- Code example -->
+    <g transform="translate(50 300)">
+        <rect width="500" height="80" fill="#e0e0e0" rx="5"/>
+        <text x="20" y="25" font-family="monospace" font-size="14" fill="#333">
+            <tspan x="20" dy="1.2em">// Mutex with priority inheritance:</tspan>
+            <tspan x="20" dy="1.2em">pthread_mutexattr_setprotocol(&amp;attr, PTHREAD_PRIO_INHERIT);</tspan>
+        </text>
+    </g>
+</svg>

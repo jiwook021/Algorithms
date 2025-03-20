@@ -1,0 +1,1 @@
+Train a **deep learning model** to enhance low-resolution images using super-resolution techniques.  

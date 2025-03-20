@@ -1,0 +1,35 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#f0f0f0"/>
+    
+    <!-- Free List Visualization -->
+    <rect x="100" y="100" width="120" height="40" fill="#78c679" rx="3"/>
+    <rect x="100" y="160" width="120" height="40" fill="#78c679" rx="3"/>
+    <rect x="100" y="220" width="120" height="40" fill="#78c679" rx="3"/>
+    
+    <!-- Free List Pointers -->
+    <path d="M220 120 L300 120 L300 180 L380 180" stroke="#d9534f" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <path d="M220 180 L300 180 L300 240 L380 240" stroke="#d9534f" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <path d="M220 240 L300 240 L300 300 L380 300" stroke="#d9534f" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    
+    <!-- Allocated Object -->
+    <rect x="380" y="160" width="120" height="40" fill="#f0ad4e" rx="3"/>
+    
+    <!-- Code Example -->
+    <text x="100" y="340" font-family="monospace" font-size="14" fill="#333">
+        <tspan x="100" y="340">void* SlabAllocator::allocate() {</tspan>
+        <tspan x="100" y="360">    return free_list.pop();</tspan>
+        <tspan x="100" y="380">}</tspan>
+    </text>
+    
+    <!-- Labels -->
+    <text x="300" y="70" font-family="sans-serif" font-size="18" fill="#333" text-anchor="middle">Free List Allocation</text>
+    <text x="160" y="130" font-family="monospace" font-size="12" fill="white">Free Block 1</text>
+    <text x="160" y="190" font-family="monospace" font-size="12" fill="white">Free Block 2</text>
+    <text x="160" y="250" font-family="monospace" font-size="12" fill="white">Free Block 3</text>
+    
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#d9534f"/>
+        </marker>
+    </defs>
+</svg>

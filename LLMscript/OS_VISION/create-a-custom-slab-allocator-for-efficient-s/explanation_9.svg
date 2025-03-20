@@ -1,0 +1,37 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#f0f0f0"/>
+    
+    <!-- Slab Classes -->
+    <rect x="50" y="50" width="500" height="300" fill="#fff" stroke="#333" stroke-width="2"/>
+    
+    <!-- Different Slab Sizes -->
+    <g transform="translate(100 100)">
+        <!-- 16B Slab -->
+        <rect x="0" y="0" width="120" height="120" fill="#FFB6C1"/>
+        <text x="60" y="60" text-anchor="middle">16B</text>
+        <text x="60" y="140">Slab Class 1</text>
+        
+        <!-- 32B Slab -->
+        <rect x="160" y="0" width="120" height="120" fill="#90EE90"/>
+        <text x="220" y="60" text-anchor="middle">32B</text>
+        <text x="220" y="140">Slab Class 2</text>
+        
+        <!-- 64B Slab -->
+        <rect x="320" y="0" width="120" height="120" fill="#00BFFF"/>
+        <text x="380" y="60" text-anchor="middle">64B</text>
+        <text x="380" y="140">Slab Class 3</text>
+    </g>
+    
+    <!-- Code Sample -->
+    <g transform="translate(100 250)">
+        <text x="20" y="0" font-family="monospace" font-size="12" fill="#333">
+            <tspan x="20" y="0">class SlabAllocator {</tspan>
+            <tspan x="40" y="20">std::vector&lt;SlabClass&gt; classes;</tspan>
+            <tspan x="20" y="40">void* allocate(size_t size) {</tspan>
+            <tspan x="40" y="60">// Find appropriate slab class</tspan>
+            <tspan x="40" y="80">return classes[class_idx].allocate();</tspan>
+        </text>
+    </g>
+    
+    <text x="300" y="350" text-anchor="middle" font-family="sans-serif">Size-based Memory Organization</text>
+</svg>

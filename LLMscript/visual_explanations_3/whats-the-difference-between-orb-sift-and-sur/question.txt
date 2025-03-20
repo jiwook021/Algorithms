@@ -1,1 +1,0 @@
-What’s the difference between **ORB, SIFT, and SURF feature detection?**

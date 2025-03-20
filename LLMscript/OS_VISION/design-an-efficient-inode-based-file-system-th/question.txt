@@ -1,0 +1,1 @@
+Design an **efficient inode-based file system** that supports large directories.  

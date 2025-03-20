@@ -1,0 +1,45 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#F0F0F0"/>
+    
+    <!-- Title -->
+    <text x="300" y="30" font-size="18" text-anchor="middle" fill="#333">Covariance Matrix and Eigenfaces</text>
+    
+    <!-- Covariance Matrix Visualization -->
+    <rect x="100" y="60" width="400" height="100" fill="#FFF8E1" stroke="#FDD835"/>
+    <text x="300" y="50" text-anchor="middle" fill="#F9A825">Covariance Matrix (X * Xᵀ)</text>
+    
+    <!-- Eigenvalues -->
+    <g transform="translate(100 180)">
+        <rect width="80" height="80" fill="#C8E6C9"/>
+        <text x="40" y="45" text-anchor="middle" fill="#2E7D32">λ₁</text>
+        <text x="40" y="110" text-anchor="middle" fill="#2E7D32">Largest Eigenvalue</text>
+    </g>
+    <g transform="translate(260 180)">
+        <rect width="80" height="80" fill="#C8E6C9" opacity="0.6"/>
+        <text x="40" y="45" text-anchor="middle" fill="#2E7D32">λ₂</text>
+    </g>
+    <g transform="translate(420 180)">
+        <rect width="80" height="80" fill="#C8E6C9" opacity="0.3"/>
+        <text x="40" y="45" text-anchor="middle" fill="#2E7D32">λₙ</text>
+    </g>
+
+    <!-- Eigenfaces -->
+    <g transform="translate(100 250)">
+        <rect width="120" height="120" fill="#D1C4E9" stroke="#7E57C2"/>
+        <text x="60" y="140" text-anchor="middle" fill="#7E57C2">Eigenface 1</text>
+    </g>
+    <g transform="translate(240 250)">
+        <rect width="120" height="120" fill="#D1C4E9" stroke="#7E57C2" opacity="0.6"/>
+        <text x="60" y="140" text-anchor="middle" fill="#7E57C2">Eigenface 2</text>
+    </g>
+
+    <!-- Code Example -->
+    <g transform="translate(20 320)">
+        <rect x="10" y="10" width="560" height="60" fill="#263238" rx="5"/>
+        <text x="20" y="35" font-family="monospace" font-size="12" fill="#fff">
+            <tspan fill="#89DDFF">void</tspan> <tspan fill="#fff">computeEigenfaces(cv::PCA&amp; pca, </tspan>
+            <tspan fill="#89DDFF">const</tspan> <tspan fill="#fff">cv::Mat&amp; data) {</tspan>
+            <tspan x="20" y="55" fill="#fff">pca.computeVar(data, cv::Mat(), cv::PCA::DATA_AS_ROW);</tspan>
+        </text>
+    </g>
+</svg>

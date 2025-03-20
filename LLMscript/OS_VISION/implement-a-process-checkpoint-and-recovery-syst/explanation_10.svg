@@ -1,0 +1,40 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  
+  <!-- Process State Diagram -->
+  <rect x="50" y="100" width="200" height="200" fill="#e6ffe6" rx="10"/>
+  <text x="150" y="130" text-anchor="middle" font-family="Arial" font-size="14">Running Process</text>
+  
+  <!-- Process Components -->
+  <rect x="70" y="160" width="160" height="30" fill="#b3e6b3"/>
+  <text x="150" y="180" text-anchor="middle" font-family="Arial" font-size="12">Stack</text>
+  <rect x="70" y="200" width="160" height="30" fill="#99cc99"/>
+  <text x="150" y="220" text-anchor="middle" font-family="Arial" font-size="12">Heap</text>
+  <rect x="70" y="240" width="160" height="30" fill="#80b380"/>
+  <text x="150" y="260" text-anchor="middle" font-family="Arial" font-size="12">Registers</text>
+  
+  <!-- Checkpoint Action -->
+  <path d="M250 220 L350 220" stroke="#ff6666" stroke-width="2"/>
+  <polygon points="350 220, 340 215, 340 225" fill="#ff6666"/>
+  <text x="300" y="215" text-anchor="middle" font-family="Arial" font-size="12" fill="#ff6666">Serialize State</text>
+  
+  <!-- Checkpoint File -->
+  <rect x="350" y="150" width="200" height="140" fill="#e6e6ff" rx="10"/>
+  <text x="450" y="170" text-anchor="middle" font-family="Arial" font-size="14">Checkpoint File</text>
+  <path d="M400 190 L500 190" stroke="#6666ff" stroke-width="2"/>
+  <text x="450" y="220" text-anchor="middle" font-family="monospace" font-size="12" fill="#000">
+    <tspan x="450" dy="0">struct Checkpoint {</tspan>
+    <tspan x="450" dy="15">  void* stack_ptr;</tspan>
+    <tspan x="450" dy="15">  void* heap_ptr;</tspan>
+    <tspan x="450" dy="15">  register_set regs;</tspan>
+    <tspan x="450" dy="15">};</tspan>
+  </text>
+  
+  <!-- C++ Code Example -->
+  <rect x="100" y="320" width="400" height="60" fill="#f0f0f0" rx="5"/>
+  <text x="110" y="340" font-family="monospace" font-size="12">
+    <tspan fill="#0000ff">void</tspan> save_checkpoint() {
+      <tspan x="110" dy="15" fill="#008800">// Serialize memory and registers</tspan>
+    }
+  </text>
+</svg>

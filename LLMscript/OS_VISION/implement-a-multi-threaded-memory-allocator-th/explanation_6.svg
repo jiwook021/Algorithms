@@ -1,0 +1,37 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Thread-Local Arenas -->
+  <rect x="0" y="0" width="600" height="400" fill="#f0f0f0"/>
+  
+  <text x="300" y="30" text-anchor="middle" font-size="18" font-weight="bold">Thread-Local Memory Arenas</text>
+  
+  <!-- Thread 1 -->
+  <rect x="50" y="100" width="150" height="200" fill="#e1f5fe" stroke="#039be5"/>
+  <text x="125" y="90" text-anchor="middle" fill="#039be5">Thread 1</text>
+  <rect x="70" y="120" width="110" height="40" fill="#81d4fa"/>
+  <rect x="70" y="180" width="110" height="40" fill="#81d4fa"/>
+  <rect x="70" y="240" width="110" height="40" fill="#81d4fa"/>
+  
+  <!-- Thread 2 -->
+  <rect x="225" y="100" width="150" height="200" fill="#f0f4c3" stroke="#f9a825"/>
+  <text x="300" y="90" text-anchor="middle" fill="#f9a825">Thread 2</text>
+  <rect x="245" y="120" width="110" height="40" fill="#fff59d"/>
+  <rect x="245" y="180" width="110" height="40" fill="#fff59d"/>
+  <rect x="245" y="240" width="110" height="40" fill="#fff59d"/>
+  
+  <!-- Thread 3 -->
+  <rect x="400" y="100" width="150" height="200" fill="#ffcdd2" stroke="#d32f2f"/>
+  <text x="475" y="90" text-anchor="middle" fill="#d32f2f">Thread 3</text>
+  <rect x="420" y="120" width="110" height="40" fill="#ef9a9a"/>
+  <rect x="420" y="180" width="110" height="40" fill="#ef9a9a"/>
+  <rect x="420" y="240" width="110" height="40" fill="#ef9a9a"/>
+  
+  <!-- Code Example -->
+  <g transform="translate(20 320)">
+    <rect x="0" y="0" width="560" height="70" fill="#263238" rx="3"/>
+    <text x="10" y="20" fill="#ffffff" font-family="monospace" font-size="14">
+      <tspan x="10" dy="1.2em">class ThreadArena {</tspan>
+      <tspan x="20" dy="1.2em">thread_local static Arena* tls_arena;</tspan>
+      <tspan x="10" dy="1.2em">};</tspan>
+    </text>
+  </g>
+</svg>

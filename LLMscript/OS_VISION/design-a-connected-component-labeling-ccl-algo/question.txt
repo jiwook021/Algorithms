@@ -1,0 +1,1 @@
+Design a **connected component labeling (CCL) algorithm** for object counting.  

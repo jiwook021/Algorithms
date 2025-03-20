@@ -1,0 +1,27 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="300" y="30" text-anchor="middle" font-size="18">4. Page Table Entry Flags</text>
+    
+    <!-- PTE Structure -->
+    <rect x="100" y="100" width="400" height="60" fill="#fff" stroke="#000"/>
+    <text x="120" y="130">Present (1)</text>
+    <text x="220" y="130" fill="#ff4444">COW Flag (1)</text>
+    <text x="340" y="130">Read/Write (1)</text>
+    <text x="460" y="130">Physical Address (20)</text>
+    
+    <!-- Bit Numbers -->
+    <text x="110" y="80">Bit 0</text>
+    <text x="230" y="80">Bit 8</text>
+    <text x="350" y="80">Bit 1</text>
+    <text x="480" y="80">Bits 12-31</text>
+    
+    <!-- Color Highlights -->
+    <rect x="200" y="100" width="100" height="60" fill="none" stroke="#ff4444" stroke-width="2"/>
+    <rect x="100" y="100" width="100" height="60" fill="none" stroke="#44ff44" stroke-width="2"/>
+    
+    <!-- Legend -->
+    <rect x="100" y="200" width="20" height="20" fill="#44ff44"/>
+    <text x="130" y="215">Present Bit</text>
+    <rect x="100" y="230" width="20" height="20" fill="#ff4444"/>
+    <text x="130" y="245">COW Flag</text>
+</svg>

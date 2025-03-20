@@ -1,0 +1,33 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Memory Mapping Diagram -->
+    <rect x="0" y="0" width="600" height="400" fill="#f5f5f5"/>
+    
+    <!-- Physical Memory -->
+    <rect x="50" y="50" width="200" height="300" fill="#e3f2fd" stroke="#1976D2"/>
+    <text x="150" y="30" text-anchor="middle" font-family="monospace">Physical Memory</text>
+    
+    <!-- Process Memory Maps -->
+    <rect x="350" y="50" width="200" height="150" fill="#f8bbd0" stroke="#C2185B"/>
+    <text x="450" y="30" text-anchor="middle" font-family="monospace">Process A</text>
+    <rect x="350" y="220" width="200" height="150" fill="#c8e6c9" stroke="#388E3C"/>
+    <text x="450" y="200" text-anchor="middle" font-family="monospace">Process B</text>
+    
+    <!-- Mapping Lines -->
+    <path d="M250 100 L350 100" stroke="#757575" stroke-dasharray="4"/>
+    <path d="M250 200 L350 150" stroke="#757575"/>
+    <path d="M250 300 L350 320" stroke="#757575" stroke-dasharray="4"/>
+    
+    <!-- COW Legend -->
+    <rect x="50" y="300" width="250" height="80" fill="#fff" stroke="#666"/>
+    <text x="60" y="320" font-family="monospace">Solid line: Private mapping</text>
+    <text x="60" y="350" font-family="monospace">Dashed: Shared mapping</text>
+    
+    <!-- Code Example -->
+    <rect x="50" y="150" width="250" height="120" fill="#212121"/>
+    <text x="60" y="170" font-family="monospace" fill="#fff">// Parent process</text>
+    <text x="60" y="190" font-family="monospace" fill="#64ffda">int main() {</text>
+    <text x="70" y="210" font-family="monospace" fill="#64ffda">  int x = 10;</text>
+    <text x="70" y="230" font-family="monospace" fill="#64ffda">  pid_t pid = fork();</text>
+    <text x="70" y="250" font-family="monospace" fill="#64ffda">  if (pid == 0) x = 20;</text>
+    <text x="60" y="270" font-family="monospace" fill="#64ffda">}</text>
+</svg>

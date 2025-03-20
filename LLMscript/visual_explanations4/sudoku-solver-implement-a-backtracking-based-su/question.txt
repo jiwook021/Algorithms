@@ -1,1 +1,0 @@
-"Sudoku Solver": Implement a backtracking-based Sudoku Solver.

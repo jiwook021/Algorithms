@@ -1,0 +1,33 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#F0F0F0"/>
+  <text x="300" y="30" text-anchor="middle" font-size="20" font-weight="bold">Image Preprocessing Pipeline</text>
+  
+  <!-- Processing Steps -->
+  <rect x="50" y="80" width="100" height="60" fill="#FFCCCC" rx="5"/>
+  <text x="100" y="115" text-anchor="middle">Original Image</text>
+  <path d="M150 110 L170 110" stroke="#333" stroke-width="2"/>
+  
+  <rect x="170" y="80" width="100" height="60" fill="#CCE5FF" rx="5"/>
+  <text x="220" y="115" text-anchor="middle">Grayscale</text>
+  <path d="M270 110 L290 110" stroke="#333" stroke-width="2"/>
+  
+  <rect x="290" y="80" width="100" height="60" fill="#D0F0C0" rx="5"/>
+  <text x="340" y="115" text-anchor="middle">Binarization</text>
+  <path d="M390 110 L410 110" stroke="#333" stroke-width="2"/>
+  
+  <rect x="410" y="80" width="100" height="60" fill="#FFEECC" rx="5"/>
+  <text x="460" y="115" text-anchor="middle">Deskew</text>
+
+  <!-- Code Example -->
+  <rect x="50" y="180" width="500" height="150" fill="#2D2D2D" rx="5"/>
+  <text x="300" y="200" text-anchor="middle" fill="white">C++ Preprocessing Code</text>
+  <text x="60" y="225" font-family="monospace" font-size="12" fill="#7FDBFF">
+    <tspan x="60" dy="18">cv::Mat preprocess(cv::Mat input) {</tspan>
+    <tspan x="60" dy="18">  cv::Mat gray, binary;</tspan>
+    <tspan x="60" dy="18" fill="#FFDC00">  cv::cvtColor(input, gray, COLOR_BGR2GRAY);</tspan>
+    <tspan x="60" dy="18" fill="#2ECC40">  cv::threshold(gray, binary, 0, 255, </tspan>
+    <tspan x="60" dy="18" fill="#2ECC40">                THRESH_OTSU);</tspan>
+    <tspan x="60" dy="18">  return deskew(binary);</tspan>
+    <tspan x="60" dy="18">}</tspan>
+  </text>
+</svg>

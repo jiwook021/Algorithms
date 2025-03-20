@@ -1,0 +1,48 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="300" y="30" font-size="20" text-anchor="middle">4. Two-Pass Algorithm</text>
+  
+  <g transform="translate(50 80)">
+    <!-- First pass -->
+    <g transform="translate(0 0)">
+      <text x="120" y="-20" text-anchor="middle">First Pass</text>
+      <rect x="0" y="0" width="200" height="200" fill="#ddd"/>
+      
+      <!-- Labels -->
+      <text x="20" y="30" fill="black">1</text>
+      <text x="100" y="30" fill="black">1</text>
+      <text x="180" y="110" fill="black">2</text>
+      <text x="20" y="190" fill="black">3</text>
+      <text x="180" y="190" fill="black">3</text>
+      
+      <!-- Union indicators -->
+      <path d="M180 190L150 170" stroke="red"/>
+      <text x="160" y="160" fill="red" font-size="12">union(3,2)</text>
+    </g>
+    
+    <!-- Second pass -->
+    <g transform="translate(300 0)">
+      <text x="120" y="-20" text-anchor="middle">Second Pass</text>
+      <rect x="0" y="0" width="200" height="200" fill="#ddd"/>
+      
+      <!-- Resolved labels -->
+      <text x="20" y="30" fill="black">1</text>
+      <text x="100" y="30" fill="black">1</text>
+      <text x="180" y="110" fill="black">1</text>
+      <text x="20" y="190" fill="black">1</text>
+      <text x="180" y="190" fill="black">1</text>
+    </g>
+    
+    <!-- Code snippet -->
+    <g transform="translate(0 220)" font-size="14">
+      <text x="10" y="0" fill="black">// First pass:</text>
+      <text x="10" y="20" fill="black">for each pixel:</text>
+      <text x="20" y="40" fill="black">if foreground:</text>
+      <text x="30" y="60" fill="black">labels[i] = find(neighbors)</text>
+      
+      <text x="10" y="100" fill="black">// Second pass:</text>
+      <text x="10" y="120" fill="black">for each pixel:</text>
+      <text x="20" y="140" fill="black">labels[i] = find(labels[i])</text>
+    </g>
+  </g>
+</svg>

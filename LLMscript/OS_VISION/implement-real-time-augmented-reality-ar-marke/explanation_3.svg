@@ -1,0 +1,40 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    
+    <!-- 3D Projection -->
+    <g transform="translate(300 200)">
+        <!-- Marker Base -->
+        <rect x="-50" y="-50" width="100" height="100" fill="#fff" stroke="#333"/>
+        
+        <!-- 3D Cube -->
+        <g transform="rotate(-30) translate(0 -120)">
+            <path d="M-30-30L30-30L30 30L-30 30Z M30-30L50 10L50 70L30 30 M30 30L50 70L-10 70L-30 30" 
+                  fill="#8cf" fill-opacity="0.6" stroke="#06f"/>
+        </g>
+        
+        <!-- Projection Lines -->
+        <path d="M-50 50 L-20 10 L20 70" stroke="#666" stroke-width="1" stroke-dasharray="4"/>
+        <path d="M50 50 L20 10 L-20 70" stroke="#666" stroke-width="1" stroke-dasharray="4"/>
+    </g>
+    
+    <!-- Projection Code -->
+    <g transform="translate(50 50)">
+        <rect width="500" height="90" fill="#e0e0e0" rx="5"/>
+        <text x="10" y="20" font-family="monospace" font-size="12" fill="#333">
+            <tspan x="10" dy="1.2em">std::vector&lt;cv::Point3d&gt; objPoints = {{0,0,0}, {0.1,0,0}, {0.1,0.1,0}, {0,0.1,0}};</tspan>
+            <tspan x="10" dy="1.2em">std::vector&lt;cv::Point2d&gt; imgPoints;</tspan>
+            <tspan x="10" dy="1.2em">cv::projectPoints(objPoints, rvec, tvec, </tspan>
+            <tspan x="20" dy="1.2em">cameraMatrix, distCoeffs, imgPoints);</tspan>
+        </text>
+    </g>
+    
+    <!-- Coordinate Legend -->
+    <g transform="translate(50 300)">
+        <rect width="200" height="80" fill="#fff" stroke="#333" rx="5"/>
+        <text x="20" y="30" font-size="12">
+            <tspan fill="#f00">Red: Marker Space</tspan>
+            <tspan x="20" dy="20" fill="#06f">Blue: World Space</tspan>
+            <tspan x="20" dy="20" fill="#666">Gray: Projection</tspan>
+        </text>
+    </g>
+</svg>

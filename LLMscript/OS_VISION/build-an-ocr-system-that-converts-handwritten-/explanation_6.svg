@@ -1,0 +1,42 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    
+    <!-- Title -->
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">1. Image Preprocessing Pipeline</text>
+    
+    <!-- Steps -->
+    <g transform="translate(50, 80)">
+        <!-- Original Image -->
+        <rect x="0" y="0" width="100" height="100" fill="#ddd"/>
+        <text x="50" y="120" text-anchor="middle" font-size="12">Input Image</text>
+        
+        <!-- Grayscale Conversion -->
+        <path d="M120,50 L150,50" stroke="#666" fill="none"/>
+        <rect x="150" y="0" width="100" height="100" fill="#888"/>
+        <text x="200" y="120" text-anchor="middle" font-size="12">Grayscale</text>
+        
+        <!-- Denoising -->
+        <path d="M270,50 L300,50" stroke="#666" fill="none"/>
+        <rect x="300" y="0" width="100" height="100" fill="#aaccff"/>
+        <text x="350" y="120" text-anchor="middle" font-size="12">Denoising</text>
+        
+        <!-- Binarization -->
+        <path d="M420,50 L450,50" stroke="#666" fill="none"/>
+        <rect x="450" y="0" width="100" height="100" fill="#000"/>
+        <rect x="450" y="0" width="100" height="100" fill="url(#binPattern)" opacity="0.8"/>
+        <text x="500" y="120" text-anchor="middle" font-size="12">Binarization</text>
+    </g>
+
+    <!-- Code Sample -->
+    <g transform="translate(50, 200)" font-family="monospace" font-size="14">
+        <text x="0" y="0" fill="#006600">// C++ Preprocessing Example</text>
+        <text x="0" y="30" fill="#0000ff">cv::cvtColor(input, gray, cv::COLOR_BGR2GRAY);</text>
+        <text x="0" y="60" fill="#0000ff">cv::GaussianBlur(gray, denoised, {5,5}, 0);</text>
+        <text x="0" y="90" fill="#0000ff">cv::threshold(denoised, binary, 0, 255, </text>
+        <text x="20" y="110" fill="#0000ff">cv::THRESH_BINARY | cv::THRESH_OTSU);</text>
+    </g>
+
+    <pattern id="binPattern" patternUnits="userSpaceOnUse" width="4" height="4">
+        <path d="M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2" stroke="white" stroke-width="1"/>
+    </pattern>
+</svg>

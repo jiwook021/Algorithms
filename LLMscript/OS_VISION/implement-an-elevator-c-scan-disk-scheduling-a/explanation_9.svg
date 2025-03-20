@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+    <style>
+        .track { stroke: #333; stroke-width: 2; }
+        .arrow { stroke: #4CAF50; stroke-width: 3; }
+        .jump { stroke: #FF5722; stroke-dasharray: 5,5; }
+        .request { fill: #2196F3; }
+        .unserviced { fill: #9E9E9E; }
+        text { font-family: Arial; font-size: 12px; }
+    </style>
+    
+    <!-- Disk track -->
+    <line x1="50" y1="300" x2="550" y2="300" class="track"/>
+    <text x="40" y="320">0</text>
+    <text x="545" y="320">199</text>
+    
+    <!-- Requests -->
+    <circle cx="180" cy="300" r="5" class="request"/>
+    <circle cx="260" cy="300" r="5" class="request"/>
+    <circle cx="400" cy="300" r="5" class="request"/>
+    <circle cx="480" cy="300" r="5" class="request"/>
+    <circle cx="100" cy="300" r="5" class="unserviced"/>
+    
+    <!-- Head movement -->
+    <path d="M 150 280 L 170 280 L 160 270" class="arrow" fill="#4CAF50"/>
+    <polyline points="150,300 480,300 550,300" class="arrow" fill="none"/>
+    <polyline points="550,300 50,300" class="jump" fill="none"/>
+    
+    <!-- Labels -->
+    <text x="150" y="250" fill="#4CAF50">Start (Current position)</text>
+    <text x="300" y="350" fill="#4CAF50">Servicing direction →</text>
+    <text x="300" y="380" fill="#FF5722">Jump back without servicing ←</text>
+    <text x="100" y="290" fill="#9E9E9E">Not serviced</text>
+    <text x="200" y="290" fill="#2196F3">Serviced requests</text>
+</svg>

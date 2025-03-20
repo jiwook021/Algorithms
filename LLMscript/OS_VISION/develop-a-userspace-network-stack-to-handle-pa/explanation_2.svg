@@ -1,0 +1,31 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="300" y="30" text-anchor="middle" font-size="20" fill="#333">Kernel Bypass with DPDK</text>
+  
+  <!-- Hardware -->
+  <rect x="250" y="60" width="100" height="60" fill="#ccc" rx="5"/>
+  <text x="300" y="95" text-anchor="middle" fill="#333">NIC</text>
+  
+  <!-- Data Path -->
+  <path d="M300 130 l0 100" stroke="#666" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="200" y="240" width="200" height="60" fill="#99ccff" rx="5"/>
+  <text x="300" y="275" text-anchor="middle" fill="#333">DPDK PMD</text>
+  
+  <!-- Userspace App -->
+  <rect x="200" y="320" width="200" height="60" fill="#cceecc" rx="5"/>
+  <text x="300" y="355" text-anchor="middle" fill="#333">Application</text>
+  
+  <!-- Code Example -->
+  <foreignObject x="50" y="150" width="500" height="80">
+    <pre xmlns="http://www.w3.org/1999/xhtml" style="font-family: monospace; color: #333;">
+// Receive packets directly
+struct rte_mbuf *bufs[BURST_SIZE];
+uint16_t nb_rx = rte_eth_rx_burst(port, queue, bufs, BURST_SIZE);</pre>
+  </foreignObject>
+  
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,40 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">Checkpoint Creation Process</text>
+    
+    <!-- Process Memory -->
+    <rect x="50" y="60" width="200" height="300" rx="10" fill="#fff" stroke="#4CAF50" stroke-width="2"/>
+    <text x="150" y="90" text-anchor="middle" fill="#4CAF50">Process Memory</text>
+    <path d="M70 110 l10 -10 10 10 -10 10" fill="#4CAF50"/>
+    <text x="100" y="120" font-size="12">Stack</text>
+    <path d="M70 150 l10 -10 10 10 -10 10" fill="#2196F3"/>
+    <text x="100" y="160" font-size="12">Heap</text>
+    <path d="M70 190 l10 -10 10 10 -10 10" fill="#9C27B0"/>
+    <text x="100" y="200" font-size="12">Registers</text>
+    
+    <!-- Checkpoint File -->
+    <rect x="350" y="100" width="200" height="80" rx="10" fill="#fff" stroke="#FF5722" stroke-width="2"/>
+    <text x="450" y="130" text-anchor="middle" fill="#FF5722">Checkpoint File</text>
+    <text x="450" y="160" text-anchor="middle" font-size="12" fill="#666">(serialized state)</text>
+    
+    <!-- Arrow -->
+    <path d="M250 180 L350 140" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="300" y="170" text-anchor="middle" fill="#666" font-size="12">Serialize State</text>
+    
+    <!-- Code Example -->
+    <g transform="translate(350 200)">
+        <rect x="0" y="0" width="200" height="150" fill="#263238" rx="5"/>
+        <text x="10" y="20" font-family="monospace" font-size="12" fill="#fff">struct ProcessState {</text>
+        <text x="20" y="40" font-family="monospace" font-size="12" fill="#89DDFF">  void* stack_ptr;</text>
+        <text x="20" y="60" font-family="monospace" font-size="12" fill="#89DDFF">  void* heap_base;</text>
+        <text x="20" y="80" font-family="monospace" font-size="12" fill="#89DDFF">  register_t regs[16];</text>
+        <text x="10" y="100" font-family="monospace" font-size="12" fill="#fff">};</text>
+        <text x="10" y="130" font-family="monospace" font-size="12" fill="#C3E88D">save_checkpoint(ProcessState&amp;);</text>
+    </g>
+    
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+        </marker>
+    </defs>
+</svg>

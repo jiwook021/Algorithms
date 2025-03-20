@@ -1,0 +1,47 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#f0f0f0"/>
+    
+    <!-- Title -->
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">Shared Memory Ring Buffer</text>
+
+    <!-- Memory Diagram -->
+    <rect x="100" y="80" width="400" height="200" fill="#fff" stroke="#666"/>
+    
+    <!-- User Space -->
+    <rect x="120" y="100" width="160" height="160" fill="#e3f2fd" stroke="#1e88e5"/>
+    <text x="200" y="120" text-anchor="middle" fill="#1e88e5">User Space</text>
+    
+    <!-- Kernel Space -->
+    <rect x="320" y="100" width="160" height="160" fill="#fce4ec" stroke="#d81b60"/>
+    <text x="400" y="120" text-anchor="middle" fill="#d81b60">Kernel Space</text>
+    
+    <!-- Shared Buffer -->
+    <rect x="240" y="140" width="120" height="120" fill="#c8e6c9" stroke="#388e3c"/>
+    <text x="300" y="160" text-anchor="middle" fill="#388e3c">Ring Buffer</text>
+    
+    <!-- Data Flow -->
+    <path d="M 180 180 L 240 200" stroke="#666" marker-end="url(#arrow)"/>
+    <path d="M 420 220 L 360 200" stroke="#666" marker-end="url(#arrow)"/>
+    
+    <!-- Producer/Consumer Labels -->
+    <text x="180" y="170" text-anchor="end" fill="#1e88e5">Producer</text>
+    <text x="420" y="230" text-anchor="start" fill="#d81b60">Consumer</text>
+
+    <!-- Code Sample -->
+    <g transform="translate(50, 300)" font-size="14" font-family="monospace">
+        <text x="0" y="0" fill="#333">// Shared memory setup</text>
+        <text x="0" y="20" fill="#1e88e5">struct ring_buffer {</text>
+        <text x="20" y="40" fill="#333">std::atomic&lt;size_t&gt; head, tail;</text>
+        <text x="20" y="60" fill="#333">char data[BUFFER_SIZE];</text>
+        <text x="0" y="80" fill="#1e88e5">};</text>
+        <text x="0" y="110" fill="#333">// Map shared memory</text>
+        <text x="0" y="130" fill="#333">auto* buf = mmap(...);</text>
+    </g>
+
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" 
+                markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+        </marker>
+    </defs>
+</svg>

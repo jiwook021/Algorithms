@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="300" y="30" text-anchor="middle" font-size="18">Cache Access and Update</text>
+  
+  <!-- Initial State -->
+  <g transform="translate(100 100)">
+    <text x="0" y="-20" font-size="14">Before Access (Page2):</text>
+    <rect x="0" y="0" width="40" height="40" fill="#ff9999"/>
+    <text x="20" y="20" dominant-baseline="middle" text-anchor="middle">1</text>
+    <rect x="50" y="0" width="40" height="40" fill="#99ff99"/>
+    <text x="70" y="20" dominant-baseline="middle" text-anchor="middle">2</text>
+    <rect x="100" y="0" width="40" height="40" fill="#9999ff"/>
+    <text x="120" y="20" dominant-baseline="middle" text-anchor="middle">3</text>
+    <path d="M0 50 L140 50 M120 45 L140 50 L120 55" stroke="#000"/>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M300 200 L400 200" stroke="#000" stroke-width="2">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Updated State -->
+  <g transform="translate(450 100)">
+    <text x="0" y="-20" font-size="14">After Access:</text>
+    <rect x="0" y="0" width="40" height="40" fill="#99ff99"/>
+    <text x="20" y="20" dominant-baseline="middle" text-anchor="middle">2</text>
+    <rect x="50" y="0" width="40" height="40" fill="#ff9999"/>
+    <text x="70" y="20" dominant-baseline="middle" text-anchor="middle">1</text>
+    <rect x="100" y="0" width="40" height="40" fill="#9999ff"/>
+    <text x="120" y="20" dominant-baseline="middle" text-anchor="middle">3</text>
+    <path d="M0 50 L140 50 M120 45 L140 50 L120 55" stroke="#000"/>
+  </g>
+  
+  <!-- Code Example -->
+  <g transform="translate(50 300)">
+    <rect x="0" y="0" width="500" height="70" fill="#fff" stroke="#000"/>
+    <text x="10" y="15" font-family="monospace" font-size="12">int get(int key) {</text>
+    <text x="20" y="30" font-family="monospace" font-size="12">if (cache.find(key) == cache.end()) return -1;</text>
+    <text x="20" y="45" font-family="monospace" font-size="12">moveToHead(cache[key]); // Update recency</text>
+    <text x="20" y="60" font-family="monospace" font-size="12">return cache[key]->value;</text>
+    <text x="10" y="75" font-family="monospace" font-size="12">}</text>
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#f0f0f0"/>
+    
+    <!-- Title -->
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">Batched Syscall Execution</text>
+    
+    <!-- Traditional Approach -->
+    <g transform="translate(50, 60)">
+        <text x="0" y="0" font-size="16" fill="#cc0000">Traditional Syscalls</text>
+        <path d="M 0 40 l 200 0" stroke="#999" stroke-width="2" stroke-dasharray="4"/>
+        
+        <g transform="translate(0, 60)">
+            <rect x="0" y="0" width="180" height="120" fill="#fff" stroke="#cc0000"/>
+            <path d="M 20 20 h 140 M 20 60 h 140 M 20 100 h 140" stroke="#cc0000"/>
+            <text x="90" y="40" text-anchor="middle" fill="#333">User Mode</text>
+            <text x="90" y="80" text-anchor="middle" fill="#333">Kernel Mode</text>
+            <path d="M 90 50 v 20" stroke="#cc0000" marker-end="url(#arrow)"/>
+        </g>
+    </g>
+
+    <!-- Batched Approach -->
+    <g transform="translate(350, 60)">
+        <text x="0" y="0" font-size="16" fill="#009900">Batched Syscall</text>
+        <path d="M 0 40 l 200 0" stroke="#999" stroke-width="2" stroke-dasharray="4"/>
+        
+        <g transform="translate(0, 60)">
+            <rect x="0" y="0" width="180" height="60" fill="#fff" stroke="#009900"/>
+            <path d="M 20 20 h 140" stroke="#009900"/>
+            <text x="90" y="40" text-anchor="middle" fill="#333">User Mode</text>
+            <path d="M 90 50 v 20" stroke="#009900" marker-end="url(#arrow)"/>
+            
+            <rect x="0" y="100" width="180" height="60" fill="#fff" stroke="#009900"/>
+            <text x="90" y="140" text-anchor="middle" fill="#333">Kernel Mode</text>
+        </g>
+    </g>
+
+    <!-- Code Samples -->
+    <g transform="translate(20, 250)" font-size="14" font-family="monospace">
+        <text x="0" y="0" fill="#cc0000">// Traditional</text>
+        <text x="0" y="30" fill="#333">for (int i=0; i&lt;3; i++) {</text>
+        <text x="20" y="50" fill="#333">syscall(SYS_read, ...);</text>
+        <text x="0" y="70" fill="#333">}</text>
+        
+        <text x="350" y="0" fill="#009900">// Batched</text>
+        <text x="350" y="30" fill="#333">struct batch_request {</text>
+        <text x="370" y="50" fill="#333">int type[3];</text>
+        <text x="370" y="70" fill="#333">void* params[3];</text>
+        <text x="350" y="90" fill="#333">};</text>
+        <text x="350" y="120" fill="#333">syscall(SYS_batch, &amp;req);</text>
+    </g>
+
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" 
+                markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+        </marker>
+    </defs>
+</svg>

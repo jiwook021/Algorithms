@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="300" y="30" text-anchor="middle" font-size="20">LRU Cache Structure</text>
+  
+  <!-- Linked List Visualization -->
+  <rect x="100" y="100" width="400" height="180" rx="10" fill="#fff"/>
+  <circle cx="150" cy="180" r="25" fill="#4CAF50"/>
+  <circle cx="300" cy="180" r="25" fill="#2196F3"/>
+  <circle cx="450" cy="180" r="25" fill="#FF5722"/>
+  <path d="M170,180 L280,180 M320,180 L430,180" stroke="#000" stroke-width="2"/>
+  <path d="M280,180 L270,175 M280,180 L270,185" stroke="#000"/>
+  <path d="M320,180 L330,175 M320,180 L330,185" stroke="#000"/>
+  
+  <!-- Hash Map Visualization -->
+  <rect x="100" y="60" width="80" height="30" fill="#FFEB3B"/>
+  <text x="140" y="80" text-anchor="middle" font-size="14">Key 1</text>
+  <rect x="100" y="280" width="80" height="30" fill="#FFEB3B"/>
+  <text x="140" y="300" text-anchor="middle" font-size="14">Key 3</text>
+  <rect x="400" y="280" width="80" height="30" fill="#FFEB3B"/>
+  <text x="440" y="300" text-anchor="middle" font-size="14">Key 2</text>
+  
+  <!-- Labels -->
+  <text x="150" y="220" text-anchor="middle" font-size="12">Page 1 (MRU)</text>
+  <text x="300" y="220" text-anchor="middle" font-size="12">Page 3</text>
+  <text x="450" y="220" text-anchor="middle" font-size="12">Page 2 (LRU)</text>
+  <text x="300" y="330" text-anchor="middle" font-size="14" fill="#666">Hash Map points to linked list nodes</text>
+  
+  <!-- Code Snippet -->
+  <rect x="50" y="340" width="500" height="50" fill="#e0e0e0" rx="5"/>
+  <text x="60" y="360" font-family="monospace" font-size="12">class LRUCache {</text>
+  <text x="60" y="375" font-family="monospace" font-size="12">  unordered_map&lt;int, list&lt;pair&lt;int,int>>::iterator&gt; cacheMap;</text>
+  <text x="60" y="390" font-family="monospace" font-size="12">  list&lt;pair&lt;int,int>> cacheList;</text>
+</svg>

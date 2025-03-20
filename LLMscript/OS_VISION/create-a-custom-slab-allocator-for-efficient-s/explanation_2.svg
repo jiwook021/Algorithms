@@ -1,0 +1,36 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#f0f0f0"/>
+    <text x="300" y="30" text-anchor="middle" font-size="20">Allocation Process</text>
+    
+    <!-- Memory layout -->
+    <rect x="50" y="80" width="500" height="120" fill="#d0e8ff" stroke="#2c6aa6" stroke-width="2"/>
+    
+    <!-- Free chunks -->
+    <rect x="60" y="90" width="80" height="100" fill="#c8f7dc" stroke="#2c6aa6"/>
+    <rect x="150" y="90" width="80" height="100" fill="#ffd9d9" stroke="#ff4444"/>
+    <rect x="240" y="90" width="80" height="100" fill="#c8f7dc" stroke="#2c6aa6"/>
+    
+    <!-- Allocation arrows -->
+    <path d="M300,250 L300,210 L150,210 L150,190" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="300" y="260" text-anchor="middle">Allocation request</text>
+    
+    <!-- Code snippet -->
+    <g transform="translate(50 280)">
+        <rect width="500" height="100" fill="#e0e0e0" rx="5"/>
+        <text x="10" y="25" font-family="monospace" font-size="12" fill="#000">
+            <tspan x="10" dy="1.2em">void* SlabAllocator::allocate() {</tspan>
+            <tspan x="20" dy="1.2em">    if (free_list == nullptr) {</tspan>
+            <tspan x="30" dy="1.2em">        allocate_new_slab();</tspan>
+            <tspan x="20" dy="1.2em">    }</tspan>
+            <tspan x="20" dy="1.2em">    void* ptr = free_list;</tspan>
+            <tspan x="20" dy="1.2em">    free_list = *(void**)free_list;</tspan>
+            <tspan x="10" dy="1.2em">}</tspan>
+        </text>
+    </g>
+    
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L9,3 z" fill="#000"/>
+        </marker>
+    </defs>
+</svg>

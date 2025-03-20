@@ -1,0 +1,17 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <!-- Grid Division Visualization -->
+    <rect x="100" y="80" width="400" height="240" fill="none" stroke="black"/>
+    <path d="M 100 160 H 500 M 100 240 H 500 M 233.33 80 V 320 M 366.66 80 V 320" stroke="#666" stroke-dasharray="4"/>
+    <rect x="233.33" y="160" width="133.33" height="80" fill="#ff999980" stroke="#ff0000" stroke-width="2"/>
+    <text x="300" y="70" font-size="18" text-anchor="middle" fill="#333">YOLO Grid Division (3x3)</text>
+    <text x="300" y="340" font-size="14" text-anchor="middle" fill="#333">Input Image (400x240)</text>
+    <text x="300" y="200" font-size="12" text-anchor="middle" fill="#c00">Grid Cell\n(133x80)\nResponsible for predictions</text>
+    <!-- C++ Code -->
+    <g transform="translate(30 360)">
+        <rect x="0" y="0" width="540" height="30" fill="#e0e0e0" rx="5"/>
+        <text x="10" y="20" font-family="monospace" font-size="12" fill="#333">
+            <tspan fill="#0000ff">constexpr int</tspan> GRID_SIZE = 3;  // 3x3 division
+        </text>
+    </g>
+</svg>

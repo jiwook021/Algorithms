@@ -1,0 +1,37 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#f0f0f0"/>
+    <text x="300" y="30" text-anchor="middle" font-size="20">3. Asynchronous Syscalls</text>
+    
+    <!-- User Space -->
+    <rect x="50" y="80" width="200" height="240" fill="#c3d9ff" rx="5"/>
+    <text x="150" y="110" text-anchor="middle">User Space</text>
+    
+    <!-- Kernel Space -->
+    <rect x="350" y="80" width="200" height="240" fill="#ffd1dc" rx="5"/>
+    <text x="450" y="110" text-anchor="middle">Kernel Space</text>
+    
+    <!-- Async Flow -->
+    <path d="M150 150h200" stroke="#3498db" stroke-width="2"/>
+    <path d="M150 150l-10-5h20z" fill="#3498db"/>
+    <text x="300" y="140" text-anchor="middle" fill="#3498db">1. Queue Request</text>
+    
+    <path d="M350 200h-200" stroke="#f39c12" stroke-width="2"/>
+    <path d="M350 200l10 5h-20z" fill="#f39c12"/>
+    <text x="300" y="220" text-anchor="middle" fill="#f39c12">3. Completion Signal</text>
+    
+    <!-- Parallel Processing -->
+    <rect x="380" y="150" width="140" height="40" fill="#9b59b6" rx="3"/>
+    <text x="450" y="175" text-anchor="middle" fill="white">Processing</text>
+    <path d="M150 240h200" stroke="#2ecc71" stroke-dasharray="4"/>
+    <text x="300" y="260" text-anchor="middle" fill="#2ecc71">2. Continue Execution</text>
+    
+    <!-- Code Example -->
+    <g transform="translate(100 320)">
+        <text x="0" y="0" font-family="monospace" font-size="12">
+            <tspan x="0" dy="1.2em">void async_read(int fd, void* buf,</tspan>
+            <tspan x="0" dy="1.2em">                 std::function&lt;void()&gt; callback) {</tspan>
+            <tspan x="10" dy="1.2em">// Queue request and return immediately</tspan>
+            <tspan x="0" dy="1.2em">}</tspan>
+        </text>
+    </g>
+</svg>

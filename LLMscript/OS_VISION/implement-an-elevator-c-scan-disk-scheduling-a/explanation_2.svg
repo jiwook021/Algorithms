@@ -1,0 +1,25 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="300" y="30" font-size="20" text-anchor="middle">Directional Movement &amp; Wrap-around</text>
+  
+  <!-- Track line -->
+  <path d="M50 200 L550 200" stroke="black" stroke-width="2"/>
+  
+  <!-- Movement arrows -->
+  <path d="M100 180 L300 180 L290 170 M300 180 L290 190" stroke="green" stroke-width="2"/>
+  <path d="M300 180 L500 180 L490 170 M500 180 L490 190" stroke="green" stroke-width="2"/>
+  <path d="M500 220 L100 220 L110 210 M100 220 L110 230" stroke="red" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Labels -->
+  <text x="200" y="160" font-size="14" fill="green">Service direction</text>
+  <text x="450" y="240" font-size="14" fill="red">Wrap-around return</text>
+  <text x="50" y="220" font-size="12">Start (0)</text>
+  <text x="550" y="220" font-size="12">End (199)</text>
+  
+  <!-- Code snippet -->
+  <rect x="50" y="260" width="500" height="100" fill="#e0e0e0" rx="5"/>
+  <text x="70" y="290" font-size="14" font-family="monospace" fill="#333">// Move head to end</text>
+  <text x="70" y="310" font-size="14" font-family="monospace" fill="#333">for (int track : upper_requests) {</text>
+  <text x="90" y="330" font-size="14" font-family="monospace" fill="#333">head_position = track;</text>
+  <text x="70" y="350" font-size="14" font-family="monospace" fill="#333">}</text>
+</svg>

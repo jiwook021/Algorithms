@@ -1,0 +1,35 @@
+<svg viewBox="0 0 600 400" width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="300" y="30" text-anchor="middle" font-size="20" fill="#333">Architecture Optimization</text>
+    
+    <!-- Heavy Model -->
+    <rect x="50" y="80" width="200" height="240" fill="#ff6666" rx="10"/>
+    <text x="150" y="100" text-anchor="middle" fill="#fff">VGG-16</text>
+    <rect x="70" y="120" width="160" height="30" fill="#fff" rx="5"/>
+    <rect x="70" y="160" width="160" height="30" fill="#fff" rx="5"/>
+    <rect x="70" y="200" width="160" height="30" fill="#fff" rx="5"/>
+    <rect x="70" y="240" width="160" height="30" fill="#fff" rx="5"/>
+    
+    <!-- Lightweight Model -->
+    <rect x="350" y="100" width="200" height="200" fill="#66cc66" rx="10"/>
+    <text x="450" y="120" text-anchor="middle" fill="#fff">MobileNet</text>
+    <rect x="370" y="140" width="160" height="20" fill="#fff" rx="3"/>
+    <rect x="370" y="170" width="160" height="20" fill="#fff" rx="3"/>
+    <rect x="370" y="200" width="160" height="20" fill="#fff" rx="3"/>
+    
+    <!-- Code Example -->
+    <rect x="100" y="340" width="400" height="50" fill="#2d2d2d" rx="5"/>
+    <text x="110" y="365" fill="#7ec699" font-family="monospace" font-size="14">// Use depthwise separable conv</text>
+    <text x="110" y="385" fill="#7ec699" font-family="monospace" font-size="14">DWConv(input, output, kernel, stride);</text>
+    
+    <!-- Comparison Arrow -->
+    <path d="M270 200 L330 200" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="300" y="240" text-anchor="middle" fill="#333">90% fewer</text>
+    <text x="300" y="260" text-anchor="middle" fill="#333">parameters</text>
+    
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+        </marker>
+    </defs>
+</svg>

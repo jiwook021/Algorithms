@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">3. Feature Extraction</text>
+  
+  <!-- Character Sample -->
+  <path d="M100 100 Q150 50 200 100 Q180 150 100 200" stroke="#333" fill="none" stroke-width="3"/>
+  
+  <!-- Feature Points -->
+  <circle cx="150" cy="50" r="5" fill="#FF5722"/>
+  <circle cx="180" cy="150" r="5" fill="#FF5722"/>
+  <circle cx="100" cy="200" r="5" fill="#FF5722"/>
+  
+  <!-- Feature Lines -->
+  <path d="M100 100 L150 50 L200 100" stroke="#FF5722" stroke-dasharray="4" fill="none"/>
+  <path d="M200 100 L180 150 L100 200" stroke="#FF5722" stroke-dasharray="4" fill="none"/>
+  
+  <!-- Feature Matrix -->
+  <g transform="translate(350 80)">
+    <rect width="120" height="120" fill="#fff" stroke="#333"/>
+    <text x="60" y="30" text-anchor="middle" fill="#333">HOG Features</text>
+    <path d="M10 50 h100 M10 70 h100 M10 90 h100" stroke="#2196F3"/>
+  </g>
+  
+  <!-- Legend -->
+  <text x="100" y="250" fill="#FF5722">• Stroke Direction</text>
+  <text x="100" y="270" fill="#2196F3">• Gradient Orientation</text>
+</svg>

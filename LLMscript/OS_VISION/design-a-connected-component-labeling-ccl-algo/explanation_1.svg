@@ -1,0 +1,27 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="300" y="30" font-size="20" text-anchor="middle">1. Binary Input Image</text>
+  
+  <!-- Pixel grid -->
+  <g transform="translate(100 80)">
+    <!-- Background 0s -->
+    <rect x="0" y="0" width="300" height="300" fill="#ddd"/>
+    <text x="150" y="340" text-anchor="middle" fill="black">Original Binary Image (0=background, 1=foreground)</text>
+    
+    <!-- Foreground 1s -->
+    <rect x="40" y="40" width="40" height="40" fill="#4CAF50"/>
+    <rect x="120" y="40" width="40" height="40" fill="#4CAF50"/>
+    <rect x="200" y="120" width="40" height="40" fill="#4CAF50"/>
+    <rect x="40" y="200" width="40" height="40" fill="#4CAF50"/>
+    <rect x="200" y="200" width="40" height="40" fill="#4CAF50"/>
+    
+    <!-- Grid lines -->
+    <g stroke="#666" stroke-width="0.5">
+      <!-- Vertical -->
+      <path d="M0 0v300"/>
+      <path d="M60 0v300"/><path d="M120 0v300"/><path d="M180 0v300"/><path d="M240 0v300"/><path d="M300 0v300"/>
+      <!-- Horizontal -->
+      <path d="M0 0h300"/><path d="M0 60h300"/><path d="M0 120h300"/><path d="M0 180h300"/><path d="M0 240h300"/><path d="M0 300h300"/>
+    </g>
+  </g>
+</svg>

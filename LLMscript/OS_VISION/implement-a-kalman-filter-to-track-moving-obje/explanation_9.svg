@@ -1,0 +1,43 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Kalman Filter Cycle -->
+    <rect x="0" y="0" width="600" height="400" fill="#f0f0f0"/>
+    
+    <!-- Prediction-Correction Cycle -->
+    <circle cx="300" cy="200" r="150" fill="none" stroke="#333" stroke-width="2"/>
+    <path d="M 300 50 Q 450 200 300 350 Q 150 200 300 50" fill="none" stroke="#007bff" stroke-width="3"/>
+    
+    <!-- Prediction Section -->
+    <g transform="translate(400 120)">
+        <rect x="0" y="0" width="160" height="80" fill="#e3f2fd" rx="5"/>
+        <text x="80" y="30" text-anchor="middle" font-family="monospace" fill="#007bff">Predict</text>
+        <text x="80" y="50" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">
+            x̂ₖ⁻ = Fxₖ₋₁ + Buₖ
+        </text>
+        <text x="80" y="70" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">
+            Pₖ⁻ = FPₖ₋₁Fᵀ + Q
+        </text>
+    </g>
+
+    <!-- Update Section -->
+    <g transform="translate(200 280)">
+        <rect x="0" y="0" width="160" height="80" fill="#e8f5e9" rx="5"/>
+        <text x="80" y="30" text-anchor="middle" font-family="monospace" fill="#28a745">Update</text>
+        <text x="80" y="50" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">
+            Kₖ = Pₖ⁻Hᵀ(HPₖ⁻Hᵀ + R)⁻¹
+        </text>
+        <text x="80" y="70" text-anchor="middle" font-family="monospace" font-size="12" fill="#333">
+            xₖ = x̂ₖ⁻ + Kₖ(zₖ - Hx̂ₖ⁻)
+        </text>
+    </g>
+
+    <!-- C++ Code Example -->
+    <g transform="translate(50 350)">
+        <text x="0" y="0" font-family="monospace" font-size="14" fill="#333">
+            <tspan x="0" dy="1.2em">// C++ Kalman predict step</tspan>
+            <tspan x="0" dy="1.2em">void predict() {</tspan>
+            <tspan x="20" dy="1.2em">x = F * x + B * u;</tspan>
+            <tspan x="20" dy="1.2em">P = F * P * F.transpose() + Q;</tspan>
+            <tspan x="0" dy="1.2em">}</tspan>
+        </text>
+    </g>
+</svg>

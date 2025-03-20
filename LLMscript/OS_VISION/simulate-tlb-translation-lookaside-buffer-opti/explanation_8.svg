@@ -1,0 +1,30 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#f0f0f0"/>
+    
+    <!-- TLB Hit/Miss Workflow -->
+    <circle cx="100" cy="200" r="40" fill="#c5e1a5" stroke="#2e7d32"/>
+    <text x="85" y="205" font-family="sans-serif">CPU</text>
+    
+    <path d="M140 200 L180 200" stroke="#37474f" stroke-width="2"/>
+    <rect x="180" y="160" width="120" height="80" fill="#fff3e0" stroke="#fb8c00"/>
+    <text x="190" y="190" font-family="monospace">TLB Check</text>
+    
+    <g transform="translate(320 200)">
+        <path d="M-40 0 L0 0 L0 -80 L80 -80" stroke="#37474f" fill="none" stroke-width="2"/>
+        <rect x="80" y="-120" width="120" height="80" fill="#ffcdd2" stroke="#c62828"/>
+        <text x="90" y="-90" font-family="monospace">Page Walk</text>
+        <text x="90" y="-70" font-family="monospace">(Costly!)</text>
+    </g>
+
+    <!-- TLB Update -->
+    <path d="M500 200 L540 200 L540 240 L420 240 L420 160" stroke="#37474f" fill="none" stroke-width="2"/>
+    <rect x="420" y="260" width="120" height="80" fill="#f0f4c3" stroke="#afb42b"/>
+    <text x="430" y="290" font-family="monospace">Update TLB</text>
+    <text x="430" y="310" font-family="monospace">with new entry</text>
+
+    <!-- Code Example -->
+    <rect x="50" y="300" width="300" height="80" fill="#fff" stroke="#607d8b"/>
+    <text x="60" y="320" font-family="monospace" font-size="12">// C++ code with locality</text>
+    <text x="60" y="340" font-family="monospace" font-size="12">for (int i=0; i&lt;N; i+=64) {</text>
+    <text x="80" y="360" font-family="monospace" font-size="12">process(data[i]);</text>
+</svg>

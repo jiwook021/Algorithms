@@ -1,0 +1,28 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="300" y="30" font-size="20" text-anchor="middle">Loss Function Comparison</text>
+    
+    <!-- MSE -->
+    <circle cx="150" cy="150" r="50" fill="#fdae61" stroke="#d94801"/>
+    <text x="150" y="150" text-anchor="middle" fill="black">MSE</text>
+    <text x="150" y="210" text-anchor="middle">Pixel-wise</text>
+    <text x="150" y="230" text-anchor="middle">difference</text>
+    
+    <!-- Perceptual Loss -->
+    <circle cx="450" cy="150" r="50" fill="#7570b3" stroke="#54278f"/>
+    <text x="450" y="150" text-anchor="middle">VGG-based</text>
+    <text x="450" y="170" text-anchor="middle">Loss</text>
+    
+    <!-- Feature Extraction Diagram -->
+    <path d="M300 250 L450 200" stroke="#666" fill="none"/>
+    <rect x="250" y="250" width="100" height="40" fill="#b3e2cd"/>
+    <text x="300" y="275" text-anchor="middle">Feature</text>
+    <text x="300" y="295" text-anchor="middle">Extraction</text>
+    
+    <!-- Code Example -->
+    <rect x="50" y="300" width="500" height="80" fill="#2d2d2d"/>
+    <text x="60" y="320" fill="white" font-family="monospace" font-size="12">
+        <tspan x="60" y="320">// C++ MSE calculation</tspan>
+        <tspan x="60" y="340">double mse = (predicted - target).square().mean();</tspan>
+    </text>
+</svg>

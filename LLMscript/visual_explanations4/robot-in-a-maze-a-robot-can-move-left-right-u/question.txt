@@ -1,1 +1,0 @@
-"Robot in a Maze": A robot can move left, right, up, and down in a maze—find all possible paths.

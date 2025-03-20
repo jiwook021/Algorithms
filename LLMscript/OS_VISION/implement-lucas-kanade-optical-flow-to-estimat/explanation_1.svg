@@ -1,0 +1,34 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    
+    <!-- Brightness Constancy Equation -->
+    <text x="50" y="50" font-size="16" font-family="monospace" fill="navy">
+        Brightness Constancy Assumption:
+    </text>
+    <text x="80" y="80" font-size="14" font-family="monospace" fill="darkgreen">
+        I(x, y, t) = I(x+Δx, y+Δy, t+Δt)
+    </text>
+    
+    <!-- Image Patches -->
+    <rect x="100" y="120" width="120" height="120" fill="none" stroke="blue" stroke-width="2"/>
+    <text x="150" y="110" font-size="12" fill="blue">Frame t</text>
+    
+    <rect x="280" y="150" width="120" height="120" fill="none" stroke="red" stroke-width="2"/>
+    <text x="320" y="140" font-size="12" fill="red">Frame t+Δt</text>
+    
+    <!-- Motion Arrow -->
+    <path d="M220 180 L280 210" stroke="purple" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <text x="240" y="200" font-size="12" fill="purple">Optical Flow Vector</text>
+    
+    <!-- Code Example -->
+    <text x="50" y="300" font-size="12" font-family="monospace" fill="black">
+        // C++: Brightness difference
+        <tspan x="50" dy="20">Mat diff = nextFrame - prevFrame;</tspan>
+    </text>
+    
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L9,3 z" fill="purple"/>
+        </marker>
+    </defs>
+</svg>

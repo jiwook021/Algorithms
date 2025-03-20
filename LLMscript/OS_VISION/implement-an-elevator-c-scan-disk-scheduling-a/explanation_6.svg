@@ -1,0 +1,27 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="300" y="30" text-anchor="middle" font-size="18" fill="#333">C-SCAN Operation Flow</text>
+  
+  <!-- Disk track -->
+  <path d="M50 200 L550 200" stroke="#666" stroke-width="2"/>
+  <text x="50" y="190" text-anchor="middle" fill="#666">0</text>
+  <text x="550" y="190" text-anchor="middle" fill="#666">199</text>
+  
+  <!-- Head movement -->
+  <path d="M150 200 L450 200" stroke="#2ecc71" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M450 200 L50 200" stroke="#e74c3c" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Head position -->
+  <circle cx="150" cy="200" r="8" fill="#e67e22"/>
+  <text x="150" y="230" text-anchor="middle" fill="#e67e22">Start (53)</text>
+  
+  <!-- Legend -->
+  <text x="50" y="270" fill="#2ecc71">Service direction (forward)</text>
+  <text x="50" y="290" fill="#e74c3c">Return without service</text>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2ecc71"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,23 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Backpropagation Flow -->
+  <path d="M500,200 L400,200" stroke="#7B1FA2" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="450" y="190" fill="#7B1FA2">Gradients</text>
+  
+  <!-- Network Layers -->
+  <rect x="300" y="150" width="100" height="60" fill="#D1C4E9" stroke="#512DA8"/>
+  <text x="325" y="185" fill="#512DA8">FC Layer</text>
+  
+  <rect x="200" y="150" width="100" height="60" fill="#B2DFDB" stroke="#00796B"/>
+  <text x="220" y="185" fill="#00796B">Pooling</text>
+  
+  <rect x="100" y="150" width="100" height="60" fill="#FFCCBC" stroke="#BF360C"/>
+  <text x="115" y="185" fill="#BF360C">Conv Layer</text>
+  
+  <!-- C++ Code Example -->
+  <text x="100" y="280" font-size="12" fill="#37474F" font-family="monospace">
+    <tspan x="100" y="280">// Weight update</tspan>
+    <tspan x="100" y="300">for(int i=0; i&lt;kernel_size; i++){</tspan>
+    <tspan x="120" y="320">for(int j=0; j&lt;kernel_size; j++){</tspan>
+    <tspan x="140" y="340">kernel[i][j] -= lr * gradient;</tspan>
+  </text>
+</svg>

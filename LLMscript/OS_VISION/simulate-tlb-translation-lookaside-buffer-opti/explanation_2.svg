@@ -1,0 +1,44 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#f0f0f0"/>
+    
+    <!-- Title -->
+    <text x="300" y="30" font-size="18" text-anchor="middle" font-family="Arial">TLB Coalescing for Contiguous Mappings</text>
+    
+    <!-- Virtual Memory Blocks -->
+    <g transform="translate(50,100)">
+        <rect x="0" y="0" width="60" height="60" fill="#a0a0ff"/>
+        <rect x="60" y="0" width="60" height="60" fill="#a0a0ff"/>
+        <rect x="120" y="0" width="60" height="60" fill="#a0a0ff"/>
+        <rect x="180" y="0" width="60" height="60" fill="#a0a0ff"/>
+        <text x="120" y="-10" text-anchor="middle" font-family="Arial">Virtual Pages</text>
+        <text x="30" y="30" font-family="Arial">0x1000</text>
+        <text x="90" y="30" font-family="Arial">0x2000</text>
+        <text x="150" y="30" font-family="Arial">0x3000</text>
+        <text x="210" y="30" font-family="Arial">0x4000</text>
+    </g>
+    
+    <!-- Physical Memory Blocks -->
+    <g transform="translate(350,100)">
+        <rect x="0" y="0" width="60" height="60" fill="#ffa0a0"/>
+        <rect x="60" y="0" width="60" height="60" fill="#ffa0a0"/>
+        <rect x="120" y="0" width="60" height="60" fill="#ffa0a0"/>
+        <rect x="180" y="0" width="60" height="60" fill="#ffa0a0"/>
+        <text x="120" y="-10" text-anchor="middle" font-family="Arial">Physical Frames</text>
+        <text x="30" y="30" font-family="Arial">0x8000</text>
+        <text x="90" y="30" font-family="Arial">0x9000</text>
+        <text x="150" y="30" font-family="Arial">0xA000</text>
+        <text x="210" y="30" font-family="Arial">0xB000</text>
+    </g>
+    
+    <!-- Coalesced TLB Entry -->
+    <rect x="200" y="200" width="200" height="60" fill="#66ff66"/>
+    <text x="300" y="220" text-anchor="middle" font-family="Arial">TLB Entry</text>
+    <text x="300" y="240" text-anchor="middle" font-family="Arial" font-size="12">0x1000-0x4000 → 0x8000-0xB000</text>
+    
+    <!-- Code Example -->
+    <g transform="translate(20,350)">
+        <rect width="560" height="40" fill="#2b2b2b" rx="5"/>
+        <text x="10" y="25" fill="white" font-family="monospace" font-size="12">// C++: Contiguous memory access</text>
+        <text x="10" y="40" fill="white" font-family="monospace" font-size="12">for(int i=0; i&lt;1024; i++) buffer[i] = ...; // Promotes coalescing</text>
+    </g>
+</svg>

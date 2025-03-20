@@ -1,0 +1,27 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#f0f0f0"/>
+    
+    <!-- Memory Layout -->
+    <rect x="50" y="100" width="500" height="200" fill="#e0e0e0" rx="5"/>
+    
+    <!-- Different Slab Classes -->
+    <rect x="70" y="120" width="100" height="160" fill="#4a90d6"/>
+    <rect x="190" y="120" width="100" height="160" fill="#78c679"/>
+    <rect x="310" y="120" width="100" height="160" fill="#f0ad4e"/>
+    <rect x="430" y="120" width="100" height="160" fill="#d9534f"/>
+    
+    <!-- Labels -->
+    <text x="300" y="70" font-family="sans-serif" font-size="18" fill="#333" text-anchor="middle">Size-Class Slabs</text>
+    <text x="120" y="300" font-family="monospace" font-size="12" fill="white">16B</text>
+    <text x="240" y="300" font-family="monospace" font-size="12" fill="white">32B</text>
+    <text x="360" y="300" font-family="monospace" font-size="12" fill="white">64B</text>
+    <text x="480" y="300" font-family="monospace" font-size="12" fill="white">128B</text>
+    
+    <!-- Code Example -->
+    <text x="100" y="340" font-family="monospace" font-size="14" fill="#333">
+        <tspan x="100" y="340">struct Slab {</tspan>
+        <tspan x="100" y="360">    size_t object_size;</tspan>
+        <tspan x="100" y="380">    FreeList free_list;</tspan>
+        <tspan x="100" y="400">};</tspan>
+    </text>
+</svg>

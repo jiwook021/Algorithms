@@ -1,0 +1,37 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <g transform="translate(100,50)">
+    <!-- Coordinate Systems -->
+    <g transform="translate(0,150)">
+      <!-- Marker Coordinate System -->
+      <path d="M0,0 L50,0" stroke="#e74c3c" stroke-width="2"/>
+      <path d="M0,0 L0,50" stroke="#2ecc71" stroke-width="2"/>
+      <path d="M0,0 L-35,35" stroke="#3498db" stroke-width="2"/>
+      <text x="55" y="5" font-family="monospace" font-size="12" fill="#e74c3c">X</text>
+      <text x="-5" y="55" font-family="monospace" font-size="12" fill="#2ecc71">Y</text>
+      <text x="-40" y="40" font-family="monospace" font-size="12" fill="#3498db">Z</text>
+      <rect x="-25" y="-25" width="50" height="50" fill="#2c3e50" opacity="0.8"/>
+    </g>
+
+    <!-- Camera -->
+    <g transform="translate(400,100)">
+      <path d="M0,0 l-30,50 l60,0 z" fill="#7f8c8d"/>
+      <circle cx="0" cy="0" r="15" fill="#34495e"/>
+      <text x="0" y="90" font-family="monospace" font-size="12" fill="#2c3e50" text-anchor="middle">Camera</text>
+    </g>
+
+    <!-- Pose Estimation -->
+    <path d="M150,150 Q275,100 400,100" stroke="#9b59b6" stroke-width="2" fill="none"/>
+    <text x="275" y="80" font-family="monospace" font-size="14" fill="#9b59b6" text-anchor="middle">solvePnP()</text>
+
+    <!-- Code Example -->
+    <g transform="translate(50,300)">
+      <rect x="0" y="0" width="500" height="60" fill="#2c3e50" rx="5"/>
+      <text x="10" y="20" font-family="monospace" font-size="12" fill="#ecf0f1">
+        <tspan x="10" dy="1.2em">cv::Mat rvec, tvec;</tspan>
+        <tspan x="10" dy="1.2em">cv::solvePnP(markerCorners, detectedCorners, </tspan>
+        <tspan x="10" dy="1.2em">  cameraMatrix, distCoeffs, rvec, tvec);</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

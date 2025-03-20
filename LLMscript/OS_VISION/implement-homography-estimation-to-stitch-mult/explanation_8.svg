@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <!-- Homography Matrix -->
+  <g transform="translate(150,100)">
+    <rect x="0" y="0" width="300" height="140" fill="#eee" rx="5"/>
+    <text x="150" y="30" font-size="16" text-anchor="middle">Homography Matrix H</text>
+    <text x="50" y="70" font-size="14">[
+  [h₁₁, h₁₂, h₁₃]</text>
+    <text x="50" y="95" font-size="14"> [h₂₁, h₂₂, h₂₃]</text>
+    <text x="50" y="120" font-size="14"> [h₃₁, h₃₂, 1  ]</text>
+    <text x="50" y="160" font-size="14">x' = (h₁₁x + h₁₂y + h₁₃)/(h₃₁x + h₃₂y + 1)</text>
+    <text x="50" y="180" font-size="14">y' = (h₂₁x + h₂₂y + h₂₃)/(h₃₁x + h₃₂y + 1)</text>
+  </g>
+  <!-- Code Example -->
+  <g transform="translate(50,250)">
+    <text x="0" y="0" font-family="monospace" font-size="12">
+      <tspan x="0" y="0">// C++ OpenCV implementation</tspan>
+      <tspan x="0" y="20">vector&lt;Point2f&gt; src_pts, dst_pts;</tspan>
+      <tspan x="0" y="40">Mat H = findHomography(src_pts, dst_pts,</tspan>
+      <tspan x="0" y="60">    RANSAC, 3);</tspan>
+    </text>
+  </g>
+</svg>

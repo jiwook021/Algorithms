@@ -1,0 +1,39 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#F0F0F0"/>
+    <text x="300" y="30" font-size="20" text-anchor="middle" fill="#333">Thread-Local Memory Arenas</text>
+    
+    <!-- Threads -->
+    <rect x="50" y="60" width="100" height="60" rx="5" fill="#FFCCCB"/>
+    <text x="100" y="90" text-anchor="middle" fill="#B33">Thread 1</text>
+    <rect x="50" y="150" width="100" height="60" rx="5" fill="#CBE4FE"/>
+    <text x="100" y="180" text-anchor="middle" fill="#339">Thread 2</text>
+    
+    <!-- Memory Arenas -->
+    <rect x="200" y="50" width="350" height="140" fill="#FFF" stroke="#666"/>
+    <rect x="200" y="50" width="350" height="70" fill="#FFE5B4"/>
+    <rect x="200" y="120" width="350" height="70" fill="#D5E8D4"/>
+    
+    <!-- Allocation Blocks -->
+    <rect x="210" y="60" width="80" height="50" fill="#FF6666"/>
+    <rect x="300" y="60" width="100" height="50" fill="#66FF66"/>
+    <rect x="210" y="130" width="120" height="50" fill="#6666FF"/>
+    <rect x="340" y="130" width="200" height="50" fill="#FF66FF"/>
+    
+    <!-- Arrows -->
+    <path d="M150 90 L200 90" stroke="#333" fill="none"/>
+    <path d="M150 180 L200 180" stroke="#333" fill="none"/>
+    
+    <!-- Legend -->
+    <text x="210" y="200" fill="#333">Arena 1 (Thread 1)</text>
+    <text x="210" y="220" fill="#333">Arena 2 (Thread 2)</text>
+    <text x="210" y="240" fill="#333">Different colors = different allocation groups</text>
+    
+    <!-- Code Example -->
+    <rect x="50" y="250" width="500" height="130" fill="#FFF" rx="5"/>
+    <text x="60" y="270" font-family="monospace" font-size="12" fill="#333">class ThreadArena {</text>
+    <text x="70" y="290" font-family="monospace" font-size="12" fill="#333">thread_local static Arena* arena;</text>
+    <text x="60" y="310" font-family="monospace" font-size="12" fill="#333">public:</text>
+    <text x="70" y="330" font-family="monospace" font-size="12" fill="#333">static void* allocate(size_t size) {</text>
+    <text x="80" y="350" font-family="monospace" font-size="12" fill="#333">if(!arena) arena = create_arena();</text>
+    <text x="80" y="370" font-family="monospace" font-size="12" fill="#333">return arena->alloc(size);</text>
+</svg>

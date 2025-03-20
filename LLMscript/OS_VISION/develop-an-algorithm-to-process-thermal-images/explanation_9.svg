@@ -1,0 +1,46 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Thermal Image Preprocessing -->
+    <rect x="0" y="0" width="600" height="400" fill="#1a1a1a"/>
+    
+    <text x="300" y="30" fill="white" font-size="20" text-anchor="middle">Thermal Image Preprocessing</text>
+    
+    <!-- Raw Thermal Image -->
+    <g transform="translate(50, 60)">
+        <rect x="0" y="0" width="200" height="200" fill="url(#thermalGradient)"/>
+        <circle cx="160" cy="40" r="3" fill="red"/>
+        <circle cx="80" cy="120" r="2" fill="red"/>
+        <circle cx="120" cy="180" r="4" fill="red"/>
+        <text x="100" y="220" fill="white" text-anchor="middle">Raw Image (Noisy)</text>
+    </g>
+    
+    <!-- Processing Arrow -->
+    <path d="M300 150 L350 150 L340 140 M350 150 L340 160" fill="none" stroke="#00ff00" stroke-width="2"/>
+    
+    <!-- Processed Image -->
+    <g transform="translate(350, 60)">
+        <rect x="0" y="0" width="200" height="200" fill="url(#smoothGradient)"/>
+        <text x="100" y="220" fill="white" text-anchor="middle">Gaussian Blur Applied</text>
+    </g>
+    
+    <!-- Code Example -->
+    <g transform="translate(50, 300)">
+        <rect x="0" y="0" width="500" height="80" fill="#002b36" rx="5"/>
+        <text x="10" y="20" fill="#839496" font-family="monospace" font-size="14">void applyGaussianBlur(Mat&amp; img) {</text>
+        <text x="20" y="40" fill="#839496" font-family="monospace" font-size="14">GaussianBlur(img, img, Size(5,5), 0);</text>
+        <text x="10" y="60" fill="#839496" font-family="monospace" font-size="14">}</text>
+    </g>
+    
+    <!-- Gradients -->
+    <defs>
+        <linearGradient id="thermalGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#0000ff"/>
+            <stop offset="50%" stop-color="#ff0000"/>
+            <stop offset="100%" stop-color="#ffff00"/>
+        </linearGradient>
+        <linearGradient id="smoothGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#0000aa"/>
+            <stop offset="50%" stop-color="#aa0000"/>
+            <stop offset="100%" stop-color="#aaaa00"/>
+        </linearGradient>
+    </defs>
+</svg>

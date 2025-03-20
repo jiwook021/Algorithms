@@ -1,0 +1,36 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="300" y="30" text-anchor="middle" font-size="18">Brightness Constancy Assumption</text>
+  
+  <!-- Previous Frame -->
+  <rect x="50" y="80" width="200" height="200" fill="#e0e0ff" stroke="#000"/>
+  <circle cx="150" cy="180" r="30" fill="#6666ff"/>
+  <text x="150" y="300" text-anchor="middle">Frame t</text>
+  
+  <!-- Next Frame -->
+  <rect x="350" y="80" width="200" height="200" fill="#ffe0e0" stroke="#000"/>
+  <circle cx="450" cy="180" r="30" fill="#ff6666"/>
+  <text x="450" y="300" text-anchor="middle">Frame t+1</text>
+  
+  <!-- Displacement -->
+  <path d="M250 180 L350 180" stroke="#00cc00" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="300" y="170" text-anchor="middle" fill="#00cc00">Displacement vector (u,v)</text>
+  
+  <!-- Equation -->
+  <text x="300" y="350" text-anchor="middle" font-family="monospace" font-size="14">
+    I(x,y,t) = I(x+u,y+v,t+1)
+  </text>
+  
+  <!-- Code -->
+  <text x="20" y="370" font-family="monospace" font-size="10" fill="#333">
+    // C++: Access consecutive frames
+    cv::Mat prev_frame, next_frame;
+    video >> prev_frame >> next_frame;
+  </text>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#00cc00"/>
+    </marker>
+  </defs>
+</svg>

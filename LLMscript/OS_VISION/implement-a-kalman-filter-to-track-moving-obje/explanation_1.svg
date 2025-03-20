@@ -1,0 +1,30 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="600" height="400" fill="#f0f0f0"/>
+  
+  <!-- Prediction-Update Cycle -->
+  <rect x="100" y="150" width="120" height="60" fill="#3498db" rx="5"/>
+  <text x="160" y="185" font-family="Arial" font-size="14" fill="white" text-anchor="middle">PREDICT</text>
+  
+  <rect x="380" y="150" width="120" height="60" fill="#2ecc71" rx="5"/>
+  <text x="440" y="185" font-family="Arial" font-size="14" fill="white" text-anchor="middle">UPDATE</text>
+  
+  <path d="M220 180 L380 180" stroke="#34495e" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M500 180 L580 180 L580 250 L100 250 L100 210" stroke="#34495e" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+  
+  <!-- Equations -->
+  <text x="160" y="100" font-family="monospace" font-size="12" text-anchor="middle">
+    x̂ₖ⁻ = Fx̂ₖ₋₁
+    <tspan x="160" dy="18">Pₖ⁻ = FPₖ₋₁Fᵀ + Q</tspan>
+  </text>
+  
+  <text x="440" y="100" font-family="monospace" font-size="12" text-anchor="middle">
+    Kₖ = Pₖ⁻Hᵀ(HPₖ⁻Hᵀ + R)⁻¹
+    <tspan x="440" dy="18">x̂ₖ = x̂ₖ⁻ + Kₖ(zₖ - Hx̂ₖ⁻)</tspan>
+  </text>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#34495e"/>
+    </marker>
+  </defs>
+</svg>

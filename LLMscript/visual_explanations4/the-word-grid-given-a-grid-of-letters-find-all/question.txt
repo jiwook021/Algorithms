@@ -1,1 +1,0 @@
-"The Word Grid": Given a grid of letters, find all possible dictionary words that can be formed.

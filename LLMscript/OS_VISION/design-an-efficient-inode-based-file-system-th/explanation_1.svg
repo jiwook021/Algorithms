@@ -1,0 +1,33 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    
+    <!-- Inode Structure -->
+    <rect x="20" y="50" width="120" height="300" fill="#a0d8ef" rx="5"/>
+    <text x="30" y="70" font-family="monospace" font-size="12">Inode Metadata:</text>
+    <text x="30" y="90" font-family="monospace" font-size="10">- File Type</text>
+    <text x="30" y="105" font-family="monospace" font-size="10">- Permissions</text>
+    <text x="30" y="120" font-family="monospace" font-size="10">- Size: 128KB</text>
+    
+    <!-- Direct Blocks -->
+    <rect x="160" y="50" width="60" height="60" fill="#90EE90" rx="3"/>
+    <text x="170" y="80" font-family="monospace" font-size="10">Direct</text>
+    <text x="170" y="95" font-family="monospace" font-size="10">Blocks</text>
+    
+    <!-- Indirect Block -->
+    <rect x="240" y="50" width="60" height="60" fill="#FFD700" rx="3"/>
+    <text x="245" y="80" font-family="monospace" font-size="10">Indirect</text>
+    <text x="255" y="95" font-family="monospace" font-size="10">Block</text>
+    
+    <!-- Double Indirect -->
+    <rect x="320" y="50" width="60" height="60" fill="#FFA07A" rx="3"/>
+    <text x="325" y="80" font-family="monospace" font-size="10">Double</text>
+    <text x="325" y="95" font-family="monospace" font-size="10">Indirect</text>
+    
+    <!-- Code Example -->
+    <rect x="20" y="200" width="560" height="150" fill="#e0e0e0" rx="5"/>
+    <text x="30" y="220" font-family="monospace" font-size="12" fill="black">struct Inode {</text>
+    <text x="40" y="240" font-family="monospace" font-size="12" fill="darkgreen">    int direct[12];</text>
+    <text x="40" y="260" font-family="monospace" font-size="12" fill="goldenrod">    int indirect;</text>
+    <text x="40" y="280" font-family="monospace" font-size="12" fill="darkorange">    int double_indirect;</text>
+    <text x="30" y="300" font-family="monospace" font-size="12" fill="black">};</text>
+</svg>

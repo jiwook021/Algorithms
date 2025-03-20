@@ -1,0 +1,44 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  
+  <!-- Coordinate systems -->
+  <g transform="translate(100 100)">
+    <rect width="150" height="150" fill="none" stroke="#666" stroke-width="2"/>
+    <text x="75" y="180" text-anchor="middle" font-size="14">Source Plane</text>
+    <circle cx="75" cy="75" r="3" fill="red"/>
+    <text x="75" cy="75" dy="-10" text-anchor="middle" font-size="12">(x,y)</text>
+  </g>
+  
+  <g transform="translate(350 100)">
+    <rect width="150" height="150" fill="none" stroke="#666" stroke-width="2" transform="skewX(-15)"/>
+    <text x="75" y="180" text-anchor="middle" font-size="14">Projected Plane</text>
+    <circle cx="100" cy="60" r="3" fill="red"/>
+    <text x="100" cy="60" dy="-10" text-anchor="middle" font-size="12">(x',y')</text>
+  </g>
+  
+  <!-- Homography matrix -->
+  <g transform="translate(200 250)">
+    <rect x="-10" y="-10" width="260" height="120" fill="#fff" stroke="#666" rx="5"/>
+    <text x="120" y="20" text-anchor="middle" font-size="16">Homography Matrix H</text>
+    <text x="20" y="50" font-family="monospace" font-size="14">
+      [ h₁₁  h₁₂  h₁₃ ]
+      <tspan x="20" dy="1.5em"> h₂₁  h₂₂  h₂₃ </tspan>
+      <tspan x="20" dy="1.5em"> h₃₁  h₃₂  1   ]</tspan>
+    </text>
+  </g>
+  
+  <!-- Transformation arrow -->
+  <path d="M270 175 Q 300 175, 330 175" stroke="#333" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Code example -->
+  <text x="50" y="380" font-family="monospace" font-size="12">
+    <tspan x="0" dy="0">Mat H = findHomography(srcPoints, dstPoints, RANSAC);</tspan>
+  </text>
+  
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" 
+            markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

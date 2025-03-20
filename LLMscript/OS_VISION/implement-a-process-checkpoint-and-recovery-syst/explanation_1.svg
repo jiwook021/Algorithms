@@ -1,0 +1,27 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <g transform="translate(50,50)">
+        <!-- Process Memory -->
+        <rect x="0" y="0" width="200" height="300" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+        <text x="100" y="20" text-anchor="middle" font-family="monospace" font-size="14">Process Memory</text>
+        
+        <!-- Checkpoint File -->
+        <rect x="350" y="50" width="200" height="200" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+        <text x="450" y="30" text-anchor="middle" font-family="monospace" font-size="14">Checkpoint File</text>
+
+        <!-- Arrows -->
+        <path d="M210 150 L340 150 L340 140 L350 150 L340 160 L340 150" fill="#2196f3"/>
+        <text x="275" y="170" text-anchor="middle" font-family="monospace" font-size="12">Serialize State</text>
+
+        <!-- Code Example -->
+        <g transform="translate(0,240)">
+            <rect width="500" height="110" fill="#263238" rx="5"/>
+            <text x="20" y="30" font-family="monospace" font-size="12" fill="#fff">
+                <tspan x="20" dy="1.2em">void save_checkpoint() {</tspan>
+                <tspan x="40" dy="1.2em" fill="#80deea">// Save registers, memory,</tspan>
+                <tspan x="40" dy="1.2em" fill="#80deea">// and program counter</tspan>
+                <tspan x="20" dy="1.2em">}</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

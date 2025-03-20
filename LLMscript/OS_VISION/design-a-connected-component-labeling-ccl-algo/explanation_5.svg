@@ -1,0 +1,24 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="300" y="30" font-size="20" text-anchor="middle">5. Component Visualization</text>
+  
+  <g transform="translate(100 80)">
+    <!-- Colored components -->
+    <rect x="0" y="0" width="300" height="300" fill="#ddd"/>
+    
+    <rect x="40" y="40" width="40" height="40" fill="#FF5722"/>
+    <rect x="120" y="40" width="40" height="40" fill="#FF5722"/>
+    <rect x="200" y="120" width="40" height="40" fill="#4CAF50"/>
+    <rect x="40" y="200" width="40" height="40" fill="#2196F3"/>
+    <rect x="200" y="200" width="40" height="40" fill="#2196F3"/>
+    
+    <!-- Labels -->
+    <text x="60" y="65" fill="white">1</text>
+    <text x="140" y="65" fill="white">1</text>
+    <text x="220" y="145" fill="white">2</text>
+    <text x="60" y="225" fill="white">3</text>
+    <text x="220" y="225" fill="white">3</text>
+    
+    <text x="150" y="340" text-anchor="middle" fill="black">Identified 3 distinct components</text>
+  </g>
+</svg>
