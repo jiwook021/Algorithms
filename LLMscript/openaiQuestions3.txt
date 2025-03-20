@@ -1,0 +1,62 @@
+- How do you implement a **circular buffer in embedded systems**?
+- How does **I2C arbitration work**, and what happens when two devices try to communicate at the same time?
+- How does **a watchdog timer prevent system crashes**?
+- What are the **best practices for writing efficient firmware**?
+- How does **power management work in embedded devices**?
+- Can I create a **custom bootloader for an ARM Cortex-M microcontroller**?
+- What are **memory-mapped registers**, and how do you control hardware using them?
+- How can I **write my own device driver** for an SPI sensor?
+- How does **feature matching work** in OpenCV?
+- How do I **train my own custom YOLO model** for object detection?
+- What’s the difference between **ORB, SIFT, and SURF feature detection?**
+- How can I build a **gesture recognition system** using OpenCV?
+- Can I create a **tiny AI model for an ESP32 or Raspberry Pi?**
+- How does **face tracking work in drones**?
+- What are **CNN optimizations for real-time inference on mobile devices**?
+- How does **optical flow tracking work**?
+- How do **self-driving cars detect lanes and pedestrians**?
+- What is **depth estimation**, and how can I implement it with stereo cameras?
+- How does **memory hierarchy in GPUs** differ from CPUs?
+- What is a **warp divergence**, and why does it slow down performance?
+- How does **ray tracing work** in real-time rendering?
+- How does **texture mapping** improve graphics rendering?
+- What are **CUDA streams**, and how do they enable parallel execution?
+- How does **tensor computation work on GPUs**?
+- What’s the difference between **shared memory, global memory, and registers in CUDA**?
+- How do **tensor cores speed up deep learning** on GPUs?
+- How does **SLAM (Simultaneous Localization and Mapping)** work?
+- How can I implement **autonomous landing for a drone**?
+- How does **LIDAR work for environment mapping**?
+- How do **PID controllers help stabilize drones**?
+- How do **state estimation techniques improve drone navigation?**
+- How can I **use reinforcement learning to train a robot?**
+- How do **inertial measurement units (IMU) calculate orientation?**
+- How do **autonomous robots perform obstacle avoidance**?
+- Can I make a **self-balancing robot using an IMU?**
+- What is **sensor fusion**, and why is it important for robotics?
+- How does **virtual memory work in modern operating systems?**
+- How does **mutex vs. spinlock** affect performance in multithreading?
+- How does **scheduler priority work in Linux**?
+- What are **real-time constraints in embedded OS**?
+- What happens when a **process gets context switched**?
+- How do **modern operating systems prevent deadlocks**?
+- What is **copy-on-write (COW) memory optimization**?
+- How does **the page table work in memory management?**
+- Can I implement a **custom shell in C**?
+- How do **design patterns** help in embedded systems?
+- What’s the best way to **write unit tests for embedded firmware?**
+- How does **dependency injection improve code maintainability?**
+- What is **static code analysis**, and why is it important?
+- How do I **optimize a program for low latency execution**?
+- What’s the best way to **design an API for hardware interaction?**
+- How does **memory fragmentation affect performance**, and how can I avoid it?
+- What are the **best practices for writing multi-threaded code?**
+- What are **data race conditions**, and how can I prevent them?
+- How does **version control help in large-scale firmware development?**
+- How do I create an **AI-powered security camera**?
+- Can I make a **voice-controlled robotic arm**?
+- Can I build a **retro 8-bit computer from scratch?**
+- How do I create a **home automation system using Raspberry Pi?**
+- How does **hand-tracking work in AR applications**?
+- Can I build an **AI chatbot that runs locally on an embedded device?**
+- What’s the easiest way to **simulate physics for a game or animation?**
