@@ -1,0 +1,144 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#333">
+    Dropout: Preventing Overfitting in Neural Networks
+  </text>
+  
+  <!-- Neural Network without Dropout -->
+  <g transform="translate(100, 100)">
+    <!-- Layer Title -->
+    <text x="100" y="-20" font-family="Arial" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">
+      Without Dropout
+    </text>
+    
+    <!-- Input Layer -->
+    <circle cx="0" cy="0" r="15" fill="#6ab7ff" stroke="#3498db" stroke-width="2"/>
+    <circle cx="0" cy="50" r="15" fill="#6ab7ff" stroke="#3498db" stroke-width="2"/>
+    <circle cx="0" cy="100" r="15" fill="#6ab7ff" stroke="#3498db" stroke-width="2"/>
+    <circle cx="0" cy="150" r="15" fill="#6ab7ff" stroke="#3498db" stroke-width="2"/>
+    
+    <!-- Hidden Layer -->
+    <circle cx="100" cy="0" r="15" fill="#ff9f7f" stroke="#e74c3c" stroke-width="2"/>
+    <circle cx="100" cy="50" r="15" fill="#ff9f7f" stroke="#e74c3c" stroke-width="2"/>
+    <circle cx="100" cy="100" r="15" fill="#ff9f7f" stroke="#e74c3c" stroke-width="2"/>
+    <circle cx="100" cy="150" r="15" fill="#ff9f7f" stroke="#e74c3c" stroke-width="2"/>
+    
+    <!-- Output Layer -->
+    <circle cx="200" cy="50" r="15" fill="#97e07f" stroke="#27ae60" stroke-width="2"/>
+    <circle cx="200" cy="100" r="15" fill="#97e07f" stroke="#27ae60" stroke-width="2"/>
+    
+    <!-- Connections -->
+    <!-- Input to Hidden -->
+    <line x1="15" y1="0" x2="85" y2="0" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="15" y1="0" x2="85" y2="50" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="15" y1="0" x2="85" y2="100" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="15" y1="0" x2="85" y2="150" stroke="#aaa" stroke-width="1.5"/>
+    
+    <line x1="15" y1="50" x2="85" y2="0" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="15" y1="50" x2="85" y2="50" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="15" y1="50" x2="85" y2="100" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="15" y1="50" x2="85" y2="150" stroke="#aaa" stroke-width="1.5"/>
+    
+    <line x1="15" y1="100" x2="85" y2="0" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="15" y1="100" x2="85" y2="50" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="15" y1="100" x2="85" y2="100" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="15" y1="100" x2="85" y2="150" stroke="#aaa" stroke-width="1.5"/>
+    
+    <line x1="15" y1="150" x2="85" y2="0" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="15" y1="150" x2="85" y2="50" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="15" y1="150" x2="85" y2="100" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="15" y1="150" x2="85" y2="150" stroke="#aaa" stroke-width="1.5"/>
+    
+    <!-- Hidden to Output -->
+    <line x1="115" y1="0" x2="185" y2="50" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="115" y1="0" x2="185" y2="100" stroke="#aaa" stroke-width="1.5"/>
+    
+    <line x1="115" y1="50" x2="185" y2="50" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="115" y1="50" x2="185" y2="100" stroke="#aaa" stroke-width="1.5"/>
+    
+    <line x1="115" y1="100" x2="185" y2="50" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="115" y1="100" x2="185" y2="100" stroke="#aaa" stroke-width="1.5"/>
+    
+    <line x1="115" y1="150" x2="185" y2="50" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="115" y1="150" x2="185" y2="100" stroke="#aaa" stroke-width="1.5"/>
+    
+    <!-- Layer Labels -->
+    <text x="0" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#3498db">
+      Input Layer
+    </text>
+    <text x="100" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#e74c3c">
+      Hidden Layer
+    </text>
+    <text x="200" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#27ae60">
+      Output Layer
+    </text>
+  </g>
+  
+  <!-- Neural Network with Dropout -->
+  <g transform="translate(350, 100)">
+    <!-- Layer Title -->
+    <text x="100" y="-20" font-family="Arial" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">
+      With Dropout (p=0.5)
+    </text>
+    
+    <!-- Input Layer -->
+    <circle cx="0" cy="0" r="15" fill="#6ab7ff" stroke="#3498db" stroke-width="2"/>
+    <circle cx="0" cy="50" r="15" fill="#6ab7ff" stroke="#3498db" stroke-width="2" opacity="0.3"/>
+    <circle cx="0" cy="100" r="15" fill="#6ab7ff" stroke="#3498db" stroke-width="2"/>
+    <circle cx="0" cy="150" r="15" fill="#6ab7ff" stroke="#3498db" stroke-width="2" opacity="0.3"/>
+    
+    <!-- Hidden Layer -->
+    <circle cx="100" cy="0" r="15" fill="#ff9f7f" stroke="#e74c3c" stroke-width="2" opacity="0.3"/>
+    <circle cx="100" cy="50" r="15" fill="#ff9f7f" stroke="#e74c3c" stroke-width="2"/>
+    <circle cx="100" cy="100" r="15" fill="#ff9f7f" stroke="#e74c3c" stroke-width="2" opacity="0.3"/>
+    <circle cx="100" cy="150" r="15" fill="#ff9f7f" stroke="#e74c3c" stroke-width="2"/>
+    
+    <!-- Output Layer -->
+    <circle cx="200" cy="50" r="15" fill="#97e07f" stroke="#27ae60" stroke-width="2"/>
+    <circle cx="200" cy="100" r="15" fill="#97e07f" stroke="#27ae60" stroke-width="2"/>
+    
+    <!-- Connections -->
+    <!-- Input to Hidden (only from active neurons) -->
+    <line x1="15" y1="0" x2="85" y2="50" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="15" y1="0" x2="85" y2="150" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="15" y1="100" x2="85" y2="50" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="15" y1="100" x2="85" y2="150" stroke="#aaa" stroke-width="1.5"/>
+    
+    <!-- Hidden to Output (only from active neurons) -->
+    <line x1="115" y1="50" x2="185" y2="50" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="115" y1="50" x2="185" y2="100" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="115" y1="150" x2="185" y2="50" stroke="#aaa" stroke-width="1.5"/>
+    <line x1="115" y1="150" x2="185" y2="100" stroke="#aaa" stroke-width="1.5"/>
+    
+    <!-- Layer Labels -->
+    <text x="0" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#3498db">
+      Input Layer
+    </text>
+    <text x="100" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#e74c3c">
+      Hidden Layer
+    </text>
+    <text x="200" y="185" font-family="Arial" font-size="12" text-anchor="middle" fill="#27ae60">
+      Output Layer
+    </text>
+  </g>
+  
+  <!-- Explanation -->
+  <g transform="translate(300, 340)">
+    <rect x="-250" y="0" width="500" height="50" rx="5" ry="5" fill="#f0f0f0" stroke="#ddd" stroke-width="1"/>
+    <text x="0" y="20" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">
+      Dropout randomly deactivates neurons during training (with probability p),
+    </text>
+    <text x="0" y="40" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">
+      forcing the network to learn redundant representations and prevent co-adaptation.
+    </text>
+  </g>
+</svg>

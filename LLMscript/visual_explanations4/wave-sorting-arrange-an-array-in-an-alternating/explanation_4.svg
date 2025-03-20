@@ -1,0 +1,18 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    <text x="20" y="30" font-size="18" font-weight="bold">4. Swapping Elements (if needed)</text>
+    <text x="20" y="60">If the wave condition is violated, swap the elements.</text>
+
+    <g transform="translate(50, 100)">
+        <rect x="0" y="0" width="40" height="40" fill="lightgray" stroke="black"/>
+        <text x="15" y="25" font-size="16">5</text>
+
+        <rect x="50" y="0" width="40" height="40" fill="lightgray" stroke="black"/>
+        <text x="65" y="25" font-size="16">2</text>
+
+        <path d="M 45 10 Q 70 -10 95 10" stroke="blue" stroke-width="2" fill="none"/>
+        <path d="M 95 30 Q 70 50 45 30" stroke="blue" stroke-width="2" fill="none"/>
+         <polygon points="95,5 100,10 90,10" fill="blue" />
+         <polygon points="45,35 40,30 50,30" fill="blue" />
+        <text x="60" y="-15" font-size="14" fill="blue">Swap!</text>
+    </g>
+</svg>

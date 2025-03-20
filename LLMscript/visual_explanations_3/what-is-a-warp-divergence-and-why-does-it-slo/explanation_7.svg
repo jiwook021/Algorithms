@@ -1,0 +1,42 @@
+<svg width="450" height="300" viewBox="0 0 450 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="450" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">7. Divergence and Memory Access</text>
+
+    <g transform="translate(30,60)">
+        <rect x="0" y="0" width="20" height="60" fill="lightblue" stroke="black"/>
+        <text x="5" y="30" font-size="10" fill="black">T0</text>
+        <rect x="25" y="0" width="20" height="60" fill="lightblue" stroke="black"/>
+        <text x="30" y="30" font-size="10" fill="black">T1</text>
+         <rect x="50" y="0" width="20" height="60" fill="lightblue" stroke="black"/>
+        <text x="55" y="30" font-size="10" fill="black">T2</text>
+        <rect x="75" y="0" width="20" height="60" fill="lightblue" stroke="black"/>
+        <text x="80" y="30" font-size="10" fill="black">T3</text>
+          <text x="15" y="-10" font-size="14">Warp</text>
+        <rect x="-5" y="-20" width="110" height="90" fill="none" stroke="red" stroke-width="2"/>
+
+        <rect x="120" y="0" width="30" height="10" fill="brown" stroke="black"/>
+        <text x="125" y="25">Mem A</text>
+        <rect x="120" y="30" width="30" height="10" fill="brown" stroke="black"/>
+          <text x="125" y="55">Mem B</text>
+        <rect x="120" y="60" width="30" height="10" fill="brown" stroke="black"/>
+
+        <path d="M 10 30 L 115 5" stroke="green" stroke-width="2" marker-end="url(#arrowhead2)"/>
+         <path d="M 35 30 L 115 35" stroke="orange" stroke-width="2" marker-end="url(#arrowhead2)"/>
+        <path d="M 60 30 L 115 5" stroke="green" stroke-width="2" marker-end="url(#arrowhead2)"/>
+         <path d="M 85 30 L 115 35" stroke="orange" stroke-width="2" marker-end="url(#arrowhead2)"/>
+
+
+        <marker id="arrowhead2" markerWidth="8" markerHeight="5"
+            refX="0" refY="2.5" orient="auto">
+            <polygon points="0 0, 8 2.5, 0 5" fill="currentColor" />
+        </marker>
+    </g>
+
+     <text x="20" y="170" font-size="14">Divergence can also occur with memory access.</text>
+    <text x="20" y="190" font-size="14">If threads within a warp access different memory</text>
+     <text x="20" y="210" font-size="14">locations (non-coalesced access), it can lead to</text>
+    <text x="20" y="230" font-size="14">multiple memory requests and reduced bandwidth.</text>
+    <text x="20" y="250" font-size="14">Example: T0, T2 access Mem A; T1, T3 access Mem B.</text>
+    <text x="20" y="270" font-size="14">Requires two memory transactions.</text>
+
+</svg>

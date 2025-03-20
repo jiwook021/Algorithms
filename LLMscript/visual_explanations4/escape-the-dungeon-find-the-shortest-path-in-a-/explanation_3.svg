@@ -1,0 +1,23 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="20" font-weight="bold">3. BFS - Queue Data Structure</text>
+
+   <g transform="translate(50, 80)">
+      <!-- Queue Representation -->
+        <rect x="0" y="0" width="40" height="40" fill="lightgreen" stroke="black"/>
+        <text x="15" y="25" font-size="16">A</text>
+        <rect x="40" y="0" width="40" height="40" fill="lightblue" stroke="black"/>
+        <text x="55" y="25" font-size="16">B</text>
+        <rect x="80" y="0" width="40" height="40" fill="lightblue" stroke="black"/>
+         <text x="95" y="25" font-size="16">C</text>
+        <rect x="120" y="0" width="40" height="40" fill="lightblue" stroke="black"/>
+        <text x="135" y="25" font-size="16">D</text>
+
+    <text x="0" y="-20" font-size="14">Queue: First-In, First-Out (FIFO)</text>
+     <text x="0" y="60" font-size="14">New cells are added to the end.</text>
+    <text x="0" y="80" font-size="14">Cells are processed from the front.</text>
+
+
+   </g>
+
+</svg>

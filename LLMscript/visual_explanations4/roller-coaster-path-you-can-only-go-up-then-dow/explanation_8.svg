@@ -1,0 +1,27 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Concept 8: Combining Up and Down</text>
+  <text x="20" y="50" font-size="14">Total Path Length = Up Path Length + Down Path Length - 1 (peak is counted twice)</text>
+
+   <g transform="translate(20, 80)">
+        <rect x="0" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+        <text x="20" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">2</text>
+        <rect x="40" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+        <text x="60" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">5</text>
+        <rect x="80" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+        <text x="100" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">7</text>
+        <rect x="120" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+        <text x="140" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">4</text>
+        <rect x="160" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+        <text x="180" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">1</text>
+
+     <path d="M 20 20 L 60 20 L 100 20 L 140 20 L 180 20" stroke="green" stroke-width="4" fill="none" />
+        <circle cx="100" cy="20" r="10" fill="red"/>
+        <text x="100" y="20" text-anchor="middle" dominant-baseline="middle" font-size="10" fill="white">Peak</text>
+
+       <text x="220" y="20" font-size="14">Up Length: 3</text>
+       <text x="220" y="40" font-size="14">Down Length: 3</text>
+       <text x="220" y="65" font-size="14" font-weight="bold">Total Length: 3 + 3 - 1 = 5</text>
+
+  </g>
+</svg>

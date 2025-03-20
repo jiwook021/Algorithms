@@ -1,511 +1,460 @@
 #!/usr/bin/env python3
 """
-Multi-SVG Diagram Generator for Code Files
+SVG Generator using DeepSeek API
 
-This script generates multiple SVG diagrams that explain the logic and functionality of code files
-using OpenAI's API. Each code file will have multiple diagrams saved in an 'imgs' directory.
+This script generates SVG visual explanations for technical questions using DeepSeek's
+AI models. It takes questions from a text file, generates multiple SVG diagrams for 
+each question, and saves them in an organized directory structure.
 
 Usage:
-  python3 multi_svg_generator_openai.py --dir /path/to/code --model gpt-4-turbo --throttle 5
+    python3 svgscriptDeepSeekQuestions.py input_file.txt --output_dir="output_folder" --model="deepseek-coder-v2" --min_svgs=10 --temperature=0.2
+
+Requirements:
+    - Python 3.7+
+    - requests package
+    - Valid DeepSeek API key set as DEEPSEEK_API_KEY environment variable
+
+    python3 svgscriptDeepSeekQuestions.py your_questions.txt --output_dir="OS_VISION" --model="deepseek-coder-v2" --min_svgs=10 --temperature=0.2
+Author: JK Engineer
 """
 
 import os
-import openai
-from openai import OpenAI
-from dotenv import load_dotenv
-import time
-import argparse
-import random
-import logging
-import json
 import re
+import argparse
+import time
+import json
 import requests
-from datetime import datetime
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
+from pathlib import Path
+import xml.etree.ElementTree as ET
+from typing import List, Optional, Tuple
+import html
 
-# Set up logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("svg_generation.log"),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+# Try to import lxml for better XML handling
+try:
+    from lxml import etree
+    USE_LXML = True
+    print("Using lxml for enhanced XML handling")
+except ImportError:
+    USE_LXML = False
+    print("Note: For better SVG parsing, install lxml: pip install lxml")
 
-# Load API Key from .env file
-load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY")
 
-# Ensure API key is loaded
-if not api_key:
-    raise ValueError("Missing OpenAI API key. Add it to a .env file.")
-
-# Configure custom session with retry logic
-session = requests.Session()
-retry_strategy = Retry(
-    total=3,
-    backoff_factor=0.5,
-    status_forcelist=[429, 500, 502, 503, 504],
-    allowed_methods=["GET", "POST"]
-)
-adapter = HTTPAdapter(max_retries=retry_strategy)
-session.mount("https://", adapter)
-
-# Create OpenAI client
-client = OpenAI(
-    api_key=api_key,
-    timeout=60.0  # Default timeout of 60 seconds
-)
-
-# Supported file extensions
-SUPPORTED_EXTENSIONS = ['.cpp', '.c', '.py']
-
-# State tracking
-STATE_FILE = "svg_generation_state.json"
-
-def extract_code_essence(file_content, max_length=3000):
-    """Extract the essential parts of the code to reduce prompt size."""
-    # If code is already small enough, return as is
-    if len(file_content) <= max_length:
-        return file_content
+class DeepSeekClient:
+    """Client for interacting with the DeepSeek API"""
     
-    # Try to keep the structure by extracting:
-    # 1. First part (headers, imports, class definitions)
-    # 2. Key function definitions
-    # 3. Main code section if available
+    BASE_URL = "https://api.deepseek.com/v1"
     
-    lines = file_content.split('\n')
+    def __init__(self, api_key: str):
+        self.api_key = api_key
+        self.headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json"
+        }
     
-    # Always include the first ~20% of the file (headers, imports, top-level declarations)
-    top_section = '\n'.join(lines[:int(len(lines) * 0.2)])
-    
-    # Extract function/method definitions
-    function_pattern = r'(def\s+\w+|class\s+\w+|\w+\s*\(\)|\w+::\w+)'
-    functions = re.findall(function_pattern, file_content)
-    
-    # Look for main function or entry point
-    main_section = ""
-    main_patterns = ['def main', 'if __name__', 'int main', 'void main', 'public static void main']
-    for pattern in main_patterns:
-        if pattern in file_content:
-            main_match = re.search(pattern + '.*?\{', file_content, re.DOTALL)
-            if main_match:
-                start_pos = main_match.start()
-                # Extract a reasonable chunk around the main function
-                main_section = file_content[start_pos:min(start_pos + 800, len(file_content))]
-    
-    # Combine the sections with indicators for missing parts
-    result = top_section
-    if len(functions) > 0:
-        result += "\n\n# Key function definitions found in the code:\n"
-        result += "\n".join([f"# - {func}" for func in functions[:15]])  # Limit to top 15 functions
-    
-    if main_section:
-        result += "\n\n# Main entry point:\n" + main_section
-    
-    # If still too long, truncate with a note
-    if len(result) > max_length:
-        result = result[:max_length] + "\n\n# [Code truncated due to length...]"
-    
-    return result
-
-def create_prompt(file_content, filename, max_code_length=3000):
-    """ Generate an OpenAI-friendly prompt to create multiple SVG diagrams explaining the code. """
-    language = "C++" if filename.endswith('.cpp') else "C" if filename.endswith('.c') else "Python"
-    
-    # Extract essential parts of the code to reduce prompt size
-    code_essence = extract_code_essence(file_content, max_code_length)
-    
-    prompt = f"""
-    Create MULTIPLE SVG diagrams (at least 5) that explain different aspects of this {language} code step by step.
-    Each diagram should focus on a different part of the code's functionality:
-    
-    Requirements:
-    - Generate ONLY valid SVG code with no explanations between SVGs
-    - Keep each SVG small (around 1200x800)
-    - Use professional color schemes with good contrast
-    - Add descriptive titles within each SVG
-    - Use readable font sizes (at least 12px)
-    - Include clear labels for all components
-    - Use arrows to show flow direction
-    - Separate each SVG diagram with a line of "---" 
-    - Output should only contain SVG diagrams with separators between them
-    
-    Filename: {filename}
-    
-    Code:
-    ```
-    {code_essence}
-    ```
-    """
-    return prompt.strip()
-
-def exponential_backoff(attempt, base_delay=2, max_delay=60):
-    """Calculate backoff time with jitter for retries, using more resilient delays."""
-    # Exponential backoff with jitter, with more aggressive delays for network issues
-    delay = min(base_delay * (2 ** attempt), max_delay)
-    # Add jitter (±20%)
-    jitter = random.uniform(0.8, 1.2)
-    return delay * jitter
-
-def request_svg_diagrams(prompt, model_name, max_retries=5):
-    """ Request multiple SVG diagrams from OpenAI's API with exponential backoff retry logic. """
-    for attempt in range(max_retries):
+    def generate_completion(self, 
+                           prompt: str, 
+                           model: str = "deepseek-coder-v2", 
+                           max_tokens: int = 4000,
+                           temperature: float = 0.2) -> str:
+        """
+        Generate a completion using the DeepSeek API.
+        
+        Args:
+            prompt: The prompt to send to the API
+            model: The model to use
+            max_tokens: Maximum number of tokens to generate
+            temperature: Temperature parameter (0.0 to 1.0)
+            
+        Returns:
+            Generated text as a string
+        """
+        payload = {
+            "model": model,
+            "messages": [
+                {"role": "system", "content": "You are an expert at creating SVG diagrams to explain technical concepts. You only respond with valid, well-formed SVG code."},
+                {"role": "user", "content": prompt}
+            ],
+            "max_tokens": max_tokens,
+            "temperature": temperature
+        }
+        
         try:
-            # Add request headers for better error tracking
-            response = client.chat.completions.create(
-                model=model_name,
-                messages=[
-                    {"role": "system", "content": "You are a technical diagram expert who creates clear, detailed SVG visualizations to explain code. Create professional diagrams with labeled components, clear workflows, and properly styled elements."},
-                    {"role": "user", "content": prompt}
-                ],
-                max_tokens=4096,  # Need more tokens for multiple SVGs
-                temperature=0.2,
-                timeout=60  # Explicit request timeout
+            response = requests.post(
+                f"{self.BASE_URL}/chat/completions", 
+                headers=self.headers,
+                json=payload
             )
-            return response.choices[0].message.content.strip()
-        
-        except (openai.APIConnectionError, openai.APITimeoutError, ConnectionError, TimeoutError) as e:
-            delay = exponential_backoff(attempt)
-            logger.warning(f"Connection error: {e}. Retrying in {delay:.1f} seconds... (Attempt {attempt+1}/{max_retries})")
-            time.sleep(delay)
-        
-        except openai.RateLimitError as e:
-            delay = exponential_backoff(attempt, base_delay=5)
-            logger.warning(f"Rate limit exceeded: {e}. Waiting {delay:.1f} seconds... (Attempt {attempt+1}/{max_retries})")
-            time.sleep(delay)
-        
+            
+            if response.status_code != 200:
+                print(f"Error from DeepSeek API: {response.status_code}")
+                print(response.text)
+                return ""
+            
+            result = response.json()
+            return result["choices"][0]["message"]["content"]
+            
         except Exception as e:
-            error_message = str(e)
-            logger.error(f"API Error: {error_message}")
-            
-            # Handle model not found error
-            if "The model" in error_message and "does not exist" in error_message:
-                logger.error(f"The model '{model_name}' was not found. Please check the model name.")
-                return None
-            
-            # Handle overloaded server error
-            elif "server_error" in error_message or "overloaded" in error_message:
-                delay = exponential_backoff(attempt, base_delay=8)
-                logger.warning(f"Server overloaded. Waiting {delay:.1f} seconds before retry... (Attempt {attempt+1}/{max_retries})")
-                time.sleep(delay)
-            
-            # Other unknown errors
-            else:
-                if attempt < max_retries - 1:
-                    delay = exponential_backoff(attempt)
-                    logger.warning(f"Unexpected error. Waiting {delay:.1f} seconds before retry... (Attempt {attempt+1}/{max_retries})")
-                    time.sleep(delay)
-                else:
-                    logger.error(f"Failed after {max_retries} attempts with error: {error_message}")
-                    return None
-    
-    logger.error(f"Failed to retrieve SVGs after {max_retries} attempts.")
-    return None
+            print(f"Error calling DeepSeek API: {e}")
+            return ""
 
-def extract_multiple_svgs(response_text):
-    """ Extract all SVG content from OpenAI's response. """
-    # Look for content between svg tags
-    svg_matches = re.findall(r'<svg[\s\S]*?<\/svg>', response_text)
-    
-    if not svg_matches:
-        logger.warning("No SVG tags found in the response.")
-        # Try to save the response anyway, it might still be useful
-        return [response_text]
-    
-    return svg_matches
 
-def ensure_imgs_directory(file_dir):
-    """Ensure the svgimg directory exists in the specified directory."""
-    svgimg_dir = os.path.join(file_dir, "svgimg")
-    if not os.path.exists(svgimg_dir):
-        os.makedirs(svgimg_dir)
-    return svgimg_dir
+def extract_questions(file_path: str) -> List[str]:
+    """
+    Extract questions from a text file. Supports both:
+    - Bulleted lists (lines starting with *, -, •)
+    - Plain text (one question per line)
+    
+    Args:
+        file_path: Path to the text file containing questions
+    
+    Returns:
+        List of questions
+    """
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        print(f"Successfully read file: {file_path}")
+        print(f"File content sample: {content[:100]}..." if len(content) > 100 else f"File content: {content}")
+        
+        # First try to match bulleted questions
+        questions = re.findall(r'^\s*[\*\-•]\s*(.+)', content, re.MULTILINE)
+        
+        # If no bulleted questions found, treat each non-empty line as a question
+        if not questions:
+            questions = [line.strip() for line in content.split('\n') if line.strip()]
+        
+        print(f"Extracted {len(questions)} questions from the file")
+        if questions:
+            print(f"First question sample: {questions[0]}")
+            
+        return questions
+    except Exception as e:
+        print(f"Error reading file {file_path}: {e}")
+        return []
 
-def save_multiple_svgs(svg_contents, base_filepath, output_dir="svgimg"):
-    """ Save multiple SVG contents to files in the specified output directory. """
+
+def sanitize_filename(filename: str) -> str:
+    """
+    Sanitize the filename by removing special characters and replacing spaces with hyphens.
     
-    file_dir = os.path.dirname(base_filepath)
-    base_filename = os.path.basename(base_filepath)
-    name_without_ext = os.path.splitext(base_filename)[0]
+    Args:
+        filename: The original filename
     
-    # Create output directory if it doesn't exist
-    output_dir_path = os.path.join(file_dir, output_dir)
-    if not os.path.exists(output_dir_path):
-        os.makedirs(output_dir_path)
-        logger.info(f"Created output directory: {output_dir_path}")
+    Returns:
+        Sanitized filename
+    """
+    # Remove special characters, keep alphanumeric and spaces
+    sanitized = re.sub(r'[^\w\s-]', '', filename)
+    # Replace spaces with hyphens
+    sanitized = re.sub(r'\s+', '-', sanitized)
+    # Ensure the filename is not too long for file systems
+    if len(sanitized) > 50:
+        sanitized = sanitized[:50]
+    return sanitized.lower()
+
+
+def fix_svg(svg_text: str) -> Tuple[bool, str]:
+    """
+    Attempt to fix common SVG errors.
     
-    saved_files = []
-    for i, svg_content in enumerate(svg_contents):
-        # Create a filename like "filename_diagram1.svg", "filename_diagram2.svg", etc.
-        svg_filename = f"{name_without_ext}_diagram{i+1}.svg"
-        svg_filepath = os.path.join(output_dir_path, svg_filename)
+    Returns:
+        Tuple of (success, fixed_svg)
+    """
+    # Check if it's already valid
+    try:
+        if USE_LXML:
+            etree.fromstring(svg_text)
+        else:
+            ET.fromstring(svg_text)
+        return True, svg_text
+    except (ET.ParseError, etree.XMLSyntaxError) as e:
+        print(f"  - Attempting to fix SVG: {e}")
+    
+    fixed_svg = svg_text
+    
+    # Fix 1: Handle unescaped ampersands in text or attributes
+    fixed_svg = re.sub(r'&(?!amp;|lt;|gt;|quot;|apos;|#\d+;|#x[0-9a-fA-F]+;)', '&amp;', fixed_svg)
+    
+    # Fix 2: Replace problematic quotes in text fields
+    # Pattern to find attributes with values
+    attr_pattern = r'(\w+)=(".*?"|\'.*?\')'
+    def clean_attr(match):
+        attr_name = match.group(1)
+        attr_value = match.group(2)
+        if attr_name.lower() in ['style', 'font-family', 'text']:
+            # Escape any remaining special chars in these attribute values
+            inner_value = attr_value[1:-1]  # Remove surrounding quotes
+            escaped_value = html.escape(inner_value)
+            return f'{attr_name}="{escaped_value}"'
+        return match.group(0)
+    
+    fixed_svg = re.sub(attr_pattern, clean_attr, fixed_svg)
+    
+    # Fix 3: Fix improper CDATA sections
+    fixed_svg = re.sub(r'<!\[CDATA\[(.*?)\]\]>', 
+                       lambda m: f'<![CDATA[{html.escape(m.group(1))}]]>', 
+                       fixed_svg)
+    
+    # Fix 4: Close unclosed tags
+    # This is a simplified approach - for complex cases, lxml would be better
+    tag_pattern = r'<(\w+)([^>]*?)(?<!/)(>)(?!.*?</\1>)'
+    fixed_svg = re.sub(tag_pattern, r'<\1\2/\3', fixed_svg)
+    
+    # Check if fixes worked
+    try:
+        if USE_LXML:
+            etree.fromstring(fixed_svg)
+        else:
+            ET.fromstring(fixed_svg)
+        print("  - Successfully fixed SVG")
+        return True, fixed_svg
+    except (ET.ParseError, etree.XMLSyntaxError):
+        print("  - Could not fix SVG")
+        return False, svg_text
+
+
+def extract_svgs_from_text(text: str) -> List[str]:
+    """
+    Extract SVG content from the text response with improved validation.
+    
+    Args:
+        text: Text containing SVG content
+    
+    Returns:
+        List of valid SVG strings
+    """
+    # Pattern to match SVG content (from <svg to </svg>)
+    svg_pattern = r'<svg[\s\S]*?<\/svg>'
+    svgs = re.findall(svg_pattern, text)
+    
+    # Validate and try to fix each SVG
+    valid_svgs = []
+    for i, svg in enumerate(svgs):
+        valid, fixed_svg = fix_svg(svg)
+        if valid:
+            valid_svgs.append(fixed_svg)
+            print(f"  - Found valid SVG #{i+1}, size: {len(fixed_svg)} characters")
+        else:
+            print(f"  - Found invalid SVG #{i+1} that couldn't be fixed")
+            print(f"    SVG snippet: {svg[:50]}...")
+            
+    return valid_svgs
+
+
+def generate_svgs_in_batches(
+    client: DeepSeekClient, 
+    question: str, 
+    min_svgs: int = 10, 
+    language: str = "C++",
+    model: str = "deepseek-coder-v2", 
+    max_tokens: int = 4000,
+    max_attempts: int = 5,
+    batch_size: int = 3,
+    temperature: float = 0.2
+) -> List[str]:
+    """
+    Generate SVGs in multiple batches to reach the minimum number.
+    
+    Args:
+        client: Configured DeepSeek client
+        question: The question to explain with SVGs
+        min_svgs: Minimum number of SVGs to generate
+        language: Programming language to use in examples
+        model: DeepSeek model to use
+        max_tokens: Maximum tokens to generate in the response
+        max_attempts: Maximum number of generation attempts
+        batch_size: Number of SVGs to request in each batch
+        temperature: Temperature parameter for generation
+        
+    Returns:
+        List of valid SVG strings
+    """
+    all_svgs = []
+    attempts = 0
+    
+    # Initial attempt with larger batch
+    initial_batch = min(min_svgs, 5)
+    
+    while len(all_svgs) < min_svgs and attempts < max_attempts:
+        attempts += 1
+        remaining = min_svgs - len(all_svgs)
+        current_batch = initial_batch if attempts == 1 else min(batch_size, remaining)
+        
+        print(f"  - Batch generation attempt {attempts}/{max_attempts}: requesting {current_batch} SVGs ({len(all_svgs)}/{min_svgs} collected so far)")
+        
+        # Create a prompt for this batch
+        prompt = f"""
+        Create {current_batch} detailed SVG visual explanations for the following question:
+        
+        {question}
+        
+        For each explanation:
+        1. Create a self-contained SVG that visually explains one key concept or step
+        2. Each SVG should have viewport with width="600" height="400" viewBox="0 0 600 400"
+        3. Add text elements within the SVG to label important parts
+        4. Use distinct colors to highlight different elements
+        5. Make the diagrams educational and clear
+        6. Use {language} in any code examples
+        7. Each SVG must be valid XML and properly formatted
+        
+        Focus on {current_batch} DIFFERENT aspects of the question, making each SVG unique.
+        
+        Provide ONLY valid SVG code in your response. Separate each SVG with "---SVG_SEPARATOR---"
+        Do not include any explanations outside of the SVGs.
+        """
         
         try:
-            with open(svg_filepath, 'w', encoding='utf-8') as f:
-                f.write(svg_content)
-            saved_files.append(svg_filepath)
-            logger.info(f"SVG saved: {svg_filepath}")
-        except Exception as e:
-            logger.error(f"Error saving SVG to {svg_filepath}: {e}")
-    
-    return saved_files
-
-def load_state():
-    """Load the current processing state from file or create a new one."""
-    if os.path.exists(STATE_FILE):
-        try:
-            with open(STATE_FILE, 'r') as f:
-                return json.load(f)
-        except Exception as e:
-            logger.error(f"Error loading state file: {e}")
-    
-    # Create new state if file doesn't exist or is invalid
-    return {
-        "pending": [],
-        "completed": [],
-        "failed": [],
-        "last_run": None
-    }
-
-def save_state(state):
-    """Save the current processing state to file."""
-    state["last_run"] = datetime.now().isoformat()
-    try:
-        with open(STATE_FILE, 'w') as f:
-            json.dump(state, f, indent=2)
-        return True
-    except Exception as e:
-        logger.error(f"Error saving state file: {e}")
-        return False
-
-def find_eligible_files(root_dir, skip_existing=True):
-    """Find all eligible files for processing."""
-    state = load_state()
-    
-    # Clear pending list if it exists
-    state["pending"] = []
-    
-    # Find all eligible files
-    for subdir, _, files in os.walk(root_dir):
-        for file in files:
-            ext = os.path.splitext(file)[1]
-            if ext in SUPPORTED_EXTENSIONS:
-                file_path = os.path.join(subdir, file)
-                
-                # Check if svgimg directory already has diagrams for this file
-                name_without_ext = os.path.splitext(file)[0]
-                svgimg_dir = os.path.join(subdir, "svgimg")
-                
-                # Skip if SVGs already exist in svgimg directory and skip_existing is True
-                if skip_existing and os.path.exists(svgimg_dir):
-                    existing_svgs = [f for f in os.listdir(svgimg_dir) if f.startswith(name_without_ext) and f.endswith('.svg')]
-                    if existing_svgs:
-                        if file_path not in state["completed"]:
-                            state["completed"].append(file_path)
-                        continue
-                
-                # Skip if already completed or failed
-                if file_path in state["completed"] or file_path in state["failed"]:
-                    continue
-                    
-                state["pending"].append(file_path)
-    
-    save_state(state)
-    logger.info(f"Found {len(state['pending'])} pending files, {len(state['completed'])} completed, {len(state['failed'])} failed")
-    return state
-
-def process_file(file_path, model_name, max_code_length, output_dir="svgimg"):
-    """Process a single file and generate multiple SVG diagrams."""
-    
-    logger.info(f"Processing: {file_path}")
-    
-    try:
-        with open(file_path, 'r', encoding='utf-8', errors='ignore') as source_file:
-            file_content = source_file.read()
-
-        prompt = create_prompt(file_content, os.path.basename(file_path), max_code_length)
-        svg_response = request_svg_diagrams(prompt, model_name)
-
-        if svg_response:
-            # Extract multiple SVGs
-            svg_contents = extract_multiple_svgs(svg_response)
+            # Get response from DeepSeek
+            response_text = client.generate_completion(
+                prompt=prompt,
+                model=model,
+                max_tokens=max_tokens,
+                temperature=temperature
+            )
             
-            if svg_contents:
-                # Save SVGs to specified output directory
-                saved_files = save_multiple_svgs(svg_contents, file_path, output_dir)
+            if not response_text:
+                print("  - Received empty response from DeepSeek API")
+                continue
                 
-                if saved_files:
-                    logger.info(f"Generated {len(saved_files)} SVG diagrams for {file_path}")
-                    return "completed"
-                else:
-                    logger.error(f"Failed to save any SVGs for {file_path}")
-                    return "failed"
+            # Split by separator if present
+            if "---SVG_SEPARATOR---" in response_text:
+                svg_blocks = response_text.split("---SVG_SEPARATOR---")
+                batch_svgs = []
+                for block in svg_blocks:
+                    block_svgs = extract_svgs_from_text(block)
+                    batch_svgs.extend(block_svgs)
             else:
-                logger.error(f"No valid SVGs found in response for {file_path}")
-                return "failed"
-        else:
-            logger.error(f"Failed to generate SVGs for {file_path}")
-            return "failed"
-    except Exception as e:
-        logger.error(f"Error processing {file_path}: {e}")
-        return "failed"
-
-def process_batch(batch_size, model_name, throttle_delay=5, max_code_length=3000, output_dir="svgimg"):
-    """Process a batch of files with throttling between each file."""
-    state = load_state()
-    
-    # Check if we have pending files
-    if not state["pending"]:
-        logger.info("No pending files to process.")
-        return 0
-    
-    # Process batch_size files
-    files_processed = 0
-    for i in range(min(batch_size, len(state["pending"]))):
-        if not state["pending"]:
-            break
+                # Try to extract directly
+                batch_svgs = extract_svgs_from_text(response_text)
             
-        file_path = state["pending"][0]
-        result = process_file(file_path, model_name, max_code_length, output_dir)
-        
-        # Update state based on result
-        state["pending"].remove(file_path)
-        if result == "completed":
-            state["completed"].append(file_path)
-        else:
-            state["failed"].append(file_path)
-        
-        # Save state after each file
-        save_state(state)
-        files_processed += 1
-        
-        # Apply throttling if not the last file and throttling is enabled
-        if throttle_delay > 0 and i < min(batch_size, len(state["pending"])) - 1 and state["pending"]:
-            logger.info(f"Throttling for {throttle_delay} seconds before next file...")
-            time.sleep(throttle_delay)
-    
-    return files_processed
-
-def process_directory_with_throttling(root_dir, model_name, batch_size=1, throttle_delay=5, 
-                                     skip_existing=True, max_code_length=3000, output_dir="svgimg"):
-    """Process all files in a directory with throttling and batching."""
-    # Find eligible files and initialize state
-    state = find_eligible_files(root_dir, skip_existing)
-    
-    if not state["pending"]:
-        logger.info("No files to process.")
-        return
-    
-    logger.info(f"Starting batch processing with throttle delay of {throttle_delay}s")
-    logger.info(f"SVG files will be saved to '{output_dir}' folders")
-    
-    # Process in batches
-    total_processed = 0
-    while state["pending"]:
-        logger.info(f"Processing batch of up to {batch_size} files")
-        files_processed = process_batch(batch_size, model_name, throttle_delay, max_code_length, output_dir)
-        total_processed += files_processed
-        
-        if files_processed < batch_size:
-            break
+            # Add new unique SVGs to our collection
+            for svg in batch_svgs:
+                if svg not in all_svgs:
+                    all_svgs.append(svg)
             
-        # Reload state
-        state = load_state()
+            print(f"  - Found {len(batch_svgs)} new SVGs in this batch, total: {len(all_svgs)}/{min_svgs}")
+            
+            # If we didn't get any SVGs in this batch, adjust our approach
+            if len(batch_svgs) == 0 and attempts < max_attempts:
+                print("  - No SVGs found in this batch, changing approach for next attempt")
+        
+        except Exception as e:
+            print(f"  - Error generating SVGs in batch {attempts}: {e}")
+        
+        # Short pause between batch requests
+        if len(all_svgs) < min_svgs and attempts < max_attempts:
+            time.sleep(2)
     
-    logger.info(f"Batch processing completed. Total files processed: {total_processed}")
-    logger.info(f"Status: {len(state['pending'])} pending, {len(state['completed'])} completed, {len(state['failed'])} failed")
+    return all_svgs
+
+
+def save_svgs(svgs: List[str], output_dir: Path) -> None:
+    """
+    Save SVGs to individual files in the specified directory.
+    
+    Args:
+        svgs: List of SVG strings
+        output_dir: Directory path to save the SVGs
+    """
+    for i, svg in enumerate(svgs, 1):
+        svg_filename = f"explanation_{i}.svg"
+        try:
+            with open(output_dir / svg_filename, "w", encoding="utf-8") as f:
+                f.write(svg)
+            print(f"  - Saved SVG {i}: {svg_filename}")
+        except Exception as e:
+            print(f"  - Error saving {svg_filename}: {e}")
+
 
 def main():
-    parser = argparse.ArgumentParser(description='Generate multiple SVG diagrams for code files using OpenAI API')
-    parser.add_argument('--dir', type=str, default=".", help='Directory to process')
-    parser.add_argument('--model', type=str, default="gpt-4o", 
-                        help='OpenAI model to use (default: gpt-4o)')
-    parser.add_argument('--process-all', action='store_true', 
-                        help='Process all files, including those that already have SVGs')
-    parser.add_argument('--throttle', type=int, default=5,
-                        help='Seconds to wait between processing files (default: 5, use 0 to disable)')
-    parser.add_argument('--batch-size', type=int, default=5,
-                        help='Number of files to process in one run (default: 5)')
-    parser.add_argument('--reset', action='store_true',
-                        help='Reset processing state (clears completed/failed lists)')
-    parser.add_argument('--max-code-length', type=int, default=3000,
-                        help='Maximum length of code to include in prompt (default: 3000)')
-    parser.add_argument('--timeout', type=int, default=60,
-                        help='Timeout in seconds for API requests (default: 60)')
-    parser.add_argument('--debug', action='store_true',
-                        help='Enable debug mode with more verbose logging')
-    parser.add_argument('--output-dir', type=str, default="svgimg",
-                        help='Name of output directory for SVG files (default: svgimg)')
-    
-    # Add help on available models
-    parser.add_argument('--list-models', action='store_true',
-                        help='List available OpenAI models names and exit')
-    parser.add_argument('--test-connection', action='store_true',
-                        help='Test connection to OpenAI API and exit')
-    
+    """
+    Main function that processes the command-line arguments and runs the SVG generation process.
+    """
+    parser = argparse.ArgumentParser(description="Generate SVG explanations for technical questions using DeepSeek API")
+    parser.add_argument("input_file", type=str, help="Path to the input question file")
+    parser.add_argument("--output_dir", type=str, default="svg_explanations", help="Output directory")
+    parser.add_argument("--model", type=str, default="deepseek-coder-v2", help="DeepSeek model to use")
+    parser.add_argument("--min_svgs", type=int, default=5, help="Minimum number of SVGs per question")
+    parser.add_argument("--temperature", type=float, default=0.2, help="Temperature parameter (0.0-1.0)")
+    parser.add_argument("--language", type=str, default="C++", help="Programming language for code examples")
+    parser.add_argument("--delay", type=float, default=2.0, help="Delay between API requests (seconds)")
+    parser.add_argument("--max_tokens", type=int, default=4000, help="Maximum tokens in DeepSeek's response")
+    parser.add_argument("--batch_size", type=int, default=3, help="Number of SVGs to request in each batch")
+    parser.add_argument("--max_attempts", type=int, default=5, help="Maximum attempts per question")
     args = parser.parse_args()
-    
-    # Set debug logging if requested
-    if args.debug:
-        logger.setLevel(logging.DEBUG)
-        # Set debugging for urllib3 to see connection details
-        logging.getLogger("urllib3").setLevel(logging.DEBUG)
-        logger.debug("Debug logging enabled")
-    
-    # Update client timeout if specified
-    if args.timeout:
-        client.timeout = float(args.timeout)
-        logger.info(f"API timeout set to {args.timeout} seconds")
-    
-    # Show available models if requested
-    if args.list_models:
-        print("Available OpenAI models for SVG generation:")
-        print("  gpt-4o                   (best quality SVG diagrams)")
-        print("  gpt-4-turbo              (high quality)")
-        print("  gpt-4-0125-preview       (high quality)")
-        print("  gpt-4                    (high quality, slower)")
-        print("  gpt-3.5-turbo            (faster, less detailed)")
-        return
-    
-    # Test API connection if requested
-    if args.test_connection:
-        print("Testing API connectivity...")
-        try:
-            test_response = client.chat.completions.create(
-                model="gpt-3.5-turbo",
-                messages=[{"role": "user", "content": "hello"}],
-                max_tokens=5
-            )
-            print("✓ Connection to OpenAI API successful!")
-            print(f"API response: {test_response.choices[0].message.content}")
-        except Exception as e:
-            print(f"✗ Connection to OpenAI API failed: {e}")
-            print("Please check your internet connection and API key")
-        return
-    
-    # Reset state if requested
-    if args.reset and os.path.exists(STATE_FILE):
-        os.remove(STATE_FILE)
-        logger.info("Processing state reset.")
-    
+
+    # Get API key from environment variable
+    api_key = os.environ.get("DEEPSEEK_API_KEY")
+    if not api_key:
+        print("ERROR: DEEPSEEK_API_KEY environment variable not set")
+        print("Please set it with: export DEEPSEEK_API_KEY='your_api_key'")
+        return 1
+
     try:
-        process_directory_with_throttling(
-            args.dir, 
-            args.model,
-            batch_size=args.batch_size,
-            throttle_delay=args.throttle,
-            skip_existing=not args.process_all,
-            max_code_length=args.max_code_length,
-            output_dir=args.output_dir
-        )
-    except KeyboardInterrupt:
-        logger.info("Script interrupted by user. Exiting gracefully.")
+        # Setup the DeepSeek client
+        print(f"Setting up DeepSeek client with model: {args.model}")
+        client = DeepSeekClient(api_key)
+        
+        # Extract questions from the input file
+        print(f"Extracting questions from: {args.input_file}")
+        questions = extract_questions(args.input_file)
+        if not questions:
+            print("No questions found in the input file.")
+            return 1
+
+        # Create output directory
+        output_dir = Path(args.output_dir)
+        output_dir.mkdir(parents=True, exist_ok=True)
+        print(f"Output directory: {output_dir}")
+
+        # Process each question
+        for i, question in enumerate(questions, 1):
+            print(f"\n[{i}/{len(questions)}] Processing question: {question[:50]}...")
+            
+            # Create sanitized folder name for this question
+            folder_name = sanitize_filename(question[:50])
+            question_dir = output_dir / folder_name
+            question_dir.mkdir(exist_ok=True)
+            
+            # Save original question in the folder
+            with open(question_dir / "question.txt", "w", encoding="utf-8") as f:
+                f.write(question)
+            
+            # Generate SVGs for the question in batches
+            svgs = generate_svgs_in_batches(
+                client, 
+                question,
+                min_svgs=args.min_svgs,
+                language=args.language,
+                model=args.model,
+                max_tokens=args.max_tokens,
+                max_attempts=args.max_attempts,
+                batch_size=args.batch_size,
+                temperature=args.temperature
+            )
+            
+            # Save the SVGs
+            save_svgs(svgs, question_dir)
+            
+            # Log completion status
+            if len(svgs) >= args.min_svgs:
+                print(f"  ✅ Successfully generated {len(svgs)} SVGs for question {i}")
+            else:
+                print(f"  ⚠️ Only generated {len(svgs)}/{args.min_svgs} SVGs for question {i}")
+            
+            # Wait between questions to avoid rate limiting
+            if i < len(questions):
+                print(f"  - Waiting {args.delay} seconds before next question...")
+                time.sleep(args.delay)
+
+        print(f"\nProcess completed. Generated SVGs for {len(questions)} questions in {args.output_dir}")
+        return 0
+        
     except Exception as e:
-        logger.critical(f"Unhandled exception: {e}", exc_info=True)
+        print(f"ERROR: {e}")
+        return 1
+
 
 if __name__ == "__main__":
-    main()
+    exit(main())

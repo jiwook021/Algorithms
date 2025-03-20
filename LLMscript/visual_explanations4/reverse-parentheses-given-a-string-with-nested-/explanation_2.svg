@@ -1,0 +1,18 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Using a Stack</text>
+  <text x="20" y="60" font-size="14">A stack (LIFO) is ideal for handling nested structures.</text>
+
+  <rect x="250" y="80" width="50" height="20" fill="#aaf" />
+  <text x="265" y="95" font-size="12">c</text>
+  <rect x="250" y="100" width="50" height="20" fill="#aaf" />
+  <text x="265" y="115" font-size="12">b</text>
+  <rect x="250" y="120" width="50" height="20" fill="#aaf" />
+  <text x="265" y="135" font-size="12">a</text>
+  <text x="250" y="150" font-size="14">Stack</text>
+  <path d="M240 130 L250 130" stroke="black" marker-end="url(#arrowhead)" />
+   <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" />
+   </marker>
+    
+</svg>

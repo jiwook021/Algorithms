@@ -1,0 +1,32 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="400" height="250" fill="#f0f0f0"/>
+    <text x="20" y="30" font-size="16" font-weight="bold">3. Control Flow Divergence</text>
+
+    <g transform="translate(50, 60)">
+        <rect x="0" y="0" width="30" height="80" fill="lightblue" stroke="black"/>
+        <rect x="35" y="0" width="30" height="80" fill="lightblue" stroke="black"/>
+        <rect x="70" y="0" width="30" height="80" fill="lightblue" stroke="black"/>
+        <rect x="105" y="0" width="30" height="80" fill="lightblue" stroke="black"/>
+        <text x="0" y="95" font-size="12">Threads</text>
+        <text x="15" y="-10" font-size="14">Warp</text>
+        <rect x="-5" y="-20" width="145" height="110" fill="none" stroke="red" stroke-width="2"/>
+
+        <path d="M 15 40 L 170 40" stroke="green" stroke-width="3" marker-end="url(#arrowhead)"/>
+         <path d="M 50 40 L 170 80" stroke="orange" stroke-width="3" marker-end="url(#arrowhead)"/>
+          <path d="M 85 40 L 170 40" stroke="green" stroke-width="3" marker-end="url(#arrowhead)"/>
+         <path d="M 120 40 L 170 80" stroke="orange" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+         <text x="180" y="45">If (true)</text>
+          <text x="180" y="85">Else</text>
+
+
+        <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
+        </marker>
+    </g>
+
+    <text x="20" y="175" font-size="14">If threads in a warp take different paths</text>
+    <text x="20" y="195" font-size="14">through the code (e.g., if/else), divergence occurs.</text>
+    <text x="20" y="215" font-size="14">Some threads may be inactive during certain branches.</text>
+</svg>

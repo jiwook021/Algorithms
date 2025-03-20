@@ -1,0 +1,29 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">5. Jumping to Application</text>
+
+  <rect x="30" y="60" width="100" height="60" fill="#add8e6" />
+  <text x="80" y="90" text-anchor="middle" font-size="12">Bootloader</text>
+    <text x="80" y="105" text-anchor="middle" font-size="10">(0x08000000)</text>
+
+
+  <line x1="130" y1="90" x2="180" y2="90" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+
+<rect x="180" y="60" width="100" height="60" fill="#90ee90" />
+  <text x="230" y="90" text-anchor="middle" font-size="12">Application</text>
+    <text x="230" y="105" text-anchor="middle" font-size="10">(0x08004000)</text>
+
+  <text x="20" y="150" font-size="12">1. Set MSP (Main Stack Pointer)</text>
+   <text x="20" y="170" font-size="10">   MSP = *(uint32_t*)0x08004000;</text>
+  <text x="20" y="190" font-size="12">2. Get Application Reset Handler Address</text>
+    <text x="20" y="210" font-size="10">   reset_handler = *(uint32_t*)0x08004004;</text>
+  <text x="20" y="230" font-size="12">3. Jump to Reset Handler</text>
+   <text x="20" y="250" font-size="10">   reset_handler();</text>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+    </marker>
+  </defs>
+</svg>

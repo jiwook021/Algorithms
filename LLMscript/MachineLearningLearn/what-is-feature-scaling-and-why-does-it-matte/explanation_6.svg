@@ -1,0 +1,53 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f8f9fa" />
+  <text x="300" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Feature Scaling: Unscaled vs. Scaled Data</text>
+  
+  <!-- Coordinate system -->
+  <line x1="100" y1="300" x2="500" y2="300" stroke="black" stroke-width="2" />
+  <line x1="100" y1="300" x2="100" y2="100" stroke="black" stroke-width="2" />
+  
+  <text x="300" y="330" font-family="Arial" font-size="16" text-anchor="middle">Feature 1 (Age)</text>
+  <text x="60" y="200" font-family="Arial" font-size="16" text-anchor="middle" transform="rotate(-90,60,200)">Feature 2 (Salary)</text>
+  
+  <!-- Unscaled data points -->
+  <circle cx="120" cy="280" r="5" fill="#ff6347" />
+  <circle cx="150" cy="250" r="5" fill="#ff6347" />
+  <circle cx="200" cy="230" r="5" fill="#ff6347" />
+  <circle cx="350" cy="150" r="5" fill="#ff6347" />
+  <circle cx="450" cy="120" r="5" fill="#ff6347" />
+  
+  <!-- Scaled data points -->
+  <circle cx="150" cy="250" r="5" fill="#4682b4" />
+  <circle cx="180" cy="230" r="5" fill="#4682b4" />
+  <circle cx="210" cy="210" r="5" fill="#4682b4" />
+  <circle cx="240" cy="190" r="5" fill="#4682b4" />
+  <circle cx="270" cy="170" r="5" fill="#4682b4" />
+  
+  <!-- Legend -->
+  <rect x="400" y="350" width="15" height="15" fill="#ff6347" />
+  <text x="425" y="363" font-family="Arial" font-size="14">Unscaled data (20-65 years, $30k-$150k)</text>
+  
+  <rect x="400" y="375" width="15" height="15" fill="#4682b4" />
+  <text x="425" y="388" font-family="Arial" font-size="14">Scaled data (0-1 range)</text>
+  
+  <!-- Explanation -->
+  <rect x="100" y="40" width="400" height="50" fill="#e6f7ff" rx="5" ry="5" stroke="#1890ff" stroke-width="1" />
+  <text x="110" y="60" font-family="Arial" font-size="12">
+    Feature scaling transforms features with different ranges to a common scale.
+  </text>
+  <text x="110" y="80" font-family="Arial" font-size="12">
+    Without scaling, features with larger ranges (like salary) would dominate those
+  </text>
+  <text x="110" y="95" font-family="Arial" font-size="12">
+    with smaller ranges (like age) in distance-based algorithms.
+  </text>
+  
+  <!-- Code example -->
+  <rect x="50" y="120" width="240" height="80" fill="#f0f0f0" rx="5" ry="5" />
+  <text x="60" y="140" font-family="Consolas, monospace" font-size="12">
+    <tspan x="60" dy="0">// C++ Min-Max Scaling</tspan>
+    <tspan x="60" dy="16">double scaled_value = </tspan>
+    <tspan x="60" dy="16">(value - min_value) / </tspan>
+    <tspan x="60" dy="16">(max_value - min_value);</tspan>
+  </text>
+</svg>

@@ -1,0 +1,30 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="600" height="400" fill="#f0f0f0"/>
+  <text x="20" y="30" font-size="20" font-weight="bold">8. Driver Structure (Modular Design)</text>
+
+  <rect x="50" y="80" width="150" height="50" fill="#add8e6" stroke="black"/>
+  <text x="60" y="110" font-size="16">spi_driver.h</text>
+
+  <rect x="50" y="150" width="150" height="150" fill="#ffffff" stroke="black"/>
+  <text x="60" y="180" font-size="14">Function Prototypes:</text>
+    <text x="60" y="200" font-size="12">- SPI_Init()</text>
+  <text x="60" y="220" font-size="12">- SPI_TransmitReceive()</text>
+  <text x="60" y="240" font-size="12">- Read_Temperature()</text>
+  <text x="60" y="260" font-size="12">- ... (other sensor functions)</text>
+
+  <rect x="250" y="80" width="150" height="50" fill="#90ee90" stroke="black"/>
+  <text x="260" y="110" font-size="16">spi_driver.c</text>
+
+  <rect x="250" y="150" width="150" height="150" fill="#ffffff" stroke="black"/>
+    <text x="260" y="180" font-size="14">Function Implementations:</text>
+      <text x="260" y="200" font-size="12">- SPI_Init() { ... }</text>
+  <text x="260" y="220" font-size="12">- SPI_TransmitReceive() { ... }</text>
+  <text x="260" y="240" font-size="12">- Read_Temperature() { ... }</text>
+  <text x="260" y="260" font-size="12">- ...</text>
+
+  <text x="450" y="100" font-size="16" fill="blue">Benefits:</text>
+    <text x="450" y="130" font-size="14" fill="blue">- Code organization</text>
+  <text x="450" y="150" font-size="14" fill="blue">- Reusability</text>
+  <text x="450" y="170" font-size="14" fill="blue">- Maintainability</text>
+  <text x="450" y="190" font-size="14" fill="blue">- Easier debugging</text>
+</svg>

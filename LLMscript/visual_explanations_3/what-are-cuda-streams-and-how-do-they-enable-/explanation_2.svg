@@ -1,0 +1,18 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    <rect x="10" y="10" width="380" height="230" fill="none" stroke="black" stroke-width="2"/>
+    <text x="20" y="30" font-size="16" font-weight="bold">2. In-Order Execution within a Stream</text>
+    <text x="20" y="60">Operations within a single stream are guaranteed</text>
+      <text x="20" y="80">to execute in the order they are submitted.</text>
+
+    <rect x="50" y="110" width="40" height="30" fill="lightgreen"/>
+    <text x="60" y="130">A</text>
+    <polygon points="90,125 110,120 110,130" fill="lightgreen" stroke="black"/>
+
+    <rect x="120" y="110" width="40" height="30" fill="lightgreen"/>
+    <text x="130" y="130">B</text>
+     <polygon points="160,125 180,120 180,130" fill="lightgreen" stroke="black"/>
+
+    <rect x="190" y="110" width="40" height="30" fill="lightgreen"/>
+    <text x="200" y="130">C</text>
+    <text x="50" y="160">A, B, and C will execute sequentially.</text>
+</svg>

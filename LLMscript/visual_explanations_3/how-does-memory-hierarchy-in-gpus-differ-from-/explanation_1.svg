@@ -1,0 +1,29 @@
+<svg width="600" height="400" viewport="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="200" height="300" fill="#ADD8E6" stroke="black"/>
+  <text x="150" y="70" text-anchor="middle" font-weight="bold">CPU Memory</text>
+  <rect x="70" y="100" width="160" height="40" fill="#87CEEB" stroke="black"/>
+  <text x="150" y="120" text-anchor="middle">L1 Cache</text>
+  <rect x="70" y="150" width="160" height="40" fill="#87CEEB" stroke="black"/>
+  <text x="150" y="170" text-anchor="middle">L2 Cache</text>
+  <rect x="70" y="200" width="160" height="40" fill="#87CEEB" stroke="black"/>
+  <text x="150" y="220" text-anchor="middle">L3 Cache</text>
+  <rect x="70" y="250" width="160" height="40" fill="#87CEFA" stroke="black"/>
+  <text x="150" y="270" text-anchor="middle">System RAM</text>
+  
+  <rect x="350" y="50" width="200" height="300" fill="#98FB98" stroke="black"/>
+  <text x="450" y="70" text-anchor="middle" font-weight="bold">GPU Memory</text>
+  <rect x="370" y="100" width="160" height="30" fill="#00FF7F" stroke="black"/>
+  <text x="450" y="115" text-anchor="middle">Registers</text>
+    <rect x="370" y="140" width="160" height="30" fill="#32CD32" stroke="black"/>
+  <text x="450" y="155" text-anchor="middle">L1 Cache/Shared</text>
+  <rect x="370" y="180" width="160" height="30" fill="#32CD32" stroke="black"/>
+  <text x="450" y="195" text-anchor="middle">L2 Cache</text>
+  <rect x="370" y="220" width="160" height="30" fill="#228B22" stroke="black"/>
+  <text x="450" y="235" text-anchor="middle">Global Memory</text>
+    <rect x="370" y="260" width="160" height="30" fill="#556B2F" stroke="black"/>
+  <text x="450" y="275" text-anchor="middle">Constant Memory</text>
+    <rect x="370" y="300" width="160" height="30" fill="#696969" stroke="black"/>
+  <text x="450" y="315" text-anchor="middle">Texture Memory</text>
+
+  <text x="300" y="380" text-anchor="middle" font-weight="bold">GPU has more specialized memory types and a flatter hierarchy.</text>
+</svg>

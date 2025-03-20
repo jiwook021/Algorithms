@@ -1,0 +1,8 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">9. Time and Space Complexity (DP)</text>
+  <text x="20" y="60">Time Complexity: O(n^2 * m),</text>
+  <text x="40" y="85" font-size="14">where n is the length of the string and m is average word length</text>
+   <text x="40" y="105" font-size="14">(checking if substring is in dictionary takes O(m)).</text>
+  <text x="20" y="135">Space Complexity: O(n), for the dp array.</text>
+</svg>

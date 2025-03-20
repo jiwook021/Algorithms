@@ -1,0 +1,32 @@
+<svg width="400" height="350" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="350" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="20" font-weight="bold">6. Teleporters</text>
+
+  <!-- Maze Grid with Teleporters -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="50" y="0" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="100" y="0" width="50" height="50" fill="white" stroke="black"/>
+
+    <rect x="0" y="50" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="50" y="50" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="100" y="50" width="50" height="50" fill="white" stroke="black"/>
+
+     <rect x="0" y="100" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="50" y="100" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="100" y="100" width="50" height="50" fill="white" stroke="black"/>
+
+    <!-- Teleporters -->
+    <circle cx="25" cy="25" r="15" fill="purple"/>
+    <circle cx="125" cy="125" r="15" fill="purple"/>
+        <text x="10" y="30" font-size="12">T1</text>
+          <text x="110" y="130" font-size="12">T1</text>
+
+    <line x1="40" y1="40" x2="110" y2="110" stroke="purple" stroke-width="3" stroke-dasharray="5,5"/>
+  </g>
+
+  <text x="20" y="220+50" font-size="14">Teleporters (purple) connect distant cells.</text>
+   <text x="20" y="240+50" font-size="14">Moving to a teleporter instantly moves you</text>
+    <text x="20" y="260+50" font-size="14">to its paired teleporter.</text>
+
+</svg>

@@ -1,0 +1,25 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="600" height="400" fill="#f0f0f0"/>
+  <text x="20" y="30" font-size="20" font-weight="bold">3. Choose a Development Environment</text>
+
+  <rect x="50" y="80" width="150" height="100" fill="#add8e6" stroke="black"/>
+  <text x="70" y="130" font-size="18">Microcontroller</text>
+  <text x="75" y="155" font-size="14">(e.g., STM32, ESP32)</text>
+
+
+  <rect x="250" y="80" width="150" height="100" fill="#90ee90" stroke="black"/>
+    <text x="280" y="110" font-size="18">IDE</text>
+  <text x="270" y="135" font-size="14">(e.g., Keil, STM32CubeIDE, </text>
+    <text x="270" y="155" font-size="14">PlatformIO, Arduino IDE)</text>
+
+    <rect x="450" y="80" width="100" height="100" fill="#ffffcc" stroke="black"/>
+  <text x="460" y="130" font-size="18">Debugger</text>
+    <text x="465" y="155" font-size="14">(e.g., J-Link, ST-Link)</text>
+
+
+  <text x="50" y="220" font-size="16">Key Considerations:</text>
+  <text x="50" y="250" font-size="14">- Microcontroller with SPI peripheral</text>
+  <text x="50" y="270" font-size="14">- IDE with compiler and debugger support</text>
+  <text x="50" y="290" font-size="14">- Hardware debugger for troubleshooting</text>
+    <text x="50" y="310" font-size="14">- Libraries or HAL for SPI communication</text>
+</svg>

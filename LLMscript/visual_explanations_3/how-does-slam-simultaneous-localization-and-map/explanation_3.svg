@@ -1,0 +1,13 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <circle cx="80" cy="150" r="20" fill="blue" />
+  <text x="70" y="190" font-size="16" fill="blue">Robot</text>
+
+  <polygon points="80,150 230,90 230,110" fill="lightblue" opacity="0.5"/>
+  <rect x="200" y="100" width="40" height="60" fill="green" />
+  <text x="200" y="90" font-size="14" fill="green">Landmark 1</text>
+    <line x1="80" y1="150" x2="215" y2="105" stroke="red" stroke-width="2"/>
+    <text x="130" y="120" font-size="12" fill="red">Measurement</text>
+  <text x="20" y="30" font-size="20" font-weight="bold">3. Sensor Measurement</text>
+  <text x="20" y="60" font-size="14">Robot uses sensors (e.g., lidar, camera) to measure landmarks.</text>
+</svg>

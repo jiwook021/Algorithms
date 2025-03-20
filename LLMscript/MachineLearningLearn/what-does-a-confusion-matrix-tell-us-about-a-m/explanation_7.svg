@@ -1,0 +1,44 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Confusion Matrix Structure</text>
+  
+  <!-- Matrix -->
+  <rect x="150" y="80" width="300" height="240" fill="#fff" stroke="#333" stroke-width="2" />
+  
+  <!-- Matrix Dividers -->
+  <line x1="150" y1="200" x2="450" y2="200" stroke="#333" stroke-width="2" />
+  <line x1="300" y1="80" x2="300" y2="320" stroke="#333" stroke-width="2" />
+  
+  <!-- Cell Labels -->
+  <rect x="150" y="80" width="150" height="120" fill="#a8d08d" fill-opacity="0.7" />
+  <text x="225" y="150" font-family="Arial" font-size="22" text-anchor="middle" fill="#333">True Positive (TP)</text>
+  
+  <rect x="300" y="80" width="150" height="120" fill="#f4b084" fill-opacity="0.7" />
+  <text x="375" y="150" font-family="Arial" font-size="22" text-anchor="middle" fill="#333">False Positive (FP)</text>
+  
+  <rect x="150" y="200" width="150" height="120" fill="#f4b084" fill-opacity="0.7" />
+  <text x="225" y="270" font-family="Arial" font-size="22" text-anchor="middle" fill="#333">False Negative (FN)</text>
+  
+  <rect x="300" y="200" width="150" height="120" fill="#a8d08d" fill-opacity="0.7" />
+  <text x="375" y="270" font-family="Arial" font-size="22" text-anchor="middle" fill="#333">True Negative (TN)</text>
+  
+  <!-- Axis Labels -->
+  <text x="300" y="350" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">Predicted Class</text>
+  <text x="120" y="200" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333" transform="rotate(-90, 120, 200)">Actual Class</text>
+  
+  <!-- Class Labels -->
+  <text x="225" y="100" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Positive</text>
+  <text x="375" y="100" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Negative</text>
+  <text x="130" y="150" font-family="Arial" font-size="16" text-anchor="end" fill="#333">Positive</text>
+  <text x="130" y="270" font-family="Arial" font-size="16" text-anchor="end" fill="#333">Negative</text>
+  
+  <!-- Code Example -->
+  <rect x="50" y="330" width="500" height="50" fill="#e6e6e6" rx="5" ry="5" />
+  <text x="60" y="355" font-family="Courier New" font-size="12" fill="#333">
+    <tspan x="60" dy="0">// C++ code to create a confusion matrix</tspan>
+    <tspan x="60" dy="16">std::array&lt;std::array&lt;int, 2&gt;, 2&gt; confusionMatrix = {{TP, FP}, {FN, TN}};</tspan>
+  </text>
+</svg>

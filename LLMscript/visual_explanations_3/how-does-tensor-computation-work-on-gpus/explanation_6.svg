@@ -1,0 +1,33 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="600" height="400" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="24" font-weight="bold">6. Kernel Execution</text>
+
+  <!-- CPU -->
+  <rect x="50" y="80" width="100" height="150" fill="#add8e6" stroke="black" />
+  <text x="80" y="150" font-size="18">CPU</text>
+    <text x="55" y="100" font-size="14">Host Code</text>
+
+  <!-- GPU -->
+  <rect x="350" y="80" width="200" height="150" fill="#90ee90" stroke="black" />
+  <text x="420" y="150" font-size="18">GPU</text>
+   <text x="355" y="100" font-size="14">Device Code (Kernel)</text>
+
+ <!-- Kernel Function -->
+  <g transform="translate(180,100)">
+    <rect width="130" height="40" fill="orange" stroke="black"/>
+      <text x="10" y="25" font-size="16">Kernel Function</text>
+  </g>
+
+  <!-- Arrows indicating kernel launch -->
+    <polygon points="155,150 170,120" fill="black" />
+   <polygon points="175,125 170,120 165,115" fill="black" />
+
+     <polygon points="345,150 330,120" fill="black" />
+   <polygon points="325,125 330,120 335,115" fill="black" />
+
+   <text x="185" y="170" font-size="14">Grid of thread blocks</text>
+
+  <text x="20" y="280" font-size="14">CPU launches the kernel on the GPU.</text>
+  <text x="20" y="300" font-size="14">Kernel executes in parallel across many threads.</text>
+    <text x="20" y="320" font-size="14">Results are copied back to the CPU.</text>
+</svg>

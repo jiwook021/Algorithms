@@ -1,0 +1,42 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f9f9f9" />
+  <text x="300" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Common Feature Scaling Methods</text>
+  
+  <!-- Method boxes -->
+  <rect x="50" y="80" width="500" height="80" fill="#e6f3ff" rx="10" ry="10" stroke="#4682b4" stroke-width="2" />
+  <text x="60" y="100" font-family="Arial" font-size="16" font-weight="bold">Min-Max Scaling (Normalization)</text>
+  <text x="60" y="125" font-family="Arial" font-size="14">Scales features to a fixed range, typically [0,1]</text>
+  <text x="60" y="150" font-family="Courier New" font-size="12">X_scaled = (X - X_min) / (X_max - X_min)</text>
+  
+  <rect x="50" y="180" width="500" height="80" fill="#fff0e6" rx="10" ry="10" stroke="#ff8c66" stroke-width="2" />
+  <text x="60" y="200" font-family="Arial" font-size="16" font-weight="bold">Standardization (Z-score Normalization)</text>
+  <text x="60" y="225" font-family="Arial" font-size="14">Transforms data to have mean=0 and standard deviation=1</text>
+  <text x="60" y="250" font-family="Courier New" font-size="12">X_scaled = (X - X_mean) / X_std</text>
+  
+  <rect x="50" y="280" width="500" height="80" fill="#f0f0ff" rx="10" ry="10" stroke="#9999ff" stroke-width="2" />
+  <text x="60" y="300" font-family="Arial" font-size="16" font-weight="bold">Robust Scaling</text>
+  <text x="60" y="325" font-family="Arial" font-size="14">Uses median and IQR, less sensitive to outliers</text>
+  <text x="60" y="350" font-family="Courier New" font-size="12">X_scaled = (X - X_median) / IQR</text>
+  
+  <!-- C++ Code Example -->
+  <rect x="320" y="100" width="220" height="240" fill="#f5f5f5" rx="5" ry="5" stroke="#cccccc" />
+  <text x="330" y="120" font-family="Courier New" font-size="10">
+    <tspan x="330" y="120">// C++ Implementation Example</tspan>
+    <tspan x="330" y="140">// Min-Max Scaling</tspan>
+    <tspan x="330" y="155">std::vector&lt;double&gt; minMaxScale(</tspan>
+    <tspan x="330" y="170">    const std::vector&lt;double&gt;&amp; data) {</tspan>
+    <tspan x="330" y="185">  double min = *std::min_element(</tspan>
+    <tspan x="330" y="200">    data.begin(), data.end());</tspan>
+    <tspan x="330" y="215">  double max = *std::max_element(</tspan>
+    <tspan x="330" y="230">    data.begin(), data.end());</tspan>
+    <tspan x="330" y="245">  double range = max - min;</tspan>
+    <tspan x="330" y="260">  </tspan>
+    <tspan x="330" y="275">  std::vector&lt;double&gt; scaled;</tspan>
+    <tspan x="330" y="290">  for(double x : data) {</tspan>
+    <tspan x="330" y="305">    scaled.push_back(</tspan>
+    <tspan x="330" y="320">      (x - min) / range);</tspan>
+    <tspan x="330" y="335">  }</tspan>
+    <tspan x="330" y="350">  return scaled;</tspan>
+    <tspan x="330" y="365">}</tspan>
+  </text>
+</svg>

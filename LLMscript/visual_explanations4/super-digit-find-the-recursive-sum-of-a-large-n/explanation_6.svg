@@ -1,0 +1,13 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="250" fill="#f0f8ff" />
+  <text x="20" y="30" font-size="16" font-weight="bold">Step 5: Check Again</text>
+  <text x="20" y="60" font-size="14">Is the result a single digit?</text>
+  <rect x="50" y="90" width="50" height="40" fill="#90EE90" />
+  <text x="65" y="115" font-size="18">11</text>
+ <path d="M110 110 L150 110" stroke="black" stroke-width="2" />
+    <polygon points="150,105 160,110 150,115" fill="black"/>
+
+  <text x="170" y="105" font-size="14" fill="red">No, still two digits.</text>
+  <text x="170" y="135" font-size="14" fill="blue">Repeat again.</text>
+
+</svg>

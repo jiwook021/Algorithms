@@ -1,0 +1,44 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Overfitting: Training vs. Validation Error</text>
+  
+  <!-- Axes -->
+  <line x1="100" y1="300" x2="500" y2="300" stroke="#333" stroke-width="2" />
+  <line x1="100" y1="300" x2="100" y2="100" stroke="#333" stroke-width="2" />
+  
+  <!-- Axis Labels -->
+  <text x="300" y="340" font-family="Arial" font-size="16" text-anchor="middle">Model Complexity</text>
+  <text x="60" y="200" font-family="Arial" font-size="16" text-anchor="middle" transform="rotate(-90, 60, 200)">Error</text>
+  
+  <!-- Training Error Curve -->
+  <path d="M100,250 Q150,230 200,190 Q250,150 300,120 Q350,100 400,90 Q450,85 500,83" 
+        fill="none" stroke="#4285F4" stroke-width="3" />
+  <text x="520" y="90" font-family="Arial" font-size="14" fill="#4285F4">Training Error</text>
+  
+  <!-- Validation Error Curve -->
+  <path d="M100,250 Q150,230 200,190 Q250,160 300,150 Q350,160 400,190 Q450,230 500,280" 
+        fill="none" stroke="#EA4335" stroke-width="3" />
+  <text x="520" y="280" font-family="Arial" font-size="14" fill="#EA4335">Validation Error</text>
+  
+  <!-- Optimal Model Complexity -->
+  <line x1="300" y1="100" x2="300" y2="300" stroke="#34A853" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="300" y="90" font-family="Arial" font-size="14" text-anchor="middle" fill="#34A853">Optimal Complexity</text>
+  
+  <!-- Regions -->
+  <rect x="100" y="60" width="200" height="30" fill="#FBBC05" fill-opacity="0.3" />
+  <text x="200" y="80" font-family="Arial" font-size="14" text-anchor="middle">Underfitting</text>
+  
+  <rect x="300" y="60" width="200" height="30" fill="#EA4335" fill-opacity="0.3" />
+  <text x="400" y="80" font-family="Arial" font-size="14" text-anchor="middle">Overfitting</text>
+  
+  <!-- Explanation -->
+  <text x="300" y="360" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">
+    Overfitting occurs when model performs well on training data
+  </text>
+  <text x="300" y="380" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">
+    but poorly on validation data due to excessive complexity
+  </text>
+</svg>

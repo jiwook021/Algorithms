@@ -1,0 +1,41 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="600" height="400" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="24" font-weight="bold">7. Thread Synchronization (Warp)</text>
+
+  <!-- Thread Block -->
+  <rect x="50" y="80" width="200" height="150" fill="#baffc9" stroke="black" />
+  <text x="100" y="100" font-size="16">Thread Block</text>
+
+  <!-- Threads (Illustrative) -->
+    <g transform="translate(60, 120)">
+    <line x1="0" y1="0" x2="20" y2="0" stroke="red" stroke-width="2"/>
+        <text x="5" y="-5" font-size="10">Thread 1</text>
+    </g>
+     <g transform="translate(60, 140)">
+    <line x1="0" y1="0" x2="20" y2="0" stroke="red" stroke-width="2"/>
+        <text x="5" y="-5" font-size="10">Thread 2</text>
+    </g>
+     <g transform="translate(60, 160)">
+    <line x1="0" y1="0" x2="20" y2="0" stroke="red" stroke-width="2"/>
+        <text x="5" y="-5" font-size="10">Thread 3</text>
+    </g>
+ <g transform="translate(60, 180)">
+    <line x1="0" y1="0" x2="20" y2="0" stroke="red" stroke-width="2"/>
+    <text x="5" y="-5" font-size="10">...</text>
+    </g>
+
+    <!-- Warp -->
+     <rect x="55" y="115" width="30" height="70"  stroke="blue" stroke-width="2" fill="none"/>
+    <text x="90" y="150" font-size="14" fill="blue">Warp</text>
+
+  <!-- Barrier (Illustrative) -->
+  <g transform="translate(300,80)">
+    <rect width="10" height="150" fill="gray" />
+      <text x="-30" y="160" font-size="16"  transform="rotate(-90)">__syncthreads()</text>
+  </g>
+    <text x="350" y="150" font-size="14">Barrier</text>
+
+  <text x="20" y="280" font-size="14">Threads within a warp execute synchronously (SIMT).</text>
+  <text x="20" y="300" font-size="14">`__syncthreads()` ensures all threads in a block synchronize.</text>
+   <text x="20" y="320" font-size="14">Needed for data consistency when using shared memory.</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f8f9fa" />
+  <text x="300" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Dropout Implementation in Deep Learning</text>
+  
+  <!-- Code section -->
+  <rect x="50" y="50" width="500" height="180" rx="5" ry="5" fill="#f0f0f0" stroke="#cccccc" />
+  <text x="60" y="70" font-family="Consolas, monospace" font-size="12" fill="#333">
+    <tspan x="60" dy="0">// C++ implementation of dropout layer</tspan>
+    <tspan x="60" dy="20">class DropoutLayer {</tspan>
+    <tspan x="60" dy="20">private:</tspan>
+    <tspan x="80" dy="20">  float dropout_rate;</tspan>
+    <tspan x="80" dy="20">  std::vector&lt;bool&gt; dropout_mask;</tspan>
+    <tspan x="60" dy="20">public:</tspan>
+    <tspan x="80" dy="20">  DropoutLayer(float rate) : dropout_rate(rate) {}</tspan>
+    <tspan x="80" dy="20">  </tspan>
+    <tspan x="80" dy="20">  std::vector&lt;float&gt; forward(const std::vector&lt;float&gt;&amp; input, bool is_training) {</tspan>
+    <tspan x="100" dy="20">    std::vector&lt;float&gt; output = input;</tspan>
+    <tspan x="100" dy="20">    if (is_training) {</tspan>
+    <tspan x="120" dy="20">      // Generate random dropout mask</tspan>
+    <tspan x="120" dy="20">      dropout_mask.resize(input.size());</tspan>
+    <tspan x="120" dy="20">      std::random_device rd;</tspan>
+    <tspan x="120" dy="20">      std::mt19937 gen(rd());</tspan>
+    <tspan x="120" dy="20">      std::bernoulli_distribution d(1.0 - dropout_rate);</tspan>
+    <tspan x="120" dy="20">      </tspan>
+    <tspan x="120" dy="20">      for (size_t i = 0; i &lt; input.size(); ++i) {</tspan>
+    <tspan x="140" dy="20">        dropout_mask[i] = d(gen);</tspan>
+    <tspan x="140" dy="20">        output[i] *= dropout_mask[i] ? 1.0 / (1.0 - dropout_rate) : 0.0;</tspan>
+    <tspan x="120" dy="20">      }</tspan>
+    <tspan x="100" dy="20">    }</tspan>
+    <tspan x="100" dy="20">    return output;</tspan>
+    <tspan x="80" dy="20">  }</tspan>
+    <tspan x="60" dy="20">};</tspan>
+  </text>
+  
+  <!-- Explanation of key parts -->
+  <g transform="translate(300, 310)">
+    <text x="0" y="0" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Key Implementation Details</text>
+    
+    <g transform="translate(-240, 30)">
+      <rect x="0" y="0" width="20" height="20" fill="#ff9e6a" />
+      <text x="30" y="15" font-family="Arial" font-size="14">Bernoulli distribution: Randomly keeps neurons with probability (1-dropout_rate)</text>
+    </g>
+    
+    <g transform="translate(-240, 60)">
+      <rect x="0" y="0" width="20" height="20" fill="#6ab7ff" />
+      <text x="30" y="15" font-family="Arial" font-size="14">Scaling factor: Dividing by (1-dropout_rate) maintains expected activation value</text>
+    </g>
+    
+    <g transform="translate(-240, 90)">
+      <rect x="0" y="0" width="20" height="20" fill="#6aff9e" />
+      <text x="30" y="15" font-family="Arial" font-size="14">Training vs. Inference: Dropout only applied during training (is_training flag)</text>
+    </g>
+  </g>
+</svg>

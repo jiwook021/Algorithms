@@ -1,0 +1,21 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="250" fill="#f0f0f0"/>
+    <text x="20" y="30" font-size="18" font-weight="bold">8.  Fused Operations</text>
+  <rect x="50" y="70" width="70" height="40" fill="#e91e63" stroke="black"/>
+    <text x="60" y="95" fill="white">Conv</text>
+    <rect x="130" y="70" width="70" height="40" fill="#9c27b0" stroke="black"/>
+  <text x="140" y="95" fill="white">ReLU</text>
+    <rect x="210" y="70" width="70" height="40" fill="#673ab7" stroke="black"/>
+    <text x="220" y="95" fill="white">BatchNorm</text>
+    <path d="M290 90 L320 90" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+
+     <rect x="50" y="130" width="270" height="50" fill="#2196f3" stroke="black"/>
+       <text x="70" y="160" fill="white">Fused Layer (Conv + ReLU + BatchNorm)</text>
+     <text x="50" y="200" font-size="12">Combines multiple operations into one.</text>
+
+          <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

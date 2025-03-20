@@ -1,0 +1,10 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">4. Linear Congruential Generator (LCG)</text>
+  <text x="20" y="60" font-size="14">X_(n+1) = (a * X_n + c) mod m</text>
+  <text x="20" y="90" font-size="12">X_n: Current Value</text>
+  <text x="20" y="110" font-size="12">a: Multiplier</text>
+  <text x="20" y="130" font-size="12">c: Increment</text>
+  <text x="20" y="150" font-size="12">m: Modulus</text>
+    <text x="20" y="180" font-size="12" fill="darkblue">A common type of PRNG.  Predicting the seed involves solving for X_0.</text>
+</svg>

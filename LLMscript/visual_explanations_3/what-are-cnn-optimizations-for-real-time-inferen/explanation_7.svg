@@ -1,0 +1,25 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="250" fill="#f0f0f0"/>
+    <text x="20" y="30" font-size="18" font-weight="bold">7. Early Exiting</text>
+    <rect x="50" y="60" width="50" height="50" fill="#ff9800" stroke="black"/>
+    <text x="55" y="85" fill="white">Layer 1</text>
+     <rect x="50" y="120" width="50" height="50" fill="#ff9800" stroke="black"/>
+    <text x="55" y="145" fill="white">Layer 2</text>
+
+     <rect x="120" y="60" width="50" height="50" fill="#ff5722" stroke="black"/>
+        <text x="125" y="85" fill="white">Exit 1</text>
+     <rect x="120" y="120" width="50" height="50" fill="#ff5722" stroke="black"/>
+        <text x="125" y="145" fill="white">Exit 2</text>
+
+    <path d="M100 85 L120 85" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+      <path d="M100 145 L120 145" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+    <text x="180" y="90" font-size="12">Exits early if</text>
+    <text x="180" y="110" font-size="12">confident enough.</text>
+     <text x="180" y="140" font-size="12">Saves computation.</text>
+
+        <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

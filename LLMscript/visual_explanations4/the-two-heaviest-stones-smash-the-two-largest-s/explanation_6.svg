@@ -1,0 +1,13 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">6. Result of Smash (Equal)</text>
+
+    <circle cx="100" cy="100" r="30" fill="gray" stroke="black" stroke-dasharray="5,5"/>
+    <text x="90" y="105" font-size="16">5</text>
+    <circle cx="200" cy="100" r="30" fill="gray" stroke="black" stroke-dasharray="5,5" />
+    <text x="190" y="105" font-size="16">5</text>
+
+
+  <text x="20" y="180" font-size="14">If the stones are of equal weight, both are completely destroyed.</text>
+    <text x="130" y="150" font-size="14" >(5 - 5 = 0)</text>
+</svg>

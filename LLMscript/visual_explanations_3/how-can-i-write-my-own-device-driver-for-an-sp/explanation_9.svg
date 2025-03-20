@@ -1,0 +1,25 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="600" height="400" fill="#f0f0f0"/>
+    <text x="20" y="30" font-size="20" font-weight="bold">9.  Error Handling</text>
+
+  <rect x="50" y="80" width="500" height="250" fill="#ffffff" stroke="black"/>
+    <text x="70" y="110" font-size="18">Code Snippet (Conceptual)</text>
+
+  <text x="80" y="140" font-size="14" fill="blue">int Read_SensorData(uint8_t reg, uint8_t *data) {</text>
+    <text x="100" y="165" font-size="14" fill="green">  // 1. Send read command</text>
+        <text x="100" y="180" font-size="14" fill="green">  if (SPI_TransmitReceive(reg) != SPI_OK) {</text>
+    <text x="120" y="200" font-size="14" fill="red">    return SPI_ERROR_TRANSMIT;  // Error</text>
+        <text x="100" y="215" font-size="14" fill="green">  }</text>
+
+      <text x="100" y="235" font-size="14" fill="green"> // 2. Read data</text>
+     <text x="100" y="250" font-size="14" fill="green">  *data = SPI_TransmitReceive(0x00);</text>
+  <text x="100" y="270" font-size="14" fill="green"> // 3. Check for timeout or other errors</text>
+    <text x="100" y="290" font-size="14" fill="green">  return SPI_OK;</text>
+    <text x="80" y="315" font-size="14" fill="blue">}</text>
+
+    <text x="350" y="140" font-size="14" fill="#505050">Error Codes:</text>
+        <text x="350" y="160" font-size="12" fill="#505050">#define SPI_OK 0</text>
+    <text x="350" y="175" font-size="12" fill="#505050">#define SPI_ERROR_TRANSMIT 1</text>
+    <text x="350" y="190" font-size="12" fill="#505050">#define SPI_ERROR_TIMEOUT 2</text>
+    <text x="350" y="205" font-size="12" fill="#505050">...</text>
+</svg>

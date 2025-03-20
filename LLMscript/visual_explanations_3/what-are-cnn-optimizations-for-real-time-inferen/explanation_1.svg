@@ -1,0 +1,23 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">1. Model Quantization</text>
+
+  <rect x="50" y="70" width="100" height="50" fill="#4CAF50" />
+  <text x="60" y="100" fill="white">FP32 Weights</text>
+
+  <path d="M160 95 L200 95" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <rect x="210" y="70" width="100" height="50" fill="#2196F3" />
+  <text x="220" y="100" fill="white">INT8 Weights</text>
+
+    <text x="20" y="150" font-size="12">Reduces model size and computation by</text>
+    <text x="20" y="170" font-size="12">representing weights with lower precision (e.g., INT8).</text>
+    <text x="20" y="190" font-size="12">Slight accuracy loss possible.</text>
+
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

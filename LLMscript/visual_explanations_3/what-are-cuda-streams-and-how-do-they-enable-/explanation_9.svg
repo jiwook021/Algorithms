@@ -1,0 +1,15 @@
+<svg width="400" height="350" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="380" height="330" fill="none" stroke="black" stroke-width="2"/>
+  <text x="20" y="30" font-size="16" font-weight="bold">9. Stream Priorities</text>
+  <text x="20" y="60">CUDA streams can have priorities (higher or lower).</text>
+   <text x="20" y="80">Higher priority streams may preempt lower priority ones.</text>
+
+ <rect x="50" y="110" width="250" height="30" fill="lightblue"/>
+    <text x="150" y="130">Stream 1 (High Priority)</text>
+     <polygon points="300,125 320,120 320,130" fill="lightblue" stroke="black"/>
+
+  <rect x="50" y="170" width="250" height="30" fill="lightcoral"/>
+    <text x="150" y="190">Stream 2 (Low Priority)</text>
+     <polygon points="300,185 320,180 320,190" fill="lightcoral" stroke="black"/>
+    <text x="50" y="240">Stream 1 might get more GPU resources than Stream 2.</text>
+</svg>

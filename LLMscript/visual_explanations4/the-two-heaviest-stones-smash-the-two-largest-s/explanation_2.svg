@@ -1,0 +1,18 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">2. Finding the Heaviest</text>
+
+  <circle cx="80" cy="100" r="30" fill="gray" stroke="black" />
+  <text x="70" y="105" font-size="16">5</text>
+  <circle cx="150" cy="100" r="40" fill="lightgreen" stroke="black" />
+  <text x="140" y="105" font-size="16">8</text>
+  <circle cx="220" cy="100" r="20" fill="gray" stroke="black" />
+  <text x="210" y="105" font-size="16">3</text>
+  <circle cx="290" cy="100" r="25" fill="gray" stroke="black" />
+  <text x="280" y="105" font-size="16">4</text>
+
+    <line x1="150" y1="60" x2="150" y2="140" stroke="red" stroke-width="2" />
+    <text x="160" y="85" font-size="14" fill="red">Heaviest</text>
+
+  <text x="20" y="180" font-size="14">Identify the stone with the largest weight (highlighted).</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg width="400" height="220" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="220" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">10. Summary: Warp Divergence</text>
+  <text x="30" y="70">- Occurs when threads in a warp take different</text>
+    <text x="50" y="90">execution paths.</text>
+  <text x="30" y="120">- Leads to serialization of instructions and</text>
+  <text x="50" y="140">reduced parallelism.</text>
+   <text x="30" y="170">- Can significantly impact performance negatively.</text>
+    <text x="30" y="190">- Minimize divergence for optimal GPU utilization.</text>
+</svg>

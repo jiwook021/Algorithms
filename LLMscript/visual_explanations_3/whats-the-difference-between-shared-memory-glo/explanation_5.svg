@@ -1,0 +1,23 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Registers -->
+  <rect x="50" y="50" width="40" height="20" fill="#ADD8E6"/>
+  <text x="100" y="65" font-size="14">Registers</text>
+  <text x="200" y="65" font-size="12">~1 cycle</text>
+
+  <!-- Shared Memory -->
+  <rect x="50" y="120" width="40" height="50" fill="#90EE90"/>
+  <text x="100" y="150" font-size="14">Shared Memory</text>
+  <text x="200" y="150" font-size="12">~10-20 cycles</text>
+
+  <!-- Global Memory -->
+  <rect x="50" y="210" width="40" height="100" fill="#FFB6C1"/>
+  <text x="100" y="260" font-size="14">Global Memory</text>
+  <text x="200" y="260" font-size="12">~400-800 cycles</text>
+
+  <text x="80" y="20" font-size="16">Memory Access Latency</text>
+    <text x="300" y="70" font-size="18" fill="blue">Fastest</text>
+    <polygon points="340,80 340,260 360,170" fill="blue" />
+    <text x="300" y="280" font-size="18" fill="red">Slowest</text>
+
+</svg>

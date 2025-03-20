@@ -1,0 +1,20 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f0f0f0" />
+  <text x="300" y="40" text-anchor="middle" font-size="24" font-weight="bold">7. Monitor Training Progress</text>
+
+  <rect x="50" y="100" width="500" height="250" fill="#baffc9" stroke="black"/>
+  <text x="300" y="130" text-anchor="middle" font-size="18">Metrics:</text>
+
+  <line x1="100" y1="170" x2="500" y2="170" stroke="black"/>
+  <line x1="100" y1="170" x2="100" y2="320" stroke="black"/>
+    <text x="80" y="160" text-anchor="end" font-size="14">Loss</text>
+      <text x="510" y="170" text-anchor="start" font-size="14">Epochs</text>
+
+  <polyline points="100,300 150,280 200,290 250,250 300,240 350,200 400,190 450,180 500,175" fill="none" stroke="blue" stroke-width="2"/>
+    <text x="450" y="210" text-anchor="start" font-size="14" fill="blue">Training Loss</text>
+
+     <polyline points="100,300 150,295 200,285 250,265 300,260 350,245 400,230 450,235 500,225" fill="none" stroke="red" stroke-width="2"/>
+    <text x="450" y="260" text-anchor="start" font-size="14" fill="red">Validation Loss</text>
+
+<text x="300" y="330" text-anchor="middle" font-size="14">Look for decreasing loss and increasing mAP.</text>
+</svg>

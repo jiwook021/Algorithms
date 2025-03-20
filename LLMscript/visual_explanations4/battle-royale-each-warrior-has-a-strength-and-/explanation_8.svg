@@ -1,0 +1,10 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Concept 8: The Winner</text>
+  <circle cx="150" cy="90" r="35" fill="gold"/>
+    <text x="140" y="100" font-size="20" fill="black">B</text>
+
+    <text x="200" y="105" font-size="18">Winner!</text>
+
+  <text x="20" y="170" font-size="14">The last warrior standing is the winner.</text>
+</svg>

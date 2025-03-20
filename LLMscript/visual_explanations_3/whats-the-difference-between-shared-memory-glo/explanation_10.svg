@@ -1,0 +1,23 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="30" font-size="14">__global__ void myKernel() {</text>
+
+  <!-- Registers -->
+  <text x="40" y="60" font-size="14">  int localVar = 10;  // Stored in a register</text>
+  <rect x="280" y="45" width="80" height="20" fill="#ADD8E6" />
+
+  <!-- Shared Memory -->
+  <text x="40" y="90" font-size="14">  __shared__ float sharedData[64]; // Shared memory</text>
+  <rect x="280" y="75" width="80" height="20" fill="#90EE90" />
+
+    <!-- Global memory (implied by pointer usage)-->
+    <text x="40" y="120" font-size="14">//Global Mem is allocated on the host and </text>
+    <text x="40" y="135" font-size="14">//pointers passed to the kernel</text>
+
+  <text x="20" y="160" font-size="14">}</text>
+
+  <text x="290" y="35" font-size="12">Registers</text>
+  <text x="290" y="65" font-size="12">Shared Memory</text>
+
+     <text x="20" y="280" font-size="14" fill="black">Illustrates how memory types are declared in CUDA C++.</text>
+
+</svg>

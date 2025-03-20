@@ -1,0 +1,11 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    <text x="20" y="30" font-size="16" font-weight="bold">Optical Flow Applications</text>
+
+    <text x="20" y="70" font-size="14">- Video Compression</text>
+    <text x="20" y="100" font-size="14">- Object Tracking</text>
+    <text x="20" y="130" font-size="14">- Robotics Navigation</text>
+      <text x="20" y="160" font-size="14">- Structure from Motion</text>
+    <text x="20" y="190" font-size="14">- Action Recognition</text>
+    <text x="20" y="220" font-size='14'>- Image Stabilization</text>
+
+</svg>

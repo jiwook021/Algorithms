@@ -1,0 +1,28 @@
+- "N-Color Problem": Can you color a map with N colors while ensuring no two adjacent regions have the same color?
+- "Robot in a Maze": A robot can move left, right, up, and down in a maze—find all possible paths.
+- "The Word Grid": Given a grid of letters, find all possible dictionary words that can be formed.
+- "Staircase Problem": Given N stairs, how many ways can you reach the top by taking 1, 2, or 3 steps at a time?
+- "Minimum Cost Meal Plan": Given meal prices for N days, minimize cost while ensuring you eat every day.
+- "Partitioning into Equal Sums": Can you partition an array into two equal sum subsets?
+- "Knapsack Problem": Find the maximum value that can be carried in a bag with weight constraints.
+- "Molecule Assembly": Find the fewest number of operations to assemble a complex molecule from given building blocks.
+- "Ice Block Jumping": The player can only jump X blocks at a time. Find the minimum jumps to the end.
+- "Magic Number Sorting": Sort an array where elements move based on a custom hidden formula.
+- "Kangaroo Jumps": Given two kangaroos at different speeds, will they ever land on the same position?
+- "Detect the Spy": Given N agents and secret meetings, find the one spy who never talks to others.
+- "Haunted House": Search for a hidden treasure using binary search over an unknown range.
+- "Peak Element Finder": Find the index of a number that is greater than its neighbors.
+- "Fibonacci Search": Implement Fibonacci Search instead of binary search.
+- "Guitar Chord Progressions": Find all valid musical chord sequences that sound harmonious.
+- "Brightest Room Problem": You have N light bulbs that follow strange toggle rules—find the final ON state.
+- "Time Travel Paradox": Given a sequence of events, determine if a time paradox occurs.
+- "Fortune Teller’s Deck": Given a shuffled deck of tarot cards, predict the future (i.e., sort them!).
+- "Alien Language Translator": Given N symbols and a set of grammar rules, generate valid alien sentences.
+- "The Impostor Algorithm": Implement an algorithm that looks like one algorithm but behaves like another.
+- "Tetris Packing": Given a set of tetromino shapes, determine the most efficient way to pack them into a grid.
+- "AI Plays Tic-Tac-Toe": Implement an AI that plays Tic-Tac-Toe perfectly.
+- "Fish Tank Simulation": Model the growth, movement, and survival of different species in an aquarium.
+- "Bitcoin Mining Simulation": Write an algorithm that finds the most profitable mining path based on changing values.
+- "Deep Sea Exploration": Optimize an autonomous submarine’s path while avoiding deep-sea trenches.
+- "Color Blending Algorithm": Implement a function that mixes two colors and outputs the resulting RGB values.
+- "DNA Sequence Alignment": Given two DNA sequences, find the smallest edit distance to match them.

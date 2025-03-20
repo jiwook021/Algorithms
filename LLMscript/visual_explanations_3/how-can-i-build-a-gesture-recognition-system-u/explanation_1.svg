@@ -1,0 +1,12 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <circle cx="100" cy="150" r="40" fill="#4CAF50" />
+  <text x="80" y="155" font-size="24" fill="white">Camera</text>
+
+  <polygon points="140,150 180,120 180,180" fill="#4CAF50" />
+    <rect x="200" y="100" width="150" height="100" fill="#2196F3" stroke="black" stroke-width="2"/>
+    <text x="235" y="155" font-size="20" fill="white">Image</text>
+  <text x="150" y="250" font-size="16" fill="black">1. Image Acquisition</text>
+  <text x="150" y="270" font-size="12" fill="black">Capture video frames from a camera.</text>
+
+</svg>

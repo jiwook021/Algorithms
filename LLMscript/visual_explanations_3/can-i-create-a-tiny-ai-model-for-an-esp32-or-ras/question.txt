@@ -1,0 +1,1 @@
+Can I create a **tiny AI model for an ESP32 or Raspberry Pi?**

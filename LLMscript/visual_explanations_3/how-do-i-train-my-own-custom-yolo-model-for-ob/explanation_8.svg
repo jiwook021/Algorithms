@@ -1,0 +1,17 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f0f0f0" />
+  <text x="300" y="40" text-anchor="middle" font-size="24" font-weight="bold">8. Evaluate Your Model</text>
+
+     <rect x="50" y="90" width="200" height="180" fill="#ffcccb" stroke="black"/>
+        <text x="150" y="120" text-anchor="middle" font-size="16">Test Set</text>
+    <image x="70" y="140" width="160" height="120"  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE1SURBVHhe7dMxCgAwEETR6y+gAh2ggh0ggr8t/Y8gG3jNzh8YGBgYGBgYGBgYGBgYGBgYGBgYmP4v4P0G8AAY8AAY8AAY8AAZ8DAY8BgY8BgY8BgY8AwMeAwMeAwMeAwMfAgGPAAGPAAGPAAGfAwGPAZ2ZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmb/F/D/A/gEGPBAGPAAGPAAGfAwGPAZ+ZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmb/AwZ8AAY8AAY8AAY8AAZ8DAY8BgY8BgY8BgY8AwMeAwMeAwP/HkH38x8g6/k3yAAAAABJRU5ErkJggg=="/>
+
+  <rect x="300" y="90" width="250" height="180" fill="#baffc9" stroke="black"/>
+  <text x="425" y="120" text-anchor="middle" font-size="16">Metrics:</text>
+  <text x="425" y="150" text-anchor="middle" font-size="14">- Precision</text>
+    <text x="425" y="180" text-anchor="middle" font-size="14">- Recall</text>
+      <text x="425" y="210" text-anchor="middle" font-size="14">- mAP (mean Average Precision)</text>
+      <text x="425" y="240" text-anchor="middle" font-size="14">- F1-Score</text>
+
+  <text x="300" y="300" text-anchor="middle" font-size="16" fill="blue">Use a separate test set to evaluate performance.</text>
+</svg>

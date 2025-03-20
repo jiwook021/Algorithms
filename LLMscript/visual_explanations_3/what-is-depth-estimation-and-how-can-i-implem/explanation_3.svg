@@ -1,0 +1,14 @@
+<svg width="600" height="400" viewport="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="20" font-weight="bold">3. Image Capture: Two Different Views</text>
+
+  <rect x="50" y="100" width="200" height="150" fill="lightgray" />
+  <rect x="70" y="120" width="30" height="50" fill="red" />
+    <text x="40" y="270" font-size="14" fill="black">Left Image</text>
+
+  <rect x="350" y="100" width="200" height="150" fill="lightgray" />
+  <rect x="470" y="120" width="30" height="50" fill="red" />
+      <text x="340" y="270" font-size="14" fill="black">Right Image</text>
+
+<text x="100" y="350" font-size="16">The cameras simultaneously capture two images of the same scene.</text>
+</svg>

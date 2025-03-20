@@ -1,0 +1,14 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="#f0f0f0"/>
+  <text x="20" y="20" font-size="16" font-weight="bold">9. Minimizing Warp Divergence</text>
+
+    <text x="30" y="60">- Re-arrange data to improve memory coalescing.</text>
+    <text x="30" y="90">- Restructure code to minimize branching within warps.</text>
+     <text x="30" y="120">- Use shared memory to synchronize threads and</text>
+      <text x="50" y="140">reduce divergence in some cases.</text>
+      <text x="30" y="170">- Consider using techniques like loop unrolling</text>
+      <text x="50" y="190">  (carefully, as it can increase register pressure).</text>
+       <text x="30" y="220">- Choose algorithms that are inherently less</text>
+        <text x="50" y="240">divergent.</text>
+    <text x="30" y="270" font-size="12" font-style="italic">Note: The best approach depends on the specific code and data.</text>
+</svg>

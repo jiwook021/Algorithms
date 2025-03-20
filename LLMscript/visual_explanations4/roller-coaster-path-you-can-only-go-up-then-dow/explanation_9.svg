@@ -1,0 +1,33 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Concept 9: Dynamic Programming (DP)</text>
+  <text x="20" y="50" font-size="14">Store the lengths of longest up/down paths at each cell to avoid recomputation.</text>
+
+   <g transform="translate(20, 80)">
+    <rect x="0" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+    <text x="20" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">2</text>
+    <rect x="40" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+    <text x="60" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">5</text>
+    <rect x="80" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+    <text x="100" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">7</text>
+        <rect x="120" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+        <text x="140" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">4</text>
+    <rect x="0" y="40" width="40" height="40" fill="#ccddff" stroke="black"/>
+    <text x="20" y="65" text-anchor="middle" dominant-baseline="middle" font-size="16">3</text>
+    <rect x="40" y="40" width="40" height="40" fill="#ccddff" stroke="black"/>
+    <text x="60" y="65" text-anchor="middle" dominant-baseline="middle" font-size="16">6</text>
+       <rect x="80" y="40" width="40" height="40" fill="#ccddff" stroke="black"/>
+        <text x="100" y="65" text-anchor="middle" dominant-baseline="middle" font-size="16">1</text>
+
+        <text x="20" y="105" text-anchor="middle" dominant-baseline="middle" font-size="12">Up: 1</text>
+        <text x="60" y="105" text-anchor="middle" dominant-baseline="middle" font-size="12">Up: 2</text>
+        <text x="100" y="105" text-anchor="middle" dominant-baseline="middle" font-size="12">Up: 3</text>
+        <text x="140" y="105" text-anchor="middle" dominant-baseline="middle" font-size="12">Up: 1</text>
+        <text x="20" y="120" text-anchor="middle" dominant-baseline="middle" font-size="12">Down:1</text>
+        <text x="60" y="120" text-anchor="middle" dominant-baseline="middle" font-size="12">Down:1</text>
+         <text x="100" y="120" text-anchor="middle" dominant-baseline="middle" font-size="12">Down:3</text>
+       <text x="140" y="120" text-anchor="middle" dominant-baseline="middle" font-size="12">Down:2</text>
+
+  </g>
+    <text x="20" y="225" font-size="14" fill="blue">DP Table (Partial): Stores longest up and down path lengths.</text>
+</svg>

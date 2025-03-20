@@ -1,0 +1,14 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">7. Grouping Identical Digits</text>
+  <text x="20" y="60" font-size="14">When describing, group consecutive identical digits.</text>
+  <rect x="50" y="90" width="120" height="40" fill="#FFEB3B" stroke="black" stroke-width="2"/>
+  <text x="60" y="115" font-size="18" fill="black">1211</text>
+   <path d="M70 130 L 70 160" stroke="purple" stroke-width="2"/>
+   <path d="M90 130 L 90 160" stroke="purple" stroke-width="2"/>
+   <path d="M110 130 L 110 160" stroke="purple" stroke-width="2"/>
+    <path d="M150 130 L 150 160" stroke="purple" stroke-width="2"/>
+  <text x="60" y="175" font-size="16">One 1</text>
+  <text x="95" y="175" font-size="16">One 2</text>
+   <text x="120" y="175" font-size="16">Two 1s</text>
+</svg>

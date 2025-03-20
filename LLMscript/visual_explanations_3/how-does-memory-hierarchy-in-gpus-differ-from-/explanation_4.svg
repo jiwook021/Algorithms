@@ -1,0 +1,17 @@
+<svg width="600" height="400" viewport="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+ <rect x="50" y="50" width="500" height="300" fill="#98FB98" stroke="black"/>
+  <text x="300" y="70" text-anchor="middle" font-weight="bold">GPU Memory</text>
+  <rect x="100" y="100" width="80" height="80" fill="red" stroke="black"/>
+  <text x="140" y="140" text-anchor="middle">Thread</text>
+  <rect x="100" y="200" width="380" height="80" fill="#228B22" stroke="black"/>
+  <text x="290" y="240" text-anchor="middle" font-weight="bold">Global Memory (Large, Off-Chip)</text>
+  
+    <line x1="140" y1="180" x2="140" y2="200" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="black" />
+    </marker>
+  </defs>
+
+  <text x="300" y="380" text-anchor="middle" font-weight="bold">Global memory is large but has higher latency.</text>
+</svg>

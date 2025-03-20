@@ -1,0 +1,14 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+    <rect x="50" y="80" width="120" height="140" fill="#2196F3" stroke="black" stroke-width="2"/>
+    <text x="60" y="160" font-size="16" fill="white">Color Image</text>
+
+  <polygon points="170,150 210,150" fill="black" />
+  <polygon points="200,140 210,150 200,160" fill="black" />
+
+
+    <rect x="230" y="80" width="120" height="140" fill="lightgray" stroke="black" stroke-width="2"/>
+    <text x="240" y="160" font-size="16" fill="black">Grayscale Image</text>
+  <text x="100" y="250" font-size="16" fill="black">2. Preprocessing: Grayscale</text>
+  <text x="100" y="270" font-size="12" fill="black">Convert to grayscale to simplify processing.</text>
+</svg>

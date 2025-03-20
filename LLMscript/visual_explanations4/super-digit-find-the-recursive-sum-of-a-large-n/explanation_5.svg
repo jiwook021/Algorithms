@@ -1,0 +1,9 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="200" fill="#f0f8ff"/>
+    <text x="20" y="30" font-size="16" font-weight="bold">Step 4: Repeat Summation</text>
+    <text x="20" y="60" font-size="14">Sum the digits of the new number (29).</text>
+    <text x="20" y="90" font-size="18">2 + 9 =</text>
+    <rect x="120" y="75" width="50" height="40" fill="#90EE90"/>
+    <text x="135" y="100" font-size="18">11</text>
+    <text x="190" y="100" font-size="14">Sum of digits</text>
+</svg>

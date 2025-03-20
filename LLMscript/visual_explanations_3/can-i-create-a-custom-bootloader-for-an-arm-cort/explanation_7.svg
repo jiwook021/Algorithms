@@ -1,0 +1,35 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">7. Firmware Update Process</text>
+
+  <rect x="20" y="50" width="60" height="40" fill="#add8e6" />
+  <text x="50" y="70" text-anchor="middle" font-size="12">Host</text>
+
+  <line x1="80" y1="70" x2="120" y2="70" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <rect x="120" y="50" width="80" height="40" fill="#90ee90" />
+  <text x="160" y="70" text-anchor="middle" font-size="12">Send FW</text>
+  <text x="160" y="85" text-anchor="middle" font-size="10">Data</text>
+
+ <line x1="200" y1="70" x2="240" y2="70" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+
+<rect x="240" y="50" width="60" height="40" fill="#ffb6c1" />
+  <text x="270" y="70" text-anchor="middle" font-size="12">MCU</text>
+
+  <line x1="270" y1="90" x2="270" y2="130" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+
+ <rect x="240" y="130" width="60" height="40" fill="#ffff99" />
+ <text x="270" y="150" text-anchor="middle" font-size="12">Receive</text>
+
+  <line x1="270" y1="170" x2="270" y2="210" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+<rect x="240" y="210" width="60" height="40" fill="#f08080" />
+ <text x="270" y="230" text-anchor="middle" font-size="12">Write</text>
+ <text x="270" y="245" text-anchor="middle" font-size="10">to Flash</text>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+    </marker>
+  </defs>
+</svg>

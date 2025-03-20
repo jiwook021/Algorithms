@@ -1,0 +1,102 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Random Sampling in Train-Test Split</text>
+  
+  <!-- Original dataset -->
+  <rect x="50" y="80" width="500" height="60" fill="#6c757d" rx="5" ry="5" />
+  
+  <!-- Data points representation -->
+  <circle cx="80" cy="110" r="8" fill="#ff7f0e" />
+  <circle cx="110" cy="110" r="8" fill="#1f77b4" />
+  <circle cx="140" cy="110" r="8" fill="#ff7f0e" />
+  <circle cx="170" cy="110" r="8" fill="#ff7f0e" />
+  <circle cx="200" cy="110" r="8" fill="#1f77b4" />
+  <circle cx="230" cy="110" r="8" fill="#1f77b4" />
+  <circle cx="260" cy="110" r="8" fill="#ff7f0e" />
+  <circle cx="290" cy="110" r="8" fill="#1f77b4" />
+  <circle cx="320" cy="110" r="8" fill="#ff7f0e" />
+  <circle cx="350" cy="110" r="8" fill="#1f77b4" />
+  <circle cx="380" cy="110" r="8" fill="#ff7f0e" />
+  <circle cx="410" cy="110" r="8" fill="#1f77b4" />
+  <circle cx="440" cy="110" r="8" fill="#ff7f0e" />
+  <circle cx="470" cy="110" r="8" fill="#1f77b4" />
+  <circle cx="500" cy="110" r="8" fill="#1f77b4" />
+  
+  <text x="300" y="100" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Original Dataset</text>
+  
+  <!-- Arrows -->
+  <path d="M300,140 L300,170" stroke="#333" stroke-width="2" />
+  <polygon points="295,170 300,180 305,170" fill="#333" />
+  
+  <!-- Bad split -->
+  <rect x="50" y="180" width="230" height="60" fill="#007bff" rx="5" ry="5" />
+  <text x="165" y="200" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Bad Train Split</text>
+  
+  <circle cx="80" cy="210" r="8" fill="#ff7f0e" />
+  <circle cx="110" cy="210" r="8" fill="#ff7f0e" />
+  <circle cx="140" cy="210" r="8" fill="#ff7f0e" />
+  <circle cx="170" cy="210" r="8" fill="#ff7f0e" />
+  <circle cx="200" cy="210" r="8" fill="#ff7f0e" />
+  <circle cx="230" cy="210" r="8" fill="#ff7f0e" />
+  
+  <rect x="320" y="180" width="230" height="60" fill="#dc3545" rx="5" ry="5" />
+  <text x="435" y="200" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Bad Test Split</text>
+  
+  <circle cx="350" cy="210" r="8" fill="#1f77b4" />
+  <circle cx="380" cy="210" r="8" fill="#1f77b4" />
+  <circle cx="410" cy="210" r="8" fill="#1f77b4" />
+  <circle cx="440" cy="210" r="8" fill="#1f77b4" />
+  <circle cx="470" cy="210" r="8" fill="#1f77b4" />
+  <circle cx="500" cy="210" r="8" fill="#1f77b4" />
+  
+  <!-- Arrows -->
+  <path d="M300,250 L300,280" stroke="#333" stroke-width="2" />
+  <polygon points="295,280 300,290 305,280" fill="#333" />
+  
+  <!-- Good split -->
+  <rect x="50" y="290" width="230" height="60" fill="#007bff" rx="5" ry="5" />
+  <text x="165" y="310" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Good Train Split</text>
+  
+  <circle cx="80" cy="320" r="8" fill="#ff7f0e" />
+  <circle cx="110" cy="320" r="8" fill="#1f77b4" />
+  <circle cx="140" cy="320" r="8" fill="#ff7f0e" />
+  <circle cx="170" cy="320" r="8" fill="#1f77b4" />
+  <circle cx="200" cy="320" r="8" fill="#ff7f0e" />
+  <circle cx="230" cy="320" r="8" fill="#1f77b4" />
+  
+  <rect x="320" y="290" width="230" height="60" fill="#dc3545" rx="5" ry="5" />
+  <text x="435" y="310" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Good Test Split</text>
+  
+  <circle cx="350" cy="320" r="8" fill="#ff7f0e" />
+  <circle cx="380" cy="320" r="8" fill="#1f77b4" />
+  <circle cx="410" cy="320" r="8" fill="#ff7f0e" />
+  <circle cx="440" cy="320" r="8" fill="#1f77b4" />
+  <circle cx="470" cy="320" r="8" fill="#ff7f0e" />
+  <circle cx="500" cy="320" r="8" fill="#1f77b4" />
+  
+  <!-- Legend -->
+  <circle cx="50" cy="370" r="8" fill="#ff7f0e" />
+  <text x="65" y="374" font-family="Arial" font-size="12" fill="#333">Class 1</text>
+  
+  <circle cx="130" cy="370" r="8" fill="#1f77b4" />
+  <text x="145" y="374" font-family="Arial" font-size="12" fill="#333">Class 2</text>
+  
+  <!-- Explanation -->
+  <rect x="200" y="355" width="350" height="40" fill="#e9ecef" rx="5" ry="5" stroke="#adb5bd" stroke-width="1" />
+  <text x="375" y="375" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">
+    <tspan x="375" dy="0">Random sampling ensures both training and test sets</tspan>
+    <tspan x="375" dy="20">represent the same distribution as the original dataset.</tspan>
+  </text>
+  
+  <!-- Code example -->
+  <rect x="450" y="80" width="140" height="60" fill="#f8f9fa" stroke="#adb5bd" stroke-width="1" rx="5" ry="5" />
+  <text x="455" y="100" font-family="Courier New" font-size="10" fill="#333">
+    <tspan x="455" dy="0">// C++ pseudo-code</tspan>
+    <tspan x="455" dy="15">std::random_shuffle(</tspan>
+    <tspan x="455" dy="15">  data.begin(),</tspan>
+    <tspan x="455" dy="15">  data.end());</tspan>
+  </text>
+</svg>

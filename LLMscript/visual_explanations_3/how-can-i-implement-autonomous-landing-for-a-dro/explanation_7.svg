@@ -1,0 +1,26 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+ <rect width="600" height="400" fill="#f0f0f0"/>
+  <text x="300" y="30" text-anchor="middle" font-size="20" font-weight="bold">7. Final Approach and Touchdown</text>
+
+   <!-- Drone -->
+  <polygon points="250,180 270,190 290,180 270,170" fill="#4CAF50" stroke="black" stroke-width="2"/>
+  <circle cx="270" cy="180" r="10" fill="#4CAF50"/>
+   <line x1="270" y1="190" x2="270" y2="220" stroke="#4CAF50" stroke-width="4"/>
+
+    <!-- Drone - close to landing -->
+  <polygon points="250,330 270,340 290,330 270,320" fill="#4CAF50" stroke="black" stroke-width="2"/>
+  <circle cx="270" cy="330" r="10" fill="#4CAF50"/>
+    <line x1="270" y1="340" x2="270" y2="350" stroke="#4CAF50" stroke-width="4"/>
+
+  <!-- Landing Pad -->
+  <rect x="220" y="350" width="100" height="20" fill="grey" />
+    <circle cx="270" cy="360" r="8" fill="red"/>
+  <text x="270" y="360" text-anchor="middle" font-size="18" font-weight="bold" fill="white">H</text>
+
+   <!-- Slow Descent -->
+    <line x1="270" y1="220" x2="270" y2="320" stroke="blue" stroke-width="2" stroke-dasharray="5,5" />
+     <text x="350" y="270" font-size="14" fill="blue">Slow Descent</text>
+
+  <text x="300" y="50" text-anchor="middle" font-size="14">Reducing speed and altitude for a gentle touchdown.</text>
+   <text x="300" y="80" text-anchor="middle" font-size="14">Precise control is critical at this stage.</text>
+</svg>

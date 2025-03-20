@@ -1,0 +1,19 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Concept 9: Example with More Warriors</text>
+
+  <circle cx="50" cy="60" r="15" fill="red" />
+  <text x="45" y="65" font-size="10" fill="white">A: 5</text>
+  <circle cx="100" cy="60" r="15" fill="blue" />
+  <text x="95" y="65" font-size="10" fill="white">B: 8</text>
+  <circle cx="150" cy="60" r="15" fill="green" />
+  <text x="145" y="65" font-size="10" fill="white">C: 2</text>
+  <circle cx="200" cy="60" r="15" fill="purple" />
+  <text x="195" y="65" font-size="10" fill="white">D: 10</text>
+   <circle cx="250" cy="60" r="15" fill="orange" />
+  <text x="245" y="65" font-size="10" fill="white">E: 7</text>
+
+  <text x="20" y="120">Round 1: D vs C -> D wins, B vs E -> B wins,  D vs A -> D wins</text>
+   <text x="20" y="140">Round 2: D vs B -> D wins</text>
+   <text x="20" y="170">D is the winner.</text>
+</svg>

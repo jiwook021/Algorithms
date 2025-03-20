@@ -1,0 +1,21 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">8. Flash Programming</text>
+
+  <rect x="50" y="60" width="200" height="150" fill="#add8e6" />
+  <text x="150" y="80" text-anchor="middle" font-size="12">Flash Memory</text>
+
+  <line x1="250" y1="100" x2="300" y2="100" stroke="black" stroke-width="2" />
+  <text x="275" y="90" text-anchor="middle" font-size="14">HAL</text>
+    <text x="275" y="110" text-anchor="middle" font-size="10">Functions</text>
+
+  <line x1="300" y1="100" x2="350" y2="100" stroke="black" stroke-width="2" />
+
+   <rect x="300" y="130" width="80" height="60" fill="#90ee90" />
+     <text x="340" y="150" text-anchor="middle" font-size="12">HAL_FLASH</text>
+  <text x="340" y="170" text-anchor="middle" font-size="12">_Program()</text>
+
+  <text x="20" y="230" font-size="12">Use HAL or LL drivers.</text>
+  <text x="20" y="250" font-size="12">Unlock, Erase Sector, Program.</text>
+
+</svg>

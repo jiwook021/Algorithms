@@ -1,0 +1,19 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="380" height="380" fill="none" stroke="black" stroke-width="2"/>
+  <text x="20" y="30" font-size="16" font-weight="bold">6. Stream Synchronization: Waiting for Completion</text>
+   <text x="20" y="60">You can synchronize streams, making one stream wait</text>
+    <text x="20" y="80">for all operations in another stream to complete.</text>
+
+  <rect x="50" y="110" width="250" height="30" fill="lightblue"/>
+    <text x="150" y="130">Stream 1</text>
+      <polygon points="300,125 320,120 320,130" fill="lightblue" stroke="black"/>
+
+  <rect x="50" y="160" width="250" height="30" fill="lightcoral"/>
+    <text x="150" y="180">Stream 2</text>
+    <polygon points="300,175 320,170 320,180" fill="lightcoral" stroke="black"/>
+
+  <line x1="50" y1="220" x2="320" y2="220" stroke="red" stroke-width="3"/>
+  <text x="150" y="240">Synchronization Point</text>
+    <text x="50" y="280">Stream 2 waits for Stream 1 to finish at the sync point.</text>
+
+</svg>

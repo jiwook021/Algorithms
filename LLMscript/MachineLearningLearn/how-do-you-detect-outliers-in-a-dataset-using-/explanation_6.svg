@@ -1,0 +1,78 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Density-Based Outlier Detection</text>
+  
+  <!-- Main diagram area -->
+  <rect x="50" y="50" width="500" height="280" fill="#ffffff" stroke="#dddddd" stroke-width="1" />
+  
+  <!-- Data points - normal cluster -->
+  <circle cx="200" cy="200" r="5" fill="#3366cc" />
+  <circle cx="210" cy="190" r="5" fill="#3366cc" />
+  <circle cx="215" cy="205" r="5" fill="#3366cc" />
+  <circle cx="195" cy="210" r="5" fill="#3366cc" />
+  <circle cx="185" cy="195" r="5" fill="#3366cc" />
+  <circle cx="205" cy="185" r="5" fill="#3366cc" />
+  <circle cx="220" cy="195" r="5" fill="#3366cc" />
+  <circle cx="190" cy="180" r="5" fill="#3366cc" />
+  <circle cx="180" cy="205" r="5" fill="#3366cc" />
+  <circle cx="175" cy="190" r="5" fill="#3366cc" />
+  <circle cx="200" cy="215" r="5" fill="#3366cc" />
+  <circle cx="210" cy="210" r="5" fill="#3366cc" />
+  
+  <!-- Density circle around normal point -->
+  <circle cx="200" cy="200" r="40" fill="none" stroke="#3366cc" stroke-width="1" stroke-dasharray="3,3" />
+  <text x="200" y="200" font-family="Arial" font-size="10" text-anchor="middle">ε</text>
+  
+  <!-- Normal point neighbors count -->
+  <text x="200" y="170" font-family="Arial" font-size="12" text-anchor="middle" fill="#3366cc">11 neighbors</text>
+  <text x="200" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#3366cc">High density</text>
+  
+  <!-- Second cluster -->
+  <circle cx="350" cy="150" r="5" fill="#3366cc" />
+  <circle cx="365" cy="145" r="5" fill="#3366cc" />
+  <circle cx="355" cy="160" r="5" fill="#3366cc" />
+  <circle cx="340" cy="155" r="5" fill="#3366cc" />
+  <circle cx="345" cy="140" r="5" fill="#3366cc" />
+  <circle cx="360" cy="165" r="5" fill="#3366cc" />
+  <circle cx="370" cy="155" r="5" fill="#3366cc" />
+  
+  <!-- Outliers -->
+  <circle cx="400" cy="250" r="6" fill="#ff5555" stroke="black" stroke-width="1" />
+  <circle cx="120" cy="120" r="6" fill="#ff5555" stroke="black" stroke-width="1" />
+  <circle cx="300" cy="280" r="6" fill="#ff5555" stroke="black" stroke-width="1" />
+  
+  <!-- Density circle around outlier -->
+  <circle cx="400" cy="250" r="40" fill="none" stroke="#ff5555" stroke-width="1" stroke-dasharray="3,3" />
+  <text x="400" y="250" font-family="Arial" font-size="10" text-anchor="middle">ε</text>
+  
+  <!-- Outlier neighbors count -->
+  <text x="400" cy="220" font-family="Arial" font-size="12" text-anchor="middle" fill="#ff5555">0 neighbors</text>
+  <text x="400" cy="205" font-family="Arial" font-size="12" text-anchor="middle" fill="#ff5555">Low density</text>
+  
+  <!-- DBSCAN Labels -->
+  <text x="150" y="80" font-family="Arial" font-size="16" text-anchor="middle" fill="#3366cc">Core Points</text>
+  <text x="400" cy="80" font-family="Arial" font-size="16" text-anchor="middle" fill="#ff5555">Outliers</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="340" width="400" height="50" fill="#e6f2ff" stroke="#3366cc" stroke-width="1" rx="5" />
+  <text x="300" y="360" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">DBSCAN Algorithm</text>
+  <text x="300" y="380" font-family="Arial" font-size="12" text-anchor="middle">
+    Points with fewer than MinPts neighbors within radius ε are outliers
+  </text>
+  
+  <!-- C++ code snippet -->
+  <rect x="50" y="320" width="180" height="70" fill="#ffe6e6" stroke="#ff5555" stroke-width="1" rx="5" />
+  <text x="140" y="335" font-family="Consolas, monospace" font-size="10" text-anchor="middle">C++ DBSCAN Example:</text>
+  <text x="140" y="350" font-family="Consolas, monospace" font-size="8" text-anchor="middle">
+    DBSCAN(Dataset, eps, minPts) {
+  </text>
+  <text x="140" y="365" font-family="Consolas, monospace" font-size="8" text-anchor="middle">
+    // Points with fewer than minPts
+  </text>
+  <text x="140" y="380" font-family="Consolas, monospace" font-size="8" text-anchor="middle">
+    // neighbors are outliers
+  </text>
+</svg>

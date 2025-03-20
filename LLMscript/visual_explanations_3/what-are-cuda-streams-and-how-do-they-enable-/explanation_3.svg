@@ -1,0 +1,16 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <rect x="10" y="10" width="380" height="280" fill="none" stroke="black" stroke-width="2"/>
+    <text x="20" y="30" font-size="16" font-weight="bold">3. Multiple Streams: Concurrent Execution</text>
+    <text x="20" y="60">Multiple streams can execute concurrently (in parallel),</text>
+     <text x="20" y="80">overlapping their operations on the GPU.</text>
+
+    <rect x="50" y="110" width="250" height="30" fill="lightblue"/>
+    <text x="150" y="130">Stream 1</text>
+    <polygon points="300,125 320,120 320,130" fill="lightblue" stroke="black"/>
+
+    <rect x="50" y="160" width="250" height="30" fill="lightcoral"/>
+    <text x="150" y="180">Stream 2</text>
+    <polygon points="300,175 320,170 320,180" fill="lightcoral" stroke="black"/>
+    <text x="50" y="210">Stream 1 and Stream 2 can run simultaneously.</text>
+
+</svg>

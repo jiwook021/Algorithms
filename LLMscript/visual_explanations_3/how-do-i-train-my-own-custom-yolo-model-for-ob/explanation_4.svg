@@ -1,0 +1,21 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f0f0f0"/>
+  <text x="300" y="40" text-anchor="middle" font-size="24" font-weight="bold">4. Prepare Data Format</text>
+    <text x="300" y="80" text-anchor="middle" font-size="18">YOLO expects a specific format</text>
+    
+    <rect x="50" y="120" width="250" height="180" fill="white" stroke="black" />
+  <text x="70" y="150" text-anchor="start" font-size="16">Dataset Folder:</text>
+    <text x="80" y="180" text-anchor="start" font-size="14">- images/</text>
+     <text x="100" y="200" text-anchor="start" font-size="12">- train/</text>
+    <text x="100" y="220" text-anchor="start" font-size="12">- val/</text>
+    <text x="100" y="240" text-anchor="start" font-size="12">- test/ (optional)</text>
+    <text x="80" y="270" text-anchor="start" font-size="14">- labels/</text>
+      <text x="100" y="290" text-anchor="start" font-size="12">(same structure as images)</text>
+
+    <rect x="330" y="120" width="220" height="100" fill="#ffcccb" stroke="black"/>
+        <text x="350" y="140" text-anchor="start" font-size="14">Label File (e.g., image1.txt):</text>
+      <text x="350" y="170" text-anchor="start" font-size="12">&lt;object-class&gt; &lt;x_center&gt; &lt;y_center&gt; &lt;width&gt; &lt;height&gt;</text>
+    <text x="350" y="200" text-anchor="start" font-size="12">(Normalized coordinates)</text>
+
+  <text x="300" y="340" text-anchor="middle" font-size="16" fill="blue">Create train/val split (e.g., 80/20).</text>
+</svg>

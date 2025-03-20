@@ -1,0 +1,64 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Model Evaluation with Confusion Matrix</text>
+  
+  <!-- Main Container -->
+  <rect x="50" y="70" width="500" height="300" fill="#ffffff" stroke="#333333" stroke-width="1" rx="5" />
+  
+  <!-- Confusion Matrix Example -->
+  <rect x="80" y="90" width="200" height="200" fill="#ffffff" stroke="#333333" stroke-width="2" />
+  
+  <!-- Matrix Cells with Numbers -->
+  <rect x="80" y="90" width="100" height="100" fill="#a8d08d" stroke="#333333" stroke-width="1" />
+  <rect x="180" y="90" width="100" height="100" fill="#f4b084" stroke="#333333" stroke-width="1" />
+  <rect x="80" y="190" width="100" height="100" fill="#f4b084" stroke="#333333" stroke-width="1" />
+  <rect x="180" y="190" width="100" height="100" fill="#a8d08d" stroke="#333333" stroke-width="1" />
+  
+  <!-- Cell Values -->
+  <text x="130" y="145" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">85</text>
+  <text x="230" y="145" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">15</text>
+  <text x="130" y="245" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">10</text>
+  <text x="230" y="245" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">90</text>
+  
+  <!-- Cell Labels -->
+  <text x="130" y="115" font-family="Arial" font-size="12" text-anchor="middle">TP</text>
+  <text x="230" y="115" font-family="Arial" font-size="12" text-anchor="middle">FP</text>
+  <text x="130" y="215" font-family="Arial" font-size="12" text-anchor="middle">FN</text>
+  <text x="230" y="215" font-family="Arial" font-size="12" text-anchor="middle">TN</text>
+  
+  <!-- Interpretations -->
+  <rect x="310" y="90" width="220" height="200" fill="#f5f5f5" stroke="#333333" stroke-width="1" rx="3" />
+  
+  <!-- Interpretation Points -->
+  <text x="320" y="110" font-family="Arial" font-size="16" font-weight="bold">Interpretations:</text>
+  
+  <circle cx="330" cy="130" r="5" fill="#4472c4" />
+  <text x="345" y="135" font-family="Arial" font-size="14">Class Imbalance Check</text>
+  
+  <circle cx="330" cy="160" r="5" fill="#4472c4" />
+  <text x="345" y="165" font-family="Arial" font-size="14">Error Analysis</text>
+  
+  <circle cx="330" cy="190" r="5" fill="#4472c4" />
+  <text x="345" y="195" font-family="Arial" font-size="14">Model Bias Detection</text>
+  
+  <circle cx="330" cy="220" r="5" fill="#4472c4" />
+  <text x="345" y="225" font-family="Arial" font-size="14">Cost-Sensitive Evaluation</text>
+  
+  <circle cx="330" cy="250" r="5" fill="#4472c4" />
+  <text x="345" y="255" font-family="Arial" font-size="14">Threshold Adjustment</text>
+  
+  <!-- Code Example -->
+  <rect x="80" y="310" width="440" height="50" fill="#f0f0f0" stroke="#333333" stroke-width="1" rx="3" />
+  <text x="90" y="330" font-family="Courier New" font-size="12">
+    <tspan>// C++ code to visualize confusion matrix</tspan>
+    <tspan x="90" dy="16">void plotConfusionMatrix(const Matrix&lt;int&gt;&amp; confMatrix);</tspan>
+  </text>
+  
+  <!-- Explanation -->
+  <text x="300" y="295" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">
+    Confusion matrices help identify specific error patterns and model biases
+  </text>
+</svg>

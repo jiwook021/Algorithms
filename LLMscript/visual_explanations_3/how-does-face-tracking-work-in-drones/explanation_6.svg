@@ -1,0 +1,13 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <rect x="50" y="50" width="120" height="150" fill="white" stroke="black"/>
+    <rect x="230" y="50" width="120" height="150" fill="white" stroke="black"/>
+    <circle cx="110" cy="100" r="5" fill="red" />
+    <circle cx="290" cy="105" r="5" fill="red" />
+  <line x1="110" y1="100" x2="290" y2="105" stroke="blue" stroke-width="2"/>
+
+   <text x="110" y="220" text-anchor="middle" font-size="12">Frame 1</text>
+    <text x="290" y="220" text-anchor="middle" font-size="12">Frame 2</text>
+  <text x="200" y="280" text-anchor="middle" font-size="16">6. Tracking: Comparing Subsequent Frames</text>
+  <text x="200" y="30" text-anchor="middle" font-size="14">Detect Movement of Features</text>
+</svg>

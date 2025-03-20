@@ -1,0 +1,23 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#f0f0f0"/>
+    <text x="300" y="30" font-size="20" text-anchor="middle" font-family="Arial">C++ Queue Implementation</text>
+    
+    <!-- Code block -->
+    <rect x="30" y="60" width="540" height="300" fill="#ffffff" rx="5"/>
+    
+    <text x="50" y="90" font-family="monospace" font-size="14" fill="#0000ff">class MLFQScheduler {</text>
+    <text x="70" y="120" font-family="monospace" font-size="14">std::vector&lt;Process&gt; queues[3];</text>
+    <text x="70" y="150" font-family="monospace" font-size="14" fill="#008800">// Time quantums for each queue</text>
+    <text x="70" y="180" font-family="monospace" font-size="14">int timeQuanta[3] = {5, 10, 20};</text>
+    
+    <text x="50" y="220" font-family="monospace" font-size="14" fill="#0000ff">void schedule() {</text>
+    <text x="70" y="250" font-family="monospace" font-size="14">for (int i = 0; i &lt; 3; ++i) {</text>
+    <text x="90" y="280" font-family="monospace" font-size="14">if (!queues[i].empty()) {</text>
+    <text x="110" y="310" font-family="monospace" font-size="14" fill="#ff0000">runProcess(queues[i].front(), timeQuanta[i]);</text>
+    <text x="110" y="340" font-family="monospace" font-size="14">break;</text>
+    <text x="90" y="370" font-family="monospace" font-size="14">}}}</text>
+    
+    <!-- Highlighting -->
+    <rect x="105" y="297" width="240" height="20" fill="#ffff00" opacity="0.3"/>
+    <rect x="60" y="237" width="140" height="20" fill="#00ff00" opacity="0.3"/>
+</svg>

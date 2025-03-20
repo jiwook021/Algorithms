@@ -1,0 +1,66 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f9f9f9" />
+  <text x="300" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Impact of Feature Scaling on ML Algorithms</text>
+  
+  <!-- Algorithm sensitivity chart -->
+  <rect x="50" y="70" width="500" height="220" fill="#ffffff" stroke="#cccccc" stroke-width="1" />
+  
+  <!-- Chart labels -->
+  <text x="300" y="310" font-family="Arial" font-size="14" text-anchor="middle">Sensitivity to Unscaled Features</text>
+  <text x="50" y="180" font-family="Arial" font-size="14" text-anchor="middle" transform="rotate(-90,50,180)">ML Algorithms</text>
+  
+  <!-- Scale -->
+  <line x1="150" y1="290" x2="450" y2="290" stroke="black" stroke-width="1" />
+  <text x="150" y="305" font-family="Arial" font-size="12" text-anchor="middle">Low</text>
+  <text x="300" y="305" font-family="Arial" font-size="12" text-anchor="middle">Medium</text>
+  <text x="450" y="305" font-family="Arial" font-size="12" text-anchor="middle">High</text>
+  
+  <!-- Algorithm bars -->
+  <rect x="150" y="90" width="280" height="25" fill="#ff6347" />
+  <text x="140" y="107" font-family="Arial" font-size="12" text-anchor="end">K-Nearest Neighbors</text>
+  
+  <rect x="150" y="125" width="270" height="25" fill="#ff6347" />
+  <text x="140" y="142" font-family="Arial" font-size="12" text-anchor="end">Support Vector Machines</text>
+  
+  <rect x="150" y="160" width="250" height="25" fill="#ff8c66" />
+  <text x="140" y="177" font-family="Arial" font-size="12" text-anchor="end">Neural Networks</text>
+  
+  <rect x="150" y="195" width="150" height="25" fill="#4682b4" />
+  <text x="140" y="212" font-family="Arial" font-size="12" text-anchor="end">Random Forest</text>
+  
+  <rect x="150" y="230" width="100" height="25" fill="#4682b4" />
+  <text x="140" y="247" font-family="Arial" font-size="12" text-anchor="end">Decision Trees</text>
+  
+  <!-- Legend -->
+  <rect x="150" y="330" width="15" height="15" fill="#ff6347" />
+  <text x="175" y="342" font-family="Arial" font-size="12">High sensitivity - Scaling essential</text>
+  
+  <rect x="150" y="355" width="15" height="15" fill="#ff8c66" />
+  <text x="175" y="367" font-family="Arial" font-size="12">Medium sensitivity - Scaling recommended</text>
+  
+  <rect x="150" y="380" width="15" height="15" fill="#4682b4" />
+  <text x="175" y="392" font-family="Arial" font-size="12">Low sensitivity - Scaling optional</text>
+  
+  <!-- Explanation box -->
+  <rect x="380" y="330" width="200" height="60" fill="#e6f3ff" rx="5" ry="5" stroke="#aaccee" />
+  <text x="390" y="345" font-family="Arial" font-size="10">
+    <tspan x="390" y="345">Distance-based algorithms like KNN</tspan>
+    <tspan x="390" y="360">and SVM are heavily affected by</tspan>
+    <tspan x="390" y="375">unscaled features, while tree-based</tspan>
+    <tspan x="390" y="390">methods are generally invariant.</tspan>
+  </text>
+  
+  <!-- C++ Code Example -->
+  <rect x="430" y="120" width="150" height="140" fill="#f5f5f5" rx="5" ry="5" stroke="#cccccc" />
+  <text x="440" y="135" font-family="Courier New" font-size="8">
+    <tspan x="440" y="135">// C++ KNN with scaling</tspan>
+    <tspan x="440" y="150">#include &lt;vector&gt;</tspan>
+    <tspan x="440" y="165">#include &lt;algorithm&gt;</tspan>
+    <tspan x="440" y="180"></tspan>
+    <tspan x="440" y="195">// Scale before KNN</tspan>
+    <tspan x="440" y="210">auto scaled_features =</tspan>
+    <tspan x="440" y="225">  standardize(features);</tspan>
+    <tspan x="440" y="240"></tspan>
+    <tspan x="440" y="255">// Now run KNN algorithm</tspan>
+  </text>
+</svg>

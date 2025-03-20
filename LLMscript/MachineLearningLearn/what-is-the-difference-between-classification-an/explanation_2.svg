@@ -1,0 +1,51 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f7fa"/>
+      <stop offset="100%" stop-color="#c3cfe2"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg-gradient)" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Classification vs Regression: Basic Concept</text>
+  
+  <!-- Classification Box -->
+  <rect x="50" y="80" width="230" height="270" fill="#4a69bd" opacity="0.8" rx="10" ry="10"/>
+  <text x="165" y="110" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Classification</text>
+  <text x="165" y="140" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Predicts discrete categories</text>
+  
+  <!-- Classification Examples -->
+  <rect x="80" y="160" width="170" height="30" fill="#1e3799" rx="5" ry="5"/>
+  <text x="165" y="180" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Spam or Not Spam</text>
+  
+  <rect x="80" y="200" width="170" height="30" fill="#1e3799" rx="5" ry="5"/>
+  <text x="165" y="220" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Dog, Cat, or Bird</text>
+  
+  <rect x="80" y="240" width="170" height="30" fill="#1e3799" rx="5" ry="5"/>
+  <text x="165" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Benign or Malignant</text>
+  
+  <text x="165" y="300" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle" fill="white">Output: Class labels</text>
+  
+  <!-- Regression Box -->
+  <rect x="320" y="80" width="230" height="270" fill="#eb3b5a" opacity="0.8" rx="10" ry="10"/>
+  <text x="435" y="110" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Regression</text>
+  <text x="435" y="140" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Predicts continuous values</text>
+  
+  <!-- Regression Examples -->
+  <rect x="350" y="160" width="170" height="30" fill="#b71540" rx="5" ry="5"/>
+  <text x="435" y="180" font-family="Arial" font-size="12" text-anchor="middle" fill="white">House Price ($)</text>
+  
+  <rect x="350" y="200" width="170" height="30" fill="#b71540" rx="5" ry="5"/>
+  <text x="435" y="220" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Temperature (°C)</text>
+  
+  <rect x="350" y="240" width="170" height="30" fill="#b71540" rx="5" ry="5"/>
+  <text x="435" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Stock Price ($)</text>
+  
+  <text x="435" y="300" font-family="Arial" font-size="14" font-style="italic" text-anchor="middle" fill="white">Output: Numeric values</text>
+  
+  <!-- Dividing Line -->
+  <line x1="300" y1="80" x2="300" y2="350" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+</svg>

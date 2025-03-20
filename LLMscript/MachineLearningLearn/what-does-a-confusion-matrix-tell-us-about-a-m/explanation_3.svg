@@ -1,0 +1,52 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Interpreting Model Errors with Confusion Matrix</text>
+  
+  <!-- Main Confusion Matrix -->
+  <rect x="150" y="100" width="300" height="200" fill="#ffffff" stroke="#333333" stroke-width="2" />
+  <line x1="150" y1="200" x2="450" y2="200" stroke="#333333" stroke-width="2" />
+  <line x1="300" y1="100" x2="300" y2="300" stroke="#333333" stroke-width="2" />
+  
+  <!-- Cell Values -->
+  <rect x="150" y="100" width="150" height="100" fill="#a8e6cf" opacity="0.8" />
+  <text x="225" y="160" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">85</text>
+  <text x="225" y="180" font-family="Arial" font-size="14" text-anchor="middle">True Positive</text>
+  
+  <rect x="300" y="100" width="150" height="100" fill="#ffd3b6" opacity="0.8" />
+  <text x="375" y="160" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">15</text>
+  <text x="375" y="180" font-family="Arial" font-size="14" text-anchor="middle">False Positive</text>
+  <text x="375" y="195" font-family="Arial" font-size="12" text-anchor="middle" fill="#d9534f">Type I Error</text>
+  
+  <rect x="150" y="200" width="150" height="100" fill="#ffaaa5" opacity="0.8" />
+  <text x="225" y="260" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">10</text>
+  <text x="225" y="280" font-family="Arial" font-size="14" text-anchor="middle">False Negative</text>
+  <text x="225" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="#d9534f">Type II Error</text>
+  
+  <rect x="300" y="200" width="150" height="100" fill="#a8e6cf" opacity="0.8" />
+  <text x="375" y="260" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">90</text>
+  <text x="375" y="280" font-family="Arial" font-size="14" text-anchor="middle">True Negative</text>
+  
+  <!-- Error Analysis -->
+  <rect x="50" y="320" width="500" height="70" fill="#ffffff" stroke="#555555" stroke-width="1" rx="5" ry="5" />
+  <text x="60" y="340" font-family="Arial" font-size="14" fill="#333333">Error Analysis:</text>
+  <text x="60" y="360" font-family="Arial" font-size="14" fill="#333333">• Type I Error (False Positive): Model incorrectly predicts positive when actually negative</text>
+  <text x="60" y="380" font-family="Arial" font-size="14" fill="#333333">• Type II Error (False Negative): Model incorrectly predicts negative when actually positive</text>
+  
+  <!-- C++ Code Snippet -->
+  <rect x="470" y="100" width="120" height="90" fill="#f5f5f5" stroke="#cccccc" stroke-width="1" />
+  <text x="480" y="120" font-family="Consolas, monospace" font-size="10" fill="#333333">// C++ Error Rate</text>
+  <text x="480" y="140" font-family="Consolas, monospace" font-size="10" fill="#333333">double type1 =</text>
+  <text x="480" y="155" font-family="Consolas, monospace" font-size="10" fill="#333333">  FP/(double)(FP+TN);</text>
+  <text x="480" y="175" font-family="Consolas, monospace" font-size="10" fill="#333333">double type2 =</text>
+  <text x="480" y="190" font-family="Consolas, monospace" font-size="10" fill="#333333">  FN/(double)(TP+FN);</text>
+  
+  <!-- Class Imbalance Note -->
+  <rect x="470" y="200" width="120" height="90" fill="#ffe0e0" stroke="#ffcccc" stroke-width="1" />
+  <text x="480" y="220" font-family="Arial" font-size="10" fill="#333333">Class Imbalance:</text>
+  <text x="480" y="240" font-family="Arial" font-size="10" fill="#333333">Positives: 95</text>
+  <text x="480" y="260" font-family="Arial" font-size="10" fill="#333333">Negatives: 105</text>
+  <text x="480" y="280" font-family="Arial" font-size="10" fill="#333333">Slightly imbalanced</text>
+</svg>

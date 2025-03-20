@@ -1,0 +1,36 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">Base64: Character Table (Partial)</text>
+
+  <rect x="50" y="50" width="300" height="220" fill="white" stroke="black" />
+
+  <text x="70" y="80">Index</text>
+  <text x="150" y="80">Binary</text>
+  <text x="250" y="80">Character</text>
+
+  <line x1="50" y1="90" x2="350" y2="90" stroke="black" />
+
+  <text x="80" y="110">0</text>
+  <text x="140" y="110">000000</text>
+  <text x="260" y="110">A</text>
+
+  <text x="80" y="140">1</text>
+  <text x="140" y="140">000001</text>
+  <text x="260" y="140">B</text>
+
+  <text x="80" y="170">2</text>
+  <text x="140" y="170">000010</text>
+  <text x="260" y="170">C</text>
+
+    <text x="80" y="200">...</text>
+  <text x="140" y="200">...</text>
+  <text x="260" y="200">...</text>
+
+  <text x="80" y="230">26</text>
+  <text x="140" y="230">011010</text>
+  <text x="260" y="230">a</text>
+
+    <text x="80" y="260">...</text>
+  <text x="140" y="260">...</text>
+  <text x="260" y="260">...</text>
+</svg>

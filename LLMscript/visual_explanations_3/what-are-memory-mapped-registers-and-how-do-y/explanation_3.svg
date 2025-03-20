@@ -1,0 +1,18 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="200" height="250" fill="#ADD8E6" stroke="black" stroke-width="2"/>
+  <text x="100" y="80" font-size="20" font-weight="bold">CPU</text>
+
+  <rect x="350" y="50" width="200" height="250" fill="#90EE90" stroke="black" stroke-width="2"/>
+  <text x="380" y="80" font-size="20" font-weight="bold">Peripheral</text>
+
+  <rect x="380" y="120" width="140" height="150" fill="white" stroke="black"/>
+    <text x="390" y="140" font-size="14">Control Register 1</text>
+      <rect x="390" y="150" width="120" height="15" fill="#FFD700"/>
+    <text x="390" y="180" font-size="14">Status Register</text>
+       <rect x="390" y="190" width="120" height="15" fill="#FFA07A"/>
+  <text x="390" y="220" font-size="14">Data Register</text>
+       <rect x="390" y="230" width="120" height="15" fill="#AFEEEE"/>
+
+  <text x="100" y="350" font-size="24" font-weight="bold">3. Registers within Peripherals</text>
+  <text x="50" y="380" font-size="16">Peripherals have registers at specific memory locations.</text>
+</svg>

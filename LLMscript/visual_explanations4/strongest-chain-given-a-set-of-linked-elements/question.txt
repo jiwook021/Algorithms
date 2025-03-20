@@ -1,0 +1,1 @@
+"Strongest Chain": Given a set of linked elements, find the longest chain possible without repeating elements.

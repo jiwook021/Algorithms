@@ -1,0 +1,20 @@
+<svg width="400" height="350" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="350" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">7. DP - Iteration Example</text>
+  <text x="20" y="60">Input: "leetcode"</text>
+  <text x="20" y="80">Dictionary: {"leet", "code"}</text>
+
+    <rect x="20" y="110" width="360" height="20" stroke="black" fill="white"/>
+    <text x="25" y="125" font-size="12">l  e  e  t  c  o  d  e</text>
+    <rect x="20" y="140" width="360" height="40"  stroke="black"/>
+    <text x="25" y="165" font-size="14">T  F  F  F  T  F  F  T</text>
+    <text x="20" y="190">dp[4] becomes True because dp[0] is True and "leet" is in dictionary.</text>
+   <text x="20" y="215">dp[7] becomes True because dp[4] is True and "code" is in dictionary.</text>
+      <line x1="20" y1="180" x2="148" y2="240" stroke="blue" stroke-width="2"/>
+    <line x1="148" y1="180" x2="348" y2="240" stroke="blue" stroke-width="2"/>
+     <circle cx="148" cy="180" r="4" fill="blue"/>
+      <circle cx="348" cy="180" r="4" fill="blue"/>
+     <circle cx="20" cy="180" r="4" fill="blue"/>
+    <text x="150" y="255" fill="blue">"leet"</text>
+    <text x="300" y="255" fill="blue">"code"</text>
+</svg>

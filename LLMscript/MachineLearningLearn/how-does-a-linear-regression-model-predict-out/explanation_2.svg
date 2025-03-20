@@ -1,0 +1,57 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Linear Regression: Geometric Interpretation</text>
+  
+  <!-- Coordinate system -->
+  <line x1="100" y1="300" x2="500" y2="300" stroke="#333" stroke-width="2"/>
+  <line x1="100" y1="100" x2="100" y2="300" stroke="#333" stroke-width="2"/>
+  
+  <!-- Axis labels -->
+  <text x="300" y="330" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Feature x</text>
+  <text x="60" y="200" font-family="Arial" font-size="16" text-anchor="middle" fill="#333" transform="rotate(-90,60,200)">Output y</text>
+  
+  <!-- Data points -->
+  <circle cx="150" cy="250" r="5" fill="#4285f4"/>
+  <circle cx="200" cy="230" r="5" fill="#4285f4"/>
+  <circle cx="250" cy="210" r="5" fill="#4285f4"/>
+  <circle cx="300" cy="180" r="5" fill="#4285f4"/>
+  <circle cx="350" cy="160" r="5" fill="#4285f4"/>
+  <circle cx="400" cy="140" r="5" fill="#4285f4"/>
+  <circle cx="450" cy="120" r="5" fill="#4285f4"/>
+  
+  <!-- Regression line -->
+  <line x1="150" y1="260" x2="450" y2="110" stroke="#ea4335" stroke-width="3"/>
+  
+  <!-- Residuals (vertical lines) -->
+  <line x1="150" y1="250" x2="150" y2="260" stroke="#34a853" stroke-width="2" stroke-dasharray="4"/>
+  <line x1="200" y1="230" x2="200" y2="243" stroke="#34a853" stroke-width="2" stroke-dasharray="4"/>
+  <line x1="250" y1="210" x2="250" y2="226" stroke="#34a853" stroke-width="2" stroke-dasharray="4"/>
+  <line x1="300" y1="180" x2="300" y2="209" stroke="#34a853" stroke-width="2" stroke-dasharray="4"/>
+  <line x1="350" y1="160" x2="350" y2="192" stroke="#34a853" stroke-width="2" stroke-dasharray="4"/>
+  <line x1="400" y1="140" x2="400" y2="175" stroke="#34a853" stroke-width="2" stroke-dasharray="4"/>
+  <line x1="450" y1="120" x2="450" y2="110" stroke="#34a853" stroke-width="2" stroke-dasharray="4"/>
+  
+  <!-- Intercept and slope visualization -->
+  <circle cx="100" cy="260" r="6" fill="#fbbc05"/>
+  <text x="85" y="280" font-family="Arial" font-size="14" fill="#fbbc05">β₀</text>
+  
+  <path d="M 250,226 L 300,209 L 290,219 L 300,229 Z" fill="#ea4335"/>
+  <text x="270" y="250" font-family="Arial" font-size="14" fill="#ea4335">Slope = β₁</text>
+  
+  <!-- Annotations -->
+  <text x="300" y="80" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">Linear regression finds the line that minimizes</text>
+  <text x="300" y="100" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">the sum of squared vertical distances (residuals)</text>
+  
+  <!-- Legend -->
+  <circle cx="120" cy="350" r="5" fill="#4285f4"/>
+  <text x="135" y="355" font-family="Arial" font-size="14" fill="#333">Data points</text>
+  
+  <line x1="220" y1="350" x2="260" y2="350" stroke="#ea4335" stroke-width="3"/>
+  <text x="275" y="355" font-family="Arial" font-size="14" fill="#333">Regression line</text>
+  
+  <line x1="350" y1="350" x2="390" y2="350" stroke="#34a853" stroke-width="2" stroke-dasharray="4"/>
+  <text x="405" y="355" font-family="Arial" font-size="14" fill="#333">Residuals</text>
+</svg>

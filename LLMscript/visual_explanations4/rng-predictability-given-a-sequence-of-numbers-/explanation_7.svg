@@ -1,0 +1,12 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">7.  Example:  LCG with a=5, c=3, m=16</text>
+  <text x="20" y="60" font-size="14">X_(n+1) = (5 * X_n + 3) mod 16</text>
+
+    <text x="20" y="90" font-size="12" >If X_0 = 2 (Seed):</text>
+    <text x="20" y="110" font-size="12" >X_1 = (5 * 2 + 3) mod 16 = 13</text>
+     <text x="20" y="130" font-size="12" >X_2 = (5 * 13 + 3) mod 16 = 2</text>
+      <text x="20" y="150" font-size="12" >X_3 = (5 * 2 + 3) mod 16 = 13</text>
+
+    <text x="20" y="180" font-size="12" fill="darkblue">The sequence will be: 2, 13, 2, 13,...</text>
+</svg>

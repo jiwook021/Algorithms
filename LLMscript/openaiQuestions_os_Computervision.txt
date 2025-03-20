@@ -1,0 +1,109 @@
+- Implement a **Multi-Level Feedback Queue (MLFQ)** scheduler to optimize CPU utilization and minimize starvation.  
+- Design a **thread pool** that efficiently schedules jobs while preventing deadlocks.  
+- Implement an **LRU (Least Recently Used) cache** to simulate page replacement in virtual memory.  
+- Develop a **bounded buffer (producer-consumer problem)** using semaphores for high-throughput logging.  
+- Implement **priority inheritance** in a real-time system to avoid priority inversion.  
+- Create a **custom slab allocator** for efficient small-object memory allocation.  
+- Implement an **elevator (C-SCAN) disk scheduling algorithm** for optimizing hard disk seeks.  
+- Simulate a **journaling file system** to prevent data corruption during crashes.  
+- Design a **hash-based inverted page table** for efficient virtual memory lookup.  
+- Implement a **heap memory compaction algorithm** to reduce fragmentation.  
+- Develop a **lock-free queue** using atomic operations to eliminate mutex contention.  
+- Implement a **readers-writers lock** that prioritizes either readers or writers.  
+- Design a **scheduler that offloads parallelizable tasks to a GPU** while handling CPU-bound tasks.  
+- Simulate **hyper-threading** by scheduling multiple logical cores sharing execution units.  
+- Implement a **lock-free ring buffer** using atomic operations for real-time data streaming.  
+- Implement a **Sobel edge detector** that runs in real-time on embedded systems.  
+- Develop a **Scale-Invariant Feature Transform (SIFT) algorithm** for object detection.  
+- Build a **motion detection system** using background subtraction in real-time video.  
+- Implement **homography estimation** to stitch multiple images into a panorama.  
+- Design a **connected component labeling (CCL) algorithm** for object counting.  
+- Implement a **Kalman filter** to track moving objects in noisy video data.  
+- Develop a simplified **YOLO-based object detector** for real-time object recognition.  
+- Implement **Lucas-Kanade optical flow** to estimate object motion in video.  
+- Estimate the **3D pose of an object** using only a 2D image.  
+- Design an algorithm to **estimate vehicle speed from a traffic camera video**.  
+- Implement a **convolutional neural network (CNN)** from scratch without TensorFlow or PyTorch.  
+- Develop an **Eigenface-based face recognition system** using Principal Component Analysis (PCA).  
+- Train a **deep learning model** to enhance low-resolution images using super-resolution techniques.  
+- Implement **pose estimation** for human gesture recognition in real-time applications.  
+- Train a model using **self-supervised learning** to learn representations from unlabeled images.  
+- Optimize an **object detection model** to run on low-power embedded devices.  
+- Implement a **Visual SLAM system** to enable drone navigation using camera inputs.  
+- Develop an algorithm to **process thermal images** for object detection.  
+- Build an **OCR system** that converts handwritten notes into text with high accuracy.  
+- Implement **real-time augmented reality (AR) marker tracking** using ArUco markers.  
+- Implement a **multi-threaded memory allocator** that efficiently handles memory fragmentation.  
+- Design a **preemptive priority scheduler** with round-robin time slicing for equal priority tasks.  
+- Implement **copy-on-write (COW) memory management** to optimize process forking in an OS.  
+- Design an **efficient syscall handler** to reduce kernel-to-user mode transition overhead.  
+- Implement a **page fault handler** that minimizes latency using demand paging techniques.  
+- Simulate **TLB (Translation Lookaside Buffer) optimization** to reduce virtual memory lookup time.  
+- Develop a **userspace network stack** to handle packet transmission without kernel overhead.  
+- Implement a **process checkpoint and recovery system** to restore a process after a crash.  
+- Design an **efficient inode-based file system** that supports large directories.  
+- Implement **log-structured file system (LFS)** to improve write performance on SSDs.  
+- Design an **energy-aware CPU scheduler** that optimizes power consumption on mobile devices.  
+- Implement a **lock-free hash table** for concurrent read/write operations in a kernel.  
+- Simulate **cache eviction policies (FIFO, LRU, LFU)** for an OS-level memory cache.  
+- Implement a **buffer cache manager** that balances memory and disk performance.  
+- Develop an **adaptive mutex** that switches between spinlock and blocking mode dynamically.  
+- Implement a **page deduplication algorithm** to reduce memory usage by merging identical pages.  
+- Design a **priority-aware semaphore system** to avoid priority inversion in multithreaded apps.  
+- Implement **NUMA-aware memory allocation** to optimize performance on multi-socket systems.  
+- Develop a **software RAID controller** that efficiently distributes data across multiple disks.  
+- Implement **Hough Transform** to detect lines and circles in images.  
+- Design an **adaptive thresholding algorithm** for real-time binary image segmentation.  
+- Implement **seam carving** to resize images while preserving important content.  
+- Develop an **image deblurring algorithm** to restore motion-blurred photos.  
+- Implement **auto white balance correction** for camera images using histogram analysis.  
+- Design an **adaptive histogram equalization algorithm** for contrast enhancement.  
+- Implement a **fast feature descriptor** similar to ORB for real-time tracking.  
+- Develop a **background modeling algorithm** to remove dynamic backgrounds in video.  
+- Implement **depth estimation from stereo images** using disparity maps.  
+- Build a **face alignment algorithm** that detects facial landmarks in real-time.  
+- Implement **geometric transformation (affine, perspective, projective)** for image warping.  
+- Develop a **real-time face morphing algorithm** using feature interpolation.  
+- Implement **image inpainting** to fill missing pixels in images intelligently.  
+- Design an **iris recognition system** that detects and authenticates users.  
+- Implement **saliency detection** to highlight the most important regions in an image.  
+- Develop a **gesture recognition system** that classifies hand movements using a camera.  
+- Implement **non-rigid object tracking** to follow deformable objects in a video.  
+- Build a **fast lane detection algorithm** for self-driving cars using camera input.  
+- Implement **motion stabilization** to reduce jitter in handheld camera footage.  
+- Design an **adaptive object recognition system** that improves with new training data.  
+- Implement a **work-stealing task scheduler** to balance CPU load dynamically.  
+- Develop an **efficient prefix sum (scan) algorithm** optimized for GPUs.  
+- Implement a **parallelized FFT (Fast Fourier Transform)** using CUDA.  
+- Design an **adaptive load balancer** that distributes computation across multiple GPUs.  
+- Implement a **lock-free GPU memory allocator** to reduce allocation overhead.  
+- Develop a **wavefront-based parallel graph traversal** using GPU threads.  
+- Implement an **optimized matrix multiplication algorithm** for shared memory GPUs.  
+- Design a **GPU-based particle simulation** for physics-based animations.  
+- Implement a **parallelized flood-fill algorithm** for large-scale image processing.  
+- Develop an **adaptive GPU cache eviction strategy** to maximize memory reuse.  
+- Implement a **high-performance parallel sorting algorithm** for massive datasets.  
+- Build a **real-time 3D mesh simplification** algorithm optimized for GPU execution.  
+- Implement an **efficient radix sort algorithm** that scales across multiple GPUs.  
+- Design a **GPU-accelerated ray tracing engine** for real-time rendering.  
+- Implement a **parallelized PageRank algorithm** for large-scale web graph analysis.  
+- Implement a **real-time task scheduler** with strict timing constraints.  
+- Design a **PID controller** for precise motor control in embedded systems.  
+- Implement a **deadlock detection algorithm** for real-time operating systems.  
+- Develop an **interrupt-driven event handling system** for microcontrollers.  
+- Implement a **time-synchronized distributed sensor network** for IoT applications.  
+- Build a **real-time signal processing pipeline** for audio recognition.  
+- Implement an **efficient DMA-based memory transfer system** for embedded devices.  
+- Design a **low-latency message-passing system** for microcontroller communication.  
+- Implement a **hardware-accelerated encryption system** for secure embedded systems.  
+- Develop an **adaptive sampling algorithm** to reduce power consumption in sensor networks.  
+- Implement a **congestion control algorithm** for high-speed TCP connections.  
+- Develop a **distributed leader election algorithm** for fault-tolerant networks.  
+- Implement a **DHT (Distributed Hash Table)** for scalable peer-to-peer networks.  
+- Design a **network packet classification system** for high-performance routers.  
+- Implement a **network anomaly detection system** using flow analysis.  
+- Develop a **software-defined networking (SDN) controller** for traffic routing.  
+- Implement a **fast IP lookup algorithm** for high-speed network forwarding.  
+- Design a **load-aware rate limiter** for distributed API throttling.  
+- Implement an **efficient log replication system** for distributed databases.  
+- Develop an **adaptive congestion-aware routing algorithm** for mobile ad hoc networks.  

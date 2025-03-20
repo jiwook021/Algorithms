@@ -1,0 +1,12 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    <text x="20" y="25" fill="black" font-size="14" font-weight="bold">4. Standard GPU Core</text>
+    <rect x="50" y="50" width="50" height="50" fill="lightblue" stroke="black" />
+    <rect x="110" y="50" width="50" height="50" fill="lightblue" stroke="black" />
+    <text x="80" y="120" text-anchor="middle" fill="black">FP32 x FP32</text>
+     <text x="80" y="140" text-anchor="middle" fill="black"> = FP32</text>
+     <text x="140" y="120" text-anchor="middle" fill="black">FP32 x FP32</text>
+    <text x="140" y="140" text-anchor="middle" fill="black"> = FP32</text>
+    <text x="200" y="80" fill="green">Many small</text>
+    <text x="200" y="100" fill="green">calculations</text>
+  <polygon points="270,85 320,60 320,110" fill="green" stroke="black"/>
+</svg>

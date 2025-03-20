@@ -1,0 +1,20 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">1. Feature Detection (e.g., SIFT, ORB)</text>
+
+  <image x="50" y="60" width="100" height="100" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" /> <!-- Placeholder for image 1 -->
+    <rect x="50" y="60" width="100" height="100" style="fill:none;stroke:blue;stroke-width:2"/>
+  <text x="70" y="180" font-size="14">Image 1</text>
+   <circle cx="80" cy="90" r="5" fill="red" />
+    <circle cx="120" cy="130" r="5" fill="red" />
+      <circle cx="100" cy="70" r="5" fill="red" />
+
+  <image x="250" y="60" width="100" height="100" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" /> <!-- Placeholder for image 2 -->
+    <rect x="250" y="60" width="100" height="100" style="fill:none;stroke:green;stroke-width:2"/>
+  <text x="270" y="180" font-size="14">Image 2</text>
+    <circle cx="280" cy="95" r="5" fill="red" />
+    <circle cx="320" cy="120" r="5" fill="red" />
+      <circle cx="300" cy="80" r="5" fill="red" />
+  <text x="20" y="220" font-size="14">Detects distinctive points (keypoints) in both images.</text>
+  <text x="20" y="240" font-size="14">Keypoints are represented by red circles.</text>
+</svg>

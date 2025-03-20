@@ -1,0 +1,25 @@
+<svg width="400" height="450" viewBox="0 0 400 450" xmlns="http://www.w3.org/2000/svg">
+    <rect x="10" y="10" width="380" height="430" fill="none" stroke="black" stroke-width="2"/>
+    <text x="20" y="30" font-size="16" font-weight="bold">8.  Events for Fine-Grained Synchronization</text>
+     <text x="20" y="60">CUDA events can be used to synchronize operations</text>
+      <text x="20" y="80">within and across streams with more granularity.</text>
+
+    <rect x="50" y="110" width="250" height="30" fill="lightblue"/>
+        <text x="150" y="130">Stream 1</text>
+        <polygon points="300,125 320,120 320,130" fill="lightblue" stroke="black"/>
+
+    <circle cx="100" cy="125" r="5" fill="red"/>
+    <text x="105" y="115">Event A</text>
+
+    <rect x="50" y="160" width="250" height="30" fill="lightcoral"/>
+    <text x="150" y="180">Stream 2</text>
+      <polygon points="300,175 320,170 320,180" fill="lightcoral" stroke="black"/>
+
+    <circle cx="200" cy="175" r="5" fill="red"/>
+      <text x="205" y="165">Event B</text>
+
+    <text x="50" y="220">Stream 2 can wait for Event A in Stream 1,</text>
+    <text x="50" y="240">even if other operations in Stream 1 are still pending.</text>
+        <text x="50" y="270">Stream 1 can query if event B has happened.</text>
+
+</svg>

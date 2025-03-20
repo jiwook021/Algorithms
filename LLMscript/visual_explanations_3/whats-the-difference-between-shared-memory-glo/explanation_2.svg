@@ -1,0 +1,23 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="80" height="80" fill="none" stroke="black" /> <!-- Thread 1 -->
+    <rect x="150" y="50" width="80" height="80" fill="none" stroke="black" /> <!-- Thread 2 -->
+    <rect x="250" y="50" width="80" height="80" fill="none" stroke="black" /> <!-- Thread 3 -->
+
+    <circle cx="90" cy="90" r="15" fill="#ADD8E6"/>
+    <text x="85" y="95" font-size="12">R1</text>
+
+    <circle cx="190" cy="90" r="15" fill="#ADD8E6"/>
+    <text x="185" y="95" font-size="12">R1</text>
+
+    <circle cx="290" cy="90" r="15" fill="#ADD8E6"/>
+    <text x="285" y="95" font-size="12">R1</text>
+
+
+    <text x="70" y="40" font-size="14">Thread 1</text>
+    <text x="170" y="40" font-size="14">Thread 2</text>
+    <text x="270" y="40" font-size="14">Thread 3</text>
+
+
+  <text x="120" y="200" font-size="16">Registers: Per-Thread, Fastest</text>
+   <text x="20" y="250" font-size="14" fill="black">Each thread has its own private set of registers.</text>
+</svg>

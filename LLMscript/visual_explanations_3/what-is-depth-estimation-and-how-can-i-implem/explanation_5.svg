@@ -1,0 +1,23 @@
+<svg width="600" height="400" viewport="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="20" font-weight="bold">5. Triangulation: Calculating Depth</text>
+
+  <circle cx="100" cy="100" r="10" fill="gray" />
+    <text x="80" y="90" fill="black">Left</text>
+  <circle cx="500" cy="100" r="10" fill="gray" />
+    <text x="480" y="90" fill="black">Right</text>
+  <line x1="100" y1="100" x2="300" y2="300" stroke="green" stroke-width="2" />
+  <line x1="500" y1="100" x2="300" y2="300" stroke="green" stroke-width="2" />
+
+  <circle cx="300" cy="300" r="15" fill="red" />
+    <text x="300" y="330" fill="black">Object</text>
+
+    <line x1="100" y1="100" x2="500" y2="100" stroke="black" stroke-width="1"/>
+    <text x="280" y="85" fill="black">Baseline (b)</text>
+     <text x="150" y="200" fill="blue"  font-size="16">θL</text>
+    <text x="450" y="200" fill="blue" font-size="16">θR</text>
+
+      <text x="250" y="180" font-size="16">Depth (Z) = b / (tan(θL) + tan(θR))</text>
+      <text x="20" y="380" font-size="14" >Knowing baseline and angles (from disparity), we can calculate depth using trigonometry.</text>
+
+</svg>

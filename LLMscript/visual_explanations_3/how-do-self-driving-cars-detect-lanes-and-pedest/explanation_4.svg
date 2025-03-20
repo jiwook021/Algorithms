@@ -1,0 +1,22 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f0f0f0" />
+  <text x="300" y="30" text-anchor="middle" font-size="24" font-weight="bold">4. Sensor Fusion</text>
+
+  <circle cx="100" cy="150" r="40" fill="#4CAF50" />
+  <text x="100" y="150" text-anchor="middle" fill="white" font-size="14">Camera</text>
+
+  <circle cx="200" cy="100" r="40" fill="#2196F3" />
+  <text x="200" y="100" text-anchor="middle" fill="white" font-size="14">LiDAR</text>
+
+  <circle cx="200" cy="200" r="40" fill="#FFC107" />
+  <text x="200" y="200" text-anchor="middle" fill="white" font-size="14">Radar</text>
+
+  <polygon points="130,150 170,110 170,190" fill="none" stroke="#333" stroke-width="2" />
+   <polygon points="115,185 185,215 185,185" fill="none" stroke="#333" stroke-width="2" />
+    <polygon points="115,115 185,85 185,115" fill="none" stroke="#333" stroke-width="2" />
+
+  <rect x="350" y="120" width="150" height="80" fill="#673AB7" />
+  <text x="425" y="160" text-anchor="middle" fill="white" font-size="18">Combined Data</text>
+
+  <text x="300" y="350" text-anchor="middle" font-size="14">Data from all sensors is combined to create a comprehensive understanding.</text>
+</svg>

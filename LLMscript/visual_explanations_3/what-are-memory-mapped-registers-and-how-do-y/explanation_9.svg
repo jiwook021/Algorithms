@@ -1,0 +1,29 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="200" height="250" fill="#ADD8E6" stroke="black" stroke-width="2"/>
+  <text x="100" y="80" font-size="20" font-weight="bold">CPU</text>
+
+  <rect x="350" y="50" width="200" height="250" fill="#90EE90" stroke="black" stroke-width="2"/>
+  <text x="380" y="80" font-size="20" font-weight="bold">Peripheral</text>
+    <text x="380" y="110" font-size="14" >(Motor)</text>
+  <rect x="380" y="140" width="140" height="80" fill="white" stroke="black"/>
+  <text x="390" y="150" font-size="14">Control Register:</text>
+    <text x="390" y="170" font-size="14">Address: 0x40000000</text>
+  <text x="390" y="190" font-size="14">Bit 0: Enable</text>
+    <text x="390" y="210" font-size="14">Bits 1-7: Speed</text>
+
+    <text x="80" y="150" font-size="16" >// Enable Motor</text>
+  <text x="80" y="170" font-size="16" >mov [0x40000000], 0x01</text>
+    <text x="80" y="200" font-size="16" >// Set Speed (e.g., 50)</text>
+      <text x="80" y="220" font-size="16" >mov [0x40000000], 0x33</text>
+ <line x1="250" y1="170" x2="350" y2="170" stroke="black" stroke-width="3" marker-end="url(#arrowhead)"/>
+     <line x1="250" y1="220" x2="350" y2="200" stroke="black" stroke-width="3" marker-end="url(#arrowhead)"/>
+ <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+    refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+
+  <text x="80" y="350" font-size="24" font-weight="bold">9. Example: Motor Control</text>
+  <text x="50" y="380" font-size="16">Multiple writes can configure different aspects of a peripheral.</text>
+</svg>

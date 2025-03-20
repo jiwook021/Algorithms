@@ -1,0 +1,20 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+    <circle cx="50" cy="150" r="5" fill="blue"/>
+  <circle cx="80" cy="140" r="5" fill="blue" />
+    <circle cx="120" cy="160" r="5" fill="blue"/>
+  <circle cx="150" cy="130" r="5" fill="blue" />
+    <circle cx="190" cy="155" r="5" fill="blue"/>
+      <path d="M50 150 L80 140 L120 160 L150 130 L190 155" stroke="blue" fill="none"/>
+  <text x="40" y="190" font-size="16" fill="blue">Robot Path</text>
+
+
+  <rect x="200" y="100" width="20" height="30" fill="green" />
+    <rect x="250" y="200" width="20" height="30" fill="green" />
+    <rect x="300" y="150" width="20" height="30" fill="green" />
+  <text x="200" y="90" font-size="14" fill="green">Landmarks</text>
+
+
+  <text x="20" y="30" font-size="20" font-weight="bold">5. Building the Map</text>
+  <text x="20" y="60" font-size="14">As the robot moves, it adds new landmark measurements to the map.</text>
+</svg>

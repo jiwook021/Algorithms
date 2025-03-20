@@ -1,0 +1,17 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <circle cx="80" cy="150" r="20" fill="blue" stroke="grey" stroke-dasharray="4"/>
+  <text x="70" y="190" font-size="16" fill="grey">Predicted</text>
+    <text x="70" y="210" font-size="16" fill="grey">Position</text>
+    
+    <circle cx="95" cy="145" r="20" fill="blue"/>
+  <text x="95" y="185" font-size="16" fill="blue">Corrected</text>
+    <text x="95" y="205" font-size="16" fill="blue">Position</text>
+
+  <rect x="200" y="100" width="40" height="60" fill="green" stroke="grey" stroke-dasharray="4"/>
+   <rect x="205" y="95" width="40" height="60" fill="green"/>
+  <text x="200" y="80" font-size="14" fill="green">Landmark</text>
+
+  <text x="20" y="30" font-size="20" font-weight="bold">4. Correction (Update)</text>
+  <text x="20" y="60" font-size="14">Robot uses measurements to correct its predicted position and landmark locations.</text>
+</svg>

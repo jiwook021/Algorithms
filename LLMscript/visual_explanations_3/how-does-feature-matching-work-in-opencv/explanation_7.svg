@@ -1,0 +1,22 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">7. Ratio Test (Lowe's Ratio Test)</text>
+
+  <circle cx="80" cy="100" r="8" fill="blue" />
+  <text x="75" y="120" font-size="12">D1</text>
+
+  <circle cx="250" cy="90" r="5" fill="green" />
+  <text x="245" y="110" font-size="10">D2</text>
+  <circle cx="280" cy="110" r="5" fill="green" />
+  <text x="275" y="130" font-size="10">D3</text>
+
+  <line x1="85" y1="100" x2="250" y2="90" stroke="red" />
+   <text x="150" y="80" font-size="14">distance1</text>
+  <line x1="85" y1="100" x2="280" y2="110" stroke="orange" />
+    <text x="170" y="130" font-size="14">distance2</text>
+
+  <text x="20" y="200" font-size="14">if (distance1 / distance2) &lt; threshold:</text>
+  <text x="40" y="220" font-size="14">  Match is considered good.</text>
+    <text x="20" y="240" font-size="14">Filters out ambiguous matches.</text>
+    <text x="20" y="260" font-size="14">Typical threshold: 0.7 - 0.8</text>
+</svg>

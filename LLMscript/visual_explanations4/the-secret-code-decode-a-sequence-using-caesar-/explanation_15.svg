@@ -1,0 +1,11 @@
+<svg width="350" height="220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#eee" />
+  <text x="20" y="30" font-size="16" font-weight="bold">6. Base64 Encoding: Overview</text>
+  <text x="20" y="60">Input: 3 bytes (24 bits)</text>
+  <text x="20" y="80">Process: Split into 4 groups of 6 bits</text>
+  <text x="20" y="100">Lookup: Use Base64 table (A-Z, a-z, 0-9, +, /)</text>
+  <text x="20" y="120">Output: 4 characters (each representing 6 bits)</text>
+  <text x="20" y="150">C++: Requires a Base64 table and bit manipulation.</text>
+  <text x="20" y="170">Often involves padding with '=' if input</text>
+    <text x="20" y="190">length is not a multiple of 3.</text>
+</svg>

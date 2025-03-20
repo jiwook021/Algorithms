@@ -1,0 +1,10 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="25" fill="black" font-size="14" font-weight="bold">9. Throughput Comparison</text>
+   <rect x="50" y="50" width="20" height="80"  fill="blue"/>
+   <text x="55" y="150">CUDA Cores</text>
+     <rect x="150" y="50" width="20" height="160"  fill="green"/>
+   <text x="155" y="230">Tensor Cores</text>
+
+  <line x1="30" y1="180" x2="370" y2="180" stroke="black"/>
+      <text x="370" y="170" text-anchor="end" fill="black">Operations/Cycle</text>
+</svg>

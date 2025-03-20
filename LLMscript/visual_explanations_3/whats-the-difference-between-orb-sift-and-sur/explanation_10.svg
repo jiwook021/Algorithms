@@ -1,0 +1,13 @@
+<svg width="400" height="200" viewBox="0 0 400 200">
+   <rect x="0" y="0" width="400" height="200" fill="#f0f0f0" />
+  <rect x="50" y="100" width="80" height="50" fill="green" />
+  <rect x="150" y="80" width="120" height="70" fill="orange" />
+  <rect x="290" y="50" width="60" height="100" fill="red" />
+
+  <text x="90" y="170" text-anchor="middle" fill="black">ORB</text>
+  <text x="210" y="170" text-anchor="middle" fill="black">SURF</text>
+  <text x="320" y="170" text-anchor="middle" fill="black">SIFT</text>
+    <text x="200" y="30" text-anchor="middle" font-size="16" font-weight="bold">Speed Comparison</text>
+    <text x="90" y="90" text-anchor="middle" fill="black">Fastest</text>
+     <text x="320" y="40" text-anchor="middle" fill="black">Slowest</text>
+</svg>

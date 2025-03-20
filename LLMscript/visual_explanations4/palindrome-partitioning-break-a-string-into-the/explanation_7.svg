@@ -1,0 +1,34 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Concept 7: DP Table Visualization</text>
+  <text x="20" y="60">String: "aba"</text>
+    <text x="20" y="85"> (Simplified DP Table Concept)</text>
+
+  <rect x="50" y="100" width="40" height="40" fill="lightgray" stroke="black" />
+  <text x="65" y="125">a</text>
+  <rect x="90" y="100" width="40" height="40" fill="lightgray" stroke="black" />
+    <text x="105" y="125">b</text>
+<rect x="130" y="100" width="40" height="40" fill="lightgray" stroke="black" />
+  <text x="145" y="125">a</text>
+    
+    <rect x="50" y="140" width="40" height="40" fill="lightgreen" stroke="black" />
+    <text x="65" y="165">T</text>
+   <rect x="90" y="140" width="40" height="40" fill="lightgreen" stroke="black" />
+      <text x="105" y="165">T</text>
+  <rect x="130" y="140" width="40" height="40" fill="lightgreen" stroke="black" />
+     <text x="145" y="165">T</text>
+
+    <rect x="50" y="180" width="40" height="40" fill="white" stroke="black" />
+      <rect x="90" y="180" width="40" height="40" fill="lightgreen" stroke="black" />
+        <text x="105" y="205">T</text>
+ <rect x="130" y="180" width="40" height="40" fill="white" stroke="black" />
+
+    <rect x="50" y="220" width="40" height="40" fill="white" stroke="black" />
+        <rect x="90" y="220" width="40" height="40" fill="white" stroke="black" />
+    <rect x="130" y="220" width="40" height="40" fill="lightgreen" stroke="black" />
+  <text x="145" y="245">T</text>
+
+    <text x="200" y="160" fill="blue">T = Palindrome</text>
+   <text x="200" y="190" fill="blue">Table stores palindrome</text>
+  <text x="200" y="210" fill="blue"> information for substrings.</text>
+</svg>

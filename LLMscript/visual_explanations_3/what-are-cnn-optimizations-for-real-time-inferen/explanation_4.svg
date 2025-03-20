@@ -1,0 +1,26 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">4. Depthwise Separable Convolutions</text>
+
+  <rect x="50" y="70" width="80" height="80" fill="#00BCD4" />
+  <text x="60" y="110" fill="white">Standard Conv</text>
+
+    <text x="40" y="180" font-size="12">Depthwise (spatially)</text>
+     <text x="230" y="180" font-size="12">Pointwise (channel-wise)</text>
+
+
+  <path d="M140 110 L180 110" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+
+    <rect x="190" y="60" width="40" height="40" fill="#009688" />
+    <rect x="190" y="110" width="40" height="40" fill="#009688" />
+
+    <path d="M240 110 L270 110" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <rect x="280" y="70" width="80" height="80" fill="#4CAF50" />
+   <text x="290" y="110" fill="white">1x1 Conv</text>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

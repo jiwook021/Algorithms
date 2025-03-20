@@ -1,0 +1,16 @@
+<svg width="450" height="250" viewBox="0 0 450 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="450" height="250" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">Base64: Padding</text>
+
+  <text x="20" y="60">Input: "M"</text>
+    <text x="20" y="80">Binary: 01001101</text>
+  <text x="20" y="100">6-bit chunks: 010011 01</text>
+    <text x="20" y="120">Add padding:  010011 010000</text>
+    <text x="300" y="120" fill="red" font-weight="bold"> (add four 0)</text>
+
+  <text x="20" y="160">Base64: TQ==</text>
+    <text x="20" y="180" fill="red" font-size="18">=</text>
+    <text x="30" y="210" font-size="14">Padding characters (=) are added</text>
+    <text x="30" y="230" font-size="14">to ensure the output is a multiple of 4.</text>
+
+</svg>

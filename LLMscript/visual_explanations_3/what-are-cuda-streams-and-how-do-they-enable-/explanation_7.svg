@@ -1,0 +1,11 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="380" height="280" fill="none" stroke="black" stroke-width="2"/>
+  <text x="20" y="30" font-size="16" font-weight="bold">7. The Default Stream</text>
+  <text x="20" y="60">If you don't explicitly specify a stream,</text>
+  <text x="20" y="80">operations are submitted to the default stream (stream 0).</text>
+  <rect x="50" y="110" width="300" height="30" fill="lightgray"/>
+  <text x="150" y="130">Default Stream (Stream 0)</text>
+    <polygon points="350,125 370,120 370,130" fill="lightgray" stroke="black"/>
+  <text x="50" y="160">Operations without a specified stream go here.</text>
+
+</svg>

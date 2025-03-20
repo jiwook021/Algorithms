@@ -1,0 +1,8 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="lightgray" />
+  <text x="10" y="30" font-size="16">1. The Maze</text>
+  <rect x="50" y="50" width="100" height="100" fill="white" stroke="black" />
+  <text x="60" y="70" font-size="12">Start</text>
+  <text x="110" y="130" font-size="12">End</text>
+  <text x="10" y="180" font-size="10">A grid-based puzzle.</text>
+</svg>

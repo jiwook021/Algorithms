@@ -1,0 +1,27 @@
+<svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="150" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">10. Key Idea: Recursion/Iteration</text>
+  <text x="20" y="60" font-size="14">Each term is derived from the previous term, making it recursive.</text>
+   <circle cx="70" cy="100" r="15" fill="#4CAF50" stroke="black" stroke-width="1"/>
+  <text x="65" y="105" font-size="12" fill="white">T1</text>
+
+   <path d="M90 100 L 120 100" stroke="green" stroke-width="3"/>
+   <polygon points="120,100 110,95 110,105" fill="green"/>
+
+  <circle cx="140" cy="100" r="15" fill="#FFC107" stroke="black" stroke-width="1"/>
+    <text x="135" y="105" font-size="12" fill="black">T2</text>
+
+      <path d="M160 100 L 190 100" stroke="green" stroke-width="3"/>
+   <polygon points="190,100 180,95 180,105" fill="green"/>
+
+    <circle cx="210" cy="100" r="15" fill="#9CCC65" stroke="black" stroke-width="1"/>
+   <text x="205" y="105" font-size="12" fill="black">T3</text>
+
+    <path d="M230 100 L 260 100" stroke="green" stroke-width="3"/>
+    <polygon points="260,100 250,95 250,105" fill="green"/>
+
+      <circle cx="280" cy="100" r="15" fill="#FFEB3B" stroke="black" stroke-width="1"/>
+    <text x="275" y="105" font-size="12" fill="black">T4</text>
+      <text x="320" y="100" font-size="16" fill="blue">...</text>
+     <text x="350" y="105" font-size="12" fill="darkred">Tn</text>
+</svg>

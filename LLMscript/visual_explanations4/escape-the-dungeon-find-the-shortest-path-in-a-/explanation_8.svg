@@ -1,0 +1,29 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="20" font-weight="bold">8. Keeping Track of Visited Cells</text>
+
+   <!-- Maze Grid (Simplified) -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="50" height="50" fill="lightgreen" stroke="black"/>
+    <rect x="50" y="0" width="50" height="50" fill="lightgreen" stroke="black"/>
+    <rect x="100" y="0" width="50" height="50" fill="white" stroke="black"/>
+
+    <rect x="0" y="50" width="50" height="50" fill="lightgreen" stroke="black"/>
+    <rect x="50" y="50" width="50" height="50" fill="lightgreen" stroke="black"/>
+    <rect x="100" y="50" width="50" height="50" fill="white" stroke="black"/>
+
+     <rect x="0" y="100" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="50" y="100" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="100" y="100" width="50" height="50" fill="white" stroke="black"/>
+
+     <text x="15" y="30" font-size="12">Visited</text>
+      <text x="65" y="30" font-size="12">Visited</text>
+       <text x="15" y="80" font-size="12">Visited</text>
+        <text x="65" y="80" font-size="12">Visited</text>
+
+  </g>
+
+  <text x="20" y="220" font-size="14">We mark cells as "visited" (green) to avoid loops.</text>
+    <text x="20" y="240" font-size="14">BFS only explores unvisited cells.</text>
+
+</svg>

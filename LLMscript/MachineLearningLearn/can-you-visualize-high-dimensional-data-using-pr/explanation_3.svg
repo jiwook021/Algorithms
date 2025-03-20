@@ -1,0 +1,94 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">PCA: Mathematical Process</text>
+  
+  <!-- Step 1: Data Matrix -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="120" height="80" fill="#e8f0fe" stroke="#4285f4" stroke-width="2" />
+    <text x="60" y="-10" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Step 1: Data Matrix X</text>
+    <text x="60" y="45" font-family="Arial" font-size="12" text-anchor="middle">n samples</text>
+    <text x="60" y="60" font-family="Arial" font-size="12" text-anchor="middle">p features</text>
+    
+    <!-- Matrix elements -->
+    <line x1="40" y1="0" x2="40" y2="80" stroke="#4285f4" stroke-width="1" />
+    <line x1="80" y1="0" x2="80" y2="80" stroke="#4285f4" stroke-width="1" />
+    <line x1="0" y1="27" x2="120" y2="27" stroke="#4285f4" stroke-width="1" />
+    <line x1="0" y1="54" x2="120" y2="54" stroke="#4285f4" stroke-width="1" />
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M230,140 L270,140 L260,130 L280,140 L260,150 L270,140" fill="#34a853" />
+  
+  <!-- Step 2: Standardization -->
+  <g transform="translate(290, 100)">
+    <rect x="0" y="0" width="120" height="80" fill="#e6f4ea" stroke="#34a853" stroke-width="2" />
+    <text x="60" y="-10" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Step 2: Standardize</text>
+    <text x="60" y="45" font-family="Arial" font-size="12" text-anchor="middle">Mean = 0</text>
+    <text x="60" y="60" font-family="Arial" font-size="12" text-anchor="middle">Std Dev = 1</text>
+    
+    <!-- Code snippet -->
+    <rect x="-20" y="90" width="160" height="50" fill="#f1f3f4" stroke="#5f6368" stroke-width="1" rx="5" ry="5" />
+    <text x="60" y="105" font-family="Courier New" font-size="10" text-anchor="middle">// C++ with Eigen</text>
+    <text x="60" y="120" font-family="Courier New" font-size="10" text-anchor="middle">X = (X.rowwise() - X.colwise().mean())</text>
+    <text x="60" y="135" font-family="Courier New" font-size="10" text-anchor="middle">.rowwise() / X.colwise().stddev();</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M420,140 L460,140 L450,130 L470,140 L450,150 L460,140" fill="#ea4335" />
+  
+  <!-- Step 3: Covariance Matrix -->
+  <g transform="translate(480, 100)">
+    <rect x="0" y="0" width="80" height="80" fill="#fce8e6" stroke="#ea4335" stroke-width="2" />
+    <text x="40" y="-10" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Step 3: Covariance</text>
+    <text x="40" y="45" font-family="Arial" font-size="12" text-anchor="middle">C = X^T·X</text>
+    <text x="40" y="60" font-family="Arial" font-size="12" text-anchor="middle">p × p</text>
+    
+    <!-- Matrix elements -->
+    <line x1="27" y1="0" x2="27" y2="80" stroke="#ea4335" stroke-width="1" />
+    <line x1="54" y1="0" x2="54" y2="80" stroke="#ea4335" stroke-width="1" />
+    <line x1="0" y1="27" x2="80" y2="27" stroke="#ea4335" stroke-width="1" />
+    <line x1="0" y1="54" x2="80" y2="54" stroke="#ea4335" stroke-width="1" />
+  </g>
+  
+  <!-- Step 4: Eigendecomposition -->
+  <g transform="translate(290, 250)">
+    <rect x="0" y="0" width="120" height="80" fill="#fef7e0" stroke="#fbbc05" stroke-width="2" />
+    <text x="60" y="-10" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Step 4: Eigendecomposition</text>
+    <text x="60" y="30" font-family="Arial" font-size="12" text-anchor="middle">Find eigenvectors</text>
+    <text x="60" y="45" font-family="Arial" font-size="12" text-anchor="middle">and eigenvalues</text>
+    <text x="60" y="60" font-family="Arial" font-size="12" text-anchor="middle">of covariance matrix</text>
+    
+    <!-- Code snippet -->
+    <rect x="-20" y="90" width="160" height="40" fill="#f1f3f4" stroke="#5f6368" stroke-width="1" rx="5" ry="5" />
+    <text x="60" y="105" font-family="Courier New" font-size="10" text-anchor="middle">Eigen::SelfAdjointEigenSolver</text>
+    <text x="60" y="120" font-family="Courier New" font-size="10" text-anchor="middle">solver(covMatrix);</text>
+  </g>
+  
+  <!-- Arrow from Step 3 to Step 4 -->
+  <path d="M520,190 L520,230 L510,220 L520,240 L530,220 L520,230" fill="#fbbc05" />
+  
+  <!-- Arrow from Step 4 to Step 5 -->
+  <path d="M230,290 L270,290 L260,280 L280,290 L260,300 L270,290" fill="#4285f4" />
+  
+  <!-- Step 5: Projection -->
+  <g transform="translate(100, 250)">
+    <rect x="0" y="0" width="120" height="80" fill="#e8f0fe" stroke="#4285f4" stroke-width="2" />
+    <text x="60" y="-10" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Step 5: Project Data</text>
+    <text x="60" y="30" font-family="Arial" font-size="12" text-anchor="middle">Select top k</text>
+    <text x="60" y="45" font-family="Arial" font-size="12" text-anchor="middle">eigenvectors and</text>
+    <text x="60" y="60" font-family="Arial" font-size="12" text-anchor="middle">project X onto them</text>
+    
+    <!-- Code snippet -->
+    <rect x="-20" y="90" width="160" height="40" fill="#f1f3f4" stroke="#5f6368" stroke-width="1" rx="5" ry="5" />
+    <text x="60" y="105" font-family="Courier New" font-size="10" text-anchor="middle">// Project to k dimensions</text>
+    <text x="60" y="120" font-family="Courier New" font-size="10" text-anchor="middle">X_reduced = X * V.leftCols(k);</text>
+  </g>
+  
+  <!-- Overall explanation -->
+  <text x="300" y="380" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">
+    PCA transforms data by finding directions of maximum variance and projecting onto them
+  </text>
+</svg>

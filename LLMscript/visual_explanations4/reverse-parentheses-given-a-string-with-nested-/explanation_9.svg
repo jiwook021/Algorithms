@@ -1,0 +1,9 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="200" fill="#f0f0f0" />
+    <text x="20" y="30" font-size="18" font-weight="bold">Edge Case: No Parentheses</text>
+    <text x="20" y="60" font-size="14">If the input string has no parentheses,</text>
+    <text x="20" y="80" font-size="14">the string remains unchanged.</text>
+
+    <text x="50" y="130" font-size="16" >Input: abcdefg</text>
+    <text x="50" y="160" font-size="16" >Output: abcdefg</text>
+</svg>

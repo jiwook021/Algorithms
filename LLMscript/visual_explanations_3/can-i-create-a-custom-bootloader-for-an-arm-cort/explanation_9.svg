@@ -1,0 +1,30 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">9. Security Considerations</text>
+
+    <rect x="20" y="50" width="80" height="40" fill="#ffb6c1" />
+  <text x="60" y="70" text-anchor="middle" font-size="12">Unsecured</text>
+  <text x="60" y="85" text-anchor="middle" font-size="10">Firmware</text>
+
+
+  <line x1="100" y1="70" x2="140" y2="70" stroke="black" stroke-width="2"  />
+    <polygon points="130,65 140,70 130,75" style="fill:black;" />
+
+
+ <rect x="140" y="50" width="80" height="40" fill="#add8e6" />
+    <text x="180" y="70" text-anchor="middle" font-size="12">MCU</text>
+  <line x1="220" y1="70" x2="260" y2="70" stroke="black" stroke-width="2"  />
+    <polygon points="250,65 260,70 250,75" style="fill:black;" />
+
+ <rect x="260" y="50" width="80" height="40" fill="#90ee90" />
+  <text x="300" y="70" text-anchor="middle" font-size="12">Attacker</text>
+  <text x="300" y="85" text-anchor="middle" font-size="10">Malicious Code</text>
+  <text x="20" y="120" font-size="12">Protect against:</text>
+  <text x="20" y="140" font-size="12">- Unauthorized firmware updates</text>
+  <text x="20" y="160" font-size="12">- Code injection</text>
+  <text x="20" y="180" font-size="12">- Readback of sensitive data</text>
+  <text x="20" y="210" font-size="12">Solutions:</text>
+   <text x="20" y="230" font-size="12">- Secure Boot (cryptographic verification)</text>
+  <text x="20" y="250" font-size="12">- Flash write protection</text>
+  <text x="20" y="270" font-size="12">- Debug interface disabling</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f8f9fa" />
+  <text x="300" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Common Feature Scaling Techniques</text>
+  
+  <!-- Min-Max Scaling -->
+  <rect x="50" y="70" width="240" height="140" fill="#e6f7ff" rx="5" ry="5" stroke="#1890ff" stroke-width="1" />
+  <text x="170" y="90" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Min-Max Scaling</text>
+  <text x="170" y="110" font-family="Arial" font-size="12" text-anchor="middle">Scales features to range [0,1]</text>
+  
+  <rect x="70" y="120" width="200" height="70" fill="#ffffff" rx="3" ry="3" stroke="#cccccc" stroke-width="1" />
+  <text x="80" y="140" font-family="Consolas, monospace" font-size="12">
+    <tspan x="80" dy="0">// C++ Min-Max Scaling</tspan>
+    <tspan x="80" dy="16">x_scaled = (x - x_min) /</tspan>
+    <tspan x="80" dy="16">(x_max - x_min);</tspan>
+  </text>
+  
+  <!-- Z-Score Standardization -->
+  <rect x="310" y="70" width="240" height="140" fill="#fff2e8" rx="5" ry="5" stroke="#fa8c16" stroke-width="1" />
+  <text x="430" y="90" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Z-Score Standardization</text>
+  <text x="430" y="110" font-family="Arial" font-size="12" text-anchor="middle">Transforms to μ=0, σ=1</text>
+  
+  <rect x="330" y="120" width="200" height="70" fill="#ffffff" rx="3" ry="3" stroke="#cccccc" stroke-width="1" />
+  <text x="340" y="140" font-family="Consolas, monospace" font-size="12">
+    <tspan x="340" dy="0">// C++ Z-Score Scaling</tspan>
+    <tspan x="340" dy="16">x_scaled = (x - mean) /</tspan>
+    <tspan x="340" dy="16">standard_deviation;</tspan>
+  </text>
+  
+  <!-- Robust Scaling -->
+  <rect x="50" y="230" width="240" height="140" fill="#f6ffed" rx="5" ry="5" stroke="#52c41a" stroke-width="1" />
+  <text x="170" y="250" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Robust Scaling</text>
+  <text x="170" y="270" font-family="Arial" font-size="12" text-anchor="middle">Uses median and IQR</text>
+  <text x="170" y="285" font-family="Arial" font-size="12" text-anchor="middle">Robust to outliers</text>
+  
+  <rect x="70" y="290" width="200" height="70" fill="#ffffff" rx="3" ry="3" stroke="#cccccc" stroke-width="1" />
+  <text x="80" y="310" font-family="Consolas, monospace" font-size="12">
+    <tspan x="80" dy="0">// C++ Robust Scaling</tspan>
+    <tspan x="80" dy="16">x_scaled = (x - median) /</tspan>
+    <tspan x="80" dy="16">(Q3 - Q1);</tspan>
+  </text>
+  
+  <!-- Unit Vector Scaling -->
+  <rect x="310" y="230" width="240" height="140" fill="#f9f0ff" rx="5" ry="5" stroke="#722ed1" stroke-width="1" />
+  <text x="430" y="250" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Unit Vector Scaling</text>
+  <text x="430" y="270" font-family="Arial" font-size="12" text-anchor="middle">Scales to unit norm (length=1)</text>
+  <text x="430" y="285" font-family="Arial" font-size="12" text-anchor="middle">Used for cosine similarity</text>
+  
+  <rect x="330" y="290" width="200" height="70" fill="#ffffff" rx="3" ry="3" stroke="#cccccc" stroke-width="1" />
+  <text x="340" y="310" font-family="Consolas, monospace" font-size="12">
+    <tspan x="340" dy="0">// C++ Unit Vector Scaling</tspan>
+    <tspan x="340" dy="16">double norm = sqrt(x*x + y*y);</tspan>
+    <tspan x="340" dy="16">x_scaled = x / norm;</tspan>
+  </text>
+</svg>

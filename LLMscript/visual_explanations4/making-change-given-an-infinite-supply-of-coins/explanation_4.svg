@@ -1,0 +1,12 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <title>Making Change - Concept 4: Optimal Substructure</title>
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Optimal Substructure</text>
+
+  <text x="20" y="70" font-size="14">If the optimal solution to make 41¢ includes a 25¢ coin,</text>
+  <text x="20" y="90" font-size="14">then the remaining coins must be the optimal solution</text>
+  <text x="20" y="110" font-size="14">for 16¢ (41¢ - 25¢ = 16¢).</text>
+
+  <text x="20" y="150" font-size="14" font-style="italic">The optimal solution to the whole problem is built</text>
+  <text x="20" y="170" font-size="14" font-style="italic">from optimal solutions to its subproblems.</text>
+</svg>

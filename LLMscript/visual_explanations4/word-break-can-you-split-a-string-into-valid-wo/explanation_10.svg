@@ -1,0 +1,14 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">10. Example with False Result</text>
+    <text x="20" y="60">Input: "catsandog"</text>
+    <text x="20" y="80">Dictionary: {"cats", "dog", "sand", "and", "cat"}</text>
+
+    <rect x="20" y="110" width="360" height="20" stroke="black" fill="white"/>
+    <text x="25" y="125" font-size="12">c  a  t  s  a  n  d  o  g</text>
+    <rect x="20" y="140" width="360" height="40"  stroke="black"/>
+    <text x="25" y="165" font-size="14">T  F  F  T  F  F  T  F  F</text>
+
+    <text x="20" y="190">dp[8] (last element) is False.</text>
+    <text x="20" y="215">"catsandog" cannot be split into dictionary words.</text>
+</svg>

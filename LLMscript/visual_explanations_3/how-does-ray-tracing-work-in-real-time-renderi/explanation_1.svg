@@ -1,0 +1,13 @@
+<svg width="400" height="300" viewport="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+
+  <circle cx="50" cy="150" r="10" fill="blue" />
+  <text x="40" y="180" font-size="12">Eye/Camera</text>
+
+  <rect x="350" y="100" width="20" height="80" fill="green" />
+  <text x="340" y="90" font-size="12">Object</text>
+
+  <line x1="60" y1="150" x2="350" y2="140" stroke="red" stroke-width="2" />
+    <polygon points="340,135 350,140 340,145" fill="red"/>
+  <text x="150" y="130" font-size="14">Primary Ray</text>
+</svg>

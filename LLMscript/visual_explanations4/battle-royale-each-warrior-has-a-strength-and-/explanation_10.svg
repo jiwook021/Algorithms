@@ -1,0 +1,30 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="400" height="300" fill="#f0f0f0"/>
+    <text x="20" y="30" font-size="18" font-weight="bold">Concept 10: Tournament Bracket Analogy</text>
+
+    <line x1="50" y1="60" x2="100" y2="60" stroke="black"/>
+    <line x1="50" y1="100" x2="100" y2="100" stroke="black"/>
+    <line x1="100" y1="60" x2="100" y2="100" stroke="black"/>
+    <line x1="100" y1="80" x2="150" y2="80" stroke="black"/>
+
+    <line x1="200" y1="60" x2="250" y2="60" stroke="black"/>
+    <line x1="200" y1="100" x2="250" y2="100" stroke="black"/>
+    <line x1="250" y1="60" x2="250" y2="100" stroke="black"/>
+    <line x1="250" y1="80" x2="200" y2="80" stroke="black"/>
+
+    <line x1="150" y1="80" x2="200" y2="80" stroke="black"/>
+      <line x1="175" y1="80" x2="175" y2="150" stroke="black"/>
+        <line x1="175" y1="150" x2="250" y2="150" stroke="black"/>
+    <text x="45" y="65" font-size="10">A</text>
+    <text x="45" y="105" font-size="10">B</text>
+       <text x="255" y="65" font-size="10">C</text>
+    <text x="255" y="105" font-size="10">D</text>
+
+      <text x="95" y="45" font-size="10">Round 1</text>
+     <text x="165" y="45" font-size="10">Round 2</text>
+        <text x="255" y="155" font-size="14" fill="red" >Winner</text>
+
+      <text x="20" y="200" font-size="14">It's like a single-elimination tournament.</text>
+        <text x="20" y="220" font-size="12">Each match eliminates one participant.</text>
+      <text x="20" y="240" font-size="12">The process continues until a single champion remains.</text>
+</svg>

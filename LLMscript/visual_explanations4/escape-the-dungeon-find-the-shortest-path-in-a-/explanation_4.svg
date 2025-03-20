@@ -1,0 +1,37 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="20" font-weight="bold">4. Visiting Neighbors</text>
+
+  <!-- Maze Grid (Simplified) -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="50" y="0" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="100" y="0" width="50" height="50" fill="white" stroke="black"/>
+
+    <rect x="0" y="50" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="50" y="50" width="50" height="50" fill="lightblue" stroke="black"/>
+    <rect x="100" y="50" width="50" height="50" fill="white" stroke="black"/>
+
+     <rect x="0" y="100" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="50" y="100" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="100" y="100" width="50" height="50" fill="white" stroke="black"/>
+
+    <!-- Current Cell and Neighbors -->
+    <circle cx="75" cy="75" r="15" fill="yellow"/>
+     <text x="65" y="80" font-size="12">Current</text>
+
+    <polygon points="75,55 85,75 65,75" fill="orange" />
+     <polygon points="75,95 85,75 65,75" fill="orange" />
+     <polygon points="55,75 75,85 75,65" fill="orange" />
+     <polygon points="95,75 75,85 75,65" fill="orange" />
+
+
+     <text x="80" y="30" font-size="14">Up</text>
+    <text x="110" y="80" font-size="14">Right</text>
+    <text x="60" y="130" font-size="14">Down</text>
+      <text x="10" y="80" font-size="14">Left</text>
+  </g>
+    <text x="20" y="220" font-size="14">BFS checks each neighbor (up, down, left, right).</text>
+   <text x="20" y="240" font-size="14">It only visits valid, unvisited cells.</text>
+
+</svg>

@@ -1,0 +1,49 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Activation Functions: Introducing Non-linearity</text>
+  
+  <!-- Neuron -->
+  <circle cx="150" cy="200" r="50" fill="#6ab7ff" stroke="#3273dc" stroke-width="2" />
+  <text x="150" y="205" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Neuron</text>
+  
+  <!-- Input arrow -->
+  <line x1="50" y1="200" x2="90" y2="200" stroke="#333" stroke-width="2" />
+  <polygon points="90,200 80,195 80,205" fill="#333" />
+  <text x="70" y="190" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Input</text>
+  
+  <!-- Linear output -->
+  <line x1="200" y1="200" x2="250" y2="200" stroke="#333" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="225" y="190" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Linear</text>
+  
+  <!-- Activation function box -->
+  <rect x="250" y="170" width="100" height="60" fill="#ffd166" stroke="#ff9f1c" stroke-width="2" rx="10" ry="10" />
+  <text x="300" y="205" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Activation</text>
+  <text x="300" y="225" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Function</text>
+  
+  <!-- Output arrow -->
+  <line x1="350" y1="200" x2="400" y2="200" stroke="#333" stroke-width="2" />
+  <polygon points="400,200 390,195 390,205" fill="#333" />
+  <text x="375" y="190" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Non-linear</text>
+  <text x="375" y="220" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Output</text>
+  
+  <!-- Explanation text -->
+  <rect x="50" y="280" width="500" height="100" fill="#e9ecef" rx="5" ry="5" />
+  <text x="60" y="300" font-family="Arial" font-size="14" fill="#333">Why non-linearity matters:</text>
+  <text x="60" y="325" font-family="Arial" font-size="12" fill="#333">• Without activation functions, neural networks would only compute linear</text>
+  <text x="60" y="345" font-family="Arial" font-size="12" fill="#333">  transformations, regardless of how many layers they have.</text>
+  <text x="60" y="365" font-family="Arial" font-size="12" fill="#333">• Activation functions allow networks to learn complex, non-linear relationships</text>
+  <text x="60" y="385" font-family="Arial" font-size="12" fill="#333">  in data, making them capable of solving sophisticated problems.</text>
+  
+  <!-- Code example -->
+  <rect x="420" y="100" width="160" height="160" fill="#e0e0e0" stroke="#999" stroke-width="1" rx="5" ry="5" />
+  <text x="430" y="120" font-family="Courier New" font-size="12" fill="#333">// C++ example</text>
+  <text x="430" y="140" font-family="Courier New" font-size="12" fill="#333">double relu(double x) {</text>
+  <text x="430" y="160" font-family="Courier New" font-size="12" fill="#333">  return std::max(0.0, x);</text>
+  <text x="430" y="180" font-family="Courier New" font-size="12" fill="#333">}</text>
+  <text x="430" y="200" font-family="Courier New" font-size="12" fill="#333">double output = relu(</text>
+  <text x="430" y="220" font-family="Courier New" font-size="12" fill="#333">  weights * inputs</text>
+  <text x="430" y="240" font-family="Courier New" font-size="12" fill="#333">  + bias);</text>
+</svg>

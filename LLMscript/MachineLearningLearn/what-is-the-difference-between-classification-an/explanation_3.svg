@@ -1,0 +1,56 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f9fa"/>
+      <stop offset="100%" stop-color="#e9ecef"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg-gradient2)" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">Output Representation</text>
+  
+  <!-- Classification Output -->
+  <rect x="50" y="50" width="230" height="320" fill="#6c5ce7" opacity="0.8" rx="10" ry="10"/>
+  <text x="165" y="80" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Classification Output</text>
+  
+  <!-- Classification Probability Distribution -->
+  <rect x="80" y="100" width="40" height="180" fill="#a29bfe" rx="5" ry="5"/>
+  <rect x="130" y="160" width="40" height="120" fill="#a29bfe" rx="5" ry="5"/>
+  <rect x="180" y="220" width="40" height="60" fill="#a29bfe" rx="5" ry="5"/>
+  
+  <text x="100" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Class A</text>
+  <text x="150" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Class B</text>
+  <text x="200" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Class C</text>
+  
+  <text x="165" y="330" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Discrete probability distribution</text>
+  <text x="165" y="350" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Highest probability wins</text>
+  
+  <!-- Regression Output -->
+  <rect x="320" y="50" width="230" height="320" fill="#00b894" opacity="0.8" rx="10" ry="10"/>
+  <text x="435" y="80" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Regression Output</text>
+  
+  <!-- Regression Line -->
+  <polyline points="350,250 370,200 390,210 410,180 430,150 450,140 470,120 490,100" 
+           stroke="#55efc4" stroke-width="3" fill="none"/>
+  
+  <!-- Prediction Point -->
+  <circle cx="450" cy="140" r="8" fill="#ff7675"/>
+  <line x1="450" y1="140" x2="450" y2="250" stroke="#ff7675" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="350" y1="250" x2="490" y2="250" stroke="#55efc4" stroke-width="2"/>
+  
+  <text x="450" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Input x</text>
+  <text x="340" y="140" font-family="Arial" font-size="12" text-anchor="end" fill="white">Predicted y</text>
+  
+  <text x="435" y="330" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Continuous output value</text>
+  <text x="435" y="350" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Exact numeric prediction</text>
+  
+  <!-- Code Examples -->
+  <rect x="50" y="380" width="230" height="15" fill="#6c5ce7" opacity="0.6" rx="3" ry="3"/>
+  <text x="165" y="392" font-family="Courier New" font-size="10" text-anchor="middle" fill="white">return predictedClass; // 0, 1, 2...</text>
+  
+  <rect x="320" y="380" width="230" height="15" fill="#00b894" opacity="0.6" rx="3" ry="3"/>
+  <text x="435" y="392" font-family="Courier New" font-size="10" text-anchor="middle" fill="white">return predictedValue; // 42.57...</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg width="400" height="220" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="220" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">9. Example: [10, 2, -5]</text>
+  <text x="20" y="50" font-size="14">Initial: [10, 2, -5]</text>
+    <text x="20" y="70" font-size="14">Stack: [10]</text>
+  <text x="20" y="90" font-size="14">Stack: [10, 2]</text>
+    <text x="20" y="110" font-size="14">2 &lt; abs(-5), pop 2. Stack: [10]</text>
+  <text x="20" y="130" font-size="14">10 > abs(-5), so -5 is destroyed.</text>
+      <text x="20" y="150" font-size="14">Stack: [10]</text>
+  <text x="20" y="190" font-size="14" fill="green">Result: [10]</text>
+</svg>

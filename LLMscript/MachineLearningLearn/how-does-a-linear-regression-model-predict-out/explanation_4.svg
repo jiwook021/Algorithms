@@ -1,0 +1,45 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text { font-family: Arial, sans-serif; }
+    .title { font-size: 20px; font-weight: bold; }
+    .subtitle { font-size: 16px; font-style: italic; }
+    .code { font-family: monospace; font-size: 14px; }
+    .arrow { stroke: #2c3e50; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="#e8f4f8" />
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" class="title">Linear Regression: Mathematical Representation</text>
+  
+  <!-- Equation Box -->
+  <rect x="100" y="70" width="400" height="100" rx="10" fill="white" stroke="#3498db" stroke-width="2" />
+  
+  <!-- Equations -->
+  <text x="300" y="100" text-anchor="middle" font-size="18">Single Feature: y = β₀ + β₁x</text>
+  <text x="300" y="140" text-anchor="middle" font-size="18">Multiple Features: y = β₀ + β₁x₁ + β₂x₂ + ... + βₙxₙ</text>
+  
+  <!-- Matrix Form Box -->
+  <rect x="150" y="200" width="300" height="140" rx="10" fill="white" stroke="#e74c3c" stroke-width="2" />
+  <text x="300" y="225" text-anchor="middle" class="subtitle">Matrix Form</text>
+  
+  <!-- Matrix equation -->
+  <text x="300" y="255" text-anchor="middle" font-size="16">y = Xβ</text>
+  
+  <text x="300" y="285" text-anchor="middle" font-size="14">where:</text>
+  <text x="300" y="310" text-anchor="middle" font-size="14">y = vector of outputs</text>
+  <text x="300" y="330" text-anchor="middle" font-size="14">X = matrix of input features</text>
+  <text x="300" y="350" text-anchor="middle" font-size="14">β = vector of coefficients</text>
+  
+  <!-- C++ Code Reference -->
+  <rect x="50" y="360" width="500" height="30" rx="5" fill="#f0f0f0" stroke="#2c3e50" />
+  <text x="300" y="380" text-anchor="middle" class="code">// C++: double y_pred = beta0 + beta1 * x1 + beta2 * x2 + ... + betaN * xN;</text>
+</svg>

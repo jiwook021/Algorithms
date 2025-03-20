@@ -1,0 +1,14 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">4. Smashing the Stones</text>
+
+  <circle cx="100" cy="100" r="40" fill="lightgreen" stroke="black" />
+  <text x="90" y="105" font-size="16">8</text>
+  <circle cx="200" cy="100" r="30" fill="lightblue" stroke="black" />
+  <text x="190" y="105" font-size="16">5</text>
+
+  <polygon points="150,80 170,100 150,120 130,100" fill="orange" />
+    <text x="135" y="105" font-size="14" fill="black">SMASH</text>
+
+  <text x="20" y="180" font-size="14">The two heaviest stones are selected for smashing.</text>
+</svg>

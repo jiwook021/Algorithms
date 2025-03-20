@@ -1,0 +1,11 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="200" height="200" fill="lightgray"/>
+    <text x="10" y="30" font-size="16">10. C++ Code Idea</text>
+    <text x="10" y="60" font-size="12">Use std::queue</text>
+    <text x="10" y="80" font-size="12">Store cell coordinates</text>
+    <text x="10" y="100" font-size="12">Check for walls</text>
+    <text x="10" y="120" font-size="12">Handle teleporters</text>
+    <text x="10" y="140" font-size="12">Track visited cells</text>
+      <text x="10" y="180" font-size="10">Conceptual overview.</text>
+
+</svg>

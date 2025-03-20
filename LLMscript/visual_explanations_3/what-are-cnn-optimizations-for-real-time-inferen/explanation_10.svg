@@ -1,0 +1,19 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">10. Compiler Optimizations</text>
+
+    <rect x="50" y="80" width="100" height="80" fill="#8bc34a"/>
+    <text x="65" y="120" fill="white">Original Code</text>
+    <path d="M160 120 L200 120" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <rect x="210" y="80" width="140" height="80" fill="#4caf50"/>
+    <text x="220" y="120" fill="white">Optimized Code (Loop Unrolling, Vectorization)</text>
+
+    <text x="50" y="50" font-size="14">Compiler</text>
+
+        <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

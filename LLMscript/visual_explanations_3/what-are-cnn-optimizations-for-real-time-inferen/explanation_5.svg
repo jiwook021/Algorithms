@@ -1,0 +1,19 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="250" fill="#f0f0f0"/>
+    <text x="20" y="30" font-size="18" font-weight="bold">5.  Weight Sharing</text>
+
+    <rect x="50" y="70" width="80" height="80" fill="#f44336" stroke="black">
+        <text x="80" y="110" fill="white">W1</text>
+    </rect>
+
+    <rect x="150" y="70" width="80" height="80" fill="#f44336" stroke="black">
+      <text x="180" y="110" fill="white">W1</text>
+    </rect>
+
+    <rect x="250" y="70" width="80" height="80" fill="#f44336" stroke="black">
+       <text x="280" y="110" fill="white">W1</text>
+    </rect>
+
+    <text x="50" y="170" font-size="12">Same weights used in multiple layers</text>
+    <text x="50" y="190" font-size="12">or parts of the network.  Reduces model size.</text>
+</svg>

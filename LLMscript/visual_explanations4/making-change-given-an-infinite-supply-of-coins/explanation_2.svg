@@ -1,0 +1,18 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <title>Making Change - Concept 2: Greedy Approach</title>
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Greedy Approach</text>
+
+    <text x="20" y="60" font-size="14">Target: 41¢</text>
+
+  <circle cx="70" cy="100" r="20" fill="#e67e22" /> <text x="65" y="105" font-size="14" fill="white">25¢</text>
+  <text x="95" y="105" font-size="14">+</text>
+  <circle cx="130" cy="100" r="15" fill="#d35400" /> <text x="125" y="105" font-size="14" fill="white">10¢</text>
+     <text x="155" y="105" font-size="14">+</text>
+  <circle cx="190" cy="100" r="12" fill="#c0392b" /> <text x="185" y="105" font-size="14" fill="white">5¢</text>
+      <text x="215" y="105" font-size="14">+</text>
+   <circle cx="250" cy="100" r="10" fill="#9b59b6" /> <text x="245" y="105" font-size="14" fill="white">1¢</text>
+
+    <text x="20" y="145" font-size="14">Always choose the largest possible coin first.</text>
+  <text x="20" y="170" font-size="14">Result: 4 coins (25¢ + 10¢ + 5¢ + 1¢ = 41¢)</text>
+</svg>

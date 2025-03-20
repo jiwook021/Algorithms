@@ -1,0 +1,20 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" />
+        </marker>
+    </defs>
+  <rect width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Concept 5: Checking for Palindromes</text>
+  <text x="20" y="60">String: "racecar"</text>
+  <text x="20" y="90">Check from both ends, moving inwards:</text>
+
+  <text x="20" y="130" font-size="16">r  a  c  e  c  a  r</text>
+  <line x1="20" y1="150" x2="140" y2="150" stroke="blue" stroke-width="2" marker-start="url(#arrowhead)" marker-end="url(#arrowhead)"/>
+    <text x="70" y="170" fill="blue">Match!</text>
+
+  <text x="20" y="190" font-size="16">r  a  c  e  c  a  r</text>
+  <line x1="40" y1="210" x2="120" y2="210" stroke="green" stroke-width="2" marker-start="url(#arrowhead)" marker-end="url(#arrowhead)"/>
+    <text x="70" y="230" fill="green">Match!</text>
+</svg>

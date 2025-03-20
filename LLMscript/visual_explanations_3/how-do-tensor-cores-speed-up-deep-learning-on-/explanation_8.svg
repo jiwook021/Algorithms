@@ -1,0 +1,25 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+ <text x="20" y="25" fill="black" font-size="14" font-weight="bold">8. Parallelism</text>
+  <g transform="translate(50,50)">
+    <rect width="50" height="50" fill="lightgreen" stroke="black"/>
+      <text x="25" y="25" fill="white" text-anchor="middle">TC</text>
+    <text x="25" y="80" text-anchor="middle" fill="black">1</text>
+  </g>
+  <g transform="translate(120,50)">
+    <rect width="50" height="50" fill="lightgreen" stroke="black"/>
+          <text x="25" y="25" fill="white" text-anchor="middle">TC</text>
+    <text x="25" y="80" text-anchor="middle" fill="black">2</text>
+  </g>
+    <g transform="translate(190,50)">
+    <rect width="50" height="50" fill="lightgreen" stroke="black"/>
+              <text x="25" y="25" fill="white" text-anchor="middle">TC</text>
+    <text x="25" y="80" text-anchor="middle" fill="black">3</text>
+  </g>
+    <g transform="translate(260,50)">
+    <rect width="50" height="50" fill="lightgreen" stroke="black"/>
+              <text x="25" y="25" fill="white" text-anchor="middle">TC</text>
+    <text x="25" y="80" text-anchor="middle" fill="black">4</text>
+  </g>
+  <text x="150" y="150" text-anchor="middle">Multiple Tensor Cores operate simultaneously</text>
+
+</svg>

@@ -1,0 +1,15 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">5. Iteration: Term 2 to Term 3</text>
+  <text x="20" y="60" font-size="14">Now we have '11'. We "look" and "say": "Two 1s".</text>
+  <rect x="50" y="90" width="40" height="40" fill="#FFC107" stroke="black" stroke-width="2"/>
+  <text x="60" y="115" font-size="18" fill="black">11</text>
+   <path d="M95 110 C 145 60, 195 60, 245 110" stroke="blue" stroke-width="3" fill="none"/>
+   <polygon points="245,110 235,100 235,120" fill="blue"/>
+   <text x="150" y="90" font-size="14" fill="blue">"Look"</text>
+   <text x="265" y="115" font-size="18" fill="red">Two 1s</text>
+    <path d="M320 110 L 360 110" stroke="green" stroke-width="4"/>
+    <polygon points="360,110 350,105 350,115" fill="green"/>
+   <rect x="50" y="150" width="40" height="40" fill="#9CCC65" stroke="black" stroke-width="2"/>
+   <text x="60" y="175" font-size="18" fill="black">21</text>
+</svg>

@@ -1,0 +1,77 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Cross-Validation: Detecting &amp; Preventing Overfitting</text>
+  
+  <!-- Main diagram area -->
+  <rect x="50" y="60" width="500" height="280" fill="white" stroke="#ddd" stroke-width="1" rx="5" />
+  
+  <!-- Dataset visualization -->
+  <rect x="70" y="80" width="120" height="80" fill="#E8F5E9" stroke="#81C784" stroke-width="2" rx="5" />
+  <text x="130" y="125" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Complete</text>
+  <text x="130" y="145" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Dataset</text>
+  
+  <!-- Arrows -->
+  <path d="M190,120 L220,120" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- K-Fold Cross-Validation -->
+  <rect x="230" y="70" width="140" height="200" fill="#E3F2FD" stroke="#64B5F6" stroke-width="2" rx="5" />
+  <text x="300" y="90" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">K-Fold Cross-Validation</text>
+  
+  <!-- Folds -->
+  <rect x="240" y="100" width="120" height="30" fill="#FFD180" stroke="#FFB74D" stroke-width="1" />
+  <rect x="240" y="130" width="120" height="30" fill="#B3E5FC" stroke="#29B6F6" stroke-width="1" />
+  <rect x="240" y="160" width="120" height="30" fill="#B3E5FC" stroke="#29B6F6" stroke-width="1" />
+  <rect x="240" y="190" width="120" height="30" fill="#B3E5FC" stroke="#29B6F6" stroke-width="1" />
+  <rect x="240" y="220" width="120" height="30" fill="#B3E5FC" stroke="#29B6F6" stroke-width="1" />
+  
+  <text x="300" y="120" font-family="Arial" font-size="12" text-anchor="middle">Validation Fold</text>
+  <text x="300" y="150" font-family="Arial" font-size="12" text-anchor="middle">Training Fold</text>
+  <text x="300" y="180" font-family="Arial" font-size="12" text-anchor="middle">Training Fold</text>
+  <text x="300" y="210" font-family="Arial" font-size="12" text-anchor="middle">Training Fold</text>
+  <text x="300" y="240" font-family="Arial" font-size="12" text-anchor="middle">Training Fold</text>
+  
+  <!-- Arrow to result -->
+  <path d="M370,120 L400,120" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Results -->
+  <rect x="410" y="70" width="120" height="200" fill="#F3E5F5" stroke="#BA68C8" stroke-width="2" rx="5" />
+  <text x="470" y="90" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Results</text>
+  
+  <!-- Model evaluation metrics -->
+  <rect x="420" y="100" width="100" height="25" fill="#E1BEE7" stroke="#9C27B0" stroke-width="1" rx="3" />
+  <text x="470" y="117" font-family="Arial" font-size="12" text-anchor="middle">Fold 1 Error: 0.15</text>
+  
+  <rect x="420" y="130" width="100" height="25" fill="#E1BEE7" stroke="#9C27B0" stroke-width="1" rx="3" />
+  <text x="470" y="147" font-family="Arial" font-size="12" text-anchor="middle">Fold 2 Error: 0.12</text>
+  
+  <rect x="420" y="160" width="100" height="25" fill="#E1BEE7" stroke="#9C27B0" stroke-width="1" rx="3" />
+  <text x="470" y="177" font-family="Arial" font-size="12" text-anchor="middle">Fold 3 Error: 0.18</text>
+  
+  <rect x="420" y="190" width="100" height="25" fill="#E1BEE7" stroke="#9C27B0" stroke-width="1" rx="3" />
+  <text x="470" y="207" font-family="Arial" font-size="12" text-anchor="middle">Fold 4 Error: 0.14</text>
+  
+  <rect x="420" y="220" width="100" height="25" fill="#E1BEE7" stroke="#9C27B0" stroke-width="1" rx="3" />
+  <text x="470" y="237" font-family="Arial" font-size="12" text-anchor="middle">Fold 5 Error: 0.16</text>
+  
+  <!-- Final result -->
+  <rect x="230" y="290" width="300" height="40" fill="#FFF9C4" stroke="#FBC02D" stroke-width="2" rx="5" />
+  <text x="380" y="315" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Average Validation Error: 0.15 ± 0.02</text>
+  
+  <!-- Explanation -->
+  <text x="300" y="350" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">
+    Cross-validation provides a more reliable estimate of model performance
+  </text>
+  <text x="300" y="370" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">
+    and helps detect overfitting by testing on multiple validation sets
+  </text>
+  
+  <!-- Arrow definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+</svg>

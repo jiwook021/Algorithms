@@ -1,0 +1,16 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="100" height="100" fill="lightgray" />
+   <circle cx="80" cy="80" r="5" fill="red"/>
+  <rect x="200" y="50" width="100" height="100" fill="lightgray" />
+  <circle cx="230" cy="90" r="5" fill="red" />
+  <line x1="80" y1="80" x2="230" y2="90" stroke="blue" stroke-width="2" marker-end="url(#arrowhead)" />
+    <text x="120" y="40" font-size="14" font-weight='bold'>Brightness Constancy Assumption</text>
+  <text x="150" y="130" font-size="10">Feature</text>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6"
+    refX="0" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="blue" />
+    </marker>
+  </defs>
+</svg>

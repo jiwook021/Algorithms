@@ -1,0 +1,22 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">5. Collision Outcome: Equal Size</text>
+
+  <circle cx="80" cy="80" r="15" fill="blue" />
+  <text x="75" y="85" font-size="12" fill="white">3</text>
+  <path d="M100 80 L130 80" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <circle cx="200" cy="80" r="15" fill="red" />
+  <text x="195" y="85" font-size="12" fill="white">-3</text>
+  <path d="M180 80 L150 80" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+   <text x="140" y="120" font-size="20">=</text>
+   <text x="260" y="120" font-size="20" >Both destroyed</text>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+    refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+   <text x="20" y="170" font-size="12" fill="gray">Both asteroids are destroyed if they have equal magnitude.</text>
+</svg>

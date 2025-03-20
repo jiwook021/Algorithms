@@ -1,0 +1,25 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">6.  Modular Arithmetic - The 'mod'</text>
+
+  <circle cx="200" cy="120" r="80" stroke="black" stroke-width="2" fill="white" />
+
+  <text x="195" y="60" font-size="12">0</text>
+    <text x="250" y="80" font-size="12">1</text>
+   <text x="280" y="125" font-size="12">2</text>
+    <text x="250" y="170" font-size="12">3</text>
+     <text x="195" y="200" font-size="12">4</text>
+      <text x="130" y="170" font-size="12">5</text>
+    <text x="100" y="125" font-size="12">6</text>
+  <text x="130" y="80" font-size="12">7</text>
+
+  <text x="20" y="230" font-size="14">m = 8 (Modulus)</text>
+
+    <text x="50" y="40" font-size="14">11 mod 8 = 3</text>
+    <path d="M115 38 L195 120" stroke="red" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <defs>
+   <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" /></marker>
+  </defs>
+    <text x="20" y="15" font-size="12" fill="darkblue">mod gives the remainder of a division.</text>
+</svg>

@@ -1,1 +1,0 @@
-How does **I2C arbitration work**, and what happens when two devices try to communicate at the same time?

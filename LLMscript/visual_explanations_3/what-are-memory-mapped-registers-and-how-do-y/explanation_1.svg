@@ -1,0 +1,22 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="200" height="250" fill="#ADD8E6" stroke="black" stroke-width="2"/>
+  <text x="100" y="80" font-size="20" font-weight="bold">CPU</text>
+  <rect x="350" y="50" width="200" height="250" fill="#90EE90" stroke="black" stroke-width="2"/>
+  <text x="380" y="80" font-size="20" font-weight="bold">Peripheral Device</text>
+  <text x="380" y="120" font-size="16">(e.g., LED, Motor)</text>
+
+  <rect x="100" y="150" width="100" height="30" fill="white" stroke="black"/>
+  <text x="110" y="170">Program</text>
+
+  <line x1="250" y1="165" x2="350" y2="165" stroke="black" stroke-width="3" marker-end="url(#arrowhead)"/>
+ <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+    refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+  <text x="270" y="150" font-size="14">Memory Access</text>
+
+  <text x="200" y="350" font-size="24" font-weight="bold">1. Overview: CPU and Peripheral</text>
+  <text x="50" y="380" font-size="16">The CPU communicates with peripherals using memory-mapped registers.</text>
+</svg>

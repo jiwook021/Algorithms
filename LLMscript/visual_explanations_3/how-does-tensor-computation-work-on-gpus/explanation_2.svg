@@ -1,0 +1,58 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="600" height="400" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="24" font-weight="bold">2. Data Parallelism</text>
+
+  <!-- Input Tensor -->
+  <g transform="translate(50,80)">
+    <rect width="40" height="40" fill="#ffb3ba" stroke="black" />
+    <rect x="40" width="40" height="40" fill="#ffb3ba" stroke="black" />
+    <rect x="80" width="40" height="40" fill="#ffb3ba" stroke="black" />
+    <rect x="120" width="40" height="40" fill="#ffb3ba" stroke="black" />
+      <text x="40" y="-10" font-size="16">Input Tensor</text>
+  </g>
+
+  <!-- GPU Cores -->
+  <g transform="translate(50,180)">
+    <rect width="40" height="40" fill="#baffc9" stroke="black" />
+    <text x="10" y="25" font-size="12">Core 1</text>
+  </g>
+  <g transform="translate(90,180)">
+    <rect width="40" height="40" fill="#baffc9" stroke="black" />
+    <text x="10" y="25" font-size="12">Core 2</text>
+  </g>
+  <g transform="translate(130,180)">
+    <rect width="40" height="40" fill="#baffc9" stroke="black" />
+    <text x="10" y="25" font-size="12">Core 3</text>
+  </g>
+   <g transform="translate(170,180)">
+    <rect width="40" height="40" fill="#baffc9" stroke="black" />
+    <text x="10" y="25" font-size="12">Core 4</text>
+  </g>
+
+  <!-- Arrows indicating data distribution -->
+  <polygon points="70,125 70,170" fill="black" />
+   <polygon points="65,165 70,175 75,165" fill="black" />
+
+  <polygon points="110,125 110,170" fill="black" />
+   <polygon points="105,165 110,175 115,165" fill="black" />
+
+   <polygon points="150,125 150,170" fill="black" />
+   <polygon points="145,165 150,175 155,165" fill="black" />
+
+      <polygon points="190,125 190,170" fill="black" />
+   <polygon points="185,165 190,175 195,165" fill="black" />
+
+
+  <!-- Output Tensor (Illustrative) -->
+ <g transform="translate(50,280)">
+    <rect width="40" height="40" fill="#fae6b4" stroke="black" />
+    <rect x="40" width="40" height="40" fill="#fae6b4" stroke="black" />
+    <rect x="80" width="40" height="40" fill="#fae6b4" stroke="black" />
+    <rect x="120" width="40" height="40" fill="#fae6b4" stroke="black" />
+      <text x="40" y="-10" font-size="16">Output Tensor</text>
+  </g>
+
+  <text x="250" y="200" font-size="16">Same operation applied</text>
+  <text x="250" y="220" font-size="16">to different data chunks</text>
+  <text x="250" y="240" font-size="16">in parallel.</text>
+</svg>

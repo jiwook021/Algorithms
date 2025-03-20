@@ -1,0 +1,17 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <title>Making Change - Concept 8: Recurrence Relation</title>
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Recurrence Relation</text>
+
+    <text x="20" y="60" font-size="16">dp[i] = min(dp[i - coin] + 1)  for each coin ≤ i</text>
+      <text x="20" y="85" font-size="12"> where:</text>
+    <text x="30" y="105" font-size="12"> dp[i] is min coins to make amount i </text>
+      <text x="30" y="125" font-size="12"> coin is the value of a coin (1, 5, 10, 25) </text>
+
+    <text x="20" y="155" font-size="14">Example: To find dp[6]:</text>
+        <text x="40" y="180" font-size="14">dp[6] = min(dp[6-1] + 1, dp[6-5] + 1)</text>
+        <text x="40" y="200" font-size="14">dp[6] = min(dp[5] + 1, dp[1] + 1)</text>
+
+    <text x="20" y="235" font-size="14">We consider using each coin and take the minimum.</text>
+     <text x="20" y="260" font-size="14">This builds upon previously calculated values.</text>
+</svg>

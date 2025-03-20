@@ -1,0 +1,54 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Bias-Variance Tradeoff in Model Complexity</text>
+  
+  <!-- Coordinate system -->
+  <line x1="100" y1="300" x2="500" y2="300" stroke="#333" stroke-width="2" />
+  <line x1="100" y1="300" x2="100" y2="100" stroke="#333" stroke-width="2" />
+  
+  <!-- X-axis label -->
+  <text x="300" y="330" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Model Complexity</text>
+  <text x="100" y="320" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Simple</text>
+  <text x="500" y="320" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Complex</text>
+  
+  <!-- Y-axis label -->
+  <text x="70" y="200" font-family="Arial" font-size="16" text-anchor="middle" fill="#333" transform="rotate(-90, 70, 200)">Error</text>
+  <text x="120" y="110" font-family="Arial" font-size="12" text-anchor="start" fill="#333">High</text>
+  <text x="120" y="300" font-family="Arial" font-size="12" text-anchor="start" fill="#333">Low</text>
+  
+  <!-- Bias curve -->
+  <path d="M 100,150 Q 200,220 500,280" fill="none" stroke="#3366cc" stroke-width="3" />
+  <text x="150" y="160" font-family="Arial" font-size="14" font-weight="bold" fill="#3366cc">Bias</text>
+  
+  <!-- Variance curve -->
+  <path d="M 100,280 Q 300,260 500,120" fill="none" stroke="#ff9900" stroke-width="3" />
+  <text x="450" y="130" font-family="Arial" font-size="14" font-weight="bold" fill="#ff9900">Variance</text>
+  
+  <!-- Total error curve -->
+  <path d="M 100,230 Q 180,200 300,180 Q 420,170 500,200" fill="none" stroke="#cc3366" stroke-width="3" />
+  <text x="300" y="165" font-family="Arial" font-size="14" font-weight="bold" fill="#cc3366">Total Error</text>
+  
+  <!-- Optimal point -->
+  <circle cx="300" cy="180" r="8" fill="#cc3366" />
+  <line x1="300" y1="180" x2="300" y2="300" stroke="#333" stroke-dasharray="5,5" />
+  <text x="300" y="350" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Optimal Complexity</text>
+  
+  <!-- Regions -->
+  <rect x="100" y="320" width="150" height="20" fill="#ffcccc" />
+  <text x="175" y="335" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Underfitting</text>
+  
+  <rect x="350" y="320" width="150" height="20" fill="#ccccff" />
+  <text x="425" y="335" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Overfitting</text>
+  
+  <!-- Code examples -->
+  <rect x="120" y="70" width="180" height="30" rx="5" fill="#f0f0f0" stroke="#333" stroke-width="1" />
+  <text x="130" y="90" font-family="Courier New" font-size="10" fill="#333">// High bias (simple model)</text>
+  <text x="130" y="105" font-family="Courier New" font-size="10" fill="#333">y = mx + b;</text>
+  
+  <rect x="380" y="70" width="180" height="40" rx="5" fill="#f0f0f0" stroke="#333" stroke-width="1" />
+  <text x="390" y="90" font-family="Courier New" font-size="10" fill="#333">// High variance (complex)</text>
+  <text x="390" y="105" font-family="Courier New" font-size="10" fill="#333">y = a₀ + a₁x + a₂x² + ... + aₙxⁿ;</text>
+</svg>

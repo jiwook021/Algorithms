@@ -1,0 +1,28 @@
+<svg width="400" height="280" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="280" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Concept 10: Final Result</text>
+  <text x="20" y="60">String: "aaba"</text>
+
+  <rect x="20" y="90" width="30" height="30" fill="lightgray" stroke="black" />
+     <text x="30" y="110">a</text>
+  <rect x="55" y="90" width="30" height="30" fill="lightgray" stroke="black" />
+    <text x="65" y="110">a</text>
+  <rect x="90" y="90" width="30" height="30" fill="lightgray" stroke="black" />
+      <text x="100" y="110">b</text>
+      <rect x="125" y="90" width="30" height="30" fill="lightgray" stroke="black" />
+  <text x="135" y="110">a</text>
+    
+    <rect x="20" y="140" width="30" height="30" fill="lightblue" stroke="black" />
+      <text x="30" y="160">0</text>
+  <rect x="55" y="140" width="30" height="30" fill="lightblue" stroke="black" />
+    <text x="65" y="160">0</text>
+      <rect x="90" y="140" width="30" height="30" fill="lightblue" stroke="black" />
+  <text x="100" y="160">1</text>
+      <rect x="125" y="140" width="30" height="30" fill="lightblue" stroke="black" />
+      <text x="135" y="160">1</text>
+
+
+  <text x="20" y="200" fill="green">Final Cuts Array: [0, 0, 1, 1]</text>
+    <text x="20" y="230">Minimum cuts for "aaba" is cuts[3] = 1</text>
+   <text x="20" y="250">One Possible Optimal Partition: ["aa", "b", "a"] or ["aa", "ba"]</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">3. Knowledge Distillation</text>
+
+  <rect x="50" y="70" width="120" height="80" fill="#9C27B0" stroke="black"/>
+  <text x="60" y="110" fill="white">Large Teacher Model</text>
+
+  <path d="M180 110 L230 110" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <rect x="240" y="70" width="80" height="50" fill="#673AB7" stroke="black"/>
+  <text x="250" y="95" fill="white">Small Student Model</text>
+
+  <text x="50" y="170" font-size="12">Trains a smaller "student" model to mimic</text>
+  <text x="50" y="190" font-size="12">the behavior of a larger "teacher" model.</text>
+    <text x="50" y="210" font-size="12">Student model is more efficient.</text>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

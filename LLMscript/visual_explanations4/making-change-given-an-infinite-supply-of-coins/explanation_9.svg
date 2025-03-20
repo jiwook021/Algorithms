@@ -1,0 +1,16 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <title>Making Change - Concept 9: Memoization</title>
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Memoization (Top-Down DP)</text>
+
+  <text x="20" y="70" font-size="14">Store results of subproblems in a table (memo).</text>
+
+    <rect x="20" y="100" width="360" height="30" fill="#ecf0f1" stroke="black" />
+  <text x="30" y="120" font-size="14">dp[0] = 0</text>
+    <text x="100" y="120" font-size="14">dp[1] = 1</text>
+    <text x="170" y="120" font-size="14">dp[5] = 1</text>
+    <text x="240" y="120" font-size="14">dp[6] = ?</text>
+
+    <text x="20" y="150" font-size="14">Before computing, check if the result is already in memo.</text>
+     <text x="20" y="170" font-size="14">If yes, use the stored value; otherwise, compute and store.</text>
+</svg>

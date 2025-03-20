@@ -1,0 +1,44 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text { font-family: Arial, sans-serif; }
+    .title { font-size: 20px; font-weight: bold; }
+    .axis-label { font-size: 14px; }
+    .point { fill: #3498db; }
+    .line { stroke: #e74c3c; stroke-width: 3; }
+    .formula { font-family: monospace; font-size: 16px; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" class="title">Linear Regression: Basic Concept</text>
+  
+  <!-- Coordinate system -->
+  <line x1="100" y1="300" x2="500" y2="300" stroke="black" stroke-width="2" />
+  <line x1="100" y1="300" x2="100" y2="100" stroke="black" stroke-width="2" />
+  
+  <!-- Axis labels -->
+  <text x="300" y="330" text-anchor="middle" class="axis-label">Input Feature (x)</text>
+  <text x="60" y="200" text-anchor="middle" transform="rotate(-90, 60, 200)" class="axis-label">Predicted Output (y)</text>
+  
+  <!-- Data points -->
+  <circle cx="150" cy="250" r="5" class="point" />
+  <circle cx="200" cy="230" r="5" class="point" />
+  <circle cx="250" cy="210" r="5" class="point" />
+  <circle cx="300" cy="190" r="5" class="point" />
+  <circle cx="350" cy="160" r="5" class="point" />
+  <circle cx="400" cy="140" r="5" class="point" />
+  <circle cx="450" cy="120" r="5" class="point" />
+  
+  <!-- Regression line -->
+  <line x1="150" y1="260" x2="450" y2="120" class="line" />
+  
+  <!-- Formula -->
+  <rect x="150" y="50" width="300" height="30" fill="white" stroke="#2c3e50" rx="5" />
+  <text x="300" y="70" text-anchor="middle" class="formula">y = β₀ + β₁x</text>
+  
+  <!-- Explanation -->
+  <text x="300" y="360" text-anchor="middle">Linear regression finds the best-fit line through data points</text>
+  <text x="300" y="380" text-anchor="middle">to predict output values based on input features.</text>
+</svg>

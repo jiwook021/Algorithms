@@ -1,0 +1,11 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">9.  Limitations of Brute Force</text>
+    <rect x="50" y="60" width="80" height="80" fill="red" />
+    <text x="70" y="100" font-size="14">32-bit Seed</text>
+  <text x="140" y="100" font-size="12" >~ 4 Billion Possibilities</text>
+    <rect x="250" y="60" width="80" height="80" fill="darkred" />
+        <text x="270" y="100" font-size="14">64-bit Seed</text>
+          <text x="50" y="160" font-size="12" fill="darkblue">Exponential increase in possibilities with seed size!</text>
+
+</svg>

@@ -1,0 +1,13 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <title>Making Change - Concept 1: The Problem</title>
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">The Problem: Making Change</text>
+
+  <circle cx="70" cy="80" r="20" fill="#e67e22" /> <text x="65" y="85" font-size="14" fill="white">25¢</text>
+  <circle cx="120" cy="80" r="15" fill="#d35400" /> <text x="115" y="85" font-size="14" fill="white">10¢</text>
+  <circle cx="170" cy="80" r="12" fill="#c0392b" /> <text x="165" y="85" font-size="14" fill="white">5¢</text>
+  <circle cx="220" cy="80" r="10" fill="#9b59b6" /> <text x="215" y="85" font-size="14" fill="white">1¢</text>
+
+  <text x="20" y="120" font-size="14">Given unlimited coins of these denominations,</text>
+  <text x="20" y="140" font-size="14">find the *fewest* coins to make a target amount (e.g., 41¢).</text>
+</svg>

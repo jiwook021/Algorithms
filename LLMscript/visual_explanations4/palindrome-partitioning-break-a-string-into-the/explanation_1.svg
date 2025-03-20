@@ -1,0 +1,16 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Concept 1: What is a Palindrome?</text>
+  <text x="20" y="60">"madam"  ->  Reads the same forwards and backwards.</text>
+  
+  <text x="20" y="100" font-size="16">madam</text>
+   <path d="M 20 120 C 40 140, 60 140, 80 120" stroke="blue" stroke-width="2" fill="none" />
+  <path d="M 80 120 C 100 100, 120 100, 140 120" stroke="blue" stroke-width="2" fill="none" />
+   <path d="M 140 120 L 140 140" stroke="blue" stroke-width="2" fill="none" />
+
+  <text x="200" y="100" font-size="16">rotor</text>
+   <path d="M 200 120 C 220 140, 240 140, 260 120" stroke="red" stroke-width="2" fill="none" />
+  <path d="M 260 120 C 280 100, 300 100, 320 120" stroke="red" stroke-width="2" fill="none" />
+    <path d="M 320 120 L 320 140" stroke="red" stroke-width="2" fill="none" />
+
+</svg>

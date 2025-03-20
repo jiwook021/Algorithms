@@ -1,0 +1,21 @@
+<svg width="300" height="300" viewBox="0 0 300 300">
+   <rect x="0" y="0" width="300" height="300" fill="#f0f0f0" />
+  <circle cx="150" cy="150" r="5" fill="red" />
+  <circle cx="150" cy="150" r="30" fill="none" stroke="blue" stroke-width="2" />
+
+  <circle cx="180" cy="150" r="5" fill="gray" />
+  <circle cx="120" cy="150" r="5" fill="gray" />
+  <circle cx="150" cy="120" r="5" fill="lightgray" />
+ <circle cx="150" cy="180" r="5" fill="darkgray" />
+    
+     <circle cx="165" cy="128" r="5" fill="darkgray" />
+     <circle cx="175" cy="175" r="5" fill="lightgray" />
+    <circle cx="128" cy="165" r="5" fill="gray" />
+    <circle cx="175" cy="120" r="5" fill="lightgray" />
+
+  <text x="150" y="220" text-anchor="middle" fill="black">Center Pixel (p)</text>
+  <text x="150" y="240" text-anchor="middle" fill="black">Surrounding Pixels</text>
+
+  <text x="150" y="30" text-anchor="middle" font-size="16" font-weight="bold">FAST Corner Detection</text>
+     <text x="150" y="50" text-anchor="middle" font-size="12">(ORB)</text>
+</svg>

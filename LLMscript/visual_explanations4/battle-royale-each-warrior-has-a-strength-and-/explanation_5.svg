@@ -1,0 +1,22 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="400" height="200" fill="#f0f0f0"/>
+    <text x="20" y="30" font-size="18" font-weight="bold">Concept 5: Next Battle</text>
+
+    <circle cx="140" cy="100" r="20" fill="blue"/>
+    <text x="130" y="110" font-size="14" fill="white">B</text>
+    <text x="165" y="105" font-size="12">Strength: 8</text>
+
+    <circle cx="210" cy="100" r="20" fill="green"/>
+    <text x="200" y="110" font-size="14" fill="white">C</text>
+    <text x="235" y="105" font-size="12">Strength: 2</text>
+
+    <line x1="160" y1="90" x2="190" y2="110" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7"/>
+        </marker>
+    </defs>
+
+    <text x="170" y="70" font-size="14">B > C</text>
+    <text x="20" y="170" font-size="14">The remaining warriors continue to battle.</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="300" fill="#f0f0f0" />
+
+    <!-- Input Image (Simplified Hand) -->
+    <rect x="50" y="80" width="120" height="140" fill="lightgray" stroke="black" stroke-width="2"/>
+    <path d="M80 100 L90 120 L110 110 L120 130 L100 160 Z" fill="white"/>
+     <text x="60" y="160" font-size="16" fill="black">Input Image</text>
+  <polygon points="170,150 210,150" fill="black" />
+  <polygon points="200,140 210,150 200,160" fill="black" />
+
+    <!-- Thresholded Image -->
+    <rect x="230" y="80" width="120" height="140" fill="black" stroke="black" stroke-width="2"/>
+      <path d="M260 100 L270 120 L290 110 L300 130 L280 160 Z" fill="white"/>
+   <text x="235" y="160" font-size="16" fill="white">Thresholded</text>
+    <text x="120" y="250" font-size="16" fill="black">4. Segmentation: Thresholding</text>
+     <text x="70" y="270" font-size="12" fill="black">Separate foreground (hand) from background.</text>
+</svg>

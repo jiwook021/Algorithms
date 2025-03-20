@@ -1,0 +1,14 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="50" height="50" fill="blue" />
+  <text x="120" y="75" font-size="16">Object in Frame 1</text>
+  <rect x="150" y="70" width="50" height="50" fill="blue" />
+  <text x="220" y="95" font-size="16">Object in Frame 2</text>
+  <line x1="75" y1="75" x2="175" y2="95" stroke="red" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="120" y="150" font-size="18" font-weight="bold">Optical Flow: Apparent Motion</text>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+    refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="red" />
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,1 @@
+What are **memory-mapped registers**, and how do you control hardware using them?

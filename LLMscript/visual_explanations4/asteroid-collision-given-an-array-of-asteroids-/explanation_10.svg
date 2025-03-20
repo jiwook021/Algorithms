@@ -1,0 +1,13 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">10. Example: [-2, -1, 1, 2]</text>
+  <text x="20" y="50" font-size="14">Initial: [-2, -1, 1, 2]</text>
+   <text x="20" y="70" font-size="14">Stack: [-2]</text>
+  <text x="20" y="90" font-size="14">Stack: [-2, -1]</text>
+      <text x="20" y="110" font-size="14">Stack: [-2, -1, 1]</text>
+    <text x="20" y="130" font-size="14">Stack: [-2, -1, 1, 2]</text>
+    <text x="20" y="150" font-size="14">No collisions, as negative asteroids are</text>
+      <text x="20" y="170" font-size="14"> to the left of the positive ones.</text>
+
+  <text x="20" y="210" font-size="14" fill="green">Result: [-2, -1, 1, 2]</text>
+</svg>

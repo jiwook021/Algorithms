@@ -1,0 +1,8 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f8ff" />
+  <text x="20" y="30" font-size="16" font-weight="bold">Example with 'n' and 'k'</text>
+  <text x="20" y="60" font-size="14">If n = 123 and k = 3, the number is 123123123</text>
+  <rect x="20" y="80" width="250" height="40" fill="#ADD8E6" />
+  <text x="30" y="105" font-size="18">123123123</text>
+    <text x= "20" y ="140" font-size="14">Super Digit = f(f(1+2+3) * 3) </text>
+</svg>

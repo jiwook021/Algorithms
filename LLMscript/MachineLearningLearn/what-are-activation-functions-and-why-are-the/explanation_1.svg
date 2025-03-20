@@ -1,0 +1,50 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Activation Functions: Basic Concept</text>
+  
+  <!-- Neural network node -->
+  <circle cx="150" cy="200" r="50" fill="#6c5ce7" opacity="0.8"/>
+  <text x="150" y="200" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Weighted Sum</text>
+  <text x="150" y="220" font-family="Arial" font-size="14" text-anchor="middle" fill="white">∑(w·x + b)</text>
+  
+  <!-- Activation function box -->
+  <rect x="250" y="150" width="100" height="100" fill="#e17055" rx="10" ry="10" opacity="0.8"/>
+  <text x="300" y="200" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Activation</text>
+  <text x="300" y="220" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Function</text>
+  
+  <!-- Output node -->
+  <circle cx="450" cy="200" r="50" fill="#00b894" opacity="0.8"/>
+  <text x="450" y="200" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Output</text>
+  <text x="450" y="220" font-family="Arial" font-size="14" text-anchor="middle" fill="white">f(∑(w·x + b))</text>
+  
+  <!-- Arrows -->
+  <path d="M200 200 L250 200" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M350 200 L400 200" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Explanation text -->
+  <rect x="50" y="300" width="500" height="80" fill="#fff" rx="10" ry="10" stroke="#ddd" stroke-width="1"/>
+  <text x="60" y="320" font-family="Arial" font-size="14" fill="#333">
+    <tspan x="60" y="320">Activation functions transform the weighted sum of inputs into an output.</tspan>
+    <tspan x="60" y="345">They introduce non-linearity, allowing neural networks to learn complex</tspan>
+    <tspan x="60" y="370">patterns and relationships that linear models cannot capture.</tspan>
+  </text>
+  
+  <!-- Code example -->
+  <rect x="450" y="80" width="140" height="80" fill="#f1f1f1" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="460" y="100" font-family="Courier New" font-size="12" fill="#333">
+    <tspan x="460" y="100">// C++ example</tspan>
+    <tspan x="460" y="120">float activate(float x) {</tspan>
+    <tspan x="460" y="140">  return 1/(1+exp(-x));</tspan>
+    <tspan x="460" y="160">}</tspan>
+  </text>
+</svg>

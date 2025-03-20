@@ -1,0 +1,27 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="250" fill="#f0f0f0"/>
+    <text x="20" y="25" font-size="18" font-weight="bold">6. Network Architecture Search (NAS)</text>
+
+    <rect x="50" y="50" width="60" height="50" fill="lightgrey" stroke="black"/>
+    <rect x="120" y="50" width="60" height="50" fill="lightgrey" stroke="black"/>
+    <rect x="190" y="50" width="60" height="50" fill="lightgrey" stroke="black"/>
+     <rect x="50" y="110" width="60" height="50" fill="lightgrey" stroke="black"/>
+    <rect x="120" y="110" width="60" height="50" fill="lightgrey" stroke="black"/>
+    <rect x="190" y="110" width="60" height="50" fill="lightgrey" stroke="black"/>
+
+    <path d="M80 160 L80 180" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+    <path d="M150 160 L150 180" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+     <path d="M220 160 L220 180" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+
+     <rect x="50" y="190" width="200" height="40" fill="#3f51b5" stroke="black">
+         <text x="70" y="215" fill="white">Efficient Architecture</text>
+     </rect>
+
+    <text x="260" y="70" font-size="12">Automatically searches</text>
+      <text x="260" y="90" font-size="12">for optimal architectures.</text>
+    <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

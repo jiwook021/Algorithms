@@ -1,0 +1,19 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f0f0f0" />
+  <text x="300" y="50" text-anchor="middle" font-size="24" font-weight="bold">1. Gather Your Dataset</text>
+
+  <rect x="50" y="100" width="100" height="80" fill="#a0c4ff" stroke="black" />
+  <text x="100" y="140" text-anchor="middle" font-size="16">Images</text>
+    <line x1="150" y1="140" x2="180" y2="140" stroke="black"/>
+
+  <rect x="200" y="100" width="100" height="80" fill="#ffb3ba" stroke="black" />
+  <text x="250" y="140" text-anchor="middle" font-size="16">Annotations</text>
+    <line x1="300" y1="140" x2="330" y2="140" stroke="black"/>
+
+  <rect x="350" y="100" width="200" height="200" fill="#baffc9" stroke="black" />
+  <text x="450" y="140" text-anchor="middle" font-size="18">Diverse Images</text>
+    <text x="450" y="180" text-anchor="middle" font-size="14">(Different angles, lighting, etc.)</text>
+  <image x="360" y="200" width="60" height="60" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADoSURBVGhD7ZmxDcIwDEWfTUARSgEpQAk6gAzU2NnZ2dmZCQlJSUlJSUlJSUn/P4P4BHCADPCADHCAB3DAhyD3QoA/o4Iq2+X9wX4A8b8yP4V3gEaWJ10wH6wL8GqWJ9/wI/Cvwx4/J4+X5+Xj8Q4H7gG3B/Z4C78wF4Q8Y8hUAfhXwZ8P4XyH8h/AeM/0lJSUlJSUlJSUlJSc33A+X59AEPxADoAAAAASUVORK5CYII="/>
+   <image x="440" y="200" width="60" height="60" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADoSURBVGhD7ZmxDcIwDEWfTUARSgEpQAk6gAzU2NnZ2dmZCQlJSUlJSUlJSUn/P4P4BHCADPCADHCAB3DAhyD3QoA/o4Iq2+X9wX4A8b8yP4V3gEaWJ10wH6wL8GqWJ9/wI/Cvwx4/J4+X5+Xj8Q4H7gG3B/Z4C78wF4Q8Y8hUAfhXwZ8P4XyH8h/AeM/0lJSUlJSUlJSUlJSc33A+X59AEPxADoAAAAASUVORK5CYII="/>
+    <image x="500" y="210" width="50" height="50" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEHSURBVGhD7ZmxDcIwEEWfTUARSgEpQAk6gAzU2NnZ2dmZCQlJSUlJSUlJSUn/P4P4BHCADPCADHCAB3DAh3x8Jj94D5A+GPD/o3+A64B9/8Y3gEaWJ10wH6wL8GqWJ9/wI/Cvwx4/J4+X5+Xj8Q4H7gG3B/Z4C78wF4Q8Y8hUAfhXwZ8P4XyH8h/AeM/0lJSUlJSUlJSUlJSc33A+V59AG/cAYPAAAAABJRU5ErkJggg=="/>
+</svg>

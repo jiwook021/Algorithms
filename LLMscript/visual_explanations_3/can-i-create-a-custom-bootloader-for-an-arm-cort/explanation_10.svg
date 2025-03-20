@@ -1,0 +1,30 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">10. Bootloader Development Tools</text>
+
+  <rect x="30" y="60" width="80" height="40" fill="#add8e6" />
+  <text x="70" y="80" text-anchor="middle" font-size="12">Compiler</text>
+ <text x="70" y="95" text-anchor="middle" font-size="10">(GCC, Keil, IAR)</text>
+
+  <rect x="150" y="60" width="80" height="40" fill="#90ee90" />
+  <text x="190" y="80" text-anchor="middle" font-size="12">Linker</text>
+  <text x="190" y="95" text-anchor="middle" font-size="10">Script</text>
+
+  <rect x="270" y="60" width="80" height="40" fill="#ffb6c1" />
+  <text x="310" y="80" text-anchor="middle" font-size="12">Debugger</text>
+    <text x="310" y="95" text-anchor="middle" font-size="10">(J-Link, ST-Link)</text>
+
+  <rect x="30" y="130" width="80" height="40" fill="#ffff99" />
+   <text x="70" y="150" text-anchor="middle" font-size="12">IDE</text>
+ <text x="70" y="165" text-anchor="middle" font-size="10">(STM32CubeIDE)</text>
+
+
+    <rect x="150" y="130" width="80" height="40" fill="#f08080" />
+  <text x="190" y="150" text-anchor="middle" font-size="12">HAL/LL</text>
+    <text x="190" y="165" text-anchor="middle" font-size="10">Libraries</text>
+
+  <text x="20" y="200" font-size="12">Essential for building and</text>
+    <text x="20" y="220" font-size="12">debugging the bootloader.</text>
+    <text x="20" y="240" font-size="12">Proper linker script is crucial.</text>
+
+</svg>

@@ -1,0 +1,15 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="30" font-size="18" font-weight="bold">10. Time Complexity</text>
+
+  <g transform="translate(50, 80)">
+    <text x="0" y="0" font-size="16">Primary Method (In-place Swaps):</text>
+    <text x="20" y="30" font-size="14">  - Single pass through the array.</text>
+    <text x="20" y="50" font-size="14" fill="blue">  - O(n) Time Complexity</text>
+
+    <text x="0" y="90" font-size="16">Alternative (Sort and Weave):</text>
+      <text x="20" y="120" font-size="14">  - Sorting (e.g., quicksort): O(n log n)</text>
+    <text x="20" y="140" font-size="14">  - Weaving: O(n)</text>
+      <text x="20" y="160" font-size="14" fill="blue">  - Overall: O(n log n) Time Complexity</text>
+
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="150" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">1. Asteroid Representation</text>
+  <circle cx="80" cy="80" r="20" fill="blue" />
+  <text x="70" y="85" font-size="12" fill="white">5</text>
+  <text x="110" y="85" font-size="14">Positive value = Rightward movement</text>
+    
+  <circle cx="250" cy="80" r="15" fill="red" />
+  <text x="245" y="85" font-size="12" fill="white">-3</text>
+  <text x="280" y="85" font-size="14">Negative value = Leftward movement</text>
+
+  <text x="20" y="120" font-size="12" fill="gray">Size of the circle represents asteroid magnitude.</text>
+
+</svg>

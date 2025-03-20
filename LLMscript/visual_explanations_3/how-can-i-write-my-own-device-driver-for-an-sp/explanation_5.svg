@@ -1,0 +1,22 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="600" height="400" fill="#f0f0f0"/>
+    <text x="20" y="30" font-size="20" font-weight="bold">5.  Write SPI Send/Receive Functions</text>
+
+    <rect x="50" y="80" width="500" height="280" fill="#ffffff" stroke="black"/>
+    <text x="70" y="110" font-size="18">Code Snippets (Conceptual)</text>
+
+    <text x="80" y="140" font-size="14" fill="blue">uint8_t SPI_TransmitReceive(uint8_t data) {</text>
+    <text x="100" y="165" font-size="14" fill="green">  // 1. Assert Chip Select (CS) low</text>
+    <text x="100" y="185" font-size="14" fill="green">  // 2. Send data byte over SPI</text>
+    <text x="100" y="205" font-size="14" fill="green">  // 3. Wait for transmission to complete</text>
+    <text x="100" y="225" font-size="14" fill="green">  // 4. Read received data byte</text>
+    <text x="100" y="245" font-size="14" fill="green">  // 5. De-assert Chip Select (CS) high</text>
+    <text x="100" y="265" font-size="14" fill="green">  // 6. Return received data</text>
+    <text x="80" y="290" font-size="14" fill="blue">}</text>
+
+  <text x="350" y="140" font-size="14">Example (HAL):</text>
+  <text x="350" y="165" font-size="12" fill="#404040">  HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, GPIO_PIN_RESET);</text>
+  <text x="350" y="185" font-size="12" fill="#404040">  HAL_SPI_TransmitReceive(&amp;hspi1, &amp;tx_data, &amp;rx_data, 1, HAL_MAX_DELAY);</text>
+  <text x="350" y="205" font-size="12" fill="#404040">  HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, GPIO_PIN_SET);</text>
+  <text x="350" y="225" font-size="12" fill="#404040">  return rx_data;</text>
+</svg>

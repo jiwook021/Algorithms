@@ -1,0 +1,17 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">1. What is a Warp?</text>
+
+  <g transform="translate(50, 60)">
+    <rect x="0" y="0" width="30" height="80" fill="lightblue" stroke="black" />
+    <rect x="35" y="0" width="30" height="80" fill="lightblue" stroke="black" />
+    <rect x="70" y="0" width="30" height="80" fill="lightblue" stroke="black" />
+    <rect x="105" y="0" width="30" height="80" fill="lightblue" stroke="black" />
+     <text x="0" y="95" font-size="12">Threads</text>
+    <text x="15" y="-10" font-size="14">Warp</text>
+     <rect x="-5" y="-20" width="145" height="110" fill="none" stroke="red" stroke-width="2"/>
+  </g>
+
+  <text x="20" y="160" font-size="14">A warp is a group of 32 threads that execute</text>
+   <text x="20" y="180" font-size="14">the same instruction simultaneously (SIMT).</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">8. DP - Final Result</text>
+  <text x="20" y="60">Input: "leetcode"</text>
+  <text x="20" y="80">Dictionary: {"leet", "code"}</text>
+
+    <rect x="20" y="110" width="360" height="20" stroke="black" fill="white"/>
+    <text x="25" y="125" font-size="12">l  e  e  t  c  o  d  e</text>
+    <rect x="20" y="140" width="360" height="40"  stroke="black"/>
+    <text x="25" y="165" font-size="14">T  F  F  F  T  F  F  T</text>
+    <text x="20" y="190">The answer is dp[7] (the last element), which is True.</text>
+</svg>

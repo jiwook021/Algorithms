@@ -1,0 +1,20 @@
+<svg width="400" height="350" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="380" height="330" fill="none" stroke="black" stroke-width="2"/>
+  <text x="20" y="30" font-size="16" font-weight="bold">5. Overlapping Data Transfer and Kernel Execution</text>
+  <text x="20" y="60">Data transfers (CPU to GPU or vice versa) can</text>
+  <text x="20" y="80">overlap with kernel execution using streams.</text>
+
+  <rect x="50" y="110" width="100" height="30" fill="yellow"/>
+  <text x="60" y="130">HtoD</text>
+  <text x="90" y="155" font-size="10">(Host to Device)</text>
+    <rect x="50" y="160" width="250" height="15" fill="lightblue"/>
+    <text x="55" y="170" font-size="10">Stream 1</text>
+
+
+  <rect x="180" y="190" width="100" height="30" fill="lightgreen"/>
+  <text x="190" y="210">Kernel</text>
+   <rect x="50" y="230" width="250" height="15" fill="lightcoral"/>
+    <text x="55" y="240" font-size="10">Stream 2</text>
+  <text x="50" y="270">Data transfer can happen while a kernel is running.</text>
+
+</svg>

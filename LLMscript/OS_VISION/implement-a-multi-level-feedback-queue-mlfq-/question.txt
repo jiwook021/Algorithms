@@ -1,0 +1,1 @@
+Implement a **Multi-Level Feedback Queue (MLFQ)** scheduler to optimize CPU utilization and minimize starvation.  

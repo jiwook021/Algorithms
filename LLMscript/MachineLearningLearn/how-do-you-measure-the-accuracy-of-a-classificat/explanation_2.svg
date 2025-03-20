@@ -1,0 +1,50 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Precision, Recall, and F1-Score</text>
+  
+  <!-- Background for the metrics -->
+  <rect x="50" y="60" width="500" height="180" fill="#f9f9f9" stroke="#333" stroke-width="1" rx="10"/>
+  
+  <!-- Precision section -->
+  <rect x="70" y="80" width="140" height="140" fill="#d4e6f1" stroke="#333" stroke-width="1" rx="5"/>
+  <text x="140" y="100" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Precision</text>
+  <text x="140" y="125" font-family="Arial" font-size="14" text-anchor="middle">TP / (TP + FP)</text>
+  <text x="140" y="150" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">How many selected items</text>
+  <text x="140" y="170" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">are relevant?</text>
+  <text x="140" y="200" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">(Minimize false positives)</text>
+  
+  <!-- Recall section -->
+  <rect x="230" y="80" width="140" height="140" fill="#d5f5e3" stroke="#333" stroke-width="1" rx="5"/>
+  <text x="300" y="100" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Recall</text>
+  <text x="300" y="125" font-family="Arial" font-size="14" text-anchor="middle">TP / (TP + FN)</text>
+  <text x="300" y="150" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">How many relevant items</text>
+  <text x="300" y="170" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">are selected?</text>
+  <text x="300" y="200" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">(Minimize false negatives)</text>
+  
+  <!-- F1-Score section -->
+  <rect x="390" y="80" width="140" height="140" fill="#f5ebd5" stroke="#333" stroke-width="1" rx="5"/>
+  <text x="460" y="100" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">F1-Score</text>
+  <text x="460" y="125" font-family="Arial" font-size="14" text-anchor="middle">2 * (P * R) / (P + R)</text>
+  <text x="460" y="150" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Harmonic mean of</text>
+  <text x="460" y="170" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Precision and Recall</text>
+  <text x="460" y="200" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">(Balance between P and R)</text>
+  
+  <!-- Visual representation -->
+  <circle cx="140" cy="280" r="40" fill="#d4e6f1" fill-opacity="0.5" stroke="#333" stroke-width="1"/>
+  <circle cx="180" cy="280" r="40" fill="#d5f5e3" fill-opacity="0.5" stroke="#333" stroke-width="1"/>
+  <text x="120" y="280" font-family="Arial" font-size="12" text-anchor="middle">Predicted</text>
+  <text x="200" y="280" font-family="Arial" font-size="12" text-anchor="middle">Actual</text>
+  <text x="140" y="310" font-family="Arial" font-size="12" text-anchor="middle">Precision</text>
+  <text x="180" y="310" font-family="Arial" font-size="12" text-anchor="middle">Recall</text>
+  <text x="160" y="340" font-family="Arial" font-size="12" text-anchor="middle">F1-Score balances both</text>
+  
+  <!-- Code example -->
+  <rect x="300" y="250" width="280" height="130" fill="#e6e6e6" stroke="#333" stroke-width="1" rx="5"/>
+  <text x="310" y="270" font-family="Courier New" font-size="12">
+    <tspan x="310" y="270">// C++ code for metrics</tspan>
+    <tspan x="310" y="290">double precision = (double)TP / (TP + FP);</tspan>
+    <tspan x="310" y="310">double recall = (double)TP / (TP + FN);</tspan>
+    <tspan x="310" y="330">double f1 = 2 * (precision * recall) /</tspan>
+    <tspan x="310" y="350">          (precision + recall);</tspan>
+  </text>
+</svg>

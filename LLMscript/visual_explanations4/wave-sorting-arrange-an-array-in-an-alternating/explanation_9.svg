@@ -1,0 +1,24 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <text x="10" y="30" font-size="18" font-weight="bold">9. Alternative: Sort and Weave</text>
+  <text x="10" y="60">Sort the array, then interleave elements.</text>
+
+    <g transform="translate(20,100)">
+       <text x="0" y="-10" font-size="14">Sorted: [1, 2, 4, 5, 7, 8, 9]</text>
+       <rect x="0" y="0" width="30" height="30" stroke="black" fill="lightgray"/>
+       <text x="10" y="20">1</text>
+       <rect x="40" y="0" width="30" height="30" stroke="black" fill="lightgray"/>
+        <text x="50" y="20">2</text>
+       <rect x="80" y="0" width="30" height="30" stroke="black" fill="lightgray"/>
+        <text x="90" y="20">4</text>
+       <rect x="120" y="0" width="30" height="30" stroke="black" fill="lightgray"/>
+        <text x="130" y="20">5</text>
+       <rect x="160" y="0" width="30" height="30" stroke="black" fill="lightgray"/>
+        <text x="170" y="20">7</text>
+       <rect x="200" y="0" width="30" height="30" stroke="black" fill="lightgray"/>
+       <text x="210" y="20">8</text>
+       <rect x="240" y="0" width="30" height="30" stroke="black" fill="lightgray"/>
+       <text x="250" y="20">9</text>
+
+       <text x="0" y="50" >=&gt; [1, 9, 2, 8, 4, 7, 5]</text>
+    </g>
+</svg>

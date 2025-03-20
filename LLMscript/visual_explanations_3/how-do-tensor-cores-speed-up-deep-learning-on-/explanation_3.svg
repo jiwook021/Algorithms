@@ -1,0 +1,13 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="25" fill="black" font-size="14" font-weight="bold">3. Matrix Multiplication (GEMM)</text>
+  <rect x="50" y="50" width="80" height="50" fill="red" stroke="black" />
+  <text x="90" y="80" text-anchor="middle" fill="white">Matrix A</text>
+  <rect x="150" y="50" width="50" height="80" fill="blue" stroke="black" />
+  <text x="175" y="90" text-anchor="middle" fill="white">Matrix B</text>
+  <text x="220" y="80" font-size="20">=</text>
+  <rect x="250" y="50" width="80" height="80" fill="green" stroke="black" />
+  <text x="290" y="90" text-anchor="middle" fill="white">Matrix C</text>
+    <text x="50" y="150"> Core of deep learning</text>
+    <text x="50" y="170"> (Convolution, Fully Connected Layers)</text>
+
+</svg>

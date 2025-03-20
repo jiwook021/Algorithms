@@ -1,0 +1,16 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="25" fill="black" font-size="14" font-weight="bold">7. Accumulation in FP32</text>
+  <rect x="50" y="50" width="40" height="40" fill="orange" stroke="black" />
+    <text x="70" y="105" text-anchor="middle" fill="black">FP16</text>
+  <text x="100" y="70" font-size="20">x</text>
+  <rect x="120" y="50" width="40" height="40" fill="yellow" stroke="black" />
+   <text x="140" y="105" text-anchor="middle" fill="black">FP16</text>
+   <text x="170" y="70" font-size="20">+</text>
+    <rect x="190" y="50" width="40" height="40" fill="lightblue" stroke="black" />
+    <text x="210" y="105" text-anchor="middle" fill="black">FP32</text>
+    <text x="240" y="70" font-size="20">=</text>
+    <rect x="270" y="50" width="40" height="40" fill="lightblue" stroke="black" />
+      <text x="290" y="105" text-anchor="middle" fill="black">FP32</text>
+    <text x="50" y="150">Result stored in higher precision</text>
+    <text x="50" y="170">to avoid overflow/underflow</text>
+</svg>

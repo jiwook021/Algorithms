@@ -1,0 +1,10 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="380" height="180" fill="none" stroke="black" stroke-width="2"/>
+  <text x="20" y="30" font-size="16" font-weight="bold">1. What is a CUDA Stream?</text>
+  <text x="20" y="60">A CUDA stream is a sequence of operations</text>
+  <text x="20" y="80">that execute in-order on the GPU.</text>
+   <rect x="50" y="110" width="300" height="30" fill="lightblue"/>
+  <text x="150" y="130">Stream</text>
+  <polygon points="350,125 370,120 370,130" fill="lightblue" stroke="black"/>
+
+</svg>

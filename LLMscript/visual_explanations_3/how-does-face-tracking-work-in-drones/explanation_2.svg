@@ -1,0 +1,10 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <rect x="50" y="50" width="300" height="200" fill="white" stroke="black" stroke-width="2"/>
+  <circle cx="150" cy="120" r="10" fill="blue"/>
+  <circle cx="250" cy="120" r="10" fill="blue"/>
+  <rect x="140" y="180" width="120" height="20" fill="blue"/>
+  <text x="200" y="280" text-anchor="middle" font-size="16" fill="black">2. Image Processing</text>
+  <text x="200" y="30" text-anchor="middle" font-size="14" fill="black">Digital Image</text>
+  <text x="200" y="230" text-anchor="middle" font-size="12" fill="black">(Pixels)</text>
+</svg>

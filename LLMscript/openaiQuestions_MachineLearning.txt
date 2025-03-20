@@ -1,0 +1,48 @@
+- What is **feature scaling**, and why does it matter in ML?  
+- How does a **single-layer perceptron** work as a simple neural network?  
+- What are **activation functions**, and why are they important in neural networks?  
+- How does a **convolutional neural network (CNN)** recognize images?  
+- What is the purpose of **dropout** in deep learning models?  
+- How does **batch normalization** help stabilize training in deep networks?  
+- Can you train a **simple neural network to recognize handwritten digits**?  
+- What is the difference between **ReLU, Sigmoid, and Tanh** activation functions?  
+- How does **backpropagation** adjust weights in a neural network?  
+- How do you prevent a neural network from **memorizing training data**?  
+- What is **transfer learning**, and how can it make deep learning easier?  
+- What is the difference between **word embeddings** and one-hot encoding?  
+- How does **tokenization** work in NLP?  
+- Can you build a **simple sentiment analysis model** for classifying text as positive or negative?  
+- How does a **bag-of-words model** represent text?  
+- What is the difference between **stemming and lemmatization** in text preprocessing?  
+- Can you train a **chatbot using simple rule-based NLP techniques**?  
+- How does **TF-IDF (Term Frequency-Inverse Document Frequency)** work for text representation?  
+- What is the purpose of **stop word removal** in text processing?  
+- How does a **sequence-to-sequence model** generate text?  
+- Can you use **pre-trained word embeddings** to improve text classification?  
+- What is the difference between **time-series forecasting and regular regression**?  
+- Can you predict **tomorrow’s temperature using past weather data**?  
+- How does **moving average smoothing** help in time-series analysis?  
+- What is an **ARIMA model**, and how does it forecast time-series data?  
+- Can you build a simple **stock price prediction model** using linear regression?  
+- How does **seasonality affect time-series forecasting**?  
+- What is the difference between **stationary and non-stationary data**?  
+- Can you detect **anomalies in time-series data** using machine learning?  
+- What is the role of **lag features** in time-series modeling?  
+- How does **exponential smoothing** work for forecasting trends?  
+- What is the difference between **supervised and unsupervised learning**?  
+- What are the main types of **evaluation metrics** for ML models?  
+- What is the purpose of **feature engineering** in machine learning?  
+- What is the difference between **batch, mini-batch, and stochastic gradient descent**?  
+- What is the impact of **learning rate** in training ML models?  
+- How does a **support vector machine (SVM)** separate data into different classes?  
+- What is the difference between **ensemble methods like Bagging and Boosting**?  
+- How does a **spam email filter** work using machine learning?  
+- Can you build a **movie recommendation system** using collaborative filtering?  
+- How do self-driving cars use **computer vision** to detect road signs?  
+- Can machine learning **predict house prices** based on location and features?  
+- How does ML help in **medical diagnosis** by analyzing patient data?  
+- What are the steps to train a **speech recognition model**?  
+- How does machine learning **detect fraudulent transactions** in banking?  
+- Can you use ML to recognize **handwritten numbers like in postal services**?  
+- How does a **search engine rank results** using ML algorithms?  
+- What are some examples of **AI-powered chatbots in real life**?  

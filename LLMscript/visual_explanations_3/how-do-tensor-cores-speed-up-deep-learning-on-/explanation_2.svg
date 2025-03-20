@@ -1,0 +1,9 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="50" height="50" fill="orange" />
+  <rect x="110" y="50" width="50" height="50" fill="orange" />
+  <text x="75" y="120" text-anchor="middle" fill="black">FP16</text>
+  <text x="135" y="120" text-anchor="middle" fill="black">FP16</text>
+  <text x="20" y="25" fill="black" font-size="14" font-weight="bold">2. Mixed Precision (FP16)</text>
+     <text x="200" y="80" fill="green">Fewer, faster operations</text>
+    <polygon points="250,75 300,50 300,100" fill="green" stroke="black"/>
+</svg>

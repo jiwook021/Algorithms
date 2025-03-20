@@ -1,0 +1,19 @@
+<svg width="600" height="400" viewport="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="20" font-weight="bold">6. Feature Matching: Finding Correspondences</text>
+
+  <rect x="50" y="100" width="200" height="150" fill="lightgray" />
+  <circle cx="100" cy="150" r="5" fill="blue" />
+  <rect x="150" y="180" width="20" height="20" fill="green" />
+  <text x="40" y="270" font-size="14" fill="black">Left Image</text>
+
+  <rect x="350" y="100" width="200" height="150" fill="lightgray" />
+  <circle cx="400" cy="150" r="5" fill="blue" />
+  <rect x="430" y="180" width="20" height="20" fill="green" />
+  <text x="340" y="270" font-size="14" fill="black">Right Image</text>
+
+    <line x1="100" y1="150" x2="400" y2="150" stroke="purple" stroke-width="2"/>
+    <line x1="150" y1="180" x2="430" y2="180" stroke="purple" stroke-width="2"/>
+
+<text x="100" y="350" font-size="16">Algorithms identify corresponding features (corners, edges) in both images.</text>
+</svg>

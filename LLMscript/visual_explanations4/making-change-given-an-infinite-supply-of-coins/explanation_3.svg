@@ -1,0 +1,23 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <title>Making Change - Concept 3: Subproblems</title>
+   <rect width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Breaking it Down: Subproblems</text>
+  <text x="20" y="60" font-size="14">Target: 41¢</text>
+
+  <circle cx="80" cy="100" r="20" fill="#e67e22" /> <text x="75" y="105" font-size="14" fill="white">25¢</text>
+  <text x="110" y="105" font-size="14">Remaining: 16¢</text>
+
+    <line x1="170" y1="100" x2="230" y2="100" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+
+ <circle cx="280" cy="100" r="15" fill="#d35400" /> <text x="275" y="105" font-size="14" fill="white">10¢</text>
+    <text x="310" y="105" font-size="14">Remaining: 6¢</text>
+
+  <text x="20" y="150" font-size="14">Each time we choose a coin, we create a smaller</text>
+    <text x="20" y="170" font-size="14">subproblem with the remaining amount.</text>
+  <text x="20" y="200" font-size="14">Solve each subproblem optimally to solve the main problem.</text>
+
+</svg>

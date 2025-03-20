@@ -1,0 +1,1 @@
+"Super Digit": Find the recursive sum of a large number until only one digit remains.

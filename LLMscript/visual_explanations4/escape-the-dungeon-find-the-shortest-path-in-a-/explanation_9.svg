@@ -1,0 +1,38 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="20" font-weight="bold">9. Reconstructing the Path</text>
+
+  <!-- Maze Grid with Path -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="50" y="0" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="100" y="0" width="50" height="50" fill="white" stroke="black"/>
+
+    <rect x="0" y="50" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="50" y="50" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="100" y="50" width="50" height="50" fill="white" stroke="black"/>
+
+    <rect x="0" y="100" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="50" y="100" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="100" y="100" width="50" height="50" fill="white" stroke="black"/>
+
+    <!-- Start and End -->
+    <circle cx="25" cy="25" r="15" fill="green"/>
+    <text x="15" y="30" font-size="12">Start</text>
+    <circle cx="125" cy="125" r="15" fill="red"/>
+    <text x="115" y="130" font-size="12">End</text>
+
+      <!-- Path Arrows -->
+    <polygon points="25,25 75,25"  stroke="blue" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <polygon points="75,25 75,75"  stroke="blue" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+     <polygon points="75,75 125,75"  stroke="blue" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <polygon points="125,75 125,125"  stroke="blue" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+    refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="blue" />
+    </marker>
+  </g>
+   <text x="20" y="220" font-size="14">Once the end is reached, we trace back.</text>
+     <text x="20" y="240" font-size="14">Each cell stores where it was visited *from*.</text>
+
+</svg>

@@ -1,0 +1,16 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Concept 3: The Battle</text>
+
+ <circle cx="70" cy="100" r="20" fill="red" stroke="gray" stroke-width="4" stroke-dasharray="5,5" />
+  <text x="60" y="110" font-size="14" fill="white">A</text>
+  <text x="95" y="105" font-size="12">Strength: 5</text>
+
+  <circle cx="140" cy="100" r="20" fill="blue" />
+  <text x="130" y="110" font-size="14" fill="white">B</text>
+    <text x="165" y="105" font-size="12">Strength: 8</text>
+
+  <line x1="90" y1="100" x2="120" y2="100" stroke="black" stroke-width="4"  />
+
+    <text x="20" y="170" font-size="14">The stronger warrior (B) defeats the weaker (A).</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="30" font-size="18" font-weight="bold">1. Understanding "Wave" Pattern</text>
+  <text x="20" y="60">Goal: Arrange numbers like a wave.</text>
+  
+  <g transform="translate(50, 100)">
+    <line x1="0" y1="0" x2="300" y2="0" stroke="black"/>
+    <polyline points="0,0 30,-50 60,0 90,-50 120,0 150,-50 180,0 210, -50 240, 0" stroke="blue" stroke-width="3" fill="none"/>
+     <circle cx="0" cy="0" r="5" fill="red" />
+    <circle cx="30" cy="-50" r="5" fill="red" />
+     <circle cx="60" cy="0" r="5" fill="red" />
+    <circle cx="90" cy="-50" r="5" fill="red" />
+     <circle cx="120" cy="0" r="5" fill="red" />
+    <circle cx="150" cy="-50" r="5" fill="red" />
+    
+    <text x="10" y="15">High</text>
+    <text x="30" y="-60">Low</text>
+  </g>
+</svg>

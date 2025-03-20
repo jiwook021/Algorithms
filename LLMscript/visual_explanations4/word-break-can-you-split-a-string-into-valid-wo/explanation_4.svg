@@ -1,0 +1,11 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">4. Dynamic Programming - Idea</text>
+  <text x="20" y="60">Input: "leetcode"</text>
+    <text x="20" y="80">Dictionary: {"leet", "code"}</text>
+  <text x="20" y="110">Avoid redundant calculations by storing results of subproblems.</text>
+    <text x="20" y="140" fill="blue">dp[i]: True if the substring s[0...i] can be segmented, False otherwise.</text>
+    <rect x="20" y="170" width="360" height="20" stroke="black" fill="white"/>
+    <text x="25" y="185" font-size="12">l  e  e  t  c  o  d  e</text>
+     <text x="20" y="210" font-size="14">dp[0] dp[1] ...</text>
+</svg>

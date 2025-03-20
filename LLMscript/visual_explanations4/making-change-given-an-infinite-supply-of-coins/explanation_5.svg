@@ -1,0 +1,27 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <title>Making Change - Concept 5: Overlapping Subproblems</title>
+  <rect width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Overlapping Subproblems</text>
+  <text x="20" y="60">Making 41¢:</text>
+
+  <circle cx="80" cy="100" r="10" fill="#9b59b6" /> <text x="76" y="104" font-size="12" fill="white">1</text>
+  <text x="100" y="105" font-size="14">Remaining: 40¢</text>
+
+    <line x1="150" y1="100" x2="200" y2="80" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <line x1="150" y1="100" x2="200" y2="120" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+
+    <circle cx="230" cy="80" r="10" fill="#9b59b6" /> <text x="226" y="84" font-size="12" fill="white">1</text>
+    <text x="250" y="80" font-size="14">Remaining: 39¢</text>
+
+     <circle cx="230" cy="120" r="10" fill="#9b59b6" /> <text x="226" y="124" font-size="12" fill="white">1</text>
+    <text x="250" y="120" font-size="14">Remaining: 39¢</text>
+
+  <text x="20" y="180" font-size="14">The same subproblem (e.g., making change for 39¢)</text>
+  <text x="20" y="200" font-size="14">can appear multiple times.</text>
+     <text x="20" y="220" font-size="14">Memoization can avoid recomputing.</text>
+
+</svg>

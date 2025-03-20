@@ -1,0 +1,30 @@
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="30" font-size="16">2. GPU Architecture: CUDA Cores</text>
+  <rect x="20" y="50" width="360" height="180" fill="lightgreen" stroke="black"/>
+  <text x="30" y="70" font-size="14">GPU</text>
+  <g transform="translate(40, 90)">
+    <rect width="40" height="40" fill="yellow" stroke="black"/>
+    <text x="5" y="25" font-size="10">CUDA Core</text>
+  </g>
+    <g transform="translate(90, 90)">
+    <rect width="40" height="40" fill="yellow" stroke="black"/>
+    <text x="5" y="25" font-size="10">CUDA Core</text>
+  </g>
+    <g transform="translate(140, 90)">
+    <rect width="40" height="40" fill="yellow" stroke="black"/>
+    <text x="5" y="25" font-size="10">CUDA Core</text>
+  </g>
+      <g transform="translate(40, 140)">
+    <rect width="40" height="40" fill="yellow" stroke="black"/>
+    <text x="5" y="25" font-size="10">CUDA Core</text>
+  </g>
+    <g transform="translate(90, 140)">
+    <rect width="40" height="40" fill="yellow" stroke="black"/>
+    <text x="5" y="25" font-size="10">CUDA Core</text>
+  </g>
+    <g transform="translate(140, 140)">
+    <rect width="40" height="40" fill="yellow" stroke="black"/>
+    <text x="5" y="25" font-size="10">CUDA Core</text>
+  </g>
+  <text x="200" y="130" font-size="14">Thousands of Cores!</text>
+</svg>

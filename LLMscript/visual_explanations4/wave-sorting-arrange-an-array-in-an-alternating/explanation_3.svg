@@ -1,0 +1,24 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="30" font-size="18" font-weight="bold">3. Comparing Adjacent Elements</text>
+  <text x="20" y="60">Check if the current element is in the correct wave position.</text>
+
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="40" height="40" fill="lightgray" stroke="black"/>
+    <text x="15" y="25" font-size="16">5</text>
+    
+    <rect x="50" y="0" width="40" height="40" fill="lightgray" stroke="black"/>
+    <text x="65" y="25" font-size="16">2</text>
+
+    <arrow x1="45" y1="20" x2="55" y2="20" marker-end="url(#arrowhead)" stroke="red" stroke-width="2"/>
+    
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+      refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="red" />
+      </marker>
+    </defs>
+
+     <text x="25" y="-15" font-size="14">Index 0 (Even)</text>
+     <text x="25" y="-30" font-size="14" fill="blue">Should be &gt;= next</text>
+  </g>
+</svg>

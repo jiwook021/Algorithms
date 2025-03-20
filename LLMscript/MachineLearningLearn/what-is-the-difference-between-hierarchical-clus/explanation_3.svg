@@ -1,0 +1,113 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">K-Means Clustering: Centroid-Based Approach</text>
+  
+  <!-- Visualization area -->
+  <g transform="translate(20, 60)">
+    <!-- Step 1: Initialize centroids -->
+    <text x="280" y="0" font-family="Arial" font-size="16" text-anchor="middle">Step 1: Initialize k random centroids (k=3)</text>
+    
+    <!-- Data points -->
+    <circle cx="80" cy="40" r="5" fill="#aaa" />
+    <circle cx="100" cy="30" r="5" fill="#aaa" />
+    <circle cx="120" cy="50" r="5" fill="#aaa" />
+    <circle cx="90" cy="60" r="5" fill="#aaa" />
+    
+    <circle cx="250" cy="70" r="5" fill="#aaa" />
+    <circle cx="270" cy="50" r="5" fill="#aaa" />
+    <circle cx="290" cy="60" r="5" fill="#aaa" />
+    <circle cx="260" cy="40" r="5" fill="#aaa" />
+    
+    <circle cx="420" cy="30" r="5" fill="#aaa" />
+    <circle cx="440" cy="50" r="5" fill="#aaa" />
+    <circle cx="460" cy="40" r="5" fill="#aaa" />
+    <circle cx="430" cy="60" r="5" fill="#aaa" />
+    
+    <!-- Initial centroids -->
+    <circle cx="150" cy="45" r="8" fill="#ff6b6b" stroke="#000" stroke-width="2" />
+    <circle cx="300" cy="55" r="8" fill="#48dbfb" stroke="#000" stroke-width="2" />
+    <circle cx="400" cy="35" r="8" fill="#1dd1a1" stroke="#000" stroke-width="2" />
+    
+    <text x="150" y="30" font-family="Arial" font-size="12" text-anchor="middle">Centroid 1</text>
+    <text x="300" y="40" font-family="Arial" font-size="12" text-anchor="middle">Centroid 2</text>
+    <text x="400" y="20" font-family="Arial" font-size="12" text-anchor="middle">Centroid 3</text>
+    
+    <!-- Step 2: Assign points to nearest centroid -->
+    <text x="280" y="100" font-family="Arial" font-size="16" text-anchor="middle">Step 2: Assign points to nearest centroid</text>
+    
+    <!-- Colored data points -->
+    <circle cx="80" cy="140" r="5" fill="#ff6b6b" />
+    <circle cx="100" cy="130" r="5" fill="#ff6b6b" />
+    <circle cx="120" cy="150" r="5" fill="#ff6b6b" />
+    <circle cx="90" cy="160" r="5" fill="#ff6b6b" />
+    
+    <circle cx="250" cy="170" r="5" fill="#48dbfb" />
+    <circle cx="270" cy="150" r="5" fill="#48dbfb" />
+    <circle cx="290" cy="160" r="5" fill="#48dbfb" />
+    <circle cx="260" cy="140" r="5" fill="#48dbfb" />
+    
+    <circle cx="420" cy="130" r="5" fill="#1dd1a1" />
+    <circle cx="440" cy="150" r="5" fill="#1dd1a1" />
+    <circle cx="460" cy="140" r="5" fill="#1dd1a1" />
+    <circle cx="430" cy="160" r="5" fill="#1dd1a1" />
+    
+    <!-- Centroids -->
+    <circle cx="150" cy="145" r="8" fill="#ff6b6b" stroke="#000" stroke-width="2" />
+    <circle cx="300" cy="155" r="8" fill="#48dbfb" stroke="#000" stroke-width="2" />
+    <circle cx="400" cy="135" r="8" fill="#1dd1a1" stroke="#000" stroke-width="2" />
+    
+    <!-- Step 3: Recalculate centroids -->
+    <text x="280" y="200" font-family="Arial" font-size="16" text-anchor="middle">Step 3: Recalculate centroids as mean of assigned points</text>
+    
+    <!-- Updated data points -->
+    <circle cx="80" cy="240" r="5" fill="#ff6b6b" />
+    <circle cx="100" cy="230" r="5" fill="#ff6b6b" />
+    <circle cx="120" cy="250" r="5" fill="#ff6b6b" />
+    <circle cx="90" cy="260" r="5" fill="#ff6b6b" />
+    
+    <circle cx="250" cy="270" r="5" fill="#48dbfb" />
+    <circle cx="270" cy="250" r="5" fill="#48dbfb" />
+    <circle cx="290" cy="260" r="5" fill="#48dbfb" />
+    <circle cx="260" cy="240" r="5" fill="#48dbfb" />
+    
+    <circle cx="420" cy="230" r="5" fill="#1dd1a1" />
+    <circle cx="440" cy="250" r="5" fill="#1dd1a1" />
+    <circle cx="460" cy="240" r="5" fill="#1dd1a1" />
+    <circle cx="430" cy="260" r="5" fill="#1dd1a1" />
+    
+    <!-- Updated centroids -->
+    <circle cx="97.5" cy="245" r="8" fill="#ff6b6b" stroke="#000" stroke-width="2" />
+    <circle cx="267.5" cy="255" r="8" fill="#48dbfb" stroke="#000" stroke-width="2" />
+    <circle cx="437.5" cy="245" r="8" fill="#1dd1a1" stroke="#000" stroke-width="2" />
+    
+    <!-- Arrows showing centroid movement -->
+    <line x1="150" y1="145" x2="97.5" y2="245" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="5,3" />
+    <polygon points="97.5,245 90,235 105,235" fill="#ff6b6b" />
+    
+    <line x1="300" y1="155" x2="267.5" y2="255" stroke="#48dbfb" stroke-width="2" stroke-dasharray="5,3" />
+    <polygon points="267.5,255 260,245 275,245" fill="#48dbfb" />
+    
+    <line x1="400" y1="135" x2="437.5" y2="245" stroke="#1dd1a1" stroke-width="2" stroke-dasharray="5,3" />
+    <polygon points="437.5,245 430,235 445,235" fill="#1dd1a1" />
+  </g>
+  
+  <!-- Code example -->
+  <rect x="420" y="310" width="160" height="80" fill="#f1f2f6" stroke="#dfe4ea" stroke-width="1" />
+  <text x="430" y="330" font-family="Courier New" font-size="10">
+    <tspan x="430" dy="0">// C++ K-Means</tspan>
+    <tspan x="430" dy="14">void kMeansClustering(</tspan>
+    <tspan x="430" dy="14">  vector&lt;Point&gt; points,</tspan>
+    <tspan x="430" dy="14">  int k) {</tspan>
+    <tspan x="430" dy="14">  // Initialize k centroids</tspan>
+    <tspan x="430" dy="14">  // Iterate until convergence</tspan>
+    <tspan x="430" dy="14">}</tspan>
+  </text>
+  
+  <!-- Key characteristics -->
+  <rect x="20" y="350" width="380" height="40" rx="5" fill="#ffeaa7" />
+  <text x="30" y="375" font-family="Arial" font-size="14">
+    Key: Partitions data into k clusters based on centroid proximity
+  </text>
+</svg>

@@ -1,0 +1,95 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Common Feature Scaling Techniques</text>
+  
+  <!-- Min-Max Scaling -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="240" height="120" fill="#e8f4f8" stroke="#3498db" stroke-width="2" rx="5" />
+    <text x="120" y="25" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#2980b9">Min-Max Scaling</text>
+    
+    <!-- Formula -->
+    <text x="120" y="55" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">X' = (X - X_min) / (X_max - X_min)</text>
+    
+    <!-- Properties -->
+    <text x="20" y="85" font-family="Arial" font-size="12" fill="#333">• Scales features to range [0,1]</text>
+    <text x="20" y="105" font-family="Arial" font-size="12" fill="#333">• Preserves distribution shape</text>
+    
+    <!-- Visual representation -->
+    <line x1="20" y1="130" x2="220" y2="130" stroke="#3498db" stroke-width="2" />
+    <line x1="20" y1="140" x2="20" y2="120" stroke="#3498db" stroke-width="2" />
+    <line x1="220" y1="140" x2="220" y2="120" stroke="#3498db" stroke-width="2" />
+    <text x="20" y="155" font-family="Arial" font-size="10" text-anchor="middle">0</text>
+    <text x="220" y="155" font-family="Arial" font-size="10" text-anchor="middle">1</text>
+  </g>
+  
+  <!-- Z-Score Standardization -->
+  <g transform="translate(310, 80)">
+    <rect x="0" y="0" width="240" height="120" fill="#f9ebf5" stroke="#9b59b6" stroke-width="2" rx="5" />
+    <text x="120" y="25" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#8e44ad">Z-Score Standardization</text>
+    
+    <!-- Formula -->
+    <text x="120" y="55" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">X' = (X - μ) / σ</text>
+    
+    <!-- Properties -->
+    <text x="20" y="85" font-family="Arial" font-size="12" fill="#333">• Mean = 0, Standard deviation = 1</text>
+    <text x="20" y="105" font-family="Arial" font-size="12" fill="#333">• Handles outliers better</text>
+    
+    <!-- Visual representation -->
+    <path d="M 20,130 Q 120,80 220,130" stroke="#9b59b6" stroke-width="2" fill="none" />
+    <line x1="120" y1="140" x2="120" y2="120" stroke="#9b59b6" stroke-width="2" />
+    <text x="120" y="155" font-family="Arial" font-size="10" text-anchor="middle">0</text>
+    <text x="20" y="155" font-family="Arial" font-size="10" text-anchor="middle">-3σ</text>
+    <text x="220" y="155" font-family="Arial" font-size="10" text-anchor="middle">+3σ</text>
+  </g>
+  
+  <!-- Robust Scaling -->
+  <g transform="translate(50, 230)">
+    <rect x="0" y="0" width="240" height="120" fill="#f0f9e8" stroke="#27ae60" stroke-width="2" rx="5" />
+    <text x="120" y="25" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#27ae60">Robust Scaling</text>
+    
+    <!-- Formula -->
+    <text x="120" y="55" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">X' = (X - median) / IQR</text>
+    
+    <!-- Properties -->
+    <text x="20" y="85" font-family="Arial" font-size="12" fill="#333">• Resistant to outliers</text>
+    <text x="20" y="105" font-family="Arial" font-size="12" fill="#333">• Uses median and interquartile range</text>
+    
+    <!-- Visual representation with outlier -->
+    <line x1="20" y1="130" x2="220" y2="130" stroke="#27ae60" stroke-width="2" />
+    <line x1="60" y1="140" x2="60" y2="120" stroke="#27ae60" stroke-width="2" />
+    <line x1="180" y1="140" x2="180" y2="120" stroke="#27ae60" stroke-width="2" />
+    <line x1="120" y1="135" x2="120" y2="125" stroke="#27ae60" stroke-width="3" />
+    <circle cx="220" cy="130" r="5" fill="#e74c3c" />
+    <text x="220" y="145" font-family="Arial" font-size="10" text-anchor="middle" fill="#e74c3c">outlier</text>
+    <text x="60" y="155" font-family="Arial" font-size="10" text-anchor="middle">Q1</text>
+    <text x="180" y="155" font-family="Arial" font-size="10" text-anchor="middle">Q3</text>
+    <text x="120" y="155" font-family="Arial" font-size="10" text-anchor="middle">median</text>
+  </g>
+  
+  <!-- Unit Vector Transformation -->
+  <g transform="translate(310, 230)">
+    <rect x="0" y="0" width="240" height="120" fill="#fff5e6" stroke="#e67e22" stroke-width="2" rx="5" />
+    <text x="120" y="25" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#d35400">Unit Vector Transformation</text>
+    
+    <!-- Formula -->
+    <text x="120" y="55" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">X' = X / ||X||</text>
+    
+    <!-- Properties -->
+    <text x="20" y="85" font-family="Arial" font-size="12" fill="#333">• Scales to unit norm (length = 1)</text>
+    <text x="20" y="105" font-family="Arial" font-size="12" fill="#333">• Used in cosine similarity</text>
+    
+    <!-- Visual representation -->
+    <circle cx="120" cy="130" r="50" stroke="#e67e22" stroke-width="1" fill="none" stroke-dasharray="2,2" />
+    <line x1="120" y1="130" x2="170" y2="130" stroke="#e67e22" stroke-width="2" />
+    <text x="170" y="145" font-family="Arial" font-size="10" text-anchor="middle">1</text>
+  </g>
+  
+  <!-- Code example -->
+  <rect x="50" y="360" width="500" height="30" fill="#f0f0f0" stroke="#ccc" />
+  <text x="60" y="380" font-family="Courier New" font-size="12" fill="#333">
+    <tspan x="60" y="380">// C++ Z-score standardization</tspan>
+    <tspan x="350" y="380">double z = (value - mean) / std_dev;</tspan>
+  </text>
+</svg>

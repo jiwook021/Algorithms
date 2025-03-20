@@ -1,0 +1,77 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f0f7fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#333">Preventing Overfitting with Train-Test Split</text>
+  
+  <!-- Two main sections -->
+  <rect x="50" y="70" width="240" height="300" fill="#ffffff" stroke="#cccccc" stroke-width="2" rx="10" ry="10"/>
+  <rect x="310" y="70" width="240" height="300" fill="#ffffff" stroke="#cccccc" stroke-width="2" rx="10" ry="10"/>
+  
+  <!-- Section titles -->
+  <text x="170" y="90" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">Without Train-Test Split</text>
+  <text x="430" y="90" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">With Train-Test Split</text>
+  
+  <!-- Left diagram - without split -->
+  <circle cx="170" cy="140" r="30" fill="#64b5f6" stroke="#2286c3" stroke-width="2"/>
+  <text x="170" y="145" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Data</text>
+  
+  <path d="M170,180 L170,200" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <rect x="120" y="210" width="100" height="40" fill="#9575cd" rx="5" ry="5" stroke="#65499c" stroke-width="2"/>
+  <text x="170" y="235" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Model</text>
+  
+  <path d="M170,260 L170,280" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <rect x="90" y="290" width="160" height="40" fill="#e57373" rx="5" ry="5" stroke="#af4448" stroke-width="2"/>
+  <text x="170" y="315" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Evaluate on Same Data</text>
+  
+  <!-- Right diagram - with split -->
+  <circle cx="430" cy="140" r="30" fill="#64b5f6" stroke="#2286c3" stroke-width="2"/>
+  <text x="430" y="145" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Data</text>
+  
+  <path d="M430,180 L430,200" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <rect x="350" y="210" width="80" height="40" fill="#81c784" rx="5" ry="5" stroke="#519657" stroke-width="2"/>
+  <text x="390" y="235" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Train</text>
+  
+  <rect x="430" y="210" width="80" height="40" fill="#ffb74d" rx="5" ry="5" stroke="#c88719" stroke-width="2"/>
+  <text x="470" y="235" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Test</text>
+  
+  <path d="M390,260 L390,280" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M470,260 L470,280" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <rect x="340" y="290" width="100" height="40" fill="#9575cd" rx="5" ry="5" stroke="#65499c" stroke-width="2"/>
+  <text x="390" y="315" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Train Model</text>
+  
+  <rect x="420" y="290" width="100" height="40" fill="#e57373" rx="5" ry="5" stroke="#af4448" stroke-width="2"/>
+  <text x="470" y="315" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Test Model</text>
+  
+  <!-- Performance indicators -->
+  <path d="M80,340 L260,340" stroke="#666" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="80" y="360" font-family="Arial" font-size="12" fill="#e53935" font-weight="bold">Overfitting Risk: HIGH</text>
+  <text x="80" y="375" font-family="Arial" font-size="12" fill="#333">Model memorizes training data</text>
+  
+  <path d="M340,340 L520,340" stroke="#666" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="340" y="360" font-family="Arial" font-size="12" fill="#43a047" font-weight="bold">Overfitting Risk: CONTROLLED</text>
+  <text x="340" y="375" font-family="Arial" font-size="12" fill="#333">Model tested on unseen data</text>
+  
+  <!-- Code example -->
+  <rect x="120" y="120" width="160" height="80" fill="white" rx="5" ry="5" stroke="#ccc" stroke-width="1" opacity="0.9"/>
+  <text x="125" y="135" font-family="Courier New" font-size="10" fill="#333">
+    <tspan x="125" dy="0">// C++ without split</tspan>
+    <tspan x="125" dy="14">Model model;</tspan>
+    <tspan x="125" dy="14">model.train(allData);</tspan>
+    <tspan x="125" dy="14">// Danger: evaluating</tspan>
+    <tspan x="125" dy="14">// on same data!</tspan>
+    <tspan x="125" dy="14">model.evaluate(allData);</tspan>
+  </text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

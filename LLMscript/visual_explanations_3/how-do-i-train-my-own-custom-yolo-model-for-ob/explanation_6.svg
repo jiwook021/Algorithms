@@ -1,0 +1,13 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#f0f0f0" />
+    <text x="300" y="40" text-anchor="middle" font-size="24" font-weight="bold">6. Start Training</text>
+    <text x="300" y="80" text-anchor="middle" font-size="16">(Using your chosen framework and configuration)</text>
+
+    <rect x="50" y="120" width="500" height="80" fill="#a0c4ff" stroke="black" />
+     <text x="60" y="160" text-anchor="start" font-size="18" fill="black">Command Line (Example - PyTorch):</text>
+
+     <rect x="50" y="220" width="500" height="80" fill="white" stroke="black" />
+    <text x="60" y="260" text-anchor="start" font-size="16" fill="black">python train.py --img 640 --batch 16 --epochs 100 --data your_data.yaml --weights yolov8n.pt</text>
+
+    <text x="300" y="330" text-anchor="middle" font-size="14" fill="blue">Monitor training progress (loss, mAP).</text>
+</svg>

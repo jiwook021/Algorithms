@@ -1,0 +1,24 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">8. Cross-Check</text>
+
+    <circle cx="80" cy="100" r="5" fill="blue" />
+     <circle cx="100" cy="80" r="5" fill="blue" />
+  <circle cx="120" cy="120" r="5" fill="blue" />
+   <text x="70" y="140" font-size="12">Image 1 Keypoints</text>
+
+    <circle cx="280" cy="100" r="5" fill="green" />
+    <circle cx="300" cy="80" r="5" fill="green" />
+    <circle cx="320" cy="120" r="5" fill="green" />
+    <text x="270" y="140" font-size="12">Image 2 Keypoints</text>
+
+
+  <line x1="80" y1="100" x2="280" y2="100" stroke="red" />
+   <line x1="280" y1="100" x2="80" y2="100" stroke="red" />
+    <line x1="100" y1="80" x2="300" y2="80" stroke="red" />
+     <line x1="300" y1="80" x2="100" y2="80" stroke="red" />
+  <text x="20" y="200" font-size="14">A match (A, B) is valid only if:</text>
+  <text x="40" y="220" font-size="14">  - A is the best match for B.</text>
+  <text x="40" y="240" font-size="14">  - B is the best match for A.</text>
+   <text x="20" y="260" font-size="14">Provides mutual confirmation.</text>
+</svg>

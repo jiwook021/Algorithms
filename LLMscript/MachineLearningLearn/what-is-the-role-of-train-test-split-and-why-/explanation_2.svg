@@ -1,0 +1,99 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f0f7ff" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="300" y="35" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">Preventing Overfitting with Train-Test Split</text>
+  
+  <!-- Graphs -->
+  <!-- Underfitting graph -->
+  <rect x="50" y="70" width="150" height="150" fill="white" stroke="#ccc" stroke-width="1"/>
+  <text x="125" y="65" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Underfitting</text>
+  
+  <!-- X and Y axes for underfitting -->
+  <line x1="60" y1="210" x2="190" y2="210" stroke="#333" stroke-width="1.5"/>
+  <line x1="60" y1="210" x2="60" y2="80" stroke="#333" stroke-width="1.5"/>
+  
+  <!-- Data points -->
+  <circle cx="80" cy="180" r="4" fill="#3498db"/>
+  <circle cx="100" cy="150" r="4" fill="#3498db"/>
+  <circle cx="120" cy="170" r="4" fill="#3498db"/>
+  <circle cx="140" cy="130" r="4" fill="#3498db"/>
+  <circle cx="160" cy="110" r="4" fill="#3498db"/>
+  <circle cx="170" cy="90" r="4" fill="#3498db"/>
+  
+  <!-- Model line - straight line (underfitting) -->
+  <line x1="70" y1="170" x2="180" y2="120" stroke="#e74c3c" stroke-width="2.5"/>
+  
+  <!-- Good fit graph -->
+  <rect x="225" y="70" width="150" height="150" fill="white" stroke="#ccc" stroke-width="1"/>
+  <text x="300" y="65" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Good Fit</text>
+  
+  <!-- X and Y axes for good fit -->
+  <line x1="235" y1="210" x2="365" y2="210" stroke="#333" stroke-width="1.5"/>
+  <line x1="235" y1="210" x2="235" y2="80" stroke="#333" stroke-width="1.5"/>
+  
+  <!-- Data points -->
+  <circle cx="255" cy="180" r="4" fill="#3498db"/>
+  <circle cx="275" cy="150" r="4" fill="#3498db"/>
+  <circle cx="295" cy="170" r="4" fill="#3498db"/>
+  <circle cx="315" cy="130" r="4" fill="#3498db"/>
+  <circle cx="335" cy="110" r="4" fill="#3498db"/>
+  <circle cx="345" cy="90" r="4" fill="#3498db"/>
+  
+  <!-- Model curve - smooth curve (good fit) -->
+  <path d="M245,180 Q275,140 300,160 Q325,180 355,90" fill="none" stroke="#2ecc71" stroke-width="2.5"/>
+  
+  <!-- Overfitting graph -->
+  <rect x="400" y="70" width="150" height="150" fill="white" stroke="#ccc" stroke-width="1"/>
+  <text x="475" y="65" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Overfitting</text>
+  
+  <!-- X and Y axes for overfitting -->
+  <line x1="410" y1="210" x2="540" y2="210" stroke="#333" stroke-width="1.5"/>
+  <line x1="410" y1="210" x2="410" y2="80" stroke="#333" stroke-width="1.5"/>
+  
+  <!-- Data points -->
+  <circle cx="430" cy="180" r="4" fill="#3498db"/>
+  <circle cx="450" cy="150" r="4" fill="#3498db"/>
+  <circle cx="470" cy="170" r="4" fill="#3498db"/>
+  <circle cx="490" cy="130" r="4" fill="#3498db"/>
+  <circle cx="510" cy="110" r="4" fill="#3498db"/>
+  <circle cx="520" cy="90" r="4" fill="#3498db"/>
+  
+  <!-- Model curve - wiggly curve (overfitting) -->
+  <path d="M420,180 C430,170 435,190 450,150 C460,120 465,190 470,170 C475,150 485,110 490,130 C495,150 510,90 520,90" fill="none" stroke="#9b59b6" stroke-width="2.5"/>
+  
+  <!-- Error metrics section -->
+  <rect x="100" y="250" width="400" height="120" fill="white" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  
+  <!-- Training and test error for each model -->
+  <text x="300" y="270" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Error Metrics Comparison</text>
+  
+  <!-- Table headers -->
+  <text x="180" y="295" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Training Error</text>
+  <text x="300" y="295" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Test Error</text>
+  <text x="420" y="295" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Conclusion</text>
+  
+  <!-- Underfitting row -->
+  <text x="120" y="320" font-family="Arial" font-size="14" text-anchor="start" fill="#e74c3c">Underfitting:</text>
+  <text x="180" y="320" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">High</text>
+  <text x="300" y="320" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">High</text>
+  <text x="420" y="320" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Too simple</text>
+  
+  <!-- Good fit row -->
+  <text x="120" y="345" font-family="Arial" font-size="14" text-anchor="start" fill="#2ecc71">Good Fit:</text>
+  <text x="180" y="345" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Low</text>
+  <text x="300" y="345" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Low</text>
+  <text x="420" y="345" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Generalizes well</text>
+  
+  <!-- Overfitting row -->
+  <text x="120" y="370" font-family="Arial" font-size="14" text-anchor="start" fill="#9b59b6">Overfitting:</text>
+  <text x="180" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Very Low</text>
+  <text x="300" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">High</text>
+  <text x="420" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Too complex</text>
+  
+  <!-- Code comment -->
+  <text x="300" y="395" font-family="Courier New" font-size="10" text-anchor="middle" fill="#666">
+    // C++: Test error helps detect overfitting when train error is low but test error is high
+  </text>
+</svg>

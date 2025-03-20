@@ -1,0 +1,23 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="600" height="400" fill="#f0f0f0"/>
+    <text x="20" y="30" font-size="20" font-weight="bold">4.  Initialize SPI Peripheral</text>
+
+  <rect x="50" y="80" width="500" height="250" fill="#ffffff" stroke="black"/>
+  <text x="70" y="110" font-size="18">Code Snippet (Conceptual)</text>
+
+  <text x="80" y="150" font-size="14" fill="blue">void SPI_Init() {</text>
+  <text x="100" y="175" font-size="14" fill="green">  // 1. Enable SPI Clock</text>
+  <text x="100" y="195" font-size="14" fill="green">  // 2. Configure GPIO pins (MOSI, MISO, SCLK, CS)</text>
+  <text x="100" y="215" font-size="14" fill="green">  // 3. Set SPI Mode (CPOL, CPHA)</text>
+  <text x="100" y="235" font-size="14" fill="green">  // 4. Set Clock Speed (Baud Rate)</text>
+  <text x="100" y="255" font-size="14" fill="green">  // 5. Set Data Frame Format (8-bit, 16-bit)</text>
+  <text x="100" y="275" font-size="14" fill="green">  // 6. Enable SPI Peripheral</text>
+  <text x="80" y="300" font-size="14" fill="blue">}</text>
+
+  <text x="330" y="150" font-size="14">Example (HAL):</text>
+    <text x="330" y="175" font-size="12" fill="#404040">  hspi1.Instance = SPI1;</text>
+    <text x="330" y="190" font-size="12" fill="#404040">  hspi1.Init.Mode = SPI_MODE_MASTER;</text>
+  <text x="330" y="205" font-size="12" fill="#404040">  hspi1.Init.CPOL = SPI_POLARITY_LOW;</text>
+  <text x="330" y="220" font-size="12" fill="#404040">  hspi1.Init.CPHA = SPI_PHASE_1EDGE;</text>
+    <text x="330" y="235" font-size="12" fill="#404040">  HAL_SPI_Init(&amp;hspi1);</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f5f5f5" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Preventing Overfitting: Regularization Techniques</text>
+  
+  <!-- Regularization methods box -->
+  <rect x="50" y="70" width="500" height="280" fill="white" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  
+  <!-- L1 Regularization (Lasso) -->
+  <rect x="70" y="90" width="210" height="110" fill="#e6f7ff" stroke="#0099cc" stroke-width="2" rx="5" ry="5"/>
+  <text x="175" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#0066cc">L1 Regularization (Lasso)</text>
+  
+  <text x="80" y="130" font-family="Arial" font-size="12" fill="#333">Adds absolute value of weights to loss:</text>
+  <text x="175" y="155" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#0066cc">Loss = Error + λ∑|w_i|</text>
+  <text x="80" y="175" font-family="Arial" font-size="12" fill="#333">• Encourages sparse models</text>
+  <text x="80" y="195" font-family="Arial" font-size="12" fill="#333">• Performs feature selection</text>
+  
+  <!-- L2 Regularization (Ridge) -->
+  <rect x="320" y="90" width="210" height="110" fill="#fff2e6" stroke="#ff9933" stroke-width="2" rx="5" ry="5"/>
+  <text x="425" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#cc6600">L2 Regularization (Ridge)</text>
+  
+  <text x="330" y="130" font-family="Arial" font-size="12" fill="#333">Adds squared weights to loss:</text>
+  <text x="425" y="155" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#cc6600">Loss = Error + λ∑(w_i)²</text>
+  <text x="330" y="175" font-family="Arial" font-size="12" fill="#333">• Shrinks weights toward zero</text>
+  <text x="330" y="195" font-family="Arial" font-size="12" fill="#333">• Handles correlated features well</text>
+  
+  <!-- Dropout -->
+  <rect x="70" y="220" width="210" height="110" fill="#e6ffe6" stroke="#33cc33" stroke-width="2" rx="5" ry="5"/>
+  <text x="175" y="240" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#009900">Dropout</text>
+  
+  <text x="80" y="260" font-family="Arial" font-size="12" fill="#333">Randomly disables neurons during training:</text>
+  <text x="80" y="280" font-family="Arial" font-size="12" fill="#333">• Prevents co-adaptation of features</text>
+  <text x="80" y="300" font-family="Arial" font-size="12" fill="#333">• Acts as ensemble of subnetworks</text>
+  <text x="80" y="320" font-family="Arial" font-size="12" fill="#333">• Common in neural networks</text>
+  
+  <!-- Early Stopping -->
+  <rect x="320" y="220" width="210" height="110" fill="#f7e6ff" stroke="#9933cc" stroke-width="2" rx="5" ry="5"/>
+  <text x="425" y="240" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#6600cc">Early Stopping</text>
+  
+  <text x="330" y="260" font-family="Arial" font-size="12" fill="#333">Stop training when validation error increases:</text>
+  <text x="330" y="280" font-family="Arial" font-size="12" fill="#333">• Monitors validation performance</text>
+  <text x="330" y="300" font-family="Arial" font-size="12" fill="#333">• Stops before overfitting occurs</text>
+  <text x="330" y="320" font-family="Arial" font-size="12" fill="#333">• Simple yet effective approach</text>
+  
+  <!-- C++ code example -->
+  <rect x="180" y="340" width="240" height="50" fill="#ffffcc" stroke="#cccc00" stroke-width="1" rx="5" ry="5"/>
+  <text x="190" y="360" font-family="Courier New" font-size="12" fill="#333">// L2 Regularization in C++</text>
+  <text x="190" y="380" font-family="Courier New" font-size="12" fill="#333">loss += lambda * dot(weights, weights);</text>
+</svg>

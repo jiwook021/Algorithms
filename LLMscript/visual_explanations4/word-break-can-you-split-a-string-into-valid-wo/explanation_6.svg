@@ -1,0 +1,19 @@
+<svg width="400" height="350" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="350" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">6. DP - Recurrence Relation</text>
+  <text x="20" y="60">Input: "leetcode"</text>
+  <text x="20" y="80">Dictionary: {"leet", "code"}</text>
+
+    <rect x="20" y="110" width="360" height="20" stroke="black" fill="white"/>
+    <text x="25" y="125" font-size="12">l  e  e  t  c  o  d  e</text>
+    <rect x="20" y="140" width="360" height="40"  stroke="black"/>
+    <text x="25" y="165" font-size="14">T  F  F  F  F  F  F  F</text>
+    <text x="20" y="190">dp[i] = True  if  (dp[j] == True AND s[j+1...i] is in dictionary) for some j &lt; i</text>
+
+    <text x="20" y="230">Example: To calculate dp[4] (for "leet"):</text>
+    <text x="30" y="250">- Check if dp[0] is True and "leet" is in dictionary.</text>
+    <text x="30" y="270">- Check if dp[1] is True and "eet" is in dictionary.</text>
+     <text x="30" y="290">- Check if dp[2] is True and "et" is in dictionary.</text>
+      <text x="30" y="310">- Check if dp[3] is True and "t" is in dictionary.</text>
+
+</svg>

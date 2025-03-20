@@ -1,0 +1,35 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="20" font-weight="bold">1. The Dungeon Maze</text>
+
+  <!-- Maze Grid -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="50" y="0" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="100" y="0" width="50" height="50" fill="#888888" stroke="black"/>
+    <rect x="150" y="0" width="50" height="50" fill="white" stroke="black"/>
+
+    <rect x="0" y="50" width="50" height="50" fill="#888888" stroke="black"/>
+    <rect x="50" y="50" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="100" y="50" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="150" y="50" width="50" height="50" fill="white" stroke="black"/>
+
+     <rect x="0" y="100" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="50" y="100" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="100" y="100" width="50" height="50" fill="#888888" stroke="black"/>
+    <rect x="150" y="100" width="50" height="50" fill="white" stroke="black"/>
+
+    <rect x="0" y="150" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="50" y="150" width="50" height="50" fill="#888888" stroke="black"/>
+    <rect x="100" y="150" width="50" height="50" fill="white" stroke="black"/>
+    <rect x="150" y="150" width="50" height="50" fill="white" stroke="black"/>
+
+    <!-- Start and End -->
+    <circle cx="25" cy="25" r="15" fill="green"/>
+    <text x="15" y="30" font-size="12">Start</text>
+    <circle cx="175" cy="175" r="15" fill="red"/>
+    <text x="165" y="180" font-size="12">End</text>
+  </g>
+
+  <text x="20" y="280" font-size="14">Walls are gray. Find the path from Start (green) to End (red).</text>
+</svg>

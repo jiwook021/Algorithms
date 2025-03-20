@@ -1,0 +1,20 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f0f0f0" />
+  <text x="300" y="40" text-anchor="middle" font-size="24" font-weight="bold">9. Fine-tune and Iterate</text>
+
+  <rect x="50" y="90" width="250" height="250" fill="lightyellow" stroke="black"/>
+  <text x="175" y="120" text-anchor="middle" font-size="18">Adjust Hyperparameters:</text>
+    <text x="175" y="160" text-anchor="middle" font-size="14">- Learning Rate</text>
+      <text x="175" y="190" text-anchor="middle" font-size="14">- Batch Size</text>
+       <text x="175" y="220" text-anchor="middle" font-size="14">- Epochs</text>
+    <text x="175" y="250" text-anchor="middle" font-size="14">- Image Size</text>
+    <text x="175" y="280" text-anchor="middle" font-size="14">- Augmentation Techniques</text>
+  <polygon points="300,180 320,200 300,220 280,200" fill="black" />
+
+    <rect x="350" y="90" width="200" height="200" fill="#baffc9" stroke="black"/>
+      <text x="450" y="140" text-anchor="middle" font-size="18">Re-train</text>
+          <text x="450" y="180" text-anchor="middle" font-size="16">Evaluate</text>
+    <text x="450" y="220" text-anchor="middle" font-size="14">(Repeat until satisfied)</text>
+
+      <text x="300" y="340" text-anchor="middle" font-size="14" fill="blue">Iteratively improve the model based on evaluation results.</text>
+</svg>

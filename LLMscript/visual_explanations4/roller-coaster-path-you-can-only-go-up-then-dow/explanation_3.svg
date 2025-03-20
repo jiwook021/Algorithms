@@ -1,0 +1,36 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Concept 3: Up-Down Path</text>
+  <text x="20" y="50" font-size="14">A valid path must first go up, then down.</text>
+
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+    <text x="20" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">2</text>
+    <rect x="40" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+    <text x="60" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">5</text>
+    <rect x="80" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+    <text x="100" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">7</text>
+    <rect x="120" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+    <text x="140" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">4</text>
+    <rect x="160" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+    <text x="180" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">1</text>
+
+    <path d="M 20 20 L 60 20 L 100 20 L 140 20 L 180 20" stroke="green" stroke-width="4" fill="none" />
+      <text x="100" y="60" font-size="14" fill="green">Valid Up-Down Path</text>
+  </g>
+    <g transform="translate(50, 150)">
+        <rect x="0" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+        <text x="20" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">7</text>
+        <rect x="40" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+        <text x="60" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">5</text>
+        <rect x="80" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+        <text x="100" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">2</text>
+        <rect x="120" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+        <text x="140" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">4</text>
+        <rect x="160" y="0" width="40" height="40" fill="#ccddff" stroke="black"/>
+        <text x="180" y="25" text-anchor="middle" dominant-baseline="middle" font-size="16">8</text>
+
+        <path d="M 20 20 L 60 20 L 100 20" stroke="red" stroke-width="4" fill="none" />
+        <text x="60" y="60" font-size="14" fill="red">Invalid Path (Down-Down)</text>
+  </g>
+</svg>

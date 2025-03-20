@@ -1,0 +1,9 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">9. Termination Condition (One Stone)</text>
+
+  <circle cx="150" cy="100" r="30" fill="gray" stroke="black" />
+  <text x="140" y="105" font-size="16">6</text>
+
+  <text x="20" y="180" font-size="14">The process ends when only one stone remains.</text>
+</svg>

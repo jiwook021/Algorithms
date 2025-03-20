@@ -1,0 +1,63 @@
+<svg viewBox="0 0 600 400" width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .queue { stroke: #333; stroke-width: 2; }
+        .high-prio { fill: #c7e9c0; }
+        .mid-prio { fill: #f7f7cf; }
+        .low-prio { fill: #f7d0d0; }
+        .arrow { stroke: #666; stroke-width: 1.5; marker-end: url(#arrowhead); }
+        text { font-family: monospace; font-size: 12px; }
+        .code { fill: #333; font-family: monospace; font-size: 10px; }
+    </style>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="#666"/>
+        </marker>
+    </defs>
+
+    <!-- Queues -->
+    <rect class="queue high-prio" x="50" y="30" width="500" height="80" rx="5"/>
+    <rect class="queue mid-prio" x="50" y="150" width="500" height="80" rx="5"/>
+    <rect class="queue low-prio" x="50" y="270" width="500" height="80" rx="5"/>
+
+    <!-- Queue labels -->
+    <text x="60" y="50">High Priority Queue (RR, 8ms quantum)</text>
+    <text x="60" y="170">Medium Priority Queue (RR, 16ms quantum)</text>
+    <text x="60" y="290">Low Priority Queue (FCFS)</text>
+
+    <!-- Process examples -->
+    <rect x="70" y="70" width="50" height="30" fill="#2ca25f"/>
+    <text x="75" y="90" fill="white">P1</text>
+    <rect x="130" y="70" width="50" height="30" fill="#2ca25f"/>
+    <text x="135" y="90" fill="white">P2</text>
+
+    <rect x="70" y="190" width="50" height="30" fill="#e5c494"/>
+    <text x="75" y="210" fill="black">P3</text>
+
+    <rect x="70" y="310" width="50" height="30" fill="#d73027"/>
+    <text x="75" y="330" fill="white">P4</text>
+
+    <!-- Arrows -->
+    <path class="arrow" d="M300,110 C300,130 300,130 300,150"/>
+    <path class="arrow" d="M300,230 C300,250 300,250 300,270"/>
+    <path class="arrow" d="M500,350 Q550,350 550,310 L550,270" stroke-dasharray="4"/>
+
+    <!-- Code example -->
+    <text class="code" x="350" y="70">
+        <tspan x="350" y="70">struct Process {</tspan>
+        <tspan x="360" y="85">  int pid;</tspan>
+        <tspan x="360" y="100">  int priority;</tspan>
+        <tspan x="360" y="115">  int time_remaining;</tspan>
+        <tspan x="350" y="130">};</tspan>
+        <tspan x="350" y="160">void scheduler() {</tspan>
+        <tspan x="360" y="175">  if (queue_timeout || process_blocked) {</tspan>
+        <tspan x="370" y="190">    demote_process();</tspan>
+        <tspan x="360" y="205">  } else if (wait_time > threshold) {</tspan>
+        <tspan x="370" y="220">    promote_process();</tspan>
+        <tspan x="350" y="235">}</tspan>
+    </text>
+
+    <!-- Legend -->
+    <text x="50" y="370" font-size="11">Arrows show priority demotion (solid)</text>
+    <text x="50" y="385" font-size="11">and aging-based promotion (dashed)</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <title>Making Change - Concept 10: Tabulation</title>
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Tabulation (Bottom-Up DP)</text>
+
+    <text x="20" y="60" font-size="14">Fill the DP table iteratively, starting from the base case.</text>
+
+     <rect x="20" y="90" width="360" height="30" fill="#ecf0f1" stroke="black" />
+      <text x="30" y="110" font-size="14">dp[0] = 0</text>
+
+     <rect x="20" y="130" width="360" height="30" fill="#ecf0f1" stroke="black" />
+      <text x="30" y="150" font-size="14">dp[1] = 1</text>
+
+        <rect x="20" y="170" width="360" height="30" fill="#ecf0f1" stroke="black" />
+      <text x="30" y="190" font-size="14">dp[2] = 2</text>
+
+          <rect x="20" y="210" width="360" height="30" fill="#ecf0f1" stroke="black" />
+       <text x="30" y="230" font-size="14">...</text>
+
+        <rect x="20" y="250" width="360" height="30" fill="#ecf0f1" stroke="black" />
+      <text x="30" y="270" font-size="14">dp[41] = 4</text>
+
+    <text x="20" y="290" font-size="14">Build solutions from smaller to larger amounts.</text>
+</svg>

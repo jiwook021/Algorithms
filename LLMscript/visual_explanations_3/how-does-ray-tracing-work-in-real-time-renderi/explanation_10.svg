@@ -1,0 +1,25 @@
+<svg width="400" height="300" viewport="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="300" fill="#f0f0f0" />
+    <circle cx="50" cy="150" r="10" fill="blue"/>
+    <text x="40" y="180" font-size="12">Eye</text>
+
+  <rect x="350" cy="140" width="20" height="20" fill="darkgreen"/>
+     <text x="340" y="130" font-size="10">Pixel</text>
+
+    <line x1="60" y1="150" x2="350" y2="150" stroke="red" stroke-width="2"/>
+    <polygon points="340,145 350,150 340,155" fill="red"/>
+
+    <circle cx="300" cy="150" r="40" fill="lightgreen"/>
+    <text x="290" y="140" font-size="12">Object</text>
+
+      <circle cx="350" cy="50" r="10" fill="yellow" />
+  <text x="340" y="40" font-size="10">Light</text>
+
+     <line x1="320" y1="135" x2="350" y2="50" stroke="orange" stroke-width="2" />
+    <polygon points="340,45 350,50 340,55" fill="orange"/>
+
+      <circle cx="320" cy="135" r="4" fill="purple"/>
+       <text x="270" y="100" font-size="10">Hit Point + Shading</text>
+      <text x="100" y="75" font-size="14">Final Pixel Color</text>
+
+</svg>

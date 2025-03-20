@@ -1,0 +1,13 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">5. DP - Base Case</text>
+  <text x="20" y="60">Input: "leetcode"</text>
+    <text x="20" y="80">Dictionary: {"leet", "code"}</text>
+  <text x="20" y="110">dp[0] = True (Empty string is always a valid segmentation)</text>
+
+    <rect x="20" y="140" width="360" height="20" stroke="black" fill="white"/>
+    <text x="25" y="155" font-size="12">l  e  e  t  c  o  d  e</text>
+    <rect x="20" y="170" width="360" height="40"  stroke="black"/>
+    <text x="25" y="195" font-size="14">T  F  F  F  F  F  F  F</text>
+    <text x="20" y="230">dp[0] is True because "" (empty string) can always be formed.</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f0f0f0" />
+  <text x="300" y="30" text-anchor="middle" font-size="24" font-weight="bold">10. Path Planning</text>
+
+  <rect x="50" y="80" width="500" height="200" fill="#eee" />
+
+    <line x1="70" y1="100" x2="70" y2="260" stroke="white" stroke-dasharray="5,5"/>
+    <line x1="530" y1="100" x2="530" y2="260" stroke="white" stroke-dasharray="5,5"/>
+
+  <rect x="250" y="140" width="40" height="60" fill="#9E9E9E" />
+  <text x="270" y="210" text-anchor="middle" font-size="14">Car</text>
+
+  <circle cx="450" cy="170" r="15" fill="red"/>
+  <text x="450" y="195" text-anchor="middle" font-size="14">Pedestrian</text>
+
+   <path d="M 270,140 C 270, 100, 400, 100, 400, 170" stroke="green" stroke-width="3" fill="none"/>
+   <text x="350" y="120" text-anchor="middle" font-size="14" fill="green">Planned Path</text>
+
+  <text x="300" y="350" text-anchor="middle" font-size="14">Based on detected objects and lanes, the car plans a safe trajectory.</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Step 2: Push onto Stack</text>
+  <text x="20" y="60" font-size="14">Push characters onto the stack *after* the '('.</text>
+
+    <text x="20" y="100" font-size="16" >( a b c ...</text>
+    <path d="M50 110 L 150 150" stroke="black" marker-end="url(#arrowhead)" />
+
+  <rect x="150" y="140" width="50" height="20" fill="#aaf" />
+  <text x="165" y="155" font-size="12">a</text>
+  <rect x="150" y="160" width="50" height="20" fill="#aaf" />
+  <text x="165" y="175" font-size="12">b</text>
+    <rect x="150" y="180" width="50" height="20" fill="#aaf" />
+  <text x="165" y="195" font-size="12">c</text>
+  <text x="150" y="210" font-size="14">Stack</text>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+</svg>

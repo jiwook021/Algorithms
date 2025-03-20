@@ -1,0 +1,12 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="500" height="250" fill="#F8F8FF" stroke="black" stroke-width="2"/>
+   <text x="200" y="80" font-size="24" font-weight="bold">Summary</text>
+
+    <text x="70" y="120" font-size="16">• Memory-mapped registers are special memory locations.</text>
+      <text x="70" y="150" font-size="16">• They are used by the CPU to control hardware peripherals.</text>
+        <text x="70" y="180" font-size="16">• Each peripheral has a set of registers at specific addresses.</text>
+          <text x="70" y="210" font-size="16">• Writing to these registers changes the peripheral's behavior.</text>
+            <text x="70" y="240" font-size="16">• Reading from registers provides the peripheral's status.</text>
+  <text x="130" y="350" font-size="24" font-weight="bold">10. Conclusion</text>
+  <text x="50" y="380" font-size="16">Memory-mapped I/O simplifies hardware control for the CPU.</text>
+</svg>

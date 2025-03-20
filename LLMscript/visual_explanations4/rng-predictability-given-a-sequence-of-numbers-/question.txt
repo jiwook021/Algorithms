@@ -1,0 +1,1 @@
+"RNG Predictability": Given a sequence of numbers from a random number generator, determine the seed.

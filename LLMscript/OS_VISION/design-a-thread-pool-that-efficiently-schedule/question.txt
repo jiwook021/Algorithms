@@ -1,0 +1,1 @@
+Design a **thread pool** that efficiently schedules jobs while preventing deadlocks.  

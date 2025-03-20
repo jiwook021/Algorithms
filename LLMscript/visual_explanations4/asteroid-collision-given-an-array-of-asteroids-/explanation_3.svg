@@ -1,0 +1,26 @@
+<svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="150" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">3. Collision Condition</text>
+
+  <circle cx="80" cy="80" r="15" fill="blue" />
+  <text x="75" y="85" font-size="12" fill="white">5</text>
+  <path d="M100 80 L130 80" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <circle cx="250" cy="80" r="10" fill="red" />
+  <text x="245" y="85" font-size="12" fill="white">-2</text>
+  <path d="M230 80 L200 80" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+    
+    <circle cx="320" cy="60" r="8" fill="blue"/>
+    <circle cx="340" cy="60" r="8" fill="red"/>
+     <text x="315" y="90" font-size="12">No Collision</text>
+    <text x="310" y="105" font-size="12">(Same Direction)</text>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+    refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+
+  <text x="20" y="130" font-size="14">Collision occurs only if asteroids move towards each other.</text>
+</svg>

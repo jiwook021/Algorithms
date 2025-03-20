@@ -1,0 +1,63 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f5f5f5"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">Decision Tree for Apple vs Orange Classification</text>
+  
+  <!-- Decision Tree -->
+  <g transform="translate(300, 80)">
+    <!-- Root Node -->
+    <rect x="-80" y="0" width="160" height="50" rx="5" fill="#4CAF50" stroke="#333" stroke-width="2"/>
+    <text x="0" y="30" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Weight > 150g?</text>
+    
+    <!-- Branches -->
+    <line x1="-50" y1="50" x2="-120" y2="90" stroke="#333" stroke-width="2"/>
+    <line x1="50" y1="50" x2="120" y2="90" stroke="#333" stroke-width="2"/>
+    
+    <text x="-85" y="75" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Yes</text>
+    <text x="85" y="75" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">No</text>
+    
+    <!-- Level 1 Nodes -->
+    <rect x="-180" y="90" width="120" height="50" rx="5" fill="#2196F3" stroke="#333" stroke-width="2"/>
+    <text x="-120" y="120" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Color = Orange?</text>
+    
+    <rect x="60" y="90" width="120" height="50" rx="5" fill="#2196F3" stroke="#333" stroke-width="2"/>
+    <text x="120" y="120" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Texture = Smooth?</text>
+    
+    <!-- Branches Level 2 -->
+    <line x1="-150" y1="140" x2="-180" y2="180" stroke="#333" stroke-width="2"/>
+    <line x1="-90" y1="140" x2="-60" y2="180" stroke="#333" stroke-width="2"/>
+    
+    <line x1="90" y1="140" x2="60" y2="180" stroke="#333" stroke-width="2"/>
+    <line x1="150" y1="140" x2="180" y2="180" stroke="#333" stroke-width="2"/>
+    
+    <text x="-165" y="165" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Yes</text>
+    <text x="-75" y="165" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">No</text>
+    
+    <text x="75" y="165" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">Yes</text>
+    <text x="165" y="165" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">No</text>
+    
+    <!-- Leaf Nodes -->
+    <rect x="-210" y="180" width="60" height="40" rx="5" fill="#FF9800" stroke="#333" stroke-width="2"/>
+    <text x="-180" y="205" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Orange</text>
+    
+    <rect x="-90" y="180" width="60" height="40" rx="5" fill="#F44336" stroke="#333" stroke-width="2"/>
+    <text x="-60" y="205" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Apple</text>
+    
+    <rect x="30" y="180" width="60" height="40" rx="5" fill="#F44336" stroke="#333" stroke-width="2"/>
+    <text x="60" y="205" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Apple</text>
+    
+    <rect x="150" y="180" width="60" height="40" rx="5" fill="#FF9800" stroke="#333" stroke-width="2"/>
+    <text x="180" y="205" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Orange</text>
+  </g>
+  
+  <!-- Example Code -->
+  <rect x="50" y="250" width="500" height="120" rx="5" fill="#333" stroke="#000" stroke-width="2"/>
+  <text x="60" y="270" font-family="Courier New" font-size="12" fill="#8BC34A">// C++ code to train a Decision Tree for apple/orange classification</text>
+  <text x="60" y="290" font-family="Courier New" font-size="12" fill="#E0E0E0">#include &lt;iostream&gt;</text>
+  <text x="60" y="310" font-family="Courier New" font-size="12" fill="#E0E0E0">#include &lt;vector&gt;</text>
+  <text x="60" y="330" font-family="Courier New" font-size="12" fill="#E0E0E0">// Using scikit-learn inspired API</text>
+  <text x="60" y="350" font-family="Courier New" font-size="12" fill="#E0E0E0">DecisionTreeClassifier tree;</text>
+  <text x="60" y="370" font-family="Courier New" font-size="12" fill="#E0E0E0">tree.fit(features, labels); // features: weight, color, texture</text>
+</svg>

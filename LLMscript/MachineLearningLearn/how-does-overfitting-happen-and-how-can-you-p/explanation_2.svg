@@ -1,0 +1,57 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Preventing Overfitting: Regularization Techniques</text>
+  
+  <!-- Code box -->
+  <rect x="50" y="70" width="500" height="180" fill="white" stroke="#333" stroke-width="2" rx="5" />
+  
+  <!-- Code content -->
+  <text x="60" y="95" font-family="Consolas, monospace" font-size="14" fill="#333">
+    <tspan x="60" dy="0">// L1 Regularization (Lasso)</tspan>
+    <tspan x="60" dy="20">double cost = calculateError(predictions, targets);</tspan>
+    <tspan x="60" dy="20">double l1Penalty = lambda * std::accumulate(weights.begin(),</tspan>
+    <tspan x="60" dy="20">                                      weights.end(), 0.0,</tspan>
+    <tspan x="60" dy="20">                                      [](double sum, double w) {</tspan>
+    <tspan x="60" dy="20">                                        return sum + std::abs(w);</tspan>
+    <tspan x="60" dy="20">                                      });</tspan>
+    <tspan x="60" dy="20">cost += l1Penalty; // Add L1 penalty to cost function</tspan>
+  </text>
+  
+  <!-- Regularization methods -->
+  <rect x="50" y="270" width="150" height="100" fill="#4285f4" fill-opacity="0.2" stroke="#4285f4" stroke-width="2" rx="5" />
+  <text x="125" y="290" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#4285f4">L1 Regularization</text>
+  <text x="125" y="320" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" width="140">
+    <tspan x="125" dy="0">Adds penalty proportional</tspan>
+    <tspan x="125" dy="15">to absolute weight values</tspan>
+    <tspan x="125" dy="15">Encourages sparsity</tspan>
+  </text>
+  
+  <rect x="225" y="270" width="150" height="100" fill="#34a853" fill-opacity="0.2" stroke="#34a853" stroke-width="2" rx="5" />
+  <text x="300" y="290" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#34a853">L2 Regularization</text>
+  <text x="300" y="320" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" width="140">
+    <tspan x="300" dy="0">Adds penalty proportional</tspan>
+    <tspan x="300" dy="15">to squared weight values</tspan>
+    <tspan x="300" dy="15">Prevents large weights</tspan>
+  </text>
+  
+  <rect x="400" y="270" width="150" height="100" fill="#ea4335" fill-opacity="0.2" stroke="#ea4335" stroke-width="2" rx="5" />
+  <text x="475" y="290" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#ea4335">Dropout</text>
+  <text x="475" y="320" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" width="140">
+    <tspan x="475" dy="0">Randomly deactivates</tspan>
+    <tspan x="475" dy="15">neurons during training</tspan>
+    <tspan x="475" dy="15">Prevents co-adaptation</tspan>
+  </text>
+  
+  <!-- Arrows connecting code to methods -->
+  <line x1="125" y1="250" x2="125" y2="270" stroke="#4285f4" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+</svg>

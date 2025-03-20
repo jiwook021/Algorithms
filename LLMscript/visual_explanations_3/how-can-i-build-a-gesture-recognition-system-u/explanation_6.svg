@@ -1,0 +1,19 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="300" fill="#f0f0f0" />
+
+    <!-- Contour -->
+      <rect x="50" y="80" width="120" height="140" fill="black" stroke="black" stroke-width="2"/>
+     <path d="M80 100 L90 120 L110 110 L120 130 L100 160 Z" fill="white"  stroke="#4CAF50" stroke-width="3"/>
+ <text x="65" y="150" font-size="14" fill="#4CAF50">Contour</text>
+  <polygon points="170,150 210,150" fill="black" />
+  <polygon points="200,140 210,150 200,160" fill="black" />
+
+    <!-- Convex Hull -->
+    <rect x="230" y="80" width="120" height="140" fill="black" stroke="black" stroke-width="2"/>
+       <path d="M260 100 L270 120 L290 110 L300 130 L280 160 Z" fill="white"  stroke="#4CAF50" stroke-width="3"/>
+     <path d="M255 95 L275 125 L305 135 L275 165 Z" fill="none" stroke="red" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="245" y="150" font-size="14" fill="red">Convex Hull</text>
+
+    <text x="80" y="250" font-size="16" fill="black">6. Feature Extraction: Convex Hull</text>
+      <text x="70" y="270" font-size="12" fill="black">Find the outermost boundary of the hand.</text>
+</svg>

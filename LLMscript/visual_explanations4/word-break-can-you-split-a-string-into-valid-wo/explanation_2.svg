@@ -1,0 +1,10 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">2. Dictionary Representation</text>
+  <text x="20" y="60">Dictionary words are often stored in a set for efficient lookup.</text>
+  <rect x="50" y="90" width="80" height="30" fill="#ADD8E6" rx="5"/>
+  <text x="60" y="110" fill="black">leet</text>
+  <rect x="150" y="90" width="80" height="30" fill="#ADD8E6" rx="5"/>
+  <text x="160" y="110" fill="black">code</text>
+  <text x="20" y="150">Lookup Time: O(1) (average for set)</text>
+</svg>

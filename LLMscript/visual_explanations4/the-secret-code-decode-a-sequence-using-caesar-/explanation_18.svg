@@ -1,0 +1,8 @@
+<svg width="300" height="180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#eee" />
+  <text x="20" y="30" font-size="16" font-weight="bold">9. Choosing the Right Method</text>
+  <text x="20" y="60">Caesar: Simple, weak security.</text>
+  <text x="20" y="80">XOR:  Symmetric, key management is crucial.</text>
+  <text x="20" y="100">Base64:  Not encryption, data expansion.</text>
+  <text x="20" y="130">Security depends on context and needs.</text>
+</svg>

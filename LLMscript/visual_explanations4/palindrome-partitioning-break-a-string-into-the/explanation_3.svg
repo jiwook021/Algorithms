@@ -1,0 +1,10 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Concept 3: Palindrome Partitioning - Goal</text>
+  <text x="20" y="60">String: "ababa"</text>
+  <text x="20" y="90">Goal:  Divide into the *fewest* palindromes.</text>
+  <text x="20" y="140">Possible Partitions (Not all shown):</text>
+    <text x="20" y="170" fill="blue">["a", "b", "a", "b", "a"]  - 5 palindromes</text>
+  <text x="20" y="200" fill="green">["aba", "b", "a"] - 3 palindromes</text>
+  <text x="20" y="230" fill="darkgreen">["aba", "ba"] - Not All Palindromes</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Common Activation Functions</text>
+  
+  <!-- Graph area -->
+  <rect x="50" y="80" width="500" height="220" fill="white" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Axes -->
+  <line x1="50" y1="190" x2="550" y2="190" stroke="#333" stroke-width="2"/>
+  <line x1="300" y1="80" x2="300" y2="300" stroke="#333" stroke-width="2"/>
+  
+  <!-- Axis labels -->
+  <text x="540" y="210" font-family="Arial" font-size="14" fill="#333">x</text>
+  <text x="290" y="90" font-family="Arial" font-size="14" fill="#333">y</text>
+  <text x="310" y="210" font-family="Arial" font-size="12" fill="#333">0</text>
+  
+  <!-- ReLU function -->
+  <path d="M50 190 L300 190 L550 80" stroke="#e74c3c" stroke-width="3" fill="none"/>
+  <text x="100" y="170" font-family="Arial" font-size="14" fill="#e74c3c" font-weight="bold">ReLU: max(0,x)</text>
+  
+  <!-- Sigmoid function -->
+  <path d="M50 280 Q175 280 300 190 Q425 100 550 100" stroke="#3498db" stroke-width="3" fill="none"/>
+  <text x="100" y="260" font-family="Arial" font-size="14" fill="#3498db" font-weight="bold">Sigmoid: 1/(1+e^-x)</text>
+  
+  <!-- Tanh function -->
+  <path d="M50 280 Q175 250 300 190 Q425 130 550 100" stroke="#2ecc71" stroke-width="3" fill="none"/>
+  <text x="450" y="130" font-family="Arial" font-size="14" fill="#2ecc71" font-weight="bold">Tanh: (e^x-e^-x)/(e^x+e^-x)</text>
+  
+  <!-- Leaky ReLU function -->
+  <path d="M50 210 L300 190 L550 80" stroke="#9b59b6" stroke-width="3" fill="none" stroke-dasharray="5,5"/>
+  <text x="450" y="170" font-family="Arial" font-size="14" fill="#9b59b6" font-weight="bold">Leaky ReLU: max(0.1x,x)</text>
+  
+  <!-- Explanation text -->
+  <rect x="50" y="310" width="500" height="80" fill="#fff" rx="10" ry="10" stroke="#ddd" stroke-width="1"/>
+  <text x="60" y="330" font-family="Arial" font-size="14" fill="#333">
+    <tspan x="60" y="330">Different activation functions have unique properties that make them suitable</tspan>
+    <tspan x="60" y="355">for specific tasks. ReLU is computationally efficient and helps with vanishing</tspan>
+    <tspan x="60" y="380">gradient problems. Sigmoid and Tanh bound outputs, useful for probabilities.</tspan>
+  </text>
+  
+  <!-- Code example -->
+  <rect x="430" y="220" width="160" height="70" fill="#f1f1f1" rx="5" ry="5" stroke="#ddd" stroke-width="1"/>
+  <text x="440" y="240" font-family="Courier New" font-size="12" fill="#333">
+    <tspan x="440" y="240">// C++ ReLU</tspan>
+    <tspan x="440" y="260">float relu(float x) {</tspan>
+    <tspan x="440" y="280">  return std::max(0.0f, x);</tspan>
+  </text>
+</svg>

@@ -1,0 +1,15 @@
+<svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Complete Example</text>
+
+  <text x="20" y="70" font-size="14">Input: (ab(cd)ef)</text>
+
+    <text x="20" y="110" font-size="14">1. Stack: [ ]   String: "(ab(cd)ef)"</text>
+  <text x="20" y="130" font-size="14">2. Stack: [a, b]   String: "(ab(cd)ef)"</text>
+    <text x="20" y="150" font-size="14">3. Stack: [a, b, c, d]  String: "(ab(cd)ef)"</text>
+    <text x="20" y="170" font-size="14">4. Reverse 'cd' -> 'dc', Stack: [a,b]  String: "(abdc)ef)" </text>
+    <text x="20" y="190" font-size="14">5. Stack: [a, b, d, c, e, f] String: "(abdc)ef)"</text>
+     <text x="20" y="210" font-size="14">6. Reverse 'abdc' -> 'fedcba', Stack: [ ]  String: "fedcba"</text>
+
+  <text x="20" y="250" font-size="16" font-weight="bold">Output: fedcba</text>
+</svg>

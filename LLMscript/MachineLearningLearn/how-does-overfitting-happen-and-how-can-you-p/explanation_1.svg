@@ -1,0 +1,40 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Overfitting: Training vs. Testing Error</text>
+  
+  <!-- Axes -->
+  <line x1="100" y1="300" x2="500" y2="300" stroke="#333" stroke-width="2" />
+  <line x1="100" y1="300" x2="100" y2="100" stroke="#333" stroke-width="2" />
+  
+  <!-- Axis labels -->
+  <text x="300" y="340" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Model Complexity</text>
+  <text x="60" y="200" font-family="Arial" font-size="16" text-anchor="middle" fill="#333" transform="rotate(-90, 60, 200)">Error</text>
+  
+  <!-- Training error curve -->
+  <path d="M 100,250 Q 200,200 300,150 T 500,80" fill="none" stroke="#4285f4" stroke-width="3" />
+  <text x="520" y="80" font-family="Arial" font-size="14" fill="#4285f4" font-weight="bold">Training Error</text>
+  
+  <!-- Testing error curve -->
+  <path d="M 100,250 Q 200,200 300,170 T 500,220" fill="none" stroke="#ea4335" stroke-width="3" />
+  <text x="520" y="220" font-family="Arial" font-size="14" fill="#ea4335" font-weight="bold">Testing Error</text>
+  
+  <!-- Optimal point -->
+  <circle cx="300" cy="170" r="6" fill="#34a853" />
+  <text x="300" y="150" font-family="Arial" font-size="14" text-anchor="middle" fill="#34a853" font-weight="bold">Optimal Model</text>
+  
+  <!-- Regions -->
+  <rect x="100" y="100" width="150" height="200" fill="#fbbc05" fill-opacity="0.2" />
+  <text x="175" y="120" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Underfitting</text>
+  
+  <rect x="350" y="100" width="150" height="200" fill="#ea4335" fill-opacity="0.2" />
+  <text x="425" y="120" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Overfitting</text>
+  
+  <!-- Explanation -->
+  <text x="300" y="370" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">
+    <tspan x="300" dy="0">Overfitting occurs when a model learns the training data too well,</tspan>
+    <tspan x="300" dy="20">capturing noise rather than the underlying pattern.</tspan>
+  </text>
+</svg>

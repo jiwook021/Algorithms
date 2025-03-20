@@ -1,0 +1,38 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Linear Regression: Basic Concept</text>
+  
+  <!-- Coordinate system -->
+  <line x1="100" y1="300" x2="500" y2="300" stroke="#333" stroke-width="2"/>
+  <line x1="100" y1="100" x2="100" y2="300" stroke="#333" stroke-width="2"/>
+  
+  <!-- Axis labels -->
+  <text x="300" y="330" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Input Feature (x)</text>
+  <text x="60" y="200" font-family="Arial" font-size="16" text-anchor="middle" fill="#333" transform="rotate(-90,60,200)">Output (y)</text>
+  
+  <!-- Data points -->
+  <circle cx="150" cy="250" r="5" fill="#4285f4"/>
+  <circle cx="200" cy="230" r="5" fill="#4285f4"/>
+  <circle cx="250" cy="210" r="5" fill="#4285f4"/>
+  <circle cx="300" cy="180" r="5" fill="#4285f4"/>
+  <circle cx="350" cy="160" r="5" fill="#4285f4"/>
+  <circle cx="400" cy="140" r="5" fill="#4285f4"/>
+  <circle cx="450" cy="120" r="5" fill="#4285f4"/>
+  
+  <!-- Regression line -->
+  <line x1="150" y1="260" x2="450" y2="110" stroke="#ea4335" stroke-width="3"/>
+  
+  <!-- Annotations -->
+  <text x="480" y="110" font-family="Arial" font-size="14" fill="#ea4335">y = β₀ + β₁x</text>
+  <text x="300" y="80" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">Linear regression finds the best-fitting line</text>
+  <text x="300" y="100" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">through data points to predict outputs</text>
+  
+  <!-- Legend -->
+  <circle cx="120" cy="350" r="5" fill="#4285f4"/>
+  <text x="135" y="355" font-family="Arial" font-size="14" fill="#333">Data points</text>
+  <line x1="220" y1="350" x2="260" y2="350" stroke="#ea4335" stroke-width="3"/>
+  <text x="275" y="355" font-family="Arial" font-size="14" fill="#333">Regression line</text>
+</svg>

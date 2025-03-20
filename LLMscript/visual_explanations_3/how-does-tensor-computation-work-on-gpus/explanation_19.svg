@@ -1,0 +1,21 @@
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="30" font-size="16">9. Data Transfer (GPU to CPU)</text>
+  <rect x="20" y="50" width="60" height="60" fill="lightblue" stroke="black"/>
+  <text x="30" y="85" font-size="12">CPU Memory</text>
+  <rect x="200" y="50" width="60" height="60" fill="lightgreen" stroke="black"/>
+  <text x="210" y="85" font-size="12">GPU Memory</text>
+     <text x="95" y="75" font-size="14">Result Tensor</text>
+
+  <line x1="200" y1="80" x2="80" y2="80" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="20" y="140" font-size="14">After computation,</text>
+  <text x="20" y="160" font-size="14">results are copied back.</text>
+    <text x="20" y="190" font-size="12">Data transfer can be</text>
+    <text x="20" y="210" font-size="12">a bottleneck.</text>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+    refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

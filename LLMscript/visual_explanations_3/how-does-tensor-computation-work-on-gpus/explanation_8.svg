@@ -1,0 +1,52 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="600" height="400" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="24" font-weight="bold">8. Tiling/Blocking for Large Matrices</text>
+
+    <!-- Large Matrix A -->
+    <g transform="translate(20,80)">
+    <rect width="100" height="100"  stroke="black" fill="#add8e6"/>
+        <text x="30" y="-10" font-size="16">Matrix A (Large)</text>
+         <!-- Tile 1 -->
+        <rect x="0" y="0" width="25" height="25"  stroke="black" fill="lightblue"/>
+           <text x="5" y="15" font-size="10">Tile 1</text>
+        <!-- Tile 2 -->
+         <rect x="25" y="0" width="25" height="25"  stroke="black" fill="lightblue"/>
+         <!-- Tile 3 -->
+           <rect x="0" y="25" width="25" height="25"  stroke="black" fill="lightblue"/>
+         <!-- ... Other Tiles -->
+    </g>
+
+      <!-- Large Matrix B -->
+    <g transform="translate(140,80)">
+    <rect width="100" height="100"  stroke="black" fill="#90ee90"/>
+        <text x="30" y="-10" font-size="16">Matrix B (Large)</text>
+        <!-- Tile 1 -->
+          <rect x="0" y="0" width="25" height="25"  stroke="black" fill="lightgreen"/>
+           <text x="5" y="15" font-size="10">Tile 1</text>
+           <!-- Tile 2 -->
+            <rect x="25" y="0" width="25" height="25"  stroke="black" fill="lightgreen"/>
+            <!-- ... Other Tiles -->
+    </g>
+
+      <!-- Result Matrix C -->
+    <g transform="translate(260,80)">
+    <rect width="100" height="100"  stroke="black" fill="#f5deb3"/>
+        <text x="30" y="-10" font-size="16">Matrix C</text>
+         <!-- Tile 1 (Illustrative) -->
+         <rect x="0" y="0" width="25" height="25"  stroke="black" fill="wheat"/>
+    </g>
+
+   <!-- Shared Memory (Illustrative) -->
+  <g transform="translate(400, 80)">
+        <rect width="80" height="40" fill="#baffc9" stroke="black" />
+        <text x="5" y="25" font-size="14">Shared Memory</text>
+          <rect x="10" y="10" width="10" height="10" fill="lightblue" />
+           <rect x="20" y="10" width="10" height="10" fill="lightgreen" />
+  </g>
+
+  <text x="20" y="220" font-size="14">Large matrices are divided into smaller tiles.</text>
+  <text x="20" y="240" font-size="14">Tiles are loaded into shared memory for faster access.</text>
+  <text x="20" y="260" font-size="14">Computation is performed on tiles within shared memory.</text>
+   <text x="20" y="280" font-size="14">Reduces global memory access, improving performance.</text>
+
+</svg>

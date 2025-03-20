@@ -1,0 +1,27 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">8. Repeat the Process</text>
+
+    <circle cx="80" cy="60" r="15" fill="gray" stroke="black" />
+    <text x="75" y="65" font-size="16">3</text>
+    <circle cx="150" cy="60" r="20" fill="gray" stroke="black" />
+    <text x="140" y="65" font-size="16">3</text>
+    <circle cx="220" cy="60" r="25" fill="lightgreen" stroke="black" />
+    <text x="210" y="65" font-size="16">4</text>
+
+    <polygon points="185,85 185,115" fill="none" stroke="red" stroke-width="3"  marker-end="url(#arrowhead)"/>
+    <defs>
+       <marker id="arrowhead" markerWidth="10" markerHeight="7"
+           refX="0" refY="3.5" orient="auto">
+           <polygon points="0 0, 10 3.5, 0 7" fill="red" />
+       </marker>
+   </defs>
+
+    <circle cx="80" cy="140" r="15" fill="lightblue" stroke="black" />
+    <text x="75" y="145" font-size="16">3</text>
+    <circle cx="150" cy="140" r="5" fill="darkgray" stroke="black" />
+    <text x="145" y="145" font-size="16">1</text>
+
+
+  <text x="20" y="180" font-size="14">Repeat steps 2-7 until only one stone or no stones remain.</text>
+</svg>

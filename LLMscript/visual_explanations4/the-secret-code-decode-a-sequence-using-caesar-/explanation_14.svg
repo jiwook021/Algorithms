@@ -1,0 +1,8 @@
+<svg width="300" height="180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#eee" />
+  <text x="20" y="30" font-size="16" font-weight="bold">5. XOR Decoding: Reversible</text>
+  <text x="20" y="60">Encoded:     00001010</text>
+  <text x="20" y="80">Key (K):      01001011</text>
+  <text x="20" y="100">Decoded (A): 01000001 (XOR)</text>
+      <text x="20" y="130">C++: char decoded = encoded ^ key;</text>
+</svg>

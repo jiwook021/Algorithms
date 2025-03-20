@@ -1,0 +1,18 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+ <rect width="600" height="400" fill="#f0f0f0"/>
+    <text x="300" y="30" text-anchor="middle" font-size="24" font-weight="bold">9. Tracking Objects Over Time</text>
+
+    <g transform="translate(50, 100)">
+        <rect  width="500" height="180" fill="#eee"/>
+        <rect x="20" y="80" width="40" height="60" stroke="blue" stroke-width="2" fill="none"/>
+                <text x="40" y="70"  text-anchor="middle" font-size="12">t=0</text>
+        <rect x="150" y="80" width="40" height="60" stroke="blue" stroke-width="2" fill="none"/>
+                <text x="170" y="70"  text-anchor="middle" font-size="12">t=1</text>
+        <rect x="280" y="80" width="40" height="60" stroke="blue" stroke-width="2" fill="none"/>
+        <text x="300" y="70"  text-anchor="middle" font-size="12">t=2</text>
+        <line x1="40" y1="110" x2="300" y2="110" stroke="blue" stroke-dasharray="5,5"/>
+          <text x="200" y="200"  text-anchor="middle" font-size="16">Car Trajectory</text>
+    </g>
+
+    <text x="300" y="350" text-anchor="middle" font-size="14">Algorithms track the movement of detected objects across consecutive frames.</text>
+</svg>

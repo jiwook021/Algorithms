@@ -1,0 +1,14 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <title>Making Change - Concept 7: Base Case</title>
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">Base Case</text>
+
+  <text x="20" y="70" font-size="14">To make change for 0¢, we need 0 coins.</text>
+
+    <text x="20" y="100" font-size="14">dp[0] = 0</text>
+     <rect x="80" y="120" width="40" height="30" fill="#2ecc71"/>
+      <text x="90" y="140" font-size="16" fill="white">0</text>
+
+
+  <text x="20" y="170" font-size="14">This is the starting point for our dynamic programming.</text>
+</svg>

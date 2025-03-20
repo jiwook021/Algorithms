@@ -1,0 +1,20 @@
+<svg width="600" height="400" viewport="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="20" font-weight="bold">2. Stereo Cameras Mimic Eyes</text>
+
+  <rect x="100" y="150" width="60" height="40" fill="gray" />
+  <circle cx="130" cy="170" r="10" fill="black" />
+    <text x="85" y="210" fill="black">Left Camera</text>
+
+  <rect x="400" y="150" width="60" height="40" fill="gray" />
+  <circle cx="430" cy="170" r="10" fill="black" />
+   <text x="385" y="210" fill="black">Right Camera</text>
+
+  <rect x="250" y="280" width="40" height="60" fill="red" />
+   <text x="255" y="350" fill="black">Object</text>
+
+  <line x1="130" y1="170" x2="250" y2="280" stroke="green" stroke-width="2" />
+    <line x1="430" y1="170" x2="290" y2="280" stroke="green" stroke-width="2" />
+
+    <text x="50" y="380" font-size="14">Stereo cameras have two lenses, separated by a baseline distance, just like our eyes.</text>
+</svg>

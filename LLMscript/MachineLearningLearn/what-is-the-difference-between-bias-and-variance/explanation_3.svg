@@ -1,0 +1,49 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f5f5f5" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Bias vs Variance: Target Analogy</text>
+  
+  <!-- Target board for high bias -->
+  <circle cx="150" cy="150" r="100" fill="#fff" stroke="#333" stroke-width="2"/>
+  <circle cx="150" cy="150" r="80" fill="none" stroke="#666" stroke-width="1"/>
+  <circle cx="150" cy="150" r="60" fill="none" stroke="#666" stroke-width="1"/>
+  <circle cx="150" cy="150" r="40" fill="none" stroke="#666" stroke-width="1"/>
+  <circle cx="150" cy="150" r="20" fill="#ff6b6b" stroke="#333" stroke-width="1"/>
+  
+  <!-- Shots for high bias -->
+  <circle cx="200" cy="180" r="5" fill="#3498db" stroke="#333" stroke-width="1"/>
+  <circle cx="210" cy="170" r="5" fill="#3498db" stroke="#333" stroke-width="1"/>
+  <circle cx="205" cy="190" r="5" fill="#3498db" stroke="#333" stroke-width="1"/>
+  <circle cx="195" cy="175" r="5" fill="#3498db" stroke="#333" stroke-width="1"/>
+  <circle cx="215" cy="185" r="5" fill="#3498db" stroke="#333" stroke-width="1"/>
+  
+  <!-- Target board for high variance -->
+  <circle cx="450" cy="150" r="100" fill="#fff" stroke="#333" stroke-width="2"/>
+  <circle cx="450" cy="150" r="80" fill="none" stroke="#666" stroke-width="1"/>
+  <circle cx="450" cy="150" r="60" fill="none" stroke="#666" stroke-width="1"/>
+  <circle cx="450" cy="150" r="40" fill="none" stroke="#666" stroke-width="1"/>
+  <circle cx="450" cy="150" r="20" fill="#ff6b6b" stroke="#333" stroke-width="1"/>
+  
+  <!-- Shots for high variance -->
+  <circle cx="400" cy="100" r="5" fill="#3498db" stroke="#333" stroke-width="1"/>
+  <circle cx="480" cy="200" r="5" fill="#3498db" stroke="#333" stroke-width="1"/>
+  <circle cx="500" cy="120" r="5" fill="#3498db" stroke="#333" stroke-width="1"/>
+  <circle cx="430" cy="220" r="5" fill="#3498db" stroke="#333" stroke-width="1"/>
+  <circle cx="380" cy="150" r="5" fill="#3498db" stroke="#333" stroke-width="1"/>
+  
+  <!-- Labels -->
+  <text x="150" y="270" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">High Bias</text>
+  <text x="150" y="290" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Consistently wrong</text>
+  <text x="150" y="310" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Underfitting the data</text>
+  
+  <text x="450" y="270" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">High Variance</text>
+  <text x="450" y="290" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Inconsistently scattered</text>
+  <text x="450" y="310" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Overfitting the data</text>
+  
+  <!-- Code example -->
+  <rect x="100" y="330" width="400" height="50" fill="#eee" stroke="#ccc" stroke-width="1" rx="5" ry="5"/>
+  <text x="110" y="350" font-family="Courier New" font-size="12" fill="#333">// High bias: Simple model that misses patterns</text>
+  <text x="110" y="370" font-family="Courier New" font-size="12" fill="#333">// High variance: Complex model too sensitive to noise</text>
+</svg>

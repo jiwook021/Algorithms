@@ -1,0 +1,14 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">7. Updated Stone Set</text>
+
+  <circle cx="80" cy="100" r="15" fill="gray" stroke="black" />
+  <text x="75" y="105" font-size="16">3</text>
+
+  <circle cx="150" cy="100" r="20" fill="gray" stroke="black" />
+  <text x="140" y="105" font-size="16">3</text>
+  <circle cx="220" cy="100" r="25" fill="gray" stroke="black" />
+  <text x="210" y="105" font-size="16">4</text>
+
+  <text x="20" y="180" font-size="14">The stone set is updated with the result of the smash.</text>
+</svg>

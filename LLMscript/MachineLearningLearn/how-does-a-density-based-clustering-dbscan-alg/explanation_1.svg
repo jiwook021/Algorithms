@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#f5f5f5"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">DBSCAN: Core Points, Border Points, and Noise</text>
+  
+  <!-- Legend -->
+  <circle cx="50" cy="70" r="10" fill="#3498db"/>
+  <text x="70" y="75" font-family="Arial" font-size="14">Core Point (minPts ≥ 4 within eps)</text>
+  
+  <circle cx="50" cy="100" r="10" fill="#2ecc71"/>
+  <text x="70" y="105" font-family="Arial" font-size="14">Border Point (fewer than minPts but near core)</text>
+  
+  <circle cx="50" cy="130" r="10" fill="#e74c3c"/>
+  <text x="70" y="135" font-family="Arial" font-size="14">Noise Point (isolated)</text>
+  
+  <circle cx="50" cy="160" r="30" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="70" y="165" font-family="Arial" font-size="14">Epsilon radius (eps)</text>
+  
+  <!-- Data Visualization -->
+  <!-- Cluster 1 -->
+  <circle cx="200" cy="200" r="30" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,3"/>
+  <circle cx="200" cy="200" r="8" fill="#3498db"/>
+  <text x="200" y="200" font-family="Arial" font-size="10" text-anchor="middle" dy="-15">Core</text>
+  
+  <circle cx="220" cy="210" r="30" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,3"/>
+  <circle cx="220" cy="210" r="8" fill="#3498db"/>
+  
+  <circle cx="190" cy="220" r="30" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,3"/>
+  <circle cx="190" cy="220" r="8" fill="#3498db"/>
+  
+  <circle cx="180" cy="190" r="30" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,3"/>
+  <circle cx="180" cy="190" r="8" fill="#3498db"/>
+  
+  <circle cx="230" cy="190" r="8" fill="#2ecc71"/>
+  <text x="230" y="190" font-family="Arial" font-size="10" text-anchor="middle" dy="-15">Border</text>
+  
+  <!-- Cluster 2 -->
+  <circle cx="400" cy="250" r="30" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,3"/>
+  <circle cx="400" cy="250" r="8" fill="#3498db"/>
+  
+  <circle cx="420" cy="260" r="30" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,3"/>
+  <circle cx="420" cy="260" r="8" fill="#3498db"/>
+  
+  <circle cx="390" cy="270" r="30" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,3"/>
+  <circle cx="390" cy="270" r="8" fill="#3498db"/>
+  
+  <circle cx="380" cy="240" r="30" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="5,3"/>
+  <circle cx="380" cy="240" r="8" fill="#3498db"/>
+  
+  <circle cx="430" cy="240" r="8" fill="#2ecc71"/>
+  
+  <!-- Noise Points -->
+  <circle cx="300" cy="150" r="8" fill="#e74c3c"/>
+  <text x="300" y="150" font-family="Arial" font-size="10" text-anchor="middle" dy="-15">Noise</text>
+  
+  <circle cx="500" cy="350" r="8" fill="#e74c3c"/>
+  <circle cx="100" cy="300" r="8" fill="#e74c3c"/>
+  
+  <!-- Explanation -->
+  <rect x="50" y="300" width="500" height="80" fill="white" stroke="#ccc" rx="5"/>
+  <text x="60" y="320" font-family="Arial" font-size="14">
+    <tspan x="60" y="320">DBSCAN classifies points into three categories:</tspan>
+    <tspan x="60" y="345">1. Core points: Have at least minPts points within eps distance (including itself)</tspan>
+    <tspan x="60" y="370">2. Border points: Have fewer than minPts within eps but are within eps of a core point</tspan>
+    <tspan x="60" y="395">3. Noise points: Neither core nor border points</tspan>
+  </text>
+</svg>

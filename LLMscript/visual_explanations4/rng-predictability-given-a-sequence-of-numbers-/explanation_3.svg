@@ -1,0 +1,31 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">3. RNG Sequence</text>
+
+  <rect x="30" y="70" width="60" height="30" fill="#4CAF50" />
+  <text x="40" y="90" font-size="12">Seed</text>
+
+    <path d="M90 85 L130 85" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)" />
+
+    <rect x="130" y="50" width="80" height="80" fill="#FFEB3B" />
+  <text x="150" y="90" font-size="12">RNG</text>
+
+  <path d="M210 70 L250 70" stroke="#000" stroke-width="2" marker-end="url(#arrowhead1)" />
+  <rect x="250" y="60" width="40" height="30" fill="#2196F3" />
+  <text x="260" y="80" font-size="12">7</text>
+
+  <path d="M210 90 L250 90" stroke="#000" stroke-width="2" marker-end="url(#arrowhead2)" />
+  <rect x="250" y="80" width="40" height="30" fill="#2196F3" />
+  <text x="260" y="100" font-size="12">15</text>
+    <path d="M210 110 L250 110" stroke="#000" stroke-width="2" marker-end="url(#arrowhead3)" />
+    <rect x="250" y="100" width="40" height="30" fill="#2196F3" />
+  <text x="260" y="120" font-size="12">3</text>
+
+  <defs>
+    <marker id="arrowhead1" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto"> <polygon points="0 0, 10 3.5, 0 7" />  </marker>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" /></marker>
+    <marker id="arrowhead3" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" /></marker>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" /></marker>
+  </defs>
+  <text x="20" y="200" font-size="12" fill="darkblue">RNG generates a predictable SEQUENCE of numbers.</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <circle cx="50" cy="150" r="20" fill="blue" />
+  <text x="40" y="190" font-size="16" fill="blue">Robot</text>
+
+  <rect x="200" y="100" width="40" height="60" fill="green" />
+  <text x="200" y="90" font-size="14" fill="green">Landmark 1</text>
+
+  <circle cx="300" cy="200" r="30" fill="orange" />
+  <text x="290" y="240" font-size="14" fill="orange">Landmark 2</text>
+
+  <text x="20" y="30" font-size="20" font-weight="bold">1. The Basic Idea</text>
+  <text x="20" y="60" font-size="14">Robot observes landmarks in the environment.</text>
+</svg>

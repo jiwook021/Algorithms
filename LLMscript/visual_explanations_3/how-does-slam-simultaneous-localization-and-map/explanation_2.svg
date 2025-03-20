@@ -1,0 +1,15 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+  <circle cx="50" cy="150" r="20" fill="blue" />
+    <path d="M50 150 L80 150" stroke="black" stroke-width="2"/>
+  <text x="40" y="190" font-size="16" fill="blue">Robot</text>
+
+    <circle cx="80" cy="150" r="20" fill="blue" stroke="grey" stroke-dasharray="4"/>
+  <text x="70" y="190" font-size="16" fill="grey">Predicted</text>
+    <text x="70" y="210" font-size="16" fill="grey">Position</text>
+    
+
+  <text x="20" y="30" font-size="20" font-weight="bold">2. Motion Model (Prediction)</text>
+  <text x="20" y="60" font-size="14">Robot moves and predicts its new location.</text>
+   <text x="20" y="80" font-size="14">Prediction is uncertain (shown by dashed circle).</text>
+</svg>

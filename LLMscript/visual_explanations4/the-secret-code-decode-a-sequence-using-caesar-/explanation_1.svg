@@ -1,0 +1,24 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">Caesar Cipher: Basic Shift</text>
+
+  <text x="20" y="60">Plaintext:  A B C D E</text>
+  <text x="20" y="100">Ciphertext: D E F G H  (Shift +3)</text>
+
+  <line x1="20" y1="70" x2="20" y2="90" stroke="blue" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="50" y1="70" x2="50" y2="90" stroke="blue" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="80" y1="70" x2="80" y2="90" stroke="blue" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="110" y1="70" x2="110" y2="90" stroke="blue" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="140" y1="70" x2="140" y2="90" stroke="blue" stroke-width="2" marker-end="url(#arrowhead)" />
+
+    <text x="200" y="80" font-size="14">Each letter is shifted</text>
+    <text x="200" y="100" font-size="14">by a fixed number of positions</text>
+    <text x="200" y="120" font-size="14">in the alphabet.</text>
+
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="blue" />
+    </marker>
+  </defs>
+</svg>

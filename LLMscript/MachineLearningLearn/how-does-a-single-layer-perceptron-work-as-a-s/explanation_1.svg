@@ -1,0 +1,70 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Single-Layer Perceptron: Basic Structure</text>
+  
+  <!-- Input Nodes -->
+  <circle cx="100" cy="120" r="20" fill="#6ab7ff" stroke="#005bb5" stroke-width="2" />
+  <circle cx="100" cy="200" r="20" fill="#6ab7ff" stroke="#005bb5" stroke-width="2" />
+  <circle cx="100" cy="280" r="20" fill="#6ab7ff" stroke="#005bb5" stroke-width="2" />
+  
+  <!-- Input Labels -->
+  <text x="100" y="125" font-family="Arial" font-size="14" text-anchor="middle">x₁</text>
+  <text x="100" y="205" font-family="Arial" font-size="14" text-anchor="middle">x₂</text>
+  <text x="100" y="285" font-family="Arial" font-size="14" text-anchor="middle">x₃</text>
+  <text x="100" y="320" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Inputs</text>
+  
+  <!-- Bias Node -->
+  <circle cx="100" cy="50" r="20" fill="#ffcc80" stroke="#e65100" stroke-width="2" />
+  <text x="100" y="55" font-family="Arial" font-size="14" text-anchor="middle">1</text>
+  <text x="100" y="80" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Bias</text>
+  
+  <!-- Output Node -->
+  <circle cx="400" cy="200" r="25" fill="#81c784" stroke="#2e7d32" stroke-width="2" />
+  <text x="400" y="205" font-family="Arial" font-size="14" text-anchor="middle">y</text>
+  <text x="400" y="240" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Output</text>
+  
+  <!-- Connections with weights -->
+  <line x1="120" y1="50" x2="375" y2="200" stroke="#e65100" stroke-width="2" />
+  <text x="230" y="110" font-family="Arial" font-size="14" fill="#e65100" font-weight="bold">w₀</text>
+  
+  <line x1="120" y1="120" x2="375" y2="200" stroke="#005bb5" stroke-width="2" />
+  <text x="230" y="150" font-family="Arial" font-size="14" fill="#005bb5" font-weight="bold">w₁</text>
+  
+  <line x1="120" y1="200" x2="375" y2="200" stroke="#005bb5" stroke-width="2" />
+  <text x="230" y="190" font-family="Arial" font-size="14" fill="#005bb5" font-weight="bold">w₂</text>
+  
+  <line x1="120" y1="280" x2="375" y2="200" stroke="#005bb5" stroke-width="2" />
+  <text x="230" y="250" font-family="Arial" font-size="14" fill="#005bb5" font-weight="bold">w₃</text>
+  
+  <!-- Activation Function -->
+  <rect x="450" y="170" width="120" height="60" rx="10" ry="10" fill="#d1c4e9" stroke="#4527a0" stroke-width="2" />
+  <text x="510" y="205" font-family="Arial" font-size="14" text-anchor="middle">Activation</text>
+  <text x="510" y="225" font-family="Arial" font-size="12" text-anchor="middle">f(Σwᵢxᵢ)</text>
+  
+  <!-- Arrow from output to activation -->
+  <line x1="425" y1="200" x2="450" y2="200" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2e7d32" />
+    </marker>
+  </defs>
+  
+  <!-- Formula -->
+  <rect x="100" y="340" width="400" height="40" rx="5" ry="5" fill="#fff" stroke="#333" stroke-width="1" />
+  <text x="300" y="365" font-family="monospace" font-size="14" text-anchor="middle">y = f(w₀ + w₁x₁ + w₂x₂ + w₃x₃) = f(Σwᵢxᵢ)</text>
+  
+  <!-- C++ Code Example -->
+  <rect x="450" y="50" width="140" height="100" rx="5" ry="5" fill="#e0e0e0" stroke="#333" stroke-width="1" />
+  <text x="455" y="70" font-family="monospace" font-size="10">// C++ Perceptron
+float output(float* x) {
+  float sum = bias;
+  for(int i=0; i&lt;n; i++)
+    sum += w[i] * x[i];
+  return activate(sum);
+}</text>
+</svg>

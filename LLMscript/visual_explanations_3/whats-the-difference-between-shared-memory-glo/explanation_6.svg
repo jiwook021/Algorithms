@@ -1,0 +1,32 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <rect x="50" y="50" width="300" height="200" fill="none" stroke="black" />
+    <text x="150" y="40" font-size="16">Thread Block</text>
+
+    <!-- Threads -->
+    <circle cx="100" cy="100" r="10" fill="blue" />
+    <text x="95" y="120" font-size="12">T1</text>
+    <circle cx="150" cy="150" r="10" fill="blue" />
+    <text x="145" y="170" font-size="12">T2</text>
+    <circle cx="200" cy="100" r="10" fill="blue" />
+     <text x="195" y="120" font-size="12">T3</text>
+    <circle cx="250" cy="150" r="10" fill="blue" />
+    <text x="245" y="170" font-size="12">T4</text>
+
+    <!-- Shared Memory -->
+    <rect x="120" y="180" width="160" height="50" fill="#90EE90" />
+    <text x="150" y="210" font-size="14">Shared Memory</text>
+
+    <!-- Arrows for communication -->
+    <line x1="100" y1="100" x2="130" y2="180" stroke="red" stroke-width="2" marker-end="url(#arrowhead)" />
+    <line x1="150" y1="150" x2="170" y2="180" stroke="red" stroke-width="2" marker-end="url(#arrowhead)" />
+      <line x1="200" y1="100" x2="210" y2="180" stroke="red" stroke-width="2" marker-end="url(#arrowhead)" />
+    <line x1="250" y1="150" x2="240" y2="180" stroke="red" stroke-width="2" marker-end="url(#arrowhead)" />
+
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" />
+        </marker>
+    </defs>
+       <text x="20" y="280" font-size="14" fill="black">Threads communicate and synchronize via shared memory.</text>
+</svg>

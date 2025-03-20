@@ -1,0 +1,17 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="30" font-size="16">1. Data Transfer (CPU to GPU)</text>
+  <rect x="20" y="50" width="60" height="60" fill="lightblue" stroke="black"/>
+  <text x="30" y="85" font-size="12">CPU Memory</text>
+  <rect x="200" y="50" width="60" height="60" fill="lightgreen" stroke="black"/>
+  <text x="210" y="85" font-size="12">GPU Memory</text>
+    <text x="95" y="75" font-size="14">Tensor Data</text>
+
+  <line x1="80" y1="80" x2="200" y2="80" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+    refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

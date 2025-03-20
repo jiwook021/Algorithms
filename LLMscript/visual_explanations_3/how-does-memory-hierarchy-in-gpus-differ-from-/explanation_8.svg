@@ -1,0 +1,29 @@
+<svg width="600" height="400" viewport="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="200" height="300" fill="#ADD8E6" stroke="black"/>
+  <text x="150" y="70" text-anchor="middle" font-weight="bold">CPU</text>
+    <rect x="100" y="100" width="40" height="40" fill="blue" stroke="black"/>
+      <text x="120" y="120" text-anchor="middle" >Core</text>
+    <rect x="160" y="100" width="40" height="40" fill="blue" stroke="black"/>
+    <text x="180" y="120" text-anchor="middle">Core</text>
+
+  <rect x="350" y="50" width="200" height="300" fill="#98FB98" stroke="black"/>
+  <text x="450" y="70" text-anchor="middle" font-weight="bold">GPU</text>
+  <rect x="380" y="100" width="20" height="20" fill="red" stroke="black"/>
+    <text x="390" y="110" text-anchor="middle" font-size="8">T</text>
+    <rect x="410" y="100" width="20" height="20" fill="red" stroke="black"/>
+  <text x="420" y="110" text-anchor="middle" font-size="8">T</text>
+  <rect x="440" y="100" width="20" height="20" fill="red" stroke="black"/>
+    <text x="450" y="110" text-anchor="middle" font-size="8">T</text>
+      <rect x="470" y="100" width="20" height="20" fill="red" stroke="black"/>
+  <text x="480" y="110" text-anchor="middle" font-size="8">T</text>
+    <rect x="380" y="130" width="20" height="20" fill="red" stroke="black"/>
+        <text x="390" y="140" text-anchor="middle" font-size="8">T</text>
+    <rect x="410" y="130" width="20" height="20" fill="red" stroke="black"/>
+        <text x="420" y="140" text-anchor="middle" font-size="8">T</text>
+    <rect x="440" y="130" width="20" height="20" fill="red" stroke="black"/>
+        <text x="450" y="140" text-anchor="middle" font-size="8">T</text>
+    <rect x="470" y="130" width="20" height="20" fill="red" stroke="black"/>
+        <text x="480" y="140" text-anchor="middle" font-size="8">T</text>
+
+    <text x="300" y="380" text-anchor="middle" font-weight="bold">GPU memory is designed for massive thread parallelism.</text>
+</svg>

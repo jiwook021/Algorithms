@@ -1,0 +1,11 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="80" height="180" fill="#ADD8E6" stroke="black"/>
+  <text x="20" y="30" font-size="12">Battery</text>
+  <rect x="110" y="50" width="180" height="100" fill="#F0F8FF" stroke="black"/>
+  <text x="120" y="70" font-size="14">Embedded System</text>
+    <text x="130" y="95" font-size="10">(MCU, Sensors, Peripherals)</text>
+  <line x1="90" y1="100" x2="110" y2="100" stroke="black" stroke-width="2"/>
+    <polygon points="105,95 110,100 105,105" fill="black" />
+
+    <text x="200" y="170" font-size="16" fill="blue">1. Power Source</text>
+</svg>

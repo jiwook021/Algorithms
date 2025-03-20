@@ -1,0 +1,38 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="30" font-size="18" font-weight="bold">6. Iterating through the Array</text>
+  <text x="20" y="60">Move to the next pair of elements and repeat.</text>
+
+  <g transform="translate(30, 100)">
+     <rect x="0" y="0" width="40" height="40" fill="lightgreen" stroke="black"/>
+    <text x="15" y="25" font-size="16">2</text>
+    
+    <rect x="50" y="0" width="40" height="40" fill="lightgreen" stroke="black"/>
+    <text x="65" y="25" font-size="16">5</text>
+
+    <rect x="100" y="0" width="40" height="40" fill="lightgray" stroke="black"/>
+    <text x="115" y="25" font-size="16">8</text>
+
+    <rect x="150" y="0" width="40" height="40" fill="lightgray" stroke="black"/>
+    <text x="165" y="25" font-size="16">1</text>
+
+    <rect x="200" y="0" width="40" height="40" fill="lightgray" stroke="black"/>
+    <text x="215" y="25" font-size="16">9</text>
+    
+      <rect x="250" y="0" width="40" height="40" fill="lightgray" stroke="black"/>
+    <text x="265" y="25" font-size="16">4</text>
+    
+      <rect x="300" y="0" width="40" height="40" fill="lightgray" stroke="black"/>
+    <text x="315" y="25" font-size="16">7</text>
+
+    <arrow x1="95" y1="20" x2="105" y2="20" marker-end="url(#arrowhead)" stroke="red" stroke-width="2"/>
+     <arrow x1="145" y1="20" x2="155" y2="20" marker-end="url(#arrowhead)" stroke="red" stroke-width="2"/>
+      <arrow x1="195" y1="20" x2="205" y2="20" marker-end="url(#arrowhead)" stroke="red" stroke-width="2"/>
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+      refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="red" />
+      </marker>
+    </defs>
+     <text x="120" y="-15" font-size="14">Next Pair</text>
+  </g>
+</svg>

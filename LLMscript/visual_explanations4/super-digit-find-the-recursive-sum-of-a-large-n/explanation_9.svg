@@ -1,0 +1,9 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f0f8ff" />
+  <text x="20" y="30" font-size="16" font-weight="bold">Recursive Nature</text>
+  <text x="20" y="60" font-size="14">The process repeats (recurses) on the result.</text>
+    <path d="M50 100 Q 150 50 250 100" stroke="blue" stroke-width="3" fill="none"/>
+    <polygon points="245,95 250,100 255,95" fill="blue"/>
+  <text x="50" y="130" font-size="16">f(9875) = f(29) = f(11) = 2</text>
+    <text x="130" y="90" font-style="italic" fill="blue">Recursion</text>
+</svg>

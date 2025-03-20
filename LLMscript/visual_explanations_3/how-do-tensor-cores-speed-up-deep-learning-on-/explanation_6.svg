@@ -1,0 +1,13 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="25" fill="black" font-size="14" font-weight="bold">6. D = A x B + C</text>
+  <text x="50" y="70">A (FP16)</text>
+  <rect x="50" y="80" width="40" height="40" fill="orange" stroke="black"/>
+  <text x="110" y="70">B (FP16)</text>
+  <rect x="110" y="80" width="40" height="40" fill="yellow" stroke="black"/>
+   <text x="170" y="70">C (FP32)</text>
+  <rect x="170" y="80" width="40" height="40" fill="lightblue" stroke="black"/>
+   <text x="250" y="100" font-size="30">=</text>
+     <text x="300" y="70">D (FP32)</text>
+  <rect x="300" y="80" width="40" height="40" fill="lightblue" stroke="black"/>
+  <text x="50" y="150" font-size="12">Tensor Core operation</text>
+</svg>

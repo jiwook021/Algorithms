@@ -1,0 +1,14 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="25" fill="black" font-size="14" font-weight="bold">10. Impact on Training</text>
+
+    <rect x="50" y="100" width="100" height="40" fill="lightblue"/>
+       <text x="100" y="125" text-anchor="middle" >Without Tensor Cores</text>
+
+     <rect x="200" y="60" width="100" height="40" fill="lightgreen"/>
+       <text x="250" y="85" text-anchor="middle" >With Tensor Cores</text>
+
+      <line x1="30" y1="160" x2="370" y2="160" stroke="black"/>
+      <text x="370" y="150" text-anchor="end" fill="black">Training Time</text>
+        <text x="370" y="50" text-anchor="end" fill="black">Faster Convergence</text>
+
+</svg>

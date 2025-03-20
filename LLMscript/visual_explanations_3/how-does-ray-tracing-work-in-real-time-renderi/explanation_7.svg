@@ -1,0 +1,19 @@
+<svg width="400" height="300" viewport="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0f0f0" />
+
+  <circle cx="50" cy="100" r="10" fill="blue" />
+  <text x="40" y="130" font-size="10">Eye</text>
+
+  <rect x="200" y="100" width="80" height="100" fill="lightblue"  style="opacity:0.5"/>
+  <text x="210" y="150" font-size="10">Glass</text>
+
+    <line x1="60" y1="100" x2="200" y2="120" stroke="red" stroke-width="2" />
+    <polygon points="190,115 200,120 190,125" fill="red"/>
+
+    <line x1="200" y1="120" x2="250" y2="180" stroke="teal" stroke-width="2" />
+    <polygon points="240,175 250,180 240,185" fill="teal"/>
+
+      <circle cx="200" cy="120" r="4" fill="purple"/>
+
+    <text x="100" y="50" font-size="14">Refraction Ray</text>
+</svg>
