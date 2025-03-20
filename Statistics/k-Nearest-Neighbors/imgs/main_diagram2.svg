@@ -1,0 +1,9 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="100" font-size="18" fill="black">Key Algorithms:</text>
+  <text x="70" y="130" font-size="16" fill="black">1. Euclidean Distance Calculation</text>
+  <text x="70" y="160" font-size="16" fill="black">2. Sorting Neighbors by Distance</text>
+  <text x="70" y="190" font-size="16" fill="black">3. Majority Voting for Prediction</text>
+</svg>

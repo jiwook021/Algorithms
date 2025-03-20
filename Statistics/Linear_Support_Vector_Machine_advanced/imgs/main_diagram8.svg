@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">8. Code Structure</text>
+  <rect x="50" y="100" width="1100" height="600" stroke="black" stroke-width="2" fill="none"/>
+  <text x="100" y="150" font-size="20">Includes</text>
+  <text x="100" y="200" font-size="16">- iostream, vector, cmath, algorithm, random, stdexcept, iomanip, string</text>
+  <text x="100" y="250" font-size="20">DataPoint</text>
+  <text x="100" y="300" font-size="16">- Struct with x1, x2, label</text>
+  <text x="100" y="350" font-size="20">DataPreprocessor</text>
+  <text x="100" y="400" font-size="16">- Class with fit(), transform(), transform_point(), print_parameters()</text>
+</svg>

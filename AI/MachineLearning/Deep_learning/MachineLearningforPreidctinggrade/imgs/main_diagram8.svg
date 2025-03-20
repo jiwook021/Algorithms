@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">8. Operator Overloading</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="100" font-size="18" fill="black">Addition</text>
+  <rect x="70" y="120" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="150" font-size="14" fill="black">operator+</text>
+  <text x="70" y="200" font-size="18" fill="black">Subtraction</text>
+  <rect x="70" y="220" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="250" font-size="14" fill="black">operator-</text>
+  <text x="70" y="300" font-size="18" fill="black">Scalar Multiplication</text>
+  <rect x="70" y="320" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="350" font-size="14" fill="black">operator*</text>
+</svg>

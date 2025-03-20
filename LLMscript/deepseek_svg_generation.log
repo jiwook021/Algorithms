@@ -1,0 +1,608 @@
+2025-03-20 12:50:48,803 - INFO - Found 237 pending files, 0 completed, 0 failed
+2025-03-20 12:50:48,804 - INFO - Starting batch processing with throttle delay of 5s
+2025-03-20 12:50:48,804 - INFO - Processing batch of up to 5 files
+2025-03-20 12:50:48,804 - INFO - Processing: ../readall/script.py
+2025-03-20 12:50:49,264 - ERROR - API Error: API Error: 400 {"error":{"message":"Model Not Exist","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2025-03-20 12:50:49,265 - WARNING - Unexpected error. Waiting 2.2 seconds before retry... (Attempt 1/5)
+2025-03-20 12:50:51,770 - ERROR - API Error: API Error: 400 {"error":{"message":"Model Not Exist","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2025-03-20 12:50:51,770 - WARNING - Unexpected error. Waiting 4.7 seconds before retry... (Attempt 2/5)
+2025-03-20 12:50:56,900 - INFO - Script interrupted by user. Exiting gracefully.
+2025-03-20 12:51:18,212 - INFO - Found 237 pending files, 0 completed, 0 failed
+2025-03-20 12:51:18,212 - INFO - Starting batch processing with throttle delay of 5s
+2025-03-20 12:51:18,212 - INFO - Processing batch of up to 5 files
+2025-03-20 12:51:18,212 - INFO - Processing: ../readall/script.py
+2025-03-20 12:51:18,577 - ERROR - API Error: API Error: 400 {"error":{"message":"Model Not Exist","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2025-03-20 12:51:18,577 - WARNING - Unexpected error. Waiting 2.1 seconds before retry... (Attempt 1/5)
+2025-03-20 12:51:20,960 - ERROR - API Error: API Error: 400 {"error":{"message":"Model Not Exist","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2025-03-20 12:51:20,961 - WARNING - Unexpected error. Waiting 3.7 seconds before retry... (Attempt 2/5)
+2025-03-20 12:51:23,206 - INFO - Script interrupted by user. Exiting gracefully.
+2025-03-20 12:51:53,671 - INFO - Found 237 pending files, 0 completed, 0 failed
+2025-03-20 12:51:53,671 - INFO - Starting batch processing with throttle delay of 5s
+2025-03-20 12:51:53,671 - INFO - Processing batch of up to 5 files
+2025-03-20 12:51:53,671 - INFO - Processing: ../readall/script.py
+2025-03-20 12:51:54,031 - ERROR - API Error: API Error: 400 {"error":{"message":"Model Not Exist","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2025-03-20 12:51:54,031 - WARNING - Unexpected error. Waiting 1.8 seconds before retry... (Attempt 1/5)
+2025-03-20 12:51:56,122 - ERROR - API Error: API Error: 400 {"error":{"message":"Model Not Exist","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2025-03-20 12:51:56,123 - WARNING - Unexpected error. Waiting 4.2 seconds before retry... (Attempt 2/5)
+2025-03-20 12:51:56,644 - INFO - Script interrupted by user. Exiting gracefully.
+2025-03-20 12:52:19,494 - INFO - Found 237 pending files, 0 completed, 0 failed
+2025-03-20 12:52:19,495 - INFO - Starting batch processing with throttle delay of 5s
+2025-03-20 12:52:19,495 - INFO - Processing batch of up to 5 files
+2025-03-20 12:52:19,495 - INFO - Processing: ../readall/script.py
+2025-03-20 12:52:20,040 - ERROR - API Error: API Error: 400 {"error":{"message":"Model Not Exist","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2025-03-20 12:52:20,041 - WARNING - Unexpected error. Waiting 1.9 seconds before retry... (Attempt 1/5)
+2025-03-20 12:52:22,242 - ERROR - API Error: API Error: 400 {"error":{"message":"Model Not Exist","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2025-03-20 12:52:22,242 - WARNING - Unexpected error. Waiting 4.4 seconds before retry... (Attempt 2/5)
+2025-03-20 12:52:23,118 - INFO - Script interrupted by user. Exiting gracefully.
+2025-03-20 13:01:32,134 - INFO - Found 237 pending files, 0 completed, 0 failed
+2025-03-20 13:01:32,135 - INFO - Starting batch processing with throttle delay of 5s
+2025-03-20 13:01:32,135 - INFO - Processing batch of up to 5 files
+2025-03-20 13:01:32,135 - INFO - Processing: ../readall/script.py
+2025-03-20 13:02:38,414 - INFO - SVG saved: ../readall/imgs/script_diagram1.svg
+2025-03-20 13:02:38,414 - INFO - SVG saved: ../readall/imgs/script_diagram2.svg
+2025-03-20 13:02:38,414 - INFO - SVG saved: ../readall/imgs/script_diagram3.svg
+2025-03-20 13:02:38,414 - INFO - SVG saved: ../readall/imgs/script_diagram4.svg
+2025-03-20 13:02:38,415 - INFO - SVG saved: ../readall/imgs/script_diagram5.svg
+2025-03-20 13:02:38,415 - INFO - SVG saved: ../readall/imgs/script_diagram6.svg
+2025-03-20 13:02:38,415 - INFO - SVG saved: ../readall/imgs/script_diagram7.svg
+2025-03-20 13:02:38,415 - INFO - SVG saved: ../readall/imgs/script_diagram8.svg
+2025-03-20 13:02:38,415 - INFO - Generated 8 SVG diagrams for ../readall/script.py
+2025-03-20 13:02:38,415 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:02:43,416 - INFO - Processing: ../AI/ReinforcementLearning/Self-tuning-PID-Controller-Reinforcement-Learning/main.cpp
+2025-03-20 13:04:27,627 - INFO - SVG saved: ../AI/ReinforcementLearning/Self-tuning-PID-Controller-Reinforcement-Learning/imgs/main_diagram1.svg
+2025-03-20 13:04:27,628 - INFO - SVG saved: ../AI/ReinforcementLearning/Self-tuning-PID-Controller-Reinforcement-Learning/imgs/main_diagram2.svg
+2025-03-20 13:04:27,628 - INFO - SVG saved: ../AI/ReinforcementLearning/Self-tuning-PID-Controller-Reinforcement-Learning/imgs/main_diagram3.svg
+2025-03-20 13:04:27,628 - INFO - SVG saved: ../AI/ReinforcementLearning/Self-tuning-PID-Controller-Reinforcement-Learning/imgs/main_diagram4.svg
+2025-03-20 13:04:27,628 - INFO - SVG saved: ../AI/ReinforcementLearning/Self-tuning-PID-Controller-Reinforcement-Learning/imgs/main_diagram5.svg
+2025-03-20 13:04:27,628 - INFO - SVG saved: ../AI/ReinforcementLearning/Self-tuning-PID-Controller-Reinforcement-Learning/imgs/main_diagram6.svg
+2025-03-20 13:04:27,628 - INFO - SVG saved: ../AI/ReinforcementLearning/Self-tuning-PID-Controller-Reinforcement-Learning/imgs/main_diagram7.svg
+2025-03-20 13:04:27,628 - INFO - SVG saved: ../AI/ReinforcementLearning/Self-tuning-PID-Controller-Reinforcement-Learning/imgs/main_diagram8.svg
+2025-03-20 13:04:27,628 - INFO - Generated 8 SVG diagrams for ../AI/ReinforcementLearning/Self-tuning-PID-Controller-Reinforcement-Learning/main.cpp
+2025-03-20 13:04:27,628 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:04:32,629 - INFO - Processing: ../AI/ReinforcementLearning/QLearning/main.cpp
+2025-03-20 13:05:41,998 - INFO - SVG saved: ../AI/ReinforcementLearning/QLearning/imgs/main_diagram1.svg
+2025-03-20 13:05:41,998 - INFO - SVG saved: ../AI/ReinforcementLearning/QLearning/imgs/main_diagram2.svg
+2025-03-20 13:05:41,998 - INFO - SVG saved: ../AI/ReinforcementLearning/QLearning/imgs/main_diagram3.svg
+2025-03-20 13:05:41,998 - INFO - SVG saved: ../AI/ReinforcementLearning/QLearning/imgs/main_diagram4.svg
+2025-03-20 13:05:41,998 - INFO - SVG saved: ../AI/ReinforcementLearning/QLearning/imgs/main_diagram5.svg
+2025-03-20 13:05:41,998 - INFO - SVG saved: ../AI/ReinforcementLearning/QLearning/imgs/main_diagram6.svg
+2025-03-20 13:05:41,999 - INFO - SVG saved: ../AI/ReinforcementLearning/QLearning/imgs/main_diagram7.svg
+2025-03-20 13:05:41,999 - INFO - SVG saved: ../AI/ReinforcementLearning/QLearning/imgs/main_diagram8.svg
+2025-03-20 13:05:41,999 - INFO - Generated 8 SVG diagrams for ../AI/ReinforcementLearning/QLearning/main.cpp
+2025-03-20 13:05:41,999 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:05:46,999 - INFO - Processing: ../AI/ReinforcementLearning/TaskPriorityRL/main.cpp
+2025-03-20 13:08:04,436 - INFO - SVG saved: ../AI/ReinforcementLearning/TaskPriorityRL/imgs/main_diagram1.svg
+2025-03-20 13:08:04,437 - INFO - SVG saved: ../AI/ReinforcementLearning/TaskPriorityRL/imgs/main_diagram2.svg
+2025-03-20 13:08:04,437 - INFO - SVG saved: ../AI/ReinforcementLearning/TaskPriorityRL/imgs/main_diagram3.svg
+2025-03-20 13:08:04,438 - INFO - SVG saved: ../AI/ReinforcementLearning/TaskPriorityRL/imgs/main_diagram4.svg
+2025-03-20 13:08:04,438 - INFO - SVG saved: ../AI/ReinforcementLearning/TaskPriorityRL/imgs/main_diagram5.svg
+2025-03-20 13:08:04,438 - INFO - SVG saved: ../AI/ReinforcementLearning/TaskPriorityRL/imgs/main_diagram6.svg
+2025-03-20 13:08:04,438 - INFO - Generated 6 SVG diagrams for ../AI/ReinforcementLearning/TaskPriorityRL/main.cpp
+2025-03-20 13:08:04,438 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:08:09,439 - INFO - Processing: ../AI/MachineLearning/Deep_learning/MachineLearning_Optimzer_Activation/main.cpp
+2025-03-20 13:09:42,000 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Optimzer_Activation/imgs/main_diagram1.svg
+2025-03-20 13:09:42,001 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Optimzer_Activation/imgs/main_diagram2.svg
+2025-03-20 13:09:42,001 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Optimzer_Activation/imgs/main_diagram3.svg
+2025-03-20 13:09:42,001 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Optimzer_Activation/imgs/main_diagram4.svg
+2025-03-20 13:09:42,001 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Optimzer_Activation/imgs/main_diagram5.svg
+2025-03-20 13:09:42,001 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Optimzer_Activation/imgs/main_diagram6.svg
+2025-03-20 13:09:42,001 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Optimzer_Activation/imgs/main_diagram7.svg
+2025-03-20 13:09:42,001 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Optimzer_Activation/imgs/main_diagram8.svg
+2025-03-20 13:09:42,001 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/MachineLearning_Optimzer_Activation/main.cpp
+2025-03-20 13:09:42,002 - INFO - Processing batch of up to 5 files
+2025-03-20 13:09:42,002 - INFO - Processing: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance/main.cpp
+2025-03-20 13:11:09,098 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance/imgs/main_diagram1.svg
+2025-03-20 13:11:09,098 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance/imgs/main_diagram2.svg
+2025-03-20 13:11:09,098 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance/imgs/main_diagram3.svg
+2025-03-20 13:11:09,099 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance/imgs/main_diagram4.svg
+2025-03-20 13:11:09,099 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance/imgs/main_diagram5.svg
+2025-03-20 13:11:09,099 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance/imgs/main_diagram6.svg
+2025-03-20 13:11:09,099 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance/imgs/main_diagram7.svg
+2025-03-20 13:11:09,100 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance/imgs/main_diagram8.svg
+2025-03-20 13:11:09,100 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/MachineLearning_Performance/main.cpp
+2025-03-20 13:11:09,100 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:11:14,101 - INFO - Processing: ../AI/MachineLearning/Deep_learning/Yolo/detectimage.py
+2025-03-20 13:12:21,440 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/detectimage_diagram1.svg
+2025-03-20 13:12:21,440 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/detectimage_diagram2.svg
+2025-03-20 13:12:21,440 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/detectimage_diagram3.svg
+2025-03-20 13:12:21,440 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/detectimage_diagram4.svg
+2025-03-20 13:12:21,440 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/detectimage_diagram5.svg
+2025-03-20 13:12:21,441 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/detectimage_diagram6.svg
+2025-03-20 13:12:21,441 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/detectimage_diagram7.svg
+2025-03-20 13:12:21,441 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/detectimage_diagram8.svg
+2025-03-20 13:12:21,441 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/Yolo/detectimage.py
+2025-03-20 13:12:21,441 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:12:26,442 - INFO - Processing: ../AI/MachineLearning/Deep_learning/Yolo/video.py
+2025-03-20 13:13:55,343 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/video_diagram1.svg
+2025-03-20 13:13:55,343 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/video_diagram2.svg
+2025-03-20 13:13:55,343 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/video_diagram3.svg
+2025-03-20 13:13:55,344 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/video_diagram4.svg
+2025-03-20 13:13:55,344 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/video_diagram5.svg
+2025-03-20 13:13:55,344 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/video_diagram6.svg
+2025-03-20 13:13:55,344 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/video_diagram7.svg
+2025-03-20 13:13:55,344 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/video_diagram8.svg
+2025-03-20 13:13:55,344 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/Yolo/video.py
+2025-03-20 13:13:55,345 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:14:00,345 - INFO - Processing: ../AI/MachineLearning/Deep_learning/Yolo/traffic_analysis.py
+2025-03-20 13:16:14,533 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/traffic_analysis_diagram1.svg
+2025-03-20 13:16:14,533 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/traffic_analysis_diagram2.svg
+2025-03-20 13:16:14,533 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/traffic_analysis_diagram3.svg
+2025-03-20 13:16:14,534 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/traffic_analysis_diagram4.svg
+2025-03-20 13:16:14,534 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/traffic_analysis_diagram5.svg
+2025-03-20 13:16:14,535 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Yolo/imgs/traffic_analysis_diagram6.svg
+2025-03-20 13:16:14,535 - INFO - Generated 6 SVG diagrams for ../AI/MachineLearning/Deep_learning/Yolo/traffic_analysis.py
+2025-03-20 13:16:14,535 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:16:19,536 - INFO - Processing: ../AI/MachineLearning/Deep_learning/torchcheck/main.cpp
+2025-03-20 13:17:21,911 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/torchcheck/imgs/main_diagram1.svg
+2025-03-20 13:17:21,911 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/torchcheck/imgs/main_diagram2.svg
+2025-03-20 13:17:21,912 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/torchcheck/imgs/main_diagram3.svg
+2025-03-20 13:17:21,912 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/torchcheck/imgs/main_diagram4.svg
+2025-03-20 13:17:21,912 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/torchcheck/imgs/main_diagram5.svg
+2025-03-20 13:17:21,913 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/torchcheck/imgs/main_diagram6.svg
+2025-03-20 13:17:21,913 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/torchcheck/imgs/main_diagram7.svg
+2025-03-20 13:17:21,914 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/torchcheck/imgs/main_diagram8.svg
+2025-03-20 13:17:21,914 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/torchcheck/main.cpp
+2025-03-20 13:17:21,915 - INFO - Processing batch of up to 5 files
+2025-03-20 13:17:21,915 - INFO - Processing: ../AI/MachineLearning/Deep_learning/NeuralNetwork/main.cpp
+2025-03-20 13:18:49,078 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetwork/imgs/main_diagram1.svg
+2025-03-20 13:18:49,079 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetwork/imgs/main_diagram2.svg
+2025-03-20 13:18:49,079 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetwork/imgs/main_diagram3.svg
+2025-03-20 13:18:49,079 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetwork/imgs/main_diagram4.svg
+2025-03-20 13:18:49,080 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetwork/imgs/main_diagram5.svg
+2025-03-20 13:18:49,080 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetwork/imgs/main_diagram6.svg
+2025-03-20 13:18:49,080 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetwork/imgs/main_diagram7.svg
+2025-03-20 13:18:49,080 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetwork/imgs/main_diagram8.svg
+2025-03-20 13:18:49,081 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/NeuralNetwork/main.cpp
+2025-03-20 13:18:49,081 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:18:54,082 - INFO - Processing: ../AI/MachineLearning/Deep_learning/MINIST_WRITING_Python/mnist_recognition.py
+2025-03-20 13:20:25,799 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MINIST_WRITING_Python/imgs/mnist_recognition_diagram1.svg
+2025-03-20 13:20:25,799 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MINIST_WRITING_Python/imgs/mnist_recognition_diagram2.svg
+2025-03-20 13:20:25,799 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MINIST_WRITING_Python/imgs/mnist_recognition_diagram3.svg
+2025-03-20 13:20:25,799 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MINIST_WRITING_Python/imgs/mnist_recognition_diagram4.svg
+2025-03-20 13:20:25,800 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MINIST_WRITING_Python/imgs/mnist_recognition_diagram5.svg
+2025-03-20 13:20:25,800 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MINIST_WRITING_Python/imgs/mnist_recognition_diagram6.svg
+2025-03-20 13:20:25,800 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MINIST_WRITING_Python/imgs/mnist_recognition_diagram7.svg
+2025-03-20 13:20:25,800 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MINIST_WRITING_Python/imgs/mnist_recognition_diagram8.svg
+2025-03-20 13:20:25,800 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/MINIST_WRITING_Python/mnist_recognition.py
+2025-03-20 13:20:25,801 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:20:30,801 - INFO - Processing: ../AI/MachineLearning/Deep_learning/Employee_Contribution_Neural_Network/main.cpp
+2025-03-20 13:21:36,353 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Employee_Contribution_Neural_Network/imgs/main_diagram1.svg
+2025-03-20 13:21:36,353 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Employee_Contribution_Neural_Network/imgs/main_diagram2.svg
+2025-03-20 13:21:36,354 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Employee_Contribution_Neural_Network/imgs/main_diagram3.svg
+2025-03-20 13:21:36,354 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Employee_Contribution_Neural_Network/imgs/main_diagram4.svg
+2025-03-20 13:21:36,354 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Employee_Contribution_Neural_Network/imgs/main_diagram5.svg
+2025-03-20 13:21:36,354 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Employee_Contribution_Neural_Network/imgs/main_diagram6.svg
+2025-03-20 13:21:36,354 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Employee_Contribution_Neural_Network/imgs/main_diagram7.svg
+2025-03-20 13:21:36,354 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Employee_Contribution_Neural_Network/imgs/main_diagram8.svg
+2025-03-20 13:21:36,354 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/Employee_Contribution_Neural_Network/main.cpp
+2025-03-20 13:21:36,355 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:21:41,355 - INFO - Processing: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation_2/main.cpp
+2025-03-20 13:22:54,580 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation_2/imgs/main_diagram1.svg
+2025-03-20 13:22:54,580 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation_2/imgs/main_diagram2.svg
+2025-03-20 13:22:54,580 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation_2/imgs/main_diagram3.svg
+2025-03-20 13:22:54,580 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation_2/imgs/main_diagram4.svg
+2025-03-20 13:22:54,580 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation_2/imgs/main_diagram5.svg
+2025-03-20 13:22:54,580 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation_2/imgs/main_diagram6.svg
+2025-03-20 13:22:54,580 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation_2/imgs/main_diagram7.svg
+2025-03-20 13:22:54,580 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation_2/imgs/main_diagram8.svg
+2025-03-20 13:22:54,581 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation_2/main.cpp
+2025-03-20 13:22:54,581 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:22:59,581 - INFO - Processing: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation/main.cpp
+2025-03-20 13:24:51,710 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation/imgs/main_diagram1.svg
+2025-03-20 13:24:51,710 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation/imgs/main_diagram2.svg
+2025-03-20 13:24:51,710 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation/imgs/main_diagram3.svg
+2025-03-20 13:24:51,711 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation/imgs/main_diagram4.svg
+2025-03-20 13:24:51,711 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation/imgs/main_diagram5.svg
+2025-03-20 13:24:51,711 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation/imgs/main_diagram6.svg
+2025-03-20 13:24:51,711 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation/imgs/main_diagram7.svg
+2025-03-20 13:24:51,711 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation/imgs/main_diagram8.svg
+2025-03-20 13:24:51,711 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/NeuralNetworkImplementation/main.cpp
+2025-03-20 13:24:51,712 - INFO - Processing batch of up to 5 files
+2025-03-20 13:24:51,712 - INFO - Processing: ../AI/MachineLearning/Deep_learning/attention/main.cpp
+2025-03-20 13:25:54,381 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/attention/imgs/main_diagram1.svg
+2025-03-20 13:25:54,382 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/attention/imgs/main_diagram2.svg
+2025-03-20 13:25:54,382 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/attention/imgs/main_diagram3.svg
+2025-03-20 13:25:54,383 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/attention/imgs/main_diagram4.svg
+2025-03-20 13:25:54,383 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/attention/imgs/main_diagram5.svg
+2025-03-20 13:25:54,384 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/attention/imgs/main_diagram6.svg
+2025-03-20 13:25:54,384 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/attention/imgs/main_diagram7.svg
+2025-03-20 13:25:54,384 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/attention/imgs/main_diagram8.svg
+2025-03-20 13:25:54,384 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/attention/main.cpp
+2025-03-20 13:25:54,385 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:25:59,385 - INFO - Processing: ../AI/MachineLearning/Deep_learning/MachineLearningforPreidctinggrade/main.cpp
+2025-03-20 13:27:29,815 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearningforPreidctinggrade/imgs/main_diagram1.svg
+2025-03-20 13:27:29,816 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearningforPreidctinggrade/imgs/main_diagram2.svg
+2025-03-20 13:27:29,816 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearningforPreidctinggrade/imgs/main_diagram3.svg
+2025-03-20 13:27:29,816 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearningforPreidctinggrade/imgs/main_diagram4.svg
+2025-03-20 13:27:29,816 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearningforPreidctinggrade/imgs/main_diagram5.svg
+2025-03-20 13:27:29,816 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearningforPreidctinggrade/imgs/main_diagram6.svg
+2025-03-20 13:27:29,816 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearningforPreidctinggrade/imgs/main_diagram7.svg
+2025-03-20 13:27:29,816 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearningforPreidctinggrade/imgs/main_diagram8.svg
+2025-03-20 13:27:29,816 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/MachineLearningforPreidctinggrade/main.cpp
+2025-03-20 13:27:29,817 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:27:34,817 - INFO - Processing: ../AI/MachineLearning/Deep_learning/Statistics_tsv/stats.cpp
+2025-03-20 13:29:16,380 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/stats_diagram1.svg
+2025-03-20 13:29:16,380 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/stats_diagram2.svg
+2025-03-20 13:29:16,380 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/stats_diagram3.svg
+2025-03-20 13:29:16,380 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/stats_diagram4.svg
+2025-03-20 13:29:16,380 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/stats_diagram5.svg
+2025-03-20 13:29:16,380 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/stats_diagram6.svg
+2025-03-20 13:29:16,381 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/stats_diagram7.svg
+2025-03-20 13:29:16,381 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/stats_diagram8.svg
+2025-03-20 13:29:16,381 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/Statistics_tsv/stats.cpp
+2025-03-20 13:29:16,381 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:29:21,382 - INFO - Processing: ../AI/MachineLearning/Deep_learning/Statistics_tsv/p1_library.cpp
+2025-03-20 13:30:50,786 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/p1_library_diagram1.svg
+2025-03-20 13:30:50,786 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/p1_library_diagram2.svg
+2025-03-20 13:30:50,786 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/p1_library_diagram3.svg
+2025-03-20 13:30:50,786 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/p1_library_diagram4.svg
+2025-03-20 13:30:50,786 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/p1_library_diagram5.svg
+2025-03-20 13:30:50,786 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/p1_library_diagram6.svg
+2025-03-20 13:30:50,786 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/p1_library_diagram7.svg
+2025-03-20 13:30:50,786 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/p1_library_diagram8.svg
+2025-03-20 13:30:50,786 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/Statistics_tsv/p1_library.cpp
+2025-03-20 13:30:50,787 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:30:55,787 - INFO - Processing: ../AI/MachineLearning/Deep_learning/Statistics_tsv/main.cpp
+2025-03-20 13:32:06,543 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/main_diagram1.svg
+2025-03-20 13:32:06,544 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/main_diagram2.svg
+2025-03-20 13:32:06,544 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/main_diagram3.svg
+2025-03-20 13:32:06,544 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/main_diagram4.svg
+2025-03-20 13:32:06,544 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/main_diagram5.svg
+2025-03-20 13:32:06,544 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/main_diagram6.svg
+2025-03-20 13:32:06,545 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/main_diagram7.svg
+2025-03-20 13:32:06,545 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Statistics_tsv/imgs/main_diagram8.svg
+2025-03-20 13:32:06,545 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/Statistics_tsv/main.cpp
+2025-03-20 13:32:06,546 - INFO - Processing batch of up to 5 files
+2025-03-20 13:32:06,547 - INFO - Processing: ../AI/MachineLearning/Deep_learning/RecommenderSystem/main.cpp
+2025-03-20 13:33:40,935 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/RecommenderSystem/imgs/main_diagram1.svg
+2025-03-20 13:33:40,935 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/RecommenderSystem/imgs/main_diagram2.svg
+2025-03-20 13:33:40,935 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/RecommenderSystem/imgs/main_diagram3.svg
+2025-03-20 13:33:40,935 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/RecommenderSystem/imgs/main_diagram4.svg
+2025-03-20 13:33:40,935 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/RecommenderSystem/imgs/main_diagram5.svg
+2025-03-20 13:33:40,935 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/RecommenderSystem/imgs/main_diagram6.svg
+2025-03-20 13:33:40,935 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/RecommenderSystem/imgs/main_diagram7.svg
+2025-03-20 13:33:40,936 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/RecommenderSystem/imgs/main_diagram8.svg
+2025-03-20 13:33:40,936 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/RecommenderSystem/main.cpp
+2025-03-20 13:33:40,936 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:33:45,936 - INFO - Processing: ../AI/MachineLearning/Deep_learning/Bayesian_Optimization_ForHyperparameter/main.cpp
+2025-03-20 13:35:25,977 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Bayesian_Optimization_ForHyperparameter/imgs/main_diagram1.svg
+2025-03-20 13:35:25,977 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Bayesian_Optimization_ForHyperparameter/imgs/main_diagram2.svg
+2025-03-20 13:35:25,977 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Bayesian_Optimization_ForHyperparameter/imgs/main_diagram3.svg
+2025-03-20 13:35:25,978 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Bayesian_Optimization_ForHyperparameter/imgs/main_diagram4.svg
+2025-03-20 13:35:25,978 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Bayesian_Optimization_ForHyperparameter/imgs/main_diagram5.svg
+2025-03-20 13:35:25,978 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Bayesian_Optimization_ForHyperparameter/imgs/main_diagram6.svg
+2025-03-20 13:35:25,978 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Bayesian_Optimization_ForHyperparameter/imgs/main_diagram7.svg
+2025-03-20 13:35:25,979 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Bayesian_Optimization_ForHyperparameter/imgs/main_diagram8.svg
+2025-03-20 13:35:25,979 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/Bayesian_Optimization_ForHyperparameter/main.cpp
+2025-03-20 13:35:25,979 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:35:30,980 - INFO - Processing: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/test.cpp
+2025-03-20 13:36:44,691 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/test_diagram1.svg
+2025-03-20 13:36:44,692 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/test_diagram2.svg
+2025-03-20 13:36:44,692 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/test_diagram3.svg
+2025-03-20 13:36:44,692 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/test_diagram4.svg
+2025-03-20 13:36:44,692 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/test_diagram5.svg
+2025-03-20 13:36:44,692 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/test_diagram6.svg
+2025-03-20 13:36:44,692 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/test_diagram7.svg
+2025-03-20 13:36:44,692 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/test_diagram8.svg
+2025-03-20 13:36:44,692 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/test.cpp
+2025-03-20 13:36:44,692 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:36:49,693 - INFO - Processing: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/main.cpp
+2025-03-20 13:38:10,046 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/main_diagram1.svg
+2025-03-20 13:38:10,046 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/main_diagram2.svg
+2025-03-20 13:38:10,046 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/main_diagram3.svg
+2025-03-20 13:38:10,047 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/main_diagram4.svg
+2025-03-20 13:38:10,047 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/main_diagram5.svg
+2025-03-20 13:38:10,047 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/main_diagram6.svg
+2025-03-20 13:38:10,047 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/main_diagram7.svg
+2025-03-20 13:38:10,047 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/imgs/main_diagram8.svg
+2025-03-20 13:38:10,047 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/Health_prediction_Neural_Network/main.cpp
+2025-03-20 13:38:10,047 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:38:15,047 - INFO - Processing: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance_thread/main.cpp
+2025-03-20 13:39:41,583 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance_thread/imgs/main_diagram1.svg
+2025-03-20 13:39:41,583 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance_thread/imgs/main_diagram2.svg
+2025-03-20 13:39:41,583 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance_thread/imgs/main_diagram3.svg
+2025-03-20 13:39:41,583 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance_thread/imgs/main_diagram4.svg
+2025-03-20 13:39:41,583 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance_thread/imgs/main_diagram5.svg
+2025-03-20 13:39:41,583 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance_thread/imgs/main_diagram6.svg
+2025-03-20 13:39:41,583 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance_thread/imgs/main_diagram7.svg
+2025-03-20 13:39:41,583 - INFO - SVG saved: ../AI/MachineLearning/Deep_learning/MachineLearning_Performance_thread/imgs/main_diagram8.svg
+2025-03-20 13:39:41,583 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/Deep_learning/MachineLearning_Performance_thread/main.cpp
+2025-03-20 13:39:41,583 - INFO - Processing batch of up to 5 files
+2025-03-20 13:39:41,584 - INFO - Processing: ../AI/MachineLearning/MLTaskScheduler/main.cpp
+2025-03-20 13:41:20,164 - INFO - SVG saved: ../AI/MachineLearning/MLTaskScheduler/imgs/main_diagram1.svg
+2025-03-20 13:41:20,164 - INFO - SVG saved: ../AI/MachineLearning/MLTaskScheduler/imgs/main_diagram2.svg
+2025-03-20 13:41:20,164 - INFO - SVG saved: ../AI/MachineLearning/MLTaskScheduler/imgs/main_diagram3.svg
+2025-03-20 13:41:20,165 - INFO - SVG saved: ../AI/MachineLearning/MLTaskScheduler/imgs/main_diagram4.svg
+2025-03-20 13:41:20,165 - INFO - SVG saved: ../AI/MachineLearning/MLTaskScheduler/imgs/main_diagram5.svg
+2025-03-20 13:41:20,165 - INFO - SVG saved: ../AI/MachineLearning/MLTaskScheduler/imgs/main_diagram6.svg
+2025-03-20 13:41:20,165 - INFO - SVG saved: ../AI/MachineLearning/MLTaskScheduler/imgs/main_diagram7.svg
+2025-03-20 13:41:20,166 - INFO - SVG saved: ../AI/MachineLearning/MLTaskScheduler/imgs/main_diagram8.svg
+2025-03-20 13:41:20,166 - INFO - Generated 8 SVG diagrams for ../AI/MachineLearning/MLTaskScheduler/main.cpp
+2025-03-20 13:41:20,166 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:41:25,167 - INFO - Processing: ../AI/RuleBasedSystem/main.cpp
+2025-03-20 13:42:45,074 - INFO - SVG saved: ../AI/RuleBasedSystem/imgs/main_diagram1.svg
+2025-03-20 13:42:45,074 - INFO - SVG saved: ../AI/RuleBasedSystem/imgs/main_diagram2.svg
+2025-03-20 13:42:45,074 - INFO - SVG saved: ../AI/RuleBasedSystem/imgs/main_diagram3.svg
+2025-03-20 13:42:45,074 - INFO - SVG saved: ../AI/RuleBasedSystem/imgs/main_diagram4.svg
+2025-03-20 13:42:45,075 - INFO - SVG saved: ../AI/RuleBasedSystem/imgs/main_diagram5.svg
+2025-03-20 13:42:45,075 - INFO - SVG saved: ../AI/RuleBasedSystem/imgs/main_diagram6.svg
+2025-03-20 13:42:45,075 - INFO - SVG saved: ../AI/RuleBasedSystem/imgs/main_diagram7.svg
+2025-03-20 13:42:45,075 - INFO - SVG saved: ../AI/RuleBasedSystem/imgs/main_diagram8.svg
+2025-03-20 13:42:45,075 - INFO - Generated 8 SVG diagrams for ../AI/RuleBasedSystem/main.cpp
+2025-03-20 13:42:45,076 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:42:50,076 - INFO - Processing: ../AI/Decision_Tree/main.cpp
+2025-03-20 13:44:49,379 - INFO - SVG saved: ../AI/Decision_Tree/imgs/main_diagram1.svg
+2025-03-20 13:44:49,379 - INFO - SVG saved: ../AI/Decision_Tree/imgs/main_diagram2.svg
+2025-03-20 13:44:49,379 - INFO - SVG saved: ../AI/Decision_Tree/imgs/main_diagram3.svg
+2025-03-20 13:44:49,379 - INFO - SVG saved: ../AI/Decision_Tree/imgs/main_diagram4.svg
+2025-03-20 13:44:49,379 - INFO - SVG saved: ../AI/Decision_Tree/imgs/main_diagram5.svg
+2025-03-20 13:44:49,380 - INFO - SVG saved: ../AI/Decision_Tree/imgs/main_diagram6.svg
+2025-03-20 13:44:49,380 - INFO - SVG saved: ../AI/Decision_Tree/imgs/main_diagram7.svg
+2025-03-20 13:44:49,380 - INFO - SVG saved: ../AI/Decision_Tree/imgs/main_diagram8.svg
+2025-03-20 13:44:49,380 - INFO - Generated 8 SVG diagrams for ../AI/Decision_Tree/main.cpp
+2025-03-20 13:44:49,380 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:44:54,380 - INFO - Processing: ../DataBase/personal.cpp
+2025-03-20 13:46:11,142 - INFO - SVG saved: ../DataBase/imgs/personal_diagram1.svg
+2025-03-20 13:46:11,144 - INFO - SVG saved: ../DataBase/imgs/personal_diagram2.svg
+2025-03-20 13:46:11,144 - INFO - SVG saved: ../DataBase/imgs/personal_diagram3.svg
+2025-03-20 13:46:11,144 - INFO - SVG saved: ../DataBase/imgs/personal_diagram4.svg
+2025-03-20 13:46:11,144 - INFO - SVG saved: ../DataBase/imgs/personal_diagram5.svg
+2025-03-20 13:46:11,144 - INFO - SVG saved: ../DataBase/imgs/personal_diagram6.svg
+2025-03-20 13:46:11,145 - INFO - SVG saved: ../DataBase/imgs/personal_diagram7.svg
+2025-03-20 13:46:11,145 - INFO - SVG saved: ../DataBase/imgs/personal_diagram8.svg
+2025-03-20 13:46:11,145 - INFO - Generated 8 SVG diagrams for ../DataBase/personal.cpp
+2025-03-20 13:46:11,145 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:46:16,145 - INFO - Processing: ../DataBase/database.cpp
+2025-03-20 13:47:25,253 - INFO - SVG saved: ../DataBase/imgs/database_diagram1.svg
+2025-03-20 13:47:25,253 - INFO - SVG saved: ../DataBase/imgs/database_diagram2.svg
+2025-03-20 13:47:25,254 - INFO - SVG saved: ../DataBase/imgs/database_diagram3.svg
+2025-03-20 13:47:25,254 - INFO - SVG saved: ../DataBase/imgs/database_diagram4.svg
+2025-03-20 13:47:25,254 - INFO - SVG saved: ../DataBase/imgs/database_diagram5.svg
+2025-03-20 13:47:25,254 - INFO - SVG saved: ../DataBase/imgs/database_diagram6.svg
+2025-03-20 13:47:25,254 - INFO - SVG saved: ../DataBase/imgs/database_diagram7.svg
+2025-03-20 13:47:25,255 - INFO - SVG saved: ../DataBase/imgs/database_diagram8.svg
+2025-03-20 13:47:25,255 - INFO - Generated 8 SVG diagrams for ../DataBase/database.cpp
+2025-03-20 13:47:25,255 - INFO - Processing batch of up to 5 files
+2025-03-20 13:47:25,255 - INFO - Processing: ../ROS/PID/drone_control_node.cpp
+2025-03-20 13:48:46,057 - INFO - SVG saved: ../ROS/PID/imgs/drone_control_node_diagram1.svg
+2025-03-20 13:48:46,057 - INFO - SVG saved: ../ROS/PID/imgs/drone_control_node_diagram2.svg
+2025-03-20 13:48:46,057 - INFO - SVG saved: ../ROS/PID/imgs/drone_control_node_diagram3.svg
+2025-03-20 13:48:46,058 - INFO - SVG saved: ../ROS/PID/imgs/drone_control_node_diagram4.svg
+2025-03-20 13:48:46,058 - INFO - SVG saved: ../ROS/PID/imgs/drone_control_node_diagram5.svg
+2025-03-20 13:48:46,058 - INFO - SVG saved: ../ROS/PID/imgs/drone_control_node_diagram6.svg
+2025-03-20 13:48:46,058 - INFO - SVG saved: ../ROS/PID/imgs/drone_control_node_diagram7.svg
+2025-03-20 13:48:46,058 - INFO - SVG saved: ../ROS/PID/imgs/drone_control_node_diagram8.svg
+2025-03-20 13:48:46,059 - INFO - Generated 8 SVG diagrams for ../ROS/PID/drone_control_node.cpp
+2025-03-20 13:48:46,059 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:48:51,059 - INFO - Processing: ../ROS/orb_slam/orb_slam.cpp
+2025-03-20 13:50:04,765 - INFO - SVG saved: ../ROS/orb_slam/imgs/orb_slam_diagram1.svg
+2025-03-20 13:50:04,765 - INFO - SVG saved: ../ROS/orb_slam/imgs/orb_slam_diagram2.svg
+2025-03-20 13:50:04,765 - INFO - SVG saved: ../ROS/orb_slam/imgs/orb_slam_diagram3.svg
+2025-03-20 13:50:04,765 - INFO - SVG saved: ../ROS/orb_slam/imgs/orb_slam_diagram4.svg
+2025-03-20 13:50:04,765 - INFO - SVG saved: ../ROS/orb_slam/imgs/orb_slam_diagram5.svg
+2025-03-20 13:50:04,765 - INFO - SVG saved: ../ROS/orb_slam/imgs/orb_slam_diagram6.svg
+2025-03-20 13:50:04,766 - INFO - SVG saved: ../ROS/orb_slam/imgs/orb_slam_diagram7.svg
+2025-03-20 13:50:04,766 - INFO - SVG saved: ../ROS/orb_slam/imgs/orb_slam_diagram8.svg
+2025-03-20 13:50:04,766 - INFO - Generated 8 SVG diagrams for ../ROS/orb_slam/orb_slam.cpp
+2025-03-20 13:50:04,766 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:50:09,766 - INFO - Processing: ../ROS/Publish_Subscribepattern/main.cpp
+2025-03-20 13:51:41,744 - INFO - SVG saved: ../ROS/Publish_Subscribepattern/imgs/main_diagram1.svg
+2025-03-20 13:51:41,745 - INFO - SVG saved: ../ROS/Publish_Subscribepattern/imgs/main_diagram2.svg
+2025-03-20 13:51:41,748 - INFO - SVG saved: ../ROS/Publish_Subscribepattern/imgs/main_diagram3.svg
+2025-03-20 13:51:41,748 - INFO - SVG saved: ../ROS/Publish_Subscribepattern/imgs/main_diagram4.svg
+2025-03-20 13:51:41,748 - INFO - SVG saved: ../ROS/Publish_Subscribepattern/imgs/main_diagram5.svg
+2025-03-20 13:51:41,749 - INFO - SVG saved: ../ROS/Publish_Subscribepattern/imgs/main_diagram6.svg
+2025-03-20 13:51:41,749 - INFO - SVG saved: ../ROS/Publish_Subscribepattern/imgs/main_diagram7.svg
+2025-03-20 13:51:41,749 - INFO - SVG saved: ../ROS/Publish_Subscribepattern/imgs/main_diagram8.svg
+2025-03-20 13:51:41,749 - INFO - Generated 8 SVG diagrams for ../ROS/Publish_Subscribepattern/main.cpp
+2025-03-20 13:51:41,749 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:51:46,750 - INFO - Processing: ../ROS/ROS_Service_Implementation/service_server.cpp
+2025-03-20 13:53:13,143 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_server_diagram1.svg
+2025-03-20 13:53:13,144 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_server_diagram2.svg
+2025-03-20 13:53:13,144 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_server_diagram3.svg
+2025-03-20 13:53:13,145 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_server_diagram4.svg
+2025-03-20 13:53:13,145 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_server_diagram5.svg
+2025-03-20 13:53:13,145 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_server_diagram6.svg
+2025-03-20 13:53:13,145 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_server_diagram7.svg
+2025-03-20 13:53:13,145 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_server_diagram8.svg
+2025-03-20 13:53:13,145 - INFO - Generated 8 SVG diagrams for ../ROS/ROS_Service_Implementation/service_server.cpp
+2025-03-20 13:53:13,146 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:53:18,146 - INFO - Processing: ../ROS/ROS_Service_Implementation/main.cpp
+2025-03-20 13:55:21,362 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/main_diagram1.svg
+2025-03-20 13:55:21,362 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/main_diagram2.svg
+2025-03-20 13:55:21,362 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/main_diagram3.svg
+2025-03-20 13:55:21,362 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/main_diagram4.svg
+2025-03-20 13:55:21,362 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/main_diagram5.svg
+2025-03-20 13:55:21,362 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/main_diagram6.svg
+2025-03-20 13:55:21,363 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/main_diagram7.svg
+2025-03-20 13:55:21,363 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/main_diagram8.svg
+2025-03-20 13:55:21,363 - INFO - Generated 8 SVG diagrams for ../ROS/ROS_Service_Implementation/main.cpp
+2025-03-20 13:55:21,364 - INFO - Processing batch of up to 5 files
+2025-03-20 13:55:21,364 - INFO - Processing: ../ROS/ROS_Service_Implementation/service_client.cpp
+2025-03-20 13:56:50,464 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_client_diagram1.svg
+2025-03-20 13:56:50,464 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_client_diagram2.svg
+2025-03-20 13:56:50,464 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_client_diagram3.svg
+2025-03-20 13:56:50,464 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_client_diagram4.svg
+2025-03-20 13:56:50,464 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_client_diagram5.svg
+2025-03-20 13:56:50,464 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_client_diagram6.svg
+2025-03-20 13:56:50,464 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_client_diagram7.svg
+2025-03-20 13:56:50,464 - INFO - SVG saved: ../ROS/ROS_Service_Implementation/imgs/service_client_diagram8.svg
+2025-03-20 13:56:50,465 - INFO - Generated 8 SVG diagrams for ../ROS/ROS_Service_Implementation/service_client.cpp
+2025-03-20 13:56:50,465 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:56:55,465 - INFO - Processing: ../Statistics/Naive_bayes_classifer_advanced/main.cpp
+2025-03-20 13:58:08,529 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer_advanced/imgs/main_diagram1.svg
+2025-03-20 13:58:08,530 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer_advanced/imgs/main_diagram2.svg
+2025-03-20 13:58:08,530 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer_advanced/imgs/main_diagram3.svg
+2025-03-20 13:58:08,530 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer_advanced/imgs/main_diagram4.svg
+2025-03-20 13:58:08,531 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer_advanced/imgs/main_diagram5.svg
+2025-03-20 13:58:08,531 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer_advanced/imgs/main_diagram6.svg
+2025-03-20 13:58:08,531 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer_advanced/imgs/main_diagram7.svg
+2025-03-20 13:58:08,532 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer_advanced/imgs/main_diagram8.svg
+2025-03-20 13:58:08,532 - INFO - Generated 8 SVG diagrams for ../Statistics/Naive_bayes_classifer_advanced/main.cpp
+2025-03-20 13:58:08,532 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:58:13,532 - INFO - Processing: ../Statistics/Logistic Regression_ADVANCED/main.cpp
+2025-03-20 13:59:25,935 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED/imgs/main_diagram1.svg
+2025-03-20 13:59:25,935 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED/imgs/main_diagram2.svg
+2025-03-20 13:59:25,935 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED/imgs/main_diagram3.svg
+2025-03-20 13:59:25,935 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED/imgs/main_diagram4.svg
+2025-03-20 13:59:25,935 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED/imgs/main_diagram5.svg
+2025-03-20 13:59:25,935 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED/imgs/main_diagram6.svg
+2025-03-20 13:59:25,936 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED/imgs/main_diagram7.svg
+2025-03-20 13:59:25,936 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED/imgs/main_diagram8.svg
+2025-03-20 13:59:25,936 - INFO - Generated 8 SVG diagrams for ../Statistics/Logistic Regression_ADVANCED/main.cpp
+2025-03-20 13:59:25,936 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 13:59:30,936 - INFO - Processing: ../Statistics/Linear_Support_Vector_Machine/main.cpp
+2025-03-20 14:00:34,878 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine/imgs/main_diagram1.svg
+2025-03-20 14:00:34,878 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine/imgs/main_diagram2.svg
+2025-03-20 14:00:34,880 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine/imgs/main_diagram3.svg
+2025-03-20 14:00:34,882 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine/imgs/main_diagram4.svg
+2025-03-20 14:00:34,882 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine/imgs/main_diagram5.svg
+2025-03-20 14:00:34,882 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine/imgs/main_diagram6.svg
+2025-03-20 14:00:34,882 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine/imgs/main_diagram7.svg
+2025-03-20 14:00:34,883 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine/imgs/main_diagram8.svg
+2025-03-20 14:00:34,883 - INFO - Generated 8 SVG diagrams for ../Statistics/Linear_Support_Vector_Machine/main.cpp
+2025-03-20 14:00:34,883 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 14:00:39,883 - INFO - Processing: ../Statistics/Logistic Regression/main.cpp
+2025-03-20 14:01:42,360 - INFO - SVG saved: ../Statistics/Logistic Regression/imgs/main_diagram1.svg
+2025-03-20 14:01:42,361 - INFO - SVG saved: ../Statistics/Logistic Regression/imgs/main_diagram2.svg
+2025-03-20 14:01:42,361 - INFO - SVG saved: ../Statistics/Logistic Regression/imgs/main_diagram3.svg
+2025-03-20 14:01:42,361 - INFO - SVG saved: ../Statistics/Logistic Regression/imgs/main_diagram4.svg
+2025-03-20 14:01:42,361 - INFO - SVG saved: ../Statistics/Logistic Regression/imgs/main_diagram5.svg
+2025-03-20 14:01:42,361 - INFO - SVG saved: ../Statistics/Logistic Regression/imgs/main_diagram6.svg
+2025-03-20 14:01:42,361 - INFO - SVG saved: ../Statistics/Logistic Regression/imgs/main_diagram7.svg
+2025-03-20 14:01:42,362 - INFO - SVG saved: ../Statistics/Logistic Regression/imgs/main_diagram8.svg
+2025-03-20 14:01:42,362 - INFO - Generated 8 SVG diagrams for ../Statistics/Logistic Regression/main.cpp
+2025-03-20 14:01:42,362 - INFO - Processing batch of up to 5 files
+2025-03-20 14:01:42,363 - INFO - Processing: ../Statistics/Naive_bayes_classifer/main.cpp
+2025-03-20 14:03:31,264 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer/imgs/main_diagram1.svg
+2025-03-20 14:03:31,265 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer/imgs/main_diagram2.svg
+2025-03-20 14:03:31,265 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer/imgs/main_diagram3.svg
+2025-03-20 14:03:31,265 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer/imgs/main_diagram4.svg
+2025-03-20 14:03:31,266 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer/imgs/main_diagram5.svg
+2025-03-20 14:03:31,266 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer/imgs/main_diagram6.svg
+2025-03-20 14:03:31,266 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer/imgs/main_diagram7.svg
+2025-03-20 14:03:31,266 - INFO - SVG saved: ../Statistics/Naive_bayes_classifer/imgs/main_diagram8.svg
+2025-03-20 14:03:31,266 - INFO - Generated 8 SVG diagrams for ../Statistics/Naive_bayes_classifer/main.cpp
+2025-03-20 14:03:31,267 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 14:03:36,267 - INFO - Processing: ../Statistics/k-Nearest-Neighbors/main.cpp
+2025-03-20 14:04:29,942 - INFO - SVG saved: ../Statistics/k-Nearest-Neighbors/imgs/main_diagram1.svg
+2025-03-20 14:04:29,943 - INFO - SVG saved: ../Statistics/k-Nearest-Neighbors/imgs/main_diagram2.svg
+2025-03-20 14:04:29,943 - INFO - SVG saved: ../Statistics/k-Nearest-Neighbors/imgs/main_diagram3.svg
+2025-03-20 14:04:29,943 - INFO - SVG saved: ../Statistics/k-Nearest-Neighbors/imgs/main_diagram4.svg
+2025-03-20 14:04:29,944 - INFO - SVG saved: ../Statistics/k-Nearest-Neighbors/imgs/main_diagram5.svg
+2025-03-20 14:04:29,944 - INFO - SVG saved: ../Statistics/k-Nearest-Neighbors/imgs/main_diagram6.svg
+2025-03-20 14:04:29,944 - INFO - SVG saved: ../Statistics/k-Nearest-Neighbors/imgs/main_diagram7.svg
+2025-03-20 14:04:29,944 - INFO - SVG saved: ../Statistics/k-Nearest-Neighbors/imgs/main_diagram8.svg
+2025-03-20 14:04:29,944 - INFO - Generated 8 SVG diagrams for ../Statistics/k-Nearest-Neighbors/main.cpp
+2025-03-20 14:04:29,945 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 14:04:34,946 - INFO - Processing: ../Statistics/Perceptron Algorithm/main.cpp
+2025-03-20 14:05:42,215 - INFO - SVG saved: ../Statistics/Perceptron Algorithm/imgs/main_diagram1.svg
+2025-03-20 14:05:42,215 - INFO - SVG saved: ../Statistics/Perceptron Algorithm/imgs/main_diagram2.svg
+2025-03-20 14:05:42,215 - INFO - SVG saved: ../Statistics/Perceptron Algorithm/imgs/main_diagram3.svg
+2025-03-20 14:05:42,215 - INFO - SVG saved: ../Statistics/Perceptron Algorithm/imgs/main_diagram4.svg
+2025-03-20 14:05:42,216 - INFO - SVG saved: ../Statistics/Perceptron Algorithm/imgs/main_diagram5.svg
+2025-03-20 14:05:42,216 - INFO - SVG saved: ../Statistics/Perceptron Algorithm/imgs/main_diagram6.svg
+2025-03-20 14:05:42,216 - INFO - SVG saved: ../Statistics/Perceptron Algorithm/imgs/main_diagram7.svg
+2025-03-20 14:05:42,216 - INFO - SVG saved: ../Statistics/Perceptron Algorithm/imgs/main_diagram8.svg
+2025-03-20 14:05:42,216 - INFO - Generated 8 SVG diagrams for ../Statistics/Perceptron Algorithm/main.cpp
+2025-03-20 14:05:42,217 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 14:05:47,217 - INFO - Processing: ../Statistics/Logistic Regression_ADVANCED2/main.cpp
+2025-03-20 14:06:54,466 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED2/imgs/main_diagram1.svg
+2025-03-20 14:06:54,466 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED2/imgs/main_diagram2.svg
+2025-03-20 14:06:54,466 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED2/imgs/main_diagram3.svg
+2025-03-20 14:06:54,467 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED2/imgs/main_diagram4.svg
+2025-03-20 14:06:54,467 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED2/imgs/main_diagram5.svg
+2025-03-20 14:06:54,467 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED2/imgs/main_diagram6.svg
+2025-03-20 14:06:54,467 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED2/imgs/main_diagram7.svg
+2025-03-20 14:06:54,467 - INFO - SVG saved: ../Statistics/Logistic Regression_ADVANCED2/imgs/main_diagram8.svg
+2025-03-20 14:06:54,467 - INFO - Generated 8 SVG diagrams for ../Statistics/Logistic Regression_ADVANCED2/main.cpp
+2025-03-20 14:06:54,468 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 14:06:59,468 - INFO - Processing: ../Statistics/GaussianMixtureModel/main.cpp
+2025-03-20 14:08:19,968 - INFO - SVG saved: ../Statistics/GaussianMixtureModel/imgs/main_diagram1.svg
+2025-03-20 14:08:19,968 - INFO - SVG saved: ../Statistics/GaussianMixtureModel/imgs/main_diagram2.svg
+2025-03-20 14:08:19,968 - INFO - SVG saved: ../Statistics/GaussianMixtureModel/imgs/main_diagram3.svg
+2025-03-20 14:08:19,969 - INFO - SVG saved: ../Statistics/GaussianMixtureModel/imgs/main_diagram4.svg
+2025-03-20 14:08:19,969 - INFO - SVG saved: ../Statistics/GaussianMixtureModel/imgs/main_diagram5.svg
+2025-03-20 14:08:19,969 - INFO - SVG saved: ../Statistics/GaussianMixtureModel/imgs/main_diagram6.svg
+2025-03-20 14:08:19,969 - INFO - SVG saved: ../Statistics/GaussianMixtureModel/imgs/main_diagram7.svg
+2025-03-20 14:08:19,969 - INFO - SVG saved: ../Statistics/GaussianMixtureModel/imgs/main_diagram8.svg
+2025-03-20 14:08:19,969 - INFO - Generated 8 SVG diagrams for ../Statistics/GaussianMixtureModel/main.cpp
+2025-03-20 14:08:19,970 - INFO - Processing batch of up to 5 files
+2025-03-20 14:08:19,970 - INFO - Processing: ../Statistics/LinearDiscriminantAnalysis/main.cpp
+2025-03-20 14:09:51,910 - INFO - SVG saved: ../Statistics/LinearDiscriminantAnalysis/imgs/main_diagram1.svg
+2025-03-20 14:09:51,910 - INFO - SVG saved: ../Statistics/LinearDiscriminantAnalysis/imgs/main_diagram2.svg
+2025-03-20 14:09:51,910 - INFO - SVG saved: ../Statistics/LinearDiscriminantAnalysis/imgs/main_diagram3.svg
+2025-03-20 14:09:51,910 - INFO - SVG saved: ../Statistics/LinearDiscriminantAnalysis/imgs/main_diagram4.svg
+2025-03-20 14:09:51,910 - INFO - SVG saved: ../Statistics/LinearDiscriminantAnalysis/imgs/main_diagram5.svg
+2025-03-20 14:09:51,910 - INFO - SVG saved: ../Statistics/LinearDiscriminantAnalysis/imgs/main_diagram6.svg
+2025-03-20 14:09:51,910 - INFO - SVG saved: ../Statistics/LinearDiscriminantAnalysis/imgs/main_diagram7.svg
+2025-03-20 14:09:51,910 - INFO - SVG saved: ../Statistics/LinearDiscriminantAnalysis/imgs/main_diagram8.svg
+2025-03-20 14:09:51,910 - INFO - Generated 8 SVG diagrams for ../Statistics/LinearDiscriminantAnalysis/main.cpp
+2025-03-20 14:09:51,910 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 14:09:56,911 - INFO - Processing: ../Statistics/K-Means-Clustering/main.cpp
+2025-03-20 14:10:55,698 - INFO - SVG saved: ../Statistics/K-Means-Clustering/imgs/main_diagram1.svg
+2025-03-20 14:10:55,699 - INFO - SVG saved: ../Statistics/K-Means-Clustering/imgs/main_diagram2.svg
+2025-03-20 14:10:55,699 - INFO - SVG saved: ../Statistics/K-Means-Clustering/imgs/main_diagram3.svg
+2025-03-20 14:10:55,699 - INFO - SVG saved: ../Statistics/K-Means-Clustering/imgs/main_diagram4.svg
+2025-03-20 14:10:55,699 - INFO - SVG saved: ../Statistics/K-Means-Clustering/imgs/main_diagram5.svg
+2025-03-20 14:10:55,699 - INFO - SVG saved: ../Statistics/K-Means-Clustering/imgs/main_diagram6.svg
+2025-03-20 14:10:55,699 - INFO - SVG saved: ../Statistics/K-Means-Clustering/imgs/main_diagram7.svg
+2025-03-20 14:10:55,699 - INFO - SVG saved: ../Statistics/K-Means-Clustering/imgs/main_diagram8.svg
+2025-03-20 14:10:55,700 - INFO - Generated 8 SVG diagrams for ../Statistics/K-Means-Clustering/main.cpp
+2025-03-20 14:10:55,700 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 14:11:00,701 - INFO - Processing: ../Statistics/Linear_Regression/main.cpp
+2025-03-20 14:12:04,070 - INFO - SVG saved: ../Statistics/Linear_Regression/imgs/main_diagram1.svg
+2025-03-20 14:12:04,070 - INFO - SVG saved: ../Statistics/Linear_Regression/imgs/main_diagram2.svg
+2025-03-20 14:12:04,070 - INFO - SVG saved: ../Statistics/Linear_Regression/imgs/main_diagram3.svg
+2025-03-20 14:12:04,070 - INFO - SVG saved: ../Statistics/Linear_Regression/imgs/main_diagram4.svg
+2025-03-20 14:12:04,070 - INFO - SVG saved: ../Statistics/Linear_Regression/imgs/main_diagram5.svg
+2025-03-20 14:12:04,070 - INFO - SVG saved: ../Statistics/Linear_Regression/imgs/main_diagram6.svg
+2025-03-20 14:12:04,070 - INFO - SVG saved: ../Statistics/Linear_Regression/imgs/main_diagram7.svg
+2025-03-20 14:12:04,070 - INFO - SVG saved: ../Statistics/Linear_Regression/imgs/main_diagram8.svg
+2025-03-20 14:12:04,071 - INFO - Generated 8 SVG diagrams for ../Statistics/Linear_Regression/main.cpp
+2025-03-20 14:12:04,071 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 14:12:09,071 - INFO - Processing: ../Statistics/Linear_Support_Vector_Machine_advanced/main.cpp
+2025-03-20 14:13:31,508 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine_advanced/imgs/main_diagram1.svg
+2025-03-20 14:13:31,509 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine_advanced/imgs/main_diagram2.svg
+2025-03-20 14:13:31,509 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine_advanced/imgs/main_diagram3.svg
+2025-03-20 14:13:31,509 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine_advanced/imgs/main_diagram4.svg
+2025-03-20 14:13:31,510 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine_advanced/imgs/main_diagram5.svg
+2025-03-20 14:13:31,510 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine_advanced/imgs/main_diagram6.svg
+2025-03-20 14:13:31,510 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine_advanced/imgs/main_diagram7.svg
+2025-03-20 14:13:31,510 - INFO - SVG saved: ../Statistics/Linear_Support_Vector_Machine_advanced/imgs/main_diagram8.svg
+2025-03-20 14:13:31,510 - INFO - Generated 8 SVG diagrams for ../Statistics/Linear_Support_Vector_Machine_advanced/main.cpp
+2025-03-20 14:13:31,511 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 14:13:36,511 - INFO - Processing: ../Statistics/Apriori-Algorithm/main.cpp
+2025-03-20 14:14:35,439 - INFO - SVG saved: ../Statistics/Apriori-Algorithm/imgs/main_diagram1.svg
+2025-03-20 14:14:35,439 - INFO - SVG saved: ../Statistics/Apriori-Algorithm/imgs/main_diagram2.svg
+2025-03-20 14:14:35,440 - INFO - SVG saved: ../Statistics/Apriori-Algorithm/imgs/main_diagram3.svg
+2025-03-20 14:14:35,440 - INFO - SVG saved: ../Statistics/Apriori-Algorithm/imgs/main_diagram4.svg
+2025-03-20 14:14:35,440 - INFO - SVG saved: ../Statistics/Apriori-Algorithm/imgs/main_diagram5.svg
+2025-03-20 14:14:35,440 - INFO - SVG saved: ../Statistics/Apriori-Algorithm/imgs/main_diagram6.svg
+2025-03-20 14:14:35,440 - INFO - SVG saved: ../Statistics/Apriori-Algorithm/imgs/main_diagram7.svg
+2025-03-20 14:14:35,440 - INFO - SVG saved: ../Statistics/Apriori-Algorithm/imgs/main_diagram8.svg
+2025-03-20 14:14:35,440 - INFO - Generated 8 SVG diagrams for ../Statistics/Apriori-Algorithm/main.cpp
+2025-03-20 14:14:35,440 - INFO - Processing batch of up to 5 files
+2025-03-20 14:14:35,441 - INFO - Processing: ../Statistics/Basic_statistics/main.cpp
+2025-03-20 14:15:39,533 - INFO - SVG saved: ../Statistics/Basic_statistics/imgs/main_diagram1.svg
+2025-03-20 14:15:39,533 - INFO - SVG saved: ../Statistics/Basic_statistics/imgs/main_diagram2.svg
+2025-03-20 14:15:39,533 - INFO - SVG saved: ../Statistics/Basic_statistics/imgs/main_diagram3.svg
+2025-03-20 14:15:39,533 - INFO - SVG saved: ../Statistics/Basic_statistics/imgs/main_diagram4.svg
+2025-03-20 14:15:39,534 - INFO - SVG saved: ../Statistics/Basic_statistics/imgs/main_diagram5.svg
+2025-03-20 14:15:39,534 - INFO - SVG saved: ../Statistics/Basic_statistics/imgs/main_diagram6.svg
+2025-03-20 14:15:39,534 - INFO - SVG saved: ../Statistics/Basic_statistics/imgs/main_diagram7.svg
+2025-03-20 14:15:39,534 - INFO - SVG saved: ../Statistics/Basic_statistics/imgs/main_diagram8.svg
+2025-03-20 14:15:39,534 - INFO - Generated 8 SVG diagrams for ../Statistics/Basic_statistics/main.cpp
+2025-03-20 14:15:39,535 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 14:15:44,535 - INFO - Processing: ../Statistics/kmean-cluster/main.cpp
+2025-03-20 14:17:15,221 - INFO - SVG saved: ../Statistics/kmean-cluster/imgs/main_diagram1.svg
+2025-03-20 14:17:15,222 - INFO - SVG saved: ../Statistics/kmean-cluster/imgs/main_diagram2.svg
+2025-03-20 14:17:15,222 - INFO - SVG saved: ../Statistics/kmean-cluster/imgs/main_diagram3.svg
+2025-03-20 14:17:15,222 - INFO - SVG saved: ../Statistics/kmean-cluster/imgs/main_diagram4.svg
+2025-03-20 14:17:15,222 - INFO - SVG saved: ../Statistics/kmean-cluster/imgs/main_diagram5.svg
+2025-03-20 14:17:15,223 - INFO - SVG saved: ../Statistics/kmean-cluster/imgs/main_diagram6.svg
+2025-03-20 14:17:15,223 - INFO - SVG saved: ../Statistics/kmean-cluster/imgs/main_diagram7.svg
+2025-03-20 14:17:15,223 - INFO - SVG saved: ../Statistics/kmean-cluster/imgs/main_diagram8.svg
+2025-03-20 14:17:15,223 - INFO - Generated 8 SVG diagrams for ../Statistics/kmean-cluster/main.cpp
+2025-03-20 14:17:15,224 - INFO - Throttling for 5 seconds before next file...
+2025-03-20 14:17:20,224 - INFO - Processing: ../Statistics/Xtensor/main.cpp

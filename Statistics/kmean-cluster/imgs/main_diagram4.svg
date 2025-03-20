@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">4. Point Class Structure</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="20" fill="black">- features: std::vector&lt;double&gt;</text>
+  <text x="70" y="180" font-size="20" fill="black">- cluster_id: int</text>
+  <text x="70" y="220" font-size="20" fill="black">+ getDimension(): size_t</text>
+  <text x="70" y="260" font-size="20" fill="black">+ getFeature(index): double</text>
+  <text x="70" y="300" font-size="20" fill="black">+ getFeatures(): std::vector&lt;double&gt;</text>
+  <text x="70" y="340" font-size="20" fill="black">+ setCluster(id): void</text>
+  <text x="70" y="380" font-size="20" fill="black">+ getCluster(): int</text>
+  <text x="70" y="420" font-size="20" fill="black">+ distance(other): double</text>
+  <text x="70" y="460" font-size="20" fill="black">+ print(): void</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#f0f0f0"/>
+    <text x="50" y="50" font-size="24" fill="black">5. Main Function</text>
+    <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+    <text x="70" y="140" font-size="20" fill="black">Matrix X</text>
+    <rect x="70" y="160" width="200" height="100" fill="#d3f8d3" stroke="black"/>
+    <text x="80" y="200" font-size="16" fill="black">- 3x2 matrix</text>
+    <text x="80" y="230" font-size="16" fill="black">- Initialize</text>
+    <text x="300" y="140" font-size="20" fill="black">Vector y</text>
+    <rect x="300" y="160" width="200" height="100" fill="#f8d3d3" stroke="black"/>
+    <text x="310" y="200" font-size="16" fill="black">- 3 elements</text>
+    <text x="310" y="230" font-size="16" fill="black">- Initialize</text>
+    <line x1="270" y1="210" x2="300" y2="210" stroke="black"/>
+    <line x1="270" y1="210" x2="270" y2="160" stroke="black"/>
+</svg>

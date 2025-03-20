@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">3. Data Flow</text>
+  <rect x="50" y="80" width="1100" height="600" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="18">State Transitions</text>
+  <rect x="100" y="150" width="1000" height="500" fill="#e0e0e0" stroke="#000000"/>
+  <text x="120" y="190" font-size="16">1. Input Data Generation</text>
+  <text x="120" y="230" font-size="16">2. Data Processing</text>
+  <text x="120" y="270" font-size="16">3. Health Score Calculation</text>
+  <text x="120" y="310" font-size="16">4. Data Output to CSV</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">6. PID Controller</text>
+  <rect x="50" y="80" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="18">Proportional Term</text>
+  <rect x="70" y="130" width="200" height="50" fill="#d3d3d3"/>
+  <text x="70" y="200" font-size="18">Integral Term</text>
+  <rect x="70" y="210" width="200" height="50" fill="#d3d3d3"/>
+  <text x="70" y="280" font-size="18">Derivative Term</text>
+  <rect x="70" y="290" width="200" height="50" fill="#d3d3d3"/>
+  <text x="70" y="360" font-size="18">Anti-Windup</text>
+  <rect x="70" y="370" width="200" height="50" fill="#d3d3d3"/>
+  <line x1="170" y1="180" x2="170" y2="210" stroke="#000000"/>
+  <line x1="170" y1="260" x2="170" y2="290" stroke="#000000"/>
+  <line x1="170" y1="340" x2="170" y2="370" stroke="#000000"/>
+</svg>

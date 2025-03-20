@@ -1,0 +1,16 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">3. Data Flow</text>
+  <rect x="50" y="70" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="110" font-size="18">1. Raw Data</text>
+  <text x="70" y="140" font-size="18">2. Preprocessed Data</text>
+  <text x="70" y="170" font-size="18">3. Model Input</text>
+  <text x="70" y="200" font-size="18">4. Model Output</text>
+  <text x="70" y="230" font-size="18">5. Loss Calculation</text>
+  <line x1="70" y1="240" x2="1100" y2="240" stroke="#000000"/>
+  <text x="70" y="280" font-size="18">Raw Data: MNIST images and labels from IDX files</text>
+  <text x="70" y="310" font-size="18">Preprocessed Data: Normalized and augmented images</text>
+  <text x="70" y="340" font-size="18">Model Input: Tensor of preprocessed images</text>
+  <text x="70" y="370" font-size="18">Model Output: Predicted class probabilities</text>
+  <text x="70" y="400" font-size="18">Loss Calculation: Cross-entropy between predictions and labels</text>
+</svg>

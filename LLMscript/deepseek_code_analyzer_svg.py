@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
 """
-Multi-SVG Diagram Generator for Code Files
+Multi-SVG Diagram Generator for Code Files (DeepSeek Version)
 
 This script generates multiple SVG diagrams that explain the logic and functionality of code files
-using Anthropic's Claude API. Each code file will have multiple diagrams saved in an 'imgs' directory.
+using DeepSeek's API. Each code file will have multiple diagrams saved in an 'imgs' directory.
 
 Usage:
-  python3 multi_svg_generator.py --dir /path/to/code --model claude-3-sonnet-20240229 --throttle 5
+  python3 deepseek_svg_generator.py --dir /path/to/code --model deepseek-coder --throttle 5
 """
 
 import os
-import anthropic
-from dotenv import load_dotenv
+import requests
 import time
 import argparse
 import random
@@ -19,13 +18,14 @@ import logging
 import json
 import re
 from datetime import datetime
+from dotenv import load_dotenv
 
 # Set up logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("svg_generation.log"),
+        logging.FileHandler("deepseek_svg_generation.log"),
         logging.StreamHandler()
     ]
 )
@@ -33,20 +33,53 @@ logger = logging.getLogger(__name__)
 
 # Load API Key from .env file
 load_dotenv()
-api_key = os.getenv("ANTHROPIC_API_KEY")
+api_key = os.getenv("DEEPSEEK_API_KEY")
 
 # Ensure API key is loaded
 if not api_key:
-    raise ValueError("Missing Anthropic API key. Add it to a .env file.")
+    raise ValueError("Missing DeepSeek API key. Add it to a .env file as DEEPSEEK_API_KEY=your_key_here")
 
-# Create Anthropic client
-client = anthropic.Anthropic(api_key=api_key)
+# DeepSeek API base URL
+DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
 
 # Supported file extensions
-SUPPORTED_EXTENSIONS = ['.cpp', '.c', '.py','cu']
+SUPPORTED_EXTENSIONS = ['.cpp', '.c', '.py', '.cu']
 
 # State tracking
-STATE_FILE = "svg_generation_state.json"
+STATE_FILE = "deepseek_svg_generation_state.json"
+
+class DeepSeekClient:
+    """Client for interacting with DeepSeek API"""
+    
+    def __init__(self, api_key):
+        self.api_key = api_key
+        self.headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        }
+    
+    def generate_completion(self, model, messages, max_tokens=4096, temperature=0.2):
+        """Send a request to DeepSeek API and return the response"""
+        payload = {
+            "model": model,
+            "messages": messages,
+            "max_tokens": max_tokens,
+            "temperature": temperature
+        }
+        
+        response = requests.post(
+            DEEPSEEK_API_URL,
+            headers=self.headers,
+            json=payload
+        )
+        
+        if response.status_code != 200:
+            raise Exception(f"API Error: {response.status_code} {response.text}")
+            
+        return response.json()
+
+# Create DeepSeek client
+client = DeepSeekClient(api_key)
 
 def extract_code_essence(file_content, max_length=3000):
     """Extract the essential parts of the code to reduce prompt size."""
@@ -95,14 +128,14 @@ def extract_code_essence(file_content, max_length=3000):
     return result
 
 def create_prompt(file_content, filename, max_code_length=3000):
-    """ Generate a Claude-friendly prompt to create multiple SVG diagrams explaining the code. """
+    """ Generate a DeepSeek-friendly prompt to create multiple SVG diagrams explaining the code. """
     language = "C++" if filename.endswith('.cpp') else "C" if filename.endswith('.c') else "Python"
     
     # Extract essential parts of the code to reduce prompt size
     code_essence = extract_code_essence(file_content, max_code_length)
     
     prompt = f"""
-    Create MULTIPLE SVG diagrams (at least 5) that explain different aspects of this {language} code.
+    Create MULTIPLE SVG diagrams (at least 8) that explain different aspects of this {language} code.
     Each diagram should focus on a different part of the code's functionality:
     
     1. First diagram: Overall architecture or main workflow
@@ -112,7 +145,7 @@ def create_prompt(file_content, filename, max_code_length=3000):
     
     Requirements:
     - Generate ONLY valid SVG code with no explanations between SVGs
-    - Keep each SVG small (around 600x400 pixels)
+    - Around 1200x800 pixels
     - Add descriptive titles within each SVG
     - Separate each SVG diagram with a line of "---" 
     - Output should only contain SVG diagrams with separators between them
@@ -135,38 +168,56 @@ def exponential_backoff(attempt, base_delay=2, max_delay=30):
     return delay * jitter
 
 def request_svg_diagrams(prompt, model_name, max_retries=5):
-    """ Request multiple SVG diagrams from Claude's API with exponential backoff retry logic. """
+    """ Request multiple SVG diagrams from DeepSeek's API with exponential backoff retry logic. """
     for attempt in range(max_retries):
         try:
-            response = client.messages.create(
+            messages = [{"role": "user", "content": prompt}]
+            response = client.generate_completion(
                 model=model_name,
                 max_tokens=4096,  # Need more tokens for multiple SVGs
                 temperature=0.2,
-                messages=[{"role": "user", "content": prompt}]
+                messages=messages
             )
-            return response.content[0].text.strip()
+            
+            # Extract content from DeepSeek response (assuming similar structure to OpenAI)
+            if "choices" in response and len(response["choices"]) > 0:
+                content = response["choices"][0]["message"]["content"]
+                return content.strip()
+            else:
+                logger.error(f"Unexpected response format: {response}")
+                return None
         
-        except anthropic.APIConnectionError as e:
+        except requests.exceptions.ConnectionError as e:
             delay = exponential_backoff(attempt)
             logger.warning(f"Connection error: {e}. Retrying in {delay:.1f} seconds... (Attempt {attempt+1}/{max_retries})")
             time.sleep(delay)
         
-        except anthropic.RateLimitError as e:
-            delay = exponential_backoff(attempt, base_delay=5)
-            logger.warning(f"Rate limit exceeded: {e}. Waiting {delay:.1f} seconds... (Attempt {attempt+1}/{max_retries})")
-            time.sleep(delay)
+        except requests.exceptions.HTTPError as e:
+            # Check if rate limited
+            if e.response.status_code == 429:
+                delay = exponential_backoff(attempt, base_delay=5)
+                logger.warning(f"Rate limit exceeded: {e}. Waiting {delay:.1f} seconds... (Attempt {attempt+1}/{max_retries})")
+                time.sleep(delay)
+            else:
+                logger.error(f"HTTP Error: {e}")
+                if attempt < max_retries - 1:
+                    delay = exponential_backoff(attempt)
+                    logger.warning(f"Retrying in {delay:.1f} seconds... (Attempt {attempt+1}/{max_retries})")
+                    time.sleep(delay)
+                else:
+                    return None
         
         except Exception as e:
             error_message = str(e)
             logger.error(f"API Error: {error_message}")
             
             # Handle model not found error
-            if "not_found_error" in error_message:
+            if "not_found" in error_message.lower():
                 logger.error(f"The model '{model_name}' was not found. Please check the model name.")
                 return None
             
             # Handle overloaded server error
-            elif "overloaded_error" in error_message:
+            elif "overloaded" in error_message.lower():
                 delay = exponential_backoff(attempt, base_delay=8)
                 logger.warning(f"Server overloaded. Waiting {delay:.1f} seconds before retry... (Attempt {attempt+1}/{max_retries})")
                 time.sleep(delay)
@@ -185,7 +236,7 @@ def request_svg_diagrams(prompt, model_name, max_retries=5):
     return None
 
 def extract_multiple_svgs(response_text):
-    """ Extract all SVG content from Claude's response. """
+    """ Extract all SVG content from DeepSeek's response. """
     # Look for content between svg tags
     svg_matches = re.findall(r'<svg[\s\S]*?<\/svg>', response_text)
     
@@ -394,10 +445,10 @@ def process_directory_with_throttling(root_dir, model_name, batch_size=1, thrott
     logger.info(f"Status: {len(state['pending'])} pending, {len(state['completed'])} completed, {len(state['failed'])} failed")
 
 def main():
-    parser = argparse.ArgumentParser(description='Generate multiple SVG diagrams for code files using Claude API')
+    parser = argparse.ArgumentParser(description='Generate multiple SVG diagrams for code files using DeepSeek API')
     parser.add_argument('--dir', type=str, default=".", help='Directory to process')
-    parser.add_argument('--model', type=str, default="claude-3-sonnet-20240229", 
-                        help='Claude model to use (default: claude-3-sonnet-20240229)')
+    parser.add_argument('--model', type=str, default="deepseek-coder", 
+                        help='DeepSeek model to use (default: deepseek-coder)')
     parser.add_argument('--process-all', action='store_true', 
                         help='Process all files, including those that already have SVGs')
     parser.add_argument('--throttle', type=int, default=5,
@@ -411,17 +462,17 @@ def main():
     
     # Add help on available models
     parser.add_argument('--list-models', action='store_true',
-                        help='List available Claude models names and exit')
+                        help='List available DeepSeek models names and exit')
     
     args = parser.parse_args()
     
     # Show available models if requested
     if args.list_models:
-        print("Available Claude models:")
-        print("  claude-3-opus-20240229    (high quality, slower)")
-        print("  claude-3-sonnet-20240229  (balanced performance)")
-        print("  claude-3-haiku-20240307   (fastest)")
-        print("  claude-3-7-sonnet-20250219 (newest model)")
+        print("Available DeepSeek models:")
+        print("  deepseek-coder          (Base code generation model)")
+        print("  deepseek-coder-instruct (Instruction-tuned coding model)")
+        print("  deepseek-chat           (Conversational large language model)")
+        print("  deepseek-vision         (Multimodal model for code and images)")
         return
     
     # Reset state if requested

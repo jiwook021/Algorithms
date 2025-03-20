@@ -1,0 +1,22 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">5. Traffic Flow Analysis</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="120" font-size="20" fill="black">Traffic Flow Analysis Process</text>
+  <rect x="100" y="150" width="300" height="100" fill="#d3f8d3" stroke="black" stroke-width="2"/>
+  <text x="120" y="190" font-size="16" fill="black">Detect Vehicles</text>
+  <rect x="450" y="150" width="300" height="100" fill="#d3f8d3" stroke="black" stroke-width="2"/>
+  <text x="470" y="190" font-size="16" fill="black">Track Vehicles</text>
+  <rect x="800" y="150" width="300" height="100" fill="#d3f8d3" stroke="black" stroke-width="2"/>
+  <text x="820" y="190" font-size="16" fill="black">Calculate Speed</text>
+  <rect x="100" y="300" width="300" height="100" fill="#d3f8d3" stroke="black" stroke-width="2"/>
+  <text x="120" y="340" font-size="16" fill="black">Analyze Congestion</text>
+  <rect x="450" y="300" width="300" height="100" fill="#d3f8d3" stroke="black" stroke-width="2"/>
+  <text x="470" y="340" font-size="16" fill="black">Store Data</text>
+  <rect x="800" y="300" width="300" height="100" fill="#d3f8d3" stroke="black" stroke-width="2"/>
+  <text x="820" y="340" font-size="16" fill="black">Output Results</text>
+  <line x1="250" y1="250" x2="450" y2="150" stroke="black" stroke-width="2"/>
+  <line x1="550" y1="250" x2="800" y2="150" stroke="black" stroke-width="2"/>
+  <line x1="250" y1="400" x2="450" y2="300" stroke="black" stroke-width="2"/>
+  <line x1="550" y1="400" x2="800" y2="300" stroke="black" stroke-width="2"/>
+</svg>

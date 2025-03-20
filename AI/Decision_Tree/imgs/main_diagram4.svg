@@ -1,0 +1,22 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">4. Node Structure</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="18" fill="black">Node Components</text>
+  <rect x="70" y="130" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="160" font-size="14" fill="black">is_leaf</text>
+  <rect x="70" y="200" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="230" font-size="14" fill="black">value</text>
+  <rect x="70" y="270" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="300" font-size="14" fill="black">feature_index</text>
+  <rect x="70" y="340" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="370" font-size="14" fill="black">threshold</text>
+  <rect x="70" y="410" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="440" font-size="14" fill="black">impurity</text>
+  <rect x="70" y="480" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="510" font-size="14" fill="black">n_samples</text>
+  <rect x="70" y="550" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="580" font-size="14" fill="black">left</text>
+  <rect x="70" y="610" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="640" font-size="14" fill="black">right</text>
+</svg>

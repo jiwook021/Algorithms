@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#f0f0f0"/>
+    <text x="50" y="50" font-size="24" font-weight="bold">1. Overall Architecture</text>
+    <rect x="50" y="80" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+    <text x="70" y="120" font-size="18">HealthScorePredictor Class</text>
+    <rect x="70" y="140" width="1060" height="620" fill="#e0e0e0" stroke="#000000"/>
+    <text x="90" y="180" font-size="16">- Neural Network Layers</text>
+    <text x="90" y="210" font-size="16">- Activation Functions</text>
+    <text x="90" y="240" font-size="16">- Feature Normalization</text>
+    <text x="90" y="270" font-size="16">- Backpropagation</text>
+    <text x="90" y="300" font-size="16">- Mini-batch Gradient Descent</text>
+    <text x="90" y="330" font-size="16">- Early Stopping</text>
+    <text x="90" y="360" font-size="16">- Thread-safe Inference</text>
+</svg>

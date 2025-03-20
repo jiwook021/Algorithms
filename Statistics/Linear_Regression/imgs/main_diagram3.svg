@@ -1,0 +1,9 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="120" font-size="20" fill="black">State Transitions</text>
+  <text x="70" y="160" font-size="16" fill="black">1. Dataset → LinearRegression.fit()</text>
+  <text x="70" y="190" font-size="16" fill="black">2. Model parameters (m, b) → LinearRegression.predict()</text>
+  <text x="70" y="220" font-size="16" fill="black">3. User input (x) → Predicted output (y)</text>
+</svg>

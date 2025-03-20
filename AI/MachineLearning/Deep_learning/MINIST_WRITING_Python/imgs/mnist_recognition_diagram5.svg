@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">5. Training Loop</text>
+  <rect x="50" y="70" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="110" font-size="18">1. Forward Pass</text>
+  <text x="70" y="140" font-size="18">2. Loss Calculation</text>
+  <text x="70" y="170" font-size="18">3. Backpropagation</text>
+  <text x="70" y="200" font-size="18">4. Weight Update</text>
+  <line x1="70" y1="210" x2="1100" y2="210" stroke="#000000"/>
+  <text x="70" y="250" font-size="18">Forward Pass: Compute predictions</text>
+  <text x="70" y="280" font-size="18">Loss Calculation: Compute cross-entropy loss</text>
+  <text x="70" y="310" font-size="18">Backpropagation: Compute gradients</text>
+  <text x="70" y="340" font-size="18">Weight Update: Update model parameters</text>
+</svg>

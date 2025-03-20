@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">6. Training Process</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="120" font-size="18" fill="black">- Training Steps:</text>
+  <text x="90" y="150" font-size="16" fill="black">1. Initialize weights and bias</text>
+  <text x="90" y="180" font-size="16" fill="black">2. Iterate over epochs</text>
+  <text x="90" y="210" font-size="16" fill="black">3. Compute loss and update parameters</text>
+  <text x="90" y="240" font-size="16" fill="black">4. Repeat until convergence</text>
+</svg>

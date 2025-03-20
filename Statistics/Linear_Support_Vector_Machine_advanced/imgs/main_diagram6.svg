@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">6. Error Handling</text>
+  <rect x="50" y="100" width="1100" height="600" stroke="black" stroke-width="2" fill="none"/>
+  <text x="100" y="150" font-size="20">Empty Dataset</text>
+  <text x="100" y="200" font-size="16">- Throws invalid_argument if dataset is empty</text>
+  <text x="100" y="250" font-size="20">Unfitted Preprocessor</text>
+  <text x="100" y="300" font-size="16">- Throws runtime_error if transform is called before fit</text>
+  <text x="100" y="350" font-size="20">Division by Zero</text>
+  <text x="100" y="400" font-size="16">- Prevents division by zero in normalization</text>
+</svg>

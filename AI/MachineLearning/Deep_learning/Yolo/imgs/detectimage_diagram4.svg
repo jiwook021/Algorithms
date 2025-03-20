@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">4. Error Handling</text>
+  <rect x="50" y="80" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="18">Error Handling:</text>
+  <text x="70" y="150" font-size="16">1. File not found</text>
+  <text x="70" y="180" font-size="16">2. Model loading failure</text>
+  <text x="70" y="210" font-size="16">3. Detection failure</text>
+  <text x="70" y="240" font-size="16">4. Display failure</text>
+</svg>

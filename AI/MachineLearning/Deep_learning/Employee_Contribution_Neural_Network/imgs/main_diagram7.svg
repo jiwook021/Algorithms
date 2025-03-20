@@ -1,0 +1,7 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">7. Feature Names and Values</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="18" fill="black">1. Feature Names: codeCommits, linesOfCode, etc.</text>
+  <text x="70" y="150" font-size="18" fill="black">2. Values: Stored in minValues, maxValues, meanValues, stdDevValues</text>
+</svg>

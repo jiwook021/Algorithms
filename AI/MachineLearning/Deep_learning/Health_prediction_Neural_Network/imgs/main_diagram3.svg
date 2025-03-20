@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#f0f0f0"/>
+    <text x="50" y="50" font-size="24" font-weight="bold">3. Data Flow</text>
+    <rect x="50" y="80" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+    <text x="70" y="120" font-size="18">Data Flow in HealthScorePredictor</text>
+    <rect x="70" y="140" width="1060" height="620" fill="#e0e0e0" stroke="#000000"/>
+    <text x="90" y="180" font-size="16">- Input Features → Normalization → Neural Network</text>
+    <text x="90" y="210" font-size="16">- Forward Pass: Input → Hidden Layers → Output</text>
+    <text x="90" y="240" font-size="16">- Backward Pass: Error Calculation → Weight Updates</text>
+    <text x="90" y="270" font-size="16">- Output → Denormalization → Predicted Health Score</text>
+    <text x="90" y="300" font-size="16">- State Transitions: Training → Validation → Testing</text>
+</svg>

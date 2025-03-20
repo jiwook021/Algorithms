@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">5. LinearRegression Class</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="120" font-size="20" fill="black">LinearRegression</text>
+  <text x="70" y="160" font-size="16" fill="black">- m: Slope (double)</text>
+  <text x="70" y="190" font-size="16" fill="black">- b: Intercept (double)</text>
+  <text x="70" y="220" font-size="16" fill="black">- fit(): Train model</text>
+  <text x="70" y="250" font-size="16" fill="black">- predict(): Predict output</text>
+</svg>

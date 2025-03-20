@@ -1,0 +1,17 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="18" fill="black">Data Flow Diagram</text>
+  <rect x="70" y="130" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="160" font-size="14" fill="black">Input Data</text>
+  <rect x="300" y="130" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="310" y="160" font-size="14" fill="black">Feature Extraction</text>
+  <rect x="530" y="130" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="540" y="160" font-size="14" fill="black">Node Splitting</text>
+  <rect x="760" y="130" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="770" y="160" font-size="14" fill="black">Prediction</text>
+  <line x1="270" y1="155" x2="300" y2="155" stroke="black"/>
+  <line x1="500" y1="155" x2="530" y2="155" stroke="black"/>
+  <line x1="730" y1="155" x2="760" y2="155" stroke="black"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">4. DataPoint Structure</text>
+  <rect x="50" y="80" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="20">DataPoint Fields</text>
+  <rect x="100" y="150" width="1000" height="600" fill="#e0e0e0" stroke="#000000"/>
+  <text x="120" y="190" font-size="18">- x1: Feature 1 (e.g., study hours)</text>
+  <text x="120" y="220" font-size="18">- x2: Feature 2 (e.g., IQ points above baseline)</text>
+  <text x="120" y="250" font-size="18">- x3: Interaction term (x1 * x2)</text>
+  <text x="120" y="280" font-size="18">- x4: Polynomial feature (x1^2)</text>
+  <text x="120" y="310" font-size="18">- x5: Polynomial feature (x2^2)</text>
+  <text x="120" y="340" font-size="18">- label: Binary label (0 = fail, 1 = pass)</text>
+</svg>

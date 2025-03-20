@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">7. Class Statistics</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="120" font-size="18" fill="black">ClassStats: {mean_x1, mean_x2, count}</text>
+  <text x="70" y="160" font-size="18" fill="black">mean_x1: Mean of Feature 1</text>
+  <text x="70" y="200" font-size="18" fill="black">mean_x2: Mean of Feature 2</text>
+  <text x="70" y="240" font-size="18" fill="black">count: Number of Samples</text>
+  <line x1="70" y1="100" x2="70" y2="260" stroke="black" stroke-width="2"/>
+  <line x1="70" y1="100" x2="200" y2="100" stroke="black" stroke-width="2"/>
+  <line x1="70" y1="140" x2="200" y2="140" stroke="black" stroke-width="2"/>
+  <line x1="70" y1="180" x2="200" y2="180" stroke="black" stroke-width="2"/>
+  <line x1="70" y1="220" x2="200" y2="220" stroke="black" stroke-width="2"/>
+</svg>

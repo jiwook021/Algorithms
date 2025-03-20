@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" fill="black">4. Euclidean Distance Calculation</text>
+  <rect x="50" y="70" width="1100" height="700" stroke="black" fill="none"/>
+  <text x="100" y="120" font-size="20" fill="black">1. Input: Two Points (p1, p2)</text>
+  <text x="100" y="160" font-size="20" fill="black">2. Compute Differences (x1, x2)</text>
+  <text x="100" y="200" font-size="20" fill="black">3. Square Differences</text>
+  <text x="100" y="240" font-size="20" fill="black">4. Sum Squared Differences</text>
+  <text x="100" y="280" font-size="20" fill="black">5. Take Square Root</text>
+  <text x="100" y="320" font-size="20" fill="black">6. Output: Distance</text>
+</svg>

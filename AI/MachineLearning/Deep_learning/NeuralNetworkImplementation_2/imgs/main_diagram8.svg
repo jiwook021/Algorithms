@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">8. Matrix Multiplication</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="100" font-size="20" fill="black">Multiplication Operation</text>
+  <rect x="70" y="120" width="1060" height="630" fill="#e0e0e0" stroke="black"/>
+  <text x="90" y="150" font-size="18" fill="black">- Dot product of rows and columns</text>
+  <text x="90" y="180" font-size="18" fill="black">- Check matrix dimensions</text>
+  <text x="90" y="210" font-size="18" fill="black">- Create new matrix for result</text>
+</svg>

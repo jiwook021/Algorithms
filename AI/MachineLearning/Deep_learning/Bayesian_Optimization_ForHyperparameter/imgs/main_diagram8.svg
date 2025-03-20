@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">8. Error Handling</text>
+  <rect x="50" y="100" width="1100" height="600" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="140" font-size="18">Error Handling Mechanisms</text>
+  <rect x="100" y="180" width="300" height="50" fill="#d3f8d3" stroke="#000000"/>
+  <text x="110" y="210" font-size="14">Invalid Bounds Check</text>
+  <rect x="450" y="180" width="300" height="50" fill="#d3f8d3" stroke="#000000"/>
+  <text x="460" y="210" font-size="14">Type Validation</text>
+  <rect x="800" y="180" width="300" height="50" fill="#d3f8d3" stroke="#000000"/>
+  <text x="810" y="210" font-size="14">Exception Handling</text>
+  <line x1="400" y1="205" x2="450" y2="205" stroke="#000000"/>
+  <line x1="750" y1="205" x2="800" y2="205" stroke="#000000"/>
+</svg>

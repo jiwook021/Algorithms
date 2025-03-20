@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">4. Mean Calculation Process</text>
+  <rect x="50" y="80" width="1100" height="700" stroke="black" fill="none"/>
+  <text x="100" y="120" font-size="20">1. Initialize sum = 0</text>
+  <text x="100" y="160" font-size="20">2. Iterate through data vector</text>
+  <text x="100" y="200" font-size="20">3. Add each value to sum</text>
+  <text x="100" y="240" font-size="20">4. Divide sum by data size</text>
+  <text x="100" y="280" font-size="20">5. Return mean</text>
+</svg>

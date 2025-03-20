@@ -1,0 +1,16 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">2. Key Algorithms</text>
+  <rect x="50" y="70" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="110" font-size="18">1. Data Loading Algorithm</text>
+  <text x="70" y="140" font-size="18">2. Neural Network Forward Pass</text>
+  <text x="70" y="170" font-size="18">3. Loss Calculation</text>
+  <text x="70" y="200" font-size="18">4. Backpropagation</text>
+  <text x="70" y="230" font-size="18">5. Optimization</text>
+  <line x1="70" y1="240" x2="1100" y2="240" stroke="#000000"/>
+  <text x="70" y="280" font-size="18">Data Loading: Reads IDX files using struct.unpack</text>
+  <text x="70" y="310" font-size="18">Forward Pass: Computes predictions using neural network</text>
+  <text x="70" y="340" font-size="18">Loss Calculation: Computes cross-entropy loss</text>
+  <text x="70" y="370" font-size="18">Backpropagation: Computes gradients using autograd</text>
+  <text x="70" y="400" font-size="18">Optimization: Updates weights using SGD or Adam</text>
+</svg>

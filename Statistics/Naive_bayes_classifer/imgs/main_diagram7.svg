@@ -1,0 +1,15 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">7. Mathematical Functions</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="20" fill="black">Gaussian PDF</text>
+  <rect x="100" y="150" width="300" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="110" y="180" font-size="16" fill="black">gaussian_prob(x, mean, variance)</text>
+  <text x="70" y="250" font-size="20" fill="black">Other Functions</text>
+  <rect x="100" y="300" width="300" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="110" y="330" font-size="16" fill="black">std::sqrt</text>
+  <rect x="100" y="400" width="300" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="110" y="430" font-size="16" fill="black">std::exp</text>
+  <rect x="100" y="500" width="300" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="110" y="530" font-size="16" fill="black">std::pow</text>
+</svg>

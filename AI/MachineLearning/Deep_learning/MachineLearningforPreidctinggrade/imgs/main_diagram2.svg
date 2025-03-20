@@ -1,0 +1,17 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="100" font-size="18" fill="black">Vector Addition</text>
+  <rect x="70" y="120" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="150" font-size="14" fill="black">Element-wise Sum</text>
+  <text x="70" y="200" font-size="18" fill="black">Vector Subtraction</text>
+  <rect x="70" y="220" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="250" font-size="14" fill="black">Element-wise Difference</text>
+  <text x="70" y="300" font-size="18" fill="black">Dot Product</text>
+  <rect x="70" y="320" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="350" font-size="14" fill="black">Sum of Products</text>
+  <text x="70" y="400" font-size="18" fill="black">Correlation</text>
+  <rect x="70" y="420" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="450" font-size="14" fill="black">Pearson Coefficient</text>
+</svg>
