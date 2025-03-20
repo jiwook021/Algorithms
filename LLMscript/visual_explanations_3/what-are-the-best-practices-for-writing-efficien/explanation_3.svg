@@ -1,0 +1,22 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="400" height="300" fill="#f0f0f0"/>
+    <text x="20" y="30" font-size="18" font-weight="bold">3. Use Efficient Data Types</text>
+
+    <rect x="50" y="70" width="80" height="40" fill="#3498db"/>
+    <text x="65" y="95" fill="white">int32_t</text>
+
+    <rect x="150" y="70" width="80" height="40" fill="#2ecc71"/>
+    <text x="165" y="95" fill="white">uint8_t</text>
+
+    <rect x="50" y="130" width="80" height="40" fill="#e74c3c"/>
+        <text x="65" y="155" fill="white">float</text>
+
+    <rect x="150" y="130" width="80" height="40" fill="#f1c40f"/>
+       <text x="165" y="155" fill="white">char</text>
+
+    <text x="250" y="90" font-size="14">Use the smallest</text>
+      <text x="250" y="110" font-size="14">data type that</text>
+     <text x="250" y="130" font-size="14">fits your needs.</text>
+     <text x="20" y="200" font-size="12">Example: Use uint8_t for values 0-255 instead of int.</text>
+     <text x="20" y="225" font-size="12"> Avoid floating-point if possible(use fixed-point math).</text>
+</svg>

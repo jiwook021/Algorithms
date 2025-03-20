@@ -1,0 +1,12 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <title>Circular Buffer - Array Representation</title>
+  <rect x="10" y="50" width="380" height="50" fill="lightgray" stroke="black" stroke-width="2"/>
+  <text x="20" y="40" font-size="16" font-weight="bold">Array Representation</text>
+
+  <text x="20" y="80" font-size="14">Data[0]</text>
+  <text x="80" y="80" font-size="14">Data[1]</text>
+  <text x="140" y="80" font-size="14">Data[2]</text>
+  <text x="200" y="80" font-size="14">...</text>
+  <text x="320" y="80" font-size="14">Data[N-1]</text>
+  <text x="20" y="120" font-size="14">Fixed-size Array in Memory</text>
+</svg>

@@ -1,0 +1,1 @@
+How does **power management work in embedded devices**?

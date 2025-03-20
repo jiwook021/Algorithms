@@ -1,0 +1,14 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+<rect x="10" y="50" width="380" height="40" fill="#d1ecf1" stroke="#bee5eb" rx="5"/>
+  <text x="30" y="75" font-size="14">Improved System Reliability</text>
+
+  <rect x="10" y="100" width="380" height="40" fill="#d1ecf1" stroke="#bee5eb" rx="5"/>
+   <text x="30" y="125" font-size="14">Automatic Recovery from Hangs</text>
+
+  <rect x="10" y="150" width="380" height="40" fill="#d1ecf1" stroke="#bee5eb" rx="5"/>
+   <text x="30" y="175" font-size="14">Reduced Downtime</text>
+
+   <rect x="10" y="200" width="380" height="40" fill="#d1ecf1" stroke="#bee5eb" rx="5"/>
+    <text x="30" y="225" font-size="14">Essential for Embedded Systems</text>
+   <text x="20" y="20" font-size="18" font-weight="bold">10. Benefits of Watchdog Timers</text>
+</svg>

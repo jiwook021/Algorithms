@@ -1,0 +1,1 @@
+How does **a watchdog timer prevent system crashes**?

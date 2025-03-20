@@ -1,0 +1,44 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <title>Circular Buffer - Full and Empty Conditions</title>
+  <rect x="0" y="0" width="600" height="400" fill="#f0f0f0" />
+
+  <!-- Buffer Full -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="200" height="200" fill="#ffffff" stroke="black" />
+    <text x="100" y="-10" text-anchor="middle" font-size="16" font-weight="bold">Buffer Full</text>
+
+    <!-- Pointers -->
+      <circle cx="100" cy="100" r="80" fill="none" stroke="lightgray" stroke-width="5" />
+    <polygon points="90,20 100,5 110,20" fill="blue" />
+    <text x="100" y="35" text-anchor="middle" font-size="12" fill="blue">Head</text>
+    <polygon points="110,180 100,195 90,180" fill="green" />
+    <text x="100" y="175" text-anchor="middle" font-size="12" fill="green">Tail</text>
+
+      <text x="100" y="230" text-anchor="middle" font-size="14">Head == Tail</text>
+        <text x="100" y="250" text-anchor="middle" font-size="14" fill="red">Cannot Write</text>
+  </g>
+
+    <!-- Buffer Empty -->
+  <g transform="translate(350, 50)">
+    <rect x="0" y="0" width="200" height="200" fill="#ffffff" stroke="black" />
+    <text x="100" y="-10" text-anchor="middle" font-size="16" font-weight="bold">Buffer Empty</text>
+      <circle cx="100" cy="100" r="80" fill="none" stroke="lightgray" stroke-width="5" />
+    <!-- Pointers -->
+    <polygon points="100,20 90,35 110,35" fill="blue" />
+    <text x="100" y="50" text-anchor="middle" font-size="12" fill="blue">Head</text>
+      <polygon points="100,20 90,35 110,35" fill="green" />
+    <text x="100" y="50" text-anchor="middle" font-size="12" fill="green">Tail</text>
+      <text x="100" y="230" text-anchor="middle" font-size="14">Head == Tail</text>
+        <text x="100" y="250" text-anchor="middle" font-size="14" fill="red">Cannot Read</text>
+  </g>
+    <text x="10" y="350" font-size="16">
+    To distinguish between full and empty, one slot is often left unused, or a separate counter is maintained.
+  </text>
+    <text x="10" y="370" font-size="14">
+    In this simple full/empty illustration, Head == Tail indicates *both* full and empty.
+    </text>
+    <text x="10" y="390" font-size="14">
+        A practical implementation would use an additional variable (e.g., count, or is_full flag) to differentiate.
+     </text>
+
+</svg>

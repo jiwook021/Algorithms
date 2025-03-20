@@ -1,0 +1,14 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="50" width="100" height="80" fill="#cce5ff" stroke="black" stroke-width="2"/>
+  <text x="40" y="90" font-size="16">Main System</text>
+
+  <rect x="280" y="50" width="100" height="80" fill="#d4edda" stroke="black" stroke-width="2"/>
+  <text x="290" y="90" font-size="16">Watchdog Timer</text>
+
+    <text x="20" y="150" fill="blue" font-size="14">Software must disable</text>
+  <text x="20" y="170" fill="blue" font-size="14">watchdog if the problem</text>
+    <text x="20" y="190" fill="blue" font-size="14"> persists to avoid</text>
+      <text x="20" y="210" fill="blue" font-size="14"> a reboot loop.</text>
+
+  <text x="20" y="20" font-size="18" font-weight="bold">8. Preventing Crash Loop</text>
+</svg>

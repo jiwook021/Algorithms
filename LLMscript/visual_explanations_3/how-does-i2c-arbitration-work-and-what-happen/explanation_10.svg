@@ -1,0 +1,23 @@
+<svg width="400" height="250" viewport="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="20" font-size="16" font-weight="bold">I2C: STOP Condition</text>
+
+  <!-- Master -->
+  <rect x="50" y="70" width="80" height="60" fill="#a0c4ff" stroke="black" />
+  <text x="65" y="100" font-size="12">Master</text>
+
+  <!-- SDA Line -->
+  <line x1="50" y1="150" x2="330" y2="150" stroke="blue" stroke-width="2" />
+  <text x="180" y="165" font-size="10">SDA</text>
+   <path d="M 100 180 L 100 150" stroke="blue" stroke-width="4"/>
+
+  <!-- SCL Line -->
+  <line x1="50" y1="180" x2="330" y2="180" stroke="green" stroke-width="2" />
+  <text x="180" y="195" font-size="10">SCL</text>
+   <path d="M 100 150 L 100 180" stroke="green" stroke-width="4"/>
+
+  
+   <text x="70" y="220" font-size="12">SDA goes HIGH</text>
+   <text x="65" y="235" font-size="12">while SCL is HIGH</text>
+    <text x="20" y="40" font-size="12">Indicates the end of a transmission and releases the bus.</text>
+</svg>

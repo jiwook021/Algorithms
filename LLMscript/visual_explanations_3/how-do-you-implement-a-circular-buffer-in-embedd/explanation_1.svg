@@ -1,0 +1,17 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <title>Circular Buffer - Concept</title>
+  <rect x="10" y="50" width="380" height="50" fill="lightgray" stroke="black" stroke-width="2"/>
+  <text x="20" y="40" font-size="16" font-weight="bold">Circular Buffer Concept</text>
+  <text x="20" y="80" font-size="14">Linear Memory</text>
+
+  <circle cx="200" cy="150" r="40" fill="none" stroke="blue" stroke-width="3"/>
+  <text x="180" y="190" font-size="14">Circular View</text>
+  <path d="M 20 80 L 180 140" stroke="green" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+   <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+    refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="green" />
+    </marker>
+  </defs>
+</svg>

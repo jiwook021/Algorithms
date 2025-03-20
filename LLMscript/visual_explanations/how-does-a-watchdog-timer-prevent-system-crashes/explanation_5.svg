@@ -1,0 +1,21 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+ <rect x="50" y="50" width="150" height="150" fill="#d3d3d3" stroke="black" stroke-width="2"/>
+  <text x="125" y="130" text-anchor="middle" font-size="16">Main System</text>
+    <text x="125" y="150" text-anchor="middle" font-size="14">(Frozen/Crashed)</text>
+
+  <rect x="400" y="50" width="150" height="150" fill="#FF0000" stroke="black" stroke-width="2"/>
+  <text x="475" y="130" text-anchor="middle" font-size="16">Watchdog Timer</text>
+      <text x="475" y="150" text-anchor="middle" font-size="14">(Timed Out!)</text>
+
+    <line x1="475" y1="150" x2="125" y2="220" stroke="darkred" stroke-width="4" marker-end="url(#arrowhead2)"/>
+        <defs>
+        <marker id="arrowhead2" markerWidth="10" markerHeight="7"
+            refX="0" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="darkred" />
+        </marker>
+    </defs>
+    <text x="300" y="180" text-anchor="middle" font-size="14">Reset Signal</text>
+
+  <text x="300" y="250" text-anchor="middle" font-size="20" font-weight="bold">System Reset</text>
+  <text x="300" y="280" text-anchor="middle" font-size="14">Watchdog resets the system to recover from the crash.</text>
+</svg>

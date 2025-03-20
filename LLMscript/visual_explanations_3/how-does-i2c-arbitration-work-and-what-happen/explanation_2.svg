@@ -1,0 +1,34 @@
+<svg width="400" height="200" viewport="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="16" font-weight="bold">I2C: Open-Drain Configuration</text>
+
+  <!-- Master -->
+  <rect x="50" y="70" width="80" height="60" fill="#a0c4ff" stroke="black" />
+  <text x="65" y="100" font-size="12">Master</text>
+   <path d="M 90 70 L 90 50" stroke="black"/>
+   <path d="M 90 50 L 95 55 L 85 55 Z" stroke="black" fill="black"/>
+   <line x1="90" y1="50" x2="90" y2="30" stroke="black" stroke-width="1"/>
+   <circle cx="90" cy="30" r="3" fill="black"/>
+    <text x="95" y="35" font-size="10">Vcc</text>
+
+      <!-- Resistor -->
+    <path d="M 90 30 L 95 25 L 85 20 L 95 15 L 85 10 L 90 5" stroke="black" fill="none"/>
+
+
+  <!-- Slave -->
+  <rect x="250" y="70" width="80" height="60" fill="#ffdac1" stroke="black" />
+  <text x="265" y="100" font-size="12">Slave</text>
+    <path d="M 290 70 L 290 50" stroke="black"/>
+    <path d="M 290 50 L 295 55 L 285 55 Z" stroke="black" fill="black"/>
+   <line x1="290" y1="50" x2="290" y2="30" stroke="black" stroke-width="1"/>
+   <circle cx="290" cy="30" r="3" fill="black"/>
+   <text x="295" y="35" font-size="10">Vcc</text>
+    <!-- Resistor -->
+    <path d="M 290 30 L 295 25 L 285 20 L 295 15 L 285 10 L 290 5" stroke="black" fill="none"/>
+
+  <!-- SDA Line -->
+  <line x1="90" y1="150" x2="290" y2="150" stroke="blue" stroke-width="2" />
+  <text x="180" y="165" font-size="10">SDA</text>
+  <text x="20" y="50" font-size="12">SDA is pulled LOW by driving the output transistor. HIGH is passive (resistor pull-up).</text>
+
+</svg>

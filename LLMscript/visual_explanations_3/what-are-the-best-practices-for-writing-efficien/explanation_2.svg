@@ -1,0 +1,16 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">2. Optimize Interrupt Service Routines (ISRs)</text>
+
+  <rect x="50" y="80" width="80" height="60" fill="#e74c3c" />
+  <text x="60" y="110" fill="white">Interrupt</text>
+    <line x1="130" y1="110" x2="180" y2="110" stroke="black" stroke-width="2"/>
+      <polygon points="180,105 190,110 180,115" fill="black"/>
+  <rect x="200" y="60" width="150" height="100" fill="#2ecc71" />
+  <text x="210" y="110" fill="white">ISR (Short &amp; Fast)</text>
+
+  <text x="20" y="200" font-size="14">Keep ISRs:</text>
+  <text x="20" y="225" font-size="12">- As short as possible.</text>
+  <text x="20" y="245" font-size="12">- Avoid complex calculations.</text>
+   <text x="20" y="265" font-size="12">- Set flags for main loop processing.</text>
+</svg>

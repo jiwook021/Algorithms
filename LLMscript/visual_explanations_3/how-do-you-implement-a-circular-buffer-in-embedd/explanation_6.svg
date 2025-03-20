@@ -1,0 +1,12 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <title>Circular Buffer - Modulo Operator</title>
+    <text x="20" y="30" font-size="16" font-weight="bold">Modulo Operator (%) for Wrapping</text>
+    <text x="20" y="60" font-size="14">Index Calculation:</text>
+    <text x="20" y="90" font-size="14">(Current Index + 1) % Buffer Size</text>
+
+    <text x="20" y="130" font-size="14">Example (Buffer Size = 8):</text>
+     <text x="20" y="160" font-size="14">7 + 1 = 8</text>
+     <text x="20" y="190" font-size="14">8 % 8 = 0  (Wraps around to the beginning)</text>
+
+    <text x="20" y="230" font-size="14">Ensures index stays within valid bounds.</text>
+</svg>

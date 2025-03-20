@@ -1,0 +1,41 @@
+<svg width="400" height="250" viewport="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="20" font-size="16" font-weight="bold">I2C: Simultaneous Transmission (Collision)</text>
+
+  <!-- Master 1 -->
+  <rect x="30" y="50" width="60" height="40" fill="#a0c4ff" stroke="black"/>
+  <text x="40" y="70" font-size="12">Master 1</text>
+
+  <!-- Master 2 -->
+  <rect x="30" y="100" width="60" height="40" fill="#ffdac1" stroke="black"/>
+  <text x="40" y="120" font-size="12">Master 2</text>
+
+  <!-- SDA and SCL lines -->
+  <text x="120" y="60" font-size="12">SDA</text>
+  <line x1="160" y1="60" x2="380" y2="60" stroke="blue" stroke-width="2"/>
+  <text x="120" y="90" font-size="12">SCL</text>
+  <line x1="160" y1="90" x2="380" y2="90" stroke="green" stroke-width="2"/>
+
+  <!-- Data bits - Master 1 -->
+    <g transform="translate(180, 0)">
+       <rect x="0" y="50" width="20" height="20" fill="blue" stroke="black"/>
+        <rect x="30" y="50" width="20" height="20" fill="#f0f0f0" stroke="black"/>
+        <rect x="60" y="50" width="20" height="20" fill="blue" stroke="black"/>
+    </g>
+     <!-- Data bits - Master 2 -->
+    <g transform="translate(180, 50)">
+       <rect x="0" y="50" width="20" height="20" fill="blue" stroke="black"/>
+        <rect x="30" y="50" width="20" height="20" fill="#f0f0f0" stroke="black"/>
+        <rect x="60" y="50" width="20" height="20" fill="#f0f0f0" stroke="black"/>
+    </g>
+
+    <!-- SCL Pulses (Common) -->
+    <g transform="translate(180,0)">
+         <rect x="0" y="85" width="20" height="10" fill="green" stroke="black"/>
+        <rect x="30" y="85" width="20" height="10" fill="green" stroke="black"/>
+        <rect x="60" y="85" width="20" height="10" fill="green" stroke="black"/>
+    </g>
+
+  <text x="20" y="170" font-size="12">Both masters start transmitting.  Master 1 sends 101, Master 2 sends 100.</text>
+    <text x="20" y="190" font-size="12">On the third bit, there's a conflict on SDA.</text>
+</svg>

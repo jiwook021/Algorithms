@@ -1,0 +1,24 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="50" width="100" height="80" fill="#cce5ff" stroke="black" stroke-width="2"/>
+  <text x="40" y="90" font-size="16">Main System</text>
+
+  <rect x="280" y="50" width="100" height="80" fill="#d4edda" stroke="black" stroke-width="2"/>
+  <text x="290" y="90" font-size="16">Watchdog Timer</text>
+    <text x="300" y="115" font-size="12">Timeout = 5s</text>
+
+  <path d="M120 90 L280 90" stroke="#4CAF50" stroke-width="4" marker-end="url(#arrowhead)"/>
+    <text x="180" y="80" fill="#4CAF50" font-size="14">Reset Signal</text>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+    refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50" />
+    </marker>
+  </defs>
+
+  <rect x="280" y="150" width="100" height="40" fill="#f8d7da" stroke="black"/>
+    <text x="295" y="175" font-size="14" fill="black">Counter Reset</text>
+    <line x1="330" y1="160" x2="330" y2="180" stroke="red" stroke-width="4" />
+    <circle cx="330" cy="185" r="5" fill="red"/>
+
+  <text x="20" y="20" font-size="18" font-weight="bold">3. Periodic Reset Signal</text>
+</svg>

@@ -1,5 +1,5 @@
 import os
-import LLMscript.scriptgpt as scriptgpt
+import LLMscript.svgscriptgpt as svgscriptgpt
 from dotenv import load_dotenv
 
 # Load API Key from .env file
@@ -11,7 +11,7 @@ if not api_key:
     raise ValueError("Missing OpenAI API key. Add it to a .env file.")
 
 # Create OpenAI client
-client = scriptgpt.OpenAI(api_key=api_key)
+client = svgscriptgpt.OpenAI(api_key=api_key)
 
 # File types to process
 SUPPORTED_EXTENSIONS = ['.cpp', '.c', '.py']
@@ -45,10 +45,10 @@ def request_svg_diagram(prompt, retries=5, delay=5):
                 temperature=0.2,
             )
             return response.choices[0].message.content.strip()
-        except scriptgpt.APIConnectionError as e:
+        except svgscriptgpt.APIConnectionError as e:
             print(f"Connection error: {e}. Retrying in {delay} seconds...")
             time.sleep(delay)
-        except scriptgpt.RateLimitError:
+        except svgscriptgpt.RateLimitError:
             print("Rate limit exceeded. Waiting before retrying...")
             time.sleep(delay * 2)
         except Exception as e:

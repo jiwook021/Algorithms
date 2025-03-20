@@ -1,0 +1,15 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="50" width="150" height="60" fill="#e9ecef" stroke="black" stroke-width="2"/>
+  <text x="40" y="80" font-size="16">Internal Watchdog</text>
+  <text x="30" y="100" font-size="12">(Part of Microcontroller)</text>
+
+  <rect x="220" y="50" width="160" height="60" fill="#e9ecef" stroke="black" stroke-width="2"/>
+  <text x="230" y="80" font-size="16">External Watchdog</text>
+   <text x="235" y="100" font-size="12">(Separate IC)</text>
+
+    <rect x="110" y="140" width="180" height="60" fill="#e9ecef" stroke="black" stroke-width="2"/>
+  <text x="120" y="170" font-size="16">Multi-stage Watchdog</text>
+   <text x="125" y="190" font-size="12">(Multiple Timers)</text>
+
+  <text x="20" y="20" font-size="18" font-weight="bold">9. Watchdog Timer Types</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg width="400" height="250" viewport="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="250" fill="#f0f0f0" />
+  <text x="20" y="20" font-size="16" font-weight="bold">I2C: Arbitration - Losing Master Retries</text>
+
+  <!-- Master 1 (Retrying) -->
+  <rect x="30" y="50" width="60" height="40" fill="#a0c4ff" stroke="black"/>
+  <text x="40" y="70" font-size="12">Master 1</text>
+  <text x="40" y="90" font-size="10" fill="orange">Waiting</text>
+
+    <!-- Master 2 -->
+  <rect x="30" y="110" width="60" height="40" fill="#ffdac1" stroke="black"/>
+  <text x="40" y="130" font-size="12">Master 2</text>
+
+  <!-- SDA and SCL lines -->
+  <text x="120" y="60" font-size="12">SDA</text>
+  <line x1="160" y1="60" x2="380" y2="60" stroke="blue" stroke-width="2"/>
+  <text x="120" y="90" font-size="12">SCL</text>
+  <line x1="160" y1="90" x2="380" y2="90" stroke="green" stroke-width="2"/>
+
+   <text x="100" y="170" font-size="12">The losing master (Master 1) typically waits for the bus to become free (STOP condition).</text>
+   <text x="100" y="190" font-size="12">It then attempts to retransmit its data.</text>
+    <text x="100" y="210" font-size="12">Different I2C implementations have different retry mechanisms.</text>
+</svg>

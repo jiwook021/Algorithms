@@ -1,0 +1,11 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    <title>Circular Buffer - Overwrite Protection</title>
+    <text x="20" y="30" font-size="16" font-weight="bold">Overwrite Protection (Optional)</text>
+
+    <text x="20" y="70" font-size="14">Methods:</text>
+    <text x="30" y="100" font-size="12">-  Discard new data (return error).</text>
+     <text x="30" y="130" font-size="12">- Overwrite oldest data (circular behavior).</text>
+    <text x="30" y="160" font-size="12">-  Use a separate 'full' flag.</text>
+    <text x="30" y="190" font-size="12">-  Implement a blocking write (wait for space).</text>
+    <text x="20" y="230" font-size="14">Choice depends on the application requirements.</text>
+</svg>

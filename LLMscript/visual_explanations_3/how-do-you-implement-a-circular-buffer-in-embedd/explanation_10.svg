@@ -1,0 +1,15 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <title>Circular Buffer - Use Cases</title>
+    <text x="20" y="30" font-size="16" font-weight="bold">Common Use Cases</text>
+
+    <text x="30" y="70" font-size="14">- Data Streaming (Audio, Video)</text>
+      <rect x="25" y="80" width="350" height="20" fill="lightgray"  />
+    <text x="30" y="120" font-size="14">- Communication Buffers (UART, SPI, I2C)</text>
+       <rect x="25" y="130" width="350" height="20" fill="lightgray"  />
+    <text x="30" y="170" font-size="14">- Interrupt Handling</text>
+     <rect x="25" y="180" width="350" height="20" fill="lightgray"  />
+    <text x="30" y="220" font-size="14">- Logging</text>
+     <rect x="25" y="230" width="350" height="20" fill="lightgray"  />
+    <text x="30" y="270" font-size="14">- Event Queues</text>
+     <rect x="25" y="280" width="350" height="20" fill="lightgray"  />
+</svg>

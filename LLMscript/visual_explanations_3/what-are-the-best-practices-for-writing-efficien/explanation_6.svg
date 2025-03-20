@@ -1,0 +1,19 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="#f0f0f0"/>
+  <text x="20" y="30" font-size="18" font-weight="bold">6. Minimize Function Calls</text>
+    <text x="20" y="65" font-size="14" >Avoid unnecessary calls:</text>
+  <rect x="50" y="100" width="100" height="40" fill="#e74c3c"/>
+  <text x="60" y="120" fill="white">Function A</text>
+    <line x1="150" y1="120" x2="170" y2="120" stroke="black" stroke-width="2"/>
+       <polygon points="170,115 180,120 170,125" fill="black"/>
+
+  <rect x="190" y="100" width="100" height="40" fill="#e74c3c"/>
+    <text x="200" y="120" fill="white">Function B</text>
+    <line x1="150" y1="150" x2="170" y2="200" stroke="black" stroke-width="2"/>
+     <polygon points="170,195 180,200 170,205" fill="black"/>
+
+   <rect x="50" y="180" width="100" height="40" fill="#2ecc71"/>
+    <text x="60" y="200" fill="white">Inline Code</text>
+
+  <text x="20" y="250" font-size="12">Function calls have overhead (stack operations). Inline short, critical functions.</text>
+</svg>

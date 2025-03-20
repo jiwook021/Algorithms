@@ -1,0 +1,31 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    <title>Circular Buffer - Empty Condition</title>
+   <rect x="20" y="50" width="360" height="40" fill="lightgray" stroke="black" stroke-width="2"/>
+        <text x="30" y="40" font-size="16" font-weight="bold">Buffer Empty Condition</text>
+
+    <text x="30" y="75" font-size="12">Data[0]</text>
+    <text x="80" y="75" font-size="12">Data[1]</text>
+    <text x="130" y="75" font-size="12">Data[2]</text>
+    <text x="180" y="75" font-size="12">Data[3]</text>
+    <text x="230" y="75" font-size="12">Data[4]</text>
+    <text x="280" y="75" font-size="12">Data[5]</text>
+    <text x="330" y="75" font-size="12">Data[6]</text>
+
+      <path d="M 185 95 V 130" stroke="blue" stroke-width="2" marker-end="url(#arrowheadBlue)"/>
+     <text x="185" y="150" font-size="14" fill="blue">Tail</text>
+
+    <path d="M 185 95 V 180" stroke="red" stroke-width="2" marker-end="url(#arrowheadRed)"/>
+     <text x="185" y="200" font-size="14" fill="red">Head</text>
+
+    <text x="20" y="230" font-size="14">Empty: Head == Tail</text>
+    <text x="20" y="250" font-size="14">No data to read!</text>
+
+    <defs>
+    <marker id="arrowheadBlue" markerWidth="8" markerHeight="5" refX="0" refY="2.5" orient="auto">
+        <polygon points="0 0, 8 2.5, 0 5" fill="blue"/>
+    </marker>
+      <marker id="arrowheadRed" markerWidth="8" markerHeight="5" refX="0" refY="2.5" orient="auto">
+        <polygon points="0 0, 8 2.5, 0 5" fill="red"/>
+    </marker>
+  </defs>
+</svg>

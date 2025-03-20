@@ -1,0 +1,19 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="300" fill="#f0f0f0" />
+  <text x="20" y="30" font-size="18" font-weight="bold">10. Power Management</text>
+
+    <rect x="50" y="80" width="80" height="80" fill="#2ecc71" />
+  <text x="65" y="120" fill="white">Active</text>
+  <line x1="130" y1="120" x2="170" y2="120" stroke="black" stroke-width="2" />
+    <polygon points="170,115 180,120 170,125" fill="black"/>
+      <line x1="130" y1="130" x2="160" y2="200" stroke="black" stroke-width="2" />
+     <polygon points="160,195 170,200 160,205" fill="black"/>
+  <rect x="190" y="80" width="80" height="80" fill="#f1c40f" />
+  <text x="200" y="120" fill="white">Idle</text>
+
+  <rect x="180" y="180" width="100" height="50" fill="#e74c3c" />
+  <text x="190" y="205" fill="white">Sleep Mode</text>
+
+  <text x="20" y="250" font-size="14">Use low-power modes (sleep, idle) when possible to conserve energy.</text>
+
+</svg>

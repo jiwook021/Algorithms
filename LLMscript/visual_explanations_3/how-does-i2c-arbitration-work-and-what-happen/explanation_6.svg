@@ -1,0 +1,39 @@
+<svg width="400" height="280" viewport="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="280" fill="#f0f0f0" />
+  <text x="20" y="20" font-size="16" font-weight="bold">I2C: Arbitration - Monitoring SDA</text>
+
+  <!-- Master 1 -->
+  <rect x="30" y="50" width="60" height="40" fill="#a0c4ff" stroke="black"/>
+  <text x="40" y="70" font-size="12">Master 1</text>
+  <text x="40" y="90" font-size="10" fill="red">Sending: 101</text>
+
+  <!-- Master 2 -->
+  <rect x="30" y="120" width="60" height="40" fill="#ffdac1" stroke="black"/>
+  <text x="40" y="140" font-size="12">Master 2</text>
+   <text x="40" y="160" font-size="10" fill="red">Sending: 100</text>
+  <!-- SDA and SCL lines -->
+  <text x="120" y="60" font-size="12">SDA</text>
+  <line x1="160" y1="60" x2="380" y2="60" stroke="blue" stroke-width="2"/>
+  <text x="120" y="90" font-size="12">SCL</text>
+  <line x1="160" y1="90" x2="380" y2="90" stroke="green" stroke-width="2"/>
+
+   <!-- Combined SDA signal (Result on the bus) -->
+    <g transform="translate(180, 0)">
+        <rect x="0" y="50" width="20" height="20" fill="blue" stroke="black"/>
+        <rect x="30" y="50" width="20" height="20" fill="#f0f0f0" stroke="black"/>
+        <rect x="60" y="50" width="20" height="20" fill="#f0f0f0" stroke="black"/>  <!-- LOW wins -->
+     <text x="55" y="45" font-size="10">Result</text>
+    </g>
+    <!-- SCL Pulses (Common) -->
+    <g transform="translate(180,0)">
+         <rect x="0" y="85" width="20" height="10" fill="green" stroke="black"/>
+        <rect x="30" y="85" width="20" height="10" fill="green" stroke="black"/>
+        <rect x="60" y="85" width="20" height="10" fill="green" stroke="black"/>
+    </g>
+
+  <text x="20" y="190" font-size="12">Each master *monitors* SDA while transmitting.</text>
+    <text x="20" y="210" font-size="12">If a master transmits a '1' (high) but sees a '0' (low) on SDA, it knows it lost arbitration.</text>
+    <text x="20" y="230" font-size="12">Because of open-drain, a '0' driven by *any* device will pull SDA LOW.</text>
+  <text x="20" y="250" font-size="12">Master 1 sees '0' on the 3rd bit, even though it is trying to send a '1'.</text>
+
+</svg>

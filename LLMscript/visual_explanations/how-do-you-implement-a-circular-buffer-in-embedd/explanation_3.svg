@@ -1,0 +1,64 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <title>Circular Buffer - Read Operation</title>
+  <rect x="0" y="0" width="600" height="400" fill="#f0f0f0" />
+
+  <!-- Buffer representation -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="500" height="50" fill="#ffffff" stroke="black" />
+    <text x="250" y="-20" text-anchor="middle" font-size="18" font-weight="bold">Read Operation (Reading 'A')</text>
+
+      <!-- Individual cells -->
+        <line x1="50" y1="0" x2="50" y2="50" stroke="black" />
+        <line x1="100" y1="0" x2="100" y2="50" stroke="black" />
+        <line x1="150" y1="0" x2="150" y2="50" stroke="black" />
+        <line x1="200" y1="0" x2="200" y2="50" stroke="black" />
+        <line x1="250" y1="0" x2="250" y2="50" stroke="black" />
+        <line x1="300" y1="0" x2="300" y2="50" stroke="black" />
+        <line x1="350" y1="0" x2="350" y2="50" stroke="black" />
+        <line x1="400" y1="0" x2="400" y2="50" stroke="black" />
+        <line x1="450" y1="0" x2="450" y2="50" stroke="black" />
+    <!-- Data (before) -->
+    <text x="25" y="30" text-anchor="middle" font-size="14">A</text>
+    <text x="75" y="30" text-anchor="middle" font-size="14">B</text>
+    <text x="125" y="30" text-anchor="middle" font-size="14">C</text>
+    <text x="175" y="30" text-anchor="middle" font-size="14">D</text>
+      <text x="225" y="30" text-anchor="middle" font-size="14">E</text>
+
+    <!-- Head pointer (before) -->
+    <polygon points="225,60 215,75 235,75" fill="blue" />
+    <text x="225" y="90" text-anchor="middle" font-size="14" fill="blue">Head</text>
+
+    <!-- Tail pointer (before) -->
+     <polygon points="25,60 15,75 35,75" fill="green" />
+    <text x="25" y="90" text-anchor="middle" font-size="14" fill="green">Tail</text>
+  </g>
+
+    <g transform="translate(50, 200)">
+    <rect x="0" y="0" width="500" height="50" fill="#ffffff" stroke="black" />
+    <text x="250" y="-20" text-anchor="middle" font-size="18" font-weight="bold">After Reading 'A'</text>
+    <!-- Individual cells -->
+        <line x1="50" y1="0" x2="50" y2="50" stroke="black" />
+        <line x1="100" y1="0" x2="100" y2="50" stroke="black" />
+        <line x1="150" y1="0" x2="150" y2="50" stroke="black" />
+        <line x1="200" y1="0" x2="200" y2="50" stroke="black" />
+        <line x1="250" y1="0" x2="250" y2="50" stroke="black" />
+        <line x1="300" y1="0" x2="300" y2="50" stroke="black" />
+        <line x1="350" y1="0" x2="350" y2="50" stroke="black" />
+        <line x1="400" y1="0" x2="400" y2="50" stroke="black" />
+        <line x1="450" y1="0" x2="450" y2="50" stroke="black" />
+
+    <!-- Data (after) -->
+    <text x="75" y="30" text-anchor="middle" font-size="14">B</text>
+    <text x="125" y="30" text-anchor="middle" font-size="14">C</text>
+    <text x="175" y="30" text-anchor="middle" font-size="14">D</text>
+    <text x="225" y="30" text-anchor="middle" font-size="14">E</text>
+
+    <!-- Head pointer (after) -->
+    <polygon points="225,60 215,75 235,75" fill="blue" />
+    <text x="225" y="90" text-anchor="middle" font-size="14" fill="blue">Head</text>
+
+    <!-- Tail pointer (after) -->
+    <polygon points="75,60 65,75 85,75" fill="green" />
+    <text x="75" y="90" text-anchor="middle" font-size="14" fill="green">Tail</text>
+  </g>
+</svg>

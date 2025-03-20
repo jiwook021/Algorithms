@@ -1,0 +1,20 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="400" height="300" fill="#f0f0f0"/>
+    <text x="20" y="30" font-size="18" font-weight="bold">8. Optimize Loops</text>
+
+    <rect x="50" y="80" width="150" height="60" fill="#e74c3c"/>
+    <text x="60" y="110" fill="white">for (i=0; i&lt;1000; i++)</text>
+
+      <line x1="200" y1="110" x2="240" y2="110" stroke="black" stroke-width="2"/>
+     <polygon points="240,105 250,110 240,115" fill="black"/>
+
+    <rect x="260" y="80" width="120" height="60" fill="#2ecc71"/>
+        <text x="270" y="110" fill="white">for (i=999; i&gt;=0; i--)</text>
+
+    <text x="20" y="180" font-size="14">Loop Optimizations:</text>
+      <text x="20" y="205" font-size="12">- Unroll loops (for small, fixed iterations).</text>
+      <text x="20" y="225" font-size="12">- Minimize operations inside the loop.</text>
+     <text x="20" y="245" font-size="12">- Use appropriate loop conditions.</text>
+     <text x="20" y="265" font-size="12">- Count down to zero if possible (often faster).</text>
+
+</svg>
