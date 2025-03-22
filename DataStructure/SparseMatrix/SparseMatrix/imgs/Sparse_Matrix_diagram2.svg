@@ -1,0 +1,13 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="100" font-size="20" fill="black">Matrix Initialization Algorithm</text>
+  <text x="70" y="130" font-size="16" fill="black">- Allocate memory for width and height linked lists</text>
+  <text x="70" y="160" font-size="16" fill="black">- Initialize each linked list using Listinit()</text>
+  <text x="70" y="220" font-size="20" fill="black">Matrix Insertion Algorithm</text>
+  <text x="70" y="250" font-size="16" fill="black">- Create a new node with data</text>
+  <text x="70" y="280" font-size="16" fill="black">- Insert node into column linked list (circular)</text>
+  <text x="70" y="310" font-size="16" fill="black">- Insert node into row linked list (circular)</text>
+  <text x="70" y="340" font-size="16" fill="black">- Update list sizes</text>
+</svg>

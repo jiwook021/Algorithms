@@ -1,0 +1,23 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="100" width="1100" height="600" fill="lightgray" stroke="black"/>
+  <text x="100" y="150" font-size="20" fill="black">QueueInit</text>
+  <text x="100" y="200" font-size="20" fill="black">QIsEmpty</text>
+  <text x="100" y="250" font-size="20" fill="black">NextPosIdx</text>
+  <text x="100" y="300" font-size="20" fill="black">Enqueue</text>
+  <text x="100" y="350" font-size="20" fill="black">Dequeue</text>
+  <text x="100" y="400" font-size="20" fill="black">QPeek</text>
+  <line x1="100" y1="160" x2="300" y2="160" stroke="black"/>
+  <line x1="100" y1="210" x2="300" y2="210" stroke="black"/>
+  <line x1="100" y1="260" x2="300" y2="260" stroke="black"/>
+  <line x1="100" y1="310" x2="300" y2="310" stroke="black"/>
+  <line x1="100" y1="360" x2="300" y2="360" stroke="black"/>
+  <line x1="100" y1="410" x2="300" y2="410" stroke="black"/>
+  <text x="320" y="150" font-size="20" fill="black">Initializes Queue</text>
+  <text x="320" y="200" font-size="20" fill="black">Checks if Queue is Empty</text>
+  <text x="320" y="250" font-size="20" fill="black">Calculates Next Position</text>
+  <text x="320" y="300" font-size="20" fill="black">Adds Data to Queue</text>
+  <text x="320" y="350" font-size="20" fill="black">Removes Data from Queue</text>
+  <text x="320" y="400" font-size="20" fill="black">Peeks at Front Data</text>
+</svg>

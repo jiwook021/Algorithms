@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">6. Matrix Printing</text>
+  <rect x="50" y="80" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="120" font-size="20" fill="black">Matrix Printing Process</text>
+  <rect x="70" y="140" width="1060" height="620" fill="#e0e0e0" stroke="black"/>
+  <text x="90" y="180" font-size="18" fill="black">1. Lock mutex for thread safety</text>
+  <text x="90" y="210" font-size="18" fill="black">2. Iterate through matrix rows</text>
+  <text x="90" y="240" font-size="18" fill="black">3. Print each element with formatting</text>
+  <text x="90" y="270" font-size="18" fill="black">4. Unlock mutex after printing</text>
+</svg>

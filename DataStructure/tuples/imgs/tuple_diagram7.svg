@@ -1,0 +1,9 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">7. Main Function Workflow</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="100" font-size="18" fill="black">- Initializes tuples with student data</text>
+  <text x="70" y="130" font-size="18" fill="black">- Prints tuples and concatenated tuples</text>
+  <text x="70" y="160" font-size="18" fill="black">- Zips tuples and prints the result</text>
+  <text x="70" y="190" font-size="18" fill="black">- Computes and prints sum, min, max, and average of a number list</text>
+</svg>

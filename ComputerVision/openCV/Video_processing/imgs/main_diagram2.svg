@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">2. Key Algorithms / Processes</text>
+  <rect x="50" y="80" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="20">1. VideoCapture: Open and read video file</text>
+  <text x="70" y="160" font-size="20">2. VideoWriter: Write processed frames to output video</text>
+  <text x="70" y="200" font-size="20">3. Frame Processing: Convert frame to grayscale</text>
+  <text x="70" y="240" font-size="20">4. Frame Display: Show original and processed frames</text>
+  <text x="70" y="280" font-size="20">5. Loop Control: Break loop on ESC key or end of video</text>
+</svg>

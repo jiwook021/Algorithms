@@ -1,0 +1,7 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" fill="black">7. QPeek Process</text>
+  <rect x="50" y="100" width="1100" height="600" fill="lightgray" stroke="black"/>
+  <text x="100" y="150" font-size="20" fill="black">1. Check if queue is empty (underflow)</text>
+  <text x="100" y="200" font-size="20" fill="black">2. Return data at next front position</text>
+</svg>

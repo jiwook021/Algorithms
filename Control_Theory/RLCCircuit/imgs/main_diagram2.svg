@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">2. Key Algorithms</text>
+  <rect x="50" y="80" width="1100" height="600" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="20">PID Control Algorithm</text>
+  <rect x="70" y="140" width="1060" height="100" fill="#e0e0e0" stroke="#000000"/>
+  <text x="80" y="180" font-size="16">- Proportional Term: kp * error</text>
+  <text x="80" y="210" font-size="16">- Integral Term: ki * integralSum</text>
+  <text x="80" y="240" font-size="16">- Derivative Term: kd * (error - lastError) / dt</text>
+  <text x="70" y="280" font-size="20">Anti-Windup Mechanism</text>
+  <rect x="70" y="300" width="1060" height="100" fill="#e0e0e0" stroke="#000000"/>
+  <text x="80" y="340" font-size="16">- Prevents integral windup by clamping output</text>
+  <text x="80" y="370" font-size="16">- Ensures output stays within specified limits</text>
+</svg>

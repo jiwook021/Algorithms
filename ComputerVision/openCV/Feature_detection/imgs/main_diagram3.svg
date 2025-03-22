@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow / State Transitions</text>
+  <rect x="50" y="100" width="1100" height="600" fill="lightgray" stroke="black" stroke-width="2"/>
+  <text x="70" y="140" font-size="20" fill="black">1. Input: object.jpg, scene.jpg</text>
+  <text x="70" y="180" font-size="20" fill="black">2. State: Loaded Images (cv::Mat)</text>
+  <text x="70" y="220" font-size="20" fill="black">3. State: Grayscale Images (cv::Mat)</text>
+  <text x="70" y="260" font-size="20" fill="black">4. State: Keypoints Detected (std::vector<cv::KeyPoint>)</text>
+  <line x1="70" y1="280" x2="1080" y2="280" stroke="black" stroke-width="2"/>
+  <text x="70" y="320" font-size="20" fill="black">5. (Next Steps: Feature Matching, etc.)</text>
+</svg>

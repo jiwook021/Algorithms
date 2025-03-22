@@ -1,0 +1,15 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow / State Transitions</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="20" fill="black">Initial State</text>
+  <text x="70" y="180" font-size="16" fill="black">- str1 = "Hello", str2 = "World"</text>
+  <text x="70" y="220" font-size="20" fill="black">After my_strcpy()</text>
+  <text x="70" y="260" font-size="16" fill="black">- str1 = "World", str2 = "World"</text>
+  <text x="70" y="300" font-size="20" fill="black">After my_strrev()</text>
+  <text x="70" y="340" font-size="16" fill="black">- str1 = "dlroW", str2 = "World"</text>
+  <text x="70" y="380" font-size="20" fill="black">After my_strcmp()</text>
+  <text x="70" y="420" font-size="16" fill="black">- Returns difference between "dlroW" and "World"</text>
+  <text x="70" y="460" font-size="20" fill="black">After my_strcat()</text>
+  <text x="70" y="500" font-size="16" fill="black">- str1 = "dlroWWorld", str2 = "World"</text>
+</svg>

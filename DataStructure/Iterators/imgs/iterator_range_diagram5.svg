@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">5. Iterator Operations</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="20" fill="black">Dereference</text>
+  <rect x="70" y="160" width="200" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="80" y="190" font-size="16" fill="black">operator*()</text>
+  <text x="300" y="140" font-size="20" fill="black">Increment</text>
+  <rect x="300" y="160" width="200" height="50" fill="#f8d3d3" stroke="black"/>
+  <text x="310" y="190" font-size="16" fill="black">operator++()</text>
+  <text x="550" y="140" font-size="20" fill="black">Comparison</text>
+  <rect x="550" y="160" width="200" height="50" fill="#d3d3f8" stroke="black"/>
+  <text x="560" y="190" font-size="16" fill="black">operator!=()</text>
+</svg>

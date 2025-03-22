@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">8. Vector as Underlying Data Structure</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="120" font-size="20" fill="black">Vector Representation</text>
+  <rect x="70" y="140" width="1060" height="100" fill="#e0e0e0" stroke="black"/>
+  <text x="80" y="180" font-size="16" fill="black">- Elements stored in a contiguous block of memory</text>
+  <text x="80" y="210" font-size="16" fill="black">- Supports dynamic resizing</text>
+  <text x="70" y="260" font-size="20" fill="black">Heap Indexing</text>
+  <rect x="70" y="280" width="1060" height="100" fill="#e0e0e0" stroke="black"/>
+  <text x="80" y="320" font-size="16" fill="black">- Parent index: (i - 1) / 2</text>
+  <text x="80" y="350" font-size="16" fill="black">- Left child index: 2 * i + 1</text>
+  <text x="80" y="380" font-size="16" fill="black">- Right child index: 2 * i + 2</text>
+</svg>

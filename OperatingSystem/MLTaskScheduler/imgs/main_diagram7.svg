@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">7. Synchronization</text>
+  <rect x="50" y="80" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="20">Mutex Usage</text>
+  <rect x="100" y="150" width="1000" height="600" fill="#e0e0e0" stroke="#000000"/>
+  <text x="120" y="190" font-size="18">Thread Safety</text>
+  <rect x="150" y="220" width="900" height="500" fill="#d0d0d0" stroke="#000000"/>
+  <text x="170" y="260" font-size="16">Condition Variables</text>
+  <rect x="200" y="290" width="800" height="400" fill="#c0c0c0" stroke="#000000"/>
+  <text x="220" y="330" font-size="14">Deadlock Prevention</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="140" font-size="18" fill="black">1. Include Headers</text>
+  <text x="70" y="180" font-size="18" fill="black">2. Define print_vector Function</text>
+  <text x="70" y="220" font-size="18" fill="black">3. Define insert_sorted Function</text>
+  <text x="70" y="260" font-size="18" fill="black">4. Main Function</text>
+  <text x="70" y="300" font-size="18" fill="black">   - Initialize Vector</text>
+  <text x="70" y="340" font-size="18" fill="black">   - Fill Vector with Random Numbers</text>
+  <text x="70" y="380" font-size="18" fill="black">   - Sort Vector</text>
+  <text x="70" y="420" font-size="18" fill="black">   - Insert Additional Numbers</text>
+  <text x="70" y="460" font-size="18" fill="black">   - Print Vector</text>
+</svg>

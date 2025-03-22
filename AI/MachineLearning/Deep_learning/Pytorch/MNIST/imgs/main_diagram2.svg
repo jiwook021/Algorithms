@@ -1,0 +1,22 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">2. Key Algorithms</text>
+  <rect x="50" y="80" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="20">Key Algorithms in MNIST Classifier</text>
+  <rect x="100" y="150" width="300" height="50" fill="#d3f8d3" stroke="#000000"/>
+  <text x="110" y="180" font-size="16">Convolutional Layers</text>
+  <rect x="100" y="220" width="300" height="50" fill="#d3f8d3" stroke="#000000"/>
+  <text x="110" y="250" font-size="16">Batch Normalization</text>
+  <rect x="100" y="290" width="300" height="50" fill="#d3f8d3" stroke="#000000"/>
+  <text x="110" y="320" font-size="16">Max Pooling</text>
+  <rect x="100" y="360" width="300" height="50" fill="#d3f8d3" stroke="#000000"/>
+  <text x="110" y="390" font-size="16">Dropout</text>
+  <rect x="100" y="430" width="300" height="50" fill="#d3f8d3" stroke="#000000"/>
+  <text x="110" y="460" font-size="16">Fully Connected Layers</text>
+  <rect x="500" y="150" width="300" height="50" fill="#d3f8d3" stroke="#000000"/>
+  <text x="510" y="180" font-size="16">ReLU Activation</text>
+  <rect x="500" y="220" width="300" height="50" fill="#d3f8d3" stroke="#000000"/>
+  <text x="510" y="250" font-size="16">Cross-Entropy Loss</text>
+  <rect x="500" y="290" width="300" height="50" fill="#d3f8d3" stroke="#000000"/>
+  <text x="510" y="320" font-size="16">Optimization (e.g., SGD)</text>
+</svg>

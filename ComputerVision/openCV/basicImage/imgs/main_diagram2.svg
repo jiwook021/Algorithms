@@ -1,0 +1,13 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">2. Key Algorithms / Processes</text>
+  <rect x="50" y="80" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="18">1. Image Reading (cv::imread)</text>
+  <text x="70" y="160" font-size="18">2. Pixel Access (cv::Mat::at)</text>
+  <text x="70" y="200" font-size="18">3. Pixel Modification (cv::Vec3b)</text>
+  <text x="70" y="240" font-size="18">4. ROI Creation (cv::Rect)</text>
+  <text x="70" y="280" font-size="18">5. Color Space Conversion (cv::cvtColor)</text>
+  <text x="70" y="320" font-size="18">6. Image Saving (cv::imwrite)</text>
+  <text x="70" y="360" font-size="18">7. Image Display (cv::imshow)</text>
+  <text x="70" y="400" font-size="18">8. Key Press Handling (cv::waitKey)</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">4. Error Handling Mechanism</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="18" fill="black">1. Check Vector Sizes for Dot Product</text>
+  <text x="70" y="140" font-size="18" fill="black">2. Check Column Index Bounds</text>
+  <text x="70" y="170" font-size="18" fill="black">3. Catch Exceptions in Main Function</text>
+</svg>

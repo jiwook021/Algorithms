@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">8. Numerical Stability in SVD Class</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="110" font-size="20" fill="black">Numerical Stability</text>
+  <rect x="70" y="130" width="1060" height="620" fill="#e0e0e0" stroke="black" stroke-width="1"/>
+  <text x="90" y="170" font-size="18" fill="black">- epsilon: Threshold for numerical stability</text>
+  <text x="90" y="200" font-size="18" fill="black">- Prevents division by zero in normalize</text>
+  <text x="90" y="230" font-size="18" fill="black">- Ensures accurate SVD decomposition</text>
+</svg>

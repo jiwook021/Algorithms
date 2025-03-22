@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">5. Calculator Service Methods</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="140" font-size="20" fill="black">Calculator Service</text>
+  <rect x="70" y="160" width="200" height="50" fill="#d3d3d3" stroke="black" stroke-width="1"/>
+  <text x="80" y="190" font-size="16" fill="black">add(a, b)</text>
+  <rect x="70" y="220" width="200" height="50" fill="#d3d3d3" stroke="black" stroke-width="1"/>
+  <text x="80" y="250" font-size="16" fill="black">subtract(a, b)</text>
+  <line x1="170" y1="160" x2="170" y2="220" stroke="black" stroke-width="2"/>
+</svg>

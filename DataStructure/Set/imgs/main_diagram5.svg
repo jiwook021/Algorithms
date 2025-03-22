@@ -1,0 +1,8 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">5. Set Operations</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="20" fill="black">Set Operations</text>
+  <text x="70" y="140" font-size="16" fill="black">Insert: st1.insert(9) → st1: (6, 7, 8, 9)</text>
+  <text x="70" y="170" font-size="16" fill="black">Union: Union(st1, st3, st4) → st4: (1, 2, 3, 4, 5, 6, 7, 8, 9)</text>
+</svg>

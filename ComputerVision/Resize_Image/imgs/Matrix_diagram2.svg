@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms or Processes</text>
+  <rect x="50" y="100" width="1100" height="600" fill="lightgray" stroke="black"/>
+  <text x="70" y="150" font-size="20" fill="black">Matrix Initialization Algorithm</text>
+  <text x="70" y="200" font-size="20" fill="black">Matrix Printing Algorithm</text>
+  <line x1="70" y1="220" x2="1100" y2="220" stroke="black"/>
+  <text x="70" y="250" font-size="16" fill="black">Matrix_init: Validates dimensions and sets width/height</text>
+  <text x="70" y="300" font-size="16" fill="black">Matrix_print: Iterates through matrix data and prints to stream</text>
+</svg>

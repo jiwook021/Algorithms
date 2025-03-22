@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="20" fill="black">Snake Game with AI Player</text>
+  <rect x="70" y="130" width="1060" height="600" fill="#e0e0e0" stroke="black"/>
+  <text x="90" y="170" font-size="18" fill="black">Main Components:</text>
+  <text x="110" y="210" font-size="16" fill="black">- Game Board (Grid)</text>
+  <text x="110" y="240" font-size="16" fill="black">- Snake (Deque of Positions)</text>
+  <text x="110" y="270" font-size="16" fill="black">- Food (Position)</text>
+  <text x="110" y="300" font-size="16" fill="black">- AI (A* Pathfinding)</text>
+  <text x="110" y="330" font-size="16" fill="black">- Game State (Score, Game Over)</text>
+  <text x="110" y="360" font-size="16" fill="black">- Thread Safety (Mutex, Atomic)</text>
+</svg>

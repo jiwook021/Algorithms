@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture or Main Workflow</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="20" fill="black">1. Include necessary headers</text>
+  <text x="70" y="140" font-size="20" fill="black">2. Define main function</text>
+  <text x="70" y="170" font-size="20" fill="black">3. Initialize vector with numbers</text>
+  <text x="70" y="200" font-size="20" fill="black">4. Count even numbers using std::count_if</text>
+  <text x="70" y="230" font-size="20" fill="black">5. Print the count of even numbers</text>
+  <text x="70" y="260" font-size="20" fill="black">6. Return 0 to indicate successful execution</text>
+</svg>

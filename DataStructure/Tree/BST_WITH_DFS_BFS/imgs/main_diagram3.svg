@@ -1,0 +1,15 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow / State Transitions</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="150" font-size="20" fill="black">- Tree Initialization:</text>
+  <text x="90" y="200" font-size="18" fill="black">1. Allocate memory for tree</text>
+  <text x="90" y="250" font-size="18" fill="black">2. Set root to NULL</text>
+  <text x="70" y="300" font-size="20" fill="black">- Node Insertion:</text>
+  <text x="90" y="350" font-size="18" fill="black">1. Create new node</text>
+  <text x="90" y="400" font-size="18" fill="black">2. Traverse tree to find insertion point</text>
+  <text x="90" y="450" font-size="18" fill="black">3. Link new node to parent</text>
+  <text x="70" y="500" font-size="20" fill="black">- BFS Traversal:</text>
+  <text x="90" y="550" font-size="18" fill="black">1. Enqueue root node</text>
+  <text x="90" y="600" font-size="18" fill="black">2. Process nodes in FIFO order</text>
+</svg>

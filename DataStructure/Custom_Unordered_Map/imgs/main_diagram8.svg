@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">8. Load Factor and Rehashing</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="100" y="150" font-size="20" fill="black">Load Factor Management</text>
+  <rect x="100" y="180" width="1000" height="100" fill="#d3f8d3" stroke="black"/>
+  <text x="120" y="230" font-size="18" fill="black">- max_load_factor_value: Threshold for rehashing</text>
+  <text x="120" y="260" font-size="18" fill="black">- element_count: Tracks number of elements</text>
+  <text x="120" y="290" font-size="18" fill="black">- rehashImpl: Resizes and rehashes the table</text>
+</svg>

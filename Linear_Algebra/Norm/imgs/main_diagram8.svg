@@ -1,0 +1,8 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">8. Vector Initialization</text>
+  <rect x="50" y="80" width="1100" height="600" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="18">Vector Initialization</text>
+  <text x="70" y="150" font-size="14">1. Define vector with values {3.0, -4.0, 5.0, -2.0}</text>
+  <text x="70" y="180" font-size="14">2. Use std::vector<double> for storage</text>
+</svg>

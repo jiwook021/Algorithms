@@ -1,0 +1,16 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">4. Image Processing Pipeline</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="120" font-size="18" fill="black">1. Load Image</text>
+  <text x="70" y="160" font-size="18" fill="black">2. Convert to HSV</text>
+  <text x="70" y="200" font-size="18" fill="black">3. Apply Color Mask</text>
+  <text x="70" y="240" font-size="18" fill="black">4. Morphological Operations</text>
+  <text x="70" y="280" font-size="18" fill="black">5. Detect Contours</text>
+  <text x="70" y="320" font-size="18" fill="black">6. Draw Bounding Boxes</text>
+  <text x="70" y="360" font-size="18" fill="black">7. Display Output</text>
+  <line x1="70" y1="100" x2="70" y2="380" stroke="black" stroke-width="2"/>
+  <line x1="70" y1="100" x2="1100" y2="100" stroke="black" stroke-width="2"/>
+  <line x1="1100" y1="100" x2="1100" y2="380" stroke="black" stroke-width="2"/>
+  <line x1="70" y1="380" x2="1100" y2="380" stroke="black" stroke-width="2"/>
+</svg>

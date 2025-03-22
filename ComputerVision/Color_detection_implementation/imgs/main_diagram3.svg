@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow / State Transitions</text>
+  <rect x="50" y="80" width="1100" height="700" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="120" font-size="20" fill="black">1. Input Image (BGR)</text>
+  <text x="70" y="160" font-size="20" fill="black">2. Converted to HSV</text>
+  <text x="70" y="200" font-size="20" fill="black">3. Binary Mask (from inRange)</text>
+  <text x="70" y="240" font-size="20" fill="black">4. Processed Mask (after Morphology)</text>
+  <text x="70" y="280" font-size="20" fill="black">5. Contours (from mask)</text>
+  <text x="70" y="320" font-size="20" fill="black">6. Final Output (with bounding boxes)</text>
+</svg>

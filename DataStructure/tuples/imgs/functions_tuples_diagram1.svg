@@ -1,0 +1,18 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="80" width="1100" height="600" stroke="black" stroke-width="2" fill="none"/>
+  <text x="70" y="120" font-size="20">Main Function</text>
+  <rect x="70" y="130" width="200" height="50" fill="lightblue"/>
+  <text x="80" y="160" font-size="16">Initialize Student Tuple</text>
+  <rect x="70" y="200" width="200" height="50" fill="lightblue"/>
+  <text x="80" y="230" font-size="16">Print Student Info</text>
+  <rect x="70" y="270" width="200" height="50" fill="lightblue"/>
+  <text x="80" y="300" font-size="16">Initialize List of Tuples</text>
+  <rect x="70" y="340" width="200" height="50" fill="lightblue"/>
+  <text x="80" y="370" font-size="16">Iterate and Print</text>
+  <rect x="70" y="410" width="200" height="50" fill="lightblue"/>
+  <text x="80" y="440" font-size="16">Apply Function</text>
+  <rect x="70" y="480" width="200" height="50" fill="lightblue"/>
+  <text x="80" y="510" font-size="16">Iterate and Apply</text>
+</svg>

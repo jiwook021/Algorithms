@@ -1,0 +1,8 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">7. Priority Queue Usage</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="100" y="150" font-size="20" fill="black">1. Used in Dijkstra for efficient vertex selection</text>
+  <text x="100" y="200" font-size="20" fill="black">2. Stores pairs of {distance, vertex}</text>
+  <text x="100" y="250" font-size="20" fill="black">3. Always retrieves the smallest distance first</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms / Processes</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="120" font-size="20" fill="black">Bit Reversal Algorithm</text>
+  <rect x="100" y="150" width="400" height="200" fill="#ffcccb" stroke="black"/>
+  <text x="120" y="180" font-size="16" fill="black">reversebit(char input)</text>
+  <text x="120" y="220" font-size="14" fill="black">1. Initialize output = 0</text>
+  <text x="120" y="250" font-size="14" fill="black">2. Loop through bits</text>
+  <text x="120" y="280" font-size="14" fill="black">3. Reverse bits and store in output</text>
+  <text x="70" y="400" font-size="20" fill="black">Bit Extraction Algorithm</text>
+  <rect x="100" y="430" width="400" height="200" fill="#ffcccb" stroke="black"/>
+  <text x="120" y="460" font-size="16" fill="black">bitExtracted(int number, int k, int s)</text>
+  <text x="120" y="500" font-size="14" fill="black">1. Shift and mask bits</text>
+  <text x="120" y="530" font-size="14" fill="black">2. Extract specific bits</text>
+</svg>

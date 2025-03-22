@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="20" fill="black">main()</text>
+  <text x="70" y="170" font-size="16" fill="black">- Initializes clock and array</text>
+  <text x="70" y="200" font-size="16" fill="black">- Calls InputRandomNumber_ToArray()</text>
+  <text x="70" y="230" font-size="16" fill="black">- Calls PrintArray()</text>
+  <text x="70" y="260" font-size="16" fill="black">- Calls Insertionsort()</text>
+  <text x="70" y="290" font-size="16" fill="black">- Calls PrintArray() again</text>
+  <text x="70" y="320" font-size="16" fill="black">- Calculates and prints execution time</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">7. Thread Lifecycle</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="100" y="150" font-size="20" fill="black">Thread Creation</text>
+  <rect x="100" y="170" width="1000" height="100" fill="#d3d3d3" stroke="black" stroke-width="1"/>
+  <text x="120" y="220" font-size="16" fill="black">- Threads created in constructor</text>
+  <text x="120" y="250" font-size="16" fill="black">- Threads start executing workerThread()</text>
+  <text x="100" y="300" font-size="20" fill="black">Thread Termination</text>
+  <rect x="100" y="320" width="1000" height="100" fill="#d3d3d3" stroke="black" stroke-width="1"/>
+  <text x="120" y="370" font-size="16" fill="black">- Threads exit on shutdown</text>
+  <text x="120" y="400" font-size="16" fill="black">- Threads joined in shutdown()</text>
+</svg>

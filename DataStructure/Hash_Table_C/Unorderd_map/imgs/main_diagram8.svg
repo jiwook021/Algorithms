@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">8. Internal Data Structures</text>
+  <rect x="50" y="80" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="18">Vector and List Usage</text>
+  <rect x="70" y="140" width="1060" height="620" fill="#e0e0e0" stroke="#000000"/>
+  <text x="90" y="180" font-size="16">- std::vector: Holds buckets</text>
+  <text x="90" y="210" font-size="16">- std::list: Holds key-value pairs in each bucket</text>
+  <text x="90" y="240" font-size="16">- Purpose: Efficient storage and collision handling</text>
+</svg>

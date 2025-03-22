@@ -1,0 +1,15 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms / Processes</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="140" font-size="20" fill="black">Unique Pointer Initialization</text>
+  <rect x="70" y="160" width="200" height="50" fill="#d3f8d3" stroke="black" stroke-width="1"/>
+  <text x="80" y="190" font-size="16" fill="black">Create Foo object</text>
+  <rect x="70" y="220" width="200" height="50" fill="#d3f8d3" stroke="black" stroke-width="1"/>
+  <text x="80" y="250" font-size="16" fill="black">Transfer ownership</text>
+  <text x="300" y="140" font-size="20" fill="black">Process Item</text>
+  <rect x="300" y="160" width="200" height="50" fill="#f8d3d3" stroke="black" stroke-width="1"/>
+  <text x="310" y="190" font-size="16" fill="black">Check pointer validity</text>
+  <rect x="300" y="220" width="200" height="50" fill="#f8d3d3" stroke="black" stroke-width="1"/>
+  <text x="310" y="250" font-size="16" fill="black">Process Foo object</text>
+</svg>

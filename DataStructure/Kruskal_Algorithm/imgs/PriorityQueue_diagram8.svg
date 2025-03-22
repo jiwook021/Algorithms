@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">8. Heap Operations</text>
+  <rect x="100" y="100" width="300" height="100" fill="#ffcccb" stroke="black"/>
+  <text x="120" y="150" font-size="18" fill="black">HeapInit</text>
+  <rect x="100" y="250" width="300" height="100" fill="#ffcccb" stroke="black"/>
+  <text x="120" y="300" font-size="18" fill="black">HIsEmpty</text>
+  <rect x="100" y="400" width="300" height="100" fill="#ffcccb" stroke="black"/>
+  <text x="120" y="450" font-size="18" fill="black">HInsert</text>
+  <rect x="100" y="550" width="300" height="100" fill="#ffcccb" stroke="black"/>
+  <text x="120" y="600" font-size="18" fill="black">HDelete</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms / Processes</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="140" font-size="20" fill="black">Function Assignment and Invocation</text>
+  <rect x="70" y="160" width="1060" height="500" fill="#e0e0e0" stroke="black" stroke-width="1"/>
+  <text x="80" y="200" font-size="16" fill="black">1. Assign normalFunction to task</text>
+  <text x="80" y="230" font-size="16" fill="black">2. Invoke task (normalFunction)</text>
+  <text x="80" y="260" font-size="16" fill="black">3. Assign FunctionObject to task</text>
+  <text x="80" y="290" font-size="16" fill="black">4. Invoke task (FunctionObject)</text>
+  <text x="80" y="320" font-size="16" fill="black">5. Assign lambda function to task</text>
+  <text x="80" y="350" font-size="16" fill="black">6. Invoke task (lambda function)</text>
+  <text x="80" y="380" font-size="16" fill="black">7. Bind member function to task</text>
+  <text x="80" y="410" font-size="16" fill="black">8. Invoke task (member function)</text>
+</svg>

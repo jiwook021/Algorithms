@@ -1,0 +1,16 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms / Processes</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="20" fill="black">- Insertion Algorithm:</text>
+  <text x="90" y="140" font-size="18" fill="black">1. Create new node</text>
+  <text x="90" y="170" font-size="18" fill="black">2. Update prev/next pointers</text>
+  <text x="90" y="200" font-size="18" fill="black">3. Update head/tail pointers</text>
+  <text x="70" y="240" font-size="20" fill="black">- Deletion Algorithm:</text>
+  <text x="90" y="270" font-size="18" fill="black">1. Traverse list to find node</text>
+  <text x="90" y="300" font-size="18" fill="black">2. Update prev/next pointers</text>
+  <text x="90" y="330" font-size="18" fill="black">3. Free memory</text>
+  <text x="70" y="370" font-size="20" fill="black">- Search Algorithm:</text>
+  <text x="90" y="400" font-size="18" fill="black">1. Traverse list to find node</text>
+  <text x="90" y="430" font-size="18" fill="black">2. Return result</text>
+</svg>

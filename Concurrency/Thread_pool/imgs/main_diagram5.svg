@@ -1,0 +1,17 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">5. Task Execution Flow</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="140" font-size="20" fill="black">Task Creation</text>
+  <rect x="70" y="160" width="1060" height="100" fill="#e0e0e0" stroke="black" stroke-width="1"/>
+  <text x="80" y="200" font-size="16" fill="black">- Tasks are created as lambda functions</text>
+  <text x="80" y="230" font-size="16" fill="black">- Each task captures its unique ID</text>
+  <text x="70" y="280" font-size="20" fill="black">Task Submission</text>
+  <rect x="70" y="300" width="1060" height="100" fill="#e0e0e0" stroke="black" stroke-width="1"/>
+  <text x="80" y="340" font-size="16" fill="black">- Tasks are enqueued via ThreadPool::enqueue</text>
+  <text x="80" y="370" font-size="16" fill="black">- Condition variable notifies waiting threads</text>
+  <text x="70" y="420" font-size="20" fill="black">Task Execution</text>
+  <rect x="70" y="440" width="1060" height="100" fill="#e0e0e0" stroke="black" stroke-width="1"/>
+  <text x="80" y="480" font-size="16" fill="black">- Worker threads execute tasks in parallel</text>
+  <text x="80" y="510" font-size="16" fill="black">- Tasks print their ID and thread ID</text>
+</svg>

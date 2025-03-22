@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow / State Transitions</text>
+  <rect x="50" y="80" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="120" font-size="20" fill="black">Data Flow</text>
+  <text x="70" y="160" font-size="16" fill="black">- Data flows from InitMatrix to MatInsert/MatDelete</text>
+  <text x="70" y="190" font-size="16" fill="black">- Nodes are shared between row and column lists</text>
+  <text x="70" y="220" font-size="20" fill="black">State Transitions</text>
+  <text x="70" y="260" font-size="16" fill="black">- Matrix starts uninitialized</text>
+  <text x="70" y="290" font-size="16" fill="black">- After InitMatrix, matrix is ready for operations</text>
+  <text x="70" y="320" font-size="16" fill="black">- MatInsert/MatDelete modify matrix state</text>
+</svg>

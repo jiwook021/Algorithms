@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow / State Transitions</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="100" y="150" font-size="20" fill="black">1. LinkedList Initialization</text>
+  <text x="100" y="200" font-size="20" fill="black">2. Insert 10 random numbers into LinkedList</text>
+  <text x="100" y="250" font-size="20" fill="black">3. Insert 10 random numbers in the middle of LinkedList</text>
+  <text x="100" y="300" font-size="20" fill="black">4. Print LinkedList</text>
+  <text x="100" y="350" font-size="20" fill="black">5. Sort LinkedList</text>
+  <text x="100" y="400" font-size="20" fill="black">6. Print Sorted LinkedList</text>
+  <text x="100" y="450" font-size="20" fill="black">7. Search for 10 random numbers in LinkedList</text>
+  <text x="100" y="500" font-size="20" fill="black">8. Remove 10 random numbers from LinkedList</text>
+  <text x="100" y="550" font-size="20" fill="black">9. Print Final LinkedList</text>
+</svg>

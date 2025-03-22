@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" fill="black">8. Thread Lifecycle</text>
+  <rect x="50" y="100" width="1100" height="600" stroke="black" fill="none"/>
+  <rect x="100" y="200" width="1000" height="100" stroke="black" fill="lightblue"/>
+  <text x="120" y="250" font-size="18" fill="black">Thread Creation</text>
+  <rect x="100" y="350" width="1000" height="100" stroke="black" fill="lightgreen"/>
+  <text x="120" y="400" font-size="18" fill="black">Thread Execution</text>
+  <rect x="100" y="500" width="1000" height="100" stroke="black" fill="lightyellow"/>
+  <text x="120" y="550" font-size="18" fill="black">Thread Termination</text>
+</svg>

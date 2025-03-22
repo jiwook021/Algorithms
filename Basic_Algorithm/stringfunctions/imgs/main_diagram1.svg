@@ -1,0 +1,8 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="100" font-size="18" fill="black">- main() function initializes strings and calls utility functions.</text>
+  <text x="70" y="130" font-size="18" fill="black">- Utility functions: my_strlen, my_strcpy, my_strrev, my_strcmp, my_strcat.</text>
+  <text x="70" y="160" font-size="18" fill="black">- Outputs are printed to the console.</text>
+</svg>

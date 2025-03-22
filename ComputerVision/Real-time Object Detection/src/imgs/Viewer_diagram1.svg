@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="140" font-size="18" fill="black">Viewer Class</text>
+  <rect x="70" y="160" width="1060" height="520" fill="#e0e0e0" stroke="black" stroke-width="1"/>
+  <text x="90" y="200" font-size="16" fill="black">- Constructor: Initializes window and settings</text>
+  <text x="90" y="230" font-size="16" fill="black">- display(): Handles frame processing and visualization</text>
+  <text x="90" y="260" font-size="16" fill="black">- drawDetections(): Draws detection boxes on frame</text>
+  <text x="90" y="290" font-size="16" fill="black">- drawTracks(): Draws tracked object paths</text>
+  <text x="90" y="320" font-size="16" fill="black">- showFPS: Toggles FPS display</text>
+</svg>

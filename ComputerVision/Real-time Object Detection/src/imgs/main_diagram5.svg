@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">5. FrameData Structure</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="20" fill="black">FrameData Components</text>
+  <rect x="100" y="200" width="300" height="100" fill="#d9d2e9" stroke="black"/>
+  <text x="150" y="250" font-size="16" fill="black">cv::Mat frame</text>
+  <rect x="500" y="200" width="300" height="100" fill="#d9d2e9" stroke="black"/>
+  <text x="550" y="250" font-size="16" fill="black">std::vector&lt;Detection&gt;</text>
+  <rect x="900" y="200" width="300" height="100" fill="#d9d2e9" stroke="black"/>
+  <text x="950" y="250" font-size="16" fill="black">int frameIndex</text>
+  <rect x="100" y="350" width="300" height="100" fill="#d9d2e9" stroke="black"/>
+  <text x="150" y="400" font-size="16" fill="black">float inferenceTime</text>
+</svg>

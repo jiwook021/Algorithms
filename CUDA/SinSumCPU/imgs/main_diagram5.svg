@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">5. Main Loop Execution</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="20" fill="black">1. Initialize cpu_sum = 0.0</text>
+  <text x="70" y="150" font-size="20" fill="black">2. For each step (0 to steps-1):</text>
+  <text x="90" y="190" font-size="20" fill="black">a. Compute x = step_size * step</text>
+  <text x="90" y="230" font-size="20" fill="black">b. Compute sinsum(x, terms) and add to cpu_sum</text>
+  <text x="70" y="270" font-size="20" fill="black">3. Apply Trapezoidal Rule correction</text>
+</svg>

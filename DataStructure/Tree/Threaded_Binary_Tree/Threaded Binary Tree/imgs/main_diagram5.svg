@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">5. Insertion Process</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="110" font-size="18" fill="black">- Steps:</text>
+  <text x="90" y="140" font-size="16" fill="black">1. Traverse tree to find insertion point</text>
+  <text x="90" y="170" font-size="16" fill="black">2. Check for duplicate keys</text>
+  <text x="90" y="200" font-size="16" fill="black">3. Allocate memory for new node</text>
+  <text x="90" y="230" font-size="16" fill="black">4. Adjust threads and pointers</text>
+  <text x="90" y="260" font-size="16" fill="black">5. Update parent node's thread flags</text>
+</svg>

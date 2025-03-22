@@ -1,0 +1,9 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">7. List Initialization and Structure</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="120" font-size="18" fill="black">1. std::list<int> l {1, 2, 3, 4, 5}</text>
+  <text x="70" y="160" font-size="18" fill="black">2. Doubly-linked list structure</text>
+  <text x="70" y="200" font-size="18" fill="black">3. Elements stored in sequential order</text>
+  <text x="70" y="240" font-size="18" fill="black">4. Supports bidirectional iteration</text>
+</svg>

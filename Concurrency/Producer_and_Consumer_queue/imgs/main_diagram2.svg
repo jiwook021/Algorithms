@@ -1,0 +1,19 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms / Processes</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="140" font-size="20" fill="black">Producer Algorithm</text>
+  <rect x="70" y="160" width="500" height="50" fill="#d3f8d3" stroke="black" stroke-width="1"/>
+  <text x="80" y="190" font-size="16" fill="black">1. Acquire available slot semaphore</text>
+  <rect x="70" y="220" width="500" height="50" fill="#d3f8d3" stroke="black" stroke-width="1"/>
+  <text x="80" y="250" font-size="16" fill="black">2. Lock mutex and push item to queue</text>
+  <rect x="70" y="280" width="500" height="50" fill="#d3f8d3" stroke="black" stroke-width="1"/>
+  <text x="80" y="310" font-size="16" fill="black">3. Release available item semaphore</text>
+  <text x="70" y="380" font-size="20" fill="black">Consumer Algorithm</text>
+  <rect x="70" y="400" width="500" height="50" fill="#d3d3f8" stroke="black" stroke-width="1"/>
+  <text x="80" y="430" font-size="16" fill="black">1. Acquire available item semaphore</text>
+  <rect x="70" y="460" width="500" height="50" fill="#d3d3f8" stroke="black" stroke-width="1"/>
+  <text x="80" y="490" font-size="16" fill="black">2. Lock mutex and pop item from queue</text>
+  <rect x="70" y="520" width="500" height="50" fill="#d3d3f8" stroke="black" stroke-width="1"/>
+  <text x="80" y="550" font-size="16" fill="black">3. Release available slot semaphore</text>
+</svg>

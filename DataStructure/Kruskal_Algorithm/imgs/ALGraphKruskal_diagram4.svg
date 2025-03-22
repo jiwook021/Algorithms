@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" fill="black">4. Memory Management</text>
+  <rect x="100" y="100" width="200" height="100" fill="lightyellow" stroke="black"/>
+  <text x="150" y="150" font-size="18" fill="black">malloc</text>
+  <rect x="400" y="100" width="200" height="100" fill="lightyellow" stroke="black"/>
+  <text x="450" y="150" font-size="18" fill="black">free</text>
+  <rect x="700" y="100" width="200" height="100" fill="lightyellow" stroke="black"/>
+  <text x="750" y="150" font-size="18" fill="black">memset</text>
+  <line x1="300" y1="150" x2="400" y2="150" stroke="black" stroke-width="2"/>
+  <line x1="600" y1="150" x2="700" y2="150" stroke="black" stroke-width="2"/>
+</svg>

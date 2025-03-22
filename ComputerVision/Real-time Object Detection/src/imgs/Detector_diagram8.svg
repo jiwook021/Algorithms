@@ -1,0 +1,16 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" fill="black">8. Model Loading and Status Output</text>
+  <rect x="50" y="70" width="1100" height="700" fill="none" stroke="black" stroke-width="2"/>
+  <text x="100" y="120" font-size="20" fill="black">Model Loading and Status Output</text>
+  <rect x="100" y="130" width="1000" height="100" fill="lightblue" stroke="black" stroke-width="2"/>
+  <text x="120" y="180" font-size="16" fill="black">Load YOLOv8 Model from ONNX</text>
+  <rect x="100" y="250" width="1000" height="100" fill="lightgreen" stroke="black" stroke-width="2"/>
+  <text x="120" y="300" font-size="16" fill="black">Check Model Load Status</text>
+  <rect x="100" y="370" width="1000" height="100" fill="lightyellow" stroke="black" stroke-width="2"/>
+  <text x="120" y="420" font-size="16" fill="black">Output Model Load Status to Console</text>
+  <rect x="100" y="490" width="1000" height="100" fill="lightpink" stroke="black" stroke-width="2"/>
+  <text x="120" y="540" font-size="16" fill="black">Output Input Size to Console</text>
+  <rect x="100" y="610" width="1000" height="100" fill="lightgray" stroke="black" stroke-width="2"/>
+  <text x="120" y="660" font-size="16" fill="black">Output: Model Loaded Successfully</text>
+</svg>

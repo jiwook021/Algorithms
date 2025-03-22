@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms / Processes</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="120" font-size="18" fill="black">1. `try_emplace`: Attempts to insert a key-value pair if key does not exist</text>
+  <text x="70" y="160" font-size="18" fill="black">2. `insert`: Inserts a key-value pair into the map</text>
+  <text x="70" y="200" font-size="18" fill="black">3. `erase`: Removes an element with the specified key</text>
+  <text x="70" y="240" font-size="18" fill="black">4. `find`: Searches for an element with the specified key</text>
+  <text x="70" y="280" font-size="18" fill="black">5. `count`: Returns the number of elements with the specified key</text>
+  <text x="70" y="320" font-size="18" fill="black">6. `size`: Returns the number of elements in the map</text>
+  <text x="70" y="360" font-size="18" fill="black">7. `clear`: Removes all elements from the map</text>
+</svg>

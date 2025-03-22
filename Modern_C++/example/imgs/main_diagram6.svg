@@ -1,0 +1,9 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">6. Error Handling</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="120" font-size="20" fill="black">Empty Heap Checks</text>
+  <rect x="70" y="140" width="1060" height="100" fill="#e0e0e0" stroke="black"/>
+  <text x="80" y="180" font-size="16" fill="black">- pop() throws std::out_of_range if heap is empty</text>
+  <text x="80" y="210" font-size="16" fill="black">- top() throws std::out_of_range if heap is empty</text>
+</svg>

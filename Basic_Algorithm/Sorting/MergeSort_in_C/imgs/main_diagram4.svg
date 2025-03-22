@@ -1,0 +1,13 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">4. Recursive Splitting Process</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="18" fill="black">1. Original Array: [10, 2, 3, 4, 5, 6, 7, 3]</text>
+  <text x="70" y="170" font-size="18" fill="black">2. Split into: [10, 2, 3, 4] and [5, 6, 7, 3]</text>
+  <text x="70" y="200" font-size="18" fill="black">3. Split [10, 2, 3, 4] into: [10, 2] and [3, 4]</text>
+  <text x="70" y="230" font-size="18" fill="black">4. Split [10, 2] into: [10] and [2]</text>
+  <text x="70" y="260" font-size="18" fill="black">5. Split [3, 4] into: [3] and [4]</text>
+  <text x="70" y="290" font-size="18" fill="black">6. Split [5, 6, 7, 3] into: [5, 6] and [7, 3]</text>
+  <text x="70" y="320" font-size="18" fill="black">7. Split [5, 6] into: [5] and [6]</text>
+  <text x="70" y="350" font-size="18" fill="black">8. Split [7, 3] into: [7] and [3]</text>
+</svg>

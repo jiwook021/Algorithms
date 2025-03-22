@@ -1,0 +1,7 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">7. Memory Allocation</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="20" fill="black">1. Makenode() allocates memory for new node</text>
+  <text x="70" y="180" font-size="20" fill="black">2. Memory is freed implicitly at program end</text>
+</svg>

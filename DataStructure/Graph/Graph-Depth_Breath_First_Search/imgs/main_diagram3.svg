@@ -1,0 +1,16 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow / State Transitions</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="120" font-size="20" fill="black">Graph Initialization</text>
+  <text x="70" y="160" font-size="20" fill="black">├── Allocate memory for graph</text>
+  <text x="70" y="200" font-size="20" fill="black">├── Initialize vertices</text>
+  <text x="70" y="240" font-size="20" fill="black">├── Initialize adjacency list</text>
+  <text x="70" y="280" font-size="20" fill="black">Edge Addition</text>
+  <text x="70" y="320" font-size="20" fill="black">├── Add edge to adjacency list</text>
+  <text x="70" y="360" font-size="20" fill="black">Graph Traversal</text>
+  <text x="70" y="400" font-size="20" fill="black">├── BFS: Queue-based traversal</text>
+  <text x="70" y="440" font-size="20" fill="black">├── DFS: Stack-based traversal</text>
+  <text x="70" y="480" font-size="20" fill="black">Graph Destruction</text>
+  <text x="70" y="520" font-size="20" fill="black">├── Free memory for graph</text>
+</svg>

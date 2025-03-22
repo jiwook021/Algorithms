@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">5. String and Vector Interaction</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="120" font-size="20" fill="black">1. String Initialization:</text>
+  <text x="70" y="160" font-size="20" fill="black">- str = "Salut"</text>
+  <text x="70" y="200" font-size="20" fill="black">2. Vector Interaction:</text>
+  <text x="70" y="240" font-size="20" fill="black">- Copy: v.push_back(str)</text>
+  <text x="70" y="280" font-size="20" fill="black">- Move: v.push_back(std::move(str))</text>
+</svg>

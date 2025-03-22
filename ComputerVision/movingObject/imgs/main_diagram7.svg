@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">7. Class Members</text>
+  <rect x="50" y="80" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="20">MotionDetector Class Members</text>
+  <rect x="70" y="140" width="1060" height="620" fill="#e0e0e0" stroke="#000000"/>
+  <text x="90" y="180" font-size="18">- nFeatures: Number of features to extract</text>
+  <text x="90" y="220" font-size="18">- matchingThreshold: Distance threshold for matches</text>
+  <text x="90" y="260" font-size="18">- minInliers: Minimum inliers for valid motion</text>
+  <text x="90" y="300" font-size="18">- detectorMutex: Thread safety mechanism</text>
+</svg>

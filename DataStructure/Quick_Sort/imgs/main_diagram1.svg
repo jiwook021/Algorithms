@@ -1,0 +1,13 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="130" font-size="18" fill="black">main()</text>
+  <text x="70" y="160" font-size="18" fill="black">Initializes array and calls QuickSort</text>
+  <text x="70" y="190" font-size="18" fill="black">QuickSort()</text>
+  <text x="70" y="220" font-size="18" fill="black">Recursively sorts the array using Partition</text>
+  <text x="70" y="250" font-size="18" fill="black">Partition()</text>
+  <text x="70" y="280" font-size="18" fill="black">Divides array into two parts around a pivot</text>
+  <text x="70" y="310" font-size="18" fill="black">Swap()</text>
+  <text x="70" y="340" font-size="18" fill="black">Swaps two elements in the array</text>
+</svg>

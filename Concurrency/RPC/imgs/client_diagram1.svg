@@ -1,0 +1,19 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="120" font-size="20" fill="black">RPCServer Class</text>
+  <rect x="70" y="140" width="1060" height="100" fill="#e0e0ff" stroke="black" stroke-width="1"/>
+  <text x="80" y="170" font-size="16" fill="black">- Constructor: Initializes server with port</text>
+  <text x="80" y="200" font-size="16" fill="black">- Registers functions (e.g., "add")</text>
+  <text x="80" y="230" font-size="16" fill="black">- Handles client requests</text>
+  <text x="70" y="280" font-size="20" fill="black">Main Function</text>
+  <rect x="70" y="300" width="1060" height="100" fill="#e0ffe0" stroke="black" stroke-width="1"/>
+  <text x="80" y="330" font-size="16" fill="black">- Creates RPCServer instance</text>
+  <text x="80" y="360" font-size="16" fill="black">- Registers functions</text>
+  <text x="80" y="390" font-size="16" fill="black">- Runs server in a separate thread</text>
+  <text x="70" y="440" font-size="20" fill="black">Threading</text>
+  <rect x="70" y="460" width="1060" height="100" fill="#ffe0e0" stroke="black" stroke-width="1"/>
+  <text x="80" y="490" font-size="16" fill="black">- Server runs in a separate thread</text>
+  <text x="80" y="520" font-size="16" fill="black">- Allows concurrent client operations</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">7. Example Execution</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="20" fill="black">Input: ab*c+</text>
+  <rect x="70" y="160" width="200" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="80" y="190" font-size="16" fill="black">Push a, b</text>
+  <rect x="70" y="220" width="200" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="80" y="250" font-size="16" fill="black">Pop b, a</text>
+  <rect x="70" y="280" width="200" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="80" y="310" font-size="16" fill="black">Push (a*b)</text>
+  <rect x="70" y="340" width="200" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="80" y="370" font-size="16" fill="black">Push c</text>
+  <rect x="70" y="400" width="200" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="80" y="430" font-size="16" fill="black">Pop c, (a*b)</text>
+  <rect x="70" y="460" width="200" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="80" y="490" font-size="16" fill="black">Push ((a*b)+c)</text>
+</svg>

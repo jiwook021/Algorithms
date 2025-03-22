@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">3. Data Flow</text>
+  <text x="50" y="100" font-size="18">State Transitions in autograd_tutorial()</text>
+  <rect x="50" y="120" width="1100" height="600" stroke="black" fill="none"/>
+  <text x="70" y="160" font-size="16">1. Input Tensor x (requires_grad=True)</text>
+  <text x="70" y="200" font-size="16">2. Intermediate Tensor y = x + 2</text>
+  <text x="70" y="240" font-size="16">3. Gradient Calculation (Backward Pass)</text>
+  <text x="70" y="280" font-size="16">4. Output Gradients</text>
+</svg>

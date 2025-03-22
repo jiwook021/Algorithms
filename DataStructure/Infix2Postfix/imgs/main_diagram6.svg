@@ -1,0 +1,15 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">6. Main Function Workflow</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="100" y="150" font-size="20" fill="black">Initialization</text>
+  <rect x="100" y="170" width="1000" height="100" fill="#d3f8d3" stroke="black" stroke-width="2"/>
+  <text x="120" y="220" font-size="16" fill="black">- Defines infix expressions</text>
+  <text x="120" y="250" font-size="16" fill="black">- Initializes output arrays</text>
+  <text x="100" y="350" font-size="20" fill="black">Function Calls</text>
+  <rect x="100" y="370" width="1000" height="100" fill="#d3f8d3" stroke="black" stroke-width="2"/>
+  <text x="120" y="420" font-size="16" fill="black">- Calls Infix2Postfix for conversion</text>
+  <text x="100" y="520" font-size="20" fill="black">Output</text>
+  <rect x="100" y="540" width="1000" height="100" fill="#d3f8d3" stroke="black" stroke-width="2"/>
+  <text x="120" y="590" font-size="16" fill="black">- Prints postfix expressions</text>
+</svg>

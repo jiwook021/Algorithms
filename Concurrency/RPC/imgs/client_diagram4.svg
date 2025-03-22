@@ -1,0 +1,17 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">4. Threading and Concurrency</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="120" font-size="20" fill="black">Server Thread</text>
+  <rect x="70" y="140" width="1060" height="100" fill="#e0e0ff" stroke="black" stroke-width="1"/>
+  <text x="80" y="170" font-size="16" fill="black">- Server runs in a separate thread</text>
+  <text x="80" y="200" font-size="16" fill="black">- Allows concurrent client connections</text>
+  <text x="70" y="250" font-size="20" fill="black">Client Thread</text>
+  <rect x="70" y="270" width="1060" height="100" fill="#e0ffe0" stroke="black" stroke-width="1"/>
+  <text x="80" y="300" font-size="16" fill="black">- Each client connection handled in a separate thread</text>
+  <text x="80" y="330" font-size="16" fill="black">- Ensures non-blocking operations</text>
+  <text x="70" y="380" font-size="20" fill="black">Synchronization</text>
+  <rect x="70" y="400" width="1060" height="100" fill="#ffe0e0" stroke="black" stroke-width="1"/>
+  <text x="80" y="430" font-size="16" fill="black">- Thread-safe function execution</text>
+  <text x="80" y="460" font-size="16" fill="black">- Proper resource management</text>
+</svg>

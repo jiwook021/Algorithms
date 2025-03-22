@@ -1,0 +1,17 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture of ThreadSafeHashMap</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="20" fill="black">Main Components:</text>
+  <text x="90" y="140" font-size="16" fill="black">- Buckets: Vector of lists for key-value pairs</text>
+  <text x="90" y="170" font-size="16" fill="black">- Bucket Mutexes: Vector of shared_mutex for fine-grained locking</text>
+  <text x="90" y="200" font-size="16" fill="black">- Hash Function: Used to determine bucket index</text>
+  <text x="90" y="230" font-size="16" fill="black">- Atomic Counter: Tracks number of elements</text>
+  <text x="90" y="260" font-size="16" fill="black">- Load Factor: Triggers rehashing when exceeded</text>
+  <text x="70" y="300" font-size="20" fill="black">Workflow:</text>
+  <text x="90" y="330" font-size="16" fill="black">1. Insert/Find/Erase operations</text>
+  <text x="90" y="360" font-size="16" fill="black">2. Lock bucket using shared_mutex</text>
+  <text x="90" y="390" font-size="16" fill="black">3. Perform operation on bucket</text>
+  <text x="90" y="420" font-size="16" fill="black">4. Unlock bucket</text>
+  <text x="90" y="450" font-size="16" fill="black">5. Rehash if load factor is exceeded</text>
+</svg>

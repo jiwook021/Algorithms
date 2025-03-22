@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">8. Insert Function Workflow</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="100" y="150" font-size="20" fill="black">Insert Function Steps</text>
+  <rect x="100" y="180" width="1000" height="400" fill="#d3d3d3" stroke="black"/>
+  <text x="120" y="220" font-size="16" fill="black">1. Check if the list is initialized</text>
+  <text x="120" y="250" font-size="16" fill="black">2. Allocate memory for a new node</text>
+  <text x="120" y="280" font-size="16" fill="black">3. Set data and pointers for the new node</text>
+  <text x="120" y="310" font-size="16" fill="black">4. If the list is empty, set head and tail to the new node</text>
+  <text x="120" y="340" font-size="16" fill="black">5. Otherwise, update tail's next pointer and set tail to the new node</text>
+</svg>

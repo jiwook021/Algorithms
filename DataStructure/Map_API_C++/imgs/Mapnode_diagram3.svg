@@ -1,0 +1,9 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow / State Transitions</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="120" font-size="20" fill="black">1. Initial map state: {1: Mario, 2: Luigi, ...}</text>
+  <text x="70" y="160" font-size="20" fill="black">2. Extract elements: 3, 8, 4, 7</text>
+  <text x="70" y="200" font-size="20" fill="black">3. Swap keys: 3 ↔ 8, 4 ↔ 7</text>
+  <text x="70" y="240" font-size="20" fill="black">4. Final map state: {1: Mario, 2: Luigi, ...}</text>
+</svg>

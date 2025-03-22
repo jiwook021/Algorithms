@@ -1,0 +1,17 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="20" fill="black">Frame Data Flow</text>
+  <rect x="100" y="200" width="200" height="100" fill="#d3f8d3" stroke="black"/>
+  <text x="150" y="250" font-size="16" fill="black">Frame Capture</text>
+  <rect x="400" y="200" width="200" height="100" fill="#d3f8d3" stroke="black"/>
+  <text x="450" y="250" font-size="16" fill="black">Detection</text>
+  <rect x="700" y="200" width="200" height="100" fill="#d3f8d3" stroke="black"/>
+  <text x="750" y="250" font-size="16" fill="black">Tracking</text>
+  <rect x="1000" y="200" width="200" height="100" fill="#d3f8d3" stroke="black"/>
+  <text x="1050" y="250" font-size="16" fill="black">Display</text>
+  <line x1="300" y1="250" x2="400" y2="250" stroke="black"/>
+  <line x1="600" y1="250" x2="700" y2="250" stroke="black"/>
+  <line x1="900" y1="250" x2="1000" y2="250" stroke="black"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms / Processes</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="100" font-size="18" fill="black">- my_strlen: Iterates through string until null terminator.</text>
+  <text x="70" y="130" font-size="18" fill="black">- my_strcpy: Copies characters from source to destination.</text>
+  <text x="70" y="160" font-size="18" fill="black">- my_strrev: Reverses string using a temporary buffer.</text>
+  <text x="70" y="190" font-size="18" fill="black">- my_strcmp: Compares strings character by character.</text>
+  <text x="70" y="220" font-size="18" fill="black">- my_strcat: Concatenates two strings.</text>
+</svg>

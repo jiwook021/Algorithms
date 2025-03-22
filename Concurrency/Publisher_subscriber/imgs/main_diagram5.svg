@@ -1,0 +1,17 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">5. Main Function Workflow</text>
+  <rect x="50" y="80" width="1100" height="700" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="120" font-size="20" fill="black">1. Create Publisher</text>
+  <rect x="70" y="140" width="200" height="50" fill="#d3f8d3" stroke="black" stroke-width="2"/>
+  <text x="70" y="220" font-size="20" fill="black">2. Create Subscribers</text>
+  <rect x="70" y="240" width="200" height="50" fill="#f8d3d3" stroke="black" stroke-width="2"/>
+  <text x="70" y="320" font-size="20" fill="black">3. Subscribe Subscribers</text>
+  <rect x="70" y="340" width="200" height="50" fill="#d3d3f8" stroke="black" stroke-width="2"/>
+  <text x="70" y="420" font-size="20" fill="black">4. Notify Subscribers</text>
+  <rect x="70" y="440" width="200" height="50" fill="#d3f8d3" stroke="black" stroke-width="2"/>
+  <text x="70" y="520" font-size="20" fill="black">5. Unsubscribe FileSubscriber</text>
+  <rect x="70" y="540" width="200" height="50" fill="#f8d3d3" stroke="black" stroke-width="2"/>
+  <text x="70" y="620" font-size="20" fill="black">6. Notify Again</text>
+  <rect x="70" y="640" width="200" height="50" fill="#d3d3f8" stroke="black" stroke-width="2"/>
+</svg>

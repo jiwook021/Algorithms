@@ -1,0 +1,9 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">7. Main Function Flow</text>
+  <rect x="50" y="80" width="1100" height="600" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="18">Main Function Flow</text>
+  <text x="70" y="150" font-size="14">1. Initialize sample vector</text>
+  <text x="70" y="180" font-size="14">2. Compute L1, L2, L3, and Infinity norms</text>
+  <text x="70" y="210" font-size="14">3. Output results to console</text>
+</svg>

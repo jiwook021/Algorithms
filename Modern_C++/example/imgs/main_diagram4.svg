@@ -1,0 +1,13 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">4. Heap Structure Visualization</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black"/>
+  <circle cx="600" cy="200" r="30" fill="#a0a0a0"/>
+  <text x="590" y="205" font-size="16" fill="black">Root</text>
+  <circle cx="400" cy="350" r="30" fill="#a0a0a0"/>
+  <circle cx="800" cy="350" r="30" fill="#a0a0a0"/>
+  <text x="390" y="355" font-size="16" fill="black">Left</text>
+  <text x="790" y="355" font-size="16" fill="black">Right</text>
+  <line x1="600" y1="230" x2="400" y2="320" stroke="black"/>
+  <line x1="600" y1="230" x2="800" y2="320" stroke="black"/>
+</svg>

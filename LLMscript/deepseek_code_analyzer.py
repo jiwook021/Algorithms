@@ -13,8 +13,7 @@ The line-by-line explanation is designed to be extremely comprehensive and acces
 to all levels of programmers, including beginners.
 
 Usage:
-  python3 deepseek_code_analyzer.py --dir /path/to/code --model deepseek-coder-v2
-  python3 deepseek_code_analyzer.py --dir /AI/MachineLearning/DeepLearning/Yolo --model deepseek-coder-v2
+  python3 deepseek_code_analyzer.py --dir ../AI/MachineLearning/Deep_learning/Pytorch --model deepseek-coder
 
 """
 
@@ -195,7 +194,7 @@ def chat_with_deepseek(messages, model_name, max_retries=5, timeout=60):
     data = {
         "model": model_name,
         "messages": messages,
-        "max_tokens": 4096,
+        "max_tokens": 8192,
         "temperature": 0.2
     }
     

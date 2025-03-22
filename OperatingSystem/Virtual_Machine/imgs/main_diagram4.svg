@@ -1,0 +1,17 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">4. Exception Handling</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="20" fill="black">Exception Types</text>
+  <rect x="100" y="130" width="1000" height="600" fill="#e0e0e0" stroke="black"/>
+  <text x="120" y="170" font-size="18" fill="black">StackOverflowException</text>
+  <rect x="150" y="190" width="800" height="50" fill="#d0d0d0" stroke="black"/>
+  <text x="120" y="270" font-size="18" fill="black">StackUnderflowException</text>
+  <rect x="150" y="290" width="800" height="50" fill="#d0d0d0" stroke="black"/>
+  <text x="120" y="370" font-size="18" fill="black">HeapAllocationException</text>
+  <rect x="150" y="390" width="800" height="50" fill="#d0d0d0" stroke="black"/>
+  <text x="120" y="470" font-size="18" fill="black">InvalidInstructionException</text>
+  <rect x="150" y="490" width="800" height="50" fill="#d0d0d0" stroke="black"/>
+  <text x="120" y="570" font-size="18" fill="black">DivisionByZeroException</text>
+  <rect x="150" y="590" width="800" height="50" fill="#d0d0d0" stroke="black"/>
+</svg>

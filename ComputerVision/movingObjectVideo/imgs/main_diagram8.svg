@@ -1,0 +1,9 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">8. Output Visualization</text>
+  <rect x="50" y="70" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="100" font-size="18">Motion Detection Output</text>
+  <rect x="70" y="120" width="1060" height="630" fill="#e0e0e0" stroke="#000000"/>
+  <text x="90" y="150" font-size="16">- motionMask: Binary mask of motion areas</text>
+  <text x="90" y="180" font-size="16">- visualization: Annotated image with motion vectors</text>
+</svg>

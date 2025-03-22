@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow / State Transitions</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="100" font-size="20" fill="black">1. Input Data: Map, Commands</text>
+  <text x="70" y="130" font-size="20" fill="black">2. Snake Position Updates</text>
+  <text x="70" y="160" font-size="20" fill="black">3. Visit Matrix Updates</text>
+  <text x="70" y="190" font-size="20" fill="black">4. Queue Updates (Commands, Snake Body)</text>
+  <text x="70" y="220" font-size="20" fill="black">5. Output: Total Time Elapsed</text>
+</svg>

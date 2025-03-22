@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow / State Transitions</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="140" font-size="20" fill="black">1. Initialize vector and array with size 1000</text>
+  <text x="70" y="180" font-size="20" fill="black">2. Fill containers with values 0 to 999</text>
+  <text x="70" y="220" font-size="20" fill="black">3. Attempt to access index 1010 (out of range)</text>
+  <text x="70" y="260" font-size="20" fill="black">4. [] operator: No exception, undefined behavior</text>
+  <text x="70" y="300" font-size="20" fill="black">5. .at() method: Throws std::out_of_range exception</text>
+  <text x="70" y="340" font-size="20" fill="black">6. Catch exception and output error message</text>
+</svg>

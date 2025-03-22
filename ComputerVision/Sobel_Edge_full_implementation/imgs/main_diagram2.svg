@@ -1,0 +1,15 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">2. Key Algorithms or Processes</text>
+  <rect x="50" y="70" width="1100" height="700" fill="none" stroke="black" stroke-width="2"/>
+  <text x="100" y="120" font-size="20">BGR to Gray Conversion</text>
+  <rect x="100" y="140" width="400" height="100" fill="lightblue"/>
+  <text x="120" y="180" font-size="16">Pixel-wise luminance calculation</text>
+  <text x="120" y="200" font-size="16">Formula: 0.299R + 0.587G + 0.114B</text>
+  <text x="100" y="280" font-size="20">Sobel Edge Detection</text>
+  <rect x="100" y="300" width="400" height="100" fill="lightgreen"/>
+  <text x="120" y="340" font-size="16">Gradient calculation in X and Y directions</text>
+  <text x="100" y="440" font-size="20">Thresholding</text>
+  <rect x="100" y="460" width="400" height="100" fill="lightyellow"/>
+  <text x="120" y="500" font-size="16">Binary thresholding at 100</text>
+</svg>

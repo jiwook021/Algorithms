@@ -1,0 +1,15 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="80" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="18">1. Read Image</text>
+  <text x="70" y="160" font-size="18">2. Check Image Validity</text>
+  <text x="70" y="200" font-size="18">3. Print Image Properties</text>
+  <text x="70" y="240" font-size="18">4. Access/Modify Pixel</text>
+  <text x="70" y="280" font-size="18">5. Create ROI</text>
+  <text x="70" y="320" font-size="18">6. Convert to Grayscale</text>
+  <text x="70" y="360" font-size="18">7. Save Images</text>
+  <text x="70" y="400" font-size="18">8. Display Images</text>
+  <text x="70" y="440" font-size="18">9. Wait for Key Press</text>
+  <text x="70" y="480" font-size="18">10. Exit Program</text>
+</svg>

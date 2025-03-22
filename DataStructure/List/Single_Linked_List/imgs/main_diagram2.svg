@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms / Processes</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="150" font-size="20" fill="black">- List Initialization: Allocates memory for list and sets head/tail to NULL.</text>
+  <text x="70" y="200" font-size="20" fill="black">- Insert Front: Adds a node at the beginning of the list.</text>
+  <text x="70" y="250" font-size="20" fill="black">- Insert Back: Adds a node at the end of the list.</text>
+  <text x="70" y="300" font-size="20" fill="black">- List Reversal: Reverses the order of nodes in the list.</text>
+  <text x="70" y="350" font-size="20" fill="black">- Memory Deallocation: Frees all nodes and the list itself.</text>
+</svg>

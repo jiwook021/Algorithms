@@ -1,0 +1,16 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">3. Data Flow / State Transitions</text>
+  <rect x="50" y="80" width="1100" height="600" stroke="black" stroke-width="2" fill="none"/>
+  <text x="70" y="120" font-size="20">Data Flow</text>
+  <rect x="70" y="130" width="200" height="50" fill="lightpink"/>
+  <text x="80" y="160" font-size="16">Tuple Creation</text>
+  <rect x="70" y="200" width="200" height="50" fill="lightpink"/>
+  <text x="80" y="230" font-size="16">Tuple Decomposition</text>
+  <rect x="70" y="270" width="200" height="50" fill="lightpink"/>
+  <text x="80" y="300" font-size="16">List of Tuples</text>
+  <rect x="70" y="340" width="200" height="50" fill="lightpink"/>
+  <text x="80" y="370" font-size="16">Iteration</text>
+  <rect x="70" y="410" width="200" height="50" fill="lightpink"/>
+  <text x="80" y="440" font-size="16">Function Application</text>
+</svg>

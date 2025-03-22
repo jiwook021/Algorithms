@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">1. Overall Architecture</text>
+  <rect x="50" y="70" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="100" font-size="18">MotionDetector Class</text>
+  <rect x="70" y="120" width="1060" height="630" fill="#e0e0e0" stroke="#000000"/>
+  <text x="90" y="150" font-size="16">- Constructor: Initializes parameters</text>
+  <text x="90" y="180" font-size="16">- calculateVelocities: Computes velocity vectors</text>
+  <text x="90" y="210" font-size="16">- detectMotion: Main workflow for motion detection</text>
+  <text x="90" y="240" font-size="16">- Private Members: nFeatures, matchingThreshold, minInliers, detectorMutex</text>
+</svg>

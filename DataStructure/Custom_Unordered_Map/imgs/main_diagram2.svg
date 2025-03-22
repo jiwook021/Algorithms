@@ -1,0 +1,17 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms and Processes</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="100" y="150" font-size="20" fill="black">Hash Function and Bucket Indexing</text>
+  <rect x="100" y="180" width="1000" height="100" fill="#d3f8d3" stroke="black"/>
+  <text x="120" y="230" font-size="18" fill="black">- getBucketIndex: Computes hash and maps to bucket</text>
+  <text x="120" y="260" font-size="18" fill="black">- Uses std::hash for hashing</text>
+  <text x="100" y="310" font-size="20" fill="black">Element Search</text>
+  <rect x="100" y="340" width="1000" height="100" fill="#d3f8d3" stroke="black"/>
+  <text x="120" y="390" font-size="18" fill="black">- findInBucket: Searches for key in a bucket</text>
+  <text x="120" y="420" font-size="18" fill="black">- Linear search within the bucket</text>
+  <text x="100" y="470" font-size="20" fill="black">Rehashing</text>
+  <rect x="100" y="500" width="1000" height="100" fill="#d3f8d3" stroke="black"/>
+  <text x="120" y="550" font-size="18" fill="black">- rehashImpl: Rehashes elements into new buckets</text>
+  <text x="120" y="580" font-size="18" fill="black">- Triggered when load factor exceeds max_load_factor_value</text>
+</svg>

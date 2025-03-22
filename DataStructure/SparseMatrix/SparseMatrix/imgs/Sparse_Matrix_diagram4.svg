@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">4. Memory Allocation</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="100" font-size="20" fill="black">Memory Allocation in Matrix Initialization</text>
+  <text x="70" y="130" font-size="16" fill="black">- Allocate memory for width linked lists</text>
+  <text x="70" y="160" font-size="16" fill="black">- Allocate memory for height linked lists</text>
+  <text x="70" y="220" font-size="20" fill="black">Memory Allocation in Matrix Insertion</text>
+  <text x="70" y="250" font-size="16" fill="black">- Allocate memory for new node</text>
+</svg>

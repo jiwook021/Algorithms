@@ -1,0 +1,13 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">8. Output Clamping</text>
+  <rect x="50" y="80" width="1100" height="600" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="20">Output Limits</text>
+  <rect x="70" y="140" width="1060" height="100" fill="#e0e0e0" stroke="#000000"/>
+  <text x="80" y="180" font-size="16">- outputMin: Minimum allowed output value</text>
+  <text x="80" y="210" font-size="16">- outputMax: Maximum allowed output value</text>
+  <text x="70" y="280" font-size="20">Clamping Logic</text>
+  <rect x="70" y="300" width="1060" height="100" fill="#e0e0e0" stroke="#000000"/>
+  <text x="80" y="340" font-size="16">- Ensures output stays within specified bounds</text>
+  <text x="80" y="370" font-size="16">- Prevents system damage or instability</text>
+</svg>

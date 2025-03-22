@@ -1,0 +1,8 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">4. Custom inRange Function</text>
+  <rect x="50" y="80" width="1100" height="700" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="120" font-size="20" fill="black">- Input: HSV Image, Lower/Upper HSV bounds</text>
+  <text x="70" y="160" font-size="20" fill="black">- Output: Binary Mask</text>
+  <text x="70" y="200" font-size="20" fill="black">- Process: Iterate over pixels, check HSV range</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow and State Transitions</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="100" y="150" font-size="20" fill="black">Insertion Flow</text>
+  <rect x="100" y="180" width="1000" height="100" fill="#d3f8d3" stroke="black"/>
+  <text x="120" y="230" font-size="18" fill="black">1. Compute hash for key</text>
+  <text x="120" y="260" font-size="18" fill="black">2. Find bucket using getBucketIndex</text>
+  <text x="120" y="290" font-size="18" fill="black">3. Insert KeyValuePair into bucket</text>
+  <text x="100" y="340" font-size="20" fill="black">Search Flow</text>
+  <rect x="100" y="370" width="1000" height="100" fill="#d3f8d3" stroke="black"/>
+  <text x="120" y="420" font-size="18" fill="black">1. Compute hash for key</text>
+  <text x="120" y="450" font-size="18" fill="black">2. Find bucket using getBucketIndex</text>
+  <text x="120" y="480" font-size="18" fill="black">3. Search for key in bucket using findInBucket</text>
+  <text x="100" y="530" font-size="20" fill="black">Rehashing Flow</text>
+  <rect x="100" y="560" width="1000" height="100" fill="#d3f8d3" stroke="black"/>
+  <text x="120" y="610" font-size="18" fill="black">1. Check load factor</text>
+  <text x="120" y="640" font-size="18" fill="black">2. Create new bucket array</text>
+  <text x="120" y="670" font-size="18" fill="black">3. Rehash all elements into new buckets</text>
+</svg>

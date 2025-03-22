@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">5. Merge Process</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="18" fill="black">1. Merge [10] and [2] into [2, 10]</text>
+  <text x="70" y="170" font-size="18" fill="black">2. Merge [3] and [4] into [3, 4]</text>
+  <text x="70" y="200" font-size="18" fill="black">3. Merge [2, 10] and [3, 4] into [2, 3, 4, 10]</text>
+  <text x="70" y="230" font-size="18" fill="black">4. Merge [5] and [6] into [5, 6]</text>
+  <text x="70" y="260" font-size="18" fill="black">5. Merge [7] and [3] into [3, 7]</text>
+  <text x="70" y="290" font-size="18" fill="black">6. Merge [5, 6] and [3, 7] into [3, 5, 6, 7]</text>
+  <text x="70" y="320" font-size="18" fill="black">7. Merge [2, 3, 4, 10] and [3, 5, 6, 7] into [2, 3, 3, 4, 5, 6, 7, 10]</text>
+</svg>

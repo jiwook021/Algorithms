@@ -1,0 +1,16 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow / State Transitions</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="20" fill="black">1. Input Array: [1, 4, 2, 10, 2, 3, 1, 0, 20]</text>
+  <text x="70" y="180" font-size="20" fill="black">2. k = 4</text>
+  <text x="70" y="220" font-size="20" fill="black">3. Initial Window Sum: 17</text>
+  <text x="70" y="260" font-size="20" fill="black">4. Sliding Window Updates:</text>
+  <text x="90" y="300" font-size="18" fill="black">- Window 1: [1, 4, 2, 10] → Sum = 17</text>
+  <text x="90" y="340" font-size="18" fill="black">- Window 2: [4, 2, 10, 2] → Sum = 18</text>
+  <text x="90" y="380" font-size="18" fill="black">- Window 3: [2, 10, 2, 3] → Sum = 17</text>
+  <text x="90" y="420" font-size="18" fill="black">- Window 4: [10, 2, 3, 1] → Sum = 16</text>
+  <text x="90" y="460" font-size="18" fill="black">- Window 5: [2, 3, 1, 0] → Sum = 6</text>
+  <text x="90" y="500" font-size="18" fill="black">- Window 6: [3, 1, 0, 20] → Sum = 24</text>
+  <text x="70" y="540" font-size="20" fill="black">5. Max Sum: 24</text>
+</svg>

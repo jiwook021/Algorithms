@@ -1,0 +1,9 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#f0f0f0"/>
+    <text x="50" y="50" font-size="24" font-weight="bold">8. Resource Management</text>
+    <rect x="50" y="70" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+    <text x="70" y="110" font-size="18">1. GPU Utilization</text>
+    <text x="70" y="140" font-size="18">2. Batch Size Optimization</text>
+    <text x="70" y="170" font-size="18">3. Data Loading Workers</text>
+    <text x="70" y="200" font-size="18">4. Memory Management</text>
+</svg>

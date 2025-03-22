@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" fill="black">6. Deletion Process</text>
+  <rect x="50" y="70" width="1100" height="700" stroke="black" fill="none"/>
+  <text x="100" y="120" font-size="20" fill="black">Step 1: Find node to delete</text>
+  <text x="100" y="150" font-size="16" fill="black">Traverse tree recursively</text>
+  <text x="100" y="180" font-size="20" fill="black">Step 2: Handle node with one child</text>
+  <text x="100" y="210" font-size="16" fill="black">Replace node with child</text>
+  <text x="100" y="240" font-size="20" fill="black">Step 3: Handle node with two children</text>
+  <text x="100" y="270" font-size="16" fill="black">Find minimum in right subtree</text>
+  <text x="100" y="300" font-size="16" fill="black">Replace node with minimum</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">5. VideoWriter Object Workflow</text>
+  <rect x="50" y="80" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="20">1. Create VideoWriter object</text>
+  <text x="70" y="160" font-size="20">2. Write processed frames to output video</text>
+  <text x="70" y="200" font-size="20">3. Release resources after writing</text>
+</svg>

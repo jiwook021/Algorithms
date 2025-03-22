@@ -1,0 +1,15 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms / Processes</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="150" font-size="20" fill="black">- Binary Search Tree (BST) Insertion:</text>
+  <text x="90" y="200" font-size="18" fill="black">1. Traverse tree to find correct position</text>
+  <text x="90" y="250" font-size="18" fill="black">2. Insert new node as left/right child</text>
+  <text x="70" y="300" font-size="20" fill="black">- BFS Traversal:</text>
+  <text x="90" y="350" font-size="18" fill="black">1. Use a queue to track nodes</text>
+  <text x="90" y="400" font-size="18" fill="black">2. Process nodes level by level</text>
+  <text x="70" y="450" font-size="20" fill="black">- DFS Traversal (In-order):</text>
+  <text x="90" y="500" font-size="18" fill="black">1. Traverse left subtree</text>
+  <text x="90" y="550" font-size="18" fill="black">2. Visit root</text>
+  <text x="90" y="600" font-size="18" fill="black">3. Traverse right subtree</text>
+</svg>

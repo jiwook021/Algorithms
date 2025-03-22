@@ -1,0 +1,7 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#f0f0f0"/>
+    <text x="50" y="50" font-size="24" font-family="Arial" fill="black">8. File System Interaction</text>
+    <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black" stroke-width="2"/>
+    <text x="70" y="110" font-size="18" font-family="Arial" fill="black">- Namespace: std::filesystem</text>
+    <text x="70" y="140" font-size="18" font-family="Arial" fill="black">- Operations: File reading, directory traversal</text>
+</svg>

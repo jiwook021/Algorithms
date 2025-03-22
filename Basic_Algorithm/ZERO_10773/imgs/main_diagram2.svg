@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms</text>
+  <rect x="100" y="100" width="1000" height="600" fill="white" stroke="black"/>
+  <text x="150" y="150" font-size="20" fill="black">Algorithm Overview</text>
+  <rect x="150" y="200" width="900" height="100" fill="#d3d3d3" stroke="black"/>
+  <text x="170" y="260" font-size="18" fill="black">Calculate Total Days</text>
+  <rect x="150" y="350" width="900" height="100" fill="#d3d3d3" stroke="black"/>
+  <text x="170" y="410" font-size="18" fill="black">Queue Operations</text>
+  <rect x="150" y="500" width="900" height="100" fill="#d3d3d3" stroke="black"/>
+  <text x="170" y="560" font-size="18" fill="black">Push and Pop Elements</text>
+</svg>

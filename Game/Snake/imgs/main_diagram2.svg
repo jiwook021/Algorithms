@@ -1,0 +1,13 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="20" fill="black">A* Pathfinding Algorithm</text>
+  <rect x="70" y="130" width="1060" height="600" fill="#e0e0e0" stroke="black"/>
+  <text x="90" y="170" font-size="18" fill="black">Steps:</text>
+  <text x="110" y="210" font-size="16" fill="black">1. Initialize Open and Closed Sets</text>
+  <text x="110" y="240" font-size="16" fill="black">2. Calculate G, H, and F Costs</text>
+  <text x="110" y="270" font-size="16" fill="black">3. Select Node with Lowest F Cost</text>
+  <text x="110" y="300" font-size="16" fill="black">4. Check if Goal is Reached</text>
+  <text x="110" y="330" font-size="16" fill="black">5. Update Neighbors and Repeat</text>
+</svg>

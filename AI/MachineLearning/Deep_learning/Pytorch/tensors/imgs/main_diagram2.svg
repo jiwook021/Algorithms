@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">2. Key Algorithms</text>
+  <text x="50" y="100" font-size="18">Tensor Creation and Initialization</text>
+  <rect x="50" y="120" width="1100" height="600" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="160" font-size="16">1. torch.tensor(data_list)</text>
+  <text x="70" y="200" font-size="16">2. torch.from_numpy(np_array)</text>
+  <text x="70" y="240" font-size="16">3. torch.zeros(2, 3)</text>
+  <text x="70" y="280" font-size="16">4. torch.ones(2, 3)</text>
+  <text x="70" y="320" font-size="16">5. torch.rand(2, 3)</text>
+  <text x="70" y="360" font-size="16">6. torch.randn(2, 3)</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">6. Function Dependencies</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="20" fill="black">my_strlen()</text>
+  <text x="70" y="180" font-size="16" fill="black">- Used by my_strrev() and my_strcat()</text>
+  <text x="70" y="220" font-size="20" fill="black">my_strcpy()</text>
+  <text x="70" y="260" font-size="16" fill="black">- Used by my_strrev()</text>
+  <text x="70" y="300" font-size="20" fill="black">my_strrev()</text>
+  <text x="70" y="340" font-size="16" fill="black">- Depends on my_strlen() and my_strcpy()</text>
+  <text x="70" y="380" font-size="20" fill="black">my_strcat()</text>
+  <text x="70" y="420" font-size="16" fill="black">- Depends on my_strlen()</text>
+</svg>

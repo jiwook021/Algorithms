@@ -1,0 +1,9 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" fill="black">8. Memory Management</text>
+  <rect x="50" y="70" width="1100" height="700" stroke="black" fill="none"/>
+  <text x="100" y="120" font-size="20" fill="black">Memory Allocation</text>
+  <text x="100" y="150" font-size="16" fill="black">malloc() for tree and nodes</text>
+  <text x="100" y="180" font-size="20" fill="black">Memory Deallocation</text>
+  <text x="100" y="210" font-size="16" fill="black">free() during node deletion</text>
+</svg>

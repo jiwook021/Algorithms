@@ -1,0 +1,19 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow / State Transitions</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="120" font-size="18" fill="black">Input Image (BGR) → HSV Image → Mask → Processed Mask → Contours → Bounding Boxes</text>
+  <line x1="70" y1="140" x2="1100" y2="140" stroke="black" stroke-width="2"/>
+  <circle cx="150" cy="140" r="10" fill="blue"/>
+  <circle cx="300" cy="140" r="10" fill="green"/>
+  <circle cx="450" cy="140" r="10" fill="red"/>
+  <circle cx="600" cy="140" r="10" fill="purple"/>
+  <circle cx="750" cy="140" r="10" fill="orange"/>
+  <circle cx="900" cy="140" r="10" fill="brown"/>
+  <text x="130" y="180" font-size="18" fill="black">BGR</text>
+  <text x="280" y="180" font-size="18" fill="black">HSV</text>
+  <text x="430" y="180" font-size="18" fill="black">Mask</text>
+  <text x="580" y="180" font-size="18" fill="black">Processed</text>
+  <text x="730" y="180" font-size="18" fill="black">Contours</text>
+  <text x="880" y="180" font-size="18" fill="black">Boxes</text>
+</svg>

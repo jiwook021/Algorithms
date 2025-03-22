@@ -1,0 +1,13 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="20" fill="black">Queue Initialization</text>
+  <text x="70" y="180" font-size="20" fill="black">Push Operation</text>
+  <text x="70" y="220" font-size="20" fill="black">Pop Operation</text>
+  <text x="70" y="260" font-size="20" fill="black">Free Queue</text>
+  <text x="70" y="300" font-size="20" fill="black">Main Function</text>
+  <line x1="70" y1="320" x2="1100" y2="320" stroke="black"/>
+  <text x="70" y="360" font-size="20" fill="black">Queue Structure</text>
+  <text x="70" y="400" font-size="20" fill="black">Node Structure</text>
+</svg>

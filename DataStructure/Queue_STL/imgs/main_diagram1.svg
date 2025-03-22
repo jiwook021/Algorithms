@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="80" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="120" font-size="20" fill="black">- Includes necessary headers</text>
+  <text x="70" y="150" font-size="20" fill="black">- Defines print functions for queues and priority queues</text>
+  <text x="70" y="180" font-size="20" fill="black">- Main function initializes queues and priority queues</text>
+  <text x="70" y="210" font-size="20" fill="black">- Populates queues with random values</text>
+  <text x="70" y="240" font-size="20" fill="black">- Prints queue and priority queue contents</text>
+  <text x="70" y="270" font-size="20" fill="black">- Demonstrates swapping and emplace operations</text>
+</svg>

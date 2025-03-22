@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">5. Queue Initialization</text>
+  <rect x="100" y="100" width="400" height="200" fill="#c0c0c0" stroke="black"/>
+  <text x="150" y="150" font-size="18" fill="black">Queue Constructor</text>
+  <text x="120" y="200" font-size="14" fill="black">Initializes front and rear</text>
+  <text x="120" y="230" font-size="14" fill="black">to nullptr</text>
+  <rect x="600" y="100" width="400" height="200" fill="#c0c0c0" stroke="black"/>
+  <text x="650" y="150" font-size="18" fill="black">QisEmpty()</text>
+  <text x="620" y="200" font-size="14" fill="black">Checks if front and rear</text>
+  <text x="620" y="230" font-size="14" fill="black">are nullptr</text>
+</svg>

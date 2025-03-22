@@ -1,0 +1,9 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">6. Output Formatting</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="100" y="150" font-size="20" fill="black">1. Precision</text>
+  <text x="100" y="200" font-size="16" fill="black">- Outputs temperature with 1 decimal place</text>
+  <text x="100" y="250" font-size="20" fill="black">2. Unit Display</text>
+  <text x="100" y="300" font-size="16" fill="black">- Appends 'F' or 'C' to the result</text>
+</svg>

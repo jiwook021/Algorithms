@@ -1,0 +1,8 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">6. my_strrev Function</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="100" font-size="18" fill="black">- Input: String (char*).</text>
+  <text x="70" y="130" font-size="18" fill="black">- Output: Reversed string.</text>
+  <text x="70" y="160" font-size="18" fill="black">- Process: Uses a temporary buffer to reverse the string.</text>
+</svg>

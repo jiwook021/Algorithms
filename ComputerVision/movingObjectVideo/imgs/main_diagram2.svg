@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">2. Key Algorithms</text>
+  <rect x="50" y="70" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="100" font-size="18">calculateVelocities Algorithm</text>
+  <rect x="70" y="120" width="1060" height="630" fill="#e0e0e0" stroke="#000000"/>
+  <text x="90" y="150" font-size="16">1. Validate input (timeInterval, points1, points2)</text>
+  <text x="90" y="180" font-size="16">2. Calculate displacement vectors</text>
+  <text x="90" y="210" font-size="16">3. Compute velocity vectors (displacement / time)</text>
+  <text x="90" y="240" font-size="16">4. Calculate velocity magnitude</text>
+  <text x="90" y="270" font-size="16">5. Store velocity magnitude and direction</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms or Processes</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="100" font-size="20" fill="black">Key Processes:</text>
+  <text x="70" y="130" font-size="16" fill="black">1. Adding a Videotape: User inputs details, stored in vector</text>
+  <text x="70" y="160" font-size="16" fill="black">2. Displaying Videotapes: Iterate through vector and print details</text>
+  <text x="70" y="190" font-size="16" fill="black">3. Infinite Loop: Continuously waits for user input</text>
+</svg>

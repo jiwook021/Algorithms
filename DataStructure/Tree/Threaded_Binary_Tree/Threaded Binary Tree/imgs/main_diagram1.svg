@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="110" font-size="18" fill="black">- Program starts in main()</text>
+  <text x="70" y="140" font-size="18" fill="black">- User inputs numbers to insert into a threaded binary tree</text>
+  <text x="70" y="170" font-size="18" fill="black">- insert() function handles insertion logic</text>
+  <text x="70" y="200" font-size="18" fill="black">- inprint() function prints the tree in-order</text>
+  <text x="70" y="230" font-size="18" fill="black">- in_succ() function finds the in-order successor</text>
+</svg>

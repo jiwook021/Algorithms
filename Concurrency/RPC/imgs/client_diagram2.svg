@@ -1,0 +1,17 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms / Processes</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="120" font-size="20" fill="black">Socket Creation</text>
+  <rect x="70" y="140" width="1060" height="100" fill="#e0e0ff" stroke="black" stroke-width="1"/>
+  <text x="80" y="170" font-size="16" fill="black">- Create TCP socket using IPv4 (AF_INET)</text>
+  <text x="80" y="200" font-size="16" fill="black">- Check for socket creation failure</text>
+  <text x="70" y="250" font-size="20" fill="black">Server Binding</text>
+  <rect x="70" y="270" width="1060" height="100" fill="#e0ffe0" stroke="black" stroke-width="1"/>
+  <text x="80" y="300" font-size="16" fill="black">- Set up server address structure</text>
+  <text x="80" y="330" font-size="16" fill="black">- Bind socket to address and port</text>
+  <text x="70" y="380" font-size="20" fill="black">Function Registration</text>
+  <rect x="70" y="400" width="1060" height="100" fill="#ffe0e0" stroke="black" stroke-width="1"/>
+  <text x="80" y="430" font-size="16" fill="black">- Register functions (e.g., "add")</text>
+  <text x="80" y="460" font-size="16" fill="black">- Map function names to implementations</text>
+</svg>

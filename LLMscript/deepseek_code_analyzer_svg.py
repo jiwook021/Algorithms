@@ -6,7 +6,7 @@ This script generates multiple SVG diagrams that explain the logic and functiona
 using DeepSeek's API. Each code file will have multiple diagrams saved in an 'imgs' directory.
 
 Usage:
-  python3 deepseek_svg_generator.py --dir /path/to/code --model deepseek-coder --throttle 5
+  python3 deepseek_code_analyzer_svg.py --dir ../AI/MachineLearning/Deep_learning/Pytorch --model deepseek-coder --throttle 5
 """
 
 import os
@@ -58,7 +58,7 @@ class DeepSeekClient:
             "Authorization": f"Bearer {api_key}"
         }
     
-    def generate_completion(self, model, messages, max_tokens=4096, temperature=0.2):
+    def generate_completion(self, model, messages, max_tokens=8192, temperature=0.2):
         """Send a request to DeepSeek API and return the response"""
         payload = {
             "model": model,
@@ -174,7 +174,7 @@ def request_svg_diagrams(prompt, model_name, max_retries=5):
             messages = [{"role": "user", "content": prompt}]
             response = client.generate_completion(
                 model=model_name,
-                max_tokens=4096,  # Need more tokens for multiple SVGs
+                max_tokens=8192,  # Need more tokens for multiple SVGs
                 temperature=0.2,
                 messages=messages
             )

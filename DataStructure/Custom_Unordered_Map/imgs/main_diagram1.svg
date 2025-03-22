@@ -1,0 +1,20 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture of UnorderedMap</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="100" y="150" font-size="20" fill="black">UnorderedMap Class</text>
+  <rect x="100" y="180" width="1000" height="100" fill="#d3f8d3" stroke="black"/>
+  <text x="120" y="230" font-size="18" fill="black">- KeyValuePair Structure</text>
+  <text x="120" y="260" font-size="18" fill="black">- Bucket (std::list of KeyValuePair)</text>
+  <text x="120" y="290" font-size="18" fill="black">- Vector of Buckets (Hash Table)</text>
+  <text x="120" y="320" font-size="18" fill="black">- Hash Function Object</text>
+  <text x="120" y="350" font-size="18" fill="black">- Element Count and Load Factor</text>
+  <text x="100" y="400" font-size="20" fill="black">Public Methods</text>
+  <rect x="100" y="430" width="1000" height="100" fill="#d3f8d3" stroke="black"/>
+  <text x="120" y="480" font-size="18" fill="black">- getBucketIndex</text>
+  <text x="120" y="510" font-size="18" fill="black">- findInBucket</text>
+  <text x="120" y="540" font-size="18" fill="black">- rehashImpl</text>
+  <text x="100" y="590" font-size="20" fill="black">Iterators</text>
+  <rect x="100" y="620" width="1000" height="50" fill="#d3f8d3" stroke="black"/>
+  <text x="120" y="650" font-size="18" fill="black">- iterator and const_iterator</text>
+</svg>

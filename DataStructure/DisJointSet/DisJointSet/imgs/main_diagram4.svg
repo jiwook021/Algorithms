@@ -1,0 +1,16 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">4. Function Call Hierarchy</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="140" font-size="20" fill="black">main</text>
+  <rect x="70" y="160" width="200" height="50" fill="#d3d3d3" stroke="black" stroke-width="1"/>
+  <text x="80" y="190" font-size="16" fill="black">Calls unionParent</text>
+  <rect x="70" y="220" width="200" height="50" fill="#d3d3d3" stroke="black" stroke-width="1"/>
+  <text x="80" y="250" font-size="16" fill="black">Calls findParent</text>
+  <text x="70" y="300" font-size="20" fill="black">unionParent</text>
+  <rect x="70" y="320" width="200" height="50" fill="#d3d3d3" stroke="black" stroke-width="1"/>
+  <text x="80" y="350" font-size="16" fill="black">Calls getParent</text>
+  <text x="70" y="400" font-size="20" fill="black">findParent</text>
+  <rect x="70" y="420" width="200" height="50" fill="#d3d3d3" stroke="black" stroke-width="1"/>
+  <text x="80" y="450" font-size="16" fill="black">Calls getParent</text>
+</svg>

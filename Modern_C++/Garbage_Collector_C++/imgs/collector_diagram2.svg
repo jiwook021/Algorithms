@@ -1,0 +1,20 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms / Processes</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="20" fill="black">Random Operation Selection</text>
+  <rect x="100" y="160" width="200" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="110" y="190" font-size="16" fill="black">Generate Random Number</text>
+  <rect x="100" y="220" width="200" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="110" y="250" font-size="16" fill="black">Select Operation</text>
+  <rect x="400" y="160" width="200" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="410" y="190" font-size="16" fill="black">allocateAtom</text>
+  <rect x="400" y="220" width="200" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="410" y="250" font-size="16" fill="black">allocateList</text>
+  <rect x="400" y="280" width="200" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="410" y="310" font-size="16" fill="black">updateHead</text>
+  <rect x="400" y="340" width="200" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="410" y="370" font-size="16" fill="black">updateTail</text>
+  <rect x="400" y="400" width="200" height="50" fill="#d3d3d3" stroke="black"/>
+  <text x="410" y="430" font-size="16" fill="black">deallocate</text>
+</svg>

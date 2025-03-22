@@ -1,0 +1,9 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">8. Memory Complexity</text>
+  <text x="50" y="100" font-size="18">Memory Usage in Tensor Storage</text>
+  <rect x="50" y="120" width="1100" height="600" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="160" font-size="16">1. Tensor Storage: O(n)</text>
+  <text x="70" y="200" font-size="16">2. Zero Memory Copy (CPU): O(1)</text>
+  <text x="70" y="240" font-size="16">3. Memory Allocation: O(n)</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">3. Data Flow / State Transitions</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="110" font-size="18" fill="black">- Data Flow:</text>
+  <text x="90" y="140" font-size="16" fill="black">1. User input → insert() → tree structure</text>
+  <text x="90" y="170" font-size="16" fill="black">2. Tree structure → inprint() → console output</text>
+  <text x="70" y="210" font-size="18" fill="black">- State Transitions:</text>
+  <text x="90" y="240" font-size="16" fill="black">1. Empty tree → Insert first node → Root node</text>
+  <text x="90" y="270" font-size="16" fill="black">2. Non-empty tree → Insert new node → Adjust threads</text>
+</svg>

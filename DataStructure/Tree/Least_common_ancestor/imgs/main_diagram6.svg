@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">6. Query Processing</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="100" y="150" font-size="20" fill="black">Query Handling</text>
+  <text x="100" y="200" font-size="16" fill="black">- Read node pairs (node1, node2)</text>
+  <text x="100" y="230" font-size="16" fill="black">- Map nodes to path indices</text>
+  <text x="100" y="260" font-size="16" fill="black">- Query segment tree for minimum depth</text>
+  <text x="100" y="290" font-size="16" fill="black">- Output result (ans_node)</text>
+</svg>

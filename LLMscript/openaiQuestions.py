@@ -67,7 +67,7 @@ def get_answer_from_openai(client, question, model="gpt-4-turbo"):
                 {"role": "system", "content": "You are a helpful assistant that provides detailed, accurate, and educational answers to questions. Make it fun"},
                 {"role": "user", "content": question}
             ],
-            temperature=0.7,
+            temperature=0.2,
             max_tokens=1500
         )
         return response.choices[0].message.content

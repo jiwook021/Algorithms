@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">3. Data Flow / State Transitions</text>
+  <rect x="50" y="80" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="20">1. Input: Video file (video.mp4)</text>
+  <text x="70" y="160" font-size="20">2. State: VideoCapture object reads frames</text>
+  <text x="70" y="200" font-size="20">3. State: Frame converted to grayscale</text>
+  <text x="70" y="240" font-size="20">4. State: Processed frame written to output video</text>
+  <text x="70" y="280" font-size="20">5. Output: Processed video (output_video.avi)</text>
+</svg>

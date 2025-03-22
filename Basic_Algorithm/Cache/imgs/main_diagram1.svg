@@ -1,0 +1,16 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture of LRUCache</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="100" y="150" font-size="20" fill="black">LRUCache Class</text>
+  <rect x="100" y="180" width="1000" height="100" fill="#e0e0e0" stroke="black"/>
+  <text x="120" y="230" font-size="16" fill="black">- m_capacity: size_t</text>
+  <text x="120" y="260" font-size="16" fill="black">- m_items: std::list&lt;std::pair&lt;K, V&gt;&gt;</text>
+  <text x="120" y="290" font-size="16" fill="black">- m_cache: std::unordered_map&lt;K, iterator&gt;</text>
+  <text x="100" y="350" font-size="20" fill="black">Methods</text>
+  <rect x="100" y="380" width="1000" height="200" fill="#e0e0e0" stroke="black"/>
+  <text x="120" y="430" font-size="16" fill="black">- LRUCache(size_t capacity)</text>
+  <text x="120" y="460" font-size="16" fill="black">- V get(const K& key)</text>
+  <text x="120" y="490" font-size="16" fill="black">- void put(const K& key, const V& value)</text>
+  <text x="120" y="520" font-size="16" fill="black">- void display()</text>
+</svg>

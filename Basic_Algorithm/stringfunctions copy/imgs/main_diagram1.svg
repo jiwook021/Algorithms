@@ -1,0 +1,19 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="20" fill="black">main()</text>
+  <text x="70" y="180" font-size="16" fill="black">- Initializes str1 and str2</text>
+  <text x="70" y="220" font-size="16" fill="black">- Calls my_strlen, my_strcpy, my_strrev, my_strcmp, my_strcat</text>
+  <text x="70" y="260" font-size="16" fill="black">- Prints results</text>
+  <text x="70" y="300" font-size="20" fill="black">my_strlen()</text>
+  <text x="70" y="340" font-size="16" fill="black">- Calculates string length</text>
+  <text x="70" y="380" font-size="20" fill="black">my_strcpy()</text>
+  <text x="70" y="420" font-size="16" fill="black">- Copies string content</text>
+  <text x="70" y="460" font-size="20" fill="black">my_strrev()</text>
+  <text x="70" y="500" font-size="16" fill="black">- Reverses string</text>
+  <text x="70" y="540" font-size="20" fill="black">my_strcmp()</text>
+  <text x="70" y="580" font-size="16" fill="black">- Compares two strings</text>
+  <text x="70" y="620" font-size="20" fill="black">my_strcat()</text>
+  <text x="70" y="660" font-size="16" fill="black">- Concatenates two strings</text>
+</svg>

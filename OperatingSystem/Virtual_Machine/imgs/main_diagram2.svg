@@ -1,0 +1,17 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="20" fill="black">Stack Operations</text>
+  <rect x="100" y="130" width="1000" height="200" fill="#e0e0e0" stroke="black"/>
+  <text x="120" y="170" font-size="18" fill="black">Push</text>
+  <rect x="150" y="190" width="800" height="50" fill="#d0d0d0" stroke="black"/>
+  <text x="120" y="270" font-size="18" fill="black">Pop</text>
+  <rect x="150" y="290" width="800" height="50" fill="#d0d0d0" stroke="black"/>
+  <text x="70" y="370" font-size="20" fill="black">Heap Operations</text>
+  <rect x="100" y="390" width="1000" height="200" fill="#e0e0e0" stroke="black"/>
+  <text x="120" y="430" font-size="18" fill="black">Allocation</text>
+  <rect x="150" y="450" width="800" height="50" fill="#d0d0d0" stroke="black"/>
+  <text x="120" y="530" font-size="18" fill="black">Deallocation</text>
+  <rect x="150" y="550" width="800" height="50" fill="#d0d0d0" stroke="black"/>
+</svg>

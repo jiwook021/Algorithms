@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">7. Recursive Call Stack</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="18" fill="black">1. mergesort(arr, tmp, 0, 8)</text>
+  <text x="70" y="170" font-size="18" fill="black">2. mergesort(arr, tmp, 0, 4)</text>
+  <text x="70" y="200" font-size="18" fill="black">3. mergesort(arr, tmp, 0, 2)</text>
+  <text x="70" y="230" font-size="18" fill="black">4. mergesort(arr, tmp, 0, 1)</text>
+  <text x="70" y="260" font-size="18" fill="black">5. mergesort(arr, tmp, 2, 2)</text>
+  <text x="70" y="290" font-size="18" fill="black">6. mergesort(arr, tmp, 4, 8)</text>
+  <text x="70" y="320" font-size="18" fill="black">7. mergesort(arr, tmp, 4, 6)</text>
+  <text x="70" y="350" font-size="18" fill="black">8. mergesort(arr, tmp, 4, 5)</text>
+  <text x="70" y="380" font-size="18" fill="black">9. mergesort(arr, tmp, 6, 6)</text>
+</svg>

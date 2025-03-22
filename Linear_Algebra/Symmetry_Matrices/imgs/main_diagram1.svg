@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture</text>
+  <rect x="50" y="80" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="120" font-size="20" fill="black">SymmetryMatrix Class</text>
+  <rect x="70" y="140" width="1060" height="620" fill="#e0e0e0" stroke="black"/>
+  <text x="90" y="180" font-size="18" fill="black">- Private Members: matrix, size, mtx</text>
+  <text x="90" y="210" font-size="18" fill="black">- Public Methods: Constructor, Copy Constructor, Operator=, setValue, print</text>
+  <text x="90" y="240" font-size="18" fill="black">- Random Matrix Generation</text>
+  <text x="90" y="270" font-size="18" fill="black">- Thread Safety with Mutex</text>
+</svg>

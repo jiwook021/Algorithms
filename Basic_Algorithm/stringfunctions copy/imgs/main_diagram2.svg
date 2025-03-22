@@ -1,0 +1,18 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms / Processes</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="20" fill="black">my_strlen()</text>
+  <text x="70" y="180" font-size="16" fill="black">- Iterates through string until '\0' is found</text>
+  <text x="70" y="220" font-size="16" fill="black">- Returns the count of characters</text>
+  <text x="70" y="260" font-size="20" fill="black">my_strcpy()</text>
+  <text x="70" y="300" font-size="16" fill="black">- Copies characters from str2 to str1 until '\0'</text>
+  <text x="70" y="340" font-size="20" fill="black">my_strrev()</text>
+  <text x="70" y="380" font-size="16" fill="black">- Creates a temporary copy of the string</text>
+  <text x="70" y="420" font-size="16" fill="black">- Reverses the string by copying characters in reverse order</text>
+  <text x="70" y="460" font-size="20" fill="black">my_strcmp()</text>
+  <text x="70" y="500" font-size="16" fill="black">- Compares characters of str1 and str2 until mismatch or '\0'</text>
+  <text x="70" y="540" font-size="16" fill="black">- Returns the difference between mismatched characters</text>
+  <text x="70" y="580" font-size="20" fill="black">my_strcat()</text>
+  <text x="70" y="620" font-size="16" fill="black">- Appends str2 to the end of str1</text>
+</svg>

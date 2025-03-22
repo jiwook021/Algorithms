@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="80" width="1100" height="700" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-size="20">1. Open video file</text>
+  <text x="70" y="160" font-size="20">2. Check if video opened successfully</text>
+  <text x="70" y="200" font-size="20">3. Get video properties (width, height, FPS)</text>
+  <text x="70" y="240" font-size="20">4. Create VideoWriter object</text>
+  <text x="70" y="280" font-size="20">5. Process video frame by frame</text>
+  <text x="70" y="320" font-size="20">6. Convert frame to grayscale</text>
+  <text x="70" y="360" font-size="20">7. Write processed frame to output video</text>
+  <text x="70" y="400" font-size="20">8. Display original and processed frames</text>
+  <text x="70" y="440" font-size="20">9. Release resources and exit</text>
+</svg>

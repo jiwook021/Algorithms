@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">8. Main Function Execution</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="140" font-size="20" fill="black">Initialization</text>
+  <text x="70" y="180" font-size="20" fill="black">Push and Pop Operations</text>
+  <text x="70" y="220" font-size="20" fill="black">Output</text>
+  <line x1="70" y1="240" x2="1080" y2="240" stroke="black" stroke-width="2"/>
+  <text x="70" y="280" font-size="20" fill="black">1. Initialize stack</text>
+  <text x="70" y="320" font-size="20" fill="black">2. Push elements (10, 0-9)</text>
+  <text x="70" y="360" font-size="20" fill="black">3. Pop elements and print</text>
+</svg>

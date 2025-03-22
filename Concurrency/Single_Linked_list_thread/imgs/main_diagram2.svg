@@ -1,0 +1,20 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">2. Key Algorithms and Processes</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="20" fill="black">Insert Algorithm:</text>
+  <text x="90" y="140" font-size="16" fill="black">1. Hash key to get bucket index</text>
+  <text x="90" y="170" font-size="16" fill="black">2. Lock bucket for writing</text>
+  <text x="90" y="200" font-size="16" fill="black">3. Insert key-value pair into bucket</text>
+  <text x="90" y="230" font-size="16" fill="black">4. Unlock bucket</text>
+  <text x="90" y="260" font-size="16" fill="black">5. Check load factor and rehash if needed</text>
+  <text x="70" y="300" font-size="20" fill="black">Find Algorithm:</text>
+  <text x="90" y="330" font-size="16" fill="black">1. Hash key to get bucket index</text>
+  <text x="90" y="360" font-size="16" fill="black">2. Lock bucket for reading</text>
+  <text x="90" y="390" font-size="16" fill="black">3. Search for key in bucket</text>
+  <text x="90" y="420" font-size="16" fill="black">4. Unlock bucket</text>
+  <text x="70" y="450" font-size="20" fill="black">Rehash Algorithm:</text>
+  <text x="90" y="480" font-size="16" fill="black">1. Double the number of buckets</text>
+  <text x="90" y="510" font-size="16" fill="black">2. Redistribute all elements</text>
+  <text x="90" y="540" font-size="16" fill="black">3. Reset element count</text>
+</svg>

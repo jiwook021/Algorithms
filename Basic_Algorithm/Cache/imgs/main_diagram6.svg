@@ -1,0 +1,13 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">6. Error Handling in LRUCache</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="100" y="150" font-size="20" fill="black">Error Handling in get(key)</text>
+  <rect x="100" y="180" width="1000" height="150" fill="#e0e0e0" stroke="black"/>
+  <text x="120" y="230" font-size="16" fill="black">1. If key is not found, throw std::out_of_range</text>
+  <text x="120" y="260" font-size="16" fill="black">2. Error message is returned to caller</text>
+  <text x="100" y="350" font-size="20" fill="black">Error Handling in put(key, value)</text>
+  <rect x="100" y="380" width="1000" height="200" fill="#e0e0e0" stroke="black"/>
+  <text x="120" y="430" font-size="16" fill="black">1. No explicit error handling, assumes valid input</text>
+  <text x="120" y="460" font-size="16" fill="black">2. Memory allocation errors are handled by STL</text>
+</svg>

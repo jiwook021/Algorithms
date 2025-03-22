@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">5. Bit Manipulation in reversebit()</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="120" font-size="20" fill="black">Bit Reversal Process</text>
+  <rect x="100" y="150" width="400" height="200" fill="#ffcccb" stroke="black"/>
+  <text x="120" y="180" font-size="16" fill="black">Input: 00001100</text>
+  <text x="120" y="220" font-size="14" fill="black">1. Check each bit</text>
+  <text x="120" y="250" font-size="14" fill="black">2. Reverse bits</text>
+  <text x="120" y="280" font-size="14" fill="black">Output: 00110000</text>
+</svg>

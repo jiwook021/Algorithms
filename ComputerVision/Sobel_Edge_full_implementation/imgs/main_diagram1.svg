@@ -1,0 +1,22 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="70" width="1100" height="700" fill="none" stroke="black" stroke-width="2"/>
+  <text x="100" y="120" font-size="20">Input Image</text>
+  <ellipse cx="150" cy="150" rx="50" ry="30" fill="lightblue"/>
+  <text x="100" y="220" font-size="20">BGR to Gray</text>
+  <ellipse cx="150" cy="250" rx="50" ry="30" fill="lightgreen"/>
+  <text x="100" y="320" font-size="20">Sobel X & Y</text>
+  <ellipse cx="150" cy="350" rx="50" ry="30" fill="lightyellow"/>
+  <text x="100" y="420" font-size="20">Combine Sobel</text>
+  <ellipse cx="150" cy="450" rx="50" ry="30" fill="lightpink"/>
+  <text x="100" y="520" font-size="20">Threshold</text>
+  <ellipse cx="150" cy="550" rx="50" ry="30" fill="lightcoral"/>
+  <text x="100" y="620" font-size="20">Output Image</text>
+  <ellipse cx="150" cy="650" rx="50" ry="30" fill="lightblue"/>
+  <line x1="150" y1="180" x2="150" y2="220" stroke="black" stroke-width="2"/>
+  <line x1="150" y1="280" x2="150" y2="320" stroke="black" stroke-width="2"/>
+  <line x1="150" y1="380" x2="150" y2="420" stroke="black" stroke-width="2"/>
+  <line x1="150" y1="480" x2="150" y2="520" stroke="black" stroke-width="2"/>
+  <line x1="150" y1="580" x2="150" y2="620" stroke="black" stroke-width="2"/>
+</svg>

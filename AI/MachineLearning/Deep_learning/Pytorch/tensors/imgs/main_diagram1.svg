@@ -1,0 +1,13 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">1. Overall Architecture</text>
+  <text x="50" y="100" font-size="18">Main Workflow of tensor_basics_tutorial</text>
+  <rect x="50" y="120" width="1100" height="600" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="160" font-size="16">1. Import Libraries</text>
+  <text x="70" y="200" font-size="16">2. Define tensor_basics_tutorial function</text>
+  <text x="70" y="240" font-size="16">3. Tensor Creation</text>
+  <text x="90" y="280" font-size="14">- From Python lists</text>
+  <text x="90" y="320" font-size="14">- From NumPy arrays</text>
+  <text x="90" y="360" font-size="14">- Common initialization functions</text>
+  <text x="70" y="400" font-size="16">4. Print Results</text>
+</svg>

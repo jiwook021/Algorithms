@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">7. Output Analysis</text>
+  <rect x="50" y="100" width="1100" height="600" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="140" font-size="20">Program Output</text>
+  <rect x="70" y="160" width="1060" height="100" fill="#e0e0e0" stroke="#000000"/>
+  <text x="90" y="200" font-size="16">- First call: expired=true, use_count=0, content=<null></text>
+  <text x="90" y="230" font-size="16">- Second call: expired=false, use_count=1, content=1337</text>
+  <text x="90" y="260" font-size="16">- Third call: expired=true, use_count=0, content=<null></text>
+  <text x="90" y="290" font-size="16">- Destructor output: "DTOR Foo 1337"</text>
+</svg>

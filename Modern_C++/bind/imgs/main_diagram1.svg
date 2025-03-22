@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="80" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="120" font-size="20" fill="black">1. Main Function</text>
+  <text x="70" y="160" font-size="16" fill="black">- Initializes bindings and calls functions</text>
+  <text x="70" y="200" font-size="20" fill="black">2. Functions</text>
+  <text x="70" y="240" font-size="16" fill="black">- add: Adds three integers</text>
+  <text x="70" y="280" font-size="16" fill="black">- makeGreeting: Generates a greeting string</text>
+  <text x="70" y="320" font-size="20" fill="black">3. Class</text>
+  <text x="70" y="360" font-size="16" fill="black">- Calculator: Performs multiplication and division</text>
+  <text x="70" y="400" font-size="20" fill="black">4. Bindings</text>
+  <text x="70" y="440" font-size="16" fill="black">- std::bind: Used to create partial function applications</text>
+</svg>

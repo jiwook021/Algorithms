@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="100" width="1100" height="600" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="140" font-size="20">Main Function</text>
+  <rect x="70" y="160" width="1060" height="100" fill="#e0e0e0" stroke="#000000"/>
+  <text x="90" y="200" font-size="16">- Initializes weak_ptr<Foo> weak_foo</text>
+  <text x="90" y="230" font-size="16">- Calls weak_ptr_info(weak_foo)</text>
+  <text x="90" y="260" font-size="16">- Creates shared_ptr<Foo> shared_foo in a nested scope</text>
+  <text x="90" y="290" font-size="16">- Assigns shared_foo to weak_foo</text>
+  <text x="90" y="320" font-size="16">- Calls weak_ptr_info(weak_foo) again</text>
+  <text x="90" y="350" font-size="16">- Exits nested scope, destroying shared_foo</text>
+  <text x="90" y="380" font-size="16">- Calls weak_ptr_info(weak_foo) one last time</text>
+</svg>

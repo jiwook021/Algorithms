@@ -1,0 +1,16 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">4. Memory Management</text>
+  <rect x="100" y="100" width="300" height="200" fill="#c0c0c0" stroke="black"/>
+  <text x="150" y="150" font-size="18" fill="black">std::shared_ptr</text>
+  <text x="120" y="200" font-size="14" fill="black">Automatic memory</text>
+  <text x="120" y="230" font-size="14" fill="black">management for nodes</text>
+  <rect x="500" y="100" width="300" height="200" fill="#c0c0c0" stroke="black"/>
+  <text x="550" y="150" font-size="18" fill="black">Node Creation</text>
+  <text x="520" y="200" font-size="14" fill="black">Dynamic allocation</text>
+  <text x="520" y="230" font-size="14" fill="black">using new</text>
+  <rect x="900" y="100" width="300" height="200" fill="#c0c0c0" stroke="black"/>
+  <text x="950" y="150" font-size="18" fill="black">Node Deletion</text>
+  <text x="920" y="200" font-size="14" fill="black">Automatic cleanup</text>
+  <text x="920" y="230" font-size="14" fill="black">via shared_ptr</text>
+</svg>

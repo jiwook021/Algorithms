@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">5. Image Transformation Steps</text>
+  <rect x="50" y="80" width="1100" height="700" fill="white" stroke="black" stroke-width="2"/>
+  <text x="70" y="120" font-size="20" fill="black">1. Original Image</text>
+  <text x="70" y="160" font-size="20" fill="black">2. Grayscale Image</text>
+  <text x="70" y="200" font-size="20" fill="black">3. Resized Image</text>
+  <text x="70" y="240" font-size="20" fill="black">4. Blurred Image</text>
+  <text x="70" y="280" font-size="20" fill="black">5. Thresholded Image</text>
+  <text x="70" y="320" font-size="20" fill="black">6. Edge Detected Image</text>
+  <text x="70" y="360" font-size="20" fill="black">7. Rotated Image</text>
+</svg>

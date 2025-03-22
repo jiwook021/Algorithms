@@ -1,0 +1,9 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">6. Enqueue Operation</text>
+  <rect x="100" y="100" width="400" height="100" fill="#cce5ff" stroke="black"/>
+  <text x="120" y="150" font-size="18" fill="black">PEnqueue</text>
+  <line x1="550" y1="150" x2="650" y2="150" stroke="black"/>
+  <rect x="650" y="100" width="400" height="100" fill="#ffcccb" stroke="black"/>
+  <text x="670" y="150" font-size="18" fill="black">HInsert</text>
+</svg>

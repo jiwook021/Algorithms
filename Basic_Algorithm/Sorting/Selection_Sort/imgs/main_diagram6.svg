@@ -1,0 +1,10 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">6. Loop Execution Flow</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="70" y="140" font-size="20" fill="black">Outer Loop (i)</text>
+  <text x="70" y="170" font-size="16" fill="black">- Iterates from 0 to n-2</text>
+  <text x="70" y="200" font-size="20" fill="black">Inner Loop (j)</text>
+  <text x="70" y="230" font-size="16" fill="black">- Iterates from i+1 to n-1</text>
+  <text x="70" y="260" font-size="16" fill="black">- Finds the minimum element</text>
+</svg>

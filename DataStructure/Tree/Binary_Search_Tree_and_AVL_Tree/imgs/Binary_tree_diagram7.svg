@@ -1,0 +1,8 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">7. Memory Management</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="100" y="120" font-size="20" fill="black">Memory Management in Binary Tree</text>
+  <text x="100" y="160" font-size="16" fill="black">- Free memory when removing nodes</text>
+  <text x="100" y="190" font-size="16" fill="black">- Avoid memory leaks by setting pointers to NULL</text>
+</svg>

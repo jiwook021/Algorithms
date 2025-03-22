@@ -1,0 +1,14 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">8. Example Usage of LRUCache</text>
+  <rect x="50" y="100" width="1100" height="600" fill="white" stroke="black"/>
+  <text x="100" y="150" font-size="20" fill="black">Example Scenario</text>
+  <rect x="100" y="180" width="1000" height="150" fill="#e0e0e0" stroke="black"/>
+  <text x="120" y="230" font-size="16" fill="black">1. Create LRUCache with capacity 3</text>
+  <text x="120" y="260" font-size="16" fill="black">2. Add items "one", "two", "three"</text>
+  <text x="100" y="350" font-size="20" fill="black">Cache Operations</text>
+  <rect x="100" y="380" width="1000" height="200" fill="#e0e0e0" stroke="black"/>
+  <text x="120" y="430" font-size="16" fill="black">1. Access "one" (moves to front)</text>
+  <text x="120" y="460" font-size="16" fill="black">2. Add "four" (evicts "two")</text>
+  <text x="120" y="490" font-size="16" fill="black">3. Try to access "two" (throws error)</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">8. Error Handling and Input Validation</text>
+  <rect x="50" y="70" width="1100" height="700" fill="none" stroke="black" stroke-width="2"/>
+  <text x="100" y="120" font-size="20">Input Validation</text>
+  <rect x="100" y="140" width="400" height="100" fill="lightblue"/>
+  <text x="120" y="180" font-size="16">Check argc == 2</text>
+  <text x="120" y="200" font-size="16">Validate image path</text>
+  <text x="100" y="280" font-size="20">Error Handling</text>
+  <rect x="100" y="300" width="400" height="100" fill="lightgreen"/>
+  <text x="120" y="340" font-size="16">Check if image is loaded</text>
+  <text x="120" y="360" font-size="16">Return -1 on error</text>
+</svg>

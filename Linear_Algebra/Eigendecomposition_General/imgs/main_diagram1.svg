@@ -1,0 +1,12 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#f0f0f0"/>
+  <text x="50" y="50" font-size="24" fill="black">1. Overall Architecture / Main Workflow</text>
+  <rect x="50" y="70" width="1100" height="700" fill="white" stroke="black"/>
+  <text x="70" y="110" font-size="18" fill="black">1. Start Program</text>
+  <text x="70" y="140" font-size="18" fill="black">2. Define Sample Matrix</text>
+  <text x="70" y="170" font-size="18" fill="black">3. Print Original Matrix</text>
+  <text x="70" y="200" font-size="18" fill="black">4. Compute Eigendecomposition</text>
+  <text x="70" y="230" font-size="18" fill="black">5. Print Eigenvalues and Eigenvectors</text>
+  <text x="70" y="260" font-size="18" fill="black">6. Handle Errors (if any)</text>
+  <text x="70" y="290" font-size="18" fill="black">7. End Program</text>
+</svg>

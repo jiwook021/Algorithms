@@ -1,0 +1,11 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="50" y="50" font-size="24" font-weight="bold">5. Insertion with Hint</text>
+  <rect x="50" y="80" width="1100" height="700" stroke="black" fill="none"/>
+  <text x="70" y="120" font-size="20">Insertion with hint iterator:</text>
+  <text x="90" y="160" font-size="18">- {"v", 1}</text>
+  <text x="90" y="190" font-size="18">- {"w", 2}</text>
+  <text x="90" y="220" font-size="18">- {"x", 3}</text>
+  <text x="90" y="250" font-size="18">- {"y", 4}</text>
+  <text x="90" y="280" font-size="18">- {"z", 5}</text>
+</svg>
