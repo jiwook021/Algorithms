@@ -426,10 +426,9 @@ public:
 
 
 
-// -----------------------------------------------------------------------------
-// 테스트 예제
-// -----------------------------------------------------------------------------
 int main() {
+    // Section 1: Basic operations
+    std::cout << "=== Basic Operations ===" << std::endl;
     UnorderedMap<int, std::string> umap;
     umap.insert(std::pair<const int, std::string>(1, "one"));
     umap.insert(std::pair<const int, std::string>(2, "two"));
@@ -438,16 +437,174 @@ int main() {
     std::cout << "Size: " << umap.size() << std::endl;
     std::cout << "Key 2: " << umap.at(2) << std::endl;
 
-    std::cout << "Iterator traversal:" << std::endl;
+    // Test count function
+    std::cout << "Count of key 2: " << umap.count(2) << std::endl;
+    std::cout << "Count of key 5: " << umap.count(5) << std::endl;
+
+    // Section 2: Iteration
+    std::cout << "\n=== Iterator Traversal ===" << std::endl;
     for (UnorderedMap<int, std::string>::iterator it = umap.begin(); it != umap.end(); ++it) {
         std::cout << it->first << " : " << it->second << std::endl;
     }
 
-    umap.erase(1);
-    std::cout << "After erasing key 1, size: " << umap.size() << std::endl;
+    // Test const iteration
+    std::cout << "\n=== Const Iterator Traversal ===" << std::endl;
+    const UnorderedMap<int, std::string>& const_umap = umap;
+    for (UnorderedMap<int, std::string>::const_iterator it = const_umap.begin(); it != const_umap.end(); ++it) {
+        std::cout << it->first << " : " << it->second << std::endl;
+    }
 
+    // Section 3: Emplace and equal_range
+    std::cout << "\n=== Emplace and Equal Range ===" << std::endl;
+    // Test emplace
+    auto result = umap.emplace(4, "four");
+    std::cout << "Emplace result - success: " << (result.second ? "true" : "false") 
+              << ", key: " << result.first->first << ", value: " << result.first->second << std::endl;
+    
+    // Test duplicate emplace
+    result = umap.emplace(4, "another_four");
+    std::cout << "Duplicate emplace - success: " << (result.second ? "true" : "false") 
+              << ", key: " << result.first->first << ", value: " << result.first->second << std::endl;
+
+    // Test equal_range
+    auto range = umap.equal_range(3);
+    std::cout << "Equal range for key 3:" << std::endl;
+    for (auto it = range.first; it != range.second; ++it) {
+        std::cout << "  " << it->first << " : " << it->second << std::endl;
+    }
+
+    // Section 4: Erase operations
+    std::cout << "\n=== Erase Operations ===" << std::endl;
+    std::cout << "Before erasing key 1, size: " << umap.size() << std::endl;
+    size_t erased_count = umap.erase(1);
+    std::cout << "After erasing key 1, size: " << umap.size() << ", erased count: " << erased_count << std::endl;
+    
+    // Erase using iterator
+    auto it_to_erase = umap.find(3);
+    if (it_to_erase != umap.end()) {
+        std::cout << "Erasing key 3 using iterator" << std::endl;
+        auto next_it = umap.erase(it_to_erase);
+        std::cout << "After erasing, size: " << umap.size() << std::endl;
+        if (next_it != umap.end()) {
+            std::cout << "Next element after erase: " << next_it->first << " : " << next_it->second << std::endl;
+        }
+    }
+
+    // Section 5: Bucket interface
+    std::cout << "\n=== Bucket Interface ===" << std::endl;
+    std::cout << "Bucket count: " << umap.bucket_count() << std::endl;
+    std::cout << "Max bucket count: " << umap.max_bucket_count() << std::endl;
+    
+    // Check bucket sizes
+    std::cout << "Bucket sizes:" << std::endl;
+    for (size_t i = 0; i < umap.bucket_count(); ++i) {
+        std::cout << "  Bucket " << i << ": " << umap.bucket_size(i) << std::endl;
+    }
+    
+    // Find which bucket a key is in
+    int test_key = 4;
+    std::cout << "Key " << test_key << " is in bucket: " << umap.bucket(test_key) << std::endl;
+
+    // Section 6: Swap functionality
+    std::cout << "\n=== Swap Functionality ===" << std::endl;
+    UnorderedMap<int, std::string> umap2;
+    umap2[5] = "five";
+    umap2[6] = "six";
+    
+    std::cout << "Before swap:" << std::endl;
+    std::cout << "  umap size: " << umap.size() << std::endl;
+    std::cout << "  umap2 size: " << umap2.size() << std::endl;
+    
+    umap.swap(umap2);
+    
+    std::cout << "After swap:" << std::endl;
+    std::cout << "  umap size: " << umap.size() << std::endl;
+    std::cout << "  umap2 size: " << umap2.size() << std::endl;
+    
+    std::cout << "umap contents after swap:" << std::endl;
+    for (const auto& pair : umap) {
+        std::cout << "  " << pair.first << " : " << pair.second << std::endl;
+    }
+
+    // Section 7: Custom hash and comparison function
+    std::cout << "\n=== Custom Hash and Equality Function ===" << std::endl;
+    struct CustomHash {
+        size_t operator()(const std::string& key) const {
+            // Simple custom hash: sum of ASCII values
+            size_t hash = 0;
+            for (char c : key) {
+                hash += static_cast<size_t>(c);
+            }
+            return hash;
+        }
+    };
+    
+    struct CustomEqual {
+        bool operator()(const std::string& lhs, const std::string& rhs) const {
+            // Case-insensitive equality
+            if (lhs.size() != rhs.size()) return false;
+            for (size_t i = 0; i < lhs.size(); ++i) {
+                if (std::tolower(lhs[i]) != std::tolower(rhs[i])) return false;
+            }
+            return true;
+        }
+    };
+    
+    UnorderedMap<std::string, int, CustomHash, CustomEqual> custom_umap;
+    custom_umap["test"] = 1;
+    custom_umap["TEST"] = 2;  // Should update "test" due to case-insensitive equality
+    custom_umap["another"] = 3;
+    
+    std::cout << "Custom unordered map size: " << custom_umap.size() << std::endl;
+    std::cout << "custom_umap[\"test\"]: " << custom_umap["test"] << std::endl;
+    std::cout << "Custom unordered map contents:" << std::endl;
+    for (const auto& pair : custom_umap) {
+        std::cout << "  " << pair.first << " : " << pair.second << std::endl;
+    }
+
+    // Section 8: Edge cases
+    std::cout << "\n=== Edge Cases ===" << std::endl;
+    // Empty map
+    UnorderedMap<int, std::string> empty_map;
+    std::cout << "Empty map size: " << empty_map.size() << std::endl;
+    std::cout << "Empty map begin() == end(): " << (empty_map.begin() == empty_map.end() ? "true" : "false") << std::endl;
+    
+    // Access non-existent key with at() - should throw exception
+    try {
+        empty_map.at(10);
+        std::cout << "This should not be printed!" << std::endl;
+    } catch (const std::out_of_range& ex) {
+        std::cout << "Caught expected exception: " << ex.what() << std::endl;
+    }
+    
+    // Access non-existent key with operator[] - should insert default value
+    std::cout << "empty_map[10]: " << empty_map[10] << std::endl;
+    std::cout << "After using operator[], size: " << empty_map.size() << std::endl;
+
+    // Section 9: Test hash_function and key_eq accessors
+    std::cout << "\n=== Hash Function and Key Equality ===" << std::endl;
+    auto hash_func = custom_umap.hash_function();
+    auto key_eq_func = custom_umap.key_eq();
+    
+    std::string test_str1 = "example";
+    std::string test_str2 = "EXAMPLE";
+    
+    std::cout << "Hash of \"" << test_str1 << "\": " << hash_func(test_str1) << std::endl;
+    std::cout << "Hash of \"" << test_str2 << "\": " << hash_func(test_str2) << std::endl;
+    std::cout << "Are \"" << test_str1 << "\" and \"" << test_str2 
+              << "\" equal: " << (key_eq_func(test_str1, test_str2) ? "true" : "false") << std::endl;
+
+    // Final section: clear everything
+    std::cout << "\n=== Final Cleanup ===" << std::endl;
     umap.clear();
-    std::cout << "After clearing, empty: " << (umap.empty() ? "true" : "false") << std::endl;
+    umap2.clear();
+    custom_umap.clear();
+    empty_map.clear();
+    std::cout << "After clearing, all maps empty:" << std::endl;
+    std::cout << "  umap: " << (umap.empty() ? "true" : "false") << std::endl;
+    std::cout << "  umap2: " << (umap2.empty() ? "true" : "false") << std::endl;
+    std::cout << "  custom_umap: " << (custom_umap.empty() ? "true" : "false") << std::endl;
+    std::cout << "  empty_map: " << (empty_map.empty() ? "true" : "false") << std::endl;
 
     return 0;
 }
