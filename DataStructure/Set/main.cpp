@@ -21,18 +21,39 @@ void Union(const set<T>& st1, const set<T>& st2, set<T>& st3)
 int main() {
   
   ostream_iterator<int> out(cout," ");
-  int a[] = {1,2,3,4,5};
+  int a[] = {1,2,3,4,4};
   set<int> st1;
   set<int,greater<int> > st2;
   
-  st1.insert(6); st1.insert(7); st1.insert(8); // st1 = (6 7 8)
-  st2.insert(6); st2.insert(7); st2.insert(8); // st2 = (8 7 6)
-  set<int> st3(a,a+5); // st3 = (1 2 3 4 5)
+  st1.insert(8); st1.insert(7); st1.insert(5); // st1 = (6 7 8)
+  st2.insert(9); st2.insert(10); st2.insert(11); // st2 = (8 7 6)
+  
+  
+  for(int a:st1)
+    std::cout <<a << ' ';
+  std::cout<< "\n";
+  for(int a:st2)
+    std::cout <<a << ' ';
+  std::cout<< "\n";
+
+  set<int> st3(a,a+2); // st3 = (1 2 3 4 5)
   set<int> st4(st3); // st4 = (1 2 3 4 5)
   
+  for(int a:st3)
+    std::cout <<a << ' ';
+  std::cout<< "\n";
+  for(int a:st4)
+    std::cout <<a << ' ';
+  std::cout<< "\n";
+
   pair<set<int>::iterator,bool> pr;
   pr = st1.insert(7); // st1 = (6 7 8), pr = (7 false)
+  std::cout << pr.second<<"\n";
+
   pr = st1.insert(9); // st1 = (6 7 8 9), pr = (9 true)
+
+  std::cout << pr.second<<"\n";
+
   
   set<int>::iterator i1 = st1.begin(), i2 = st1.begin();
   bool b1 = st1.key_comp()(*i1,*i1); // b1 = false

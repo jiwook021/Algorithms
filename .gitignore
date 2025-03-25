@@ -12,3 +12,5 @@ scriptClaude.py
 code_analyzer*
 //openaiQuestion*
 LLMscript/*
+*.md
+*.svg
