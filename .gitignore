@@ -14,3 +14,4 @@ code_analyzer*
 LLMscript/*
 *.md
 *.svg
+AI/MachineLearning/Deep_learning/Pytorch/ImageClassifier/data/cifar-10-python.tar.gz
