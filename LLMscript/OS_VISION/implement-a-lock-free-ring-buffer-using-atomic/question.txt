@@ -1,1 +1,0 @@
-Implement a **lock-free ring buffer** using atomic operations for real-time data streaming.  

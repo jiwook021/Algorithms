@@ -1,1 +1,0 @@
-Develop an algorithm to **process thermal images** for object detection.  

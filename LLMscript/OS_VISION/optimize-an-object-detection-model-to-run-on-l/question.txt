@@ -1,1 +1,0 @@
-Optimize an **object detection model** to run on low-power embedded devices.  

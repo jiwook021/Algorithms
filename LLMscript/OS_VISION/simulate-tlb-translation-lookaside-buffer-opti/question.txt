@@ -1,1 +1,0 @@
-Simulate **TLB (Translation Lookaside Buffer) optimization** to reduce virtual memory lookup time.  

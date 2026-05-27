@@ -1,1 +1,0 @@
-Implement an **LRU (Least Recently Used) cache** to simulate page replacement in virtual memory.  

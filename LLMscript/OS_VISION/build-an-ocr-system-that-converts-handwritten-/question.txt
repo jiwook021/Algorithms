@@ -1,1 +1,0 @@
-Build an **OCR system** that converts handwritten notes into text with high accuracy.  

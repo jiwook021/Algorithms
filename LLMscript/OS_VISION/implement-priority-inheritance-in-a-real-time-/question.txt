@@ -1,1 +1,0 @@
-Implement **priority inheritance** in a real-time system to avoid priority inversion.  

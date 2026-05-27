@@ -1,1 +1,0 @@
-Implement a **Sobel edge detector** that runs in real-time on embedded systems.  

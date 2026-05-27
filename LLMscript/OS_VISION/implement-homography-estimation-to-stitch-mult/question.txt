@@ -1,1 +1,0 @@
-Implement **homography estimation** to stitch multiple images into a panorama.  

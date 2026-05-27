@@ -1,1 +1,0 @@
-Implement **log-structured file system (LFS)** to improve write performance on SSDs.  

@@ -1,1 +1,0 @@
-What is the difference between **bias and variance**, and how do they affect ML models?  

@@ -1,1 +1,0 @@
-Implement a **page fault handler** that minimizes latency using demand paging techniques.  

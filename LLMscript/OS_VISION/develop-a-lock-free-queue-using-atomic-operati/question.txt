@@ -1,1 +1,0 @@
-Develop a **lock-free queue** using atomic operations to eliminate mutex contention.  

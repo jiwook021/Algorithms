@@ -1,1 +1,0 @@
-Develop a **Scale-Invariant Feature Transform (SIFT) algorithm** for object detection.  

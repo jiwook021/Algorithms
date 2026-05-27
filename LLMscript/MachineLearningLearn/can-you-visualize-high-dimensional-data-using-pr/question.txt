@@ -1,1 +1,0 @@
-Can you visualize high-dimensional data using **Principal Component Analysis (PCA)**?  

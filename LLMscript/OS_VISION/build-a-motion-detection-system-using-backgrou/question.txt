@@ -1,1 +1,0 @@
-Build a **motion detection system** using background subtraction in real-time video.  

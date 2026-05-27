@@ -1,1 +1,0 @@
-Create a **custom slab allocator** for efficient small-object memory allocation.  

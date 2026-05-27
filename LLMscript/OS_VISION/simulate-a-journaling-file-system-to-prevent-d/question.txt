@@ -1,1 +1,0 @@
-Simulate a **journaling file system** to prevent data corruption during crashes.  

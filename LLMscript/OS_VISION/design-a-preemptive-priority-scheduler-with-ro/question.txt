@@ -1,1 +1,0 @@
-Design a **preemptive priority scheduler** with round-robin time slicing for equal priority tasks.  

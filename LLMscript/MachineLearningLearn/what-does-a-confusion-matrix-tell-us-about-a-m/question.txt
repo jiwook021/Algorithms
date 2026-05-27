@@ -1,1 +1,0 @@
-What does a **confusion matrix** tell us about a model’s performance?  
